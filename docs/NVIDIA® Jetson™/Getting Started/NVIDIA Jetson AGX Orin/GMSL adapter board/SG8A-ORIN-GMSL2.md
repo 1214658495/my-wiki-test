@@ -6,6 +6,30 @@ sidebar_position: 1
 
 In this wiki, we will show you how to use SG8A-ORIN-GMSL2.
 
+
+<!-- ![SG8A-ORIN-GMSL](/img/SG8A-ORIN-GMSL.png) -->
+
+<!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
+
+<div style={{textAlign: 'center'}}>
+    <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" style={{width: 500, height:'auto'}} />
+</div>
+
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898">
+        <strong>
+            <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px'}}>
+                <font color={'000000'} size={"4"}> Get One Now 🖱️</font>
+            </span>
+        </strong>
+    </a>
+</div>
+
+
+
+
+
 ## Getting Started
 <iframe width="700" height="480" src="https://autosensee.feishu.cn/file/N3pTbT3rroMFrHxM4t2ciM0OnMe?from=from_copylink" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -27,3 +51,4 @@ In this wiki, we will show you how to use SG8A-ORIN-GMSL2.
 <iframe width="800" height="500" src="https://autosensee.feishu.cn/sheets/JDJxsOlUrh9TZgtLsj8cIoHCn1f?from=from_copylink" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## FAQ
+

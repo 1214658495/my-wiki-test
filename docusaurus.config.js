@@ -80,7 +80,7 @@ const config = {
         title: 'Wiki',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/SENSING_logo.png',
+          src: 'img/SENSING_logo_en.jpg',
         },
         items: [
           {
