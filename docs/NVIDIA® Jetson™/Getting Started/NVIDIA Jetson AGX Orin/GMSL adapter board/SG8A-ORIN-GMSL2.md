@@ -40,13 +40,18 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 ### Specification
 
-<!-- Online version -->
-<!-- <div style={{textAlign: 'center'}}>
-<iframe width="800" height="600" src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink" 
-title="video player" frameborder="0"></iframe>
-</div> -->
+<div style={{textAlign: 'center', position: 'relative', width: '100%', height: '800px', marginBottom: '20px'}}>
+    <iframe
+        src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink&hideTitle=true&hideComments=true&hideSidebar=true&hideHeader=true&hideFooter=true"
+        width="100%"
+        height="100%"
+        frameBorder="0"
+        allowFullScreen={true}
+        style={{border: 'none', backgroundColor: 'white'}}>
+    </iframe>
+</div>
 
-<!-- Offline version -->
+<!-- Offline version as backup -->
 | Feature | Description |
 |---------|-------------|
 | Interface | GMSL1/GMSL2 |
