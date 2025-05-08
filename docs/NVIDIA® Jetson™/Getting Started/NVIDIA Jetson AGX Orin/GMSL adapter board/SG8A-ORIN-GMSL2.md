@@ -40,18 +40,71 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 ### Specification
 
-<iframe width="800" height="600" src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink" title="video player" frameborder="0"  ></iframe>
+<!-- Online version -->
+<!-- <div style={{textAlign: 'center'}}>
+<iframe width="800" height="600" src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink" 
+title="video player" frameborder="0"></iframe>
+</div> -->
 
+<!-- Offline version -->
+| Feature | Description |
+|---------|-------------|
+| Interface | GMSL1/GMSL2 |
+| Camera Support | Up to 8 cameras |
+| Power Supply | PoC (Power over Coax) |
+| Protocol | GMSL1 and GMSL2 compatible |
+| Cable | 50 Ohm coaxial cable |
+| Compatibility | NVIDIA Jetson AGX Orin Development Kit |
+
+<br />
 ### Supported Camera List
 
-<iframe width="800" height="500" src="https://autosensee.feishu.cn/sheets/JDJxsOlUrh9TZgtLsj8cIoHCn1f?from=from_copylink" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Online version -->
+<!-- <div style={{textAlign: 'center'}}>
+<iframe width="800" height="500" src="https://autosensee.feishu.cn/sheets/JDJxsOlUrh9TZgtLsj8cIoHCn1f?from=from_copylink" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+<!-- Offline version -->
+|Product|Max Resolution|Output Format|Camera interface|Jetson Agx Orin Supported|Jetpack5.1.2-L4T35.4.1|Jetpack6.0-L4T36.3|
+|:----|:----|:----|:----|:----|:----|:----|
+|SG2-IMX390C-GMSL2-Hxxx|1920 x 1080 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+|SG2-IMX662C-GMSL2-Hxxx|1936 x 1100 @ 30fps|RAW12|GMSL2|YES|/|YES|
+|SG2-AR0233C-GMSL2-Hxxx|1920 x 1080 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+|SG2-OX03CC-GMSL2-Hxxx|1920 x 1080 @ 30fps|RAW10|GMSL2|YES|YES|YES|
+|SG2-OX03CC-GMSL2F-Hxxx|1920 x 1080 @ 30fps|RAW10|GMSL2|YES|YES|/|
+|SG5-IMX490C-GMSL2-Hxxx|2880 x 1860 @ 30fps|RAW12|GMSL2|YES|YES|/|
+|SG8-AR0820C-GMSL2-Hxxx|3848 x 2168 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+|SG8-AR0820C-G2A-Hxxx|3848 x 2168 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+|SG8-AR0823C-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|/|YES|
+|SG8-OX08BC-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+|SG8-OX08BC-G2A-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+|SG8-OX08DC-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|/|YES|
+|SG8-IMX728C-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|YES|YES|
 
 
-
+<br />
 ### Hardware Preparation 
-Follow the steps in the video below to install the product.
-<iframe width="700" height="480" src="https://autosensee.feishu.cn/file/N3pTbT3rroMFrHxM4t2ciM0OnMe?from=from_copylink" title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Follow the steps below to install the product:
 
+1. Connect the GMSL camera to the SG8A-ORIN-GMSL2 board using the coaxial cable
+2. Mount the SG8A-ORIN-GMSL2 board onto the Jetson AGX Orin module
+3. Connect the power supply
+4. Power on the system
+
+<div style={{textAlign: 'center', position: 'relative', width: '100%', paddingBottom: '56.25%', marginBottom: '20px'}}>
+    <iframe
+        style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+        src="//player.bilibili.com/player.html?bvid=BV1gj5TzdEAo&page=1&high_quality=1&danmaku=0"
+        scrolling="no"
+        border="0"
+        frameBorder="no"
+        framespacing="0"
+        allowFullScreen="true">
+    </iframe>
+</div>
+
+<br />
 ### Software Preparation
 **Step 1.** SDK Download
 
