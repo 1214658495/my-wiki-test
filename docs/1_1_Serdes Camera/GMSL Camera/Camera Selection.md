@@ -4,9 +4,21 @@ sidebar_position: 1
 
 # Camera Selection
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+## Product Information Table
 
-Docusaurus has **much more to offer**!
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQbE47l7d-2h3NCOAjYlHO-nk_btPtYb8cvCd8OdQGbfthQs9dJcXVZLpFjX1ZzZiYngMcuKyRd8M1k/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="290" frameborder="0">
+</iframe>
+
+<!-- <div style={{textAlign: 'center', position: 'relative', width: '100%', height: '100%', marginBottom: '20px'}}>
+    <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQbE47l7d-2h3NCOAjYlHO-nk_btPtYb8cvCd8OdQGbfthQs9dJcXVZLpFjX1ZzZiYngMcuKyRd8M1k/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+        width="100%"
+        height="100%"
+        frameBorder="0"
+        allowFullScreen={true}
+        style={{border: 'none', backgroundColor: 'white'}}>
+    </iframe>
+</div> -->
 
 
 ## What's next?
