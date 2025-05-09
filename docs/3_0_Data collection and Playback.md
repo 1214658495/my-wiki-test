@@ -2,7 +2,8 @@
 sidebar_position: 30
 ---
 
-# Data collection and Playback product
+
+# Data collection and Playback
 
 Let's discover **Docusaurus in less than 5 minutes**.
 

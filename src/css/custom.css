@@ -28,3 +28,17 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* 特殊侧边栏项目的样式 */
+.menu__link[href="/my-wiki-test/docs/1_0_Camera"],
+.menu__link[href="/my-wiki-test/docs/intro"],
+.menu__link[href="/my-wiki-test/docs/3_0_Data collection and Playback"] 
+{
+  font-weight: 700 !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+  font-size: 1.4rem !important;
+  color: #2e8555 !important;
+}
