@@ -1,9 +1,8 @@
 ---
-sidebar_position: 20
-title: Embedded Vision
+sidebar_position: 30
 ---
 
-# Embedded Vision
+# Data collection and Playback product
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
