@@ -40,7 +40,9 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 ### Specification
 <!-- <iframe width="800" height="600" src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink" title="video player" frameborder="0"  ></iframe> -->
-<div style={{textAlign: 'center', position: 'relative', width: '100%', height: '800px', marginBottom: '20px'}}>
+
+<!-- feishu need to  sign in -->
+<!-- <div style={{textAlign: 'center', position: 'relative', width: '100%', height: '800px', marginBottom: '20px'}}>
     <iframe
         src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink&hideTitle=true&hideComments=true&hideSidebar=true&hideHeader=true&hideFooter=true"
         width="100%"
@@ -49,7 +51,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
         allowFullScreen={true}
         style={{border: 'none', backgroundColor: 'white'}}>
     </iframe>
-</div>
+</div> -->
 
 <!-- Offline version as backup -->
 | Feature | Description |
