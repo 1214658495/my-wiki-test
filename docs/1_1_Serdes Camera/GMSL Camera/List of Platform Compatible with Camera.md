@@ -4,21 +4,57 @@ sidebar_position: 2
 
 # List of Platform Compatible with Camera
 
-<!-- import styles from './styles.module.css'; -->
+<div style={{ 
+  marginBottom: '10px', 
+  color: '#666', 
+  fontSize: '14px',
+  fontStyle: 'italic'
+}}>
+💡 Tip: Double-click the table to maximize
+</div>
 
-<div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: '600px', width: '100%' }}>
-<table style={{ width: 'auto', minWidth: '100%', borderCollapse: 'collapse' }}>
+<div 
+  style={{ 
+    overflowX: 'auto', 
+    overflowY: 'auto', 
+    maxHeight: '600px', 
+    width: '100%',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease'
+  }}
+  onDoubleClick={(e) => {
+    const div = e.currentTarget;
+    if (div.style.position === 'fixed') {
+      div.style.position = 'relative';
+      div.style.top = 'auto';
+      div.style.left = 'auto';
+      div.style.width = '100%';
+      div.style.maxHeight = '600px';
+      div.style.zIndex = 'auto';
+      div.style.backgroundColor = 'transparent';
+    } else {
+      div.style.position = 'fixed';
+      div.style.top = '0';
+      div.style.left = '0';
+      div.style.width = '100vw';
+      div.style.maxHeight = '100vh';
+      div.style.zIndex = '9999';
+      div.style.backgroundColor = 'white';
+    }
+  }}
+>
+<table style={{ width: '200%', borderCollapse: 'collapse' }}>
 <thead>
 <tr>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>No.</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Category</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Camera</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/>[ SG8A-AGON-G2Y-A1 ]</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/>[ SG10A-AGON-G2M-A1 ]</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/>[ SG4A-NONX-G2Y-A1 ]</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/>[ SG2A-G3-I4L-F ]</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Data collection product<br/>[ CCG3-8H]</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: '#f5f5f5', whiteSpace: 'nowrap' }}>Data collection product<br/>[ CCG3-8M]</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>No.</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Category</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Camera</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/>[ SG8A-AGON-G2Y-A1 ]</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/>[ SG10A-AGON-G2M-A1 ]</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/>[ SG4A-NONX-G2Y-A1 ]</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/>[ SG2A-G3-I4L-F ]</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Data collection product<br/>[ CCG3-8H]</th>
+<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'white', whiteSpace: 'nowrap' }}>Data collection product<br/>[ CCG3-8M]</th>
 </tr>
 </thead>
 <tbody>
@@ -30,8 +66,8 @@ sidebar_position: 2
 <td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>35.4.1<br/>36.3<br/>6.1</td>
 <td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>35.4.1<br/>36.3<br/>6.1</td>
 <td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>35.4.1<br/>36.3<br/>6.1</td>
-<td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>35.4.1<br/>36.3<br/>6.1</td>
-<td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>35.4.1<br/>36.3<br/>6.1</td>
+<td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>Yes</td>
+<td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>Yes</td>
 </tr>
 <tr>
 <td style={{ padding: '8px', border: '1px solid #ddd', textAlign: 'center', whiteSpace: 'nowrap' }}>2</td>
@@ -125,9 +161,7 @@ sidebar_position: 2
 </table>
 </div>
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
 
-Docusaurus has **much more to offer**!
 
 
 ## What's next?
