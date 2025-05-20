@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # List of Platform Compatible with Camera
 
-import styles from './styles.module.css';
+<!-- import styles from './styles.module.css'; -->
 
-<div style={{ overflowX: 'auto', width: '100%' }}>
+<div style={{ overflowX: 'auto', overflowY: 'auto', maxHeight: '600px', width: '100%' }}>
 <table style={{ width: 'auto', minWidth: '100%', borderCollapse: 'collapse' }}>
 <thead>
 <tr>
