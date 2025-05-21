@@ -5,20 +5,6 @@ sidebar_position: 3
 # Getting Camera Information
 
 ## Camera Information Link
-<div style={{ 
-  marginBottom: '20px', 
-  padding: '25px',
-  backgroundColor: '#f8f9fa',
-  borderRadius: '12px',
-  border: '1px solid #e9ecef',
-  boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
-}}>
-  <h3 style={{ 
-    marginTop: 0,
-    color: 'var(--ifm-color-primary-light)',
-    fontSize: '1.5em',
-    marginBottom: '15px'
-  }}>Camera Information Portal</h3>
   
   <p style={{
     fontSize: '1.1em',
@@ -29,38 +15,23 @@ sidebar_position: 3
     Access comprehensive camera specifications, technical documentation, and support resources through our official portal.
   </p>
 
-  <a 
-    href="http://service.sensing-world.com/" 
-    target="_blank"
-    rel="noopener noreferrer"
-    style={{
-      display: 'inline-flex',
-      alignItems: 'center',
-      padding: '10px 20px',
-      backgroundColor: 'var(--ifm-color-primary)',
-      color: 'white',
-      textDecoration: 'none',
-      borderRadius: '6px',
-      transition: 'all 0.3s ease',
-      fontWeight: '500',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-      fontSize: '0.95em'
-    }}
-    onMouseOver={(e) => {
-      e.target.style.backgroundColor = 'var(--ifm-color-primary-darker)';
-      e.target.style.transform = 'translateY(-1px)';
-      e.target.style.boxShadow = '0 4px 8px rgba(0,0,0,0.15)';
-    }}
-    onMouseOut={(e) => {
-      e.target.style.backgroundColor = 'var(--ifm-color-primary)';
-      e.target.style.transform = 'translateY(0)';
-      e.target.style.boxShadow = '0 2px 4px rgba(0,0,0,0.1)';
-    }}
-  >
-    <span style={{ marginRight: '6px' }}>🔗</span>
-    Visit Camera Portal
-  </a>
-</div>
+  <div style={{
+    width: '100%',
+    height: '600px',
+    border: '1px solid #e9ecef',
+    borderRadius: '6px',
+    overflow: 'hidden'
+  }}>
+    <iframe
+      src="http://service.sensing-world.com/"
+      style={{
+        width: '100%',
+        height: '100%',
+        border: 'none'
+      }}
+      title="Camera Information Portal"
+    />
+  </div>
 
 
 ## Installation Instruction
