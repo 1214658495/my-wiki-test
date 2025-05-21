@@ -30,6 +30,8 @@ sidebar_position: 3
         border: 'none'
       }}
       title="Camera Information Portal"
+      sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+      referrerPolicy="no-referrer"
     />
   </div>
 
