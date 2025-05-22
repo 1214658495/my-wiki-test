@@ -8,7 +8,7 @@ sidebar_position: 1
 SG8A-ORIN-GMSL2 adapter board, which allows up to 8 cameras to be connected to the Jetson AGX Orin module, 
 is fully compatible with the NVIDIA Jetson AGX Orin Development Kit. 
 As there are many different types of GMSL cameras available, the adapter board can be adaptively operated at different frequencies i.e. 
-it is compatible with both GMSL1 and GMSL2 protocol interfaces through software configuration. 
+it is compatible with both GMSL and GMSL2 protocol interfaces through software configuration. 
 The GMSL camera is powered by PoC (Power over Coax), so all data, control signals and power are sent over a 50 Ohm coaxial cable, 
 making the camera's cable routing flexible and easy to install in automotive applications.
 
@@ -23,10 +23,10 @@ making the camera's cable routing flexible and easy to install in automotive app
 
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898">
+    <a class="get_one_now_item" href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer">
         <strong>
             <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px'}}>
-                <font color={'000000'} size={"4"}> Get One Now 🖱️</font>
+                <font color={'000000'} size={"4"}> Buy Now</font>
             </span>
         </strong>
     </a>
@@ -39,38 +39,55 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 
 ### Specification
-<!-- <iframe width="800" height="600" src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink" title="video player" frameborder="0"  ></iframe> -->
-
-<!-- feishu need to  sign in -->
-<!-- <div style={{textAlign: 'center', position: 'relative', width: '100%', height: '800px', marginBottom: '20px'}}>
-    <iframe
-        src="https://autosensee.feishu.cn/file/H2mFbwrHHoZm4jxUEuBcEEGWnih?from=from_copylink&hideTitle=true&hideComments=true&hideSidebar=true&hideHeader=true&hideFooter=true"
-        width="100%"
-        height="100%"
-        frameBorder="0"
-        allowFullScreen={true}
-        style={{border: 'none', backgroundColor: 'white'}}>
-    </iframe>
-</div> -->
 
 <!-- Offline version as backup -->
-| Feature | Description |
+<!-- | Feature | Description |
 |---------|-------------|
-| Interface | GMSL1/GMSL2 |
+| Interface | GMSL/GMSL2 |
 | Camera Support | Up to 8 cameras |
 | Power Supply | PoC (Power over Coax) |
-| Protocol | GMSL1 and GMSL2 compatible |
+| Protocol | GMSL and GMSL2 compatible |
 | Cable | 50 Ohm coaxial cable |
-| Compatibility | NVIDIA Jetson AGX Orin Development Kit |
+| Compatibility | NVIDIA Jetson AGX Orin Development Kit | -->
+
+#### Detailed Specifications
+
+| Item              | Specification             |
+|-------------------|---------------------------|
+| Model             | SG8A-ORIN-GMSL2           |
+| Dimension         | 104mm*74mm                |
+| Weight            | 50g                       |
+| Connector         | 1x120Pin High-density connectors |
+| Camera input      | Camera*8(GMSL2/GMSL1)     |
+| Trigger In        | 12Pin Sync In             |
+| Deserializer      | MAXIM(ADI) MAX9296A*4     |
+| Camera Connector  | Fakra Z Code              |
+| POC Power Supply  | DC 8-16V                  |
+| DC Power Supply   | DC 12V                    |
+| Operating Conditions| -20°C to +85°C          |
+| Adaptation kit    | Jetson AGX Orin/Xavier    |
+
+
+
+#### Interface Diagram
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL-intro.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 500, height:'auto'}} />
+</div>
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL-intro2.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 600, height:'auto'}} />
+</div>
+
+#### Product block diagram
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 600, height:'auto'}} />
+</div>
+
+
+
 
 <br />
 ### Supported Camera List
 
-<!-- Online version -->
-<!-- <div style={{textAlign: 'center'}}>
-<iframe width="800" height="500" src="https://autosensee.feishu.cn/sheets/JDJxsOlUrh9TZgtLsj8cIoHCn1f?from=from_copylink" 
-title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
 
 <!-- Offline version -->
 |Product|Max Resolution|Output Format|Camera interface|Jetson Agx Orin Supported|Jetpack5.1.2-L4T35.4.1|Jetpack6.0-L4T36.3|
@@ -91,15 +108,31 @@ title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; cli
 
 
 <br />
-### Hardware Preparation 
-Follow the steps below to install the product:
+### Hardware Preparation
+
+#### Parts List
+
+| Serial number | Product model                 | Quantity | Remark                |
+|---------------|-------------------------------|----------|-----------------------|
+| 1             | Power adapter                 | 1        | Standard configuration|
+| 2             | Power switching harness       | 1        | Standard configuration|
+| 3             | SG8A-ORIN-GMSL2 adapter board | 1        | Standard configuration|
+| 4             | copper column , M2.5*16       | 3        | Standard configuration|
+| 5             | screw, M2.5-F                 | 3        | Standard configuration|
+| 6             | Jetson AGX Orin DK          | 1        | optional configuration|
+
+<div style={{textAlign: 'left'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-complete.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 830, height:'auto'}} />
+</div>
+
+#### Follow the steps below to install the product:
 
 1. Connect the GMSL camera to the SG8A-ORIN-GMSL2 board using the coaxial cable
 2. Mount the SG8A-ORIN-GMSL2 board onto the Jetson AGX Orin module
 3. Connect the power supply
 4. Power on the system
 
-<div style={{textAlign: 'center', position: 'relative', width: '100%', paddingBottom: '56.25%', marginBottom: '20px'}}>
+<div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
     <iframe
         style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
         src="//player.bilibili.com/player.html?bvid=BV1gj5TzdEAo&page=1&high_quality=1&danmaku=0"
