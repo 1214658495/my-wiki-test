@@ -6,37 +6,9 @@ sidebar_position: 3
 
 ## Camera Information Link
   
-  <p style={{
-    fontSize: '1.1em',
-    color: '#495057',
-    marginBottom: '20px',
-    lineHeight: '1.6'
-  }}>
-    Access comprehensive camera specifications, technical documentation, and support resources through our official portal.
-  </p>
+Access comprehensive camera specifications, technical documentation, and support resources through our official portal.
 
-  <div style={{
-    width: '100%',
-    height: '600px',
-    border: '1px solid #e9ecef',
-    borderRadius: '6px',
-    overflow: 'hidden'
-  }}>
-    <iframe
-      src="http://service.sensing-world.com/"
-      style={{
-        width: '100%',
-        height: '100%',
-        border: 'none'
-      }}
-      title="Camera Information Portal"
-      sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-      referrerPolicy="no-referrer"
-    />
-  </div>
-
-
-## Installation Instruction
+Visit the [Get Product Information](http://service.sensing-world.com/) to view the details.
 
 
 
