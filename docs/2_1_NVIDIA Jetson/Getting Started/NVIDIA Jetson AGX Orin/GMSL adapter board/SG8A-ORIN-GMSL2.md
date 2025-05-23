@@ -18,7 +18,7 @@ making the camera's cable routing flexible and easy to install in automotive app
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" style={{width: 500, height:'auto'}} />
+    <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" style={{width: 450, height:'auto'}} />
 </div>
 
 
@@ -50,7 +50,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | Cable | 50 Ohm coaxial cable |
 | Compatibility | NVIDIA Jetson AGX Orin Development Kit | -->
 
-#### Detailed Specifications
+<!-- #### Detailed Specifications -->
 
 | Item              | Specification             |
 |-------------------|---------------------------|
@@ -58,7 +58,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | Dimension         | 104mm*74mm                |
 | Weight            | 50g                       |
 | Connector         | 1x120Pin High-density connectors |
-| Camera input      | Camera*8(GMSL2/GMSL1)     |
+| Camera input      | Camera*8(GMSL2/GMSL)     |
 | Trigger In        | 12Pin Sync In             |
 | Deserializer      | MAXIM(ADI) MAX9296A*4     |
 | Camera Connector  | Fakra Z Code              |
@@ -68,18 +68,17 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | Adaptation kit    | Jetson AGX Orin/Xavier    |
 
 
-
-#### Interface Diagram
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL-intro.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 500, height:'auto'}} />
-</div>
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL-intro2.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 600, height:'auto'}} />
+### Hardware Overview
+<div style={{textAlign: 'left'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL-intro" 
+    style={{width: 760, height:'auto'}} />
 </div>
 
-#### Product block diagram
+### Block Diagram
+<br />
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 600, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL-intro" 
+    style={{width: 670, height:'auto'}} />
 </div>
 
 
