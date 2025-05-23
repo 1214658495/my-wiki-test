@@ -63,6 +63,12 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 </div>
 
 ### Block Diagram
+:::caution Attention
+（1）The I2C bus number is the hardware location (matching the connector J2 pin). The bus number does not necessarily correspond to what is listed in the software.
+
+（2）The coaxial power supply is shared, but each GMSL line has its own filter.
+:::
+
 <br />
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" 
@@ -75,21 +81,38 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 ### Supported Camera List
 
 <!-- Offline version -->
-|Product|Max Resolution|Output Format|Camera interface|Jetson Agx Orin Supported|Jetpack5.1.2-L4T35.4.1|Jetpack6.0-L4T36.3|
-|:----|:----|:----|:----|:----|:----|:----|
-|SG2-IMX390C-GMSL2-Hxxx|1920 x 1080 @ 30fps|RAW12|GMSL2|YES|YES|YES|
-|SG2-IMX662C-GMSL2-Hxxx|1936 x 1100 @ 30fps|RAW12|GMSL2|YES|/|YES|
-|SG2-AR0233C-GMSL2-Hxxx|1920 x 1080 @ 30fps|RAW12|GMSL2|YES|YES|YES|
-|SG2-OX03CC-GMSL2-Hxxx|1920 x 1080 @ 30fps|RAW10|GMSL2|YES|YES|YES|
-|SG2-OX03CC-GMSL2F-Hxxx|1920 x 1080 @ 30fps|RAW10|GMSL2|YES|YES|/|
-|SG5-IMX490C-GMSL2-Hxxx|2880 x 1860 @ 30fps|RAW12|GMSL2|YES|YES|/|
-|SG8-AR0820C-GMSL2-Hxxx|3848 x 2168 @ 30fps|RAW12|GMSL2|YES|YES|YES|
-|SG8-AR0820C-G2A-Hxxx|3848 x 2168 @ 30fps|RAW12|GMSL2|YES|YES|YES|
-|SG8-AR0823C-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|/|YES|
-|SG8-OX08BC-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|YES|YES|
-|SG8-OX08BC-G2A-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|YES|YES|
-|SG8-OX08DC-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|/|YES|
-|SG8-IMX728C-GMSL2-Hxxx|3840 x 2160 @ 30fps|RAW12|GMSL2|YES|YES|YES|
+| Output Data | Camera                      | Jetpack 5.1.2 | Jetpack 6.0DP | Jetpack 6.0 | Jetpack 6.1 | Jetpack 6.2 |
+| ---- | --------------------------- | ------------- | ------------- | ----------- | ----------- | ----------- |
+| YUV  | SG1-OX01F10C-GMSL-Hxxx      | YES           | YES           | YES         | \           | \           |
+| YUV  | SG1S-OX01F10C-G1G-Hxxx      | YES           | \             | \           | \           | \           |
+| YUV  | SG2-AR0231C-0202-GMSL-Hxxx  | YES           | YES           | YES         | \           | \           |
+| YUV  | SG2-AR0233C-5200-G2A-Hxxx   | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG2-IMX390C-5200-G2A-Hxxx   | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG2-OX03CC-5200-GMSL2F-Hxxx | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG3S-ISX031C-GMSL2-Hxxx     | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG3S-ISX031C-GMSL2F-Hxxx    | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG3S-OX03JC-G2F-Hxxx        | YES           | YES           | YES         | \           | \           |
+| YUV  | SG5-IMX490C-5300-GMSL2-Hxxx | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG5-OX05BC-4000-GMSL2-Hxxx  | YES           | \             | \           | \           | \           |
+| YUV  | SG8S-AR0820C-5300-G2A-Hxxx  | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG8-OX08BC-5300-GMSL2-Hxxx  | YES           | YES           | YES         | \           | YES         |
+| YUV  | SG8S-AR0820C-5300-G3A-Hxxx  | \             | \             | YES         | \           | \           |
+| YUV  | DMSBBFAN                    | YES           | \             | \           | \           | YES         |
+| RAW  | SG2-AR0233C-G2A-Hxxx        | YES           | \             | YES         | \           | \           |
+| RAW  | SG2-IMX390C-G2A-Hxxx        | YES           | YES           | YES         | \           | \           |
+| RAW  | SG2-IMX662C-G2A-Hxxx        | \             | \             | YES         | \           | \           |
+| RAW  | SG2S-OX03CC-GMSL2-Hxxx      | YES           | \             | YES         | \           | \           |
+| RAW  | SG2S-OX03CC-G2F-Hxxx        | \             | \             | \           | \           | \           |
+| RAW  | SG3S-IMX623C-G2F-Hxxx       | \             | \             | \           | \           | \           |
+| RAW  | SG5-IMX490C-GMSL2-Hxxx      | YES           | \             | \           | \           | \           |
+| RAW  | SG8S-AR0820C-G2A-Hxxx       | YES           | \             | YES         | \           | \           |
+| RAW  | SG8S-AR0823C-G2A-Hxxx       | \             | \             | YES         | \           | \           |
+| RAW  | SG8-IMX728C-GMSL2-Hxxx      | YES           | \             | YES         | \           | \           |
+| RAW  | SG8-IMX728C-G2G-Hxxx        | YES           | \             | YES         | \           | \           |
+| RAW  | SG8S-OX08BC-G2A-Hxxx        | YES           | YES           | YES         | \           | \           |
+| RAW  | SG8-OX08DC-G2A-Hxxx         | \             | \             | YES         | \           | \           |
+| RAW  | SG8-IMX678C-G2A-Hxxx        | \             | \             | \           | YES         | \           |
+| RAW  | SG8-1H1-G2A-Hxxx            | YES           | \             | \           | \           | \           |
 
 
 <br />
@@ -97,14 +120,14 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 #### Parts List
 
-| No. | Product model                 | Quantity | Remark                |
+| No.           | Product model                 | Quantity | Remark                |
 |---------------|-------------------------------|----------|-----------------------|
 | 1             | Power adapter                 | 1        | Standard configuration|
 | 2             | Power switching harness       | 1        | Standard configuration|
 | 3             | SG8A-ORIN-GMSL2 adapter board | 1        | Standard configuration|
 | 4             | copper column , M2.5*16       | 3        | Standard configuration|
 | 5             | screw, M2.5-F                 | 3        | Standard configuration|
-| 6             | Jetson AGX Orin DK          | 1        | optional configuration|
+| 6             | Jetson AGX Orin DK            | 1        | optional configuration|
 
 <br />
 #### Kit Contents
@@ -136,11 +159,14 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 ### Software Preparation
 **Step 1.** SDK Download
 
-|   | Model of SENSING camera used           | JP version for customer NVIDIA devices | Driver package download link                                                                                                                                                                        |
-|---|----------------------------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | Camera connected to GMSL (YUV format)  | JP5.1.2                                | https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1 |
-| 2 | Camera connected to GMSL 2(YUV format) | JP6                                    | https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1 |
-| 3 | Camera connected to GMSL 2(YUV format) | JP6.1                                  | https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1 |
+| SENSING Camera | JP version for customer NVIDIA devices | Driver pkg download link | Driver pkg download method |
+|------------------------------|---------------------------------------|-----------------------------|-------------------------------|
+| GMSL Camera (YUV Data)<br/>(e.g.: SG2-AR0231C-0202-GMSL-Hxxx) | JP5.1.2 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL Camera (YUV Data)<br/>(e.g.: SG2-AR0231C-0202-GMSL-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | JP5.1.2| [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (RAW Data)<br/>(e.g.: SG2-AR0233C-GMSL2-Hxxx) | JP5.1.2 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_RAW_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (RAW Data)<br/>(e.g.: SG2-AR0233C-GMSL2-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_RAW_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 
 <br />
 
