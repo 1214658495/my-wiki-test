@@ -18,7 +18,7 @@ making the camera's cable routing flexible and easy to install in automotive app
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL.png" alt="SG8A-ORIN-GMSL" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL.png" alt="SG8A-ORIN-GMSL" 
     style={{width: 450, height:'auto'}} />
 </div>
 
@@ -58,14 +58,14 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 ### Hardware Overview
 <div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL2-overview" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL2-overview" 
     style={{width: 760, height:'auto'}} />
 </div>
 
 ### Block Diagram
 <br />
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" 
     style={{width: 670, height:'auto'}} />
 </div>
 
@@ -109,7 +109,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 <br />
 #### Kit Contents
 <div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 900, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 900, height:'auto'}} />
 </div>
 <br />
 
