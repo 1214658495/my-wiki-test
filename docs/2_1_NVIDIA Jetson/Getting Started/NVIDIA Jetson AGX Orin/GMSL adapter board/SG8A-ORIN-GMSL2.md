@@ -97,7 +97,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 #### Parts List
 
-| Serial number | Product model                 | Quantity | Remark                |
+| No. | Product model                 | Quantity | Remark                |
 |---------------|-------------------------------|----------|-----------------------|
 | 1             | Power adapter                 | 1        | Standard configuration|
 | 2             | Power switching harness       | 1        | Standard configuration|
@@ -106,9 +106,12 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | 5             | screw, M2.5-F                 | 3        | Standard configuration|
 | 6             | Jetson AGX Orin DK          | 1        | optional configuration|
 
+<br />
+#### Kit Contents
 <div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-complete.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 830, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 900, height:'auto'}} />
 </div>
+<br />
 
 #### Follow the steps below to install the product:
 
