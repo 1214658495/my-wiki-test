@@ -18,9 +18,9 @@ making the camera's cable routing flexible and easy to install in automotive app
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" style={{width: 450, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL.png" alt="SG8A-ORIN-GMSL" 
+    style={{width: 450, height:'auto'}} />
 </div>
-
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer">
@@ -40,18 +40,6 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 ### Specification
 
-<!-- Offline version as backup -->
-<!-- | Feature | Description |
-|---------|-------------|
-| Interface | GMSL/GMSL2 |
-| Camera Support | Up to 8 cameras |
-| Power Supply | PoC (Power over Coax) |
-| Protocol | GMSL and GMSL2 compatible |
-| Cable | 50 Ohm coaxial cable |
-| Compatibility | NVIDIA Jetson AGX Orin Development Kit | -->
-
-<!-- #### Detailed Specifications -->
-
 | Item              | Specification             |
 |-------------------|---------------------------|
 | Model             | SG8A-ORIN-GMSL2           |
@@ -70,23 +58,21 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 
 ### Hardware Overview
 <div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL-intro" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL2-overview" 
     style={{width: 760, height:'auto'}} />
 </div>
 
 ### Block Diagram
 <br />
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL-intro" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" 
     style={{width: 670, height:'auto'}} />
 </div>
 
 
 
-
 <br />
 ### Supported Camera List
-
 
 <!-- Offline version -->
 |Product|Max Resolution|Output Format|Camera interface|Jetson Agx Orin Supported|Jetpack5.1.2-L4T35.4.1|Jetpack6.0-L4T36.3|
@@ -121,7 +107,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | 6             | Jetson AGX Orin DK          | 1        | optional configuration|
 
 <div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-complete.png" alt="SG8A-ORIN-GMSL-intro" style={{width: 830, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/SG8A-ORIN-GMSL2-complete.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 830, height:'auto'}} />
 </div>
 
 #### Follow the steps below to install the product:
