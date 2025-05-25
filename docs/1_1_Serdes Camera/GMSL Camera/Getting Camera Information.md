@@ -12,7 +12,7 @@ sidebar_position: 3
 - Structural 3D data
 - Camera intrinsic parameters data
 - SerDes configuration files
-- Images Sample
+- Images Sample (Specifically for cameras with an ISP)
 
 <!-- 
 Access comprehensive camera specifications, technical documentation, and support resources through our official portal.
@@ -47,7 +47,7 @@ Visit the [Get Product Information](http://service.sensing-world.com/) to view t
   </p>
 
   <div style={{textAlign: 'center', marginBottom: '20px'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/SN_code.png" alt="SN Code Example" style={{width: 500, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{width: 300, height:'auto'}} />
   </div>
 </div>
 
