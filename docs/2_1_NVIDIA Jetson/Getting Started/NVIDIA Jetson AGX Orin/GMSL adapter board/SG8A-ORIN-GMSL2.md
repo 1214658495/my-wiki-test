@@ -96,10 +96,9 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | 11  | SG5-OX05BC-4000-GMSL2-Hxxx  | YUV422  | YES           | \             | \           | \           | \           |
 | 12  | SG8S-AR0820C-5300-G2A-Hxxx  | YUV422  | YES           | YES           | YES         | \           | YES         |
 | 13  | SG8-OX08BC-5300-GMSL2-Hxxx  | YUV422  | YES           | YES           | YES         | \           | YES         |
-| 14  | SG8S-AR0820C-5300-G3A-Hxxx  | YUV422  | \             | \             | YES         | \           | \           |
-| 15  | DMSBBFAN                    | YUV422  | YES           | \             | \           | \           | YES         |
-| 16  | SG3S-IMX623C-G2F-Hxxx       | RAW12  | \             | \             | \           | \           | \           |
-| 17  | SG8-IMX728C-G2G-Hxxx        | RAW12  | YES           | \             | YES         | \           | \           |
+| 14  | DMSBBFAN                    | YUV422  | YES           | \             | \           | \           | YES         |
+| 15  | SG3S-IMX623C-G2F-Hxxx       | RAW12  | \             | \             | \           | \           | \           |
+| 16  | SG8-IMX728C-G2G-Hxxx        | RAW12  | YES           | \             | YES         | \           | \           |
 
 
 <br />
@@ -222,7 +221,7 @@ For the beginners to NVIDIA Jetson, we highly recommand NVIDIA SDK Manager.
    Use the following command to light the camera!
    gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
    ```
-7. Select one of the commands prompted above to light the camera
+7. Select one of the commands prompted above to light the camera.
    
 <br />
 #### Integration with SENSING Driver Source Code
