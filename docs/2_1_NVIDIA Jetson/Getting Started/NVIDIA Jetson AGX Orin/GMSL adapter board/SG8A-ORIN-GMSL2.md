@@ -162,6 +162,9 @@ We can use NVIDIA SDK Manager Linux Software or we can directly use the NVIDIA L
 For the beginners to NVIDIA Jetson, we highly recommand NVIDIA SDK Manager.
 
 **Step 3.** Quick Bring Up.<br />
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 700, height:'auto'}} />
+</div>
 
 1. Copy the driver package to the working directory of the Jetson device, such as “/home/nvidia”
 
