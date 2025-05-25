@@ -5,6 +5,7 @@ sidebar_position: 1
 # Camera Selection
 
 ## Product Information Table
+This table provides a comprehensive overview of available GMSL camera models, including their key specifications such as sensor type, resolution, frame rate, and output data format. The cameras range from basic 720p models to high-end 4K models, offering various options for different application requirements. Each camera is linked to its detailed product page for more information.
 
 | No. | Products | Sensor | Resolution | Frame Rate | Output Data | Products Link |
 |:---|:-----------------------------|:----------------------|:--------------|:----------|:--------------|:-----|
@@ -20,18 +21,8 @@ sidebar_position: 1
 | 10 | SG3S-IMX623C-G2F-Hxxx | SONY IMX623 RGGB | 1920H*1536V | MAX 60fps | MIPI / RAW 12 | [Link](https://sensing-world.com/en/h-pd-108.html?recommendFromPid=0&fromMid=1544) |
 | 11 | SG5-IMX490C-5300-GMSL2-Hxxx | SONY IMX490 RGGB | 2880H*1860V | 30fps | YUV422@8bit | [Link](https://sensing-world.com/en/h-pd-24.html?recommendFromPid=0&fromMid=1544) |
 | 12 | SG8S-AR0820C-5300-G2A-Hxxx | ONSEMI AR0820 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [Link](https://sensing-world.com/en/h-pd-26.html?recommendFromPid=0&fromMid=1544) |
-| 14 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [Link](https://sensing-world.com/en/h-pd-132.html?recommendFromPid=0&fromMid=1544) |
+| 13 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [Link](https://sensing-world.com/en/h-pd-132.html?recommendFromPid=0&fromMid=1544) |
 
 <!-- :::tip 提示
 此表格使用 Markdown 格式，可以直接在文件中编辑和更新。点击"[Product Link]"可在新标签页中打开产品详细页面。
 ::: -->
-
-## What's next?
-
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
