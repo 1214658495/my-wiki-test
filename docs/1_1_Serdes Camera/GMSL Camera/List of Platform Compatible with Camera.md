@@ -4,6 +4,9 @@ sidebar_position: 2
 
 # List of Platform Compatible with Camera
 
+
+**The table below lists the current Cameras from SENSING, the platforms they can connect to and are compatible with, as well as the system version information of those platforms.**
+
 <div style={{ 
   marginBottom: '10px', 
   color: '#666', 
@@ -17,7 +20,7 @@ sidebar_position: 2
   style={{ 
     overflowX: 'auto', 
     overflowY: 'auto', 
-    maxHeight: '600px', 
+    maxHeight: '730px', 
     width: '100%',
     cursor: 'pointer',
     transition: 'all 0.3s ease'
@@ -43,7 +46,7 @@ sidebar_position: 2
     }
   }}
 >
-<table style={{ width: '200%', borderCollapse: 'collapse' }}>
+<table style={{ width: '230%', borderCollapse: 'collapse' }}>
 <thead>
 <tr>
 <th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>No.</th>
@@ -276,7 +279,7 @@ sidebar_position: 2
 
 
 
-## What's next?
+<!-- ## What's next?
 
 - Read the [official documentation](https://docusaurus.io/)
 - Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
@@ -284,4 +287,4 @@ sidebar_position: 2
 - Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
 - Add a [search bar](https://docusaurus.io/docs/search)
 - Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support) -->
