@@ -81,25 +81,25 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 ### Supported Camera List
 
 <!-- Offline version -->
-| Output Data | Camera                      | Jetpack 5.1.2 | Jetpack 6.0DP | Jetpack 6.0 | Jetpack 6.1 | Jetpack 6.2 |
-| ---- | --------------------------- | ------------- | ------------- | ----------- | ----------- | ----------- |
-| YUV  | SG1-OX01F10C-GMSL-Hxxx      | YES           | YES           | YES         | \           | \           |
-| YUV  | SG1S-OX01F10C-G1G-Hxxx      | YES           | \             | \           | \           | \           |
-| YUV  | SG2-AR0231C-0202-GMSL-Hxxx  | YES           | YES           | YES         | \           | \           |
-| YUV  | SG2-AR0233C-5200-G2A-Hxxx   | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG2-IMX390C-5200-G2A-Hxxx   | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG2-OX03CC-5200-GMSL2F-Hxxx | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG3S-ISX031C-GMSL2-Hxxx     | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG3S-ISX031C-GMSL2F-Hxxx    | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG3S-OX03JC-G2F-Hxxx        | YES           | YES           | YES         | \           | \           |
-| YUV  | SG5-IMX490C-5300-GMSL2-Hxxx | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG5-OX05BC-4000-GMSL2-Hxxx  | YES           | \             | \           | \           | \           |
-| YUV  | SG8S-AR0820C-5300-G2A-Hxxx  | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG8-OX08BC-5300-GMSL2-Hxxx  | YES           | YES           | YES         | \           | YES         |
-| YUV  | SG8S-AR0820C-5300-G3A-Hxxx  | \             | \             | YES         | \           | \           |
-| YUV  | DMSBBFAN                    | YES           | \             | \           | \           | YES         |
-| RAW  | SG3S-IMX623C-G2F-Hxxx       | \             | \             | \           | \           | \           |
-| RAW  | SG8-IMX728C-G2G-Hxxx        | YES           | \             | YES         | \           | \           |
+| No. | Camera                      | Output Data | Jetpack 5.1.2 | Jetpack 6.0DP | Jetpack 6.0 | Jetpack 6.1 | Jetpack 6.2 |
+|-----| --------------------------- | ---- | ------------- | ------------- | ----------- | ----------- | ----------- |
+| 1   | SG1-OX01F10C-GMSL-Hxxx      | YUV422  | YES           | YES           | YES         | \           | \           |
+| 2   | SG1S-OX01F10C-G1G-Hxxx      | YUV422  | YES           | \             | \           | \           | \           |
+| 3   | SG2-AR0231C-0202-GMSL-Hxxx  | YUV422  | YES           | YES           | YES         | \           | \           |
+| 4   | SG2-AR0233C-5200-G2A-Hxxx   | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 5   | SG2-IMX390C-5200-G2A-Hxxx   | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 6   | SG2-OX03CC-5200-GMSL2F-Hxxx | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 7   | SG3S-ISX031C-GMSL2-Hxxx     | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 8   | SG3S-ISX031C-GMSL2F-Hxxx    | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 9   | SG3S-OX03JC-G2F-Hxxx        | YUV422  | YES           | YES           | YES         | \           | \           |
+| 10  | SG5-IMX490C-5300-GMSL2-Hxxx | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 11  | SG5-OX05BC-4000-GMSL2-Hxxx  | YUV422  | YES           | \             | \           | \           | \           |
+| 12  | SG8S-AR0820C-5300-G2A-Hxxx  | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 13  | SG8-OX08BC-5300-GMSL2-Hxxx  | YUV422  | YES           | YES           | YES         | \           | YES         |
+| 14  | SG8S-AR0820C-5300-G3A-Hxxx  | YUV422  | \             | \             | YES         | \           | \           |
+| 15  | DMSBBFAN                    | YUV422  | YES           | \             | \           | \           | YES         |
+| 16  | SG3S-IMX623C-G2F-Hxxx       | RAW12  | \             | \             | \           | \           | \           |
+| 17  | SG8-IMX728C-G2G-Hxxx        | RAW12  | YES           | \             | YES         | \           | \           |
 
 
 <br />
@@ -146,7 +146,7 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 ### Software Preparation
 **Step 1.** SDK Download
 
-| SENSING Camera | JP version for customer NVIDIA devices | Driver pkg download link | Driver pkg download method |
+| Camera | JP version for customer NVIDIA devices | Driver pkg download link | Driver pkg download method |
 |------------------------------|---------------------------------------|-----------------------------|-------------------------------|
 | GMSL Camera (YUV Data)<br/>(e.g.: SG2-AR0231C-0202-GMSL-Hxxx) | JP5.1.2 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 | GMSL Camera (YUV Data)<br/>(e.g.: SG2-AR0231C-0202-GMSL-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
