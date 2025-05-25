@@ -259,6 +259,23 @@ sidebar_position: 2
 </table>
 </div>
 
+<br />
+<div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f5f5f5', borderRadius: '5px' }}>
+  <h3 style={{ marginBottom: '10px' }}>Jetpack Version Information</h3>
+  <p>
+    <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> are software development kits (SDK) for NVIDIA Jetson platforms that include:
+  </p>
+  <ul>
+    <li>Linux kernel and drivers</li>
+    <li>CUDA toolkit for GPU acceleration</li>
+    <li>Deep learning frameworks and libraries</li>
+    <li>Computer vision libraries</li>
+    <li>Development tools and documentation</li>
+  </ul>
+  <p>
+    These versions provide optimized performance and compatibility for GMSL cameras on Jetson platforms, ensuring reliable camera operation and image processing capabilities.
+  </p>
+</div>
 
 
 
