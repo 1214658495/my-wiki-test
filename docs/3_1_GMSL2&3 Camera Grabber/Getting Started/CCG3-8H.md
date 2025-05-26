@@ -117,9 +117,9 @@ In this wiki, we will show you how to use the CCG3-8H.
 
 #### Follow the steps below to install the product:
 
-1. Connect the GMSL camera to the CCG3-8H board using the coaxial cable
-2. Insert the CCG3-8H board into the PCIe slot of the host computer
-3. Connect the power supply to the CCG3-8H board
+1. Connect the GMSL camera to the CCG3-8H using the coaxial cable
+2. Insert the CCG3-8H into the PCIe slot of the host computer
+3. Connect the power supply to the CCG3-8H
 4. Power on the system
 
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
