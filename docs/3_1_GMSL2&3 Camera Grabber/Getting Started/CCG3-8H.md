@@ -138,126 +138,200 @@ In this wiki, we will show you how to use the CCG3-8H.
 ### Software Preparation
 **Step 1.** SDK Download
 
-| Camera | JP version for customer NVIDIA devices | Driver pkg download link | Driver pkg download method |
+| Camera | Linux system version | Driver pkg download link | Driver pkg download method |
 |------------------------------|---------------------------------------|-----------------------------|-------------------------------|
-| GMSL Camera (YUV Data)<br/>(e.g.: SG2-AR0231C-0202-GMSL-Hxxx) | JP5.1.2 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
-| GMSL Camera (YUV Data)<br/>(e.g.: SG2-AR0231C-0202-GMSL-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
-| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | JP5.1.2| [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
-| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
-| GMSL2 Camera (RAW Data)<br/>(e.g.: SG2-AR0233C-GMSL2-Hxxx) | JP5.1.2 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_RAW_JP5.1.2_L4TR35.4.1) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
-| GMSL2 Camera (RAW Data)<br/>(e.g.: SG2-AR0233C-GMSL2-Hxxx) | JP6.0 | [Link](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_RAW_JP6.0_L4TR36.3.0) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04 and Ubuntu 20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+
 
 <br />
 
-**Step 2.** Perform a system update on the NVIDIA Jetson device.<br />
-We can use NVIDIA SDK Manager Linux Software or we can directly use the NVIDIA Linux Driver Package via Linux command line
- to flash JetPack OS into the NVIDIA Jetson device. 
-For the beginners to NVIDIA Jetson, we highly recommand NVIDIA SDK Manager.
+**Step 2.** Quick Bring Up.<br />
+#### 1. Compile the driver
 
-**Step 3.** Quick Bring Up.<br />
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{width: 700, height:'auto'}} />
-</div>
+Before using the driver, you need to compile it. The `Driver` directory contains a `Makefile` that can build both the driver and application programs. You can either build the entire project using the top-level `Makefile`, or you can navigate to individual directories and compile them separately.
 
-1. Copy the driver package to the working directory of the Jetson device, such as “/home/nvidia”
+To build the driver:
 
-   ```
-   /home/nvidia/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1
-   ```
-2. Enter the driver directory
+```
+make
+```
 
-   ```
-   cd SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1
-   ```
-3. Give executable permissions to the script "quick_bring_up.sh" and execute the script
+If you need to clean the build directory and rebuild from scratch:
 
-   ```
-   chmod a+x quick_bring_up.sh
-   sudo ./quick_bring_up.sh
-   ```
-4. Select the camera type. This step will install Image and DTB, after the script run complete.
-   You need to reboot the device to let the Image and DTB take effect.
-   For example:
+```
+make clean
+make
+```
 
-   ```
-   This package is use for Sensing SG8A-ORING-GMSL on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl1
-   2.sgx-yuv-gmsl2
-   Press select your camera type:
-   2
-   ```
+#### 2. Usage Instructions
 
-   At this point, you should type 1 to select your camera type and then hit Enter
-5. After the device reboots, enter the driver directory and run the script "quick_bring_up.sh"
+#### 2.1 Loading the Driver
 
-   ```
-   sudo ./quick_bring_up.sh
-   ```
-6. Select the camera type. Select the sgx-yuv-gmsl2 camera type, then select SG2-IMX390C-5200-GMSL2,
-   and finally enter 0-7 the camera port you are connected to to turn on the camera.
+To load the driver, you need to run the script `load_modules.sh` with administrator privileges. In the `bash` directory, execute the following command:
 
-   ```
-   This package is use for Sensing SG8A-ORING-GMSL on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl1
-   2.sgx-yuv-gmsl2
-   Press select your camera type:
-   2
-   Press select your yuv camera type:
-   0:SG2-IMX390C-5200-GMSL2
-   1:SG2-AR0233-5300-GMSL2
-   2.SG2-OX03CC-5200-GMSL2F
-   3.SG3-ISX031C-GMSL2F
-   4.SG5-IMX490C-5200-GMSL2
-   5.SG8-AR0820C-5300-GMSL2
-   6.SG8-OX08BC-5300-GMSL2
-   0
-   Press select your camera port [0-7]:
-   0
-   ready bring up camera
-   Use the following command to light the camera!
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
-7. Select one of the commands prompted above to light the camera.
-   
-<br />
-#### Integration with SENSING Driver Source Code
+```
+sudo ./load_modules.sh
+```
 
-1. Compile Image & dtb
-   Refer to the following command to integrate Dtb and Kernel source code to your kernel
+If the driver loads successfully, you will see the following message:
 
-   ```
-   cp camera-driver-package/source/hardware Linux_for_Tegra/source/public/$YourDir/hardware -r
-   cp camera-driver-package/source/kernel Linux_for_Tegra/source/public/$YourDir/kernel -r
-   ```
-2. Go to the root directory of your source code and recompile
+```
+Loading Pcie driver...
+Pcie driver installed correctly.
+Video devices were recognized.
+DONE
+```
 
-   ```
-   cd  Linux_for_Tegra/source/public/$YourDir/
-   export CROSS_COMPILE_AARCH64_PATH=toolchain-path
-   export CROSS_COMPILE_AARCH64=toolchain-path/bin/aarch64-buildroot-linux-gnu-
-   mkdir kernel_out
-   ./nvbuild.sh -o $PWD/kernel_out
-   ```
-3. Install the newly generated Image and dtb to your nvidia device and reboot to let them take effect
+Additionally, video devices and control interface files will be created in the `/dev` directory:
 
-   ```
-   dtb:kernel_out/arch/arm64/boot/dts/nvidia/
-   Image: kernel_out/arch/arm64/boot/Image
-   ```
-4. Install camera driver
+- `/dev/video0`, `/dev/video1`, `/dev/video2`, `/dev/video3` (video devices for each Capture card)
+- `/dev/xdma0_bypass`, `/dev/xdma0_control`, `/dev/xdma0_user` (control interface devices for each Capture card)
 
-   ```
-   sudo insmod ./ko/max9295.ko
-   sudo insmod ./ko/max9296.ko
-   sudo insmod ./ko/sgx-yuv-gmsl2.ko
-   ```
-5. Bring up the camera
+Note: The numbers (0, 1, 2, etc.) correspond to the Capture card index. For example, `xdma0_bypass` corresponds to the first Capture card, `xdma1_bypass` to the second, and so on.
 
-   ```
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
+#### 2.2 Initializing Capture Cards
 
-<br />
+To initialize the first Capture card and configure the attached camera, use the following command:
+
+```
+sudo ./pcie_init_card0.sh
+```
+
+If the script fails, you may need to rebuild the driver and applications as described earlier.
+
+#### 2.3 Image Testing
+
+You can test the video stream from your camera using the open-source application `guvcview`. If it's not installed, you can install it with:
+
+```
+sudo apt-get install guvcview
+```
+
+To test the video streams, run the following commands for each video device:
+
+```
+guvcview -d /dev/video0
+guvcview -d /dev/video1
+```
+
+You should be able to see live video from each connected camera.
+
+#### 3. Configuring Capture Cards
+
+There are two example scripts in this directory: `pcie_init_card0.sh` and `pcie_init_card1.sh`. These scripts are used to initialize Capture cards and configure the attached cameras. You can modify these scripts according to your camera's specifications.
+
+#### Configuration Parameters
+
+In the configuration scripts, the following parameters can be modified to customize the behavior of the Capture cards and cameras.
+
+#### 3.1 Modify Card Number
+
+In the script, the card number is specified at line 10:
+
+```
+set_card 0
+```
+
+The `0` refers to the first Capture card. Change this value to `1` for the second card, and so on.
+
+#### 3.2 Camera anc config
+
+Lines 27-34 in the script configure whether the camera has ANC (Ancillary) functionality. Set `0` to enable ANC or `1` to disable it. The `x` refers to the interface number (0-7 for the first card, 8-15 for the second card, and so on).
+
+```
+camera_anc_enable[x]
+```
+
+#### 3.3 Image Output Format
+
+"The lines 38-45 correspond to the camera output format. RAW can be ignored, and incorrect configuration of YUYV or UYVY may cause image display issues.
+
+The first parameter (shown as 0 below) indicates which interface to use. For the first Capture capture card, channels 1 to 8 correspond to 0-7, and for the second Capture capture card, channels 1 to 8 correspond to 8-15.
+
+The second parameter specifies the camera's output image format, which can be either 'YUYV' or 'UYVY'."
+
+```
+video_output_yuv_format 0 "UYVY"
+```
+
+#### 3.4 Trigger Mode
+
+Configure the trigger mode in the script. The options are:
+
+- `0`: No trigger (master mode only, no external trigger needed).
+- `1`: Reserved.
+- `2`: Internal trigger (PCIE card triggers the camera at a specified frequency).
+- `3`: External trigger (triggered by an external signal).
+
+```
+card_trigger_signal_mode       	"2"
+```
+
+#### 3.5 External Trigger Configuration
+
+If you use an external trigger, configure the following parameters:
+
+```
+card_external_signal_input_fps 	"1" Hz
+camera_external_output_fps     	"30" Hz
+```
+
+#### 3.6 Internal Trigger Configuration
+
+When the `card_trigger_signal_mode` parameter is set to "2", the frequency of the internally generated trigger signal is configured through the `camera_inner_output_fps` on line 66, with the unit in Hz
+
+```
+camera_inner_output_fps        	"30" Hz
+```
+
+#### 3.7 Trigger Delay
+
+You can set the trigger delay for each camera:
+
+```
+camera_triger_delay[x]=0
+```
+
+#### 3.8 Camera Resolution
+
+Configure the resolution for each camera interface (e.g., for interface `0`, set a resolution of `1920x1080`):
+
+```
+camera_resolution 0 1920  1080
+```
+
+#### 3.9 Camera Initialization
+
+The `camera_serdes_type` parameter initializes the camera sensor, serializer, and deserializer. For example:
+
+```
+camera_serdes_type[0]=1
+```
+
+Common YUYV or UYVY Configurations
+
+| **Serializer** | ANC  | **Configuration Parameter** |
+| -------------- | ---- | --------------------------- |
+| MAX96705          | no   | 0                           |
+| MAX9295           | no   | 1                           |
+| MAX96717F         | no   | 2                           |
+| MAX9295           | yes  | 3                           |
+| MAX96717F         | yes  | 4                           |
+
+Common RAW or RAW12 Configurations
+
+| **Serializer** | **Sensor Model** | **Configuration Parameter** |
+| -------------- | ---------------- | --------------------------- |
+| MAX9295           | AR0233           | 102                         |
+| MAX9295           | AR0820           | 103                         |
+| MAX9295           | IMX390           | 104                         |
+| MAX9295           | IMX490           | 105                         |
+| MAX9295           | ISX031           | 11                          |
+| MAX9295           | IMX728           | 106                         |
+| MAX9295           | SC2331AT         | 108                         |
+| MAX9295           | OX08D            | 109                         |
+| MAX96717F         | IMX623           | 113                         |
+
 ## FAQ
 
 <!-- For details, please click [here](../../../FAQ/FAQ_jetson) -->
