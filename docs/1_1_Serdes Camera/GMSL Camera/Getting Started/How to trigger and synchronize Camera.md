@@ -69,3 +69,6 @@ i2ctransfer -y -f 16 w3@0x40 0x02 0xD8 0x07
 
 > **Note:** Always consult your device's datasheet for the correct register addresses and configuration values.
 
+:::tip
+For additional configuration options or specific requirements, please contact our technical support team for assistance.
+:::

@@ -2,11 +2,11 @@
 sidebar_position: 6
 ---
 
-# FAQs for Jetson Usage
+# FAQs for Camera Grabber
 
 This document contains all the frequently asked questions related to Jetson series products. This will be very helpful if you are suffering from any issues when using the Jetson.
 
-#### Q1: Troubleshooting with SG8A-ORIN-GMSL2
+#### Q1: Troubleshooting with CCH3-8H
 <!-- For details, please click [here](/Troubleshooting_Installation) -->
 <!-- <div style={{textAlign: 'center', position: 'relative', width: '100%', height: '800px', marginBottom: '20px'}}>
     <iframe

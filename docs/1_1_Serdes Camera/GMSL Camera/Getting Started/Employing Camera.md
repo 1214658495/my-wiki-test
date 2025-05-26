@@ -59,7 +59,7 @@ SENSING offers GMSL camera grabber products that are pre-adapted for our cameras
 - **Driver Support**: Ubuntu 18.04/20.04
 
 ### Integration Process
-- e.g.: [Camera Integration with GMSL Camera Grabber Documentation](/docs/3_1_GMSL2&3%20Camera%20Grabber/Introduction.md)
+- e.g.: [Camera Integration with GMSL Camera Grabber Documentation](/docs/3_1_GMSL2&3%20Camera%20Grabber/Getting%20Started/CCG3-8H)
 1. **Hardware Setup**
    - Connect cameras to grabber
    - Connect grabber to host system
