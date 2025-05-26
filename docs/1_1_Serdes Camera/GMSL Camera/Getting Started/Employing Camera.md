@@ -6,12 +6,10 @@ sidebar_position: 3
 
 This guide describes different scenarios for employing our cameras in various platforms and systems. Each integration method has its specific requirements and technical considerations.
 
-<!-- For detailed diagrams and examples, please refer to our [Integration Diagrams and Examples](./integration-diagrams) guide. -->
 
 ## 1. Camera Integration with NVIDIA Platform
 
 SENSING provides NVIDIA platform products that are pre-adapted for our cameras. This integration ensures optimal performance and reliability.
-<!-- - Visit our official website: [Sensing Official Website](https://sensing-world.com/en/h-col-142.html) -->
 
 ### Available Solutions
 - **[NVIDIA Jetson Series](https://sensing-world.com/en/h-col-142.html)**: Compatible with Jetson AGX Xavier, Jetson NX, and Jetson Nano. 
@@ -25,7 +23,7 @@ SENSING provides NVIDIA platform products that are pre-adapted for our cameras. 
 
 ### Integration Steps
 - e.g.: [Camera Integration with NVIDIA Jetson AGX Orin GMSL Adapter Board Documentation](/docs/2_1_NVIDIA%20Jetson/Getting%20Started/NVIDIA%20Jetson%20AGX%20Orin/GMSL%20adapter%20board/SG8A-ORIN-GMSL2)
-<!-- - [NVIDIA Jetson AGX Orin GMSL Adapter Board Documentation](/docs/2_1_NVIDIA%20Jetson/Getting%20Started) -->
+
 1. **Hardware Connection**
    - Connect the camera to the GMSL interface
    - Ensure proper power supply connection
@@ -36,8 +34,6 @@ SENSING provides NVIDIA platform products that are pre-adapted for our cameras. 
    - Configure camera parameters
    - Verify image quality
 
-<!-- For detailed hardware and software setup instructions, please refer to:
-- [NVIDIA Jetson AGX Orin GMSL Adapter Board Documentation](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) -->
 
 :::tip
 Our NVIDIA platform solutions are pre-configured and tested, ensuring seamless integration with our cameras.
@@ -45,9 +41,6 @@ Our NVIDIA platform solutions are pre-configured and tested, ensuring seamless i
 
 For more details:
 - Browse our official github website: [SENSING Github Website](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers)
-<!-- - Check our [NVIDIA Platform Documentation](../nvidia-platform/overview) -->
-<!-- - View [Hardware Connection Diagram](./integration-diagrams#hardware-connection-diagram) -->
-<!-- - View [Software Architecture](./integration-diagrams#software-architecture) -->
 
 ## 2. Camera Integration with GMSL Camera Grabber
 
@@ -62,7 +55,6 @@ SENSING offers GMSL camera grabber products that are pre-adapted for our cameras
 - **Operating System**: Linux
 
 ### Technical Requirements
-<!-- - **Host System**: USB 3.0/3.1 port -->
 - **Power Supply**: PCI-e
 - **Driver Support**: Ubuntu 18.04/20.04
 
@@ -125,10 +117,6 @@ If our camera model is not listed, a three-party collaboration is required:
 This process ensures proper integration and optimal performance of the camera with the AI Box.
 :::
 
-<!-- For detailed process flow: -->
-<!-- - View [Communication Flow](./integration-diagrams#communication-flow) -->
-<!-- - View [Integration Process](./integration-diagrams#integration-process) -->
-
 ## 4. Camera Integration with Customer's Self-developed Platform
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
@@ -172,14 +160,3 @@ After receiving the module data through the MIPI CSI interface:
 For technical support during integration, please contact our technical team.
 :::
 
-<!-- For implementation details:
-- View [Data Flow Diagram](./integration-diagrams#data-flow-diagram)
-- View [Power Sequence Example](./integration-diagrams#power-sequence-example)
-- Check [Common Integration Examples](./integration-diagrams#common-integration-examples) -->
-
-
-## Additional Resources
-
-<!-- - [Technical Specifications](../Technical%20Specifications.md)
-- [FAQs](../faq)
-- [Contact Support](../support) -->
