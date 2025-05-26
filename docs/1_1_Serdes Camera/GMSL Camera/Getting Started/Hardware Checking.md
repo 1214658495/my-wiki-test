@@ -4,17 +4,87 @@ sidebar_position: 1
 
 # Hardware Checking
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+Before installing the camera, please carefully check the following hardware aspects to ensure proper functionality.
 
-Docusaurus has **much more to offer**!
+## 1. Camera Connector
 
+The camera uses an **Amphenol Fakra (Z Code)** connector for signal transmission. This connector is specifically designed for automotive applications and provides reliable high-speed data transmission.
 
-## What's next?
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <img src="/img/camera-connector.png" alt="Camera Connector" style={{maxWidth: '80%', height: 'auto'}} />
+  <p style={{color: '#666', fontSize: '0.9em'}}>Amphenol Fakra (Z Code) Connector</p>
+</div>
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+Key features of the connector:
+- Z Code interface for automotive applications
+- High-speed data transmission capability
+- Secure locking mechanism
+- IP67 waterproof rating
+
+## 2. Camera Lens Types
+
+Our cameras are available in two lens mounting types:
+
+### AA (Active Alignment) Type
+The AA type lens features an advanced mounting technology that ensures precise optical alignment.
+
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <img src="/img/aa-lens.png" alt="AA Lens Structure" style={{maxWidth: '80%', height: 'auto'}} />
+  <p style={{color: '#666', fontSize: '0.9em'}}>AA Lens Structure and Mounting Process</p>
+</div>
+
+Key features of AA lens:
+- Active alignment during assembly
+- Precise optical axis alignment
+- Enhanced image quality
+- Suitable for high-precision applications
+
+### Threaded Type
+The threaded lens mount provides a traditional mechanical mounting solution.
+
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <img src="/img/threaded-lens.png" alt="Threaded Lens" style={{maxWidth: '80%', height: 'auto'}} />
+  <p style={{color: '#666', fontSize: '0.9em'}}>Threaded Lens Mount</p>
+</div>
+
+Comparison between AA and Threaded types:
+| Feature | AA Type | Threaded Type |
+|---------|---------|---------------|
+| Mounting Method | Active Alignment | Mechanical Thread |
+| Precision | High | Standard |
+| Cost | Higher | Lower |
+| Assembly Time | Longer | Shorter |
+| Maintenance | Complex | Simple |
+
+## 3. Heating Feature
+
+Some camera models include a heating function to prevent lens fogging in cold environments.
+
+### With Heating Function
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <img src="/img/camera-with-heating.png" alt="Camera with Heating" style={{maxWidth: '80%', height: 'auto'}} />
+  <p style={{color: '#666', fontSize: '0.9em'}}>Camera with Heating Function</p>
+</div>
+
+Features:
+- External power supply required
+- Heating element integrated in the lens housing
+- Temperature control system
+- Suitable for cold environments
+
+### Without Heating Function
+<div style={{textAlign: 'center', margin: '20px 0'}}>
+  <img src="/img/camera-without-heating.png" alt="Camera without Heating" style={{maxWidth: '80%', height: 'auto'}} />
+  <p style={{color: '#666', fontSize: '0.9em'}}>Standard Camera without Heating</p>
+</div>
+
+Features:
+- Standard power supply only
+- Simpler design
+- Lower power consumption
+- Suitable for normal temperature environments
+
+:::note
+Please ensure you have selected the appropriate camera model based on your environmental requirements and application needs.
+:::
+
