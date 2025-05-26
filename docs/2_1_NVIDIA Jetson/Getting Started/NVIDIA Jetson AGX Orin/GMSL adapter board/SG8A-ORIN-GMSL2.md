@@ -100,8 +100,18 @@ In this wiki, we will show you how to use the SG8A-ORIN-GMSL2 which supports NVI
 | 15  | SG3S-IMX623C-G2F-Hxxx       | RAW12  | \             | \             | \           | \           | \           |
 | 16  | SG8-IMX728C-G2G-Hxxx        | RAW12  | YES           | \             | YES         | \           | \           |
 
-
 <br />
+:::note
+NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).  
+- 36.4.3: L4T R36.4.3 (Jetpack 6.2)  
+- 36.4: L4T R36.4 (Jetpack 6.1)  
+- 36.3: L4T R36.3 (Jetpack 6.0)  
+- 35.4.1: L4T R35.4.1 (Jetpack 5.1.2)  
+
+<li>To choose the appropriate JetPack version for a specific Jetson device, you can refer to <a href="https://developer.nvidia.com/embedded/jetpack-archive">NVIDIA's official Jetson Download Center</a>.</li>
+:::
+
+
 ### Hardware Preparation
 
 #### Parts List

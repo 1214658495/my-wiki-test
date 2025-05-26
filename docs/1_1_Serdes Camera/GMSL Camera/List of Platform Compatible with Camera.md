@@ -263,28 +263,13 @@ sidebar_position: 2
 </div>
 
 <br />
-<div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f5f5f5', borderRadius: '5px' }}>
-  <h3 style={{ marginBottom: '10px' }}>Jetpack Version Information</h3>
-  <p>
-    NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).
-  </p>
-  <ul>
-    <li>To choose the appropriate JetPack version for a specific Jetson device, you can refer to <a href="https://developer.nvidia.com/embedded/jetpack-archive">NVIDIA's official Jetson Download Center</a>.</li>
+<br />
+:::note
+NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).  
+- 36.4.3: L4T R36.4.3 (Jetpack 6.2)  
+- 36.4: L4T R36.4 (Jetpack 6.1)  
+- 36.3: L4T R36.3 (Jetpack 6.0)  
+- 35.4.1: L4T R35.4.1 (Jetpack 5.1.2)  
 
-  </ul>
-  <p>
-    These versions provide optimized performance and compatibility for GMSL cameras on Jetson platforms, ensuring reliable camera operation and image processing capabilities.
-  </p>
-</div>
-
-
-
-<!-- ## What's next?
-
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support) -->
+<li>To choose the appropriate JetPack version for a specific Jetson device, you can refer to <a href="https://developer.nvidia.com/embedded/jetpack-archive">NVIDIA's official Jetson Download Center</a>.</li>
+:::
