@@ -267,4 +267,4 @@ For the beginners to NVIDIA Jetson, we highly recommand NVIDIA SDK Manager.
 <br />
 ## FAQ
 
-For details, please click [here](../../../FAQ/FAQ_jetson)
+<!-- For details, please click [here](../../../FAQ/FAQ_jetson) -->
