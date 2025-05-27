@@ -2,6 +2,7 @@
   "label": "NVIDIA® Drive AGX Orin™",
   "position": 22,
   "link": {
-    "type": "generated-index"
+    "type": "doc",
+    "id": "2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin"
   }
 }
