@@ -1,8 +1,5 @@
 {
   "label": "GMSL Carrier board",
   "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for GMSL Carrier board."
-  }
+  "link": null
 }

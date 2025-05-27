@@ -1,8 +1,5 @@
 {
   "label": "SG4A-NONX-G2Y-A1",
   "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for SG4A-NONX-G2Y-A1."
-  }
+  "link": null
 }
