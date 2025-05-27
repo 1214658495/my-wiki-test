@@ -1,8 +1,5 @@
 {
   "label": "GMSL Camera",
   "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for GMSL Camera."
-  }
+  "link": null
 }
