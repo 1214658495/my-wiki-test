@@ -333,5 +333,4 @@ Common RAW or RAW12 Configurations
 | MAX96717F         | IMX623           | 113                         |
 
 ## FAQ
-
-<!-- For details, please click [here](../../../FAQ/FAQ_jetson) -->
+For more information, please refer to the [FAQ section](../FAQ/FAQ_CameraGrabber).
