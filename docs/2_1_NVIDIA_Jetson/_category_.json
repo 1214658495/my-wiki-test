@@ -2,7 +2,7 @@
   "label": "NVIDIA® Jetson™",
   "position": 21,
   "link": {
-    "type": "generated-index",
-    "description": "Updated description for NVIDIA® Jetson™."
+    "type": "doc",
+    "id": "2_1_NVIDIA_Jetson/NVIDIA_Jetson"
   }
 }
