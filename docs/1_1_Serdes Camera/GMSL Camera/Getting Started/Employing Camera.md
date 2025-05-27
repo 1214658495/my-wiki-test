@@ -22,7 +22,7 @@ SENSING provides NVIDIA platform products that are pre-adapted for our cameras. 
 - **Power Supply**: 12V DC
 
 ### Integration Steps
-- e.g.: [Camera Integration with NVIDIA Jetson AGX Orin GMSL Adapter Board Documentation](/docs/2_1_NVIDIA%20Jetson/Getting%20Started/NVIDIA%20Jetson%20AGX%20Orin/GMSL%20adapter%20board/SG8A-ORIN-GMSL2)
+- e.g.: [Camera Integration with NVIDIA Jetson AGX Orin GMSL Adapter Board Documentation](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2)
 
 1. **Hardware Connection**
    - Connect the camera to the GMSL interface
