@@ -59,7 +59,7 @@ SENSING offers GMSL camera grabber products that are pre-adapted for our cameras
 - **Driver Support**: Ubuntu 18.04/20.04
 
 ### Integration Process
-- e.g.: [Camera Integration with GMSL Camera Grabber Documentation](/docs/3_1_GMSL2&3%20Camera%20Grabber/Getting%20Started/CCG3-8H)
+- e.g.: [Camera Integration with GMSL Camera Grabber Documentation](/docs/3_1_GMSL2_3_Camera_Grabber/Getting_Started/CCG3-8H)
 1. **Hardware Setup**
    - Connect cameras to grabber
    - Connect grabber to host system
@@ -127,7 +127,7 @@ For customers with their own deserializer who want to adapt our camera (serializ
 ### Step 1: Link Register initialization
 SENSING will provide:
 - **Serializer and Deserializer Configuration**
-   - Register configuration for the camera module-[Getting Camera Information](/docs/1_1_Serdes%20Camera/GMSL%20Camera/Getting%20Camera%20Information.md)
+   - Register configuration for the camera module-[Getting Camera Information](/docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Camera_Information)
    - I2C communication protocol details
    - Power sequence requirements
 - **Link Status Troubleshooting Guide**
