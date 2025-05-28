@@ -114,6 +114,10 @@ import TabItem from '@theme/TabItem';
 <TabItem value="orin-nx-nano" label="Jetson Orin NX/Nano">
 
 ### NVIDIA Jetson Orin NX/Nano Camera Solutions
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_nano.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+</div>
+<br />
 
 <div className="row">
   <div className="col col--6">
