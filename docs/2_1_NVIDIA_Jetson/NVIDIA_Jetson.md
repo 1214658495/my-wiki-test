@@ -2,8 +2,11 @@
 sidebar_position: 5
 ---
 
-# NVIDIA Jetson Camera Solutions
-
+# NVIDIA® Jetson™ MIPI&GMSL Camera Solutions
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson.png" alt="SG8A-ORIN-GMSL2-complete" 
+    style={{width: 960, height:'auto'}} />
+</div>
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -57,7 +60,8 @@ import TabItem from '@theme/TabItem';
 
 ### NVIDIA Jetson AGX Orin Camera Solutions
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png" alt="SG8A-ORIN-GMSL2-complete" 
+    style={{width: 860, height:'auto'}} />
 </div>
 
 <br />
@@ -115,7 +119,8 @@ import TabItem from '@theme/TabItem';
 
 ### NVIDIA Jetson Orin NX/Nano Camera Solutions
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_nano.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_nano.png" alt="SG8A-ORIN-GMSL2-complete" 
+    style={{width: 860, height:'auto'}} />
 </div>
 <br />
 
@@ -205,9 +210,9 @@ import TabItem from '@theme/TabItem';
     :::note Get in Touch
     For more information about our NVIDIA Jetson camera solutions, please contact our technical team:
 
-    - Email: [support@sensing.com](mailto:support@sensing.com)
-    - Phone: +1-XXX-XXX-XXXX
-    - Website: [www.sensing.com](https://www.sensing.com)
+    - Email: [support@sensing-world.com](mailto:support@sensing-world.com)
+    - Phone: 0755-28990915
+    - Website: [www.sensing-world.com](https://sensing-world.com/en/)
     :::
   </div>
   <div className="col col--6">
