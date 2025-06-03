@@ -32,7 +32,7 @@ sidebar_position: 1
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL.png" alt="SG8A-ORIN-GMSL" 
-    style={{width: 450, height:'auto'}} />
+    style={{maxWidth: '55%', height:'auto'}} />
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
