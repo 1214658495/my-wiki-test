@@ -49,8 +49,10 @@ To access camera intrinsic parameters data:
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_SN.png" alt="SN Code Search" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
-:::info About SN Code
+:::info About SN Code and Product Model
 The SN Code (Serial Number Code) is a unique identifier assigned to each camera unit during manufacturing. It serves as a digital fingerprint for your specific camera, allowing you to access its calibrated intrinsic parameters and other device-specific information.
+
+For example, as shown in the image below, the SN code for this product is: H190S-E01220525. Product Model is: SG3-ISX031C-GMSL2-H190S
 
 <div style={{textAlign: 'center', marginTop: '1rem'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto'}} />
