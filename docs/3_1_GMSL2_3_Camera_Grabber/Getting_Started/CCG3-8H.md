@@ -2,118 +2,92 @@
 sidebar_position: 1
 ---
 
-# 【CoaxCapture II】 CCG3-8H
+# GMSL Camera Grabber CCG3-8H
 
 ## Overview
-【CoaxCapture II】Video Capture Card (Video Capture Card), it is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co.,Ltd (hereinafter referred to as“SENSING”), and it is one of solutions of autonomous machine.
-
-Compared with the Gen1, the speed and bandwidth of Gen2 Video Capture Card are improved double correspondingly due to the use of PCI-e Gen3 technology. The card can connect GMSL/GMSL2 cameras, and has the advantages of high frame rate, high speed, low latency, etc. It is widely used in autonomous machine, autonomous vehicle, data capture and other scenes.
-
-
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H.png" alt="CCG3-8H" 
-    style={{width: 500, height:'auto'}} />
-</div>
-
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H.png" alt="CCG3-8H" style={{width: 320, height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  </div>
+  <div style={{marginTop: '1rem', fontSize: '1.1em', color: 'var(--ifm-color-primary)'}}>
+    <strong>CCG3-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co.,Ltd. Compared with Gen1, Gen2 uses PCI-e Gen3 technology, doubling speed and bandwidth. It supports GMSL/GMSL2 cameras, features high frame rate, high speed, low latency, and is widely used in autonomous machines, vehicles, and data capture.
+  </div>
+  <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/Coaxcapture_Card/" target="_blank" rel="noopener noreferrer">
-        <strong>
-            <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px'}}>
-                <font color={'000000'} size={"4"}> Learn More</font>
-            </span>
-        </strong>
+      <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', color: '#000', fontWeight: 600, fontSize: '1.1em'}}>Learn More</span>
     </a>
+  </div>
 </div>
-
-
 
 ## Getting Started
-In this wiki, we will show you how to use the CCG3-8H.
 
-
-### Specification
-
-| Item              | Specification             |
-|-------------------|---------------------------|
-| Model             | CCG3-8H           |
-| Dimension         | Half length card: 167.64mm length x 111.15 mm height |
-| Weight            | 300g                       |
-| Connector         | Amphenol Min-fakra Dual MFK2252AW-001-TL30G-50 |
-| Cable Length      | Amphenol /250mm MKA2FZ-302LL-FKMZ1-21-01 |
-| Power Output      | Power Over Cable 4W/9V per cable |
-| Camera input      | Camera*8(GMSL2/GMSL)     |
-| Deserializer      | MAXIM(ADI) MAX9296A*4     |
-| Camera Resolution | 1-8Mega pixel     |
-| Bit Depth         | 8 bit (YUV422), 8/12/16-bit (RAW)     |
-| Data Bandwidth    | 6 Gbps per cable     |
-| I/O Interfaces    | TTL Trigger,GPS             |
-| Ethernet Interfaces    | 1GigE: support PTP time Synchronization,Accuracy < 1ms |
-| Processor         | Xilinx ZU+ system processor |
-| Operating Temperature| -20°C to +70°C          |
-| Storage Temperature| -40°C to +80°C          |
-| Processor Software Drivers        | Linux 64-bit,Ubuntu18.04/20.04 |
-| Software Tools| Documentation, SDK    |
-| Software API| V4L2 framework          |
-
-<!-- ### Hardware Overview
-<div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL2-overview" 
-    style={{width: 760, height:'auto'}} />
-</div> -->
-
-### Block Diagram
-<div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" 
-    style={{width: 720, height:'auto'}} />
+### Key Specifications
+<div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Model:</strong> CCG3-8H<br/>
+    <strong>Camera Input:</strong> 8x GMSL2/GMSL<br/>
+    <strong>Resolution:</strong> 1-8MP<br/>
+    <strong>Bit Depth:</strong> 8/12/16-bit<br/>
+    <strong>Data Bandwidth:</strong> 6Gbps/cable
+  </div>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Processor:</strong> Xilinx ZU+<br/>
+    <strong>PCIe:</strong> Gen3 x8<br/>
+    <strong>OS:</strong> Linux 64-bit, Ubuntu 18.04/20.04<br/>
+    <strong>SDK/API:</strong> V4L2, Documentation<br/>
+    <strong>Trigger:</strong> TTL, PTP, GPS
+  </div>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Operating Temp:</strong> -20°C ~ +70°C<br/>
+    <strong>Storage Temp:</strong> -40°C ~ +80°C<br/>
+    <strong>Power Output:</strong> 4W/9V per cable<br/>
+    <strong>Connector:</strong> Min-fakra Dual<br/>
+    <strong>Size:</strong> 167.64mm x 111.15mm
+  </div>
 </div>
 
-<br />
-:::note
-- 8 GMSL cameras input, support up to 8 Mega Pixels@ 30 fps;
-- PCI-e Gen3*8lane;
-- Support external trigger synchronization;
-- Support network PTP timing synchronization;
-:::
+### Block Diagram
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_diagram.png" alt="CCG3-8H Block Diagram" style={{width: 480, height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
 
+:::note Highlights
+- 8 GMSL cameras input, up to 8MP@30fps
+- PCI-e Gen3 x8 lane, ultra-high bandwidth
+- Supports external trigger & PTP time sync
+- Low latency, high reliability
+:::
 
 ### Supported Camera List
 
-<!-- Offline version -->
 | No. | Camera                      | Resolution | Output Data | Ubuntu18.04/20.04 |
 |-----| --------------------------- | ---------- | ----------- | ------------- |
-| 1   | SG1-OX01F10C-GMSL-Hxxx      | 1280H*720V | YUV422  | YES           |
-| 2   | SG1S-OX01F10C-G1G-Hxxx      | 1280H*960V | YUV422  | YES           |
-| 3   | SG2-AR0231C-0202-GMSL-Hxxx  | 1920H*1080V| YUV422  | YES           |
-| 4   | SG2-AR0233C-5200-G2A-Hxxx   | 1920H*1080V| YUV422  | YES           |
-| 5   | SG2-IMX390C-5200-G2A-Hxxx   | 1920H*1080V| YUV422  | YES           |
-| 6   | SG2-OX03CC-5200-GMSL2F-Hxxx | 1920H*1080V| YUV422  | YES           |
-| 7   | SG3S-ISX031C-GMSL2-Hxxx     | 1920H*1536V| YUV422  | YES           |
-| 8   | SG3S-ISX031C-GMSL2F-Hxxx    | 1920H*1536V| YUV422  | YES           |
-| 9   | SG3S-OX03JC-G2F-Hxxx        | 1920H*1536V| YUV422  | YES           |
-| 10  | SG5-IMX490C-5300-GMSL2-Hxxx | 2880H*1860H| YUV422  | YES           |
-| 11  | SG8S-AR0820C-5300-G2A-Hxxx  | 3840H*2160V| YUV422  | YES           |
-| 12  | SG8-OX08BC-5300-GMSL2-Hxxx  | 3840H*2160V| YUV422  | YES           |
-| 13  | SG8-IMX728C-G2G-Hxxx        | 3840H*2160V| RAW12   | YES           |
-
+| 1   | SG1-OX01F10C-GMSL-Hxxx      | 1280H*720V | YUV422      | YES           |
+| 2   | SG1S-OX01F10C-G1G-Hxxx      | 1280H*960V | YUV422      | YES           |
+| 3   | SG2-AR0231C-0202-GMSL-Hxxx  | 1920H*1080V| YUV422      | YES           |
+| 4   | SG2-AR0233C-5200-G2A-Hxxx   | 1920H*1080V| YUV422      | YES           |
+| 5   | SG2-IMX390C-5200-G2A-Hxxx   | 1920H*1080V| YUV422      | YES           |
+| 6   | SG2-OX03CC-5200-GMSL2F-Hxxx | 1920H*1080V| YUV422      | YES           |
+| 7   | SG3S-ISX031C-GMSL2-Hxxx     | 1920H*1536V| YUV422      | YES           |
+| 8   | SG3S-ISX031C-GMSL2F-Hxxx    | 1920H*1536V| YUV422      | YES           |
+| 9   | SG3S-OX03JC-G2F-Hxxx        | 1920H*1536V| YUV422      | YES           |
+| 10  | SG5-IMX490C-5300-GMSL2-Hxxx | 2880H*1860H| YUV422      | YES           |
+| 11  | SG8S-AR0820C-5300-G2A-Hxxx  | 3840H*2160V| YUV422      | YES           |
+| 12  | SG8-OX08BC-5300-GMSL2-Hxxx  | 3840H*2160V| YUV422      | YES           |
+| 13  | SG8-IMX728C-G2G-Hxxx        | 3840H*2160V| RAW12       | YES           |
 
 ### Hardware Preparation
 
 #### Parts List
+| No. | Product model                 | Quantity | Remark                |
+|-----|-------------------------------|----------|-----------------------|
+| 1   | Power connection wire         | 1        | Standard configuration|
+| 2   | CCG3-8H capture card          | 1        | Standard configuration|
+| 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
+| 4   | Aviation plug turn to network cable | 1 | Standard configuration|
+| 5   | GPS connection wire           | 1        | Standard configuration|
 
-| No.           | Product model                 | Quantity | Remark                |
-|---------------|-------------------------------|----------|-----------------------|
-| 1             | Power connection wire         | 1        | Standard configuration|
-| 2             | CCG3-8H capture card          | 1        | Standard configuration|
-| 3             | Fakra one-divided-two switching line     | 4        | Standard configuration|
-| 4             | Aviation plug turn to network cable      | 1        | Standard configuration|
-| 5             | GPS connection wire            | 1        | Standard configuration|
 
-<!-- <br />
-#### Kit Contents
-<div style={{textAlign: 'left'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 920, height:'auto'}} />
-</div>
-<br /> -->
 
 #### Follow the steps below to install the product:
 
@@ -123,24 +97,25 @@ In this wiki, we will show you how to use the CCG3-8H.
 4. Power on the system
 
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
-    <iframe
-        style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-        src="//player.bilibili.com/player.html?bvid=BV1w6j2z8E16&page=1&high_quality=1&danmaku=0"
-        scrolling="no"
-        border="0"
-        frameBorder="no"
-        framespacing="0"
-        allowFullScreen="true">
-    </iframe>
+  <iframe
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="//player.bilibili.com/player.html?bvid=BV1w6j2z8E16&page=1&high_quality=1&danmaku=0"
+    scrolling="no"
+    border="0"
+    frameBorder="no"
+    framespacing="0"
+    allowFullScreen="true">
+  </iframe>
 </div>
 
+---
 
-### Software Preparation
-**Step 1.** SDK Download
+## Software Preparation
 
+### 1. SDK Download
 | Camera | Linux system version | Driver pkg download link | Driver pkg download method |
-|------------------------------|---------------------------------------|-----------------------------|-------------------------------|
-| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04 and Ubuntu 20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+|------------------------------|-------------------------|---------------------------|-------------------------------|
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 
 
 <br />
@@ -333,4 +308,6 @@ Common RAW or RAW12 Configurations
 | MAX96717F         | IMX623           | 113                         |
 
 ## FAQ
-For more information, please refer to the [FAQ section](../FAQ/FAQ_CameraGrabber).
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
+For more information, please refer to the <a href="../FAQ/FAQ_CameraGrabber" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>FAQ section</a>.
+</div>
