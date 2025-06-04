@@ -4,51 +4,57 @@ sidebar_position: 3
 
 # Getting Camera Information
 
+:::note Available Resources
+Visit the SENSING service platform website to access comprehensive camera-related information and resources:
+:::
 
-  
-**Visit the SENSING service platform website to readily access a variety of camera-related information and resources, including:**
-
+:::tip Key Resources
 - Specification
 - Structural 3D data
 - Camera intrinsic parameters data
 - SerDes configuration files
 - Images Sample (Specifically for cameras with an ISP)
+:::
 
-<br />
+## Step-by-Step Guide
 
-**Step 1.** Click the following link to enter the SENSING service platform.  
- - [SENSING service platform](http://service.sensing-world.com/)
+### Step 1: Access Platform
+Click the following link to enter the SENSING service platform:  
+[SENSING service platform](http://service.sensing-world.com/)
 
-**Step 2.** Then click the **Information Query** page, as shown below.
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+### Step 2: Navigate to Information Query
+Click the **Information Query** page as shown below:
+
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2.png" alt="Information Query Page" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
-<br />
+### Step 3: Get Product Information
+To access specifications, 3D data, and SerDes configuration files:
 
-**Step 3.** To get specifications (product manuals), Structural 3D data, and SerDes configuration files, you need to input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>Product Model (supports fuzzy search)</span>. You can obtain and download all data except for Camera intrinsic parameters data. For example:
-   
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_model.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 700, height:'auto'}} />
+1. Input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>Product Model</span> (supports fuzzy search)
+2. Download all available data except camera intrinsic parameters
+
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_model.png" alt="Product Model Search" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
-<br />
+### Step 4: Get Camera Parameters
+To access camera intrinsic parameters data:
 
-**Step 4.** To get Camera intrinsic parameters data, you need to input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>SN Code (supports fuzzy search)</span>. You can obtain and download. For example:
-<div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f5f5f5', borderRadius: '5px' }}>
-  <h3 style={{ marginBottom: '10px' }}>What is SN Code?</h3>
-  <p>
-    The SN Code (Serial Number Code) is a unique identifier assigned to each camera unit during manufacturing. It serves as a digital fingerprint for your specific camera, allowing you to access its calibrated intrinsic parameters and other device-specific information. You can find the SN Code printed on the camera's label or housing.
-  </p>
+1. Input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>SN Code</span> (supports fuzzy search)
+2. Download the parameters
 
-  <div style={{textAlign: 'center', marginBottom: '20px'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{width: 300, height:'auto'}} />
-  </div>
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_SN.png" alt="SN Code Search" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
-<br />
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_SN.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 700, height:'auto'}} />
+:::info About SN Code
+The SN Code (Serial Number Code) is a unique identifier assigned to each camera unit during manufacturing. It serves as a digital fingerprint for your specific camera, allowing you to access its calibrated intrinsic parameters and other device-specific information.
+
+<div style={{textAlign: 'center', marginTop: '1rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto'}} />
 </div>
+:::
 
 
