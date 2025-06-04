@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Getting Camera Information
 
-<!-- ## Camera Information Link -->
+
   
 **Visit the SENSING service platform website to readily access a variety of camera-related information and resources, including:**
 
@@ -14,11 +14,6 @@ sidebar_position: 3
 - SerDes configuration files
 - Images Sample (Specifically for cameras with an ISP)
 
-<!-- 
-Access comprehensive camera specifications, technical documentation, and support resources through our official portal.
-
-Visit the [Get Product Information](http://service.sensing-world.com/) to view the details.
-- [Get Product Information](http://service.sensing-world.com/) -->
 <br />
 
 **Step 1.** Click the following link to enter the SENSING service platform.  
