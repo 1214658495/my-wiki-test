@@ -4,26 +4,32 @@ sidebar_position: 2
 
 # List of Platform Compatible with Camera
 
-
-**The table below lists the current Cameras from SENSING, the platforms they can connect to and are compatible with, as well as the system version information of those platforms.**
+:::note Overview
+The table below lists the current Cameras from SENSING, the platforms they can connect to and are compatible with, as well as the system version information of those platforms.
+:::
 
 <div style={{ 
-  marginBottom: '10px', 
-  color: '#666', 
-  fontSize: '14px',
-  fontStyle: 'italic'
+  marginBottom: '1rem', 
+  color: 'var(--ifm-color-primary)', 
+  fontSize: '0.9rem',
+  display: 'flex',
+  alignItems: 'center',
+  gap: '0.5rem'
 }}>
-💡 Tip: Double-click the table to maximize
+  <span style={{fontSize: '1.2rem'}}>💡</span>
+  <span>Double-click the table to maximize for better viewing</span>
 </div>
 
 <div 
   style={{ 
     overflowX: 'auto', 
     overflowY: 'auto', 
-    maxHeight: '730px', 
+    maxHeight: '800px', 
     width: '100%',
     cursor: 'pointer',
-    transition: 'all 0.3s ease'
+    transition: 'all 0.3s ease',
+    borderRadius: '8px',
+    boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
   }}
   onDoubleClick={(e) => {
     const div = e.currentTarget;
@@ -32,7 +38,7 @@ sidebar_position: 2
       div.style.top = 'auto';
       div.style.left = 'auto';
       div.style.width = '100%';
-      div.style.maxHeight = '600px';
+      div.style.maxHeight = '800px';
       div.style.zIndex = 'auto';
       div.style.backgroundColor = 'transparent';
     } else {
@@ -46,21 +52,21 @@ sidebar_position: 2
     }
   }}
 >
-<table style={{ width: '230%', borderCollapse: 'collapse' }}>
+<table style={{ width: '100%', borderCollapse: 'collapse' }}>
 <thead>
 <tr>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>No.</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Camera</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Resolution</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Output Data</th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898">SG8A-ORIN-GMSL2</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/><a style={{color:'black',textDecoration:'underline'}} >SG8A-AGON-G2Y-A1</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Jetson AGX Orin<br/><a style={{color:'black',textDecoration:'underline'}} >SG10A-AGON-G2M-A1</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-168.html?recommendFromPid=0&fromMid=962">SG4A-NONX-G2Y-A1</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-80.html?recommendFromPid=0&fromMid=962">SG6C-ORNX-G2-F</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Jetson Orin Nano/NX<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-79.html?recommendFromPid=0&fromMid=962">SG2A-G3-I4L-F</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Data collection product<br/><a style={{color:'black',textDecoration:'underline'}} >CCG3-8H</a></th>
-<th style={{ padding: '8px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap' }}>Data collection product<br/><a style={{color:'black',textDecoration:'underline'}} >CCG3-8M</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>No.</th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Camera</th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Resolution</th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Output Data</th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Jetson AGX Orin<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898">SG8A-ORIN-GMSL2</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Jetson AGX Orin<br/><a style={{color:'black',textDecoration:'underline'}} >SG8A-AGON-G2Y-A1</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Jetson AGX Orin<br/><a style={{color:'black',textDecoration:'underline'}} >SG10A-AGON-G2M-A1</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Jetson Orin Nano/NX<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-168.html?recommendFromPid=0&fromMid=962">SG4A-NONX-G2Y-A1</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Jetson Orin Nano/NX<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-80.html?recommendFromPid=0&fromMid=962">SG6C-ORNX-G2-F</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Jetson Orin Nano/NX<br/><a style={{color:'black',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-79.html?recommendFromPid=0&fromMid=962">SG2A-G3-I4L-F</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Data collection product<br/><a style={{color:'black',textDecoration:'underline'}} >CCG3-8H</a></th>
+<th style={{ padding: '12px', border: '1px solid #ddd', backgroundColor: 'var(--ifm-color-primary-light)', color: 'black', whiteSpace: 'nowrap', fontWeight: 'bold' }}>Data collection product<br/><a style={{color:'black',textDecoration:'underline'}} >CCG3-8M</a></th>
 </tr>
 </thead>
 <tbody>
@@ -263,13 +269,14 @@ sidebar_position: 2
 </div>
 
 <br />
-<br />
-:::note
-NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).  
+:::info About JetPack
+NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong>) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries.
+
+### Version Information
 - 36.4.3: L4T R36.4.3 (Jetpack 6.2)  
 - 36.4: L4T R36.4 (Jetpack 6.1)  
 - 36.3: L4T R36.3 (Jetpack 6.0)  
 - 35.4.1: L4T R35.4.1 (Jetpack 5.1.2)  
 
-<li>To choose the appropriate JetPack version for a specific Jetson device, you can refer to <a href="https://developer.nvidia.com/embedded/jetpack-archive">NVIDIA's official Jetson Download Center</a>.</li>
+To choose the appropriate JetPack version for a specific Jetson device, please refer to [NVIDIA's official Jetson Download Center](https://developer.nvidia.com/embedded/jetpack-archive).
 :::
