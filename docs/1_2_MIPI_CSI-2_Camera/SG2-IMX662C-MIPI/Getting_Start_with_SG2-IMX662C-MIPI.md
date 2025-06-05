@@ -2,9 +2,15 @@
 sidebar_position: 6
 ---
 
-# Congratulations!
+# Getting Start with SG2-IMX662C-MIPI
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+## Overview
+
+<div className="row">
+  <div className="col col--12">
+    SG2-IMX662C-MIPI-Hxxx camera is equipped with SONY CMOS image sensor IMX662. It has an automotive-grade sensor with a well tuned Image Signal Processor (ISP) that produces exceptional image quality, can be adapted to difference SOC platforms.
+  </div>
+</div>
 
 Docusaurus has **much more to offer**!
 
