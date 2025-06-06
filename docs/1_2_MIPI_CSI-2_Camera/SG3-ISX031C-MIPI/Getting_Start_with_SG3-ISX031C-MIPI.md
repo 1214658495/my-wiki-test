@@ -31,7 +31,27 @@ sidebar_position: 1
 
 ### Specification
 
-<div className="row">
+| Parameter         | Value                   |
+|-------------------|-------------------------|
+| Sensor            | SONY 2.95MP ISX031 RGGB |
+| ISP               | Built-in                |
+| Image Size        | 1/2.42 inch CMOS        |
+| Output Pixels     | 1920H*1536V             |
+| Frame rate        | max 60fps               |
+| Pixel Size        | 3.0um*3.0um             |
+| HDR Support       | Yes                     |
+| Output data       | MIPI/YUV422-8bit        |
+| Power Supply      | 3.3V                    |
+| Current           | Less than 500mA @3.3VDC |
+| Camera interface  | FPC                     |
+| Connector         | FH67-30S-0.5SV          |
+| Operating temp.   | -20 to +75°C            |
+| Performance temp. | -20 to +60°C            |
+| Dimensions        | W: 20mm, L:35mm, H:16.2mm|
+| Weight            | Less than 50g           |
+
+
+<!-- <div className="row">
   <div className="col col--6">
     :::note Basic Info
     - Model: SG8A-ORIN-GMSL2
@@ -52,50 +72,158 @@ sidebar_position: 1
     - Adaptation kit: Jetson AGX Orin/Xavier
     :::
   </div>
-</div>
-
-### Hardware Overview
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL2-overview" style={{maxWidth: '90%', height: 'auto'}} />
 </div> -->
 
-### Block Diagram
+### Dimensions
 
-:::caution Attention
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_Hardware.png" alt="Embedded Camera" 
+    style={{maxWidth: '80%', height:'auto'}} />
+</div>
+
+
+### Hardware Overview
+#### Block Diagram
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_diagram.png" alt="Embedded Camera" 
+    style={{maxWidth: '80%', height:'auto'}} />
+</div>
+<br />
+
+#### I2C Address Information
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| NO. | Component | I2C Address |
+|-----------|-----------|-------|
+| 1 | EEPROM | 0xA0(8bit address) |
+| 2 | Sensor(ISX031) | 0x34(8bit address) |
+
+</div>
+
+#### Pin Definition
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| NO. | Pin Name | Type | Description |
+|----|----------|------|-------------|
+| 1 | E2PPROM-WP | INPUT:3.3V/1.8V | E2PROM<br/>L:Write disable; H:writable |
+| 2 | BOOT-CTL | INPUT:3.3V/1.8V | H: Not Load NOR FLASH<br/>L: Load NOR FLASH<br/>Default: L |
+| 3 | ERROR | OUTPUT: | Fault check signal output pin<br/>H:OK<br/>L:ERROR |
+| 4 | GND | POWER | |
+| 5 | FRSYNC | I/O:1.8V | Frame synchronization signal |
+| 6 | GPIO3 | I/O:1.8V | reserve |
+| 7 | GND | POWER | |
+| 8 | D0_N | OUTPUT | MIPI |
+| 9 | D0_P | OUTPUT | MIPI |
+| 10 | GND | POWER | |
+| 11 | D1_N | OUTPUT | MIPI |
+| 12 | D1_P | OUTPUT | MIPI |
+| 13 | GND | POWER | |
+| 14 | CLK_N | OUTPUT | MIPI |
+| 15 | CLK_P | OUTPUT | MIPI |
+| 16 | GND | POWER | |
+| 17 | D2_N | OUTPUT | MIPI |
+| 18 | D2_P | OUTPUT | MIPI |
+| 19 | GND | POWER | |
+| 20 | D3_N | OUTPUT | MIPI |
+| 21 | D3_P | OUTPUT | MIPI |
+| 22 | GND | POWER | |
+| 23 | POW_RES | INPUT:3.3V/1.8V | On-camera electrical signal |
+| 24 | SENSOR-CLK | INPUT: 24MHZ(1.8V) | Clock signal input<br/>(Modules use an internal 24MHz clock) |
+| 25 | GND | POWER | |
+| 26 | CAM-SCL | I/O:3.3V | UP 10K(FRSYNC:L I2C Address 7'H1A or 0X1A)<br/>(FRSYNC:H I2C Address in Flash) |
+| 27 | CAM-SDA | I/O:3.3V | UP 10K(FRSYNC:L I2C Address 7'H1A or 0X1A)<br/>(FRSYNC:H I2C Address in Flash) |
+| 28 | GND | POWER | |
+| 29 | VCC-3.3V | POWER | |
+| 30 | VCC-3.3V | POWER | |
+
+</div>
+
+
+
+<!-- :::caution Attention
 （1）The I2C bus number is the hardware location (matching the connector J2 pin). The bus number does not necessarily correspond to what is listed in the software.
 
 （2）The coaxial power supply is shared, but each GMSL line has its own filter.
+::: -->
+
+
+### Sensor power-up sequence
+
+:::info Power-up Sequence
+The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only requiring RESET to be asserted after the three power supplies are stable.
 :::
+
+
+### Lens Options
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Lens Mount |
+|-------|------|------|------|-----|------------------------|------------|
+| SG3-ISX031C-MIPI-H30X | 30° | 24° | F1.6 | 10.96mm | -2.5% | M12 |
+| SG3-ISX031C-MIPI-H60F | 60.35° | 47° | F1.6 | 5.8mm | -11.5% | M12 |
+| SG3-ISX031C-MIPI-H100F1 | 100.4° | 78° | F1.6 | 3.55mm | -49% | M12 |
+| SG3-ISX031C-MIPI-H190X | 196° | 154.5° | F2.0 | 1.51mm | -154.2% | M12 |
+
+</div>
+
+
+#### Parts List
+
+<div className="row">
+  <div className="col col--6">
+    :::note Standard Configuration
+    - SG3-ISX031C-MIPI-Hxxx camera
+    - FPC
+    :::
+  </div>
+  <div className="col col--4">
+    :::note Optional Configuration
+    - Jetson Orin Nano/NX Devkit
+    :::
+  </div>
+</div>
+
+<!-- #### Kit Contents -->
+
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" style={{maxWidth: '100%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '100%', height: 'auto'}} />
 </div> -->
 
-### Supported Camera List
+#### Installation Steps
 
-:::note Camera Compatibility
-The following cameras are supported with different JetPack versions:
+:::note Quick Setup
+1. Connect the FPC to the camera
+2. Mount the camera onto the Jetson Orin Nano/NX Devkit
+3. Power on the system
 :::
 
-| Camera | Output Data | Jetpack 5.1.2 | Jetpack 6.0DP | Jetpack 6.0 | Jetpack 6.1 | Jetpack 6.2 |
-|--------|-------------|---------------|---------------|-------------|-------------|-------------|
-| SG1-OX01F10C-GMSL-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | - |
-| SG1S-OX01F10C-G1G-Hxxx | YUV422 | ✅ | - | - | - | - |
-| SG2-AR0231C-0202-GMSL-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | - |
-| SG2-AR0233C-5200-G2A-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG2-IMX390C-5200-G2A-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG2-OX03CC-5200-GMSL2F-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG3S-ISX031C-GMSL2-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG3S-ISX031C-GMSL2F-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG3S-OX03JC-G2F-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | - |
-| SG5-IMX490C-5300-GMSL2-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG5-OX05BC-4000-GMSL2-Hxxx | YUV422 | ✅ | - | - | - | - |
-| SG8S-AR0820C-5300-G2A-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| SG8-OX08BC-5300-GMSL2-Hxxx | YUV422 | ✅ | ✅ | ✅ | - | ✅ |
-| DMSBBFAN | YUV422 | ✅ | - | - | - | ✅ |
-| SG3S-IMX623C-G2F-Hxxx | RAW12 | - | - | - | - | - |
-| SG8-IMX728C-G2G-Hxxx | RAW12 | ✅ | - | ✅ | - | - |
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
+    style={{maxWidth: '60%', height:'auto'}} />
+</div>
+
+### Software Preparation
+
+#### SDK Download
+
+:::info Driver Packages
+-Select the appropriate driver package based on your camera type and JetPack version:
+
+-Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
+:::
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| NO. | JetPack Version | Download Link |
+|-------------|-----------------|---------------|
+| 1 | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack5.1.2/Jetson-Orin-Nano-DK_ISX031_YUV_JP5.1.2_L4TR35.4.1) |
+| 2 | JP6.1 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack6.1/Jetson-Orin-Nano-DK_ISX031_YUV_JP6.1_L4TR36.4.2) |
+
+</div>
 
 :::note JetPack Versions
 NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
@@ -107,73 +235,4 @@ NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetp
 For more information, visit [NVIDIA's official Jetson Download Center](https://developer.nvidia.com/embedded/jetpack-archive).
 :::
 
-### Hardware Preparation
-
-#### Parts List
-
-<div className="row">
-  <div className="col col--6">
-    :::note Standard Configuration
-    - Power adapter
-    - Power switching harness
-    - SG8A-ORIN-GMSL2 adapter board
-    - Copper column, M2.5*16 (3 pcs)
-    - Screw, M2.5-F (3 pcs)
-    :::
-  </div>
-  <div className="col col--4">
-    :::note Optional Configuration
-    - Jetson AGX Orin DK
-    :::
-  </div>
-</div>
-
-#### Kit Contents
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '100%', height: 'auto'}} />
-</div> -->
-
-#### Installation Steps
-
-:::note Quick Setup
-1. Connect the GMSL camera to the SG8A-ORIN-GMSL2 board using the coaxial cable
-2. Mount the SG8A-ORIN-GMSL2 board onto the Jetson AGX Orin module
-3. Connect the power supply
-4. Power on the system
-:::
-
-<!-- <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '2rem'}}>
-    <iframe
-        style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-        src="//player.bilibili.com/player.html?bvid=BV1gj5TzdEAo&page=1&high_quality=1&danmaku=0"
-        scrolling="no"
-        border="0"
-        frameBorder="no"
-        framespacing="0"
-        allowFullScreen="true">
-    </iframe>
-</div> -->
-
-### Software Preparation
-
-#### SDK Download
-
-:::note Driver Packages
-Select the appropriate driver package based on your camera type and JetPack version:
-:::
-
-| Camera Type | JetPack Version | Download Link |
-|-------------|-----------------|---------------|
-| GMSL Camera (YUV) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP5.1.2_L4TR35.4.1) |
-| GMSL Camera (YUV) | JP6.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_GMSL1_JP6.0_L4TR36.3.0) |
-| GMSL2 Camera (YUV) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) |
-| GMSL2 Camera (YUV) | JP6.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.0_L4TR36.3.0) |
-| GMSL2 Camera (RAW) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_RAW_JP5.1.2_L4TR35.4.1) |
-| GMSL2 Camera (RAW) | JP6.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_RAW_JP6.0_L4TR36.3.0) |
-
-:::tip Download Method
-Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
-:::
-
-#### Quick Bring Up
+### Attachment
