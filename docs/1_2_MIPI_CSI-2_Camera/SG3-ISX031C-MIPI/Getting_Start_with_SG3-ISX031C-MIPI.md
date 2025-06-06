@@ -149,7 +149,7 @@ sidebar_position: 1
 ::: -->
 
 
-### Sensor power-up sequence
+#### Sensor power-up sequence
 
 :::info Power-up Sequence
 The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only requiring RESET to be asserted after the three power supplies are stable.
@@ -170,7 +170,7 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
 </div>
 
 
-#### Parts List
+### Parts List
 
 <div className="row">
   <div className="col col--6">
@@ -193,7 +193,7 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '100%', height: 'auto'}} />
 </div> -->
 
-#### Installation Steps
+### Installation Steps
 
 :::note Quick Setup
 1. Connect the FPC to the camera
