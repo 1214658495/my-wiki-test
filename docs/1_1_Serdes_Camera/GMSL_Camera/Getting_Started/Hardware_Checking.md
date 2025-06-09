@@ -21,11 +21,11 @@ Key features of the connector:
 - Secure locking mechanism
 - IP67 waterproof rating
 
-## 2. Camera Lens Types
+## 2. Mount of Camera
 
 Our cameras are available in two lens mounting types:
 
-### AA (Active Alignment) Type
+### AA (Active Alignment) 
 The AA type lens features an advanced mounting technology that ensures precise optical alignment.
 
 <div style={{textAlign: 'center', margin: '20px 0'}}>
@@ -39,11 +39,11 @@ Key features of AA lens:
 - Enhanced image quality
 - Suitable for high-precision applications
 
-### Threaded Type
+### S-Mount
 The threaded lens mount provides a traditional mechanical mounting solution.
 
 <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/threaded-lens.png" alt="Threaded Lens" style={{maxWidth: '80%', height: 'auto'}} />
+  <img src="/img/S-Mount.png" alt="Threaded Lens" style={{maxWidth: '80%', height: 'auto'}} />
   <p style={{color: '#666', fontSize: '0.9em'}}>Threaded Lens Mount</p>
 </div>
 

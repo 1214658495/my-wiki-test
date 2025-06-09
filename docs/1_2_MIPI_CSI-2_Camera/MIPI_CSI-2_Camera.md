@@ -19,7 +19,7 @@ SENSING collaborates with industry-leading image sensor suppliers such as SONY, 
 
 ## Product List
 
-| No. | Products | Sensor | Resolution | Frame Rate | Output Data | Products Link |
+| No. | Products | Sensor | Resolution | Frame Rate | Output Data | Product Links |
 |-----|----------|--------|------------|------------|-------------|---------------|
 | 1 | SG2-IMX662C-MIPI-Hxxx | SONY IMX662 RGGB | 1920H*1080V | Up to 60fps | MIPI/RAW@10bit/12bit | [View Details](https://sensing-world.com/en/h-pd-38.html?recommendFromPid=0&fromMid=1563) |
 | 2 | SG3-ISX031C-MIPI-Hxxx | SONY ISX031 RGGB | 1920H*1536V | Up to 60fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-114.html?recommendFromPid=0&fromMid=1563) |

@@ -10,7 +10,7 @@ Visit the SENSING service platform website to access comprehensive camera-relate
 
 :::tip Key Resources
 - Specification
-- Structural 3D data
+- 3D structural model
 - Camera intrinsic parameters data
 - SerDes configuration files
 - Images Sample (Specifically for cameras with an ISP)
@@ -30,7 +30,7 @@ Click the **Information Query** page as shown below:
 </div>
 
 ### Step 3: Get Product Information
-To access specifications, 3D data, and SerDes configuration files:
+To access specifications, 3D structural model, and SerDes configuration files:
 
 1. Input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>Product Model</span> (supports fuzzy search)
 2. Download all available data except camera intrinsic parameters
