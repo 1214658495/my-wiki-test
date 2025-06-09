@@ -10,9 +10,12 @@ Before installing the camera, please carefully check the following hardware aspe
 
 The camera uses an **Amphenol Fakra (Z Code)** connector for signal transmission. This connector is specifically designed for automotive applications and provides reliable high-speed data transmission.
 
-<div style={{textAlign: 'center', margin: '20px 0'}}>
+<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
   <img src="/img/camera-connector.png" alt="Camera Connector" style={{maxWidth: '80%', height: 'auto'}} />
   <p style={{color: '#666', fontSize: '0.9em'}}>Amphenol Fakra (Z Code) Connector</p>
+</div> -->
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_connector.png" alt="Camera_connector" style={{maxWidth: '40%', height:'auto'}} />
 </div>
 
 Key features of the connector:
