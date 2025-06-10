@@ -62,19 +62,19 @@ sidebar_position: 1
 
 | No. | Camera                      | Resolution | Output Data | Ubuntu18.04/20.04 |
 |-----| --------------------------- | ---------- | ----------- | ------------- |
-| 1   | SG1-OX01F10C-GMSL-Hxxx      | 1280H*720V | YUV422      | YES           |
-| 2   | SG1S-OX01F10C-G1G-Hxxx      | 1280H*960V | YUV422      | YES           |
-| 3   | SG2-AR0231C-0202-GMSL-Hxxx  | 1920H*1080V| YUV422      | YES           |
-| 4   | SG2-AR0233C-5200-G2A-Hxxx   | 1920H*1080V| YUV422      | YES           |
-| 5   | SG2-IMX390C-5200-G2A-Hxxx   | 1920H*1080V| YUV422      | YES           |
-| 6   | SG2-OX03CC-5200-GMSL2F-Hxxx | 1920H*1080V| YUV422      | YES           |
-| 7   | SG3S-ISX031C-GMSL2-Hxxx     | 1920H*1536V| YUV422      | YES           |
-| 8   | SG3S-ISX031C-GMSL2F-Hxxx    | 1920H*1536V| YUV422      | YES           |
-| 9   | SG3S-OX03JC-G2F-Hxxx        | 1920H*1536V| YUV422      | YES           |
-| 10  | SG5-IMX490C-5300-GMSL2-Hxxx | 2880H*1860H| YUV422      | YES           |
-| 11  | SG8S-AR0820C-5300-G2A-Hxxx  | 3840H*2160V| YUV422      | YES           |
-| 12  | SG8-OX08BC-5300-GMSL2-Hxxx  | 3840H*2160V| YUV422      | YES           |
-| 13  | SG8-IMX728C-G2G-Hxxx        | 3840H*2160V| RAW12       | YES           |
+| 1   | SG1-OX01F10C-GMSL-Hxxx      | 1280H*720V | YUV422      | ✅           |
+| 2   | SG1S-OX01F10C-G1G-Hxxx      | 1280H*960V | YUV422      | ✅           |
+| 3   | SG2-AR0231C-0202-GMSL-Hxxx  | 1920H*1080V| YUV422      | ✅           |
+| 4   | SG2-AR0233C-5200-G2A-Hxxx   | 1920H*1080V| YUV422      | ✅           |
+| 5   | SG2-IMX390C-5200-G2A-Hxxx   | 1920H*1080V| YUV422      | ✅           |
+| 6   | SG2-OX03CC-5200-GMSL2F-Hxxx | 1920H*1080V| YUV422      | ✅           |
+| 7   | SG3S-ISX031C-GMSL2-Hxxx     | 1920H*1536V| YUV422      | ✅           |
+| 8   | SG3S-ISX031C-GMSL2F-Hxxx    | 1920H*1536V| YUV422      | ✅           |
+| 9   | SG3S-OX03JC-G2F-Hxxx        | 1920H*1536V| YUV422      | ✅           |
+| 10  | SG5-IMX490C-5300-GMSL2-Hxxx | 2880H*1860H| YUV422      | ✅           |
+| 11  | SG8S-AR0820C-5300-G2A-Hxxx  | 3840H*2160V| YUV422      | ✅           |
+| 12  | SG8-OX08BC-5300-GMSL2-Hxxx  | 3840H*2160V| YUV422      | ✅           |
+| 13  | SG8-IMX728C-G2G-Hxxx        | 3840H*2160V| RAW12       | ✅           |
 
 ### Hardware Preparation
 
