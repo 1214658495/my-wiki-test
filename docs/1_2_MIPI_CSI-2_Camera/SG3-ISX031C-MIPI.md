@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Getting Start with SG3-IMX900C-MIPI
+# SG3-ISX031C-MIPI
 
 ## Overview
 

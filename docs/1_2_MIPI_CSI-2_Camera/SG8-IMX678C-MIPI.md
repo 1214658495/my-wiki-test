@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# Getting Start with SG8-IMX678C-MIPI
+# SG8-IMX678C-MIPI
 
 ## Overview
 

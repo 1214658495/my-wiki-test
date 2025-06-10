@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Getting Start with SG12-IMX577C-MIPI
+# SG3-IMX900C-MIPI
 
 ## Overview
 

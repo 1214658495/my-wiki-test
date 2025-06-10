@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 2
 ---
 
-# Getting Start with SG2-IMX662C-MIPI
+# SG2-IMX662C-MIPI
 
 ## Overview
 

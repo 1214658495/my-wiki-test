@@ -1,8 +1,5 @@
 {
   "label": "Event Based Camera",
   "position": 8,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for Event Based Camera."
-  }
+  "link": null
 }

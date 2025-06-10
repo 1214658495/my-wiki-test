@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 4
 ---
 
-# Getting Start with SG3-ISX031C-MIPI
+# SG12-IMX577C-MIPI
 
 ## Overview
 
