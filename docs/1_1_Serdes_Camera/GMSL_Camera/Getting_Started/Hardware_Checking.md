@@ -31,9 +31,12 @@ Our cameras are available in two lens mounting types:
 ### AA (Active Alignment) 
 The AA type lens features an advanced mounting technology that ensures precise optical alignment.
 
-<div style={{textAlign: 'center', margin: '20px 0'}}>
+<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
   <img src="/img/aa-lens.png" alt="AA Lens Structure" style={{maxWidth: '80%', height: 'auto'}} />
   <p style={{color: '#666', fontSize: '0.9em'}}>AA Lens Structure and Mounting Process</p>
+</div> -->
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_Structure_intro.png" alt="AA_Mount" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 Key features of AA lens:
@@ -42,16 +45,23 @@ Key features of AA lens:
 - Enhanced image quality
 - Suitable for high-precision applications
 
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_lens.png" alt="AA_Mount" style={{maxWidth: '60%', height:'auto'}} />
+</div>
 ### S-Mount
-The threaded lens mount provides a traditional mechanical mounting solution.
+The S-Mount lens provides a traditional mechanical mounting solution.
 
-<div style={{textAlign: 'center', margin: '20px 0'}}>
+<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
   <img src="/img/S-Mount.png" alt="Threaded Lens" style={{maxWidth: '80%', height: 'auto'}} />
   <p style={{color: '#666', fontSize: '0.9em'}}>Threaded Lens Mount</p>
+</div> -->
+
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_S_mount_Structure_intro.png" alt="AA_Mount" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
-Comparison between AA and Threaded types:
-| Feature | AA Type | Threaded Type |
+Comparison between AA and S-Mount:
+| Feature | AA | S-Mount |
 |---------|---------|---------------|
 | Mounting Method | Active Alignment | Mechanical Thread |
 | Precision | High | Standard |

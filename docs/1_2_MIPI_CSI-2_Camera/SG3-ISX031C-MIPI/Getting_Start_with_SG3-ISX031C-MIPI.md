@@ -236,3 +236,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 :::
 
 ### Attachment
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC" 
+    style={{maxWidth: '70%', height:'auto'}} />
+</div>
