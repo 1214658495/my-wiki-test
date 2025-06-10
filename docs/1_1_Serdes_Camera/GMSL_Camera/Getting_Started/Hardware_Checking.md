@@ -74,9 +74,14 @@ Comparison between AA and S-Mount:
 Some camera models include a heating function to prevent lens fogging in cold environments.
 
 ### With Heating Function
-<div style={{textAlign: 'center', margin: '20px 0'}}>
+<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
   <img src="/img/camera-with-heating.png" alt="Camera with Heating" style={{maxWidth: '80%', height: 'auto'}} />
   <p style={{color: '#666', fontSize: '0.9em'}}>Camera with Heating Function</p>
+</div> -->
+
+
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Heating_intro.png" alt="Camera_Heating_intro" style={{maxWidth: '50%', height:'auto'}} />
 </div>
 
 Features:
@@ -86,9 +91,13 @@ Features:
 - Suitable for cold environments
 
 ### Without Heating Function
-<div style={{textAlign: 'center', margin: '20px 0'}}>
+<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
   <img src="/img/camera-without-heating.png" alt="Camera without Heating" style={{maxWidth: '80%', height: 'auto'}} />
   <p style={{color: '#666', fontSize: '0.9em'}}>Standard Camera without Heating</p>
+</div> -->
+
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" alt="Camera_Without_Heating_intro" style={{maxWidth: '30%', height:'auto'}} />
 </div>
 
 Features:
