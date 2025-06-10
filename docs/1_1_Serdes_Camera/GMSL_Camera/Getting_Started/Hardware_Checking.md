@@ -97,11 +97,11 @@ Features:
 </div> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" alt="Camera_Without_Heating_intro" style={{maxWidth: '30%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" alt="Camera_Without_Heating_intro" style={{maxWidth: '25%', height:'auto'}} />
 </div>
 
 Features:
-- Standard power supply only
+- Standard Power over Coax (POC) power supply only
 - Simpler design
 - Lower power consumption
 - Suitable for normal temperature environments
