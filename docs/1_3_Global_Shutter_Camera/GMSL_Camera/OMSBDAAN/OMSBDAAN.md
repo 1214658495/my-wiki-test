@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# OMSBDAAN
+# Getting Started with OMSBDAAN
 
 ## Overview
 
@@ -63,10 +63,9 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_diagram.png" alt="Embedded Camera" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_Block Diagram.png" alt="OMSBDAAN" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
-<br />
 
 #### I2C Address Information
 
@@ -133,60 +132,52 @@ sidebar_position: 1
 
 #### Pin Definition
 
+
 <div style={{display: 'flex', justifyContent: 'center'}}>
-
-| NO. | Pin Name | Type | Description |
-|----|----------|------|-------------|
-| 1 | E2PPROM-WP | INPUT:3.3V/1.8V | E2PROM<br/>L:Write disable; H:writable |
-| 2 | BOOT-CTL | INPUT:3.3V/1.8V | H: Not Load NOR FLASH<br/>L: Load NOR FLASH<br/>Default: L |
-| 3 | ERROR | OUTPUT: | Fault check signal output pin<br/>H:OK<br/>L:ERROR |
-| 4 | GND | POWER | |
-| 5 | FRSYNC | I/O:1.8V | Frame synchronization signal |
-| 6 | GPIO3 | I/O:1.8V | reserve |
-| 7 | GND | POWER | |
-| 8 | D0_N | OUTPUT | MIPI |
-| 9 | D0_P | OUTPUT | MIPI |
-| 10 | GND | POWER | |
-| 11 | D1_N | OUTPUT | MIPI |
-| 12 | D1_P | OUTPUT | MIPI |
-| 13 | GND | POWER | |
-| 14 | CLK_N | OUTPUT | MIPI |
-| 15 | CLK_P | OUTPUT | MIPI |
-| 16 | GND | POWER | |
-| 17 | D2_N | OUTPUT | MIPI |
-| 18 | D2_P | OUTPUT | MIPI |
-| 19 | GND | POWER | |
-| 20 | D3_N | OUTPUT | MIPI |
-| 21 | D3_P | OUTPUT | MIPI |
-| 22 | GND | POWER | |
-| 23 | POW_RES | INPUT:3.3V/1.8V | On-camera electrical signal |
-| 24 | SENSOR-CLK | INPUT: 24MHZ(1.8V) | Clock signal input<br/>(Modules use an internal 24MHz clock) |
-| 25 | GND | POWER | |
-| 26 | CAM-SCL | I/O:3.3V | UP 10K(FRSYNC:L I2C Address 7'H1A or 0X1A)<br/>(FRSYNC:H I2C Address in Flash) |
-| 27 | CAM-SDA | I/O:3.3V | UP 10K(FRSYNC:L I2C Address 7'H1A or 0X1A)<br/>(FRSYNC:H I2C Address in Flash) |
-| 28 | GND | POWER | |
-| 29 | VCC-3.3V | POWER | |
-| 30 | VCC-3.3V | POWER | |
-
+<table>
+  <thead>
+    <tr>
+      <th colSpan="2">Pin Definition</th>
+      <th colSpan="2">Operating Voltage Range</th>
+      <th>Steady State Current</th>
+      <th rowSpan="2">Interface Type</th>
+    </tr>
+    <tr>
+      <th>PIN</th>
+      <th>Description</th>
+      <th>Max(V)</th>
+      <th>Min(V)</th>
+      <th>(mA)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Video+</td>
+      <td>16</td>
+      <td>9</td>
+      <td>&lt;400mA@12V</td>
+      <td rowSpan="2">Molex<br/>(5600200220)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GND</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 
-
-<!-- :::caution Attention
-（1）The I2C bus number is the hardware location (matching the connector J2 pin). The bus number does not necessarily correspond to what is listed in the software.
-
-（2）The coaxial power supply is shared, but each GMSL line has its own filter.
-::: -->
-
-
-#### Sensor power-up sequence
+<!-- #### Sensor power-up sequence
 
 :::info Power-up Sequence
 The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only requiring RESET to be asserted after the three power supplies are stable.
 :::
 
-#### Power Sequence Diagram
-
+#### Power Sequence Diagram -->
 
 
 
@@ -194,12 +185,9 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Lens Mount |
-|-------|------|------|------|-----|------------------------|------------|
-| SG3-ISX031C-MIPI-H30X | 30° | 24° | F1.6 | 10.96mm | -2.5% | M12 |
-| SG3-ISX031C-MIPI-H60F | 60.35° | 47° | F1.6 | 5.8mm | -11.5% | M12 |
-| SG3-ISX031C-MIPI-H100F1 | 100.4° | 78° | F1.6 | 3.55mm | -49% | M12 |
-| SG3-ISX031C-MIPI-H190X | 196° | 154.5° | F2.0 | 1.51mm | -154.2% | M12 |
+| Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Water-proof | Lens Mount |
+|-------|------|------|------|-----|------------------------|-------------|------------|
+| OMSBDAAN | 130° | 98°@1944V | 2.0 | 2.18mm | -39.2%@HFOV | IP5X | M12 |
 
 </div>
 
