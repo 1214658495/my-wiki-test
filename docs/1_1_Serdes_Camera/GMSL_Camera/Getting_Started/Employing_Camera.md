@@ -50,7 +50,7 @@ For more details:
 
 SENSING offers GMSL camera grabber products that are pre-adapted for our cameras, providing a flexible solution for various applications.
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround1.png" alt="CCG3-8H-complete" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png" alt="CCG3-8H-complete" 
     style={{maxWidth: '90%', height:'auto'}} />
 </div>
 
