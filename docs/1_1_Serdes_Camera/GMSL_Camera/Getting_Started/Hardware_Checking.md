@@ -97,7 +97,7 @@ Features:
 </div> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" alt="Camera_Without_Heating_intro" style={{maxWidth: '25%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" alt="Camera_Without_Heating_intro" style={{maxWidth: '50%', height:'auto'}} />
 </div>
 
 Features:
