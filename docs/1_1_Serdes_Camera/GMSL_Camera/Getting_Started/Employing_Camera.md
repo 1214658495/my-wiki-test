@@ -10,6 +10,10 @@ This guide describes different scenarios for employing our cameras in various pl
 ## 1. Camera Integration with NVIDIA Platform
 
 SENSING provides NVIDIA platform products that are pre-adapted for our cameras. This integration ensures optimal performance and reliability.
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png" alt="SG8A-ORIN-GMSL2-complete" 
+    style={{maxWidth: '90%', height:'auto'}} />
+</div>
 
 ### Available Solutions
 - **[NVIDIA Jetson Series](https://sensing-world.com/en/h-col-142.html)**: Compatible with Jetson AGX Xavier, Jetson NX, and Jetson Nano. 
@@ -45,6 +49,10 @@ For more details:
 ## 2. Camera Integration with GMSL Camera Grabber
 
 SENSING offers GMSL camera grabber products that are pre-adapted for our cameras, providing a flexible solution for various applications.
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround1.png" alt="CCG3-8H-complete" 
+    style={{maxWidth: '90%', height:'auto'}} />
+</div>
 
 - Visit our official website: [GMSL Camera Grabber](https://sensing-world.com/en/Coaxcapture_Card/)
 
