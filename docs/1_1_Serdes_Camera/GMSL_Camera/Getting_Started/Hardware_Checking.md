@@ -15,7 +15,46 @@ The camera uses an **Amphenol Fakra (Z Code)** connector for signal transmission
   <p style={{color: '#666', fontSize: '0.9em'}}>Amphenol Fakra (Z Code) Connector</p>
 </div> -->
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_connector.png" alt="Camera_connector" style={{maxWidth: '40%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_connector.png" alt="Camera_connector" style={{maxWidth: '45%', height:'auto'}} />
+</div>
+
+### Connector Pin Definition
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+<table>
+  <thead>
+    <tr>
+      <th colSpan="2">Pin Definition</th>
+      <th colSpan="2">Operating Voltage Range</th>
+      <th>Steady State Current</th>
+      <th rowSpan="2">Interface Type</th>
+    </tr>
+    <tr>
+      <th>PIN</th>
+      <th>Description</th>
+      <th>Max(V)</th>
+      <th>Min(V)</th>
+      <th>(mA)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Video+</td>
+      <td>16</td>
+      <td>9</td>
+      <td>&lt;350mA@12V</td>
+      <td rowSpan="2">FAKRA(Z Code)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GND</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 Key features of the connector:

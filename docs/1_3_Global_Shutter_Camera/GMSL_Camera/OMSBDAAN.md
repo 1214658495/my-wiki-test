@@ -2,26 +2,26 @@
 sidebar_position: 1
 ---
 
-# Getting Start with OMSBDAAN
+# OMSBDAAN
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    SG3-ISX031C-MIPI-Hxxx camera is equipped with SONY CMOS image sensor ISX031. It has an automotive-grade sensor with a well tuned Image Signal Processor (ISP) that produces exceptional image quality, can be adapted to difference SOC platforms.
+    OMSBDAAN camera module is equipped with OmniVision CMOS image sensor OX05B1S and Maxim GMSL serializer MAX9295A. It has an automotive-grade sensor with a well tuned Image Signal Processor (ISP) that produces exceptional image quality, It is also equipped with an M12 automotive grade lens that supports visible light and 940nm infrared light recognition.
   </div>
 </div>
 
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031.png" alt="SG3-ISX031C-MIPI" 
-    style={{maxWidth: '20%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN.png" alt="OMSBDAAN" 
+    style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-114.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-pd-46.html?recommendFromPid=0&fromMid=1593" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
@@ -33,51 +33,29 @@ sidebar_position: 1
 
 | Parameter         | Value                   |
 |-------------------|-------------------------|
-| Sensor            | SONY 2.95MP ISX031 RGGB |
-| ISP               | Built-in                |
-| Image Size        | 1/2.42 inch CMOS        |
-| Output Pixels     | 1920H*1536V             |
-| Frame rate        | max 60fps               |
-| Pixel Size        | 3.0um*3.0um             |
-| HDR Support       | Yes                     |
-| Output data       | MIPI/YUV422-8bit        |
-| Power Supply      | 3.3V                    |
-| Current           | Less than 500mA @3.3VDC |
-| Camera interface  | FPC                     |
-| Connector         | FH67-30S-0.5SV          |
-| Operating temp.   | -20 to +75°C            |
-| Performance temp. | -20 to +60°C            |
-| Dimensions        | W: 20mm, L:35mm, H:16.2mm|
+| Sensor            | OmniVision 5MP OX05B1S RGB-IR |
+| ISP               | OAX4000                |
+| Image Size        | 1/2.53 inch CMOS        |
+| Output Pixels     | AA mode: 2592H *1944V / AB mode: 2592H *1800V  |
+| Frame rate        | AA mode: 2592H *1944V@30fps / AB mode: 2592H *1800V@60fps  |
+| Pixel Size        | 2.2um*2.2um            |
+| HDR Support       | /                    |
+| Output data       | YUV422-8bit        |
+| Serializer       | MAXIM MAX9295A       |
+| IR Filte       | Visible+940nm band pass       |
+| Camera Interface       | GMSL2       |
+| Power Supply      | POC: 9~16V  /  LED: 9 ~16V DC |
+| Current           | POC Less than 350mA@12VDC / LED Less than 400mA@12VDC |
+| Connector         | Amphenol Fakra(Z Code)+Molex  |
+| Operating temp.   | -40 to +85°C            |
+| Dimensions        | W: 28.8mm, L:44.2mm, H:20mm|
 | Weight            | Less than 50g           |
 
-
-<!-- <div className="row">
-  <div className="col col--6">
-    :::note Basic Info
-    - Model: SG8A-ORIN-GMSL2
-    - Dimension: 104mm*74mm
-    - Weight: 50g
-    - Connector: 1x120Pin High-density
-    - Camera input: Camera*8(GMSL2/GMSL)
-    - Trigger In: 12Pin Sync In
-    :::
-  </div>
-  <div className="col col--6">
-    :::note Technical Specs
-    - Deserializer: MAXIM(ADI) MAX9296A*4
-    - Camera Connector: Fakra Z Code
-    - POC Power Supply: DC 8-16V
-    - DC Power Supply: DC 12V
-    - Operating Conditions: -20°C to +85°C
-    - Adaptation kit: Jetson AGX Orin/Xavier
-    :::
-  </div>
-</div> -->
 
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_Hardware.png" alt="Embedded Camera" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_dimensions.png" alt="OMSBDAAN" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -94,12 +72,64 @@ sidebar_position: 1
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| NO. | Component | I2C Address |
-|-----------|-----------|-------|
-| 1 | EEPROM | 0xA0(8bit address) |
-| 2 | Sensor(ISX031) | 0x34(8bit address) |
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3"><strong>Serializer</strong></td>
+      <td>Model</td>
+      <td>Max9295A</td>
+    </tr>
+    <tr>
+      <td>I2C Address</td>
+      <td>0x80 (8bit address)</td>
+    </tr>
+    <tr>
+      <td>GMSL Rate</td>
+      <td>GMSL2 (6G bps)</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>ISP</strong></td>
+      <td>Model</td>
+      <td>OAX4000</td>
+    </tr>
+    <tr>
+      <td>I2C Address</td>
+      <td>0x48 (8bit address)</td>
+    </tr>
+    <tr>
+      <td>Reset</td>
+      <td>Controlled by Max9295A MFP0</td>
+    </tr>
+    <tr>
+      <td rowspan="4"><strong>Sensor</strong></td>
+      <td>Model</td>
+      <td>OX05B1S</td>
+    </tr>
+    <tr>
+      <td>I2C Address</td>
+      <td>0x6C (8bit address)</td>
+    </tr>
+    <tr>
+      <td>Frame Sync</td>
+      <td>Controlled by Max9295A MFP7</td>
+    </tr>
+    <tr>
+      <td>ERROR</td>
+      <td>Controlled by Max9295A MFP3</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
+
+
 
 #### Pin Definition
 
