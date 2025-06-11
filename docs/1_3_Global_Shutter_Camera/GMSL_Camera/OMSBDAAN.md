@@ -185,6 +185,10 @@ sidebar_position: 1
 The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only requiring RESET to be asserted after the three power supplies are stable.
 :::
 
+#### Power Sequence Diagram
+
+
+
 
 ### Lens Options
 

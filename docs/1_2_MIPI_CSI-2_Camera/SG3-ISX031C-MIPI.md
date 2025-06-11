@@ -150,6 +150,11 @@ sidebar_position: 1
 
 
 #### Sensor power-up sequence
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png" alt="Power Sequence Diagram" 
+    style={{maxWidth: '80%', height:'auto'}} />
+</div>
+<br />
 
 :::info Power-up Sequence
 The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only requiring RESET to be asserted after the three power supplies are stable.
