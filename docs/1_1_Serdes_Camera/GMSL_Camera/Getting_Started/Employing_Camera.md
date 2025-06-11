@@ -113,7 +113,7 @@ If our camera model is not listed, a three-party collaboration is required:
 
 2. **Technical Adaptation Process**
    - SENSING provides:
-     - Register configuration for the camera module
+     - Register configuration for the camera module-[Getting Camera Information](/docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Camera_Information)
      - I2C communication protocol details
      - Power sequence requirements
    - AI Box manufacturer:
