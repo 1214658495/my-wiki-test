@@ -131,7 +131,11 @@ sidebar_position: 1
 
 
 #### Pin Definition
-
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_LED_Connect.png" alt="OMSBDAAN_LED_Connect" 
+    style={{maxWidth: '80%', height:'auto'}} />
+</div>
+<br />
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 <table>
