@@ -37,7 +37,7 @@ The system consists of a Controller [including SoC and Deserializer], Cameras [i
 ## 4. Register Configuration Example
 Below is a typical register configuration for enabling Fsync passthrough. Adjust addresses and values according to your hardware datasheet.  
 - The following configuration transfer ub954-GPIO0 frameSync to ub953-GPIO0 and use ub954-GPIO0 as frameSync input.
-```bash
+```c
 #!/bin/bash
 
 
