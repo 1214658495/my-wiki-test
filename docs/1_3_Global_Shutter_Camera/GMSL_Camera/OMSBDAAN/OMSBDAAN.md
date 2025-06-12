@@ -130,10 +130,10 @@ sidebar_position: 1
 
 
 
-#### Pin Definition
+#### LED Connector Pin Definition
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_LED_Connect.png" alt="OMSBDAAN_LED_Connect" 
-    style={{maxWidth: '80%', height:'auto'}} />
+    style={{maxWidth: '40%', height:'auto'}} />
 </div>
 <br />
 
@@ -199,27 +199,27 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
 ### Parts List
 
 <div className="row">
-  <div className="col col--6">
+  <div className="col col--12">
     :::note Standard Configuration
-    - SG3-ISX031C-MIPI-Hxxx camera
-    - FPC
+    - OMSBDAAN
+    - Power Supply Cable
     :::
   </div>
-  <div className="col col--4">
+  <!-- <div className="col col--4">
     :::note Optional Configuration
     - Jetson Orin Nano/NX Devkit
     :::
-  </div>
+  </div> -->
 </div>
 
-<!-- #### Kit Contents -->
+### Adaptation to NVIDIA® Jetson™ platform
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
+    style={{maxWidth: '70%', height:'auto'}} />
+    <p>OMSBDAAN Camera Connect to Nvidia Jetson AGX Orin</p>
+</div>
 
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '100%', height: 'auto'}} />
-</div> -->
-
-### Installation Steps
+<!-- ### Installation Steps
 
 :::note Quick Setup
 1. Connect the FPC to the camera
@@ -230,7 +230,7 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
     style={{maxWidth: '60%', height:'auto'}} />
-</div>
+</div> -->
 
 ### Software Preparation
 
@@ -266,3 +266,4 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC" 
     style={{maxWidth: '70%', height:'auto'}} />
 </div>
+
