@@ -31,6 +31,8 @@ sidebar_position: 1
 
 ### Specification
 
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
 | Parameter         | Value                   |
 |-------------------|-------------------------|
 | Sensor            | OmniVision 5MP OX05B1S RGB-IR |
@@ -42,14 +44,16 @@ sidebar_position: 1
 | HDR Support       | /                    |
 | Output data       | YUV422-8bit        |
 | Serializer       | MAXIM MAX9295A       |
-| IR Filte       | Visible+940nm band pass       |
+| IR Filter       | Visible+940nm band pass       |
 | Camera Interface       | GMSL2       |
-| Power Supply      | POC: 9~16V  /  LED: 9 ~16V DC |
-| Current           | POC Less than 350mA@12VDC / LED Less than 400mA@12VDC |
+| Power Supply      | POC: 9~16V  ,  LED: 9 ~16V DC |
+| Current           | POC: Less than 350mA@12VDC , LED: Less than 400mA@12VDC |
 | Connector         | Amphenol Fakra(Z Code)+Molex  |
 | Operating temp.   | -40 to +85°C            |
 | Dimensions        | W: 28.8mm, L:44.2mm, H:20mm|
 | Weight            | Less than 50g           |
+
+</div>
 
 
 ### Dimensions
@@ -157,7 +161,7 @@ sidebar_position: 1
   <tbody>
     <tr>
       <td>1</td>
-      <td>Video+</td>
+      <td>VCC+</td>
       <td>16</td>
       <td>9</td>
       <td>&lt;400mA@12V</td>

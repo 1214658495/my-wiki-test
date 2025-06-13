@@ -2,60 +2,63 @@
 sidebar_position: 1
 ---
 
-# OMSBDAAN
+# Getting Started with DMSBBFAN
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    OMSBDAAN camera module is equipped with OmniVision CMOS image sensor OX05B1S and Maxim GMSL serializer MAX9295A. It has an automotive-grade sensor with a well tuned Image Signal Processor (ISP) that produces exceptional image quality, It is also equipped with an M12 automotive grade lens that supports visible light and 940nm infrared light recognition.
+    DMSBBFAN camera module is equipped with OmniVision CMOS image sensor OV02311 and Maxim GMSL serializer MAX96717F. It has an automotive-grade sensor with a well-tuned Image Signal Processor (ISP) that produces exceptional image quality, It is also equipped with an infrared automotive grade lens that supports 940nm infrared light recognition.
   </div>
 </div>
 
 
-
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN.png" alt="OMSBDAAN" 
-    style={{maxWidth: '30%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN.png" alt="DMSBBFAN" 
+    style={{maxWidth: '25%', height:'auto'}} />
 </div>
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-46.html?recommendFromPid=0&fromMid=1593" target="_blank" rel="noopener noreferrer" 
+    <a href="https://www.sensing-world.com/h-pd-44.html?recommendFromPid=0&fromMid=735" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
 </div>
 
+
 ## Getting Started
 
 ### Specification
 
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
 | Parameter         | Value                   |
 |-------------------|-------------------------|
-| Sensor            | OmniVision 5MP OX05B1S RGB-IR |
-| ISP               | OAX4000                |
-| Image Size        | 1/2.53 inch CMOS        |
-| Output Pixels     | AA mode: 2592H *1944V / AB mode: 2592H *1800V  |
-| Frame rate        | AA mode: 2592H *1944V@30fps / AB mode: 2592H *1800V@60fps  |
-| Pixel Size        | 2.2um*2.2um            |
-| HDR Support       | /                    |
-| Output data       | YUV422-8bit        |
-| Serializer       | MAXIM MAX9295A       |
-| IR Filte       | Visible+940nm band pass       |
-| Camera Interface       | GMSL2       |
-| Power Supply      | POC: 9~16V  /  LED: 9 ~16V DC |
-| Current           | POC Less than 350mA@12VDC / LED Less than 400mA@12VDC |
-| Connector         | Amphenol Fakra(Z Code)+Molex  |
-| Operating temp.   | -40 to +85°C            |
-| Dimensions        | W: 28.8mm, L:44.2mm, H:20mm|
-| Weight            | Less than 50g           |
+| Sensor | OV 2.08MP OV02311 Monochrome |
+| ISP | GW5200 |
+| Image Size | 1/2.9 inch CMOS |
+| Output Pixels | 1600H*1300V |
+| Pixel Size | 3um*3um |
+| Frame Rate | 1600H*1300V@30fps |
+| Output data | YUV422@8bit |
+| Serializer | MAXIM MAX96717F |
+| IR Filter | 940nm band pass |
+| Camera Interface | GMSL2 |
+| Power Supply | POC: 9~16V , LED: 9 ~16V DC |
+| Current | POC: Less than 250mA@12VDC, LED: Less than 400mA@12VDC |
+| Connector | Amphenol Fakra (Z Code) + Molex |
+| Operating temp. range | -40~+85℃ |
+| Dimensions | W: 35.3mm, L:43.6mm, H:24.8mm |
+| Weight | Less than 50g |
+
+</div>
 
 
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_dimensions.png" alt="OMSBDAAN" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_Dimension.png" alt="DMSBBFAN" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -63,7 +66,7 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_Block Diagram.png" alt="OMSBDAAN" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_BlockDiagram.png" alt="DMSBBFAN" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -83,7 +86,7 @@ sidebar_position: 1
     <tr>
       <td rowspan="3"><strong>Serializer</strong></td>
       <td>Model</td>
-      <td>Max9295A</td>
+      <td>Max96717F</td>
     </tr>
     <tr>
       <td>I2C Address</td>
@@ -91,37 +94,37 @@ sidebar_position: 1
     </tr>
     <tr>
       <td>GMSL Rate</td>
-      <td>GMSL2 (6G bps)</td>
+      <td>GMSL2 (3G bps)</td>
     </tr>
     <tr>
       <td rowspan="3"><strong>ISP</strong></td>
       <td>Model</td>
-      <td>OAX4000</td>
+      <td>GW5200</td>
     </tr>
     <tr>
       <td>I2C Address</td>
-      <td>0x48 (8bit address)</td>
+      <td>0xDA (8bit address)</td>
     </tr>
     <tr>
       <td>Reset</td>
-      <td>Controlled by Max9295A MFP0</td>
+      <td>Controlled by Max96717F MFP0</td>
     </tr>
     <tr>
       <td rowspan="4"><strong>Sensor</strong></td>
       <td>Model</td>
-      <td>OX05B1S</td>
+      <td>OV02311</td>
     </tr>
     <tr>
       <td>I2C Address</td>
-      <td>0x6C (8bit address)</td>
+      <td>0xC0 (8bit address)</td>
     </tr>
     <tr>
       <td>Frame Sync</td>
-      <td>Controlled by Max9295A MFP7</td>
+      <td>Controlled by Max96717F MFP7</td>
     </tr>
     <tr>
       <td>ERROR</td>
-      <td>Controlled by Max9295A MFP3</td>
+      <td>Controlled by Max96717F MFP3</td>
     </tr>
   </tbody>
 </table>
@@ -129,11 +132,10 @@ sidebar_position: 1
 </div>
 
 
-
 #### LED Connector Pin Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_LED_Connect.png" alt="OMSBDAAN_LED_Connect" 
-    style={{maxWidth: '40%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_LED_Connector.png" alt="DMSBBFAN_LED_Connector" 
+    style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
 
@@ -157,7 +159,7 @@ sidebar_position: 1
   <tbody>
     <tr>
       <td>1</td>
-      <td>Video+</td>
+      <td>VCC+</td>
       <td>16</td>
       <td>9</td>
       <td>&lt;400mA@12V</td>
@@ -175,23 +177,13 @@ sidebar_position: 1
 </div>
 
 
-<!-- #### Sensor power-up sequence
-
-:::info Power-up Sequence
-The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only requiring RESET to be asserted after the three power supplies are stable.
-:::
-
-#### Power Sequence Diagram -->
-
-
-
 ### Lens Options
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
 | Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Water-proof | Lens Mount |
 |-------|------|------|------|-----|------------------------|-------------|------------|
-| OMSBDAAN | 130° | 98°@1944V | 2.0 | 2.18mm | -39.2%@HFOV | IP5X | M12 |
+| DMSBBFAN | 55° | 44.4° | 2.2 | 5.1mm | -0.09%@HFOV | IP5X | M9 |
 
 </div>
 
@@ -201,7 +193,7 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
 <div className="row">
   <div className="col col--12">
     :::note Standard Configuration
-    - OMSBDAAN
+    - DMSBBFAN
     - Power Supply Cable
     :::
   </div>
@@ -212,69 +204,20 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
   </div> -->
 </div>
 
-### Camera Working Mode
-
-#### 1. AA Mode
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_WorkMode_AA.png" alt="OMSBDAAN_WorkMode_AA" 
-    style={{maxWidth: '85%', height:'auto'}} />
-    <!-- <p>OMSBDAAN Camera Work Mode AB</p> -->
-</div>
-
-<div style={{display: 'flex', justifyContent: 'center'}}>
-
-| Parameter item | Parameter Description |
-|---|---|
-| Resolution | 2592 x 1944 |
-| Frame Rate | 30fps |
-| Output data | UYVY/YUYV |
-| MIPI | 4lane, 800Mbps/lane |
-
-</div>
-
-When the scene brightness is greater than the brightness threshold, the RGB image is output at a frame rate of 30fps.
-
-When the scene is less than the brightness threshold, the output IR image will be automatically switched with a frame rate of 30fps.
-
-The brightness threshold is set through register configuration.
-
-#### 2. AB Mode
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_WorkMode_AB.png" alt="OMSBDAAN_WorkMode_AB" 
-    style={{maxWidth: '100%', height:'auto'}} />
-    <!-- <p>OMSBDAAN Camera Work Mode AB</p> -->
-</div>
-
-<div style={{display: 'flex', justifyContent: 'center'}}>
-
-| Parameter item | Parameter Description |
-|---|---|
-| Resolution | 2592 x 1800 |
-| Frame Rate | RGB: 30fps; IR: 30fps |
-| Output data | UYVY/YUYV |
-| MIPI | 4lane, 1296Mbps/lane |
-
-</div>
-
-Frame A outputs RGB images, VC channel is 0, frame rate is 30fps; B frame outputs IR image, VC channel is 1, frame rate is 30fps.
-:::caution Important Notice
-The camera can only output in either AA or AB mode. Please specify your required mode to the sales staff when purchasing the camera.
-:::
-
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
-<div style={{textAlign: 'center'}}>
+<!-- <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
     style={{maxWidth: '50%', height:'auto'}} />
     <p>OMSBDAAN Camera Connect to Nvidia Jetson AGX Orin</p>
-</div>
+</div> -->
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the OMSBDAAN camera to the SG8A-ORIN-GMSL2 board using the coaxial cable
+1. Connect the DMSBBFAN camera to the SG8A-ORIN-GMSL2 board using the coaxial cable
 2. Mount the SG8A-ORIN-GMSL2 board onto the Jetson AGX Orin module
-3. OMSBDAAN camera Connect the power supply
+3. DMSBBFAN camera Connect the power supply
 4. SG8A-ORIN-GMSL2 board Connect the power supply
 5. Power on the system
 :::
@@ -293,10 +236,11 @@ The camera can only output in either AA or AB mode. Please specify your required
 :::
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
-| NO. | JetPack Version | Camera mode | Download Link |
-|-------------|-----------------|-------------|---------------|
-| 1 | JP5.1.2 | AA mode | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AA_JP5.1.2_L4TR35.4.1) |
-| 2 | JP5.1.2 | AB mode | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AB_JP5.1.2_L4TR35.4.1) |
+
+| NO. | JetPack Version | NVIDIA Jetson Devices | Adapter Board | Download Link |
+|-------------|-----------------|-------------|---------------|---------------|
+| 1 | JP5.1.2 | Jetson AGX Orin Developer Kit | [SG8A-ORIN-GMSL2-F](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) |
+| 2 | JP6.2 | Jetson AGX Orin Developer Kit | [SG8A-ORIN-GMSL2-F](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.2_L4TR36.4.3) |
 
 </div>
 
@@ -354,8 +298,8 @@ int max9296_init() {
     // disable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x00);
     delay_ms(100);
-    // Configure link settings for GMSL2 (6Gbps)
-    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x02);
+    // Configure link settings for GMSL2 (3Gbps)
+    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x01);
 
     // Configure linkA and linkB settings for GMSL2 selection (default value)
     i2c_write(MAX9296_I2C_ADDR, 0x0006, 0xC0);
@@ -422,8 +366,8 @@ int main() {
     // Configure video capture format
     struct v4l2_format fmt = {0};
     fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
-    fmt.fmt.pix.width = 2592;
-    fmt.fmt.pix.height = 1944;
+    fmt.fmt.pix.width = 1600;
+    fmt.fmt.pix.height = 1300;
     fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;
     
     if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
