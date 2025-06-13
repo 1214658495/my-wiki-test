@@ -316,3 +316,158 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
     style={{maxWidth: '70%', height:'auto'}} />
 </div> -->
 
+
+### 2. Camera Integration with Customer's Self-developed Platform
+
+For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+</div>
+
+The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.
+
+### Step 1: Link Register initialization
+SENSING will provide:
+- **Serializer and Deserializer Configuration**
+   - Register configuration for the camera module-[Getting Camera Information](/docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Camera_Information)
+   - I2C communication protocol details
+
+- **Link Status Troubleshooting Guide**
+  - Link training parameters
+  - Error detection settings
+
+:::tip
+Please refer to the software flow and demo code below to develop your driver code.
+:::
+#### Software Development
+
+1. **Driver Development**:
+
+```c
+/* Example code for MAX9296 I2C initialization */
+#define MAX9296_I2C_ADDR 0x90 // 8-bit address
+
+int max9296_init() {
+    // Initialize I2C bus
+    i2c_init();
+    
+    // disable MIPI output
+    i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x00);
+    delay_ms(100);
+    // Configure link settings for GMSL2 (6Gbps)
+    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x02);
+
+    // Configure linkA and linkB settings for GMSL2 selection (default value)
+    i2c_write(MAX9296_I2C_ADDR, 0x0006, 0xC0);
+    
+    // Configure MIPI rate 1200Mbps
+    i2c_write(MAX9296_I2C_ADDR, 0x0320, 0x2C); 
+    
+    // enable MIPI output
+    i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x02);
+    
+    return 0;
+}
+```
+
+2. **Camera Configuration**:
+
+```c
+/* Example code for OMSBDAAN  initialization */
+
+#define MAX9295_I2C_ADDR 0x80 // 8-bit address
+
+int camera_init() {
+    // Initialize deserializer first
+    max9296_init();
+    
+    // Reset ISP through MAX9295A
+    i2c_write(0x80, 0x02BE, 0x10); // MFP0 high
+    // 
+    i2c_write(0x80, 0x0057, 0x12); 
+    i2c_write(0x80, 0x005B, 0x11); 
+    //  Configure datatype  YUV422 8bit
+    i2c_write(0x80, 0x0318, 0x5E); 
+
+    //  camera trigger  MFP7  low to  high
+    i2c_write(0x80, 0x02D3, 0x00); // MFP7 low
+    delay_ms(300);
+    i2c_write(0x80, 0x02D3, 0x10); // MFP7 high
+
+    return 0;
+}
+```
+
+#### Integration Steps
+
+1. **BSP Integration**:
+   - Modify the device tree to include the CSI interface configuration
+   - Add camera driver to kernel build configuration
+   - Configure media controller pipeline for the camera
+
+2. **Application Development**:
+
+```c
+/* Example code for capturing camera frames */
+#include "camera_api.h"
+
+int main() {
+    // Open camera device
+    int fd = open("/dev/video0", O_RDWR);
+    if (fd < 0) {
+        perror("Failed to open camera device");
+        return -1;
+    }
+    
+    // Configure video capture format
+    struct v4l2_format fmt = {0};
+    fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    fmt.fmt.pix.width = 2592;
+    fmt.fmt.pix.height = 1944;
+    fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;
+    
+    if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
+        perror("Failed to set format");
+        close(fd);
+        return -1;
+    }
+    
+    // Request and map buffers
+    // ... (buffer setup code) ...
+    
+    // Start streaming
+    // ... (streaming code) ...
+    
+    // Capture and process frames
+    // ... (frame processing code) ...
+    
+    // Cleanup
+    close(fd);
+    return 0;
+}
+```
+
+### Step 2: Data Processing
+After receiving the module data through the MIPI CSI interface:
+- **Data Reception**
+  - MIPI CSI-2 protocol implementation
+  - Data rate configuration
+  - Clock synchronization
+- **Image Processing**
+  - Raw/YUV data parsing
+  - Image format conversion
+  - Display configuration
+
+### Technical Support
+- **Documentation**
+  - Detailed register descriptions
+
+
+- **Engineering Support**
+  - Technical consultation
+  - Debug assistance
+  - Performance optimization
+
+:::tip
+SENSING Technology provides technical support for integration with most platforms. For detailed documentation, sample code, and technical assistance, please contact our support team.
+:::

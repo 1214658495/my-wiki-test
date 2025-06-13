@@ -190,10 +190,10 @@ int camera_init() {
     max9296_init();
     
     // Reset ISP through MAX9295A
-    i2c_write(0x80, 0x02BE, 0x12); // MFP0 high
+    i2c_write(0x80, 0x02BE, 0x10); // MFP0 high
     // 
-    i2c_write(0x80, 0x0057, 0x11); 
-    i2c_write(0x80, 0x005B, 0x00); 
+    i2c_write(0x80, 0x0057, 0x12); 
+    i2c_write(0x80, 0x005B, 0x11); 
     //  Configure datatype  YUV422 8bit
     i2c_write(0x80, 0x0318, 0x5E); 
 
@@ -254,8 +254,6 @@ int main() {
     return 0;
 }
 ```
-
-
 
 ### Step 2: Data Processing
 After receiving the module data through the MIPI CSI interface:
