@@ -212,42 +212,91 @@ The SG3-ISX031C-MIPI camera has no specific power-up sequence requirements, only
   </div> -->
 </div>
 
-### Adaptation to NVIDIA® Jetson™ platform
+### Camera Working Mode
+
+#### 1. AA Mode
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_WorkMode_AA.png" alt="OMSBDAAN_WorkMode_AA" 
+    style={{maxWidth: '85%', height:'auto'}} />
+    <!-- <p>OMSBDAAN Camera Work Mode AB</p> -->
+</div>
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| Parameter item | Parameter Description |
+|---|---|
+| Resolution | 2592 x 1944 |
+| Frame Rate | 30fps |
+| Output data | UYVY/YUYV |
+| MIPI | 4lane, 800Mbps/lane |
+
+</div>
+
+When the scene brightness is greater than the brightness threshold, the RGB image is output at a frame rate of 30fps.
+
+When the scene is less than the brightness threshold, the output IR image will be automatically switched with a frame rate of 30fps.
+
+The brightness threshold is set through register configuration.
+
+#### 2. AB Mode
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_WorkMode_AB.png" alt="OMSBDAAN_WorkMode_AB" 
+    style={{maxWidth: '100%', height:'auto'}} />
+    <!-- <p>OMSBDAAN Camera Work Mode AB</p> -->
+</div>
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| Parameter item | Parameter Description |
+|---|---|
+| Resolution | 2592 x 1800 |
+| Frame Rate | RGB: 30fps; IR: 30fps |
+| Output data | UYVY/YUYV |
+| MIPI | 4lane, 1296Mbps/lane |
+
+</div>
+
+Frame A outputs RGB images, VC channel is 0, frame rate is 30fps; B frame outputs IR image, VC channel is 1, frame rate is 30fps.
+:::caution Important Notice
+The camera can only output in either AA or AB mode. Please specify your required mode to the sales staff when purchasing the camera.
+:::
+
+## Employing Camera
+### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
-    style={{maxWidth: '70%', height:'auto'}} />
+    style={{maxWidth: '50%', height:'auto'}} />
     <p>OMSBDAAN Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
-<!-- ### Installation Steps
+#### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the FPC to the camera
-2. Mount the camera onto the Jetson Orin Nano/NX Devkit
-3. Power on the system
+1. Connect the OMSBDAAN camera to the SG8A-ORIN-GMSL2 board using the coaxial cable
+2. Mount the SG8A-ORIN-GMSL2 board onto the Jetson AGX Orin module
+3. OMSBDAAN camera Connect the power supply
+4. SG8A-ORIN-GMSL2 board Connect the power supply
+5. Power on the system
 :::
 
-<div style={{textAlign: 'center'}}>
+<!-- <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 
-### Software Preparation
+#### **Step 2**: Software Preparation
 
-#### SDK Download
-
-:::info Driver Packages
+:::info SDK Download
 -Select the appropriate driver package based on your camera type and JetPack version:
 
 -Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
 :::
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
-
-| NO. | JetPack Version | Download Link |
-|-------------|-----------------|---------------|
-| 1 | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack5.1.2/Jetson-Orin-Nano-DK_ISX031_YUV_JP5.1.2_L4TR35.4.1) |
-| 2 | JP6.1 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack6.1/Jetson-Orin-Nano-DK_ISX031_YUV_JP6.1_L4TR36.4.2) |
+| NO. | JetPack Version | Camera mode | Download Link |
+|-------------|-----------------|-------------|---------------|
+| 1 | JP5.1.2 | AA mode | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AA_JP5.1.2_L4TR35.4.1) |
+| 2 | JP5.1.2 | AB mode | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AB_JP5.1.2_L4TR35.4.1) |
 
 </div>
 
@@ -261,9 +310,9 @@ NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetp
 For more information, visit [NVIDIA's official Jetson Download Center](https://developer.nvidia.com/embedded/jetpack-archive).
 :::
 
-### Attachment
+<!-- ### Attachment
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC" 
     style={{maxWidth: '70%', height:'auto'}} />
-</div>
+</div> -->
 
