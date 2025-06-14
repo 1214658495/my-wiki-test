@@ -4,28 +4,41 @@ sidebar_position: 2
 
 # Application
 
-## SENSING RGB-IR Camera
-In the era of artificial intelligence, the integration of computer vision technology into automotive electronics has become an industry trend. However, traditional "RGB" camera technology cannot meet the requirements of high-precision detection. For applications requiring facial recognition, traditional RGB cameras may not perform well in low-light conditions. RGB-IR technology combines the advantages of both RGB and infrared, providing enhanced performance in low-light environments. By integrating RGB-IR camera technology, it's possible to achieve excellent facial recognition capabilities in various lighting conditions.
+# DMS Camera Application Analysis: The Core Sensor for Smart Cabin Safety
 
-SENSING Technology (Shenzhen) Co., Ltd. has independently developed and launched a 5MP RGB-IR global shutter camera module. This camera is designed for the NVIDIA Jetson platform and has been successfully tested on the Jetson AGX Orin. The camera integrates OmniVision's 5MP OX05B1S RGB-IR sensor, OAX4000 ISP, and Maxim's Max9295A GMSL2 serializer. It features a high-quality M12 automotive-grade lens that supports both visible light and 940nm infrared light recognition, offering excellent performance in low-light conditions.
+With the continuous advancement of driving technology, the focus of driving safety has shifted from "external environment perception" to "in-cabin behavior recognition." The Driver Monitoring System (DMS) is a key component of smart cabin safety, playing a vital role in advanced driver-assistance systems (ADAS) and overall vehicle safety.
 
+## 1. Core Functions of DMS Camera
 
-
+The DMS camera is typically installed on the dashboard or steering column, enabling real-time acquisition of the driver's face, eyes, head, and upper body images. Its main functions include:
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
-    style={{maxWidth: '70%', height:'auto'}} />
-    <p>OMSBDAAN Camera Connect to Nvidia Jetson AGX Orin</p>
-</div>
-
-Based on the OX05B1S sensor, SENSING's RGB-IR camera can output both RGB and IR images simultaneously. The camera supports 5MP full-resolution output at 30fps. In low-light conditions, it can switch to infrared mode for enhanced visibility. It supports AA/AB modes with different resolutions and frame rates. In AA mode, it outputs 2592H×1944V at 30fps; in AB mode, it outputs 2592H×1800V at 60fps.
-
-
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_Application.png" alt="OMSBDAAN" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_Application.png" alt="DMSBBFAN_Application" 
     style={{maxWidth: '100%', height:'auto'}} />
-    <p>Night Scene IR Effect (Left) & Day Scene RGB Effect (Right)</p>
+    <p>DMSBBFAN Camera</p>
 </div>
 
-The camera's compact design measures 28.8 × 44.2 × 20mm and weighs less than 50g. It features a durable metal housing with excellent heat dissipation and is designed for easy installation and use.
+- **Fatigue Detection:** Monitors eye closure and blinking (PERCLOS) to determine if the driver is experiencing fatigue.
+- **Attention Monitoring:** Detects the driver's line of sight and head orientation to assess attentiveness.
+- **Dangerous Behavior Detection:** Identifies risky behaviors such as using a phone, smoking, or looking away from the road.
+- **Driver Identification:** Uses facial recognition to verify driver identity and prevent unauthorized use.
 
-This camera is ideal for various applications including in-vehicle monitoring systems, driver fatigue detection, and other computer vision tasks. The combination of OMS RGB-IR and GMSL technology makes it suitable for automotive applications, providing high reliability and excellent performance in various lighting conditions. It's particularly valuable for driver monitoring systems (DMS) and in-cabin monitoring systems (ICMS), enhancing driving safety.
+## 2. Technical Features and Advantages
+
+To meet the high reliability and all-weather requirements of automotive applications, our DMS camera offers the following technical advantages:
+
+- **High Dynamic Range Global Shutter Sensor:** Delivers clear images even in challenging lighting conditions.
+- **940nm Infrared Illumination:** Enhances eye and facial recognition performance in low-light or nighttime environments.
+- **Full-Frame Global Shutter:** Prevents motion blur, ensuring accurate behavior analysis.
+- **RGB/IR Dual Imaging Capability (Optional):** Supports seamless switching between visible (RGB) and infrared (IR) imaging, ensuring high-quality data in all scenarios.
+
+## 3. Typical Application Scenarios
+<!-- <div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
+    style={{maxWidth: '60%', height:'auto'}} />
+    <p>DMSBBFAN Camera Connect to Nvidia Jetson AGX Orin</p>
+</div> -->
+
+- **Passenger Vehicle ADAS:** Integrates with ADAS to enable L2+ and above intelligent driving assistance.
+- **Commercial Fleet Management:** Provides real-time driver monitoring, fatigue detection, and abnormal behavior alerts to improve operational safety.
+- **Mobility/Shared Mobility:** Enhances safety for ride-hailing and car-sharing by verifying driver identity and monitoring in-cabin behavior.
+- **Smart Cabin Integration:** Works with OMS (Occupant Monitoring System) to achieve comprehensive in-cabin perception and safety.
