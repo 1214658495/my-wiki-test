@@ -297,10 +297,12 @@ The camera can only output in either AA or AB mode. Please specify your required
 :::
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
-| NO. | JetPack Version | Camera mode | Download Link |
-|-------------|-----------------|-------------|---------------|
-| 1 | JP5.1.2 | AA mode | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AA_JP5.1.2_L4TR35.4.1) |
-| 2 | JP5.1.2 | AB mode | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AB_JP5.1.2_L4TR35.4.1) |
+
+| NO. | JetPack Version | Camera mode | NVIDIA Jetson Devices | Adapter Board | Download Link |
+|-------------|-----------------|-------------|---------------|---------------|---------------|
+| 1 | JP5.1.2 | AA mode |Jetson AGX Orin Developer Kit | [SG8A-ORIN-GMSL2-F](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AA_JP5.1.2_L4TR35.4.1) |
+| 2 | JP5.1.2 | AB mode |Jetson AGX Orin Developer Kit | [SG8A-ORIN-GMSL2-F](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_OX05B-AB_JP5.1.2_L4TR35.4.1) |
+
 
 </div>
 
