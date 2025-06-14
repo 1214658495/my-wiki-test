@@ -206,11 +206,11 @@ sidebar_position: 1
 
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
-<!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_ConnectNvidia.png" alt="DMSBBFAN_ConnectNvidia" 
     style={{maxWidth: '50%', height:'auto'}} />
-    <p>OMSBDAAN Camera Connect to Nvidia Jetson AGX Orin</p>
-</div> -->
+    <p>DMSBBFAN Camera Connect to Nvidia Jetson AGX Orin</p>
+</div>
 
 #### **Step 1**: Installation Steps
 

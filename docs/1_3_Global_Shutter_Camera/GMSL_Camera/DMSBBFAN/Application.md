@@ -32,11 +32,11 @@ To meet the high reliability and all-weather requirements of automotive applicat
 - **RGB/IR Dual Imaging Capability (Optional):** Supports seamless switching between visible (RGB) and infrared (IR) imaging, ensuring high-quality data in all scenarios.
 
 ## 3. Typical Application Scenarios
-<!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
-    style={{maxWidth: '60%', height:'auto'}} />
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_ConnectNvidia.png" alt="DMSBBFAN_ConnectNvidia" 
+    style={{maxWidth: '50%', height:'auto'}} />
     <p>DMSBBFAN Camera Connect to Nvidia Jetson AGX Orin</p>
-</div> -->
+</div>
 
 - **Passenger Vehicle ADAS:** Integrates with ADAS to enable L2+ and above intelligent driving assistance.
 - **Commercial Fleet Management:** Provides real-time driver monitoring, fatigue detection, and abnormal behavior alerts to improve operational safety.

@@ -63,7 +63,7 @@ Key features of the connector:
 - Secure locking mechanism
 - IP67 waterproof rating
 
-## 2. Mount of Camera
+## 2. Mount of Camera Lens
 
 Our cameras are available in two lens mounting types:
 
