@@ -1,26 +1,26 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# SHW3H
+# SH2-N1B60-G2A
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    SH3-S11A60-G2A Camera is equipped with SONY CMOS image sensor ISX031 and Maxim GMSL2 serializer MAX9295A. It has an automotive-grade sensor with a well-tuned Image Signal Processor (ISP) that produces exceptional image quality, which comes with an IP67-rated enclosure –is supplied with an AA lens that is focused and glued in our factory. 
+    SH2-N1B60-G2A-Hxxx camera is equipped with On-semi CMOS image sensor AR0233 and Maxim GMSL2. It has an automotive-grade sensor with a well-tuned Image Signal Processor (ISP) that produces exceptional image quality, which comes with an IP67-rated enclosure – is supplied with an AA lens that is focused and glued in our factor.
   </div>
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A.png" alt="SH3-S11A60-G2A" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A/SH2-N1B60-G2A.png" alt="SH2-N1B60-G2A" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-183.html" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-pd-182.html?recommendFromPid=0&fromMid=3596" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
@@ -34,22 +34,22 @@ sidebar_position: 1
 
 | Parameter         | Value                   |
 |-------------------|-------------------------|
-| Sensor            | SONY 2.95MP ISX031 RGGB |
-| ISP               | Built-in                |
-| Image Size        | 1/2.42 inch CMOS        |
-| Output Pixels     | 1920H*1536V             |
+| Sensor            | ONSEMI 2.6MP AR0233 RGGB |
+| ISP               | GEO GW5200              |
+| Image Size        | 1/2.5 inch CMOS        |
+| Output Pixels     | 1920H*1080V             |
 | Pixel Size        | 3.0um*3.0um             |
-| Frame Rate        | 1920*1536@60fps         |
+| Frame Rate        | 1920*1080@60fps         |
 | HDR Support       | Yes                     |
 | LFM               | Yes                     |
 | Output data       | YUV422@8bit             |
 | Serializer        | MAXIM MAX9295A          |
 | Camera Interface  | GMSL2                   |
 | Power Supply      | 9~16V POC               |
-| Current           | Less than 200mA@12VDC            |
+| Current           | Less than150mA@12VDC            |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:18.6mm |
+| Dimensions        | W: 30mm, L:30mm, H:22.5mm |
 | Weight            | Less than 50g                    |
 
 </div>
@@ -58,7 +58,7 @@ sidebar_position: 1
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_Dimensions.png" alt="SH3-S11A60-G2A" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A/SH2-N1B60-G2A_Dimensions.png" alt="SH2-N1B60-G2A" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -66,7 +66,7 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_BlockDiagram.png" alt="SH3-S11A60-G2A" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A/SH2-N1B60-G2A_BlockDiagram.png" alt="SH2-N1B60-G2A" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -97,21 +97,30 @@ sidebar_position: 1
       <td>GMSL2 (6G bps)</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>Sensor</strong></td>
+      <td rowspan="3"><strong>ISP</strong></td>
       <td>Model</td>
-      <td>ISX031</td>
+      <td>GW5200</td>
     </tr>
     <tr>
       <td>I2C Address</td>
-      <td>0x34 (8bit address)</td>
-    </tr>
-    <tr>
-      <td>Frame Sync</td>
-      <td>Controlled by Max9295A MFP7</td>
+      <td>0xDA (8bit address)</td>
     </tr>
     <tr>
       <td>Reset</td>
       <td>Controlled by Max9295A MFP0</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>Sensor</strong></td>
+      <td>Model</td>
+      <td>AR0233</td>
+    </tr>
+    <tr>
+      <td>I2C Address</td>
+      <td>0x20 (8bit address)</td>
+    </tr>
+    <tr>
+      <td>Frame Sync</td>
+      <td>Controlled by Max9295A MFP7</td>
     </tr>
   </tbody>
 </table>
@@ -125,11 +134,10 @@ sidebar_position: 1
 
 | Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Water-proof | Lens Mount |
 |-------|------|------|------|-----|------------------------|-------------|------------|
-| SH3-S11A60-G2A-H30X | 30° | 24° | 1.6 | 10.96mm | -2.5% | IP67 | M12 |
-| SH3-S11A60-G2A-H60FA | 60° | 46° | 1.6 | 5.8mm | -21% | IP67 | AA |
-| SH3-S11A60-G2A-H100F1A | 100° | 78° | 1.6 | 3.55mm | -58% | IP67 | AA |
-| SH3-S11A60-G2A-H120UA | 118° | 92° | 2 | 3mm | -92% | IP67 | AA |
-| SH3-S11A60-G2A-H190XA | 196° | 154° | 2.0 | 1.51mm | -155% | IP67 | AA |
+| SH2-N1B60-G2A-H60FA | 60° | 32° | 1.6 | 5.8mm | -21.5% | IP67 | AA |
+| SH2-N1B60-G2A-H100F1A | 100° | 53° | 1.6 | 3.55mm | -45% | IP67 | AA |
+| SH2-N1B60-G2A-H120UA | 118.4° | 62.6° | 2.0 | 3.04mm | -62% | IP67 | AA |
+| SH2-N1B60-G2A-H190XA | 196° | 112° | 2.0 | 1.51mm | -155% | IP67 | AA |
 
 </div>
 
@@ -137,18 +145,18 @@ sidebar_position: 1
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH2-N1B60-G2A_ConnectNvidia" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SH3-S11A60-G2A Camera Connect to Nvidia Jetson AGX Orin</p>
+    <p>SH2-N1B60-G2A Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the SH3-S11A60-G2A camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
-2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
-3. SH3-S11A60-G2A camera Connect the power supply
-4. SG10A-AGON-G2M-A1 board Connect the power supply
+1. Connect the SH2-N1B60-G2A camera to the SG8A-ORIN-GMSL2-F board using the coaxial cable
+2. Mount the SG8A-ORIN-GMSL2-F board onto the Jetson AGX Orin module
+3. SH2-N1B60-G2A camera Connect the power supply
+4. SG8A-ORIN-GMSL2-F board Connect the power supply
 5. Power on the system
 :::
 
@@ -167,10 +175,10 @@ sidebar_position: 1
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
-|-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.0 | SH3-S11A60-G2A |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
-
+| NO. | JetPack Version | NVIDIA Jetson Devices | Adapter Board | Download Link |
+|-------------|-----------------|-------------|---------------|---------------|
+| 1 | JP5.1.2 | Jetson AGX Orin Developer Kit | [SG8A-ORIN-GMSL2-F](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) |
+| 2 | JP6.2 | Jetson AGX Orin Developer Kit | [SG8A-ORIN-GMSL2-F](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.2_L4TR36.4.3) |
 
 </div>
 
@@ -290,7 +298,7 @@ int main() {
     struct v4l2_format fmt = {0};
     fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     fmt.fmt.pix.width = 1920;
-    fmt.fmt.pix.height = 1536;
+    fmt.fmt.pix.height = 1080;
     fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_UYVY;
     
     if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
@@ -335,3 +343,4 @@ After receiving the module data through the MIPI CSI interface:
 :::tip
 SENSING Technology provides technical support for integration with most platforms. For detailed documentation, sample code, and technical assistance, please contact our support team.
 :::
+

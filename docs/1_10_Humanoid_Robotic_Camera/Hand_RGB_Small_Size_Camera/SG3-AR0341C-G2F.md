@@ -173,8 +173,8 @@ int max9296_init() {
     // disable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x00);
     delay_ms(100);
-    // Configure link settings for GMSL2 (6Gbps)
-    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x02);
+    // Configure link settings for GMSL2 (3Gbps)
+    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x01);
 
     // Configure linkA and linkB settings for GMSL2 selection (default value)
     i2c_write(MAX9296_I2C_ADDR, 0x0006, 0xC0);
