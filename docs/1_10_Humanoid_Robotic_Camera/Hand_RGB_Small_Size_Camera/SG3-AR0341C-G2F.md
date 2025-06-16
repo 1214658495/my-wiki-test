@@ -97,7 +97,7 @@ sidebar_position: 1
       <td>GMSL2 (3G bps)</td>
     </tr>
     <tr>
-      <td rowspan="5"><strong>ISP</strong></td>
+      <td rowspan="5"><strong>Sensor</strong></td>
       <td>Model</td>
       <td>AR0341</td>
     </tr>
@@ -135,55 +135,8 @@ sidebar_position: 1
 
 
 ## Employing Camera
-### 1. Adaptation to NVIDIA® Jetson™ platform
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Hand_RGB_Small_Size_Camera/SG3-AR0341C-G2F/SG3-AR0341C-G2F_ConnectNvidia.png" alt="SG3-AR0341C-G2F_ConnectNvidia" 
-    style={{maxWidth: '60%', height:'auto'}} />
-    <p>SG3-AR0341C-G2F Camera Connect to Nvidia Jetson AGX Orin</p>
-</div>
 
-#### **Step 1**: Installation Steps
-
-:::note Quick Setup
-1. Connect the SG3-AR0341C-G2F camera to the SG4A_ORIN_GMSL2 board using the coaxial cable
-2. Mount the SG4A_ORIN_GMSL2 board onto the Jetson AGX Orin module
-3. SG3-AR0341C-G2F camera Connect the power supply
-4. SG4A_ORIN_GMSL2 board Connect the power supply
-5. Power on the system
-:::
-
-<!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
-    style={{maxWidth: '60%', height:'auto'}} />
-</div> -->
-
-#### **Step 2**: Software Preparation
-
-:::info SDK Download
--Select the appropriate driver package based on your camera type and JetPack version:
-
--Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
-:::
-
-<div style={{display: 'flex', justifyContent: 'center'}}>
-
-| NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
-|-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SG3-AR0341C-G2F |Jetson AGX Orin Developer Kit | [SG4A_ORIN_GMSL2](https://sensing-world.com/en/h-pd-64.html?recommendFromPid=0&fromMid=898) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG4A-ORIN-GMSL2/JetPack6.2/SG4A_ORIN_GMSL2_AGX_Orin_YUVx4_JP6.2_L4TR36.4.3) |
-
-</div>
-
-:::note JetPack Versions
-NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
-- 36.4.3: L4T R36.4.3 (Jetpack 6.2)
-- 36.4: L4T R36.4 (Jetpack 6.1)
-- 36.3: L4T R36.3 (Jetpack 6.0)
-- 35.4.1: L4T R35.4.1 (Jetpack 5.1.2)
-
-For more information, visit [NVIDIA's official Jetson Download Center](https://developer.nvidia.com/embedded/jetpack-archive).
-:::
-
-### 2. Camera Integration with Customer's Self-developed Platform
+### 1. Camera Integration with Customer's Self-developed Platform
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
@@ -205,7 +158,7 @@ SENSING will provide:
 :::tip
 Please refer to the software flow and demo code below to develop your driver code.
 :::
-#### Software Development
+#### Software Development demo code
 
 1. **Driver Development**:
 
@@ -242,6 +195,7 @@ int max9296_init() {
 /* Example code for SG3-AR0341C-G2F initialization */
 
 #define MAX96717F_I2C_ADDR 0x80 // 8-bit address
+#define AR0341_I2C_ADDR 0x20 // 8-bit address
 
 int camera_init() {
     // Initialize deserializer first
@@ -253,14 +207,23 @@ int camera_init() {
     i2c_write(MAX96717F_I2C_ADDR, 0x0057, 0x12); 
     i2c_write(MAX96717F_I2C_ADDR, 0x005B, 0x11); 
     //  Configure datatype  RAW12
-    i2c_write(MAX96717F_I2C_ADDR, 0x0318, 0x2C); 
+    i2c_write(MAX96717F_I2C_ADDR, 0x0318, 0x6C); 
 
     //  camera trigger  MFP7  low to  high
     i2c_write(MAX96717F_I2C_ADDR, 0x02D3, 0x00); // MFP7 low
     delay_ms(300);
     i2c_write(MAX96717F_I2C_ADDR, 0x02D3, 0x10); // MFP7 high
 
+    // Initialize sensor
+    sensor_init();
+
     return 0;
+}
+
+int sensor_init() { 
+    // Initialize sensor
+    i2c_write(AR0341_I2C_ADDR, 0x0102, 0x0001);
+    //...(from [Getting Camera Information] to download the sensor register configuration file) ...
 }
 ```
 
