@@ -145,7 +145,7 @@ sidebar_position: 2
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH2-N1B60-G2A_ConnectNvidia" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A/SH2-N1B60-G2A_ConnectNvidia.png" alt="SH2-N1B60-G2A_ConnectNvidia" 
     style={{maxWidth: '60%', height:'auto'}} />
     <p>SH2-N1B60-G2A Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
@@ -171,6 +171,8 @@ sidebar_position: 2
 -Select the appropriate driver package based on your camera type and JetPack version:
 
 -Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
+
+**Select camera type: SG2-AR0233-5200-G2A-Hxxx to bring up the camera driver**
 :::
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
