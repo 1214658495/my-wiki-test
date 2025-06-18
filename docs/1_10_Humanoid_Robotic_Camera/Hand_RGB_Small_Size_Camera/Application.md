@@ -27,7 +27,7 @@ With no compromise on performance, the AR0341AT image sensor, featuring a 2.1 µ
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Hand_RGB_Small_Size_Camera/SG3-AR0341C-G2F/SG3-AR0341C-G2F_ImageSensor.png" alt="SG3-AR0341C-G2F_ImageSensor" 
     style={{maxWidth: '70%', height:'auto'}} />
-    <p>Onsemi AR0341AT Image Sensor</p>
+    <p>Onsemi AR0341AT Image Sensor<br/>Image source: ONSEMI official website</p>
 </div>
 
 <!-- ![Onsemi AR0341AT Image Sensor](https://sensing-world.com/uploads/allimg/230904/1-2309041336403B.png) -->
@@ -42,7 +42,7 @@ As shown in the figure below, the Hyperlux sensor performs well in the most dema
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Hand_RGB_Small_Size_Camera/SG3-AR0341C-G2F/SG3-AR0341C-G2F_HDR_Performance_Comparison.png" alt="SG3-AR0341C-G2F_HDR_Performance_Comparison" 
     style={{maxWidth: '70%', height:'auto'}} />
-    <p>HDR Performance</p>
+    <p>HDR Performance<br/>Image source: ONSEMI official website</p>
 </div>
 
 <!-- ![HDR Performance Comparison](https://sensing-world.com/uploads/allimg/230904/1-230904133T3344.png) -->
