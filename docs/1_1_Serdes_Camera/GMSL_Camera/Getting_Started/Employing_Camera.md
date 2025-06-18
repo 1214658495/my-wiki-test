@@ -88,6 +88,9 @@ For more information:
 ## 3. Camera Integration with Third-party AI Box
 
 When integrating with third-party AI box products, careful consideration of compatibility and technical requirements is essential.
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png" alt="AiBox" style={{maxWidth: '70%', height:'auto'}} />
+</div>
 
 ### Step 1: Check Camera Compatibility
 Contact the AI Box manufacturer to confirm their "Compatible Camera List". For example:
