@@ -68,7 +68,7 @@ int ub954_init() {
 2. **Camera Configuration**:
 
 ```c
-/* Example code for UB953 sensor initialization */
+/* Example code for Camera initialization */
 #define UB953_I2C_ADDR 0x30 // 8-bit address
 
 int camera_init() {
