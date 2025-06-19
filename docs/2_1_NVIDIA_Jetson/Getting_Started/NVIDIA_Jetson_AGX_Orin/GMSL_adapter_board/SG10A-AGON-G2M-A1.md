@@ -135,10 +135,31 @@ sidebar_position: 3
 ### Supported Camera List
 
 :::note Camera Compatibility
-The following cameras are supported with different JetPack versions:
+Currently only JetPack 6.0 is supported.
 :::
 
-| Camera | Output Data | Jetpack 5.1.2 | Jetpack 6.2 |
+#### Camera Version Support
+
+* Gemini 335Lg
+* SHW3H(3MP/H120UA)
+* SHF3L(3MP/H190XA)
+
+#### Camera Mapping
+
+| FAKRA | Video | Camera |
+|-------|-------|--------|
+| J21 | video0 | SHW3H |
+| J22 | video1 | SHW3H |
+| J27 | video2 | SHW3H |
+| J28 | video3 | SHW3H |
+| J29 | video4 | SHW3H |
+| J30 | video5 | SHW3H |
+| J25 | video6~video13 | Gemini 335Lg |
+| J22 | video14~video21 | Gemini 335Lg |
+| J22 | video22~video29 | Gemini 335Lg |
+| J22 | video30~video37 | Gemini 335Lg |
+
+<!-- | Camera | Output Data | Jetpack 5.1.2 | Jetpack 6.2 |
 |--------|-------------|---------------|-------------|
 | SG1-OX01F10C-GMSL-Hxxx | YUV422 | - | - |
 | SG1S-OX01F10C-G1G-Hxxx | YUV422 | - | - |
@@ -155,7 +176,7 @@ The following cameras are supported with different JetPack versions:
 | SG8-OX08BC-5300-GMSL2-Hxxx | YUV422 | ✅ | ✅ |
 | DMSBBFAN | YUV422 | - | - |
 | SG3S-IMX623C-G2F-Hxxx | RAW12 | - | - |
-| SG8-IMX728C-G2G-Hxxx | RAW12 | - | - |
+| SG8-IMX728C-G2G-Hxxx | RAW12 | - | - | -->
 
 :::note JetPack Versions
 NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
@@ -249,7 +270,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '2rem'}}>
     <iframe
         style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-        src="//player.bilibili.com/player.html?bvid=BV1XxNWznEkV&page=1&high_quality=1&danmaku=0"
+        src="//player.bilibili.com/player.html?bvid=BV15SN4zaEc6&page=1&high_quality=1&danmaku=0"
         scrolling="no"
         border="0"
         frameBorder="no"
@@ -268,8 +289,7 @@ Select the appropriate driver package based on your camera type and JetPack vers
 
 | Camera Type | JetPack Version | Download Link |
 |-------------|-----------------|---------------|
-| GMSL2 Camera (YUV) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) |
-| GMSL2 Camera (YUV) | JP6.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.0_L4TR36.3.0) |
+| GMSL2 Camera (YUV) | JP6.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
 
 :::tip Download Method
 Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
@@ -281,105 +301,75 @@ Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/
 We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Driver Package via Linux command line to flash JetPack OS into the NVIDIA Jetson device. For beginners, we highly recommend NVIDIA SDK Manager.
 :::
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{maxWidth: '100%', height: 'auto'}} />
-</div>
+</div> -->
 
 1. Copy the driver package to the working directory of the Jetson device, such as "/home/nvidia"
 
    ```
-   /home/nvidia/SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
+   /home/nvidia/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
    ```
-2. Enter the driver directory
+2. Enter the driver directory,
 
    ```
-   cd SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
+   cd SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
+   chmod a+x ./install.sh
+   ./install.sh
    ```
-3. Give executable permissions to the script "quick_bring_up.sh" and execute the script
+3. Use the "sudo /opt/nvidia/jetson-io/jetson-io.py" command to select the corresponding device
 
    ```
-   chmod a+x quick_bring_up.sh
-   sudo ./quick_bring_up.sh
+   sudo /opt/nvidia/jetson-io/jetson-io.py
+
+   1.select "Configure Jetson AGX CSI Connector"
+   2.select "Configure for compatible hardware"
+   3.select "Jetson Orbbec Camera G335Lg And SH3"
+   4.select "Save pin changes"
+   5.select "Save and reboot to reconfigure pins"
    ```
-4. Select the camera type. This step will install Image and DTB, after the script run complete.
-   You need to reboot the device to let the Image and DTB take effect.
-   For example:
+4. reboot device
 
    ```
-   This package is use for Sensing SG8A_AGON_G2Y_B1 on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl2
-   Press select your camera type:
-   1
+   sudo reboot
    ```
-
-   At this point, you should type 1 to select your camera type and then hit Enter
-5. After the device reboots, enter the driver directory and run the script "quick_bring_up.sh"
+5. Install camera driver
 
    ```
-   sudo ./quick_bring_up.sh
+   cd SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
+   chmod +x load_modules.sh
+   ./load_modules.sh
    ```
-6. Select the camera type. Select the sgx-yuv-gmsl2 camera type, then select SG2-IMX390C-5200-GMSL2,
-   and finally enter 0-7 the camera port you are connected to to turn on the camera.
+6. Bring up the SHW3H camera (SHW3H camera is connected to the HDR Camera port, and SHF3L as well)
 
    ```
-   This package is use for Sensing SG8A_AGON_G2Y_B1 on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl2
-   Press select your camera type:
-   1
-   Press select your yuv camera type:
-   0:SG2-IMX390C-5200-GMSL2
-   1:SG2-AR0233-5300-GMSL2
-   2.SG2-OX03CC-5200-GMSL2F
-   3.SG3-ISX031C-GMSL2
-   4.SG3S-ISX031C-GMSL2F
-   5.SG5-IMX490C-5200-GMSL2
-   6.SG8-AR0820C-5300-GMSL2
-   7.SG8-OX08BC-5300-GMSL2
-   0
-   Press select your camera port [0-7]:
-   0
-   ready bring up camera
-   Use the following command to light the camera!
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
-7. Select one of the commands prompted above to light the camera
+   ## CAM2
+    gst-launch-1.0 v4l2src device=/dev/video0 ! xvimagesink -ev
 
-#### Integration with SENSING Driver Source Code
+   ## CAM3
+    gst-launch-1.0 v4l2src device=/dev/video1 ! xvimagesink -ev
 
-1. Compile Image & dtb
-   Refer to the following command to integrate Dtb and Kernel source code to your kernel
+   ## CAM4
+    gst-launch-1.0 v4l2src device=/dev/video2 ! xvimagesink -ev
 
-   ```
-   cp camera-driver-package/source/hardware Linux_for_Tegra/source/public/$YourDir/hardware -r
-   cp camera-driver-package/source/kernel Linux_for_Tegra/source/public/$YourDir/kernel -r
-   ```
-2. Go to the root directory of your source code and recompile
+   ## CAM5
+    gst-launch-1.0 v4l2src device=/dev/video3 ! xvimagesink -ev
 
-   ```
-   cd  Linux_for_Tegra/source/public/$YourDir/
-   export CROSS_COMPILE_AARCH64_PATH=toolchain-path
-   export CROSS_COMPILE_AARCH64=toolchain-path/bin/aarch64-buildroot-linux-gnu-
-   mkdir kernel_out
-   ./nvbuild.sh -o $PWD/kernel_out
-   ```
-3. Install the newly generated Image and dtb to your nvidia device and reboot to let them take effect
+   ## CAM6
+    gst-launch-1.0 v4l2src device=/dev/video4 ! xvimagesink -ev
 
+   ## CAM7
+    gst-launch-1.0 v4l2src device=/dev/video5 ! xvimagesink -ev
    ```
-   dtb:kernel_out/arch/arm64/boot/dts/nvidia/
-   Image: kernel_out/arch/arm64/boot/Image
+7. Bring up the Gemini 335Lg camera (Gemini 335Lg camera connected to D457 Camera port) 
+  
    ```
-4. Install camera driver
-
+   unzip OrbbecViewer_v2.0.18_202410190639_77d8dff_linux_aarch64.zip -d ./
+   cd OrbbecViewer_v2.0.18_202410190639_77d8dff_linux_aarch64
+   ./OrbbecViewer
    ```
-   sudo insmod ./ko/max9295.ko
-   sudo insmod ./ko/max9296.ko
-   sudo insmod ./ko/sgx-yuv-gmsl2.ko
-   ```
-5. Bring up the camera
-
-   ```
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
+8. After the program starts, you can select the device to open in the top-left corner
+9. Click the Camera button on the left, then sequentially start the Color, Depth, IR Left, and IR Right 4 data streams.   
 
 <br />
 ## FAQ
