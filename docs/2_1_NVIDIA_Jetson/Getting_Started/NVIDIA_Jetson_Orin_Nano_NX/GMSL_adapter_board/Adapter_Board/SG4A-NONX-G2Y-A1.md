@@ -10,7 +10,7 @@ sidebar_position: 2
   <div className="col col--9">
     The SG4A-NONX-G2Y-A1 adapter board's MIPI interface is designed according to the NVIDIA standard 22Pin interface (see the CN8 pin definition), making it compatible with official and customer-designed development boards.
     
-    The design features 4 coaxial FAKRA interfaces supporting up to 4 cameras, compatible with different types of GMSL cameras. The adapter board can be configured via software to work at different frequencies, making it compatible with both GMSL1 and GMSL2 protocol interfaces. Power for GMSL cameras is provided through PoC (Power over Coax), allowing all data, control signals, and power to be transmitted through a 50-ohm coaxial cable. This makes camera cable wiring flexible and easy to install in automotive applications.
+    The design features 4 coaxial FAKRA interfaces supporting up to 4 cameras, compatible with different types of GMSL cameras. The adapter board can be configured via software to work at different frequencies, making it compatible with both GMSL and GMSL2 protocol interfaces. Power for GMSL cameras is provided through PoC (Power over Coax), allowing all data, control signals, and power to be transmitted through a 50-ohm coaxial cable. This makes camera cable wiring flexible and easy to install in automotive applications.
   </div>
   <div className="col col--3">
     :::note Key Features
