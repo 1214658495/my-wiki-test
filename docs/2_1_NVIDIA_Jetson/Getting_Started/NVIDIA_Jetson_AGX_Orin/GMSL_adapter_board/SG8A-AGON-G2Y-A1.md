@@ -31,8 +31,8 @@ sidebar_position: 2
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL.png" alt="SG8A-ORIN-GMSL" 
-    style={{maxWidth: '55%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1.png" alt="SG8A-ORIN-GMSL" 
+    style={{maxWidth: '45%', height:'auto'}} />
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
@@ -55,7 +55,7 @@ sidebar_position: 2
   <div className="col col--6">
     :::note Basic Info
     - Model: SG8A-AGON-G2Y-A1
-    - Dimension: 86.9mm*55mm*21.8
+    - Dimension: 86.9mm * 55mm * 21.8mm
     - Weight: 50g
     - Connector: 1x120Pin High-density
     - Camera input: Camera*8(GMSL2/GMSL)
@@ -77,7 +77,7 @@ sidebar_position: 2
 ### Hardware Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-overview.png" alt="SG8A-ORIN-GMSL2-overview" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview.png" alt="SG8A-AGON-G2Y-A1-overview" style={{maxWidth: '50%', height: 'auto'}} />
 </div>
 
 ### Block Diagram
@@ -89,7 +89,7 @@ sidebar_position: 2
 :::
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-Block Diagram.png" alt="SG8A-ORIN-GMSL2-Block Diagram" style={{maxWidth: '100%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Block_Diagram.png" alt="SG8A-AGON-G2Y-A1-Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
 </div>
 
 ### Supported Camera List
@@ -153,7 +153,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 #### Kit Contents
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-complete2.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '100%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Kit_Contents.png" alt="SG8A-AGON-G2Y-A1-Kit Contents" style={{maxWidth: '100%', height: 'auto'}} />
 </div>
 
 #### Installation Steps
