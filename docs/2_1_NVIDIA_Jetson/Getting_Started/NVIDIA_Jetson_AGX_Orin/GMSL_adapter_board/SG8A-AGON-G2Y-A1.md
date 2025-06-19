@@ -168,7 +168,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '2rem'}}>
     <iframe
         style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-        src="//player.bilibili.com/player.html?bvid=BV1gj5TzdEAo&page=1&high_quality=1&danmaku=0"
+        src="//player.bilibili.com/player.html?bvid=BV1XxNWznEkV&page=1&high_quality=1&danmaku=0"
         scrolling="no"
         border="0"
         frameBorder="no"
