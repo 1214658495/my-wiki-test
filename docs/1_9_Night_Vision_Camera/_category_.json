@@ -1,8 +1,5 @@
 {
   "label": "Night Vision Camera",
   "position": 10,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for Night Vision Camera."
-  }
+  "link": null
 }
