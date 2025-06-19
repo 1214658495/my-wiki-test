@@ -8,7 +8,7 @@ sidebar_position: 3
 
 <div className="row">
   <div className="col col--8">
-    SG8A-AGON-G2Y-A1 adapter board, which allows up to 8 cameras to be connected to the Jetson AGX Orin module, 
+    SG10A-AGON-G2M-A1 adapter board, which allows up to 10 cameras to be connected to the Jetson AGX Orin module, 
     is fully compatible with the NVIDIA Jetson AGX Orin Development Kit. 
     As there are many different types of GMSL cameras available, the adapter board can be adaptively operated at different frequencies i.e. 
     it is compatible with both GMSL and GMSL2 protocol interfaces through software configuration. 
@@ -17,7 +17,7 @@ sidebar_position: 3
   </div>
   <div className="col col--4">
     :::note Key Features
-    - 8 camera support
+    - 10 camera support
     - GMSL/GMSL2 compatible
     - PoC power supply
     - Easy installation
@@ -31,7 +31,7 @@ sidebar_position: 3
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1.png" alt="SG8A-ORIN-GMSL" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1.png" alt="SG10A-AGON-G2M-A1" 
     style={{maxWidth: '45%', height:'auto'}} />
 </div>
 
@@ -54,17 +54,18 @@ sidebar_position: 3
 <div className="row">
   <div className="col col--6">
     :::note Basic Info
-    - Model: SG8A-AGON-G2Y-A1
-    - Dimension: 86.9mm * 55mm * 21.8mm
+    - Model: SG10A-AGON-G2M-A1
+    - Dimension: 88mm*120mm
     - Weight: 50g
-    - Connector: 1x120Pin High-density
-    - Camera input: Camera*8(GMSL2/GMSL)
-    - Trigger In: 6Pin Sync In
+    - Connector: 1x120Pin High-density connectors
+    - Camera input: Camera*10(GMSL2/GMSL)
+    - Trigger In: 4Pin Sync In
     :::
   </div>
   <div className="col col--6">
     :::note Technical Specs
-    - Deserializer: MAXIM(ADI) MAX96712*2
+    - Deserializer: MAXIM(ADI) MAX9296A *3
+                    MAXIM(ADI) MAX96712A *1
     - Camera Connector: Fakra Z Code
     - POC Power Supply: DC 9-16V
     - DC Power Supply: DC 12V
@@ -77,19 +78,58 @@ sidebar_position: 3
 ### Hardware Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview.png" alt="SG8A-AGON-G2Y-A1-overview" style={{maxWidth: '50%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1_Hardware_Overview.png" alt="SG10A-AGON-G2M-A1-overview" style={{maxWidth: '70%', height: 'auto'}} />
 </div>
 
 ### Block Diagram
 
 :::caution Attention
-（1）The I2C bus number is the hardware location (matching the connector J2 pin). The bus number does not necessarily correspond to what is listed in the software.
+（1）The I2C bus number is the hardware location (matching the connector). The bus number does not necessarily correspond to what is listed in the software.
 
 （2）The coaxial power supply is shared, but each GMSL line has its own filter.
 :::
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Block_Diagram.png" alt="SG8A-AGON-G2Y-A1-Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1_Block_Diagram.png" alt="SG10A-AGON-G2M-A1-Block Diagram" style={{maxWidth: '100%', height: 'auto'}} />
+</div>
+
+#### J19 Pin Define
+
+<div style={{marginBottom: '2rem'}}>
+  <table>
+    <thead>
+      <tr>
+        <th colSpan="3">J19</th>
+      </tr>
+      <tr>
+        <th>Pin NO</th>
+        <th>NAME</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>GND</td>
+        <td>/</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>SYNC1</td>
+        <td>Trigger pins for U19 and U4</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>GND</td>
+        <td>/</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>SYNC2</td>
+        <td>Trigger pins for U13 and U3</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 ### Supported Camera List
@@ -129,38 +169,79 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 ### Hardware Preparation
 
-#### Parts List
-
-<div className="row">
-  <div className="col col--6">
-    :::note Standard Configuration
-    - Four-in-one wire harness (2 pcs)
-    - Power switching harness
-    - Trigger wiring harness
-    - SG8A-AGON-G2Y-A1 adapter board
-    - Copper column, M2.5*10 (3 pcs)
-    - Screw, M2.5-F (3 pcs)
-    - Power adapter
-    :::
-  </div>
-  <div className="col col--4">
-    :::note Optional Configuration
-    - Jetson AGX Orin DK
-    :::
-  </div>
-</div>
-
 #### Kit Contents
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Kit_Contents.png" alt="SG8A-AGON-G2Y-A1-Kit Contents" style={{maxWidth: '100%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1_Kit_Contents.png" alt="SG10A-AGON-G2M-A1-Kit Contents" style={{maxWidth: '90%', height: 'auto'}} />
+</div>
+
+#### Parts List
+
+<div style={{marginBottom: '2rem'}}>
+  <table>
+    <thead>
+      <tr>
+        <th colSpan="4">Parts list</th>
+      </tr>
+      <tr>
+        <th>Serial number</th>
+        <th>Product model</th>
+        <th>quantity</th>
+        <th>remark</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Power adapter</td>
+        <td>1</td>
+        <td>Standard configuration</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Power switching harness</td>
+        <td>1</td>
+        <td>Standard configuration</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>SG10A-AGON-G2M-A1 adapter board</td>
+        <td>1</td>
+        <td>Standard configuration</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>copper column, M2.5*12+5</td>
+        <td>3</td>
+        <td>Standard configuration</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>screw, M2.5-F</td>
+        <td>3</td>
+        <td>Standard configuration</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Jetson AGX Orin DK</td>
+        <td>1</td>
+        <td>optional configuration</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Trigger line</td>
+        <td>1</td>
+        <td>Standard configuration</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 #### Installation Steps
 
 :::note Quick Setup
-1. Connect the GMSL camera to the SG8A-AGON-G2Y-A1 board using the coaxial cable
-2. Mount the SG8A-AGON-G2Y-A1 board onto the Jetson AGX Orin module
+1. Connect the GMSL camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
+2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
 3. Connect the power supply
 4. Power on the system
 :::
@@ -204,7 +285,7 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{maxWidth: '100%', height: 'auto'}} />
 </div>
 
-1. Copy the driver package to the working directory of the Jetson device, such as “/home/nvidia”
+1. Copy the driver package to the working directory of the Jetson device, such as "/home/nvidia"
 
    ```
    /home/nvidia/SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
