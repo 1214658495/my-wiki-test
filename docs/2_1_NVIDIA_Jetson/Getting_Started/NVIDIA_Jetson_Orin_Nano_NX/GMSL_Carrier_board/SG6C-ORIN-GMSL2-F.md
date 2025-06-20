@@ -52,7 +52,7 @@ sidebar_position: 1
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_Carrier_board/SG6C-ORNX-G2-F/SG6C-ORNX-G2-F_Hardware_Overview.png" alt="SG6C-ORNX-G2-F-overview" style={{maxWidth: '85%', height: 'auto'}} />
 </div>
 
-### Specification
+<!-- ### Specification
 
 <div className="row">
   <div className="col col--6">
@@ -75,7 +75,7 @@ sidebar_position: 1
     - Adaptation kit: Jetson AGX Orin
     :::
   </div>
-</div>
+</div> -->
 
 ### Product definition
 
