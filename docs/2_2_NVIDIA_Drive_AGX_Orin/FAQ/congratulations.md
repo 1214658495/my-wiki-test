@@ -1,20 +1,25 @@
 ---
-sidebar_position: 6
+sidebar_position: 1
 ---
 
-# Congratulations!
+# FAQs for NVIDIA Drive AGX Orin
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
-
-Docusaurus has **much more to offer**!
+This document contains all the frequently asked questions related to NVIDIA Drive AGX Orin products. This will be very helpful if you are suffering from any issues when using the NVIDIA Drive AGX Orin.
 
 
-## What's next?
+#### Camera Not Working
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+**A1**: Camera doesn't display image after driver installation?  
+**Solution**:
+1. Check if the camera is properly connected
+2. Confirm that you selected the correct camera model and port
+3. Check if the drivers were successfully loaded using `dmesg | grep -i max`
+
+#### System Performance Issues
+
+**A2**: System performance decreases when running multiple cameras?  
+**Solution**:
+1. Check if cooling is adequate
+2. Use the `sudo jetson_clocks` command to fix clock frequencies for best performance
+
+For more technical support, visit the [SENSING Technical Forum](https://sensing-world.com/) or contact our technical support team.
