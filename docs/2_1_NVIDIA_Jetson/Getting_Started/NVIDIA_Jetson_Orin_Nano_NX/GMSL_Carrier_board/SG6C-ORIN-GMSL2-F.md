@@ -479,24 +479,24 @@ If you need to customize drivers or perform in-depth development, you can refer 
 
 #### Flashing Failure
 
-**Issue**: Error during flashing process or device won't boot
-**Solution**: 
+**Q1**: Error during flashing process or device won't boot
+
 1. Ensure you're using the correct JetPack/L4T version
 2. Check if the EEPROM-related configurations were properly modified
 3. Try entering Recovery mode again and reflash
 
 #### Camera Not Working
 
-**Issue**: Camera doesn't display image after driver installation
-**Solution**:
+**Q2**: Camera doesn't display image after driver installation
+
 1. Check if the camera is properly connected
 2. Confirm that you selected the correct camera model and port
 3. Check if the drivers were successfully loaded using `dmesg | grep -i max`
 
 #### System Performance Issues
 
-**Issue**: System performance decreases when running multiple cameras
-**Solution**:
+**Q3**: System performance decreases when running multiple cameras
+
 1. Check if cooling is adequate
 2. Use the `sudo jetson_clocks` command to fix clock frequencies for best performance
 3. Consider using NVIDIA's hardware acceleration features such as NVDEC and NVENC
