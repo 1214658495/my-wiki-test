@@ -54,10 +54,10 @@ Click on Driver Package to download Jetson_Linux_R35.2.1_aarch64.tbz2, click on 
 
 <div style={{textAlign: 'center', marginBottom: '1rem', backgroundColor: 'white', padding: '10px', color: 'black'}}>
     <pre>
-sensing@ubuntu:~/nvidia$ ls
+sensing@ubuntu:/nvidia$ ls
 Jetson_Linux_R35.2.1_aarch64.tbz2
 Tegra_Linux_Sample-Root-Filesystem_R35.2.1_aarch64.tbz2
-sensing@ubuntu:~/nvidia$
+sensing@ubuntu:/nvidia$
     </pre>
 </div>
 
@@ -90,8 +90,8 @@ Linux_for_Tegra/bootloader/t186ref/BCT/tegra234-mb2-bct-misc-p3767-0000.dts
 
 <div style={{backgroundColor: '#f0f0f0', padding: '10px'}}>
 <pre>
-- cvb_eeprom_read size =&lt;0x100&gt;
-+ cvb_eeprom_read size =&lt;0x0&gt;
+- change cvb_eeprom_read size =&lt;0x100&gt; 
+- to cvb_eeprom_read size =&lt;0x0&gt;
 </pre>
 </div>
 
