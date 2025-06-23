@@ -7,8 +7,16 @@ sidebar_position: 1
 ## Overview
 
 <div className="row">
-  <div className="col col--12">
+  <div className="col col--7">
     GMSL2 Camera Splitter is designed by SENSNG Technology Co., Ltd., which can realize one GMSL input and two GMSL outputs of the same data; it is suitable for GMSL cameras.
+  </div>
+    <div className="col col--5">
+    :::note Key Features
+    - Lossless data transmission
+    - GMSL/GMSL2 compatible
+    - Low latency/ Microsecond level
+    - Low insert los
+    :::
   </div>
 </div>
 
@@ -25,19 +33,18 @@ sidebar_position: 1
     </a>
 </div>
 
-## Getting Started
 
 ### Specification
 
-<div style={{display: 'flex', justifyContent: 'center'}}>
+<div style={{display: 'flex', justifyContent: 'left'}}>
 
 | Parameter         | Value                   |
 |-------------------|-------------------------|
 | Transport Protocol | GMSL / GMSL2           |
-| Number of Input Port | See Page2            |
-| Number of Output Port | See Page2           |
-| Input Interface   | 1*GMSL / 1*GMSL2       |
-| Output Interface  | 1*GMSL / 2*GMSL2       |
+| Number of Input Port | 1            |
+| Number of Output Port | 2          |
+| Input Interface   | 1 *GMSL / 1 *GMSL2       |
+| Output Interface  | 1 *GMSL / 2 *GMSL2       |
 | Data Rate Supported | 1.5Gbps, 3Gbps, 6Gbps |
 | Support Resolution | Up to 3840*2160        |
 | Output synchronization accuracy | Less than 10us    |
@@ -50,6 +57,42 @@ sidebar_position: 1
 
 </div>
 
+### Dimensions
+
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter" 
+    style={{maxWidth: '90%', height:'auto'}} />
+</div>
+
+
+### Hardware Overview
+#### Block Diagram
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="GMSL2_Camera_Splitter" 
+    style={{maxWidth: '100%', height:'auto'}} />
+</div>
+
+#### I2C Address Information
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| | I2C Address | value (8 bit) |
+|---|-------------|---------------|
+| 1 | Splitter: Logger | 0x80 |
+| 2 | Splitter: ECU | 0x80 |
+| 3 | Splitter: Camera | 0x94 |
+| 4 | SENSING Camera | 0x70 |
+
+</div>
+
+#### Connector Pin Definition
+<div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter" 
+    style={{maxWidth: '80%', height:'auto'}} />
+</div>
+
+#### Product Models
+
 <div style={{display: 'flex', justifyContent: 'center', marginTop: '2rem'}}>
 
 | Product Model | Input Channels | Output Channels | Resolution Support | Processor | Transfer Rate |
@@ -60,106 +103,27 @@ sidebar_position: 1
 
 </div>
 
+## Getting Started
 
-### Dimensions
+### 1. GMSL2 Camera Splitter Integration with Customer's Self-developed Platform
+
+Use Splitter when connecting to different domain controllers
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Hand_RGB_Small_Size_Camera/SG3-AR0341C-G2F/SG3-AR0341C-G2F_Dimensions.png" alt="SG3-AR0341C-G2F" 
-    style={{maxWidth: '80%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_B.png" alt="Splitter block diagram" 
+    style={{maxWidth: '100%', height:'auto'}} />
+    <p>Splitter block diagram - when connecting different domains</p>
 </div>
 
+### **Operating steps**
+1. Connect the line as above.
+2. Power on first.
+3. The SOC end first performs normal power-on and initializes the camera, and then the SOC end performs power-on and initialization.
+4. Domain control 1 and 2 (SOC) end operation normal command, light up the camera.
 
-### Hardware Overview
-#### Block Diagram
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Hand_RGB_Small_Size_Camera/SG3-AR0341C-G2F/SG3-AR0341C-G2F_BlockDiagram.png" alt="SG3-AR0341C-G2F" 
-    style={{maxWidth: '80%', height:'auto'}} />
-</div>
-
-#### I2C Address Information
-
-<div style={{display: 'flex', justifyContent: 'center'}}>
-
-<table>
-  <thead>
-    <tr>
-      <th>Component</th>
-      <th>Parameter</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="3"><strong>Serializer</strong></td>
-      <td>Model</td>
-      <td>Max96717F</td>
-    </tr>
-    <tr>
-      <td>I2C Address</td>
-      <td>0x80 (8bit address)</td>
-    </tr>
-    <tr>
-      <td>GMSL Rate</td>
-      <td>GMSL2 (3G bps)</td>
-    </tr>
-    <tr>
-      <td rowspan="5"><strong>Sensor</strong></td>
-      <td>Model</td>
-      <td>AR0341</td>
-    </tr>
-    <tr>
-      <td>I2C Address</td>
-      <td>0x20 (8bit address)</td>
-    </tr>
-    <tr>
-      <td>Frame Sync</td>
-      <td>Controlled by Max96717F MFP7</td>
-    </tr>
-    <tr>
-      <td>Error</td>
-      <td>Controlled by Max96717F MFP5</td>
-    </tr>
-    <tr>
-      <td>Reset</td>
-      <td>Controlled by Max96717F MFP0</td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
-
-### Lens Options
-
-<div style={{display: 'flex', justifyContent: 'center'}}>
-
-| Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Water-proof | Lens Mount |
-|-------|------|------|------|-----|------------------------|-------------|------------|
-| SG3-AR0341C-G2F-H190X | 196° | 160° | 1.7 | 1.02mm | -134% | IP67 | M12 |
-
-</div>
-
-
-## Employing Camera
-
-### 1. Camera Integration with Customer's Self-developed Platform
-
-For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
-</div>
-
-The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.
-
-### Step 1: Link Register initialization
-SENSING will provide:
-- **Serializer and Deserializer Configuration**
-   - Register configuration for the camera module-[Getting Camera Information](/docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Camera_Information)
-   - I2C communication protocol details
-
-- **Link Status Troubleshooting Guide**
-  - Link training parameters
-  - Error detection settings
+### **Working logic**
+1. The Splitter device will configure the camera after powering on Power first.
+2. Domain Control 1 (SOC) ends, just configure Splitter as a camera, and trigger it as a normal camera, then light it up and work.
 
 :::tip
 Please refer to the software flow and demo code below to develop your driver code.
