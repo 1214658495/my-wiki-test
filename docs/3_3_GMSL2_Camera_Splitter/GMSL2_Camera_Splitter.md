@@ -135,13 +135,13 @@ Using the Splitter when connecting to different domain controllers:
 
 #### **Operating Procedure**
 1. Connect the system as shown in the diagram above.
-2. Power up the system first.
-3. Initialize the primary SOC, which will power on and initialize the camera, followed by the secondary SOC's power-on sequence and initialization.
-4. Execute normal operation commands from both Domain Controllers 1 and 2 (SOCs) to activate the camera.
+2. Power up the Splitter first.
+3. Initialize the Controller 1, which will power on and initialize the Splitter-ECU, followed by the Controller 2 power-on sequence and initialize the Splitter-Logger.
+4. Execute normal operation commands from both Domain Controllers 1 and 2 to bring up the camera.
 
 #### **Operational Logic**
 1. Upon receiving power, the Splitter device automatically configures the connected camera.
-2. Domain Controller 1 (SOC) only needs to configure the Splitter as if it were a camera, then trigger it normally to activate the imaging pipeline.
+2. Domain Controller 1 only needs to configure the Splitter as if it were a camera, then trigger it normally to activate the imaging pipeline.
 
 :::tip
 Refer to the software flow and example code below to develop your custom driver implementation.
