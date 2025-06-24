@@ -8,14 +8,14 @@ sidebar_position: 1
 
 <div className="row">
   <div className="col col--7">
-    GMSL2 Camera Splitter is designed by SENSNG Technology Co., Ltd., which can realize one GMSL input and two GMSL outputs of the same data; it is suitable for GMSL cameras.
+    The GMSL2 Camera Splitter, engineered by SENSING Technology Co., Ltd., enables a single GMSL input to be distributed to two GMSL outputs while maintaining identical data streams. This device is compatible with SENSING GMSL camera models.
   </div>
     <div className="col col--5">
     :::note Key Features
     - Lossless data transmission
-    - GMSL/GMSL2 compatible
-    - Low latency/ Microsecond level
-    - Low insert los
+    - Full GMSL/GMSL2 compatibility
+    - Ultra-low latency (microsecond level)
+    - Minimal insertion loss
     :::
   </div>
 </div>
@@ -34,33 +34,33 @@ sidebar_position: 1
 </div>
 
 
-### Specification
+### Specifications
 
 <div style={{display: 'flex', justifyContent: 'left'}}>
 
 | Parameter         | Value                   |
 |-------------------|-------------------------|
 | Transport Protocol | GMSL / GMSL2           |
-| Number of Input Port | 1            |
-| Number of Output Port | 2          |
-| Input Interface   | 1 *GMSL / 1 *GMSL2       |
-| Output Interface  | 1 *GMSL / 2 *GMSL2       |
-| Data Rate Supported | 1.5Gbps, 3Gbps, 6Gbps |
-| Support Resolution | Up to 3840*2160        |
-| Output synchronization accuracy | Less than 10us    |
+| Input Ports       | 1                      |
+| Output Ports      | 2                      |
+| Input Interface   | 1× GMSL / 1× GMSL2     |
+| Output Interface  | 1× GMSL / 2× GMSL2     |
+| Supported Data Rates | 1.5Gbps, 3Gbps, 6Gbps |
+| Maximum Resolution | Up to 3840×2160        |
+| Output Synchronization Accuracy | < 10μs    |
 | Power Supply      | Yes                    |
 | Connector         | Fakra Z Type           |
-| Operating temp. range | -40~+85℃           |
-| Dimensions        | L:87.5mm, W: 70.6mm, H:20mm |
+| Operating Temperature Range | -40°C to +85°C |
+| Dimensions        | 87.5mm × 70.6mm × 20mm |
 | Color             | Black                  |
-| Weight            | Less than 150g                  |
+| Weight            | < 150g                 |
 
 </div>
 
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -68,7 +68,7 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="GMSL2_Camera_Splitter" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="GMSL2_Camera_Splitter Block Diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -76,7 +76,7 @@ sidebar_position: 1
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| | I2C Address | value (8 bit) |
+| | Device | I2C Address (8-bit) |
 |---|-------------|---------------|
 | 1 | Splitter: Logger | 0x80 |
 | 2 | Splitter: ECU | 0x80 |
@@ -87,37 +87,37 @@ sidebar_position: 1
 
 #### Connector Pin Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connect.png" alt="GMSL2_Camera_Splitter" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connect.png" alt="GMSL2_Camera_Splitter Connector" 
     style={{maxWidth: '40%', height:'auto'}} />
 </div>
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| Power Connector Name | Type | Brand/Note |
+| Connector Component | Part Number | Manufacturer/Note |
 |-----------------|------|------------|
-| Splitter End Connector | 50352-0400 | Molex |
+| Splitter Device Connector | 50352-0400 | Molex |
 | Cable Harness Connector | 50351-0400 | Molex |
-| Power Supply | Pin3, Pin4 | 9~12V |
-| GND | Pin1, Pin2 | / |
+| Power Supply | Pin3, Pin4 | 9~12V DC |
+| Ground | Pin1, Pin2 | Common Ground |
 
 </div>
 
 
 #### Cable Harness Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter Cable Harness" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
-#### Product Models
+### Product Models
 
 <div style={{display: 'flex', justifyContent: 'center', marginTop: '2rem'}}>
 
-| Product Model | Input Channels | Output Channels | Resolution Support | Processor | Transfer Rate |
+| Product Model | Input Channels | Output Channels | Resolution Support | Processor | Data Transfer Rate |
 |---------------|---------------|-----------------|-------------------|-----------|---------------|
-| SG2-BP0102-GMSL | 1CH | 2CH | Up to 1920*1080@30fps | MAX96705 | 1.5Gbps |
-| SG8-BP0102-GMSL2 | 1CH | 2CH | Up to 3840*2160@30fps | MAX9295A | 6Gbps |
-| SG8-BP0102-GMSL2F | 1CH | 2CH | Up to 1920*1080@30fps | MAX96717F | 3Gbps |
+| SG2-BP0102-GMSL | 1CH | 2CH | Up to 1920×1080@30fps | MAX96705 | 1.5Gbps |
+| SG8-BP0102-GMSL2 | 1CH | 2CH | Up to 3840×2160@30fps | MAX9295A | 6Gbps |
+| SG8-BP0102-GMSL2F | 1CH | 2CH | Up to 1920×1080@30fps | MAX96717F | 3Gbps |
 
 </div>
 
@@ -125,28 +125,29 @@ sidebar_position: 1
 
 ### 1. GMSL2 Camera Splitter Integration with Customer's Self-developed Platform
 
-Use Splitter when connecting to different domain controllers
+Using the Splitter when connecting to different domain controllers:
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_B.png" alt="Splitter block diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
-    <p>Splitter block diagram - when connecting different domains</p>
+    <p>Splitter block diagram - Configuration for connecting to different domain controllers</p>
 </div>
 
-### **Operating steps**
-1. Connect the line as above.
-2. Power on first.
-3. The SOC end first performs normal power-on and initializes the camera, and then the SOC end performs power-on and initialization.
-4. Domain control 1 and 2 (SOC) end operation normal command, light up the camera.
+#### **Operating Procedure**
+1. Connect the system as shown in the diagram above.
+2. Power up the system first.
+3. Initialize the primary SOC, which will power on and initialize the camera, followed by the secondary SOC's power-on sequence and initialization.
+4. Execute normal operation commands from both Domain Controllers 1 and 2 (SOCs) to activate the camera.
 
-### **Working logic**
-1. The Splitter device will configure the camera after powering on Power first.
-2. Domain Control 1 (SOC) ends, just configure Splitter as a camera, and trigger it as a normal camera, then light it up and work.
+#### **Operational Logic**
+1. Upon receiving power, the Splitter device automatically configures the connected camera.
+2. Domain Controller 1 (SOC) only needs to configure the Splitter as if it were a camera, then trigger it normally to activate the imaging pipeline.
 
 :::tip
-Please refer to the software flow and demo code below to develop your driver code.
+Refer to the software flow and example code below to develop your custom driver implementation.
 :::
-#### Software Development demo code
+
+### 2. Controller Software Development Example Code
 
 1. **Driver Development**:
 
@@ -158,19 +159,19 @@ int max9296_init() {
     // Initialize I2C bus
     i2c_init();
     
-    // disable MIPI output
+    // Disable MIPI output during configuration
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x00);
     delay_ms(100);
-    // Configure link settings for GMSL2 (3Gbps)
-    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x01);
+    // Configure link settings for GMSL2 (6Gbps)
+    i2c_write(MAX9296_I2C_ADDR, 0x0001, 0x02);
 
     // Configure linkA and linkB settings for GMSL2 selection (default value)
     i2c_write(MAX9296_I2C_ADDR, 0x0006, 0xC0);
     
-    // Configure MIPI rate 1200Mbps
+    // Configure MIPI rate to 1200Mbps
     i2c_write(MAX9296_I2C_ADDR, 0x0320, 0x2C); 
     
-    // enable MIPI output
+    // Enable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x02);
     
     return 0;
@@ -182,27 +183,28 @@ int max9296_init() {
 ```c
 /* Example code for SG3-AR0341C-G2F initialization */
 
-#define MAX96717F_I2C_ADDR 0x80 // 8-bit address
-#define AR0341_I2C_ADDR 0x20 // 8-bit address
+#define MAX9295A_I2C_ADDR 0x80 // 8-bit address
 
 int camera_init() {
     // Initialize deserializer first
     max9296_init();
     
     // Reset ISP 
-    i2c_write(MAX96717F_I2C_ADDR, 0x02BE, 0x10); // MFP0 high
-    // 
-    i2c_write(MAX96717F_I2C_ADDR, 0x0057, 0x12); 
-    i2c_write(MAX96717F_I2C_ADDR, 0x005B, 0x11); 
-    //  Configure datatype  RAW12
-    i2c_write(MAX96717F_I2C_ADDR, 0x0318, 0x6C); 
+    i2c_write(MAX9295A_I2C_ADDR, 0x02BE, 0x10); // MFP0 high
+    
+    // Configure essential registers
+    i2c_write(MAX9295A_I2C_ADDR, 0x0057, 0x12); 
+    i2c_write(MAX9295A_I2C_ADDR, 0x005B, 0x11); 
+    
+    // Configure datatype to YUV422 8bit
+    i2c_write(MAX9295A_I2C_ADDR, 0x0318, 0x5E); 
 
-    //  camera trigger  MFP7  low to  high
-    i2c_write(MAX96717F_I2C_ADDR, 0x02D3, 0x00); // MFP7 low
+    // Camera trigger sequence: MFP7 low to high
+    i2c_write(MAX9295A_I2C_ADDR, 0x02D3, 0x00); // MFP7 low
     delay_ms(300);
-    i2c_write(MAX96717F_I2C_ADDR, 0x02D3, 0x10); // MFP7 high
+    i2c_write(MAX9295A_I2C_ADDR, 0x02D3, 0x10); // MFP7 high
 
-    // Initialize sensor
+    // Initialize sensor,if without ISP, skip this step
     sensor_init();
 
     return 0;
@@ -210,8 +212,9 @@ int camera_init() {
 
 int sensor_init() { 
     // Initialize sensor
-    i2c_write(AR0341_I2C_ADDR, 0x0102, 0x0001);
-    //...(from [Getting Camera Information] to download the sensor register configuration file) ...
+    i2c_write(sensor_I2C_ADDR, 0x0102, 0x0001);
+    // Additional sensor initialization parameters
+    // (Refer to Camera Information documentation for the complete sensor register configuration)
 }
 ```
 
@@ -219,8 +222,8 @@ int sensor_init() {
 
 1. **BSP Integration**:
    - Modify the device tree to include the CSI interface configuration
-   - Add camera driver to kernel build configuration
-   - Configure media controller pipeline for the camera
+   - Add the camera driver to kernel build configuration
+   - Configure the media controller pipeline for the camera
 
 2. **Application Development**:
 
@@ -241,7 +244,7 @@ int main() {
     fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     fmt.fmt.pix.width = 1920;
     fmt.fmt.pix.height = 1536;
-    fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_SRGGB12;
+    fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_YUYV;
     
     if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
         perror("Failed to set format");
@@ -268,22 +271,23 @@ After receiving the module data through the MIPI CSI interface:
 - **Data Reception**
   - MIPI CSI-2 protocol implementation
   - Data rate configuration
-- **Image Processing**
+- **Image Processing Pipeline**
   - RAW12 data parsing
   - Debayering and color correction
   - Image format conversion
 
 ### Technical Support
 - **Documentation**
-  - Detailed register descriptions
+  - Comprehensive register descriptions
+  - Integration guides
 
 - **Engineering Support**
   - Technical consultation
-  - Debug assistance
+  - Debugging assistance
   - Performance optimization
 
 :::tip
-SENSING Technology provides technical support for integration with most platforms. For detailed documentation, sample code, and technical assistance, please contact our support team.
+SENSING Technology provides expert technical support for integration with most platforms. For detailed documentation, sample code, and technical assistance, please contact our support team.
 :::
 
 
