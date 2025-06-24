@@ -178,14 +178,14 @@ int max9296_init() {
 }
 ```
 
-2. **Camera Configuration**:
+2. **Splitter Configuration**:
 
 ```c
-/* Example code for SG3-AR0341C-G2F initialization */
+/* Example code for Splitter initialization */
 
 #define MAX9295A_I2C_ADDR 0x80 // 8-bit address
 
-int camera_init() {
+int Splitter_init() {
     // Initialize deserializer first
     max9296_init();
     
