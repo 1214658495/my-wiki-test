@@ -4,14 +4,15 @@ sidebar_position: 1
 
 # Application
 
-## Autonomous Driving Sensing Solution
+## Domain Controller Image Injection Test
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{fontSize: '1.1em', color: 'var(--ifm-color-primary)'}}>
-    In advanced autonomous driving systems, precise and reliable multi-sensor data acquisition and synchronization are critical for perception and decision-making. The <strong>GMSL Camera Grabber (CCG3-4H/8H)</strong> is designed to address these requirements by providing high-performance, synchronized video capture from multiple GMSL cameras, and seamless integration with other vehicle sensors.
+  <div style={{fontSize: '1.1em'}}>
+    After data collection by autonomous vehicles, algorithm validation and optimization are required, which necessitates a data injection system. The autonomous driving IPC will transmit the collected video data from hard disks to the video injection card through the PCIe interface. The video injection card will synchronously output 8 channels of video based on timestamps, simulating the camera time sequence, and transmit it to the domain controller through the GMSL interface.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png" alt="CCG3-8H Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Application.png" alt="Domain controller image injection frame diagram" style={{maxWidth: '85%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+    <p style={{textAlign: 'center', marginTop: '0.5rem', fontSize: '0.9em'}}>Diagram 1: Domain controller image injection frame diagram</p>
   </div>
 </div>
 
@@ -21,50 +22,56 @@ sidebar_position: 1
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
   <ul style={{margin: 0, paddingLeft: '1.2em'}}>
-    <li><strong>GMSL Cameras:</strong> Multiple high-resolution cameras are connected to the CoaxCapture card, which aggregates and synchronizes their video streams.</li>
-    <li><strong>CoaxCapture Capture Card:</strong> Installed in the vehicle's IPC (industrial PC) via PCIe, the card receives camera data and synchronization signals, ensuring frame-level alignment across all channels.</li>
-    <li><strong>GPS Module:</strong> Provides 1PPS (Pulse Per Second) and TOD (Time of Day) signals for global time reference.</li>
-    <li><strong>Ethernet Switch:</strong> Supports PTP/gPTP (Precision Time Protocol/Generalized PTP) for time synchronization across LiDAR, radar, and other sensors.</li>
-    <li><strong>IPC (Industrial PC):</strong> Central processing unit that collects, processes, and stores synchronized data from all sensors.</li>
+    <li><strong>IPC (Industrial PC):</strong> Provides the source video data through PCIe Gen3 interface.</li>
+    <li><strong>CIG3-8H Video Injection Card:</strong> Receives data from IPC, processes it based on timestamps, and outputs synchronized video streams.</li>
+    <li><strong>Ethernet Switch:</strong> Enables gPTP/PTP synchronization between all system components.</li>
+    <li><strong>ACU (Autonomous Control Unit):</strong> Receives the injected video data for testing and validation purposes.</li>
   </ul>
 </div>
 
-## Synchronization Workflow
+## Key Features and Advantages
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
   <ol style={{margin: 0, paddingLeft: '1.2em'}}>
-    <li>The GPS module outputs 1PPS and TOD signals, which are distributed to both the CoaxCapture card and the Ethernet switch.</li>
-    <li>The CoaxCapture card uses these signals to synchronize all connected GMSL cameras, ensuring that each frame is timestamped accurately and aligned with other vehicle sensors.</li>
-    <li>The Ethernet switch propagates PTP/gPTP signals to LiDAR, radar, and other devices, enabling system-wide time synchronization.</li>
-    <li>All sensor data, including video, LiDAR, and radar, are collected by the IPC for real-time processing and recording.</li>
+    <li>Utilizes PCI Express interface with PCIe Gen3x8 support, providing sustainable bandwidth up to 4800 MB/s.</li>
+    <li>Powered by Zynq™ UltraScale+™ ZU7EV MPSoC processor for high-performance data processing.</li>
+    <li>Built-in high-performance DMA engine for efficient data transfer from host.</li>
+    <li>Supports various serializers (MAX9295A, MAX96717F, MAX96717) and deserializers (MAX9296A, MAX96712, MAX96716).</li>
+    <li>Output video resolution supports up to 8 channels of 3840×2160@30fps.</li>
+    <li>Supports YUV422, RAW10/12/14 video formats.</li>
+    <li>Capable of simulating I2C messages between ECU and cameras.</li>
+    <li>Supports external trigger signals to control simultaneous output across all channels.</li>
+    <li>Enables timestamp-based RAW video data playback with nanosecond-level precision.</li>
+    <li>Supports synchronization across multiple injection cards.</li>
+    <li>Compatible with both Linux and Windows operating systems.</li>
   </ol>
 </div>
 
 ---
 
-## Key Benefits
+## Typical Applications
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
   <div style={{flex: 1, minWidth: 220, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
-    <strong>Multi-camera synchronization</strong><br/>
-    Hardware-level frame alignment for up to 8 GMSL cameras.
+    <strong>Hardware-in-the-Loop (HIL) Simulation</strong><br/>
+    Enables testing of autonomous driving algorithms with real-world data in a controlled environment.
   </div>
   <div style={{flex: 1, minWidth: 220, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
-    <strong>Unified time base</strong><br/>
-    GPS and PTP/gPTP synchronize all vehicle sensors, supporting high-precision sensor fusion.
+    <strong>Data Replay Systems</strong><br/>
+    Allows for consistent reproduction of field-collected data for algorithm validation and optimization.
   </div>
   <div style={{flex: 1, minWidth: 220, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
-    <strong>Scalable architecture</strong><br/>
-    Easily integrates additional sensors or cameras as system requirements evolve.
+    <strong>Domain Controller Testing</strong><br/>
+    Supports injection of recorded data or GPU-rendered simulation data for comprehensive testing.
   </div>
   <div style={{flex: 1, minWidth: 220, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
-    <strong>Reliable data acquisition</strong><br/>
-    PCIe interface and robust hardware design ensure high throughput and low latency.
+    <strong>Time Synchronization</strong><br/>
+    gPTP/PTP support ensures all devices in the system operate on the same timeline.
   </div>
 </div>
 
 ---
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
-This architecture is ideal for autonomous driving, ADAS development, and any application requiring precise, synchronized multi-sensor data acquisition.
+The CIG3-8H GMSL Video Injection Card is an integral component in mature autonomous driving HIL video injection solutions, providing high-precision, multi-channel time synchronization technology to ensure synchronized output across all channels, making it ideal for algorithm validation and optimization in autonomous driving development.
 </div>
