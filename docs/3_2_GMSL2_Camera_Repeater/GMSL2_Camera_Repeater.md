@@ -2,13 +2,13 @@
 sidebar_position: 1
 ---
 
-# Getting Started with GMSL2 Camera Splitter
+# Getting Started with GMSL2 Camera Repeater
 
 ## Overview
 
 <div className="row">
   <div className="col col--7">
-    The GMSL2 Camera Splitter, engineered by SENSING Technology Co., Ltd., enables a single GMSL input to be distributed to two GMSL outputs while maintaining identical data streams. This device is compatible with SENSING GMSL camera models.
+    The GMSL2 Repeater is designed by SENSNG Technology Co.,Ltd., which can realize one GMSL2 input and one GMSL2 output, so as to extend the transmission distance.
   </div>
     <div className="col col--5">
     :::note Key Features
@@ -21,13 +21,13 @@ sidebar_position: 1
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter.png" alt="GMSL2_Camera_Splitter" 
-    style={{maxWidth: '25%', height:'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater1.png" alt="GMSL2_Camera_Repeater" 
+    style={{maxWidth: '45%', height:'auto'}} />
 </div>
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-col-152.html" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-col-158.html" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
@@ -42,9 +42,9 @@ sidebar_position: 1
 |-------------------|-------------------------|
 | Transport Protocol | GMSL / GMSL2           |
 | Input Ports       | 1                      |
-| Output Ports      | 2                      |
+| Output Ports      | 1                      |
 | Input Interface   | 1× GMSL2     |
-| Output Interface  | 2× GMSL2     |
+| Output Interface  | 1× GMSL2     |
 | Supported Data Rates | 1.5Gbps, 3Gbps, 6Gbps |
 | Maximum Resolution | Up to 3840×2160        |
 | Output Synchronization Accuracy | < 10μs    |
@@ -60,7 +60,7 @@ sidebar_position: 1
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter Dimensions" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Dimensions.png" alt="GMSL2_Camera_Repeater Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -68,7 +68,7 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="GMSL2_Camera_Splitter Block Diagram" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Block_Diagram1.png" alt="GMSL2_Camera_Repeater Block Diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -78,16 +78,15 @@ sidebar_position: 1
 
 | | Device | I2C Address (8-bit) |
 |---|-------------|---------------|
-| 1 | Splitter: Logger | 0x80 |
-| 2 | Splitter: ECU | 0x80 |
-| 3 | Splitter: Camera | 0x94 |
-| 4 | SENSING Camera | 0x70 |
+| 1 | Repeater: ECU | 0x80 |
+| 2 | Repeater: Camera | 0x94 |
+| 3 | SENSING Camera | 0x70 |
 
 </div>
 
 #### Connector Pin Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connect.png" alt="GMSL2_Camera_Splitter Connector" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Connect.png" alt="GMSL2_Camera_Repeater Connector" 
     style={{maxWidth: '40%', height:'auto'}} />
 </div>
 
@@ -95,7 +94,7 @@ sidebar_position: 1
 
 | Connector Component | Part Number | Manufacturer/Note |
 |-----------------|------|------------|
-| Splitter Device Connector | 50352-0400 | Molex |
+| Repeater Device Connector | 50352-0400 | Molex |
 | Cable Harness Connector | 50351-0400 | Molex |
 | Power Supply | Pin3, Pin4 | 9~12V DC |
 | Ground | Pin1, Pin2 | Common Ground |
@@ -115,33 +114,32 @@ sidebar_position: 1
 
 | Product Model | Input Channels | Output Channels | Resolution Support | Processor | Data Transfer Rate |
 |---------------|---------------|-----------------|-------------------|-----------|---------------|
-| SG2-BP0102-GMSL | 1CH | 2CH | Up to 1920×1080@30fps | MAX96705 | 1.5Gbps |
-| SG8-BP0102-GMSL2 | 1CH | 2CH | Up to 3840×2160@30fps | MAX9295A | 6Gbps |
-| SG8-BP0102-GMSL2F | 1CH | 2CH | Up to 1920×1080@30fps | MAX96717F | 3Gbps |
+| SG2-BP0101-GMSL | 1CH | 1CH | Up to 1920×1080@30fps | MAX96705 | 1.5Gbps |
+| SG8-BP0101-GMSL2 | 1CH | 1CH | Up to 3840×2160@30fps | MAX9295A | 6Gbps |
 
 </div>
 
 ## Getting Started
 
-### 1. GMSL2 Camera Splitter Integration with Customer's Self-developed Platform
+### 1. GMSL2 Camera Repeater Integration with Customer's Self-developed Platform
 
-Using the Splitter when connecting to different domain controllers:
+Using the Repeater when connecting to different domain controllers:
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_B.png" alt="Splitter block diagram" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Block_Diagram.png" alt="Repeater block diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
-    <p>Splitter block diagram - Configuration for connecting to different domain controllers</p>
+    <p>Repeater block diagram - Configuration for connecting to domain controllers</p>
 </div>
 
 #### **Operating Procedure**
 1. Connect the system as shown in the diagram above.
-2. Power up the Splitter first.
-3. Initialize the Controller 1, which will power on and initialize the Splitter-ECU, followed by the Controller 2 power-on sequence and initialize the Splitter-Logger.
-4. Execute normal operation commands from both Domain Controllers 1 and 2 to bring up the camera.
+2. Power up the Repeater first.
+3. Initialize the Controller, which will power on and initialize the Repeater-ECU.
+4. Execute normal operation commands from the Controller to bring up the camera.
 
 #### **Operational Logic**
-1. Upon receiving power, the Splitter device automatically configures the connected camera.
-2. Domain Controller 1 only needs to configure the Splitter as if it were a camera, then trigger it normally to activate the imaging pipeline.
+1. Upon receiving power, the Repeater device automatically configures the connected camera.
+2. Domain Controller only needs to configure the Repeater as if it were a camera, then trigger it normally to activate the imaging pipeline.
 
 :::tip
 Refer to the software flow and example code below to develop your custom driver implementation.
@@ -178,10 +176,10 @@ int max9296_init() {
 }
 ```
 
-2. **Splitter Configuration**:
+2. **Repeater Configuration**:
 
 ```c
-/* Example code for Splitter initialization */
+/* Example code for Repeater initialization */
 
 #define MAX9295A_I2C_ADDR 0x80 // 8-bit address
 
@@ -224,6 +222,7 @@ int sensor_init() {
    - Modify the device tree to include the GMSL2 interface configuration
    - Add the camera driver to kernel build configuration
    - Configure the media controller pipeline for the camera
+   - Configure the Repeater-ECU
 
 2. **Application Development**:
 
@@ -267,7 +266,7 @@ int main() {
 }
 ```
 ### Step 2: Data Processing
-After receiving the module data through the GMSL2 interface:
+After receiving the module data through the MIPI CSI interface:
 - **Data Reception**
   - GMSL2 protocol implementation
   - Data rate configuration
