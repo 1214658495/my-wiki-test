@@ -1,0 +1,255 @@
+---
+sidebar_position: 1
+---
+
+# GMSL Video Injection Card CIG3-8H
+
+## Overview
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="CyberCobra" style={{width: 320, height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  </div>
+  <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
+    <strong>CIG3-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co., Ltd. The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and employs high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output. The product is widely used in hardware-in-the-loop (HIL) simulation systems, digital acquisition and reinjection systems, and video playback systems.
+  </div>
+  <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
+    <a class="get_one_now_item" href="https://sensing-world.com/en/h-col-151.html" target="_blank" rel="noopener noreferrer">
+      <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', color: '#000', fontWeight: 600, fontSize: '1.1em'}}>Learn More</span>
+    </a>
+  </div>
+</div>
+
+
+## Key Features and Advantages
+
+<div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Hardware:</strong><br/>
+    • Base board in PCI Express form<br/>
+    • Support up to PCIe Gen3x8<br/>
+    • PCIe sustainable bandwidth up to 4800 MB/s<br/>
+    • Zynq™ UltraScale+™ ZU7EV MPSoC
+  </div>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Video Support:</strong><br/>
+    • Output resolution: up to 8 channels 3840×2160@30fps<br/>
+    • Output formats: YUV422, RAW10/12/14<br/>
+    • High-performance DMA engine for data transfers<br/>
+    • Real-time processing of large amounts of data
+  </div>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>SerDes Support:</strong><br/>
+    • Serializers: MAX9295A, MAX96717F, MAX96717, etc.<br/>
+    • Deserializers: MAX9296A, MAX96712, MAX96716, MAX96718, etc.<br/>
+    • Simulates I2C messages between ECU and camera<br/>
+    • OS: Linux supported
+  </div>
+</div>
+
+## Specification parameters
+
+| **Video Injection Card parameters** | **Value** |
+|---|---|
+| **Host Interface** | PCIe Gen3 x8 |
+| **Bandwidth** | Bandwidth continuous up to 4800 MB/s |
+| **Carrier Board Internal Storage** | DDR4 |
+| **Network Interface** | Gigabit ethernet |
+| **I/O Interface** | TTL trigger signal |
+| **Weight** | 300 g |
+| **Power supply consumption** | When power supply is 12 V， Current is around 1 A |
+| **Working Temperature** | -20°-70°C |
+| **Storage Temperature** | -40°C-80°C |
+| **Relative Humidity** | 5%-90% Non condensing (operating)， 0%-95% (Storage) |
+| **MTBF** | 5 years |
+| **Serializer** | MAX9295A/MAX96717F/MAX96717... |
+| **Deserializer Support** | MAX9296A/MAX96712/MAX96716/<br/>MAX96718/MAX96722... |
+| **Coax Cable Model** | Amphenol Min-fakra Dual<br/>MFK2252AW-001-TL30G-50 |
+| **Cable Length** | Amphenol 250mm<br/>MKA2FZ-302LL-FKMZ1-21-01 |
+| **Number of Output Videos** | CIG3-8H: 8 channel video output |
+| **Video Resolution** | 1-8Mega pixel |
+| **Video Format** | 8 bit (YUV422), 10/12/14 bit (RAW) |
+| **Data Bandwidth** | Every channel supports 6 Gbps |
+
+### Advanced Capabilities
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.05em'}}>
+• Support for ECU external trigger signal control for simultaneous output of all channels<br/>
+• Support for timestamp-based playback of RAW video data<br/>
+• Synchronization of multiple base boards<br/>
+• Support for user injection of video data<br/>
+• Support for video data rendered by GPU graphics card emulation<br/>
+• Support for gPTP/PTP synchronization
+</div>
+
+
+### Hardware Preparation
+#### Block Diagram
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra Application Diagram" style={{maxWidth: '90%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+</div>
+
+#### Parts List
+| No. | Product model                 | Quantity | Remark                |
+|-----|-------------------------------|----------|-----------------------|
+| 1   | Power connection wire         | 1        | Standard configuration|
+| 2   | CIG3-8H video injection card          | 1        | Standard configuration|
+| 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
+| 4   | Aviation plug turn to network cable | 1 | Standard configuration|
+| 5   | GPS connection wire           | 1        | Standard configuration|
+
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.05em'}}>
+After collecting data with autonomous vehicles, algorithm validation and optimization are required, which demands a data injection system. The autonomous driving IPC transmits collected video data from hard disks to the video injection card through the PCIe interface. The card then synchronously outputs 8 channels of video based on timestamps, simulating the camera time sequence and transmitting it to the domain control through the GMSL interface. The CyberCobra card supports gPTP/PTP synchronization, achieving time synchronization through switches, IPC and ACU, ensuring all devices in the system are on the same timeline.
+</div>
+
+<!-- #### Follow the steps below to install the product:
+
+1. Connect the GMSL camera to the CCG3-8H using the coaxial cable
+2. Insert the CCG3-8H into the PCIe slot of the host computer
+3. Connect the power supply to the CCG3-8H
+4. Power on the system
+
+<div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
+  <iframe
+    style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+    src="//player.bilibili.com/player.html?bvid=BV1w6j2z8E16&page=1&high_quality=1&danmaku=0"
+    scrolling="no"
+    border="0"
+    frameBorder="no"
+    framespacing="0"
+    allowFullScreen="true">
+  </iframe>
+</div> -->
+
+:::note Complete Solution
+SENSING can provide a complete solution including Camera + GMSL Video Injection Card + IPC + Coaxial cable for your hardware-in-the-loop testing needs.
+:::
+
+## Software Framework and Usage Instructions
+
+### Software Framework Diagram
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  <div style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
+    Software Framework Architecture
+  </div>
+</div>
+
+### SDK Components
+The software SDK is provided based on Ubuntu 18.04/20.04 and includes the following components:
+
+| Directory/File | Description |
+|----------------|-------------|
+| bash           | Scripts directory including driver loading and control scripts |
+| include        | Header files directory |
+| xdma           | Injection card driver source code |
+| tools/pcie_reg_rw | Utilities for injection card register reading/writing |
+| tools/pcie_xdma_transfer | Source code for image transmission program |
+| Makefile       | Compilation script for the entire SDK |
+| readme         | SDK driver package usage instructions |
+
+### Setup and Configuration
+
+#### 1. SDK Compilation
+Enter the SDK directory and run the following commands to rebuild the driver and applications:
+```bash
+sudo make clean && sudo make
+```
+
+#### 2. Driver Loading
+Navigate to the bash directory and execute:
+```bash
+sudo ./load_modules.sh
+```
+
+Upon successful loading, you will see:
+```
+interrupt_selection 0.
+Loading driver...insmod xdma.ko interrupt_mode=1 ...
+The Kernel module installed correctly and the xdma devices were recognized.
+DONE
+```
+
+After loading, device interfaces will be created as `/dev/xdma0_h2c_0`, `/dev/xdma0_h2c_1`, etc. for each channel.
+
+#### 3. Video Injection Configuration
+
+The injection card supports various configuration parameters through the transfer_run.sh script:
+
+**Send Mode Configuration:**
+```bash
+transfer_type[<n>]="<mode>"
+```
+- `<n>`: Channel number (0-7)
+- `<mode>`: "YUV", "RAW10", "RAW12", or "RAW14"
+
+Example: `transfer_type[0]="YUV"`
+
+**Frame Rate Configuration:**
+```bash
+transfer_fps[<n>]=<frame_rate>
+```
+- Supported frame rates: 1-30 fps
+
+Example: `transfer_fps[0]=30`
+
+**Resolution Configuration:**
+```bash
+transfer_resolution_width[<n>]=<width>
+transfer_resolution_height[<n>]=<height>
+```
+
+Example: 
+```bash
+transfer_resolution_width[0]=1920
+transfer_resolution_height[0]=1080
+```
+
+**Note:** Adjacent channel pairs (0-1, 2-3, 4-5, 6-7) must have the same resolution.
+
+**File Playback Configuration:**
+```bash
+transfer_file_replay[<n>]=<repeat_count>
+```
+- Repeat count: 0-1,000,000
+
+Example: `transfer_file_replay[0]=20`
+
+**Video Source File:**
+Create a data folder in the SDK/bash directory and place your video files there.
+```bash
+transfer_file_name[<n>]="<filename>"
+```
+
+Example: `transfer_file_name[0]="input0.h264"`
+
+**File Type Configuration:**
+```bash
+transfer_file_type[<n>]="<type>"
+```
+- `<type>`: "Original" or "H264"
+
+Example: `transfer_file_type[0]="Original"`
+
+#### 4. Starting and Stopping Data Transmission
+
+**Start Transmission:**
+```bash
+sudo ./bash/transfer_run.sh
+```
+
+**Stop Transmission:**
+```bash
+sudo ./bash/stop.sh
+```
+
+### Advanced Configuration Notes
+
+- "Original" file type sends unencoded video in formats like YUV or RAW10/12/14
+- "H264" file type sends H.264 encoded files that will be decompressed before transmission
+- The injection card supports external trigger signals for synchronized output across all channels
+- Multiple injection cards can be synchronized for higher channel count applications
+- Time synchronization is maintained via gPTP/PTP protocols
+
+## FAQ
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
+For more information and frequently asked questions, please contact our technical support team or visit our <a href="https://sensing-world.com/en/h-col-151.html" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>official website</a>.
+</div>
