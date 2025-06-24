@@ -61,7 +61,7 @@ sidebar_position: 1
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter" 
-    style={{maxWidth: '90%', height:'auto'}} />
+    style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 
@@ -87,8 +87,26 @@ sidebar_position: 1
 
 #### Connector Pin Definition
 <div style={{textAlign: 'center'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connect.png" alt="GMSL2_Camera_Splitter" 
+    style={{maxWidth: '40%', height:'auto'}} />
+</div>
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| Power Connector Name | Type | Brand/Note |
+|-----------------|------|------------|
+| Splitter End Connector | 50352-0400 | Molex |
+| Cable Harness Connector | 50351-0400 | Molex |
+| Power Supply | Pin3, Pin4 | 9~12V |
+| GND | Pin1, Pin2 | / |
+
+</div>
+
+
+#### Cable Harness Definition
+<div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter" 
-    style={{maxWidth: '80%', height:'auto'}} />
+    style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
 #### Product Models
