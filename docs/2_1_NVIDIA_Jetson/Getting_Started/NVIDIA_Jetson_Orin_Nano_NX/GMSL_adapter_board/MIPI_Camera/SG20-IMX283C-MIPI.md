@@ -8,10 +8,9 @@ sidebar_position: 5
 
 <div className="row">
   <div className="col col--12">
-    SG3-ISX031C-MIPI-Hxxx camera is equipped with SONY CMOS image sensor ISX031. It has an automotive-grade sensor with a well tuned Image Signal Processor (ISP) that produces exceptional image quality, can be adapted to difference SOC platforms.
+    SG20-IMX283C-MIPI-Hxxx camera is equipped with SONY CMOS image sensor ISX031. It has an automotive-grade sensor with a well tuned Image Signal Processor (ISP) that produces exceptional image quality, can be adapted to difference SOC platforms.
   </div>
 </div>
-
 
 
 <div style={{textAlign: 'center'}}>

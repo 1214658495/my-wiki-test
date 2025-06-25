@@ -50,7 +50,7 @@ sidebar_position: 3
 ### Physical Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/678/SG8-IMX678C-MIPI_Dimensions.png" alt="SG8-IMX678C-MIPI Dimensions" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/SG8-IMX678C-MIPI/SG8-IMX678C-MIPI_Dimensions.png" alt="SG8-IMX678C-MIPI Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -59,7 +59,7 @@ sidebar_position: 3
 ### System Architecture
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/678/SG8-IMX678C-MIPI_Block_Diagram.png" alt="SG8-IMX678C-MIPI Block Diagram" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/SG8-IMX678C-MIPI/SG8-IMX678C-MIPI_Block_Diagram.png" alt="SG8-IMX678C-MIPI Block Diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
