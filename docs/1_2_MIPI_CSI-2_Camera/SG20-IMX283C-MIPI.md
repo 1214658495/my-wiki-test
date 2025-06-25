@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# SG20-IMX283C-MIPI
+# SG20-IMX283C-MIPI Camera
 
 ## Overview
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# SG3-IMX900C-MIPI
+# SG3-IMX900C-MIPI Camera
 
 ## Overview
 

@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# SG12-IMX577C-MIPI
+# SG12-IMX577C-MIPI Camera
 
 ## Overview
 

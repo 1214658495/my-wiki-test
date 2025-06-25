@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# SG3-ISX031C-MIPI
+# SG3-ISX031C-MIPI Camera
 
 ## Overview
 
