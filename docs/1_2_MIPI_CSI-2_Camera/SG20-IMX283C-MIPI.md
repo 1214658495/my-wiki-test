@@ -19,7 +19,7 @@ sidebar_position: 5
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-40.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-pd-115.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
