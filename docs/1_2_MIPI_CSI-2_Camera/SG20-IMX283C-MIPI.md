@@ -156,7 +156,7 @@ Access the latest camera drivers from our GitHub repository:
     </a>
 </div>
 
-### Compatible Development Kits
+<!-- ### Compatible Development Kits
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
@@ -164,7 +164,7 @@ Access the latest camera drivers from our GitHub repository:
 |------|--------------------------|-------------------|
 | [NVIDIA MIPI CSI-2 Camera Developer Kit](https://sensing-world.com/en/h-pd-88.html) | NVIDIA Jetson Orin Nano/Orin NX Developer Kit | 2 |
 
-</div>
+</div> -->
 
 <!-- ## Software Setup -->
 

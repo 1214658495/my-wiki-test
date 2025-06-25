@@ -165,7 +165,7 @@ Access the latest camera drivers from our GitHub repository:
     </a>
 </div>
 
-### Compatible Development Kits
+<!-- ### Compatible Development Kits
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
@@ -173,7 +173,7 @@ Access the latest camera drivers from our GitHub repository:
 |------|--------------------------|-------------------|
 | [NVIDIA MIPI CSI-2 Camera Developer Kit](https://sensing-world.com/en/h-pd-88.html) | NVIDIA Jetson Orin Nano/Orin NX Developer Kit | 2 |
 
-</div>
+</div> -->
 
 ### Driver Downloads
 
@@ -185,9 +185,9 @@ Access the latest camera drivers from our GitHub repository:
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| # | JetPack Version | Download Link |
-|---|-----------------|---------------|
-| 1 | JP6.1 (L4T R36.4) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack6.1/Jetson-Orin-Nano-DK_IMX678_JP6.1_L4TR36.4.2) |
+| # | JetPack Version | Compatible Platform | Download Link |
+|---|-----------------|--------------------|---------------|
+| 1 | JP6.1 (L4T R36.4) | Jetson Orin Nano/NX Devkit | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack6.1/Jetson-Orin-Nano-DK_IMX678_JP6.1_L4TR36.4.2) |
 
 </div>
 
