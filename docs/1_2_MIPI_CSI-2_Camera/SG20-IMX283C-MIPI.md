@@ -35,7 +35,7 @@ sidebar_position: 5
 | ISP               | N/A                     |
 | Chip size         | 16.226 mm (H) × 12.654 mm (V) |
 | Image Size        | Diagonal 15.86mm (Type 1) |
-| Resolution        | 5472H×3648V@20fps RAW12<br/>5472H×3648V@25fps RAW10<br/>3840H×2160V@50fps RAW10<br/>2736H×1824V@50fps RAW12 (2/2 binning) |
+| Resolution        | 5472H×3648V@20fps RAW12<br/>5472H×3648V@25fps RAW10<br/>3840H×2160V@50fps RAW10<br/>2736H×1824V@50fps RAW12 (2/2 binning)<br/>1824Hx1216V@60fps RAW12 (3/3 binning) |
 | Pixel Size        | 2.40um*2.40um           |
 | HDR Support       | N/A                     |
 | Output Format     | MIPI RAW10/RAW12        |
@@ -46,7 +46,7 @@ sidebar_position: 5
 | Operating Temp.   | -20 to +75°C            |
 | Performance temp. | -20 to +60°C            |
 | Dimensions        | W: 40mm, L: 40mm, H: 10.1mm |
-| Weight            | < 40g                   |
+| Weight            | < 400g                   |
 
 ### Physical Dimensions
 
@@ -117,7 +117,7 @@ The SG20-IMX283C-MIPI supports various C-mount lenses to accommodate different f
 
 </div>
 
-### Power-Up Sequence
+<!-- ### Power-Up Sequence
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png" alt="Power Sequence Diagram" 
@@ -126,7 +126,7 @@ The SG20-IMX283C-MIPI supports various C-mount lenses to accommodate different f
 
 :::info Power-Up Requirements
 The SG20-IMX283C-MIPI camera requires minimal power sequencing. Ensure that the RESET signal is asserted only after all power supplies have stabilized.
-:::
+::: -->
 
 
 ## Installation & Setup
@@ -156,27 +156,8 @@ Access the latest camera drivers from our GitHub repository:
     </a>
 </div>
 
-<!-- ### Compatible Development Kits
 
-<div style={{display: 'flex', justifyContent: 'center'}}>
-
-| Kit | Compatible Platform | Max Camera Inputs |
-|------|--------------------------|-------------------|
-| [NVIDIA MIPI CSI-2 Camera Developer Kit](https://sensing-world.com/en/h-pd-88.html) | NVIDIA Jetson Orin Nano/Orin NX Developer Kit | 2 |
-
-</div> -->
-
-<!-- ## Software Setup -->
-
-### Driver Installation
-
-Access the latest camera drivers from our GitHub repository:
-
-<div style={{marginBottom: '1rem'}}>
-    <a href="https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers" target="_blank" rel="noopener noreferrer" style={{display: 'inline-flex', alignItems: 'center', textDecoration: 'none'}}>
-        <span style={{fontWeight: 'bold'}}>SENSING-Technology Camera Drivers</span>
-    </a>
-</div>
+### Driver Downloads
 
 :::info Driver Installation Process
 1. Select the appropriate driver package based on your JetPack version
@@ -186,9 +167,9 @@ Access the latest camera drivers from our GitHub repository:
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| # | JetPack Version | Download Link |
-|---|-----------------|---------------|
-| 1 | JP6.1 (L4T R36.4) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack6.1/Jetson-Orin-Nano-DK_IMX283_JP6.1_L4TR36.4.2) |
+| # | JetPack Version | Compatible Platform | Download Link |
+|---|-----------------|--------------------|---------------|
+| 1 | JP6.1 (L4T R36.4) | Jetson Orin Nano/NX Devkit | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG_MIPI_CAM/JetPack6.1/Jetson-Orin-Nano-DK_IMX283_JP6.1_L4TR36.4.2) |
 
 </div>
 
