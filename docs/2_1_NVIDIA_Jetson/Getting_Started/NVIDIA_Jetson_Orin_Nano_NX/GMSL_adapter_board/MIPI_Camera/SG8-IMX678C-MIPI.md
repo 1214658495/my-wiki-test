@@ -8,7 +8,7 @@ sidebar_position: 3
 
 <div className="row">
   <div className="col col--12">
-    <p>The SG8-IMX678C-MIPI-HXXX camera features the SONY IMX678 CMOS image sensor with 8.29MP resolution. This high-performance camera delivers 4K (3840×2160) resolution at up to 60fps with HDR support. Pre-focused with an M12 lens and compatible with various SoC platforms, it's ideal for advanced imaging applications.</p>
+    <p>The SG8-IMX678C-MIPI-HXXX camera features the SONY IMX678 CMOS image sensor with 8.29MP resolution. This high-performance camera delivers 4K (3840×2160) resolution at up to 60fps with HDR support. Pre-focused with an M12 lens and compatible with various SOC platforms, it's ideal for advanced imaging applications.</p>
   </div>
 </div>
 
