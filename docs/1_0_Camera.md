@@ -6,11 +6,11 @@ sidebar_position: 1
 ## Technologies Overview
 
 <!-- ![Camera Technologies Banner](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_show.png) -->
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_show.png" alt="Camera Technologies Banner" style={{maxWidth: '90%', height: 'auto'}} />
-</div> -->
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SENSING_WIKI.png" alt="Camera Technologies Banner" style={{maxWidth: '100%', height: 'auto'}} />
+</div>
 
-:::tip
+:::note
 This comprehensive guide covers all camera technologies supported in our ecosystem, their technical specifications, implementation details, and recommended use cases.
 :::
 
