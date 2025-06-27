@@ -24,7 +24,7 @@ Modern camera technologies are foundational components in numerous advanced syst
 
 <div className="camera-grid">
 
-### 📷 [Serdes Camera](./1_1_Serdes_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Serdes Camera</span>
 
 **Serializer/Deserializer** camera systems convert parallel data streams into serial signals for high-speed, long-distance transmission.
 
@@ -38,7 +38,7 @@ Modern camera technologies are foundational components in numerous advanced syst
 
 ---
 
-### 📷 [MIPI CSI-2 Camera](./1_2_MIPI_CSI-2_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>MIPI CSI-2 Camera</span>
 
 **Mobile Industry Processor Interface (MIPI) Camera Serial Interface 2 (CSI-2)** protocol implementations offering standardized connectivity.
 
@@ -52,7 +52,7 @@ Modern camera technologies are foundational components in numerous advanced syst
 
 ---
 
-### 📷 [Global Shutter Camera](./1_3_Global_Shutter_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Global Shutter Camera</span>
 
 Cameras featuring **global shutter** technology that captures the entire frame simultaneously, eliminating motion artifacts.
 
@@ -66,7 +66,7 @@ Cameras featuring **global shutter** technology that captures the entire frame s
 
 ---
 
-### 📷 [USB Camera](./1_4_USB_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>USB Camera</span>
 
 Plug-and-play camera solutions utilizing **Universal Serial Bus (USB)** connectivity standards.
 
@@ -80,7 +80,7 @@ Plug-and-play camera solutions utilizing **Universal Serial Bus (USB)** connecti
 
 ---
 
-### 📷 [Depth Camera](./1_5_Depth_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Depth Camera</span>
 
 Specialized cameras that capture **distance information** for each pixel, creating three-dimensional scene representations.
 
@@ -94,7 +94,7 @@ Specialized cameras that capture **distance information** for each pixel, creati
 
 ---
 
-### 📷 [Low Latency Camera](./1_6_Low_Latency_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Low Latency Camera</span>
 
 Camera systems optimized for **minimal processing delay** between image capture and data availability.
 
@@ -108,7 +108,7 @@ Camera systems optimized for **minimal processing delay** between image capture 
 
 ---
 
-### 📷 [Event-Based Camera](./1_7_Event_Based_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Event-Based Camera</span>
 
 **Neuromorphic vision sensors** that detect changes in brightness for each pixel asynchronously, rather than capturing full frames at fixed intervals.
 
@@ -122,7 +122,7 @@ Camera systems optimized for **minimal processing delay** between image capture 
 
 ---
 
-### 📷 [NVIDIA Holoscan Camera](./1_8_NVIDIA_Holoscan_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>NVIDIA Holoscan Camera</span>
 
 Camera solutions integrated with **NVIDIA's Holoscan** platform for medical imaging and other high-performance vision applications.
 
@@ -136,7 +136,7 @@ Camera solutions integrated with **NVIDIA's Holoscan** platform for medical imag
 
 ---
 
-### 📷 [Night Vision Camera](./1_9_Night_Vision_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Night Vision Camera</span>
 
 Cameras specialized for **low-light environments** using advanced technologies to produce visible imagery in near-darkness conditions.
 
@@ -150,7 +150,7 @@ Cameras specialized for **low-light environments** using advanced technologies t
 
 ---
 
-### 📷 [Humanoid Robotic Camera](./1_10_Humanoid_Robotic_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Humanoid Robotic Camera</span>
 
 Vision systems designed specifically for **humanoid robots**, implementing advanced perception capabilities.
 
@@ -164,7 +164,7 @@ Vision systems designed specifically for **humanoid robots**, implementing advan
 
 ---
 
-### 📷 [Cockpit Camera](./1_11_Cockpit_Camera)
+### <span style={{color: 'var(--ifm-link-color)'}}>Cockpit Camera</span>
 
 Camera systems designed for **aircraft cockpit monitoring**, offering high reliability in extreme conditions.
 
@@ -181,6 +181,7 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 ---
 
 ## Selection Matrix
+
 <div className="table-responsive">
 
 | Camera Type      | Resolution | Frame Rate | Latency | Low Light |
@@ -261,31 +262,48 @@ When selecting a camera technology for your application, evaluate these critical
 
 ### Camera Initialization Example
 
-```cpp
-// Sample initialization for a rolling shutter camera
-RollingShutterCamera camera;
-CameraConfig config;
+```c
+/* Example code for capturing camera frames */
+#include "camera_api.h"
 
-// Configure camera parameters
-config.resolution = Resolution(1920, 1080);
-config.frameRate = 120;
-config.exposureMode = ExposureMode::MANUAL;
-config.exposureTime = 10000; // in microseconds
-
-// Initialize the camera with configuration
-if (camera.initialize(config)) {
-    camera.startCapture();
+int main() {
+    // Initialize camera
+    camera_init();
     
-    // Capture frame
-    Frame frame = camera.captureFrame();
+    // Open camera device
+    int fd = open("/dev/video0", O_RDWR);
+    if (fd < 0) {
+        perror("Failed to open camera device");
+        return -1;
+    }
     
-    // Process frame
-    // ...
+    // Configure video capture format
+    struct v4l2_format fmt = {0};
+    fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+    fmt.fmt.pix.width = 1920;
+    fmt.fmt.pix.height = 1536;
+    fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_UYVY;
     
-    camera.stopCapture();
-} else {
-    std::cerr << "Camera initialization failed: " << camera.getLastError() << std::endl;
+    if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
+        perror("Failed to set format");
+        close(fd);
+        return -1;
+    }
+    
+    // Request and map buffers
+    // ... (buffer setup code) ...
+    
+    // Start streaming
+    // ... (streaming code) ...
+    
+    // Capture and process frames
+    // ... (frame processing code) ...
+    
+    // Cleanup
+    close(fd);
+    return 0;
 }
+
 ```
 
 ---
@@ -307,8 +325,6 @@ For additional information about camera technologies and their applications, exp
 :::tip Professional Development
 Join our [Camera Technology Webinar Series](./1_6_Low_Latency_Camera) to learn directly from industry experts about advanced implementation techniques and emerging technologies.
 ::: -->
-
----
 
 <div className="footer-note">
 
