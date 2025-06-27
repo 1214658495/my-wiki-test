@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# List of Platform Compatible with Camera
+# Platform Compatibility Matrix
 
 :::note Overview
 The table below lists the current Cameras from SENSING, the platforms they can connect to and are compatible with, as well as the system version information of those platforms.

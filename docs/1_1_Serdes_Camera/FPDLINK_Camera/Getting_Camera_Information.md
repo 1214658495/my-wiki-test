@@ -4,59 +4,67 @@ sidebar_position: 3
 
 # Getting Camera Information
 
-:::note Available Resources
-Visit the SENSING service platform website to access comprehensive camera-related information and resources:
-:::
+## Available Resources
 
-:::tip Key Resources
-- Specification
-- 3D structural model
-- Camera intrinsic parameters data
+The SENSING service platform provides comprehensive camera resources including:
+
+- Technical specifications
+- 3D model
+- Camera intrinsic parameters
 - SerDes configuration files
-- Images Sample (Specifically for cameras with an ISP)
-:::
+- Sample images (for cameras with ISP)
 
-## Step-by-Step Guide
+## Accessing Resources
 
-### Step 1: Access Platform
-Click the following link to enter the SENSING service platform:  
-[SENSING service platform](http://service.sensing-world.com/)
+### Step 1: Access the Platform
+
+Visit the [SENSING service platform](http://service.sensing-world.com/) to begin.
 
 ### Step 2: Navigate to Information Query
-Click the **Information Query** page as shown below:
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2.png" alt="Information Query Page" style={{maxWidth: '90%', height: 'auto'}} />
+Select the **Information Query** section from the navigation menu.
+
+<div style={{textAlign: 'center', margin: '1.5rem 0'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2.png" alt="Information Query Page" style={{maxWidth: '85%', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
-### Step 3: Get Product Information
-To access specifications, 3D structural model, and SerDes configuration files:
+### Step 3: Product Information Lookup
 
-1. Input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>Product Model</span> (supports fuzzy search)
-2. Download all available data except camera intrinsic parameters
+To access specifications, 3D models, and configuration files:
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_model.png" alt="Product Model Search" style={{maxWidth: '90%', height: 'auto'}} />
+1. Enter the **Product Model** in the search field (fuzzy search supported)
+2. Download the required resources from the results page
+
+<div style={{textAlign: 'center', margin: '1.5rem 0'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_model.png" alt="Product Model Search" style={{maxWidth: '85%', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
-### Step 4: Get Camera Parameters
-To access camera intrinsic parameters data:
+### Step 4: Camera Parameters Lookup
 
-1. Input the <span style={{color: 'var(--ifm-color-primary-light)', fontWeight: 'bold'}}>SN Code</span> (supports fuzzy search)
-2. Download the parameters
+For camera-specific calibration parameters:
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_SN.png" alt="SN Code Search" style={{maxWidth: '90%', height: 'auto'}} />
+1. Enter the **SN Code** in the search field (fuzzy search supported)
+2. Download the intrinsic parameter files
+
+<div style={{textAlign: 'center', margin: '1.5rem 0'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/Service/service_tab2_SN.png" alt="SN Code Search" style={{maxWidth: '85%', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
-:::info About SN Code and Product Model
-The SN Code (Serial Number Code) is a unique identifier assigned to each camera unit during manufacturing. It serves as a digital fingerprint for your specific camera, allowing you to access its calibrated intrinsic parameters and other device-specific information.
+## Understanding Product Identifiers
 
-For example, as shown in the image below, the SN code for this product is: H190S-E01220525. Product Model is: SG3-ISX031C-GMSL2-H190S
+### SN Code and Product Model
 
-<div style={{textAlign: 'center', marginTop: '1rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto'}} />
+- **SN Code (Serial Number)**: A unique identifier for each individual camera unit, used to access device-specific calibration data and parameters
+- **Product Model**: The camera model designation that identifies the camera type and specifications
+
+### Example Identification
+
+The image below shows a camera with:
+- **SN Code**: H190S-E01220525
+- **Product Model**: SG3-ISX031C-GMSL2-H190S
+
+<div style={{textAlign: 'center', margin: '1.5rem 0'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
 </div>
-:::
 
 
