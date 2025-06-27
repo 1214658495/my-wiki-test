@@ -42,3 +42,80 @@
   font-size: 1.4rem !important;
   color: #2e8555 !important;
 }
+
+/* 新增的样式类，用于优化相机硬件检查页面 */
+/* Image container styles */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+.image-container img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  margin-top: 0.5rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Table styles */
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.specs-table th {
+  background-color: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-black);
+  font-weight: 600;
+  text-align: center;
+}
+
+.specs-table td, .specs-table th {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.75rem;
+}
+
+.specs-table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .specs-table th {
+  background-color: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-white);
+}
+
+[data-theme='dark'] .specs-table tr:nth-child(even) {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-container img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .specs-table {
+    font-size: 0.8rem;
+  }
+  
+  .specs-table td, .specs-table th {
+    padding: 0.5rem;
+  }
+}

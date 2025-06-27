@@ -1,9 +1,10 @@
 ---
 sidebar_position: 1
+title: Camera
+description: Comprehensive guide to camera technologies and their applications
 ---
 
-# Camera
-## Technologies Overview
+# Camera Technologies Overview
 
 <!-- ![Camera Technologies Banner](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_show.png) -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>

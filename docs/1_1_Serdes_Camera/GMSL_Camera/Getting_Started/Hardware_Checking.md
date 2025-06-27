@@ -1,40 +1,43 @@
 ---
 sidebar_position: 1
+title: Hardware Checking
+description: Verification guide for GMSL camera hardware components before installation
 ---
 
 # Hardware Checking
 
-Before installing the camera, please carefully check the following hardware aspects to ensure proper functionality.
+Before installation, verify the following hardware components to ensure optimal camera performance.
 
-## 1. Camera Connector
+## Camera Connector
 
-The camera uses an **Amphenol Fakra (Z Code)** connector for signal transmission. This connector is specifically designed for automotive applications and provides reliable high-speed data transmission.
+The camera utilizes an **Amphenol Fakra Z-Code** connector designed for automotive applications with high-speed data transmission capabilities.
 
-<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/camera-connector.png" alt="Camera Connector" style={{maxWidth: '80%', height: 'auto'}} />
-  <p style={{color: '#666', fontSize: '0.9em'}}>Amphenol Fakra (Z Code) Connector</p>
-</div> -->
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_connector.png" alt="Camera_connector" style={{maxWidth: '45%', height:'auto'}} />
+<div className="image-container">
+    <img 
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_connector.png" 
+        alt="Fakra Z-Code Connector" 
+        width="400" 
+    />
+    <p className="image-caption">Amphenol Fakra Z-Code Connector</p>
 </div>
 
-### Connector Pin Definition
+### Connector Specifications
 
-<div style={{display: 'flex', justifyContent: 'center'}}>
-<table>
+<table className="specs-table">
   <thead>
     <tr>
       <th colSpan="2">Pin Definition</th>
-      <th colSpan="2">Operating Voltage Range</th>
-      <th>Steady State Current</th>
-      <th rowSpan="2">Interface Type</th>
+      <th colSpan="2">Operating Voltage</th>
+      <th>Current</th>
+      <th>Interface</th>
     </tr>
     <tr>
       <th>PIN</th>
       <th>Description</th>
-      <th>Max(V)</th>
-      <th>Min(V)</th>
+      <th>Max (V)</th>
+      <th>Min (V)</th>
       <th>(mA)</th>
+      <th>Type</th>
     </tr>
   </thead>
   <tbody>
@@ -43,8 +46,8 @@ The camera uses an **Amphenol Fakra (Z Code)** connector for signal transmission
       <td>Video+</td>
       <td>16</td>
       <td>9</td>
-      <td>&lt;350mA@12V</td>
-      <td rowSpan="2">FAKRA(Z Code)</td>
+      <td>&lt;400mA@12V</td>
+      <td rowSpan="2">FAKRA (Z Code)</td>
     </tr>
     <tr>
       <td>2</td>
@@ -55,97 +58,110 @@ The camera uses an **Amphenol Fakra (Z Code)** connector for signal transmission
     </tr>
   </tbody>
 </table>
-</div>
 
-Key features of the connector:
-- Z Code interface for automotive applications
-- High-speed data transmission capability
+**Key Features:**
+- Automotive-grade Z-Code interface
+- High-speed data transmission
 - Secure locking mechanism
 - IP67 waterproof rating
 
-## 2. Mount of Camera Lens
+## Mount of Camera Lens
 
-Our cameras are available in two lens mounting types:
+Our GMSL cameras are available with two lens mounting systems:
 
-### AA (Active Alignment) 
-The AA type lens features an advanced mounting technology that ensures precise optical alignment.
+### AA (Active Alignment) Mount
 
-<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/aa-lens.png" alt="AA Lens Structure" style={{maxWidth: '80%', height: 'auto'}} />
-  <p style={{color: '#666', fontSize: '0.9em'}}>AA Lens Structure and Mounting Process</p>
-</div> -->
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_Structure_intro.png" alt="AA_Mount" style={{maxWidth: '100%', height:'auto'}} />
+<div className="image-container">
+    <img 
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_Structure_intro.png" 
+        alt="AA Mount Structure" 
+        width="600" 
+    />
+    <p className="image-caption">AA Mount Structure and Assembly Process</p>
 </div>
 
-Key features of AA lens:
-- Active alignment during assembly
-- Precise optical axis alignment
+AA mounting employs advanced technology ensuring precise optical alignment for superior image quality.
+
+<div className="image-container">
+    <img 
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_lens.png" 
+        alt="AA Mounted Lens" 
+        width="400" 
+    />
+    <p className="image-caption">AA Mounted Camera Lens</p>
+</div>
+
+**Key Advantages:**
+- Precision optical axis alignment
 - Enhanced image quality
-- Suitable for high-precision applications
+- Ideal for high-precision applications
 
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_lens.png" alt="AA_Mount" style={{maxWidth: '60%', height:'auto'}} />
-</div>
-### S-Mount
-The S-Mount lens provides a traditional mechanical mounting solution.
+### S-Mount System
 
-<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/S-Mount.png" alt="Threaded Lens" style={{maxWidth: '80%', height: 'auto'}} />
-  <p style={{color: '#666', fontSize: '0.9em'}}>Threaded Lens Mount</p>
-</div> -->
-
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_S_mount_Structure_intro.png" alt="AA_Mount" style={{maxWidth: '100%', height:'auto'}} />
+<div className="image-container">
+    <img 
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_S_mount_Structure_intro.png" 
+        alt="S-Mount Structure" 
+        width="600" 
+    />
+    <p className="image-caption">S-Mount Structure and Components</p>
 </div>
 
-Comparison between AA and S-Mount:
-| Feature | AA | S-Mount |
-|---------|---------|---------------|
-| Mounting Method | Active Alignment | Mechanical Thread |
-| Precision | High | Standard |
-| Cost | Higher | Lower |
-| Assembly Time | Longer | Shorter |
-| Maintenance | Complex | Simple |
+S-Mount provides a traditional threaded mechanical mounting solution.
 
-## 3. Heating Feature
+### Mount Comparison
 
-Some camera models include a heating function to prevent lens fogging in cold environments.
+| Feature | AA Mount | S-Mount |
+|:--------|:---------|:---------|
+| Mounting Method | Active Alignment | Threaded Mechanical |
+| Optical Precision | High | Standard |
+| Cost Efficiency | Higher Cost | Lower Cost |
+| Assembly Process | Complex | Straightforward |
+| Maintenance | Specialized | Simple |
 
-### With Heating Function
-<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/camera-with-heating.png" alt="Camera with Heating" style={{maxWidth: '80%', height: 'auto'}} />
-  <p style={{color: '#666', fontSize: '0.9em'}}>Camera with Heating Function</p>
-</div> -->
+## Thermal Management Options
 
+Depending on your environmental requirements, our cameras are available with or without integrated heating systems.
 
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Heating_intro.png" alt="Camera_Heating_intro" style={{maxWidth: '50%', height:'auto'}} />
+### With Integrated Heating
+
+<div className="image-container">
+    <img 
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Heating_intro.png" 
+        alt="Camera with Heating Function" 
+        width="400" 
+    />
+    <p className="image-caption">Camera with Integrated Heating System</p>
 </div>
 
-Features:
-- External power supply required
-- Heating element integrated in the lens housing
-- Temperature control system
-- Suitable for cold environments
+**Specifications:**
+- External power supply connection required
+- Integrated heating element in lens housing
+- Automatic temperature regulation
+- Recommended for cold climate operations (-20°C to 0°C)
 
 ### Without Heating Function
-<!-- <div style={{textAlign: 'center', margin: '20px 0'}}>
-  <img src="/img/camera-without-heating.png" alt="Camera without Heating" style={{maxWidth: '80%', height: 'auto'}} />
-  <p style={{color: '#666', fontSize: '0.9em'}}>Standard Camera without Heating</p>
-</div> -->
 
-<div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" alt="Camera_Without_Heating_intro" style={{maxWidth: '50%', height:'auto'}} />
+<div className="image-container">
+    <img 
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" 
+        alt="Standard Camera without Heating" 
+        width="400" 
+    />
+    <p className="image-caption">Standard Camera Configuration</p>
 </div>
 
-Features:
-- Standard Power over Coax (POC) power supply only
-- Simpler design
+**Specifications:**
+- Standard Power over Coax (POC) supply
+- Simplified design
 - Lower power consumption
-- Suitable for normal temperature environments
+- Suitable for standard operating environments (0°C to 50°C)
 
-:::note
-Please ensure you have selected the appropriate camera model based on your environmental requirements and application needs.
+:::tip Selection Guidance
+Choose the appropriate camera configuration based on:
+1. Environmental conditions at installation site
+2. Operating temperature range requirements
+3. Power availability at installation location
+4. Precision requirements of your imaging application
 :::
 
