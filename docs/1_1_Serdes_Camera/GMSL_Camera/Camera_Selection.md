@@ -2,14 +2,23 @@
 sidebar_position: 1
 ---
 
-# Camera Selection
+# GMSL Camera Selection Guide
 
-## Product Information Table
+## Introduction
 
-:::note Product Overview
-This table provides comprehensive information about GMSL Camera, including sensor type, resolution, frame rate, and output data format.
-From basic 720p to high-end 4K camera, supporting a wide range of application requirements. Click the product links for more details.
-:::
+GMSL (Gigabit Multimedia Serial Link) cameras are high-performance imaging solutions designed for demanding applications such as autonomous driving, robotics, and industrial automation. These cameras utilize SerDes technology to transmit high-resolution video, control signals, and power over a single coaxial cable at distances up to 15 meters.
+
+## Selection Criteria
+
+When selecting a GMSL camera for your application, consider these key factors:
+
+- **Resolution**: Match the resolution to your specific requirements (720p to 4K)
+- **Frame Rate**: Higher frame rates capture faster movements but require more bandwidth
+- **Sensor Type**: Different manufacturers offer varying levels of sensitivity and performance
+- **Output Format**: YUV422, RAW12, or other formats affect downstream processing
+- **Physical Form Factor**: Consider mounting constraints in your application
+
+## Product Table
 
 <div style={{overflowX: 'auto'}}>
 | No. | Products | Sensor | Resolution | Frame Rate | Output Data | Product Links |
@@ -29,8 +38,24 @@ From basic 720p to high-end 4K camera, supporting a wide range of application re
 | 13 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-132.html?recommendFromPid=0&fromMid=1544) |
 </div>
 
-:::tip Tips
-- Click product links to view detailed information in a new tab
-- Table supports horizontal scrolling for mobile devices
-- All cameras support GMSL/GMSL2 protocol
+## Sensor Manufacturer Comparison
+
+Our GMSL cameras feature image sensors from three leading manufacturers:
+
+- **Sony**: Excellent low-light performance and wide dynamic range
+- **OMNIVISION**: Cost-effective solutions with solid overall performance
+- **ONSEMI**: Well-balanced performance for automotive and industrial applications
+
+## Integration Resources
+
+After selecting your camera, refer to these resources:
+
+<!-- - [Getting Started Guide](./Getting_Started/index.md) -->
+- [Platform Compatibility List](./List_of_Platform_Compatible_with_Camera.md)
+- [Obtaining Camera Information](./Getting_Camera_Information.md)
+
+:::tip
+- All product pages feature downloadable datasheets, 3D models, and SerDes configuration files
+- All cameras support GMSL/GMSL2 protocol for reliable high-speed data transmission
+- Table supports horizontal scrolling for better viewing on mobile devices
 :::
