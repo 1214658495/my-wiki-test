@@ -1,20 +1,19 @@
 ---
 sidebar_position: 6
+title: 4K Ethernet Low Latency Camera
 ---
 
-# 4K ethernet Low Latency camera
+# Coming Soon
 
-You have just learned the **basics of Docusaurus** and made some changes to the **initial template**.
+We are pleased to announce that our new 4K Ethernet Low Latency Camera is currently in final development stages and will be available soon. 
 
-Docusaurus has **much more to offer**!
+
+Product highlights and specifications will be published here upon official release. Our team is working diligently to ensure this product meets the highest standards of performance and reliability.
+
+Please check back regularly for updates or contact our sales department for more information about release dates and pre-order options.
 
 
 ## What's next?
 
-- Read the [official documentation](https://docusaurus.io/)
-- Modify your site configuration with [`docusaurus.config.js`](https://docusaurus.io/docs/api/docusaurus-config)
-- Add navbar and footer items with [`themeConfig`](https://docusaurus.io/docs/api/themes/configuration)
-- Add a custom [Design and Layout](https://docusaurus.io/docs/styling-layout)
-- Add a [search bar](https://docusaurus.io/docs/search)
-- Find inspirations in the [Docusaurus showcase](https://docusaurus.io/showcase)
-- Get involved in the [Docusaurus Community](https://docusaurus.io/community/support)
+- Read the [SENSING Official Documentation](https://sensing-world.com/en/)
+
