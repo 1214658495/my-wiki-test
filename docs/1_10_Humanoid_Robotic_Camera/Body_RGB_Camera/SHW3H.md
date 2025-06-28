@@ -8,7 +8,7 @@ sidebar_position: 1
 
 <div className="row">
   <div className="col col--12">
-    SH3-S11A60-G2A Camera is equipped with SONY CMOS image sensor ISX031 and Maxim GMSL2 serializer MAX9295A. It has an automotive-grade sensor with a well-tuned Image Signal Processor (ISP) that produces exceptional image quality, which comes with an IP67-rated enclosure –is supplied with an AA lens that is focused and glued in our factory. 
+    SHW3H Camera is equipped with SONY CMOS image sensor ISX031 and Maxim GMSL2 serializer MAX9295A. It has an automotive-grade sensor with a well-tuned Image Signal Processor (ISP) that produces exceptional image quality, which comes with an IP67-rated enclosure –is supplied with an AA lens that is focused and glued in our factory. 
   </div>
 </div>
 
