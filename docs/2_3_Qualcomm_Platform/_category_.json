@@ -1,5 +1,8 @@
 {
   "label": "Qualcomm Platform",
   "position": 23,
-  "link": null
+  "link": {
+    "type": "doc",
+    "id": "2_3_Qualcomm_Platform/Qualcomm_Platform"
+  }
 }

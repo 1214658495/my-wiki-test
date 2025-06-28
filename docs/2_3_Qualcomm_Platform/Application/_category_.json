@@ -1,8 +1,5 @@
 {
-  "label": "Application",
+  "label": "Application (coming soon)",
   "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for Application."
-  }
+  "link": null
 }

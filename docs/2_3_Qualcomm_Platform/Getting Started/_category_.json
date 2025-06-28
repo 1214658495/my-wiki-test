@@ -1,8 +1,5 @@
 {
-  "label": "Getting Started",
+  "label": "Getting Started (coming soon)",
   "position": 1,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for Getting Started."
-  }
+  "link": null
 }

@@ -1,8 +1,5 @@
 {
-  "label": "FAQ",
+  "label": "FAQ (coming soon)",
   "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Updated description for FAQ."
-  }
+  "link": null
 }
