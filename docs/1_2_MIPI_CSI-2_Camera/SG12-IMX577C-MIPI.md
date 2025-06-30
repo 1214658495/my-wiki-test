@@ -142,7 +142,7 @@ The SG12-IMX577C-MIPI camera has minimal power-up sequence requirements. Simply 
 ### Quick Setup Procedure
 
 :::note Installation Steps
-1. Connect the FPC cable to the camera module
+1. Connect the FPC cable to the camera
 2. Mount the camera onto the Jetson Orin Nano/NX Developer Kit
 3. Power on the system and configure software drivers
 :::
