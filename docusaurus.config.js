@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'SENSING WIKI',
   tagline: 'Provide High-Quality Images for AI',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/SENSING_logo_icon2.png',
 
   // Set the production url of your site here
   url: 'https://1214658495.github.io',
