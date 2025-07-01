@@ -141,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SZ SENSING TECH CO.,LTD.`,
       },
       prism: {
         theme: prismThemes.github,
