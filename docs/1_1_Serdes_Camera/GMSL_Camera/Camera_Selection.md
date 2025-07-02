@@ -52,7 +52,7 @@ After selecting your camera, refer to these resources:
 
 <!-- - [Getting Started Guide](./Getting_Started/index.md) -->
 - [Platform Compatibility List](./List_of_Platform_Compatible_with_Camera.md)
-- [Obtaining Camera Information](./Getting_Camera_Information.md)
+- [Getting Camera Information](./Getting_Camera_Information.md)
 
 :::tip
 - All product pages feature downloadable datasheets, 3D models, and SerDes configuration files
