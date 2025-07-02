@@ -8,11 +8,13 @@ description: Guide for accessing and using GMSL camera intrinsic parameters
 
 This document provides comprehensive information about camera intrinsic parameters, including how to obtain them, their formats, and applications.
 
-## Intrinsic Parameters Availability
+## **Q1**: Availability and Identification
+
+### Intrinsic Parameter Availability
 
 Starting from 2023, all SENSING cameras come with pre-calibrated intrinsic parameters stored in the camera. For cameras produced before 2023, intrinsic parameters were only calibrated upon specific customer request.
 
-### SN Code Identification
+### Identifying Camera Manufacturing Year
 
 You can identify the manufacturing year of the camera through the SN code:
 
@@ -24,7 +26,7 @@ The image below shows a camera with:
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
-<div style={{textAlign: 'center',display: 'flex', justifyContent: 'center'}}>
+<div style={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}>
 
 | Prefix | Manufacturing Year | Intrinsic Parameters Status |
 |--------|-------------------|----------------------------|
@@ -36,9 +38,9 @@ The image below shows a camera with:
 
 </div>
 
-### **Q1**: How to Access Camera Intrinsic Parameters
+## **Q2**: Accessing Camera Intrinsic Parameters
 
-**Method 1**: Following Model-Specific Instructions
+### Method 1: Following Model-Specific Instructions
 
 Below are examples of models and their corresponding instruction documents for obtaining intrinsic parameters:
 
@@ -50,25 +52,25 @@ Below are examples of models and their corresponding instruction documents for o
 | 4 | SG2-AR0233C-GMSL2 (raw camera) <br/> SG8-IMX728C-G2G-Hxxx (raw) <br/> SG3S-OX03JC-G2F-Hxxx <br/> S56 binocular | [Intrinsic Parameter Reading Instructions for GMSL2 and FPDLINK III Series Modules without ISP](https://autosensee.feishu.cn/file/H1JXbplf5os6nZxTBcnc3N46nBb) | Models with GMSL2 or FPDLINK in the name but without an ISP model number |
 | 5 | SG1-<span style={{color: 'red'}}>OX01FC</span>-GMSL-Hxxx | [Intrinsic Parameter Reading Instructions for OX01F10 SENSOR Models](https://autosensee.feishu.cn/file/DCGXbjk1fowY0cxwstUcT8NjnWd) | Models with <span style={{color: 'red'}}>OX01FC</span> in the model name |
 
-
-**Data Format**
+**Data Format References**
 - For standard cameras: Refer to [Camera OTP Data Format Definition_pub](https://autosensee.feishu.cn/file/XhCmbxWsWox4Pjx7joTcIY2rnrb) (Password: SensingOTP2024)
 - For binocular cameras: Refer to [Depth Camera OTP Data Format Definition_pub](https://autosensee.feishu.cn/file/FUn3buZdqoa1urxQqRAc5uX7nlh) (Password: SensingOTP2024)
 
-**Method 2**: Using SensingTech Online Service Platform
+### Method 2: Using SensingTech Online Service Platform
 
 You can download intrinsic parameters individually through the SensingTech Customer Self-service Information Query Platform. Note that the SN code of the camera is required.
 - [Getting Camera Information](../Getting_Camera_Information.md)
 
-### **Q2**: What are the camera models for intrinsic parameters?
+## **Q3**: Camera Model Types
 
-There are two types of camera models for intrinsic parameters:
-1. **Pinhole Model**: Used for lenses with angles up to 120 degrees (including H120)
-2. **Fisheye Model**: Used for lenses with angles up to 190 degrees
+Two types of camera models are used for intrinsic parameters:
 
-### **Q3**: What is the Pinhole Model?
+1. **Pinhole Model**: Used for lenses with fields of view up to 120 degrees (including H120)
+2. **Fisheye Model**: Used for lenses with fields of view up to 190 degrees
 
-The pinhole camera model with distortion correction can be represented by the following equation:
+### Pinhole Camera Model
+
+The pinhole camera model with distortion correction can be represented by:
 
 ```
 [x']   [x(1 + k₁r² + k₂r⁴ + k₃r⁶)/(1 + k₄r² + k₅r⁴ + k₆r⁶) + 2p₁xy + p₂(r² + 2x²)]
@@ -84,11 +86,26 @@ Where:
 
 By default, parameters K1-K6 are used for distortion correction.
 
-### **Q4**: How to Read Intrinsic Parameters on Third-Party Platforms?
+### Fisheye Camera Model
+
+The fisheye camera model can be represented by:
+
+```
+r(θ) = k₁θ + k₂θ³ + k₃θ⁵ + k₄θ⁷
+```
+
+Where:
+- θ is the angle between the incoming light ray and the optical axis
+- r is the distance from the optical center on the image plane
+- k₁, k₂, k₃, k₄ are the fisheye distortion coefficients
+
+This model is specifically designed for wide-angle lenses with fields of view exceeding 120 degrees.
+
+## **Q4**: Reading Intrinsic Parameters on Third-Party Platforms
 
 If your camera has calibrated intrinsic parameters, you can access them through the following methods:
 
-**Method 1**: Using I2C Tools
+### Using I2C Tools
 
 You can use the platform's I2C tools to read intrinsic parameters according to the provided instructions.
 
@@ -102,13 +119,15 @@ You can use the platform's I2C tools to read intrinsic parameters according to t
 
 **Important Note**: When multiple modules are connected to a domain controller simultaneously, the default I2C addresses must be remapped to unique addresses to ensure reading from the correct module.
 
-**Method 2**: Using Platform-Provided Interfaces
+### Using Platform-Provided Interfaces
 
 Some platforms may have already implemented interfaces based on our documentation. Please consult with your platform provider for specific usage methods.
 
-### **Q5**: How to Convert Intrinsic Parameters?
+## **Q5**: Parameter Conversion and Usage
 
-**Example of Intrinsic Parameter Storage in Registers:**
+### Converting Intrinsic Parameters
+
+**Example of Intrinsic Parameter Storage:**
 
 The following table shows an example of how the focal length parameter (fx) is stored in registers:
 
@@ -139,23 +158,27 @@ int main(void)
 }
 ```
 
-<!-- ### String Conversion Formula for Parameter Values
+### Converting Floating Point Values
 
-The intrinsic parameter values are stored in hexadecimal format and need to be converted to decimal values. The conversion follows IEEE-754 floating-point standard:
+For focal length conversion:
 
-1. Read the 4 bytes of data in hexadecimal format (e.g., 0xEC, 0x51, 0x88, 0x40)
-2. Combine these bytes in little-endian order: 0x4088_51EC
-3. Convert this hex value to a floating-point number according to IEEE-754 standard
+| Address  | Parameter    | Hex Value | Decoded Value / Description | Status   |
+| :------- | :----------- | :-------- | :-------------------------- | :------- |
+| `0x0021` |   | `0xEC`    |                         | YES_CRC32_4 |
+| `0x0022` |  Focal Length | `0x51`    | 4.26 Focal Length       | YES_CRC32_4 |
+| `0x0023` |              | `0x88`    |                             | YES_CRC32_4 |
+| `0x0024` |              | `0x40`    |                             | YES_CRC32_4 |
 
-**Example of String Conversion:**
+Use the following code for conversion:
+```c
+unsigned char ppm[] = { 0xEC, 0x51, 0x88, 0x40 };
+float* m = (float*)ppm;
+printf("%f\r\n", *m);
+```
 
-For bytes 0xEC, 0x51, 0x88, 0x40:
-1. Combined in little-endian: 0x4088_51EC
-2. IEEE-754 conversion: 4.26 (focal length in mm) -->
+### Reading and Converting SN Codes
 
-### **Q6**: How to Read and Convert SN Codes?
-
-The SN code is stored as part of the OTP data in the module, following the same format as intrinsic parameters. Reference the [Camera OTP Data Format Definition_pub](https://autosensee.feishu.cn/file/XhCmbxWsWox4Pjx7joTcIY2rnrb) (Password: SensingOTP2024).
+The SN code is stored as part of the OTP data in the module, following the same format as intrinsic parameters.
 
 **SN Code Conversion Process:**
 
@@ -221,7 +244,7 @@ The SN code is stored as part of the OTP data in the module, following the same 
     </table>
 </div>
 
-**String Conversion Formula:**
+**SN String Conversion Code:**
 
 ```c
 #include <stdio.h>
@@ -244,15 +267,17 @@ int main() {
 }
 ```
 
-### **Q7**: How to use intrinsic parameters?
+### Using Intrinsic Parameters
 
 Intrinsic parameters can be used with OpenCV. Implementation code must be developed by the customer.
 
 Reference article: [OpenCV Camera Intrinsic Calibration and Usage](https://blog.csdn.net/qq_38429958/article/details/124125912)"
 
-### **Q8**: How to Read Parameters from Multiple Cameras?
+## **Q6**: Working with Multiple Cameras
 
-**For Modules with GW5200/GW5300 ISP**
+### Reading Parameters from Multiple Cameras
+
+**For Camera with GW5200/GW5300 ISP**
 
 1. **For a single camera connection:**
    - In a Linux environment, scan the EEPROM I2C address (0x51) using `i2cdetect -r -y`
@@ -263,64 +288,21 @@ Reference article: [OpenCV Camera Intrinsic Calibration and Usage](https://blog.
    - Write the original address 0x51 (0xA2) to register 0x43
    - Write the destination addresses (e.g., 0x54/0xA8, 0x55/0xAA) to register 0x42 as defined in the device tree file
 
-**Address Remapping Process Diagram:**
+**Address Remapping Process:**
 1. Original Setup: All cameras initially have the same I2C address (0x51)
 2. Configuration: Write to registers 0x42 and 0x43 of MAX9295/MAX96717F
 3. Result: Each camera now has a unique address (e.g., 0x54, 0x55, etc.)
 4. Reading: Use the new unique addresses to read data from each camera individually
 
-**For ISX031 Cameras**
+**For Camera with ISX031 sensor**
 
 Follow the same method as above:
 - Write the original address 0x34 (0x1A) to register 0x43
 - Write destination addresses (e.g., 0x54/0xA8, 0x55/0xAA) to register 0x42 as defined in the device tree file
 
-<!-- ## Additional Technical Information -->
+## **Q7**: Technical Specifications
 
-### **Q9**: What is the fisheye camera model?
-
-The fisheye camera model can be represented by the following equation:
-
-```
-r(θ) = k₁θ + k₂θ³ + k₃θ⁵ + k₄θ⁷
-```
-
-Where:
-- θ is the angle between the incoming light ray and the optical axis
-- r is the distance from the optical center on the image plane
-- k₁, k₂, k₃, k₄ are the fisheye distortion coefficients
-
-This model is specifically designed for wide-angle lenses with fields of view exceeding 120 degrees.
-
-### **Q10**: How to Convert Focal Length to Floating Point?
-
-| Address  | Parameter    | Hex Value | Decoded Value / Description | Status   |
-| :------- | :----------- | :-------- | :-------------------------- | :------- |
-| `0x0021` |   | `0xEC`    |                         | YES_CRC32_4 |
-| `0x0022` |  Focal Length | `0x51`    | 4.26 Focal Length       | YES_CRC32_4 |
-| `0x0023` |              | `0x88`    |                             | YES_CRC32_4 |
-| `0x0024` |              | `0x40`    |                             | YES_CRC32_4 |
-
-Use the following code for conversion:
-```c
-unsigned char ppm[] = { 0xEC, 0x51, 0x88, 0x40 };
-float* m = (float*)ppm;
-printf("%f\r\n", *m);
-```
-
-### **Q11**: What is the precision of intrinsic parameters?
-
-- **RMS Differences**: RMS calculation formulas may vary between different batches of cameras
-- **Calibration Error Range**:
-  - COD precision error: AA lenses have standards, threaded lenses do not
-  - Equivalent focal length error: Controlled according to lens design tolerance
-  - Reprojection error (RMS): Average reprojection error is 0.25
-
-### **Q12**: What are the calibration standards and how is accuracy assessed?
-
-The evaluation standards include reprojection error, stability of intrinsic parameters and distortion parameters, calibration accuracy at different viewing angles, distortion correction effects, and testing in actual applications.
-
-### **Q13**: What are the storage addresses for different models?
+### Parameter Storage Addresses
 
 Pinhole and fisheye model parameters are stored at different addresses:
 - **Pinhole mode**: Addresses 0x85-0xC4 store K1, K2, P1, P2, K3, K4, K5, K6 parameters (FOV < 120°)
@@ -334,4 +316,21 @@ Pinhole and fisheye model parameters are stored at different addresses:
 | Distortion | Pinhole | 0x85-0xC4 | K1, K2, P1, P2, K3, K4, K5, K6 |
 | Distortion | Fisheye | 0xC5-0xE4 | K1, K2, K3, K4 |
 | SN Code | Both | 0x0120-0x0133 | ASCII characters |
+
+### Calibration Precision
+
+- **RMS Differences**: RMS calculation formulas may vary between different batches of cameras
+- **Calibration Error Range**:
+  - COD precision error: AA lenses have standards, threaded lenses do not
+  - Equivalent focal length error: Controlled according to lens design tolerance
+  - Reprojection error (RMS): Average reprojection error is 0.25
+
+### Calibration Standards and Accuracy Assessment
+
+The evaluation standards include:
+- Reprojection error
+- Stability of intrinsic parameters and distortion parameters
+- Calibration accuracy at different viewing angles
+- Distortion correction effects
+- Testing in actual applications
 
