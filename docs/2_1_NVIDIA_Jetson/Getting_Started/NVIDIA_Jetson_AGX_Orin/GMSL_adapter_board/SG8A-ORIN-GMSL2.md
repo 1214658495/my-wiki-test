@@ -62,7 +62,7 @@ sidebar_position: 1
     - Deserializer: MAXIM(ADI) MAX9296A*4
     - Camera Connector: Fakra Z Code
     - POC Power Supply: DC 8-16V
-    - DC Power Supply: DC 12V
+    - DC Power Supply: DC 12-24V
     - Operating Conditions: -20°C to +85°C
     - Adaptation kit: Jetson AGX Orin/Xavier
     :::

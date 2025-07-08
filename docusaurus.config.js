@@ -72,6 +72,46 @@ const config = {
     ],
   ],
 
+  // 临时注释掉Typesense配置以禁用搜索功能
+  /*
+  themes: [
+    [
+      require.resolve("docusaurus-theme-search-typesense"),
+      {
+        // Typesense configuration
+        typesense: {
+          typesenseCollectionName: 'sensing-wiki', // Replace with your collection name
+          
+          // Required: Typesense server configuration
+          typesenseServerConfig: {
+            nodes: [
+              {
+                host: 'YOUR_TYPESENSE_HOST',
+                port: 443,
+                protocol: 'https',
+              },
+            ],
+            apiKey: 'YOUR_TYPESENSE_SEARCH_API_KEY',
+          },
+          
+          // Optional: Search parameters
+          typesenseSearchParameters: {
+            limit: 20,
+            use_cache: true,
+            cache_ttl: 3600,
+          },
+          
+          // Optional: Customization parameters
+          contextualSearch: true,
+          searchPagePath: 'search',
+          // Optional
+          // debug: true,
+        },
+      },
+    ],
+  ],
+  */
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -147,6 +187,37 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      // 临时注释掉Typesense配置以禁用搜索功能
+      /*
+      // Add typesense configuration in themeConfig
+      typesense: {
+        // The typesense-search-client configuration
+        typesenseCollectionName: 'sensing-wiki',
+        
+        // Required: Typesense server configuration
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'YOUR_TYPESENSE_HOST',
+              port: 443,
+              protocol: 'https',
+            },
+          ],
+          apiKey: 'YOUR_TYPESENSE_SEARCH_API_KEY',
+        },
+        
+        // Optional: Search parameters
+        typesenseSearchParameters: {
+          limit: 20,
+          use_cache: true,
+          cache_ttl: 3600,
+        },
+        
+        // Optional: Customization parameters
+        contextualSearch: true,
+        searchPagePath: 'search',
+      },
+      */
     }),
 };
 
