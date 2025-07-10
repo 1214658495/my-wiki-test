@@ -67,7 +67,7 @@ Cameras featuring **global shutter** technology that captures the entire frame s
 
 ---
 
-### <span style={{color: 'var(--ifm-link-color)'}}>USB Camera</span>
+<!-- ### <span style={{color: 'var(--ifm-link-color)'}}>USB Camera</span>
 
 Plug-and-play camera solutions utilizing **Universal Serial Bus (USB)** connectivity standards.
 
@@ -75,11 +75,11 @@ Plug-and-play camera solutions utilizing **Universal Serial Bus (USB)** connecti
 |-------------|---------------|
 | Interface   | USB 2.0/3.0/3.1 |
 | Plug & Play | Yes          |
-| Max Resolution | Up to 4K UHD |
+| Max Resolution | Up to 4K |
 
 **Ideal for:** Development prototyping, general-purpose imaging, and applications requiring simple integration.
 
----
+--- -->
 
 ### <span style={{color: 'var(--ifm-link-color)'}}>Depth Camera</span>
 
@@ -87,7 +87,7 @@ Specialized cameras that capture **distance information** for each pixel, creati
 
 | Key Feature | Specification |
 |-------------|---------------|
-| Depth Resolution | Up to VGA |
+| Depth Resolution | Up to 1080p |
 | Range      | 0.3m to 10m   |
 | Technology | Time-of-Flight/Structured Light |
 
@@ -101,9 +101,10 @@ Camera systems optimized for **minimal processing delay** between image capture 
 
 | Key Feature | Specification |
 |-------------|---------------|
-| Glass-to-Algorithm Latency | < 10ms |
 | Processing Overhead | Minimal |
 | Frame Pipeline | Optimized |
+
+<!-- | Glass-to-Algorithm Latency | < 10ms | -->
 
 **Ideal for:** Real-time applications such as drone navigation, autonomous vehicles, and interactive systems.
 
@@ -190,7 +191,6 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 | Serdes           | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★☆☆    |
 | MIPI CSI-2       | ★★★★★     | ★★★★☆     | ★★★★★  | ★★★☆☆    |
 | Global Shutter   | ★★★★☆     | ★★★★★     | ★★★★☆  | ★★★☆☆    |
-| USB              | ★★★☆☆     | ★★★☆☆     | ★★☆☆☆  | ★★★☆☆    |
 | Depth            | ★★☆☆☆     | ★★★☆☆     | ★★★☆☆  | ★★★★☆    |
 | Low Latency      | ★★★★☆     | ★★★★★     | ★★★★★  | ★★★☆☆    |
 | Event-Based      | ★★☆☆☆     | ★★★★★     | ★★★★★  | ★★★★★    |
@@ -235,7 +235,7 @@ When selecting a camera technology for your application, evaluate these critical
 
 - **Resolution**: Pixel density determining image detail (from VGA to 8K+)
 - **Frame Rate**: Number of images captured per second (from 30fps to 1000fps+)
-- **Interface**: Communication protocol and physical connection (USB, CSI-2, CoaXPress, GigE)
+- **Interface**: Communication protocol and physical connection (Serdes, MIPI CSI-2, CoaXPress, GigE)
 - **Shutter Type**: Global vs. Rolling shutter mechanisms and their impact on motion capture
 - **Spectral Sensitivity**: Wavelength range the sensor can detect (visible, NIR, SWIR, etc.)
 

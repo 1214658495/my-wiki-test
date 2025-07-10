@@ -22,7 +22,7 @@ sidebar_position: 30
 
 ## Solution Architecture
 
-```mermaid
+<!-- ```mermaid
 graph TD
     subgraph "Data Collection & Playback Solutions"
         CAMERA["GMSL/GMSL2 Camera"] --> GRABBER["Camera Grabber"]
@@ -51,7 +51,7 @@ graph TD
     style EXTENDED fill:#bfb,stroke:#333,stroke-width:2px
     style STORAGE fill:#fbb,stroke:#333,stroke-width:2px
     style DATA fill:#fbb,stroke:#333,stroke-width:2px
-```
+``` -->
 
 <div className="row" style={{marginTop: '2rem', marginBottom: '2rem'}}>
   <div className="col col--6">
