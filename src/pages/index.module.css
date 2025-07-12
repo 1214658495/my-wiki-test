@@ -6,10 +6,14 @@
 .heroBanner {
   position: relative;
   overflow: hidden;
-  min-height: 580px;
+  min-height: 650px;
   display: flex;
   align-items: center;
   background-color: #272833;
+  background-image: url('/img/SENSING_Homepage_bg.png');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(3px); /* 添加轻微虚化效果 */
 }
 
 .heroBackgroundOverlay {
@@ -18,7 +22,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(135deg, rgba(46, 133, 85, 0.7), rgba(37, 194, 160, 0.4));
+  background: rgba(0, 0, 0, 0.2); /* 简单的半透明遮罩，用于提升文字可读性 */
   z-index: 1;
 }
 
@@ -41,30 +45,83 @@
 }
 
 .heroTitle {
-  font-size: 3.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
   color: white;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -1px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1s ease-out;
 }
 
 .heroSubtitle {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 2rem;
-  line-height: 1.6;
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .heroButtons {
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+/* 为"Get Started"按钮定制SENSING蓝绿色背景 */
+.heroButtons :global(.button--primary) {
+  background-color: var(--sensing-primary);
+  border-color: var(--sensing-primary);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.heroButtons :global(.button--primary:hover) {
+  background-color: var(--sensing-primary-light);
+  border-color: var(--sensing-primary-light);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(1, 168, 158, 0.3);
+}
+
+[data-theme='dark'] .heroButtons :global(.button--primary:hover) {
+  box-shadow: 0 8px 16px rgba(1, 223, 209, 0.3);
 }
 
 .secondaryButton {
   color: white;
   border-color: white;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* 主按钮悬停效果增强 */
+:global(.button--primary) {
+  transition: all 0.3s ease;
+}
+
+:global(.button--primary):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(1, 168, 158, 0.3);
 }
 
 .heroImageContainer {
@@ -72,32 +129,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 1.2s ease-out 0.5s both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .heroImage {
   max-width: 100%;
   height: auto;
-  animation: pulse 2s infinite;
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 10px 25px rgba(0, 0, 0, 0.25));
+  animation: floatAnimation 4s ease-in-out infinite;
 }
 
-@keyframes pulse {
-  0% {
+@keyframes floatAnimation {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
+    transform: translateY(-15px);
   }
 }
 
-/* Responsive adjustments */
+/* 响应式调整 */
 @media screen and (max-width: 996px) {
   .heroBanner {
     min-height: auto;
-    padding: 4rem 2rem;
+    padding: 5rem 2rem;
   }
   
   .heroInner {
@@ -108,18 +172,22 @@
   
   .heroTextContent {
     max-width: 100%;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
   }
   
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   
   .heroSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   .heroButtons {
     justify-content: center;
+  }
+  
+  .heroImage {
+    max-width: 80%;
   }
 }
