@@ -96,72 +96,78 @@ AA mounting employs advanced technology ensuring precise optical alignment for s
 - Enhanced image quality
 - Ideal for high-precision applications
 
-### S-Mount System
+### S-Mount
 
 <div className="image-container">
-    <img 
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_S_mount_Structure_intro.png" 
-        alt="S-Mount Structure" 
-        width="600" 
+    <img
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_S_mount_Structure_intro.png"
+        alt="S-Mount Structure"
+        width="600"
     />
     <p className="image-caption">S-Mount Structure and Components</p>
 </div>
 
-S-Mount provides a traditional threaded mechanical mounting solution.
 
-### Mount Comparison
+S-Mount provides a traditional threaded mechanical mounting solution with multiple size options.
+
+#### Available S-Mount Models
+
+| Model | Thread Size | Applications |
+|:------|:------------|:-------------|
+| **M12** | M12×0.5 | Standard automotive and security cameras |
+| **M16** | M16×0.5 | Medium format lenses, industrial imaging |
+
+<!-- **Key Advantages:**
+- Cost-effective solution
+- Field replaceable lenses
+- Wide lens selection available
+- Simple assembly process -->
+
+#### Mount Comparison
 
 | Feature | AA Mount | S-Mount |
 |:--------|:---------|:---------|
 | Mounting Method | Active Alignment | Threaded Mechanical |
 | Optical Precision | High | Standard |
 | Cost Efficiency | Higher Cost | Lower Cost |
-| Assembly Process | Complex | Straightforward |
+| Assembly Process | Complex | Simple |
 | Maintenance | Specialized | Simple |
 
-## Thermal Management Options
+### Camera with Heating Function
 
-Depending on your environmental requirements, our cameras are available with or without integrated heating systems.
-
-### With Integrated Heating
+Depending on your environmental requirements, our cameras are available with or without integrated heating systems. The heating system is optional and can be added to the camera as needed.
 
 <div className="image-container">
-    <img 
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Heating_intro.png" 
-        alt="Camera with Heating Function" 
-        width="400" 
+    <img
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Heating_intro.png"
+        alt="Camera with Heating Function"
+        width="400"
     />
     <p className="image-caption">Camera with Integrated Heating System</p>
 </div>
 
-**Specifications:**
-- External power supply connection required
-- Integrated heating element in lens housing
-- Automatic temperature regulation
-- Recommended for cold climate operations (-20°C to 0°C)
-
-### Without Heating Function
-
 <div className="image-container">
-    <img 
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Without_Heating_intro.png" 
-        alt="Standard Camera without Heating" 
-        width="400" 
+    <img
+        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Heating_Effect_Comparison.png"
+        alt="Heating Effect Comparison"
+        width="600"
     />
-    <p className="image-caption">Standard Camera Configuration</p>
+    <p className="image-caption">Camera Heating Effect Comparison: Before (Left) vs After (Right)</p>
 </div>
 
-**Specifications:**
-- Standard Power over Coax (POC) supply
-- Simplified design
-- Lower power consumption
-- Suitable for standard operating environments (0°C to 50°C)
+**Key Features:**
+- Integrated heating element in lens housing (optional)
+- ADC Temperature control
+- Effective ice/frost removal within 3 minutes
+- Maintains clear vision in extreme cold conditions
+- Operating temperature range: -40°C to +50°C
 
-:::tip Selection Guidance
+
+
+<!-- :::tip Selection Guidance
 Choose the appropriate camera configuration based on:
 1. Environmental conditions at installation site
 2. Operating temperature range requirements
-3. Power availability at installation location
-4. Precision requirements of your imaging application
-:::
+3. Precision requirements of your imaging application
+::: -->
 
