@@ -9,12 +9,18 @@
   min-height: 650px;
   display: flex;
   align-items: center;
+  /* 使用接近原图的深灰色作为fallback */
   background-color: #272833;
   background-image: url('/img/SENSING_Homepage_bg.png');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  /* 确保背景图片平滑加载 */
+  background-attachment: scroll;
   backdrop-filter: blur(3px); /* 添加轻微虚化效果 */
 }
+
+
 
 .heroBackgroundOverlay {
   position: absolute;
@@ -74,6 +80,8 @@
     transform: translateY(0);
   }
 }
+
+/* 移除可能导致颜色闪烁的动画 */
 
 .heroButtons {
   display: flex;
