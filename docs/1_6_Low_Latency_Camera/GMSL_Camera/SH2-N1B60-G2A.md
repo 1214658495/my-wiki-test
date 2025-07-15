@@ -1,8 +1,9 @@
 ---
 sidebar_position: 2
+title: SH2-N1B60-G2A（60fps）
 ---
 
-# SH2-N1B60-G2A
+# SH2-N1B60-G2A（60fps）
 
 ## Overview
 

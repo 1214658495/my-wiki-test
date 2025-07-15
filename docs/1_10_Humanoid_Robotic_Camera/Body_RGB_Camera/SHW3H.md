@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: SHW3H（60fps）
 ---
 
-# SHW3H
+# SHW3H（60fps）
 
 ## Overview
 

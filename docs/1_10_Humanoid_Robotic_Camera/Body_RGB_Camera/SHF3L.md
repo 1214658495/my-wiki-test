@@ -1,8 +1,9 @@
 ---
 sidebar_position: 2
+title: SHF3L（30fps）
 ---
 
-# SHF3L
+# SHF3L（30fps）
 
 ## Overview
 
