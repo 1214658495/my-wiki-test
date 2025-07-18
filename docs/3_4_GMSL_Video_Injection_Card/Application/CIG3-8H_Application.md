@@ -23,7 +23,7 @@ sidebar_position: 1
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
   <ul style={{margin: 0, paddingLeft: '1.2em'}}>
     <li><strong>IPC (Industrial PC):</strong> Provides the source video data through PCIe Gen3 interface.</li>
-    <li><strong>CIG3-8H Video Injection Card:</strong> Receives data from IPC, processes it based on timestamps, and outputs synchronized video streams.</li>
+    <li><strong>CIG4-8H Video Injection Card:</strong> Receives data from IPC, processes it based on timestamps, and outputs synchronized video streams.</li>
     <li><strong>Ethernet Switch:</strong> Enables gPTP/PTP synchronization between all system components.</li>
     <li><strong>ACU (Autonomous Control Unit):</strong> Receives the injected video data for testing and validation purposes.</li>
   </ul>
@@ -73,5 +73,5 @@ sidebar_position: 1
 ---
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
-The CIG3-8H GMSL Video Injection Card is an integral component in mature autonomous driving HIL video injection solutions, providing high-precision, multi-channel time synchronization technology to ensure synchronized output across all channels, making it ideal for algorithm validation and optimization in autonomous driving development.
+The CIG4-8H GMSL Video Injection Card is an integral component in mature autonomous driving HIL video injection solutions, providing high-precision, multi-channel time synchronization technology to ensure synchronized output across all channels, making it ideal for algorithm validation and optimization in autonomous driving development.
 </div>

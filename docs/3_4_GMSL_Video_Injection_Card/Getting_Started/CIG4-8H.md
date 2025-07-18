@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# GMSL Video Injection Card CIG3-8H
+# GMSL Video Injection Card CIG4-8H
 
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
@@ -10,7 +10,7 @@ sidebar_position: 1
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="CyberCobra" style={{width: 320, height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    <strong>CIG3-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co., Ltd. The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and employs high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output. The product is widely used in hardware-in-the-loop (HIL) simulation systems, digital acquisition and reinjection systems, and video playback systems.
+    <strong>CIG4-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co., Ltd. The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and employs high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output. The product is widely used in hardware-in-the-loop (HIL) simulation systems, digital acquisition and reinjection systems, and video playback systems.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/h-col-151.html" target="_blank" rel="noopener noreferrer">
@@ -65,7 +65,7 @@ sidebar_position: 1
 | **Deserializer Support** | MAX9296A/MAX96712/MAX96716/<br/>MAX96718/MAX96722... |
 | **Coax Cable Model** | Amphenol Min-fakra Dual<br/>MFK2252AW-001-TL30G-50 |
 | **Cable Length** | Amphenol 250mm<br/>MKA2FZ-302LL-FKMZ1-21-01 |
-| **Number of Output Videos** | CIG3-8H: 8 channel video output |
+| **Number of Output Videos** | CIG4-8H: 8 channel video output |
 | **Video Resolution** | 1-8Mega pixel |
 | **Video Format** | 8 bit (YUV422), 10/12/14 bit (RAW) |
 | **Data Bandwidth** | Every channel supports 6 Gbps |
@@ -91,7 +91,7 @@ sidebar_position: 1
 | No. | Product model                 | Quantity | Remark                |
 |-----|-------------------------------|----------|-----------------------|
 | 1   | Power connection wire         | 1        | Standard configuration|
-| 2   | CIG3-8H video injection card          | 1        | Standard configuration|
+| 2   | CIG4-8H video injection card          | 1        | Standard configuration|
 | 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
 | 4   | Aviation plug turn to network cable | 1 | Standard configuration|
 | 5   | GPS connection wire           | 1        | Standard configuration|
@@ -123,6 +123,9 @@ After collecting data with autonomous vehicles, algorithm validation and optimiz
 SENSING can provide a complete solution including Camera + GMSL Video Injection Card + IPC + Coaxial cable for your hardware-in-the-loop testing needs.
 :::
 
+
+
+
 ## Software Framework and Usage Instructions
 
 ### Software Framework Diagram
@@ -133,18 +136,46 @@ SENSING can provide a complete solution including Camera + GMSL Video Injection 
   </div>
 </div>
 
-### SDK Components
-The software SDK is provided based on Ubuntu 18.04/20.04 and includes the following components:
+### SDK Download
 
-| Directory/File | Description |
-|----------------|-------------|
-| bash           | Scripts directory including driver loading and control scripts |
-| include        | Header files directory |
-| xdma           | Injection card driver source code |
-| tools/pcie_reg_rw | Utilities for injection card register reading/writing |
-| tools/pcie_xdma_transfer | Source code for image transmission program |
-| Makefile       | Compilation script for the entire SDK |
-| readme         | SDK driver package usage instructions |
+:::note SDK Packages
+Select the appropriate SDK package based on your operating system and CIG4-8H hardware version:
+:::
+
+| Operating System | Hardware Version | SDK Version | Download Link | Download Tool |
+|------------------|------------------|-------------|---------------|---------------|
+| Ubuntu 18.04 LTS <br/> Ubuntu 20.04 LTS | CIG4-8H v1.0 | SDK v2.1.0 | [Download](https://github.com/SENSING-Technology/CIG4-8H) | [DownGit](https://minhaskamal.github.io/DownGit/#/home) |
+
+:::tip Download Tool Usage
+**DownGit** allows you to download specific folders or files from GitHub repositories without cloning the entire repository:
+1. Copy the GitHub repository URL from the "Download Link" column
+2. Open [DownGit](https://minhaskamal.github.io/DownGit/#/home) in your browser
+3. Paste the repository URL into the input field
+4. Click "Download" to get a ZIP file containing the SDK
+5. Extract the ZIP file to your desired location
+
+This method is particularly useful when you only need the SDK files without the full Git history.
+:::
+
+### SDK Package Contents
+
+<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
+  <strong>SDK Directory Structure:</strong><br/>
+  📁 <strong>CIG4-8H-SDK/</strong><br/>
+  ├── 📁 <strong>bash/</strong> - Control scripts and utilities<br/>
+  ├── 📁 <strong>include/</strong> - Header files and API definitions<br/>
+  ├── 📁 <strong>xdma/</strong> - PCIe driver source code<br/>
+  ├── 📁 <strong>tools/</strong> - Development and debugging tools<br/>
+  ├── 📁 <strong>examples/</strong> - Sample applications and demos<br/>
+  ├── 📁 <strong>docs/</strong> - API documentation and user guides<br/>
+  ├── 📄 <strong>Makefile</strong> - Build configuration<br/>
+  ├── 📄 <strong>README.md</strong> - Quick start guide<br/>
+  └── 📄 <strong>LICENSE</strong> - Software license terms
+</div>
+
+:::tip Download Assistance
+If you encounter any issues downloading the SDK or need access to older versions, please contact our technical support team at [support@sensing-world.com](mailto:support@sensing-world.com) or visit our [GitHub repository](https://github.com/SENSING-Technology/CIG4-8H) for the latest releases.
+:::
 
 ### Setup and Configuration
 

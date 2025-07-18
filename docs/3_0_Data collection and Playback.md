@@ -100,7 +100,7 @@ Distributes a single GMSL2 camera feed to multiple processing units while mainta
 
 Enables playback of pre-recorded video into automotive vision systems for testing and validation purposes.
 
-**[Learn about Video Injection →](/docs/3_4_GMSL_Video_Injection_Card/Getting_Started/CIG3-8H.md)**
+**[Learn about Video Injection →](/docs/3_4_GMSL_Video_Injection_Card/Getting_Started/CIG4-8H.md)**
 
 ## Implementation Guide
 
