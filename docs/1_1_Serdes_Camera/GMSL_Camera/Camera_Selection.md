@@ -36,6 +36,7 @@ When selecting a GMSL camera for your application, consider these key factors:
 | 11 | SG5-IMX490C-5300-GMSL2-Hxxx | SONY IMX490 RGGB | 2880H*1860V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-24.html?recommendFromPid=0&fromMid=1544) |
 | 12 | SG8S-AR0820C-5300-G2A-Hxxx | ONSEMI AR0820 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-26.html?recommendFromPid=0&fromMid=1544) |
 | 13 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-132.html?recommendFromPid=0&fromMid=1544) |
+| 14 | SG8-ISX028C-G2G-Hxxx | SONY ISX028 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-274.html?recommendFromPid=0&fromMid=1544) |
 </div>
 
 ## Sensor Manufacturer Comparison
