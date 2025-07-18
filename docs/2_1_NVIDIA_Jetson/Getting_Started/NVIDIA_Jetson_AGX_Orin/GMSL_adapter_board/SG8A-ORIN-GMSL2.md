@@ -1,8 +1,13 @@
 ---
-sidebar_position: 1
+sidebar_position: 10
+title: SG8A-ORIN-GMSL2 (Discontinued)
 ---
 
-# SG8A-ORIN-GMSL2
+# SG8A-ORIN-GMSL2 (Discontinued)
+
+:::warning Product Discontinued
+This product has been discontinued and is no longer available for purchase. This documentation is maintained for reference purposes for existing customers. For current product alternatives, please contact our sales team.
+:::
 
 ## Overview
 
