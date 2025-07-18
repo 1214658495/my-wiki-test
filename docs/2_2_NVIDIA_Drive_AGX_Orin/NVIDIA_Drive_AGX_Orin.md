@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# NVIDIA® Drive AGX Orin Camera
+# NVIDIA® DRIVE AGX Orin Camera
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin.png" alt="NVIDIA_Drive_AGX_Orin" 
@@ -16,11 +16,11 @@ import TabItem from '@theme/TabItem';
 
 <div className="row">
   <div className="col col--12">
-    SENSING has conducted in-depth development based on NVIDIA Drive AGX Orin and released a multi-channel GMSL2 camera development kit based on Drive AGX Orin. This kit is mainly designed to provide AI practitioners, development enthusiasts, and ecological partners in the intelligent driving industry with a development platform for quickly building GMSL2 cameras. With the security and openness of the DRIVE AGX Orin development kit, everyone can easily develop various suitable applications for learning and research.
+    SENSING has conducted in-depth development based on NVIDIA DRIVE AGX Orin and released a multi-channel GMSL2 camera development kit based on DRIVE AGX Orin. This kit is mainly designed to provide AI practitioners, development enthusiasts, and ecological partners in the intelligent driving industry with a development platform for quickly building GMSL2 cameras. With the security and openness of the DRIVE AGX Orin development kit, everyone can easily develop various suitable applications for learning and research.
     
-    SENSING is a leading provider of high-quality cameras, supporting the Drive AGX Orin platform. We provide innovative camera solutions, such as high-resolution SerDes cameras, ultra-low light cameras, IR cameras, HDR cameras, as well as ADAS cameras. Our GMSL2 cameras for NVIDIA Drive AGX Orin are applied to Automotive, ADAS, and Autonomous Driving.
+    SENSING is a leading provider of high-quality cameras, supporting the DRIVE AGX Orin platform. We provide innovative camera solutions, such as high-resolution SerDes cameras, ultra-low light cameras, IR cameras, HDR cameras, as well as ADAS cameras. Our GMSL2 cameras for NVIDIA DRIVE AGX Orin are applied to Automotive, ADAS, and Autonomous Driving.
     
-    We have the ability to develop imaging solutions, using Drive AGX Orin camera toolchain to meet the needs of various camera systems. We are especially good at low latency transmission, high image quality, and strong anti-interference solutions. Currently, our solution supports GMSL2 interface cameras. We also provide Linux drivers and sample applications for fast and smooth integration.
+    We have the ability to develop imaging solutions, using DRIVE AGX Orin camera toolchain to meet the needs of various camera systems. We are especially good at low latency transmission, high image quality, and strong anti-interference solutions. Currently, our solution supports GMSL2 interface cameras. We also provide Linux drivers and sample applications for fast and smooth integration.
   </div>
   <!-- <div className="col col--4">
     :::note NVIDIA Elite Partner
@@ -34,7 +34,7 @@ import TabItem from '@theme/TabItem';
 <div className="row">
   <div className="col col--12">
     :::note Product Specifications
-    - Support Platform: NVIDIA Drive AGX Orin
+    - Support Platform: NVIDIA DRIVE AGX Orin
     - ISP: Support for proprietary ISP algorithms
     - Output Format: YUV422
     - Camera Input: Camera×16(GMSL2)
@@ -44,7 +44,7 @@ import TabItem from '@theme/TabItem';
   </div>
 </div>
 
-## Camera for NVIDIA Drive AGX Orin Platform
+## Camera for NVIDIA DRIVE AGX Orin Platform
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/Support_for_Camera.png" alt="Support_for_Camera" 
     style={{maxWidth: '60%', height:'auto'}} />
@@ -66,7 +66,7 @@ import TabItem from '@theme/TabItem';
 <div className="row">
   <div className="col col--6">
     :::note [YUV]GMSL2 Multi-Camera for Developer Kit
-    - Support Platform: NVIDIA Drive AGX Orin
+    - Support Platform: NVIDIA DRIVE AGX Orin
     - ISP: Support for proprietary ISP algorithms
     - Output Format: YUV422
     - Camera Input: Camera×16(GMSL2)
@@ -74,7 +74,7 @@ import TabItem from '@theme/TabItem';
   </div>
   <div className="col col--6">
     :::note [RAW]GMSL2 Multi-Camera for Developer Kit
-    - Support Platform: NVIDIA Drive AGX Orin
+    - Support Platform: NVIDIA DRIVE AGX Orin
     - ISP: Support for proprietary ISP algorithms
     - Output Format: RAW
     - Camera Input: Camera×16(GMSL2)
@@ -114,7 +114,7 @@ import TabItem from '@theme/TabItem';
   </div>
 </div> -->
 
-### NVIDIA Drive AGX Orin Camera Solutions
+### NVIDIA DRIVE AGX Orin Camera Solutions
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/GMSL2_Multi-Camera_for_Developer_Kit1.png" alt="GMSL2_Multi-Camera_for_Developer_Kit1" 
     style={{maxWidth: '60%', height:'auto'}} />

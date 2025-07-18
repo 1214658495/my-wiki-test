@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Application Scenario
 ---
 
 # Application Scenario

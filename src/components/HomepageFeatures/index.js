@@ -64,7 +64,7 @@ const FeatureList = [
     description: (
       <>
         Seamlessly integrate with leading platforms including NVIDIA Jetson, 
-        NVIDIA Drive AGX Orin, and Qualcomm. Our solutions are designed for 
+        NVIDIA DRIVE AGX Orin, and Qualcomm. Our solutions are designed for 
         optimal performance across embedded vision systems.
       </>
     ),

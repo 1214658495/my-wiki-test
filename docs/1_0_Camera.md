@@ -27,7 +27,7 @@ Modern camera technologies are foundational components in numerous advanced syst
 
 ### <span style={{color: 'var(--ifm-link-color)'}}>Serdes Camera</span>
 
-**Serializer/Deserializer** camera systems convert parallel data streams into serial signals for high-speed, long-distance transmission.
+**Serdes Camera** ( Serializer/Deserializer camera) systems convert parallel data streams into serial signals for high-speed, long-distance transmission.
 
 | Key Feature | Specification |
 |-------------|---------------|
@@ -327,8 +327,8 @@ For additional information about camera technologies and their applications, exp
 Join our [Camera Technology Webinar Series](./1_6_Low_Latency_Camera) to learn directly from industry experts about advanced implementation techniques and emerging technologies.
 ::: -->
 
-<div className="footer-note">
+<!-- <div className="footer-note">
 
 *Last Updated: August 2023*
 
-</div>
+</div> -->

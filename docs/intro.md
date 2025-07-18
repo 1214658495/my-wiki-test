@@ -36,7 +36,7 @@ Edge AI computing platform designed for autonomous machines and embedded systems
 
 ---
 
-### <span style={{color: 'var(--ifm-link-color)'}}>NVIDIA Drive AGX Orin</span>
+### <span style={{color: 'var(--ifm-link-color)'}}>NVIDIA DRIVE AGX Orin</span>
 
 Scalable platform for autonomous vehicle development with advanced AI capabilities.
 
@@ -46,7 +46,7 @@ Scalable platform for autonomous vehicle development with advanced AI capabiliti
 | Processing | 12-core ARM Cortex-A78AE CPU |
 | Safety | ASIL-D functional safety |
 
-**[Explore Drive AGX Orin →](/docs/2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin)**
+**[Explore DRIVE AGX Orin →](/docs/2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin)**
 
 ---
 

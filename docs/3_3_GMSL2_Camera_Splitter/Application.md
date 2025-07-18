@@ -43,7 +43,7 @@ The GMSL2 Camera Splitter, designed by SENSING Technology Co., Ltd., provides a 
 ### Case Study 1: Autonomous Driving Platform
 
 A leading autonomous vehicle developer implemented the GMSL2 Camera Splitter to connect their high-resolution surround-view cameras simultaneously to:
-- NVIDIA Drive AGX Orin™ for real-time processing
+- NVIDIA DRIVE AGX Orin™ for real-time processing
 - Data recording system for training data collection
 
 **Results**: Enabled development and validation processes to run in parallel, reducing development cycles by 40%.
@@ -85,7 +85,7 @@ A semiconductor manufacturing facility deployed the GMSL2 Camera Splitter to con
 <!-- - **EMI/EMC Performance**: Compliant with automotive standards -->
 
 ### Compatible System Configurations
-- **NVIDIA Platforms**: Jetson AGX Orin, Drive AGX Orin
+- **NVIDIA Platforms**: Jetson AGX Orin, DRIVE AGX Orin
 - **Qualcomm Platforms**: Snapdragon Ride Platform
 - **Horizon Robotics**: Journey Series
 <!-- - **Texas Instruments**: TDA4 Family -->

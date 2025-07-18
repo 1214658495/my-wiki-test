@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# FAQs for NVIDIA Drive AGX Orin
+# FAQs for NVIDIA DRIVE AGX Orin
 
-This document contains all the frequently asked questions related to NVIDIA Drive AGX Orin products. This will be very helpful if you are suffering from any issues when using the NVIDIA Drive AGX Orin.
+This document contains all the frequently asked questions related to NVIDIA DRIVE AGX Orin products. This will be very helpful if you are suffering from any issues when using the NVIDIA DRIVE AGX Orin.
 
 
 #### Camera Not Working

@@ -6,11 +6,11 @@ sidebar_position: 1
 
 <div className="row">
   <div className="col col--8">
-    SENSING conducted in-depth development based on NVIDIA Drive AGX Orin and released this Multi-channel GMSL2 camera development kit. This kit is mainly designed to provide AI practitioners, development enthusiasts, and ecological partners in the intelligent driving industry with a development platform for quickly building GMSL2 cameras. With the security and openness of the DRIVE AGX Orin development kit, developers can easily develop various applications for learning and research.
+    SENSING conducted in-depth development based on NVIDIA DRIVE AGX Orin and released this Multi-channel GMSL2 camera development kit. This kit is mainly designed to provide AI practitioners, development enthusiasts, and ecological partners in the intelligent driving industry with a development platform for quickly building GMSL2 cameras. With the security and openness of the DRIVE AGX Orin development kit, developers can easily develop various applications for learning and research.
   </div>
   <div className="col col--4">
     :::note Key Features
-    - Supports NVIDIA Drive AGX Orin
+    - Supports NVIDIA DRIVE AGX Orin
     - Supports 16 GMSL2 cameras
     - Supports multi-camera synchronization
     - Support for providing proprietary ISP algorithms
@@ -36,7 +36,7 @@ sidebar_position: 1
 <div className="row">
   <div className="col col--6">
     :::note Platform Support
-    - Support Platform: NVIDIA Drive AGX Orin
+    - Support Platform: NVIDIA DRIVE AGX Orin
     - ISP: Support for providing proprietary ISP algorithms
     - Output data: YUV422
     - Camera input: Camera*16 (GMSL2)
