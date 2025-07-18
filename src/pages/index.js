@@ -3,7 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Head from '@docusaurus/Head';
+import { useEffect } from 'react';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -50,13 +50,31 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
+
+  // 在组件挂载时立即预加载背景图片
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = '/img/SENSING_Homepage_bg.png';
+    link.as = 'image';
+    document.head.appendChild(link);
+
+    // 同时使用 Image 对象预加载
+    const img = new Image();
+    img.src = '/img/SENSING_Homepage_bg.png';
+
+    return () => {
+      // 清理
+      if (document.head.contains(link)) {
+        document.head.removeChild(link);
+      }
+    };
+  }, []);
+
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
       description="SENSING Wiki - Professional documentation and knowledge base">
-      <Head>
-        <link rel="preload" href="/img/SENSING_Homepage_bg.png" as="image" />
-      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

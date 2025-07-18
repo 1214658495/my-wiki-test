@@ -9,13 +9,12 @@
   min-height: 650px;
   display: flex;
   align-items: center;
-  /* 使用接近原图的深灰色作为fallback */
-  background-color: #272833;
+  /* 使用更接近背景图片的颜色作为fallback，减少视觉跳跃 */
+  background: linear-gradient(135deg, #2a2d3a 0%, #3a3d4a 50%, #4a4d5a 100%);
   background-image: url('/img/SENSING_Homepage_bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* 确保背景图片平滑加载 */
   background-attachment: scroll;
   backdrop-filter: blur(3px); /* 添加轻微虚化效果 */
 }
