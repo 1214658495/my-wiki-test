@@ -67,33 +67,9 @@ Cameras featuring **global shutter** technology that captures the entire frame s
 
 ---
 
-<!-- ### <span style={{color: 'var(--ifm-link-color)'}}>USB Camera</span>
 
-Plug-and-play camera solutions utilizing **Universal Serial Bus (USB)** connectivity standards.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| Interface   | USB 2.0/3.0/3.1 |
-| Plug & Play | Yes          |
-| Max Resolution | Up to 4K |
 
-**Ideal for:** Development prototyping, general-purpose imaging, and applications requiring simple integration.
-
---- -->
-
-### <span style={{color: 'var(--ifm-link-color)'}}>Depth Camera</span>
-
-Specialized cameras that capture **distance information** for each pixel, creating three-dimensional scene representations.
-
-| Key Feature | Specification |
-|-------------|---------------|
-| Depth Resolution | Up to 1080p |
-| Range      | 0.3m to 10m   |
-| Technology | Time-of-Flight/Structured Light |
-
-**Ideal for:** Gesture recognition, object detection, augmented reality, and autonomous navigation.
-
----
 
 ### <span style={{color: 'var(--ifm-link-color)'}}>Low Latency Camera</span>
 
@@ -191,7 +167,6 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 | Serdes           | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★☆☆    |
 | MIPI CSI-2       | ★★★★★     | ★★★★☆     | ★★★★★  | ★★★☆☆    |
 | Global Shutter   | ★★★★☆     | ★★★★★     | ★★★★☆  | ★★★☆☆    |
-| Depth            | ★★☆☆☆     | ★★★☆☆     | ★★★☆☆  | ★★★★☆    |
 | Low Latency      | ★★★★☆     | ★★★★★     | ★★★★★  | ★★★☆☆    |
 | Event-Based      | ★★☆☆☆     | ★★★★★     | ★★★★★  | ★★★★★    |
 | NVIDIA Holoscan  | ★★★★★     | ★★★★☆     | ★★★★☆  | ★★★★☆    |
@@ -208,8 +183,8 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 | Serdes      | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★☆☆    | ★★★☆☆ | ★★★☆☆               |
 | MIPI CSI-2  | ★★★★★     | ★★★★☆     | ★★★★★  | ★★★☆☆    | ★★☆☆☆ | ★★★★☆               |
 | Global Shutter | ★★★★☆  | ★★★★★     | ★★★★☆  | ★★★☆☆    | ★★★★☆ | ★★★☆☆               |
-| USB         | ★★★☆☆     | ★★★☆☆     | ★★☆☆☆  | ★★★☆☆    | ★★☆☆☆ | ★☆☆☆☆               |
-| Depth       | ★★☆☆☆     | ★★★☆☆     | ★★★☆☆  | ★★★★☆    | ★★★★☆ | ★★★★☆               |
+
+
 | Low Latency | ★★★★☆     | ★★★★★     | ★★★★★  | ★★★☆☆    | ★★★★☆ | ★★★★☆               |
 | Event-Based | ★★☆☆☆     | ★★★★★     | ★★★★★  | ★★★★★    | ★★★★★ | ★★★★★               |
 | NVIDIA Holoscan | ★★★★★ | ★★★★☆     | ★★★★☆  | ★★★★☆    | ★★★★★ | ★★★★☆               |
@@ -318,8 +293,8 @@ For additional information about camera technologies and their applications, exp
 - 📚 [Camera Sensor Architecture Guide](./1_1_Serdes_Camera)
 - 🔍 [Imaging Pipeline Optimization Techniques](./1_2_MIPI_CSI-2_Camera)
 - 📋 [Comprehensive Camera Selection Guide](./1_3_Global_Shutter_Camera)
-- 🧪 [Performance Benchmarking Methodology](./1_4_USB_Camera)
-- 🛠️ [Integration Best Practices](./1_5_Depth_Camera)
+
+
 
 </div>
 
