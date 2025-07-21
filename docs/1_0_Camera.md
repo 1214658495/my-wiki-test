@@ -123,9 +123,9 @@ This comprehensive documentation explores the complete spectrum of camera techno
 |------------------------|-------------------|
 | **Minimum Illumination** | 0.0001 lux (starlight) |
 | **IR Illumination** | 850nm/940nm options |
-| **Sensitivity Enhancement** | Enhanced NIR response |
-| **Image Processing** | Real-time enhancement |
-| **Operating Range** | 0-100 meters (IR-assisted) |
+<!-- | **Sensitivity Enhancement** | Enhanced NIR response | -->
+<!-- | **Image Processing** | Real-time enhancement | -->
+<!-- | **Operating Range** | 0-100 meters (IR-assisted) | -->
 
 
 **Primary Applications:** Security and surveillance systems, wildlife monitoring, military operations, autonomous vehicle night vision, and industrial inspection in low-light environments.
