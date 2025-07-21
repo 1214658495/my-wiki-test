@@ -1,166 +1,180 @@
 ---
 sidebar_position: 1
 title: Camera
-description: Comprehensive guide to camera technologies and their applications
+description: Comprehensive guide to advanced camera technologies and their applications in modern vision systems
+keywords: [camera, vision, imaging, sensors, MIPI, Serdes, global shutter, event-based, low latency]
 ---
 
 # Camera Technologies Overview
 
-<!-- ![Camera Technologies Banner](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_show.png) -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SENSING_WIKI.png" alt="Camera Technologies Banner" style={{maxWidth: '100%', height: 'auto'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SENSING_WIKI.png" alt="SENSING Camera Technologies" style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
-:::note
-This comprehensive guide covers all camera technologies supported in our ecosystem, their technical specifications, implementation details, and recommended use cases.
+:::note Professional Vision Solutions
+SENSING provides comprehensive camera technology solutions designed for demanding applications in robotics, autonomous systems, industrial automation, and advanced AI vision processing.
 :::
 
 ## Introduction
 
-Modern camera technologies are foundational components in numerous advanced systems including robotics, autonomous vehicles, industrial automation, security infrastructure, and human-machine interfaces. This documentation provides detailed insights into different camera architectures, their operational principles, technical specifications, and optimal application scenarios.
+Camera technologies serve as the critical foundation for modern vision-enabled systems across diverse industries. From autonomous vehicles requiring ultra-low latency processing to industrial automation demanding precise quality control, the selection of appropriate camera technology directly impacts system performance, reliability, and cost-effectiveness.
+
+This comprehensive documentation explores the complete spectrum of camera technologies available in the SENSING ecosystem, providing detailed technical specifications, implementation guidelines, and application-specific recommendations to help engineers and system integrators make informed decisions for their vision system requirements.
 
 ---
 
-## Camera Types
+## Camera Technology Solutions
 
 <div className="camera-grid">
 
-### <span style={{color: 'var(--ifm-link-color)'}}>Serdes Camera</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}>Serdes Camera </span>
+**SerDes (Serializer/Deserializer)** camera systems enable high-speed data transmission over extended distances with superior signal integrity and error correction capabilities.
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Data Transmission Rate** | Up to 12 Gbps per link |
+| **Maximum Cable Length** | Up to 15 meters (coaxial) |
+| **Signal Latency** | < 100 nanoseconds |
+| **Environmental Rating** | -40°C to +85°C |
 
-**Serdes Camera** ( Serializer/Deserializer camera) systems convert parallel data streams into serial signals for high-speed, long-distance transmission.
-
-| Key Feature | Specification |
-|-------------|---------------|
-| Data Rate   | Up to 12 Gbps |
-| Cable Length| Up to 15m     |
-| Latency     | < 100 ns       |
-
-**Ideal for:** Applications requiring extended cable lengths while maintaining signal integrity in industrial environments.
-
----
-
-### <span style={{color: 'var(--ifm-link-color)'}}>MIPI CSI-2 Camera</span>
-
-**Mobile Industry Processor Interface (MIPI) Camera Serial Interface 2 (CSI-2)** protocol implementations offering standardized connectivity.
-
-| Key Feature | Specification |
-|-------------|---------------|
-| Data Lanes  | 1-4 lanes     |
-| Data Rate   | Up to 4.5 Gbps/lane |
-| Power       | Low power optimized |
-
-**Ideal for:** Mobile devices, embedded systems, and power-constrained applications requiring high performance.
+**Primary Applications:** Automotive vision systems, industrial inspection, outdoor surveillance, and long-distance image transmission applications.
 
 ---
 
-### <span style={{color: 'var(--ifm-link-color)'}}>Global Shutter Camera</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}> MIPI CSI-2 Camera</span>
 
-Cameras featuring **global shutter** technology that captures the entire frame simultaneously, eliminating motion artifacts.
+**MIPI CSI-2 (Camera Serial Interface 2)** is the industry-standard interface for mobile and embedded vision applications, delivering optimized power efficiency and seamless platform integration.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| Frame Rate  | Up to 240 FPS |
-| Motion Artifacts | Minimal |
-| Dynamic Range | 65-70 dB   |
 
-**Ideal for:** Machine vision, robotics, quality inspection, and high-speed object tracking.
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Data Lanes** | 1-4 configurable lanes |
+| **Per-Lane Data Rate** | Up to 4.5 Gbps |
+| **Power Consumption** | Ultra-low power design |
+| **Protocol Version** | CSI-2 v2.1 compliant |
+| **Pixel Formats** | RAW8/10/12, YUV422 |
+
+
+**Primary Applications:** Mobile devices, embedded AI systems, IoT vision nodes, and power-constrained applications.
+
+---
+
+### <span style={{color: 'var(--ifm-color-primary)'}}> Global Shutter Camera </span>
+
+**Global Shutter** technology captures entire frames simultaneously, eliminating motion artifacts and delivering precise imaging for high-speed applications.
+
+
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Maximum Frame Rate** | Up to 240 FPS (full resolution) |
+| **Motion Artifacts** | Eliminated (global exposure) |
+| **Dynamic Range** | 65-75 dB typical |
+| **Pixel Architecture** | Global reset and readout |
+| **Synchronization** | Hardware trigger support |
+
+
+**Primary Applications:** Machine vision inspection, robotics guidance, sports analysis, scientific imaging, and precise motion capture applications.
 
 ---
 
 
 
+### <span style={{color: 'var(--ifm-color-primary)'}}> Low Latency Camera </span>
+
+**Low Latency** camera systems minimize glass-to-algorithm delay through optimized sensor design, streamlined processing pipelines, and hardware acceleration.
 
 
-### <span style={{color: 'var(--ifm-link-color)'}}>Low Latency Camera</span>
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Glass-to-Algorithm Latency** | < 60 milliseconds |
+| **Processing Overhead** | Hardware-optimized pipeline |
+| **Trigger Response** | < 1 millisecond |
 
-Camera systems optimized for **minimal processing delay** between image capture and data availability.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| Processing Overhead | Minimal |
-| Frame Pipeline | Optimized |
-
-<!-- | Glass-to-Algorithm Latency | < 10ms | -->
-
-**Ideal for:** Real-time applications such as drone navigation, autonomous vehicles, and interactive systems.
-
----
-
-### <span style={{color: 'var(--ifm-link-color)'}}>Event-Based Camera</span>
-
-**Neuromorphic vision sensors** that detect changes in brightness for each pixel asynchronously, rather than capturing full frames at fixed intervals.
-
-| Key Feature | Specification |
-|-------------|---------------|
-| Temporal Resolution | Microsecond level |
-| Dynamic Range | > 120 dB    |
-| Data Bandwidth | Proportional to scene activity |
-
-**Ideal for:** High-speed tracking, robotics in challenging lighting, and applications requiring ultra-low latency.
+**Primary Applications:** Autonomous vehicle perception, drone navigation, real-time robotics control,  and safety-critical applications.
 
 ---
 
-### <span style={{color: 'var(--ifm-link-color)'}}>NVIDIA Holoscan Camera</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}> Event-Based Camera </span>
 
-Camera solutions integrated with **NVIDIA's Holoscan** platform for medical imaging and other high-performance vision applications.
+**Event-Based** neuromorphic vision sensors detect pixel-level brightness changes asynchronously, delivering unprecedented temporal resolution and dynamic range for challenging vision applications.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| GPU Acceleration | NVIDIA Architecture |
-| Processing | Real-time AI pipeline |
-| Integration | Holoscan SDK compatible |
 
-**Ideal for:** Medical imaging, scientific visualization, and compute-intensive vision applications.
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Temporal Resolution** | Microsecond precision |
+| **Dynamic Range** | > 120 dB (1,000,000:1) |
+| **Data Bandwidth** | Scene-activity dependent |
+| **Power Consumption** | Ultra-low (event-driven) |
+| **Latency** | < 1 millisecond |
 
----
 
-### <span style={{color: 'var(--ifm-link-color)'}}>Night Vision Camera</span>
+**Primary Applications:** High-speed object tracking, autonomous navigation in challenging lighting, surveillance systems, robotics perception, and neuromorphic computing research.
 
-Cameras specialized for **low-light environments** using advanced technologies to produce visible imagery in near-darkness conditions.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| Minimum Illumination | 0.0001 lux |
-| IR Illumination | Optional 850/940nm |
-| Sensitivity | Enhanced NIR response |
-
-**Ideal for:** Security monitoring, wildlife observation, and operations in low-light environments.
 
 ---
 
-### <span style={{color: 'var(--ifm-link-color)'}}>Humanoid Robotic Camera</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}> Night Vision Camera </span>
 
-Vision systems designed specifically for **humanoid robots**, implementing advanced perception capabilities.
+**Night Vision** cameras utilize advanced low-light sensor technology and intelligent image enhancement to deliver exceptional performance in challenging lighting conditions.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| Field of View | Human-like (120° horizontal) |
-| Configuration | Stereo/Multi-camera arrays |
-| Processing | Edge AI integration |
 
-**Ideal for:** Humanoid robots requiring human-like perception capabilities and social interaction features.
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Minimum Illumination** | 0.0001 lux (starlight) |
+| **IR Illumination** | 850nm/940nm options |
+| **Sensitivity Enhancement** | Enhanced NIR response |
+| **Image Processing** | Real-time enhancement |
+| **Operating Range** | 0-100 meters (IR-assisted) |
+
+
+**Primary Applications:** Security and surveillance systems, wildlife monitoring, military operations, autonomous vehicle night vision, and industrial inspection in low-light environments.
 
 ---
 
-### <span style={{color: 'var(--ifm-link-color)'}}>Cockpit Camera</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}> Humanoid Robotic Camera </span>
 
-Camera systems designed for **aircraft cockpit monitoring**, offering high reliability in extreme conditions.
+**Humanoid Robotic** vision systems engineered specifically for humanoid robots, featuring human-like perception capabilities and advanced AI integration for natural interaction and navigation.
 
-| Key Feature | Specification |
-|-------------|---------------|
-| Environmental Range | -40°C to +85°C |
-| Vibration Resistance | MIL-STD-810 compliant |
-| Certification | DO-160 compatible |
 
-**Ideal for:** Aviation applications, cockpit monitoring, and mission-critical recording systems.
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Field of View** | 120° horizontal (human-like) |
+| **Stereo Configuration** | Multi-camera arrays |
+| **Form Factor** | Compact, lightweight design |
+
+
+**Primary Applications:** Humanoid robotics, social robots, service robots, human-robot interaction research, and advanced robotic perception systems requiring natural vision capabilities.
+
+---
+
+### <span style={{color: 'var(--ifm-color-primary)'}}> Cockpit Camera </span>
+
+**Cockpit Camera** systems designed for automotive driver monitoring and cabin surveillance, ensuring safety and compliance with automotive regulations.
+
+
+| Technical Specification | Performance Range |
+|------------------------|-------------------|
+| **Operating Temperature** | -40°C to +85°C |
+| **Vibration Resistance** | Automotive grade |
+| **IR Illumination** | 940nm for night vision |
+| **Field of View** | 60°-120° adjustable |
+
+
+
+**Primary Applications:** Driver monitoring systems (DMS), occupant monitoring systems (OMS), fatigue detection, attention monitoring, and automotive safety compliance.
 
 </div>
 
 ---
 
-## Selection Matrix
+## Technology Comparison Matrix
 
-<div className="table-responsive">
+
+:::tip Selection Guide
+Use this comprehensive comparison matrix to evaluate camera technologies based on your specific application requirements. Each technology is rated across key performance dimensions to facilitate informed decision-making.
+:::
+
 
 | Camera Type      | Resolution | Frame Rate | Latency | Low Light |
 |------------------|------------|------------|---------|-----------|
@@ -169,12 +183,10 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 | Global Shutter   | ★★★★☆     | ★★★★★     | ★★★★☆  | ★★★☆☆    |
 | Low Latency      | ★★★★☆     | ★★★★★     | ★★★★★  | ★★★☆☆    |
 | Event-Based      | ★★☆☆☆     | ★★★★★     | ★★★★★  | ★★★★★    |
-| NVIDIA Holoscan  | ★★★★★     | ★★★★☆     | ★★★★☆  | ★★★★☆    |
 | Night Vision     | ★★★☆☆     | ★★★☆☆     | ★★★☆☆  | ★★★★★    |
 | Humanoid         | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★★☆    |
 | Cockpit          | ★★★★☆     | ★★★☆☆     | ★★★☆☆  | ★★★★☆    |
 
-</div>
 
 <!-- <div className="table-responsive">
 
@@ -187,7 +199,6 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 
 | Low Latency | ★★★★☆     | ★★★★★     | ★★★★★  | ★★★☆☆    | ★★★★☆ | ★★★★☆               |
 | Event-Based | ★★☆☆☆     | ★★★★★     | ★★★★★  | ★★★★★    | ★★★★★ | ★★★★★               |
-| NVIDIA Holoscan | ★★★★★ | ★★★★☆     | ★★★★☆  | ★★★★☆    | ★★★★★ | ★★★★☆               |
 | Night Vision| ★★★☆☆     | ★★★☆☆     | ★★★☆☆  | ★★★★★    | ★★★★☆ | ★★★☆☆               |
 | Humanoid    | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★★☆    | ★★★★★ | ★★★★★               |
 | Cockpit     | ★★★★☆     | ★★★☆☆     | ★★★☆☆  | ★★★★☆    | ★★★★★ | ★★★★☆               |
@@ -198,9 +209,8 @@ Camera systems designed for **aircraft cockpit monitoring**, offering high relia
 Rating Scale: ★☆☆☆☆ (Basic) to ★★★★★ (Excellent)
 :::
 
----
 
-## Key Considerations
+<!-- ## Key Considerations
 
 When selecting a camera technology for your application, evaluate these critical factors:
 
@@ -229,14 +239,18 @@ When selecting a camera technology for your application, evaluate these critical
 - **Vibration Resistance**: Ability to maintain performance under mechanical stress
 - **Electromagnetic Compatibility**: Resistance to interference and emissions compliance
 
-</div>
+</div> -->
 
 
 ---
 
-## Code Examples
+## Implementation Examples & Best Practices
 
-### Camera Initialization Example
+### Professional Camera Integration Framework
+
+The following examples demonstrate industry-standard approaches to camera system integration, featuring robust error handling, optimal performance patterns, and production-ready code structures.
+
+#### **V4L2 Camera Initialization (Linux)**
 
 ```c
 /* Example code for capturing camera frames */
