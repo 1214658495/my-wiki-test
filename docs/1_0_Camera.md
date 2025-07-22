@@ -296,7 +296,17 @@ int main() {
 ```
 
 ---
+## Contact & Support
+:::note Contact Information
+    **Get in Touch with Our Team**:
 
+    - **Email**: [support@sensing-world.com](mailto:support@sensing-world.com)
+    - **Phone**: +86-755-28990915
+    - **Website**: [www.sensing-world.com](https://sensing-world.com/en/)
+    - **GitHub**: [SENSING-Technology](https://github.com/SENSING-Technology)
+
+    **Business Hours**: Monday - Friday, 9:00 AM - 6:00 PM (GMT+8)
+    :::
 <!-- ## Further Resources
 
 For additional information about camera technologies and their applications, explore the following resources:
