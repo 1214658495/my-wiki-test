@@ -80,17 +80,16 @@ This comprehensive documentation explores the complete spectrum of camera techno
 
 ### <span style={{color: 'var(--ifm-color-primary)'}}> Low Latency Camera </span>
 
-**Low Latency** camera systems minimize glass-to-algorithm delay through optimized sensor design, streamlined processing pipelines, and hardware acceleration.
+**Low Latency** camera systems achieve minimal delay through high frame rate capture, typically operating at 60fps or higher for real-time applications.
 
 
 | Technical Specification | Performance Range |
 |------------------------|-------------------|
-| **Glass-to-Algorithm Latency** | < 60 milliseconds |
-| **Processing Overhead** | Hardware-optimized pipeline |
-| **Trigger Response** | < 1 millisecond |
+| **Frame Rate** | 60fps or higher |
+| **Latency** | < 60 milliseconds |
 
 
-**Primary Applications:** Autonomous vehicle perception, drone navigation, real-time robotics control,  and safety-critical applications.
+**Primary Applications:** Real-time monitoring, high-speed tracking, autonomous vehicle perception, drone navigation, and applications requiring immediate visual feedback.
 
 ---
 
