@@ -1,13 +1,14 @@
 ---
 sidebar_position: 2
+title: Getting Started with CIG4-8H
 ---
 
-# GMSL Video Injection Card CIG4-8H
+# Getting Started with CIG4-8H
 
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="CyberCobra" style={{width: 320, height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CyberCobra" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
     <strong>CIG4-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co., Ltd. The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and employs high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output. The product is widely used in hardware-in-the-loop (HIL) simulation systems, digital acquisition and reinjection systems, and video playback systems.

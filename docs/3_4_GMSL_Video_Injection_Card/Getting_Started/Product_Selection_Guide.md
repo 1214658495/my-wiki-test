@@ -3,135 +3,67 @@ sidebar_position: 1
 title: Product Selection Guide
 ---
 
-# CyberCobra Introduction
+# CIG4-8H Introduction
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{maxWidth: '40%', height:'auto', borderRadius: '8px'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
-    SENSING CyberCobra GMSL Video Injection Card
+    SENSING CIG4-8H GMSL Video Injection Card
   </p>
 </div>
 
-## What is the SENSING CyberCobra GMSL Video Injection Card?
+<div style={{fontSize: '1.1em', lineHeight: '1.6', color: '#495057', marginBottom: '1.5rem'}}>
+    The <strong>CIG4-8H</strong> is a specialized PCIe hardware solution designed to inject pre-recorded or simulated video data directly into automotive Electronic Control Units (ECUs) through authentic GMSL (Gigabit Multimedia Serial Link) interfaces. This enables comprehensive testing and validation of ADAS/AD algorithms without requiring physical cameras or real-world driving scenarios.
+  </div>
+
+<!-- ## What is the CIG4-8H GMSL Video Injection Card?
 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
   
   <div style={{fontSize: '1.1em', lineHeight: '1.6', color: '#495057', marginBottom: '1.5rem'}}>
-    The <strong>[CyberCobra] GMSL Video Injection Card</strong> is a specialized PCIe hardware solution designed to inject pre-recorded or simulated video data directly into automotive Electronic Control Units (ECUs) through authentic GMSL (Gigabit Multimedia Serial Link) interfaces. This enables comprehensive testing and validation of ADAS/AD algorithms without requiring physical cameras or real-world driving scenarios.
+    The <strong>CIG4-8H</strong> is a specialized PCIe hardware solution designed to inject pre-recorded or simulated video data directly into automotive Electronic Control Units (ECUs) through authentic GMSL (Gigabit Multimedia Serial Link) interfaces. This enables comprehensive testing and validation of ADAS/AD algorithms without requiring physical cameras or real-world driving scenarios.
   </div>
 
   <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem'}}>
     <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1.5rem', border: '1px solid #bbdefb'}}>
       <h4 style={{marginBottom: '1rem', color: '#1976d2'}}>
-        <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-        </svg> -->
         Hardware Solution
       </h4>
       <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
         <li>PCIe Gen3 x8 interface card</li>
         <li>Up to 8 GMSL output channels</li>
-        <!-- <li>Hardware-accelerated processing</li> -->
         <li>Real-time signal generation</li>
       </ul>
     </div>
 
     <div style={{background: '#f3e5f5', borderRadius: '8px', padding: '1.5rem', border: '1px solid #e1bee7'}}>
       <h4 style={{marginBottom: '1rem', color: '#7b1fa2'}}>
-        <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-          <path d="M3 5c0-1.66 4-3 9-3s9 1.34 9 3v14c0 1.66-4 3-9 3s-9-1.34-9-3V5Z"/>
-        </svg> -->
         Data Sources
       </h4>
       <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
         <li>Real-world recorded camera data</li>
         <li>Simulation-generated data</li>
-        <!-- <li>Synthetic test patterns</li> -->
         <li>Custom validation datasets</li>
       </ul>
     </div>
 
     <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1.5rem', border: '1px solid #c8e6c9'}}>
       <h4 style={{marginBottom: '1rem', color: '#388e3c'}}>
-        <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-          <circle cx="12" cy="12" r="10"/>
-          <path d="m9 12 2 2 4-4"/>
-        </svg> -->
         Target Applications
       </h4>
       <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
         <li>ADAS/AD algorithm validation</li>
         <li>Simulation data for algorithm validation</li>
         <li>ISP algorithm simulation validation</li>
-        <!-- <li>Regression testing automation</li> -->
       </ul>
     </div>
   </div>
 </div>
 
-### How It Works: The Complete Video Injection Process
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H_Application2.png" alt="Video Injection System Selection Guide" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 2px rgba(0,0,0,0.15)'}} />
-  <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
-    Block diagram of Intelligent driving data injection system
-  </p>
-</div>
-
-<div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
-  <div style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
-
-    <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-      <div style={{background: '#e3f2fd', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
-        <span style={{fontWeight: 'bold', color: '#1976d2'}}>1</span>
-      </div>
-      <div style={{flex: 1}}>
-        <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#1976d2'}}>Data Preparation</h4>
-        <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>Load pre-recorded camera data (H.264/H.265) or simulation data for algorithm validation into the host PC memory</p>
-      </div>
-    </div>
-
-    <div style={{textAlign: 'center', fontSize: '1.5em', color: '#666'}}>↓</div>
-
-    <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-      <div style={{background: '#f3e5f5', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
-        <span style={{fontWeight: 'bold', color: '#7b1fa2'}}>2</span>
-      </div>
-      <div style={{flex: 1}}>
-        <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#7b1fa2'}}>Format Conversion</h4>
-        <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>GPU-accelerated conversion to raw video formats (YUV422, RAW10/12/14) compatible with automotive cameras</p>
-      </div>
-    </div>
-
-    <div style={{textAlign: 'center', fontSize: '1.5em', color: '#666'}}>↓</div>
-
-    <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-      <div style={{background: '#e8f5e8', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
-        <span style={{fontWeight: 'bold', color: '#388e3c'}}>3</span>
-      </div>
-      <div style={{flex: 1}}>
-        <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#388e3c'}}>GMSL Signal Generation</h4>
-        <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>CIG4-8H card generates authentic GMSL signals identical to real camera outputs, including timing and electrical characteristics</p>
-      </div>
-    </div>
-
-    <div style={{textAlign: 'center', fontSize: '1.5em', color: '#666'}}>↓</div>
-
-    <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-      <div style={{background: '#fff3e0', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
-        <span style={{fontWeight: 'bold', color: '#f57c00'}}>4</span>
-      </div>
-      <div style={{flex: 1}}>
-        <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#f57c00'}}>ECU Integration</h4>
-        <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>Target ECU receives video data through standard GMSL deserializers, processing it as if from real cameras</p>
-      </div>
-    </div>
-
-  </div>
-</div>
+ -->
 
 
 
-## Why Choose SENSING Video Injection Card?
+## Why Choose the CIG4-8H Video Injection Card?
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{width: 400, height:'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)'}} />
@@ -198,7 +130,7 @@ title: Product Selection Guide
   </div> -->
 </div>
 
-The **SENSING CyberCobra GMSL Video Injection Card** is specifically designed to solve local video injection and simulation validation challenges. Its core value lies in precisely reproducing real-world scenario data flows, accelerating product testing and algorithm iteration through one-time data collection and repeated algorithm validation.
+The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve local video injection and simulation validation challenges. Its core value lies in precisely reproducing real-world scenario data flows, accelerating product testing and algorithm iteration through one-time data collection and repeated algorithm validation.
 
 ---
 

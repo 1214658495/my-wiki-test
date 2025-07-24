@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# CoaxCapture II
+# CCG3-8H
 
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
