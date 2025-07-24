@@ -900,8 +900,8 @@ The **SENSING CyberCobra GMSL Video Injection Card** is specifically designed to
 
 ### CIG4-8H Core Specifications
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CIG4-8H Block Diagram" style={{maxWidth: '85%', height:'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)'}} />
+<div style={{textAlign: 'center'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CIG4-8H Block Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     CIG4-8H Hardware Block Diagram and System Architecture
   </p>
