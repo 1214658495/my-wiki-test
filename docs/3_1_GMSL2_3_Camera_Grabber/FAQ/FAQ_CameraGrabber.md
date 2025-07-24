@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# FAQs for Camera Grabber
+# FAQs for CoaxCapture II
 
 This document contains all the frequently asked questions related to Jetson series products. This will be very helpful if you are suffering from any issues when using the Jetson.
 

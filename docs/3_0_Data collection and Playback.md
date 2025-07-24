@@ -1,14 +1,15 @@
 ---
 sidebar_position: 30
+title: Data Collection and Simulation
 ---
 
-# Data Collection and Playback
+# Data Collection and Simulation
 
 ## Overview
 
 <div className="row">
   <div className="col col--7">
-    This section covers specialized hardware and software solutions for camera data collection, distribution, and playback in automotive and embedded vision applications. These technologies enable efficient video data handling across multiple processing units while maintaining signal integrity and synchronization.
+    This section covers specialized hardware and software solutions for camera data collection, distribution, and Simulation in automotive and embedded vision applications. These technologies enable efficient video data handling across multiple processing units while maintaining signal integrity and synchronization.
   </div>
   <div className="col col--5">
     :::note Key Components
@@ -24,7 +25,7 @@ sidebar_position: 30
 
 ```mermaid
 graph TD
-    subgraph "Data Collection & Playback Solutions"
+    subgraph "Data Collection & Simulation Solutions"
         CAMERA["GMSL/GMSL2 Camera"] --> GRABBER["Camera Grabber"]
         CAMERA --> SPLITTER["Camera Splitter"]
         CAMERA --> REPEATER["Camera Repeater"]

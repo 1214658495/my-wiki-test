@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 
-# GMSL Camera Grabber CCG3-8H
+# CoaxCapture II
 
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H.png" alt="CCG3-8H" style={{width: 320, height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_backup.png" alt="CCG3-8H" style={{maxWidth: '42%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
     <strong>CCG3-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co.,Ltd. Compared with Gen1, Gen2 uses PCI-e Gen3 technology, doubling speed and bandwidth. It supports GMSL/GMSL2 cameras, features high frame rate, high speed, low latency, and is widely used in autonomous machines, vehicles, and data capture.

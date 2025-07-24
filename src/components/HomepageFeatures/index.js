@@ -70,7 +70,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Data Collection & Playback',
+    title: 'Data Collection & Simulation',
     Svg: DataSvg,
     description: (
       <>
