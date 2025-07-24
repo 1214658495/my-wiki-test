@@ -14,15 +14,7 @@ title: Product Selection Guide
 ## What is the SENSING CyberCobra GMSL Video Injection Card?
 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
-  <h3 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
-    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-      <rect width="14" height="8" x="5" y="2" rx="2"/>
-      <rect width="20" height="8" x="2" y="14" rx="2"/>
-      <path d="M6 18h2"/>
-      <path d="M12 18h6"/>
-    </svg> -->
-    Professional Hardware-in-the-Loop (HIL) Video Injection Solution
-  </h3>
+  
   <div style={{fontSize: '1.1em', lineHeight: '1.6', color: '#495057', marginBottom: '1.5rem'}}>
     The <strong>[CyberCobra] GMSL Video Injection Card</strong> is a specialized PCIe hardware solution designed to inject pre-recorded or simulated video data directly into automotive Electronic Control Units (ECUs) through authentic GMSL (Gigabit Multimedia Serial Link) interfaces. This enables comprehensive testing and validation of ADAS/AD algorithms without requiring physical cameras or real-world driving scenarios.
   </div>
@@ -76,26 +68,6 @@ title: Product Selection Guide
     </div>
   </div>
 </div>
-
-<div style={{background: '#f8f9fa', borderLeft: '4px solid #007bff', padding: '1.5rem', marginBottom: '1.5rem', borderRadius: '0 8px 8px 0'}}>
-    <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.5rem'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#007bff" strokeWidth="2" style={{marginTop: '2px', flexShrink: 0}}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-        <line x1="12" y1="17" x2="12.01" y2="17"/>
-      </svg>
-      <div>
-        <strong style={{color: '#007bff', fontSize: '0.9em'}}>Note: What is Hardware-in-the-Loop (HIL) Testing?</strong>
-      </div>
-    </div>
-    <p style={{margin: 0, fontSize: '0.9em', lineHeight: '1.5', color: '#6c757d', paddingLeft: '1.5rem'}}>
-      <strong>Hardware-in-the-Loop (HIL)</strong> is a testing methodology that combines real hardware components with simulated environments to validate system behavior under controlled conditions. In automotive applications, HIL testing allows engineers to test ECUs with realistic sensor inputs without the complexity, cost, and safety risks of real-world testing.
-    </p>
-    <div style={{marginTop: '0.8rem', paddingLeft: '1.5rem', fontSize: '0.85em', color: '#6c757d'}}>
-      <strong>• Real Hardware:</strong> Actual ECUs, processors, and control systems<br/>
-      <strong>• Simulated Environment:</strong> Virtual sensors, scenarios, and data inputs
-    </div>
-  </div>
 
 ### How It Works: The Complete Video Injection Process
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
