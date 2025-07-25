@@ -114,6 +114,7 @@ title: Product Selection Guide
 
 The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve local video injection and simulation validation challenges. Its core value lies in precisely reproducing real-world scenario data flows, accelerating product testing and algorithm iteration through one-time data collection and repeated algorithm validation.
 
+
 ---
 
 ### What problems does video injection solve?
@@ -799,8 +800,6 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 
 ## How to select the right video injection solution?
 
-### CIG4-8H Core Specifications
-
 <div style={{textAlign: 'center'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CIG4-8H Block Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
@@ -808,6 +807,132 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
   </p>
 </div>
 
+
+<div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
+  <h4 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
+    SENSING's Competitive Advantage in Video Injection
+  </h4>
+
+  **Market Context:** SENSING competes with established players in the video injection card market. However, SENSING's core business focus on cameras and imaging systems provides a fundamental competitive advantage.
+
+  <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginTop: '1.5rem'}}>
+    <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #c8e6c9'}}>
+      <div style={{marginBottom: '0.5rem'}}>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#388e3c" strokeWidth="2">
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+          <circle cx="12" cy="13" r="3"/>
+        </svg>
+      </div>
+      <strong>Better Video Injection</strong><br/>
+      <span style={{fontSize: '0.9em'}}>More accurate camera signal simulation</span>
+    </div>
+    <div style={{background: '#ffebee', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #ffcdd2'}}>
+      <div style={{marginBottom: '0.5rem'}}>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#d32f2f" strokeWidth="2">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/>
+          <line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+      </div>
+      <strong>Realistic Fault Testing</strong><br/>
+      <span style={{fontSize: '0.9em'}}>Simulate real camera failures accurately</span>
+    </div>
+    <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #bbdefb'}}>
+      <div style={{marginBottom: '0.5rem'}}>
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#1976d2" strokeWidth="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <strong>Safety Testing</strong><br/>
+      <span style={{fontSize: '0.9em'}}>Complete automotive safety validation</span>
+    </div>
+  </div>
+</div>
+
+**Core Differentiator:** Unlike competitors who may treat video injection as a secondary product line, SENSING's primary expertise in camera technology translates directly into superior injection capabilities. This camera-centric approach ensures authentic reproduction of real camera behaviors, critical for accurate ECU algorithm validation where signal fidelity directly impacts testing reliability.
+
+---
+
+<!-- ## 4 Key Highlights -->
+
+### Key Technical Capabilities
+
+The **CIG4-8H** is designed as a modular system device that can be flexibly configured according to customer requirements. It achieves millisecond-level synchronization accuracy for data replay and meets various specific scenario replay requirements through its rich hardware interface array.
+
+<div style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #e9ecef', boxShadow: '0 4px 12px rgba(0,0,0,0.08)'}}>
+  <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem'}}>
+
+    <div style={{background: 'linear-gradient(135deg, #e3f2fd 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.5rem', border: '1px solid #bbdefb', boxShadow: '0 3px 10px rgba(25,118,210,0.12)', transition: 'transform 0.2s ease, box-shadow 0.2s ease'}}>
+      <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
+        <div style={{background: '#1976d2', borderRadius: '8px', padding: '0.5rem', marginRight: '0.75rem', boxShadow: '0 2px 6px rgba(25,118,210,0.3)'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h4 style={{color: '#1976d2', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>16-Channel Video Output</h4>
+      </div>
+      <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
+        Support <strong>16×3840×2160@30fps</strong><br/>
+        GMSL video data replay with high precision
+      </p>
+    </div>
+
+    <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.5rem', border: '1px solid #ffcc02', boxShadow: '0 3px 10px rgba(245,124,0,0.12)', transition: 'transform 0.2s ease, box-shadow 0.2s ease'}}>
+      <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
+        <div style={{background: '#f57c00', borderRadius: '8px', padding: '0.5rem', marginRight: '0.75rem', boxShadow: '0 2px 6px rgba(245,124,0,0.3)'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 1v6m0 6v6"/>
+            <path d="m21 12-6-3v6l6-3z"/>
+          </svg>
+        </div>
+        <h4 style={{color: '#f57c00', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>Data Synchronization</h4>
+      </div>
+      <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
+        <strong>PTP/gPTP</strong> high-precision synchronization<br/>
+        System accuracy within <strong>1ms</strong>
+      </p>
+    </div>
+
+    <div style={{background: 'linear-gradient(135deg, #fce4ec 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.5rem', border: '1px solid #f8bbd9', boxShadow: '0 3px 10px rgba(233,30,99,0.12)', transition: 'transform 0.2s ease, box-shadow 0.2s ease'}}>
+      <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
+        <div style={{background: '#e91e63', borderRadius: '8px', padding: '0.5rem', marginRight: '0.75rem', boxShadow: '0 2px 6px rgba(233,30,99,0.3)'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
+        </div>
+        <h4 style={{color: '#e91e63', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>Sensor Fault Simulation</h4>
+      </div>
+      <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
+        <strong>Fault injection testing</strong><br/>
+        Comprehensive safety testing coverage
+      </p>
+    </div>
+
+    <div style={{background: 'linear-gradient(135deg, #e0f2f1 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.5rem', border: '1px solid #b2dfdb', boxShadow: '0 3px 10px rgba(0,150,136,0.12)', transition: 'transform 0.2s ease, box-shadow 0.2s ease'}}>
+      <div style={{display: 'flex', alignItems: 'center', marginBottom: '1rem'}}>
+        <div style={{background: '#00796b', borderRadius: '8px', padding: '0.5rem', marginRight: '0.75rem', boxShadow: '0 2px 6px rgba(0,121,107,0.3)'}}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <h4 style={{color: '#00796b', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>Camera Functional Safety Simulation Injection</h4>
+      </div>
+      <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
+        Camera functional safety simulation<br/>
+        Comprehensive validation testing
+      </p>
+    </div>
+
+  </div>
+</div>
+
+### CIG4-8H Core Specifications
 #### Hardware Architecture Overview
 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
@@ -863,7 +988,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 - **Zynq™ UltraScale+™ ZU7EV:** Provides the processing power needed for real-time video injection with hardware acceleration
 - **PCIe Gen3 x8 Interface:** Ensures sufficient bandwidth for 8 channels of high-resolution video data transfer
 - **DDR4 Memory:** Enables smooth buffering and processing of large video datasets
-- **TTL Trigger Interface:** Allows integration with external timing sources and domain controllers
+- **TTL Trigger Interface:** Receives trigger input signals from domain controllers for synchronized operation
 
 #### Video Processing Capabilities
 
