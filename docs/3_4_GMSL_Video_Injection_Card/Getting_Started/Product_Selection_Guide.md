@@ -130,59 +130,14 @@ title: Product Selection Guide
   </div> -->
 </div>
 
-The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve local video injection and simulation validation challenges. Its core value lies in precisely reproducing real-world scenario data flows, accelerating product testing and algorithm iteration through one-time data collection and repeated algorithm validation.
+The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve local video injection and simulation validation challenges. Its core value lies in precisely reproducing real-world scenario data flows, accelerating product testing and algorithm iteration through one-time data collection and repeated algorithm validation.
 
 ---
 
 ### What Problems Does Video Injection Solve?
 
-<div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
-  <h4 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
-    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-      <circle cx="12" cy="12" r="10"/>
-      <path d="m9 12 2 2 4-4"/>
-    </svg> -->
-    Three Core Application Scenarios
-  </h4>
-  <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem'}}>
-    <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #bbdefb'}}>
-      <div style={{marginBottom: '0.5rem'}}>
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1976d2" strokeWidth="2">
-          <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10V6c0-2-2-4-4-4H4c-2 0-4 2-4 4v10c0 1.1.9 2 2 2h2"/>
-          <circle cx="7" cy="17" r="2"/>
-          <path d="M9 17h6"/>
-          <circle cx="17" cy="17" r="2"/>
-        </svg>
-      </div>
-      <strong>ADAS/AD Development</strong><br/>
-      <span style={{fontSize: '0.9em'}}>Real camera data simulation</span>
-    </div>
-    <div style={{background: '#f3e5f5', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #e1bee7'}}>
-      <div style={{marginBottom: '0.5rem'}}>
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7b1fa2" strokeWidth="2">
-          <rect width="14" height="8" x="5" y="2" rx="2"/>
-          <rect width="20" height="8" x="2" y="14" rx="2"/>
-          <path d="M6 18h2"/>
-          <path d="M12 18h6"/>
-        </svg>
-      </div>
-      <strong>Simulation Validation</strong><br/>
-      <span style={{fontSize: '0.9em'}}>Virtual scenario testing</span>
-    </div>
-    <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #c8e6c9'}}>
-      <div style={{marginBottom: '0.5rem'}}>
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#388e3c" strokeWidth="2">
-          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
-          <circle cx="12" cy="13" r="3"/>
-        </svg>
-      </div>
-      <strong>ISP Algorithm Simulation Validation</strong><br/>
-      <span style={{fontSize: '0.9em'}}>Image processing validation</span>
-    </div>
-  </div>
-</div>
 
-#### Why Traditional Real-Vehicle Testing Falls Short
+<!-- #### Why Traditional Real-Vehicle Testing Falls Short -->
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '2rem', marginBottom: '2rem', alignItems: 'center'}}>
   <div style={{flex: 1, minWidth: 300}}>
@@ -303,6 +258,52 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
 - **Integration Testing:** Coordinate multi-sensor validation in controlled laboratory environment
 
 
+
+<div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
+  <h4 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
+    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
+      <circle cx="12" cy="12" r="10"/>
+      <path d="m9 12 2 2 4-4"/>
+    </svg> -->
+    Three Core Application Scenarios
+  </h4>
+  <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem'}}>
+    <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #bbdefb'}}>
+      <div style={{marginBottom: '0.5rem'}}>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1976d2" strokeWidth="2">
+          <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10V6c0-2-2-4-4-4H4c-2 0-4 2-4 4v10c0 1.1.9 2 2 2h2"/>
+          <circle cx="7" cy="17" r="2"/>
+          <path d="M9 17h6"/>
+          <circle cx="17" cy="17" r="2"/>
+        </svg>
+      </div>
+      <strong>ADAS/AD Development</strong><br/>
+      <span style={{fontSize: '0.9em'}}>Real camera data simulation</span>
+    </div>
+    <div style={{background: '#f3e5f5', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #e1bee7'}}>
+      <div style={{marginBottom: '0.5rem'}}>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#7b1fa2" strokeWidth="2">
+          <rect width="14" height="8" x="5" y="2" rx="2"/>
+          <rect width="20" height="8" x="2" y="14" rx="2"/>
+          <path d="M6 18h2"/>
+          <path d="M12 18h6"/>
+        </svg>
+      </div>
+      <strong>Simulation Validation</strong><br/>
+      <span style={{fontSize: '0.9em'}}>Virtual scenario testing</span>
+    </div>
+    <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #c8e6c9'}}>
+      <div style={{marginBottom: '0.5rem'}}>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#388e3c" strokeWidth="2">
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+          <circle cx="12" cy="13" r="3"/>
+        </svg>
+      </div>
+      <strong>ISP Algorithm Simulation Validation</strong><br/>
+      <span style={{fontSize: '0.9em'}}>Image processing validation</span>
+    </div>
+  </div>
+</div>
 
 ### Application Scenario 1: ADAS/AD Algorithm Development & Validation
 
@@ -814,7 +815,7 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
 ---
 
 
-## How to Select the Right Video Injection Solution?
+## How to select the right Video Injection Solution?
 
 ### CIG4-8H Core Specifications
 
@@ -873,17 +874,6 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
       <strong>DDR4 Memory</strong><br/>
       <span style={{fontSize: '0.9em'}}>High-speed storage</span>
     </div>
-    <div style={{background: '#fff3e0', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #ffcc02'}}>
-      <div style={{marginBottom: '0.5rem'}}>
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f57c00" strokeWidth="2">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="2" y1="12" x2="22" y2="12"/>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-        </svg>
-      </div>
-      <strong>Gigabit Ethernet</strong><br/>
-      <span style={{fontSize: '0.9em'}}>System synchronization</span>
-    </div>
   </div>
 </div>
 
@@ -891,7 +881,6 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
 - **Zynq™ UltraScale+™ ZU7EV:** Provides the processing power needed for real-time video injection with hardware acceleration
 - **PCIe Gen3 x8 Interface:** Ensures sufficient bandwidth for 8 channels of high-resolution video data transfer
 - **DDR4 Memory:** Enables smooth buffering and processing of large video datasets
-- **Gigabit Ethernet:** Supports gPTP/PTP synchronization for multi-device coordination
 - **TTL Trigger Interface:** Allows integration with external timing sources and domain controllers
 
 #### Video Processing Capabilities
@@ -1301,7 +1290,7 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
   </div>
 </div>
 
-**Core API Functions:**
+<!-- **Core API Functions:**
 ```c
 // Primary data injection interface
 int send_one_frame(unsigned char* buffer);
@@ -1328,10 +1317,6 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.5rem'}}>
   <div style={{flex: 1, minWidth: 240, background: '#e3f2fd', borderRadius: '8px', padding: '1rem', border: '1px solid #2196f3'}}>
     <h4 style={{marginBottom: '0.8rem', color: '#1976d2'}}>
-      <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="m9 12 2 2 4-4"/>
-      </svg> -->
       Custom Applications
     </h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
@@ -1343,10 +1328,6 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
   </div>
   <div style={{flex: 1, minWidth: 240, background: '#f3e5f5', borderRadius: '8px', padding: '1rem', border: '1px solid #9c27b0'}}>
     <h4 style={{marginBottom: '0.8rem', color: '#7b1fa2'}}>
-      <!-- <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
-      </svg> -->
       Simulation Integration
     </h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
@@ -1364,7 +1345,7 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
 - **Development Environment:** GCC/Clang compiler support, CMake build system
 - **Integration Support:** Professional services available for complex custom implementations
 
----
+--- -->
 
 <!-- **Ready to Get Started?**
 

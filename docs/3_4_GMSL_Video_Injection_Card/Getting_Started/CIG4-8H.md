@@ -11,7 +11,7 @@ title: Getting Started with CIG4-8H
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CyberCobra" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    <strong>CIG4-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co., Ltd. The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and employs high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output. The product is widely used in hardware-in-the-loop (HIL) simulation systems, digital acquisition and reinjection systems, and video playback systems.
+    <strong>CIG4-8H</strong> GMSL Video Injection Card（Hereinafter referred to as video injection card）is an high-speed image product based on FPGA ,and it independently developed by SZ sensing tech co., Ltd. (for short as SENSING ), a series of SENSING Image Solution.The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and adopts high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output, and the product is widely used in the hardware-in-the-loop HIL simulation system, digital acquisition and reinjection system, and video playback system and other scenarios.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/h-col-151.html" target="_blank" rel="noopener noreferrer">
@@ -82,8 +82,8 @@ title: Getting Started with CIG4-8H
 </div>
 
 
-### Hardware Preparation
-#### Block Diagram
+## Hardware Preparation
+### Block Diagram
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra Application Diagram" style={{maxWidth: '90%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
 </div>
@@ -177,109 +177,6 @@ This method is particularly useful when you only need the SDK files without the 
 :::tip Download Assistance
 If you encounter any issues downloading the SDK or need access to older versions, please contact our technical support team at [support@sensing-world.com](mailto:support@sensing-world.com) or visit our [GitHub repository](https://github.com/SENSING-Technology/CIG4-8H) for the latest releases.
 :::
-
-### Setup and Configuration
-
-#### 1. SDK Compilation
-Enter the SDK directory and run the following commands to rebuild the driver and applications:
-```bash
-sudo make clean && sudo make
-```
-
-#### 2. Driver Loading
-Navigate to the bash directory and execute:
-```bash
-sudo ./load_modules.sh
-```
-
-Upon successful loading, you will see:
-```
-interrupt_selection 0.
-Loading driver...insmod xdma.ko interrupt_mode=1 ...
-The Kernel module installed correctly and the xdma devices were recognized.
-DONE
-```
-
-After loading, device interfaces will be created as `/dev/xdma0_h2c_0`, `/dev/xdma0_h2c_1`, etc. for each channel.
-
-#### 3. Video Injection Configuration
-
-The injection card supports various configuration parameters through the transfer_run.sh script:
-
-**Send Mode Configuration:**
-```bash
-transfer_type[<n>]="<mode>"
-```
-- `<n>`: Channel number (0-7)
-- `<mode>`: "YUV", "RAW10", "RAW12", or "RAW14"
-
-Example: `transfer_type[0]="YUV"`
-
-**Frame Rate Configuration:**
-```bash
-transfer_fps[<n>]=<frame_rate>
-```
-- Supported frame rates: 1-30 fps
-
-Example: `transfer_fps[0]=30`
-
-**Resolution Configuration:**
-```bash
-transfer_resolution_width[<n>]=<width>
-transfer_resolution_height[<n>]=<height>
-```
-
-Example: 
-```bash
-transfer_resolution_width[0]=1920
-transfer_resolution_height[0]=1080
-```
-
-**Note:** Adjacent channel pairs (0-1, 2-3, 4-5, 6-7) must have the same resolution.
-
-**File Playback Configuration:**
-```bash
-transfer_file_replay[<n>]=<repeat_count>
-```
-- Repeat count: 0-1,000,000
-
-Example: `transfer_file_replay[0]=20`
-
-**Video Source File:**
-Create a data folder in the SDK/bash directory and place your video files there.
-```bash
-transfer_file_name[<n>]="<filename>"
-```
-
-Example: `transfer_file_name[0]="input0.h264"`
-
-**File Type Configuration:**
-```bash
-transfer_file_type[<n>]="<type>"
-```
-- `<type>`: "Original" or "H264"
-
-Example: `transfer_file_type[0]="Original"`
-
-#### 4. Starting and Stopping Data Transmission
-
-**Start Transmission:**
-```bash
-sudo ./bash/transfer_run.sh
-```
-
-**Stop Transmission:**
-```bash
-sudo ./bash/stop.sh
-```
-
-### Advanced Configuration Notes
-
-- "Original" file type sends unencoded video in formats like YUV or RAW10/12/14
-- "H264" file type sends H.264 encoded files that will be decompressed before transmission
-- The injection card supports external trigger signals for synchronized output across all channels
-- Multiple injection cards can be synchronized for higher channel count applications
-- Time synchronization is maintained via gPTP/PTP protocols
 
 ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>

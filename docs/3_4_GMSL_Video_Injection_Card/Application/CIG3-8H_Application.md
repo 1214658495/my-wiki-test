@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# CIG3-8H Application
+# CIG4-8H Application
 
 ### How It Works: The Complete Video Injection Process
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
@@ -76,8 +76,6 @@ sidebar_position: 1
   </div>
 </div> -->
 
----
-
 ## System Architecture
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
@@ -89,23 +87,7 @@ sidebar_position: 1
   </ul>
 </div>
 
-## Key Features and Advantages
 
-<div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
-  <ol style={{margin: 0, paddingLeft: '1.2em'}}>
-    <li>Utilizes PCI Express interface with PCIe Gen3x8 support, providing sustainable bandwidth up to 4800 MB/s.</li>
-    <li>Powered by Zynq™ UltraScale+™ ZU7EV MPSoC processor for high-performance data processing.</li>
-    <li>Built-in high-performance DMA engine for efficient data transfer from host.</li>
-    <li>Supports various serializers (MAX9295A, MAX96717F, MAX96717) and deserializers (MAX9296A, MAX96712, MAX96716).</li>
-    <li>Output video resolution supports up to 8 channels of 3840×2160@30fps.</li>
-    <li>Supports YUV422, RAW10/12/14 video formats.</li>
-    <li>Capable of simulating I2C messages between ECU and cameras.</li>
-    <li>Supports external trigger signals to control simultaneous output across all channels.</li>
-    <li>Enables timestamp-based RAW video data playback with nanosecond-level precision.</li>
-    <li>Supports synchronization across multiple injection cards.</li>
-    <li>Compatible with both Linux and Windows operating systems.</li>
-  </ol>
-</div>
 
 ---
 
