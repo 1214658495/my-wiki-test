@@ -63,7 +63,7 @@ title: Product Selection Guide
 
 
 
-## Why Choose the CIG4-8H Video Injection Card?
+## Why choose the CIG4-8H video injection card?
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{width: 400, height:'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)'}} />
