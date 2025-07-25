@@ -72,12 +72,8 @@ title: Product Selection Guide
   </p>
 </div> -->
 
-<div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
+<!-- <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
   <h3 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
-    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
-      <circle cx="12" cy="12" r="10"/>
-      <path d="m9 12 2 2 4-4"/>
-    </svg> -->
     Core Value Proposition
   </h3>
   <div style={{fontSize: '1.1em', textAlign: 'center', marginBottom: '1rem', color: '#495057'}}>
@@ -114,27 +110,13 @@ title: Product Selection Guide
       <span style={{fontSize: '0.9em'}}>Dedicated validation platform</span>
     </div>
   </div>
-
-  <!-- <div style={{background: '#f0f8ff', borderLeft: '4px solid #0066cc', padding: '1rem', marginTop: '1.5rem', borderRadius: '0 8px 8px 0'}}>
-    <div style={{display: 'flex', alignItems: 'flex-start', gap: '0.5rem'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0066cc" strokeWidth="2" style={{marginTop: '2px', flexShrink: 0}}>
-        <circle cx="12" cy="12" r="10"/>
-        <path d="M12 16v-4"/>
-        <path d="M12 8h.01"/>
-      </svg>
-      <div style={{fontSize: '0.85em', color: '#0066cc', lineHeight: '1.4'}}>
-        <strong>Note: Core Value of HIL Technology</strong><br/>
-        Through HIL technology, CIG4-8H achieves an efficient development model of "one-time data collection, repeated algorithm validation," perfectly combining real-world complexity with laboratory controllability to provide an ideal validation platform for ADAS/AD algorithm development.
-      </div>
-    </div>
-  </div> -->
-</div>
+</div> -->
 
 The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve local video injection and simulation validation challenges. Its core value lies in precisely reproducing real-world scenario data flows, accelerating product testing and algorithm iteration through one-time data collection and repeated algorithm validation.
 
 ---
 
-### What Problems Does Video Injection Solve?
+### What problems does video injection solve?
 
 
 <!-- #### Why Traditional Real-Vehicle Testing Falls Short -->
@@ -257,7 +239,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 - **Safety Validation:** Validate emergency scenarios (AEB, collision avoidance) without physical risk
 - **Integration Testing:** Coordinate multi-sensor validation in controlled laboratory environment
 
-
+---
 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
   <h4 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
@@ -815,7 +797,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 ---
 
 
-## How to select the right Video Injection Solution?
+## How to select the right video injection solution?
 
 ### CIG4-8H Core Specifications
 
@@ -907,7 +889,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 **Core Video Processing Specifications:**
 - **Channel Count:** Up to 8 simultaneous GMSL video outputs per card
 - **Maximum Resolution:** 8MP (3840×2160) per channel at 30fps
-- **Validated Resolutions:** 1920×1080, 1920×1536, 2880×1860, 3840×2160
+- **Validated Resolutions:** eg.1920×1080, 1920×1536, 2880×1860, 3840×2160
 - **Data Bandwidth:** 6 Gbps per channel capacity with full utilization
 <!-- - **Synchronization Precision:**  < 1μs inter-channel synchronization accuracy -->
 
