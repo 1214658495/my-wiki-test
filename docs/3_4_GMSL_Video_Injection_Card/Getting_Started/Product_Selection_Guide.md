@@ -308,81 +308,76 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
 
 <!-- #### System Architecture Diagram -->
 
-<div style={{background: '#f8f9fa', borderRadius: '8px', padding: '1.2rem', marginBottom: '1.5rem', border: '1px solid #dee2e6'}}>
-  <h6 style={{textAlign: 'center', marginBottom: '1rem', color: '#495057', fontSize: '0.9em'}}>
+<div style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #e9ecef', boxShadow: '0 2px 8px rgba(0,0,0,0.04)'}}>
+  <h4 style={{textAlign: 'center', marginBottom: '1.8rem', color: '#495057', fontSize: '1.1em', fontWeight: '600', letterSpacing: '0.5px'}}>
     System Architecture Diagram
-  </h6>
+  </h4>
 
-  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.8rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1rem', padding: '0.5rem'}}>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#e1f5fe', borderRadius: '6px', padding: '0.8rem', border: '1px solid #01579b', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#01579b" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #e3f2fd 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #1976d2', minWidth: '100px', boxShadow: '0 3px 12px rgba(25,118,210,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #1976d2, #42a5f5)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#1976d2" strokeWidth="1" style={{marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(25,118,210,0.2))'}}>
           <ellipse cx="12" cy="5" rx="9" ry="3"/>
           <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
         </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#01579b'}}>Real-world recorded data</div>
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#1976d2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Real-world<br/>recorded data</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#666'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#6c757d', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem'}}>ETH/SSD</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px'}}>ETH/SSD</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#f3e5f5', borderRadius: '6px', padding: '0.8rem', border: '1px solid #4a148c', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a148c" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect width="14" height="8" x="5" y="2" rx="2"/>
-          <rect width="20" height="8" x="2" y="14" rx="2"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#4a148c'}}>Industrial PC</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #f3e5f5 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #7b1fa2', minWidth: '100px', boxShadow: '0 3px 12px rgba(123,31,162,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #7b1fa2, #ba68c8)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#7b1fa2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Industrial PC</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#666'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#6c757d', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem'}}>PCIe</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px'}}>PCIe</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#e8f5e8', borderRadius: '6px', padding: '0.8rem', border: '1px solid #1b5e20', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1b5e20" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect x="2" y="6" width="20" height="12" rx="2"/>
-          <circle cx="7" cy="12" r="2"/>
-          <circle cx="17" cy="12" r="2"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#1b5e20'}}>CyberCobra</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #388e3c', minWidth: '100px', boxShadow: '0 3px 12px rgba(56,142,60,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #388e3c, #66bb6a)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#388e3c', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>CIG4-8H</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#1b5e20'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#388e3c', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem', fontWeight: 'bold'}}>GMSL×8</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px'}}>GMSL</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#fff3e0', borderRadius: '6px', padding: '0.8rem', border: '1px solid #e65100', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e65100" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#e65100'}}>ECU</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #f57c00', minWidth: '100px', boxShadow: '0 3px 12px rgba(245,124,0,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #f57c00, #ffb74d)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#f57c00', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>ECU</div>
       </div>
     </div>
 
   </div>
-<!-- 
-  <div style={{textAlign: 'center', fontSize: '0.75em', color: '#666', fontStyle: 'italic'}}>
-    Raw Data Replay
-  </div> -->
+
+  <div style={{textAlign: 'center', marginTop: '1.5rem', padding: '0.8rem', background: 'rgba(108,117,125,0.05)', borderRadius: '8px', border: '1px solid rgba(108,117,125,0.1)'}}>
+    <span style={{fontSize: '0.8em', color: '#6c757d', fontWeight: '500', fontStyle: 'italic', letterSpacing: '0.3px'}}>
+      Real-World Data Injection Pipeline for ADAS/AD Algorithm Validation
+    </span>
+  </div>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
@@ -490,81 +485,77 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
 
 <!-- #### System Architecture Diagram -->
 
-<div style={{background: '#f8f9fa', borderRadius: '8px', padding: '1.2rem', marginBottom: '1.5rem', border: '1px solid #dee2e6'}}>
-  <h6 style={{textAlign: 'center', marginBottom: '1rem', color: '#495057', fontSize: '0.9em'}}>
+<div style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #e9ecef', boxShadow: '0 2px 8px rgba(0,0,0,0.04)'}}>
+  <h4 style={{textAlign: 'center', marginBottom: '1.8rem', color: '#495057', fontSize: '1.1em', fontWeight: '600', letterSpacing: '0.5px'}}>
     System Architecture Diagram
-  </h6>
+  </h4>
 
-  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.8rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1rem', padding: '0.5rem'}}>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#e1f5fe', borderRadius: '6px', padding: '0.8rem', border: '1px solid #01579b', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#01579b" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <ellipse cx="12" cy="5" rx="9" ry="3"/>
-          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #e3f2fd 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #1976d2', minWidth: '100px', boxShadow: '0 3px 12px rgba(25,118,210,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #1976d2, #42a5f5)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#1976d2" strokeWidth="1" style={{marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(25,118,210,0.2))'}}>
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <path d="M8 21l4-4 4 4"/>
+          <path d="M8 3l4 4 4-4"/>
         </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#01579b'}}>GPU Generate Data</div>
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#1976d2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>GPU Generated<br/>Data</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#666'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#6c757d', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem'}}>PCIe</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px'}}>PCIe</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#f3e5f5', borderRadius: '6px', padding: '0.8rem', border: '1px solid #4a148c', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a148c" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect width="14" height="8" x="5" y="2" rx="2"/>
-          <rect width="20" height="8" x="2" y="14" rx="2"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#4a148c'}}>Industrial PC</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #f3e5f5 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #7b1fa2', minWidth: '100px', boxShadow: '0 3px 12px rgba(123,31,162,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #7b1fa2, #ba68c8)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#7b1fa2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Industrial PC</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#666'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#6c757d', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem'}}>PCIe</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px'}}>PCIe</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#e8f5e8', borderRadius: '6px', padding: '0.8rem', border: '1px solid #1b5e20', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1b5e20" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect x="2" y="6" width="20" height="12" rx="2"/>
-          <circle cx="7" cy="12" r="2"/>
-          <circle cx="17" cy="12" r="2"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#1b5e20'}}>CyberCobra</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #388e3c', minWidth: '100px', boxShadow: '0 3px 12px rgba(56,142,60,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #388e3c, #66bb6a)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#388e3c', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>CIG4-8H</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#1b5e20'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#388e3c', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem', fontWeight: 'bold'}}>GMSL×8</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px'}}>GMSL</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#fff3e0', borderRadius: '6px', padding: '0.8rem', border: '1px solid #e65100', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e65100" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#e65100'}}>ECU</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #f57c00', minWidth: '100px', boxShadow: '0 3px 12px rgba(245,124,0,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #f57c00, #ffb74d)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#f57c00', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>ECU</div>
       </div>
     </div>
 
   </div>
-<!-- 
-  <div style={{textAlign: 'center', fontSize: '0.75em', color: '#666', fontStyle: 'italic'}}>
-    Raw Data Replay
-  </div> -->
+
+  <div style={{textAlign: 'center', marginTop: '1.5rem', padding: '0.8rem', background: 'rgba(108,117,125,0.05)', borderRadius: '8px', border: '1px solid rgba(108,117,125,0.1)'}}>
+    <span style={{fontSize: '0.8em', color: '#6c757d', fontWeight: '500', fontStyle: 'italic', letterSpacing: '0.3px'}}>
+      Virtual Scenario Data Pipeline for Simulation-Based Algorithm Testing
+    </span>
+  </div>
 </div>
 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
@@ -686,81 +677,76 @@ The **The CIG4-8H GMSL Video Injection Card** is specifically designed to solve 
 ### Application Scenario 3: ISP Algorithm Simulation Validation
 
 
-<div style={{background: '#f8f9fa', borderRadius: '8px', padding: '1.2rem', marginBottom: '1.5rem', border: '1px solid #dee2e6'}}>
-  <h6 style={{textAlign: 'center', marginBottom: '1rem', color: '#495057', fontSize: '0.9em'}}>
+<div style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%)', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #e9ecef', boxShadow: '0 2px 8px rgba(0,0,0,0.04)'}}>
+  <h4 style={{textAlign: 'center', marginBottom: '1.8rem', color: '#495057', fontSize: '1.1em', fontWeight: '600', letterSpacing: '0.5px'}}>
     System Architecture Diagram
-  </h6>
+  </h4>
 
-  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.8rem'}}>
+  <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.5rem', flexWrap: 'wrap', marginBottom: '1rem', padding: '0.5rem'}}>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#e1f5fe', borderRadius: '6px', padding: '0.8rem', border: '1px solid #01579b', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#01579b" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <ellipse cx="12" cy="5" rx="9" ry="3"/>
-          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #e3f2fd 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #1976d2', minWidth: '100px', boxShadow: '0 3px 12px rgba(25,118,210,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #1976d2, #42a5f5)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#1976d2" strokeWidth="1" style={{marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(25,118,210,0.2))'}}>
+          <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+          <circle cx="12" cy="13" r="3"/>
         </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#01579b'}}>Raw Image Data</div>
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#1976d2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Raw Image<br/>Data</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#666'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#6c757d', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem'}}>ETH/SSD</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px'}}>ETH/SSD</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#f3e5f5', borderRadius: '6px', padding: '0.8rem', border: '1px solid #4a148c', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a148c" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect width="14" height="8" x="5" y="2" rx="2"/>
-          <rect width="20" height="8" x="2" y="14" rx="2"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#4a148c'}}>Industrial PC</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #f3e5f5 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #7b1fa2', minWidth: '100px', boxShadow: '0 3px 12px rgba(123,31,162,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #7b1fa2, #ba68c8)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#7b1fa2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Industrial PC</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#666'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#6c757d', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem'}}>PCIe</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px'}}>PCIe</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#e8f5e8', borderRadius: '6px', padding: '0.8rem', border: '1px solid #1b5e20', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1b5e20" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect x="2" y="6" width="20" height="12" rx="2"/>
-          <circle cx="7" cy="12" r="2"/>
-          <circle cx="17" cy="12" r="2"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#1b5e20'}}>CyberCobra</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #388e3c', minWidth: '100px', boxShadow: '0 3px 12px rgba(56,142,60,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #388e3c, #66bb6a)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#388e3c', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>CIG4-8H</div>
       </div>
     </div>
 
-    <div style={{display: 'flex', alignItems: 'center', color: '#1b5e20'}}>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', color: '#388e3c', margin: '0 0.5rem'}}>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" style={{filter: 'drop-shadow(0 1px 2px rgba(0,0,0,0.1))'}}>
         <path d="M5 12h14M12 5l7 7-7 7"/>
       </svg>
-      <span style={{fontSize: '0.7em', marginLeft: '0.3rem', fontWeight: 'bold'}}>GMSL×8</span>
+      <span style={{fontSize: '0.75em', marginTop: '0.3rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '0.5px'}}>GMSL</span>
     </div>
 
-    <div style={{textAlign: 'center'}}>
-      <div style={{background: '#fff3e0', borderRadius: '6px', padding: '0.8rem', border: '1px solid #e65100', minWidth: '80px'}}>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#e65100" strokeWidth="2" style={{marginBottom: '0.3rem'}}>
-          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-        <div style={{fontWeight: 'bold', fontSize: '0.75em', color: '#e65100'}}>ECU</div>
+    <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
+      <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #f57c00', minWidth: '100px', boxShadow: '0 3px 12px rgba(245,124,0,0.15)', position: 'relative'}}>
+        <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #f57c00, #ffb74d)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
+        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
+        <div style={{fontWeight: '700', fontSize: '0.8em', color: '#f57c00', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>ECU</div>
       </div>
     </div>
 
   </div>
-<!-- 
-  <div style={{textAlign: 'center', fontSize: '0.75em', color: '#666', fontStyle: 'italic'}}>
-    Raw Data Replay
-  </div> -->
+
+  <div style={{textAlign: 'center', marginTop: '1.5rem', padding: '0.8rem', background: 'rgba(108,117,125,0.05)', borderRadius: '8px', border: '1px solid rgba(108,117,125,0.1)'}}>
+    <span style={{fontSize: '0.8em', color: '#6c757d', fontWeight: '500', fontStyle: 'italic', letterSpacing: '0.3px'}}>
+      Raw Image Processing Pipeline for ISP Algorithm Validation
+    </span>
+  </div>
 </div>
 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
