@@ -807,7 +807,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
   </p>
 </div>
 
-
+<!-- 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
   <h4 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
     SENSING's Competitive Advantage in Video Injection
@@ -851,7 +851,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 
 **Core Differentiator:** Unlike competitors who may treat video injection as a secondary product line, SENSING's primary expertise in camera technology translates directly into superior injection capabilities. This camera-centric approach ensures authentic reproduction of real camera behaviors, critical for accurate ECU algorithm validation where signal fidelity directly impacts testing reliability.
 
----
+--- -->
 
 <!-- ## 4 Key Highlights -->
 
@@ -871,10 +871,10 @@ The **CIG4-8H** is designed as a modular system device that can be flexibly conf
             <line x1="12" y1="17" x2="12" y2="21"/>
           </svg>
         </div>
-        <h4 style={{color: '#1976d2', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>16-Channel Video Output</h4>
+        <h4 style={{color: '#1976d2', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>8-Channel Video Output</h4>
       </div>
       <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
-        Support <strong>16×3840×2160@30fps</strong><br/>
+        Support <strong>8×3840×2160@30fps</strong><br/>
         GMSL video data replay with high precision
       </p>
     </div>
@@ -891,7 +891,7 @@ The **CIG4-8H** is designed as a modular system device that can be flexibly conf
         <h4 style={{color: '#f57c00', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>Data Synchronization</h4>
       </div>
       <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
-        <strong>PTP/gPTP</strong> high-precision synchronization<br/>
+        high-precision synchronization<br/>
         System accuracy within <strong>1ms</strong>
       </p>
     </div>
@@ -988,7 +988,7 @@ The **CIG4-8H** is designed as a modular system device that can be flexibly conf
 - **Zynq™ UltraScale+™ ZU7EV:** Provides the processing power needed for real-time video injection with hardware acceleration
 - **PCIe Gen3 x8 Interface:** Ensures sufficient bandwidth for 8 channels of high-resolution video data transfer
 - **DDR4 Memory:** Enables smooth buffering and processing of large video datasets
-- **TTL Trigger Interface:** Receives trigger input signals from domain controllers for synchronized operation
+- **Trigger Interface:** Receives trigger input signals from domain controllers for synchronized operation
 
 #### Video Processing Capabilities
 
