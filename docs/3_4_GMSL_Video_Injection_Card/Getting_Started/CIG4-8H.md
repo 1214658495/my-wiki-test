@@ -49,6 +49,8 @@ title: Getting Started with CIG4-8H
 
 ## Specification parameters
 
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
 | **Video Injection Card parameters** | **Value** |
 |---|---|
 | **Host Interface** | PCIe Gen3 x8 |
@@ -71,6 +73,8 @@ title: Getting Started with CIG4-8H
 | **Video Format** | 8 bit (YUV422), 10/12/14 bit (RAW) |
 | **Data Bandwidth** | Every channel supports 6 Gbps |
 
+</div>
+
 ### Advanced Capabilities
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.05em'}}>
 • Support for ECU external trigger signal control for simultaneous output of all channels<br/>
@@ -89,6 +93,8 @@ title: Getting Started with CIG4-8H
 </div>
 
 #### Parts List
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
 | No. | Product model                 | Quantity | Remark                |
 |-----|-------------------------------|----------|-----------------------|
 | 1   | Power connection wire         | 1        | Standard configuration|
@@ -96,6 +102,8 @@ title: Getting Started with CIG4-8H
 | 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
 | 4   | Aviation plug turn to network cable | 1 | Standard configuration|
 | 5   | GPS connection wire           | 1        | Standard configuration|
+
+</div>
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.05em'}}>
 After collecting data with autonomous vehicles, algorithm validation and optimization are required, which demands a data injection system. The autonomous driving IPC transmits collected video data from hard disks to the video injection card through the PCIe interface. The card then synchronously outputs 8 channels of video based on timestamps, simulating the camera time sequence and transmitting it to the domain control through the GMSL interface. The CyberCobra card supports gPTP/PTP synchronization, achieving time synchronization through switches, IPC and ACU, ensuring all devices in the system are on the same timeline.
@@ -127,9 +135,9 @@ SENSING can provide a complete solution including Camera + GMSL Video Injection 
 
 
 
-## Software Framework and Usage Instructions
+## Software Preparation
 
-### Software Framework Diagram
+<!-- ### Software Framework Diagram -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
   <div style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
@@ -178,7 +186,15 @@ This method is particularly useful when you only need the SDK files without the 
 If you encounter any issues downloading the SDK or need access to older versions, please contact our technical support team at [support@sensing-world.com](mailto:support@sensing-world.com) or visit our [GitHub repository](https://github.com/SENSING-Technology/CIG4-8H) for the latest releases.
 :::
 
-## FAQ
+---
+
+## Detailed Usage Instructions
+
+For comprehensive software setup, SDK configuration, and video transfer protocols, please refer to our detailed application guide:
+
+**[📖 Complete Application Guide](../Application/CIG3-8H_Application)**
+
+<!-- ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
 For more information and frequently asked questions, please contact our technical support team or visit our <a href="https://sensing-world.com/en/h-col-151.html" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>official website</a>.
-</div>
+</div> -->

@@ -9,7 +9,7 @@ title: SHW3H（60fps）
 
 <div className="row">
   <div className="col col--12">
-    SHW3H Camera is equipped with SONY CMOS image sensor ISX031 and Maxim GMSL2 serializer MAX9295A. It has an automotive-grade sensor with a well-tuned Image Signal Processor (ISP) that produces exceptional image quality, which comes with an IP67-rated enclosure –is supplied with an AA lens that is focused and glued in our factory. 
+    This camera module is specifically designed for embodied intelligence applications, featuring a 3MP high dynamic range high frame rate sensor. It can be deployed in humanoid robot head and torso positions, optimized for robot perception and recognition scenarios. The SHF3L Camera is equipped with RGGB image sensor and Maxim GMSL2 serializer MAX9295A, featuring an automotive-grade sensor with a professionally tuned Image Signal Processor (ISP) that delivers exceptional image quality. The module comes with an all-glass AA wide-angle lens and achieves IP67 protection rating with an enclosure that is focused and sealed in our factory.
   </div>
 </div>
 
@@ -20,12 +20,12 @@ title: SHW3H（60fps）
 </div>
 <br />
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-183.html" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
-</div>
+</div> -->
 
 ## Getting Started
 
@@ -35,7 +35,7 @@ title: SHW3H（60fps）
 
 | Parameter         | Value                   |
 |-------------------|-------------------------|
-| Sensor            | SONY 2.95MP ISX031 RGGB |
+| Sensor            | RGGB |
 | ISP               | Built-in                |
 | Image Size        | 1/2.42 inch CMOS        |
 | Output Pixels     | 1920H*1536V             |

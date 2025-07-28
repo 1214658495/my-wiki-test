@@ -891,7 +891,7 @@ The **CIG4-8H** is designed as a modular system device that can be flexibly conf
         <h4 style={{color: '#f57c00', margin: 0, fontSize: '1.1em', fontWeight: '600'}}>Data Synchronization</h4>
       </div>
       <p style={{margin: 0, fontSize: '0.9em', color: '#495057', lineHeight: '1.5'}}>
-        high-precision synchronization<br/>
+        High-precision synchronization<br/>
         System accuracy within <strong>1ms</strong>
       </p>
     </div>
