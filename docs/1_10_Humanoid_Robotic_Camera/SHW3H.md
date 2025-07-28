@@ -100,7 +100,7 @@ title: SHW3H（60fps）
     <tr>
       <td rowspan="4"><strong>Sensor</strong></td>
       <td>Model</td>
-      <td>ISX031</td>
+      <td>RGGB</td>
     </tr>
     <tr>
       <td>I2C Address</td>
@@ -120,17 +120,13 @@ title: SHW3H（60fps）
 </div>
 
 
-### Lens Options
+### Lens Specifications
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| Model | HFOV | VFOV | F.No | EFL | Max Optical Distortion | Water-proof | Lens Mount |
-|-------|------|------|------|-----|------------------------|-------------|------------|
-| SH3-S11A60-G2A-H30X | 30° | 24° | 1.6 | 10.96mm | -2.5% | IP67 | M12 |
-| SH3-S11A60-G2A-H60FA | 60° | 46° | 1.6 | 5.8mm | -21% | IP67 | AA |
-| SH3-S11A60-G2A-H100F1A | 100° | 78° | 1.6 | 3.55mm | -58% | IP67 | AA |
-| SH3-S11A60-G2A-H120UA | 118° | 92° | 2 | 3mm | -92% | IP67 | AA |
-| SH3-S11A60-G2A-H190XA | 196° | 154° | 2.0 | 1.51mm | -155% | IP67 | AA |
+| HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | Water-proof | Lens Mount |
+|------|------|------|-----|----------------|----------------|-------------|------------|
+| 118° | 92° | 2.0 | 3mm | 0.8m | 0.4m - INF | IP69K | AA |
 
 </div>
 
