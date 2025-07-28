@@ -67,7 +67,7 @@ title: SHF3L（30fps）
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_BlockDiagram.png" alt="SH3-S11A60-G2A" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_BlockDiagram.png" alt="SHW3H_BlockDiagram" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -136,15 +136,15 @@ title: SHF3L（30fps）
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SH3-S11A60-G2A Camera Connect to Nvidia Jetson AGX Orin</p>
+    <p>SHF3L Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the SH3-S11A60-G2A camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
+1. Connect the SHF3L camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
 2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
-3. SH3-S11A60-G2A camera Connect the power supply
+3. SHF3L camera Connect the power supply
 4. SG10A-AGON-G2M-A1 board Connect the power supply
 5. Power on the system
 :::
@@ -166,7 +166,7 @@ title: SHF3L（30fps）
 
 | NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.0 | SH3-S11A60-G2A |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
+| 1 | JP6.0 | SHF3L |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
 
 
 </div>

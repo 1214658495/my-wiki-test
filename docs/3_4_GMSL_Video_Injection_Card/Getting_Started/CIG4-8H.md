@@ -11,7 +11,7 @@ title: Getting Started with CIG4-8H
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CyberCobra" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    <strong>CIG4-8H</strong> GMSL Video Injection Card（Hereinafter referred to as video injection card）is an high-speed image product based on FPGA ,and it independently developed by SZ sensing tech co., Ltd. (for short as SENSING ), a series of SENSING Image Solution.The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and adopts high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output, and the product is widely used in the hardware-in-the-loop HIL simulation system, digital acquisition and reinjection system, and video playback system and other scenarios.
+    <strong>CIG4-8H</strong> GMSL Video Injection Card（Hereinafter referred to as video injection card）is an high-speed image product based on FPGA ,and it independently developed by SZ sensing tech co., Ltd. (for short as SENSING ), a series of SENSING Image Solution.The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and adopts high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output, and the product is widely used in the hardware-in-the-loop HIL simulation system, digital acquisition and reinjection system, and video playback system and other scenarios.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/h-col-151.html" target="_blank" rel="noopener noreferrer">
@@ -57,7 +57,6 @@ title: Getting Started with CIG4-8H
 | **Bandwidth** | Bandwidth continuous up to 4800 MB/s |
 | **Carrier Board Internal Storage** | DDR4 |
 | **Network Interface** | Gigabit ethernet |
-| **I/O Interface** | TTL trigger signal |
 | **Weight** | 300 g |
 | **Power supply consumption** | When power supply is 12 V， Current is around 1 A |
 | **Working Temperature** | -20°-70°C |
@@ -97,11 +96,9 @@ title: Getting Started with CIG4-8H
 
 | No. | Product model                 | Quantity | Remark                |
 |-----|-------------------------------|----------|-----------------------|
-| 1   | Power connection wire         | 1        | Standard configuration|
-| 2   | CIG4-8H video injection card          | 1        | Standard configuration|
-| 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
-| 4   | Aviation plug turn to network cable | 1 | Standard configuration|
-| 5   | GPS connection wire           | 1        | Standard configuration|
+| 1   | CIG4-8H video injection card          | 1        | Standard configuration|
+| 2   | Fakra one-divided-two switching line | 4 | Standard configuration|
+| 3   | Aviation plug turn to network cable | 1 | Standard configuration|
 
 </div>
 
@@ -128,9 +125,9 @@ After collecting data with autonomous vehicles, algorithm validation and optimiz
   </iframe>
 </div> -->
 
-:::note Complete Solution
+<!-- :::note Complete Solution
 SENSING can provide a complete solution including Camera + GMSL Video Injection Card + IPC + Coaxial cable for your hardware-in-the-loop testing needs.
-:::
+::: -->
 
 
 
