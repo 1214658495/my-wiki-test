@@ -12,11 +12,9 @@ title: CCG3-8H Application
     In advanced autonomous driving systems, precise and reliable multi-sensor data acquisition and synchronization are critical for perception and decision-making. The <strong>CCG3-8H</strong> is designed to address these requirements by providing high-performance, synchronized video capture from multiple GMSL cameras, and seamless integration with other vehicle sensors.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png" alt="CCG3-8H Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround4.png" alt="CCG3-8H Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 </div>
-
----
 
 ## System Architecture
 
@@ -26,6 +24,7 @@ title: CCG3-8H Application
     <li><strong>CoaxCapture Capture Card:</strong> Installed in the vehicle's IPC (industrial PC) via PCIe, the card receives camera data and synchronization signals, ensuring frame-level alignment across all channels.</li>
     <li><strong>GPS Module:</strong> Provides 1PPS (Pulse Per Second) and TOD (Time of Day) signals for global time reference.</li>
     <li><strong>Ethernet Switch:</strong> Supports PTP/gPTP (Precision Time Protocol/Generalized PTP) for time synchronization across LiDAR, radar, and other sensors.</li>
+    <li><strong>LiDAR/External Devices:</strong> Provide TTL square wave signals to the CCG3-8H for hardware-level camera synchronization, ensuring precise timing alignment between camera captures and sensor measurements.</li>
     <li><strong>IPC (Industrial PC):</strong> Central processing unit that collects, processes, and stores synchronized data from all sensors.</li>
   </ul>
 </div>
@@ -44,6 +43,17 @@ title: CCG3-8H Application
 ---
 
 ##  **Quick Bring Up**
+
+### SDK Download
+
+<div style={{display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
+
+| Camera | Linux system version | Driver pkg download link | Driver pkg download method |
+|------------------------------|-------------------------|---------------------------|-------------------------------|
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+
+</div>
+
 #### 1. Compile the driver
 
 Before using the driver, you need to compile it. The `Driver` directory contains a `Makefile` that can build both the driver and application programs. You can either build the entire project using the top-level `Makefile`, or you can navigate to individual directories and compile them separately.

@@ -36,7 +36,7 @@ title: Getting Started with CCG3-8H
     <strong>PCIe:</strong> Gen3 x8<br/>
     <strong>OS:</strong> Linux 64-bit, Ubuntu 18.04/20.04<br/>
     <strong>SDK/API:</strong> V4L2, Documentation<br/>
-    <strong>Trigger:</strong> TTL, PTP, GPS
+    <strong>Trigger:</strong> TTL, PPS
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Operating Temp:</strong> -20°C ~ +70°C<br/>
