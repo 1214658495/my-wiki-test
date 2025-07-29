@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: Application Scenario
+title: CCG3-8H Application
 ---
 
-# Application Scenario
+# CCG3-8H Application
 
 ## Autonomous Driving Sensing Solution
 
