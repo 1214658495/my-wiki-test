@@ -8,7 +8,7 @@ This document contains all the frequently asked questions related to the CCG3-8H
 
 ## Common Issues and Solutions
 
-### Q1: How to Resolve Step1 Timeout Issues?
+### Q1: How to Resolve Script Execution Errors?
 
 **Problem Description:**
 When encountering step1 timeout errors during module loading, you may see error messages similar to:
@@ -62,34 +62,37 @@ camera_serdes_type[7]=1
 
 ---
 
-### Q3: Network Card Connection Issues
+### Q3: How Do Image Capture Cards Achieve Synchronization?
 
-**Problem Description:**
-Issues with network card connectivity and proper cable connections.
+<!-- **Answer:** -->
 
-**Network Topology Diagram:**
+**Method 1 (Recommended):** For detailed instructions, please Refer to the links below
 
-```
-Master Node (ETH0)
-├── CCC Capture Card (slave)
-│   ├── ETH
-│   └── GPS
-└── Connection Details
-```
+-[Network Topology Diagram1](https://autosensee.feishu.cn/docx/CKDYdlrlkoWvTpx39wvcSHzCnyf)
 
 **Connection Requirements:**
-1. **Primary Connection**: ETH0 on master node connects to CCC capture card
+1. **Primary Connection**: ETH0 on master node (IPC) connects to CCG3 capture card (slave)
 2. **GPS Integration**: GPS module connects to the capture card for timing synchronization
-3. **Cable Specifications**: Use appropriate Ethernet cables for stable connection
+3. **PTP Protocol**: Enables precise time synchronization between devices
+<br/>
 
-**Troubleshooting Steps:**
-1. Verify physical cable connections
-2. Check network interface status
-3. Validate IP configuration
-4. Test connectivity with ping commands
+**Method 2:** For detailed instructions, please Refer to the links below
+<!-- ```
+GPS → Time Synchronization Box → GMSL Camera Array
+ ↓                    ↓                    ↓
+PTP →         Ethernet Switch  → Multiple Cameras
+ ↓                    ↓                    ↓
+Lidar →         PTP Sync       → Capture Card System
+``` -->
+
+-[Network Topology Diagram2](https://autosensee.feishu.cn/docx/ErBzdsOkFowOt0xTc5ecdAvgnqe)
+
+<!-- **Additional Resources:**
+- [PTP Configuration Guide](../guides/ptp-configuration.md)
+- [Troubleshooting Network Issues](../guides/network-troubleshooting.md) -->
 
 ---
-
+<!--
 ### Q4: Time Synchronization and PTP Configuration
 
 **System Architecture Diagram:**
@@ -120,106 +123,54 @@ Lidar → PTP Sync → Capture Card System
 - Verify timing accuracy requirements
 - Monitor synchronization status regularly
 
----
+--- -->
 
-### Q5: PPS External Trigger Configuration
+### Q4: PPS External Trigger Configuration
 
-**Problem Description:**
-Configuring external PPS (Pulse Per Second) triggers for precise timing control.
-
-**Configuration Method:**
-Use ITL trigger format with the following specifications:
+**TTL Trigger Usage Method 1:**
+The capture card's [GPS] interface defines the following 2 interfaces (red and green) for connecting an external TTL trigger square wave, and configuring the corresponding script parameters.
 
 **Pin Configuration Table:**
 
-| Pin Number | Signal Name | Ground | Signal | Color Code | External |
+| Red Pin | White Pin | Green Pin | Blue Pin | Black Pin | Black Pin |
 |------------|-------------|---------|---------|------------|----------|
-| PPS Pin    | UART_RX     | GND     | Signal  | UART_TX    | External |
+| PPS Pin    | UART_RX     | GND     | -  | UART_TX    | GND |
 
 **GPS Configuration Details:**
 
 When using GPS as the timing source, configure the following parameters:
 
 ```bash
-# Trigger mode configuration
-card_trigger_signal_mode = "1"  # Enable external trigger
+<file name：pcie_init_cardx.sh>
+# Trigger mode config {0:no trigger; 1:reserved; 2:inner trigger; 3:external trigger}
+card_trigger_signal_mode               "3"
 
-# Camera external signal input configuration
-card_external_signal_input_fps = "25" Hz
+# Card external signal input fps config.
+# Camera external output fps config.
+# The following two configurations are valid only when card_trigger_signal_mode is "3".
+card_external_signal_input_fps         "1" Hz
+camera_external_output_fps             "20" Hz
 
-# Camera external output configuration
-camera_external_output_fps = "25" Hz
-
-# Timer output configuration
-camera_timer_output_fps = "30" Hz
+# Camera inner output fps config
+camera_inner_output_fps                "30" Hz
 ```
 
-**ITL Trigger Usage:**
-- Connect external trigger source to designated ITL trigger pins
-- Configure trigger signal parameters according to camera specifications
-- Validate trigger timing accuracy and stability
+**TTL Trigger Usage Method 2:**
+If there is no external TTL trigger available, the capture card can internally generate a variable TTL trigger (only applicable for camera synchronization on a single capture card). These settings can be flexibly configured through script parameters (as shown in the red settings below: indicating the generation of a 30Hz synchronization TTL signal from within the capture card).
 
-**Important Notes:**
-- Ensure proper grounding for signal integrity
-- Use appropriate cable shielding for noise reduction
-- Test trigger functionality before production deployment
+```bash
+<file name：pcie_init_cardx.sh>
+# Trigger mode config {0:no trigger; 1:reserved; 2:inner trigger; 3:external trigger}
+card_trigger_signal_mode               "2"
+
+# Card external signal input fps config.
+# Camera external output fps config.
+# The following two configurations are valid only when card_trigger_signal_mode is "3".
+card_external_signal_input_fps         "1" Hz
+camera_external_output_fps             "20" Hz
+
+# Camera inner output fps config
+camera_inner_output_fps                "30" Hz
+```
 
 ---
-
-### Q6: Graphics Card Compatibility Issues
-
-**Problem Description:**
-Compatibility issues between different graphics card models and the capture system.
-
-**Solution Approach:**
-
-**Method 1 - Single Card Configuration:**
-For systems with single graphics card setup, refer to the CCC capture card configuration guide and follow the PTP timing synchronization setup.
-
-**Method 2 - Multi-Card Setup:**
-For detailed multi-card configuration with timing synchronization, refer to the comprehensive setup guide that includes:
-
-**System Integration Diagram:**
-
-```
-Time Synchronization Box ──→ GMSL Camera Array
-         │                           │
-         ├── GPS Input               ├── Camera 1-8
-         │                           │
-         ├── PTP Distribution        ├── Ethernet Switch
-         │                           │
-         └── TTL Trigger ────────────┴── Capture Card System
-                                           │
-                                           ├── PCIe Interface
-                                           │
-                                           └── Host Computer
-```
-
-**Configuration Requirements:**
-1. **Hardware Compatibility:**
-   - Verify PCIe slot compatibility
-   - Check power supply requirements
-   - Ensure adequate cooling
-
-2. **Driver Installation:**
-   - Install latest graphics drivers
-   - Configure capture card drivers
-   - Validate driver compatibility
-
-3. **Performance Optimization:**
-   - Configure memory allocation
-   - Set up DMA transfers
-   - Optimize data throughput
-
-**Troubleshooting Steps:**
-1. Check hardware detection in system
-2. Verify driver installation status
-3. Test basic functionality
-4. Monitor system performance
-5. Validate data capture quality
-
----
-
-
-*This FAQ document is regularly updated to reflect the latest features and capabilities of the CCG3-8H.*
-

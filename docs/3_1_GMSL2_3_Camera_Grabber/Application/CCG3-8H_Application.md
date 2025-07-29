@@ -8,8 +8,8 @@ title: CCG3-8H Application
 ## Autonomous Driving Sensing Solution
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
-  <div style={{fontSize: '1.1em', color: 'var(--ifm-color-primary)'}}>
-    In advanced autonomous driving systems, precise and reliable multi-sensor data acquisition and synchronization are critical for perception and decision-making. The <strong>CCG3-8H</strong> is designed to address these requirements by providing high-performance, synchronized video capture from multiple GMSL cameras, and seamless integration with other vehicle sensors.
+  <div style={{fontSize: '1.1em'}}>
+    The video capture card can be applied to the unmanned vehicle. lt needs multiple camerasmillimeter wave radar, Lidar, GPs, integrated navigation and other sensors, and these sensorsneed to be connected to a powerful computing platform, such as an industrial personalcomputer, Then a product that can simultaneously connect multiple cameras and synchronizewith other sensors is needed. The video capture card is to provide high-speed, multi camera,low delay image access solution for unmanned vehicle. The following is the overall framediagram of a company's automatic driving fleet.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround4.png" alt="CCG3-8H Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
@@ -33,7 +33,7 @@ title: CCG3-8H Application
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem'}}>
   <ol style={{margin: 0, paddingLeft: '1.2em'}}>
-    <li>The GPS module outputs 1PPS and TOD signals, which are distributed to both the CoaxCapture card and the Ethernet switch.</li>
+    <li>The GPS provides 1PPS and TOD signals to the time synchronization box, which then outputs PTP information via Ethernet to the capture cards and other devices.</li>
     <li>The CoaxCapture card uses these signals to synchronize all connected GMSL cameras, ensuring that each frame is timestamped accurately and aligned with other vehicle sensors.</li>
     <li>The Ethernet switch propagates PTP/gPTP signals to LiDAR, radar, and other devices, enabling system-wide time synchronization.</li>
     <li>All sensor data, including video, LiDAR, and radar, are collected by the IPC for real-time processing and recording.</li>

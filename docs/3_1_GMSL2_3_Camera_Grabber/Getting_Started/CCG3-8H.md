@@ -11,7 +11,7 @@ title: Getting Started with CCG3-8H
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_backup.png" alt="CCG3-8H" style={{maxWidth: '42%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    <strong>CCG3-8H</strong> is a high-speed image product based on FPGA independently developed by SZ SENSING TECH CO.,LTD. Compared with Gen1, Gen2 uses PCI-e Gen3 technology, doubling speed and bandwidth. It supports GMSL/GMSL2 cameras, features high frame rate, high speed, low latency, and is widely used in autonomous machines, vehicles, and data capture.
+    CoaxCapture II TE GMSL Video Capture card (hereinafter referred to as Capture Card) <strong>CCG3-8H</strong> is an image capture product that can connect GMSL cameras. It has the advantages of high frame rate, high speed, low delay, etc., and it is widely used in unmanned vehicles, automatic driving, autonomous machines, data capture and other scenes.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/Coaxcapture_Card/" target="_blank" rel="noopener noreferrer">
@@ -28,7 +28,7 @@ title: Getting Started with CCG3-8H
     <strong>Model:</strong> CCG3-8H<br/>
     <strong>Camera Input:</strong> 8x GMSL2/GMSL<br/>
     <strong>Resolution:</strong> 1-8MP<br/>
-    <strong>Bit Depth:</strong> 8/12/16-bit<br/>
+    <strong>Bit Depth:</strong> 8/12-bit<br/>
     <strong>Data Bandwidth:</strong> 6Gbps/cable
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
@@ -54,7 +54,7 @@ title: Getting Started with CCG3-8H
 
 :::note Highlights
 - 8 GMSL cameras input, up to 8MP@30fps
-- PCI-e Gen3 x8 lane, ultra-high bandwidth
+- PCIe Gen3 x8 lane, ultra-high bandwidth
 - Supports external trigger & PTP time sync
 - Low latency, high reliability
 :::
@@ -101,10 +101,9 @@ title: Getting Started with CCG3-8H
 
 #### Follow the steps below to install the product:
 
-1. Connect the GMSL camera to the CCG3-8H using the coaxial cable
-2. Insert the CCG3-8H into the PCIe slot of the host computer
-3. Connect the power supply to the CCG3-8H
-4. Power on the system
+1. Insert the CCG3-8H into the PCIe slot of the host computer
+2. Connect the GMSL camera to the CCG3-8H using the coaxial cable
+3. Power on the system
 
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
   <iframe
