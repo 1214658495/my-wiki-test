@@ -12,7 +12,6 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 
 **A1:** Follow these systematic troubleshooting steps:
 - Ensure all GMSL cables are properly connected
-- Verify power supply connections (12V DC)
 - Check LED status indicators on the card
 - Confirm driver installation is complete
 - Verify device recognition in system
@@ -38,13 +37,19 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 | Horizon | J5 | MAX9296A |
 | Horizon | J5 | MAX96712 |
 | TI | TDA4VM | MAX96724 |
+| Others | Various SOCs | Compatible Deserializers |
 
-### Q4: How does the video injection card handle synchronization?
+**Note:** Other SOCs and deserializers may also be compatible. Please contact technical support for specific compatibility verification and configuration assistance.
 
-**A4:** Advanced synchronization features:
-- Real-time synchronization with no additional steps required
-- Multi-sensor coordination between workstation and camera control
-- Synchronized data transmission and collection in real-time
+### Q4: How does the video injection card synchronize with other sensors?
+
+**A4:**
+
+• **Data Collection Phase:** Original sensor data (Camera RAW/YUV, LiDAR point clouds, CAN messages) are timestamped with UTC time for alignment.
+
+• **Video injection card** typically operates based on video frame generation timestamps, while LiDAR has point cloud data with inherent timing information, and CAN bus messages also have their own temporal markers. To achieve precise synchronization, a unified time reference must be established.
+
+• **Playback Phase:** Supports users reading each sensor's timestamp on the PC side, calculating playback timing based on absolute time.
 
 ### Q5: Can external triggers and delays be configured?
 
@@ -129,7 +134,7 @@ Customers can directly use these APIs to implement video injection logic. Custom
 
 ### Q13: How does the simulation software work with GPU acceleration?
 
-**A13:** The simulation software uses GPU virtual transmission channels to generate data, then transfers the data to CPU memory through CPU-based video injection APIs to achieve video injection. Reference section 11.3.
+**A13:** The simulation software uses GPU virtual transmission channels to generate data, then transfers the data to CPU memory through CPU-based video injection APIs to achieve video injection. 
 
 ---
 
