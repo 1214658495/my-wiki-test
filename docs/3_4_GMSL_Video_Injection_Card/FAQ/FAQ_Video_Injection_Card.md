@@ -119,6 +119,18 @@ Configuration file: `fun_fpga_cfg.sh` location: `/us`
 
 For immediate assistance, contact our technical support team or visit our documentation portal.
 
+### Q12: What SDK and API interfaces are available for custom applications?
+
+**A12:** Our API interfaces:
+- **Send Interface**: `int send_one_frame(unsigned char* buffer);`
+- **Register Read/Write Interface**: `static int reg_rw(int addr, int write, int value);`
+
+Customers can directly use these APIs to implement video injection logic. Customers can use the register read/write interface to save registers and use the send interface to achieve video injection.
+
+### Q13: How does the simulation software work with GPU acceleration?
+
+**A13:** The simulation software uses GPU virtual transmission channels to generate data, then transfers the data to CPU memory through CPU-based video injection APIs to achieve video injection. Reference section 11.3.
+
 ---
 
 *This FAQ document is regularly updated to reflect the latest features and capabilities of the CIG4-8H Video Injection Card.*
