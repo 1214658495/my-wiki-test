@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Getting Started with CCG3-8H
 ---
 
-# CCG3-8H
+# Getting Started with CCG3-8H
 
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
@@ -10,7 +11,7 @@ sidebar_position: 1
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_backup.png" alt="CCG3-8H" style={{maxWidth: '42%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    <strong>CCG3-8H</strong> is a high-speed image product based on FPGA independently developed by ShenZhen SENSING Technology Co.,Ltd. Compared with Gen1, Gen2 uses PCI-e Gen3 technology, doubling speed and bandwidth. It supports GMSL/GMSL2 cameras, features high frame rate, high speed, low latency, and is widely used in autonomous machines, vehicles, and data capture.
+    <strong>CCG3-8H</strong> is a high-speed image product based on FPGA independently developed by SZ SENSING TECH CO.,LTD. Compared with Gen1, Gen2 uses PCI-e Gen3 technology, doubling speed and bandwidth. It supports GMSL/GMSL2 cameras, features high frame rate, high speed, low latency, and is widely used in autonomous machines, vehicles, and data capture.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/Coaxcapture_Card/" target="_blank" rel="noopener noreferrer">
@@ -60,6 +61,8 @@ sidebar_position: 1
 
 ### Supported Camera List
 
+<div style={{display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
+
 | No. | Camera                      | Resolution | Output Data | Ubuntu18.04/20.04 |
 |-----| --------------------------- | ---------- | ----------- | ------------- |
 | 1   | SG1-OX01F10C-GMSL-Hxxx      | 1280H*720V | YUV422      | ✅           |
@@ -76,9 +79,14 @@ sidebar_position: 1
 | 12  | SG8-OX08BC-5300-GMSL2-Hxxx  | 3840H*2160V| YUV422      | ✅           |
 | 13  | SG8-IMX728C-G2G-Hxxx        | 3840H*2160V| RAW12       | ✅           |
 
-### Hardware Preparation
+</div>
+
+## Hardware Preparation
 
 #### Parts List
+
+<div style={{display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
+
 | No. | Product model                 | Quantity | Remark                |
 |-----|-------------------------------|----------|-----------------------|
 | 1   | Power connection wire         | 1        | Standard configuration|
@@ -86,6 +94,8 @@ sidebar_position: 1
 | 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
 | 4   | Aviation plug turn to network cable | 1 | Standard configuration|
 | 5   | GPS connection wire           | 1        | Standard configuration|
+
+</div>
 
 
 
@@ -113,199 +123,24 @@ sidebar_position: 1
 ## Software Preparation
 
 ### 1. SDK Download
+
+<div style={{display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>
+
 | Camera | Linux system version | Driver pkg download link | Driver pkg download method |
 |------------------------------|-------------------------|---------------------------|-------------------------------|
 | GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 
+</div>
+
+## Detailed Usage Instructions
+
+For comprehensive software setup, SDK configuration, and video transfer protocols, please refer to our detailed application guide:
+
+**[📖 Complete Application Guide](../Application/CCG3-8H_Application)**
+
 
 <br />
 
-**Step 2.** Quick Bring Up.<br />
-#### 1. Compile the driver
-
-Before using the driver, you need to compile it. The `Driver` directory contains a `Makefile` that can build both the driver and application programs. You can either build the entire project using the top-level `Makefile`, or you can navigate to individual directories and compile them separately.
-
-To build the driver:
-
-```
-make
-```
-
-If you need to clean the build directory and rebuild from scratch:
-
-```
-make clean
-make
-```
-
-#### 2. Usage Instructions
-
-#### 2.1 Loading the Driver
-
-To load the driver, you need to run the script `load_modules.sh` with administrator privileges. In the `bash` directory, execute the following command:
-
-```
-sudo ./load_modules.sh
-```
-
-If the driver loads successfully, you will see the following message:
-
-```
-Loading Pcie driver...
-Pcie driver installed correctly.
-Video devices were recognized.
-DONE
-```
-
-Additionally, video devices and control interface files will be created in the `/dev` directory:
-
-- `/dev/video0`, `/dev/video1`, `/dev/video2`, `/dev/video3` (video devices for each Capture card)
-- `/dev/xdma0_bypass`, `/dev/xdma0_control`, `/dev/xdma0_user` (control interface devices for each Capture card)
-
-Note: The numbers (0, 1, 2, etc.) correspond to the Capture card index. For example, `xdma0_bypass` corresponds to the first Capture card, `xdma1_bypass` to the second, and so on.
-
-#### 2.2 Initializing Capture Cards
-
-To initialize the first Capture card and configure the attached camera, use the following command:
-
-```
-sudo ./pcie_init_card0.sh
-```
-
-If the script fails, you may need to rebuild the driver and applications as described earlier.
-
-#### 2.3 Image Testing
-
-You can test the video stream from your camera using the open-source application `guvcview`. If it's not installed, you can install it with:
-
-```
-sudo apt-get install guvcview
-```
-
-To test the video streams, run the following commands for each video device:
-
-```
-guvcview -d /dev/video0
-guvcview -d /dev/video1
-```
-
-You should be able to see live video from each connected camera.
-
-#### 3. Configuring Capture Cards
-
-There are two example scripts in this directory: `pcie_init_card0.sh` and `pcie_init_card1.sh`. These scripts are used to initialize Capture cards and configure the attached cameras. You can modify these scripts according to your camera's specifications.
-
-#### Configuration Parameters
-
-In the configuration scripts, the following parameters can be modified to customize the behavior of the Capture cards and cameras.
-
-#### 3.1 Modify Card Number
-
-In the script, the card number is specified at line 10:
-
-```
-set_card 0
-```
-
-The `0` refers to the first Capture card. Change this value to `1` for the second card, and so on.
-
-#### 3.2 Camera anc config
-
-Lines 27-34 in the script configure whether the camera has ANC (Ancillary) functionality. Set `0` to enable ANC or `1` to disable it. The `x` refers to the interface number (0-7 for the first card, 8-15 for the second card, and so on).
-
-```
-camera_anc_enable[x]
-```
-
-#### 3.3 Image Output Format
-
-"The lines 38-45 correspond to the camera output format. RAW can be ignored, and incorrect configuration of YUYV or UYVY may cause image display issues.
-
-The first parameter (shown as 0 below) indicates which interface to use. For the first Capture capture card, channels 1 to 8 correspond to 0-7, and for the second Capture capture card, channels 1 to 8 correspond to 8-15.
-
-The second parameter specifies the camera's output image format, which can be either 'YUYV' or 'UYVY'."
-
-```
-video_output_yuv_format 0 "UYVY"
-```
-
-#### 3.4 Trigger Mode
-
-Configure the trigger mode in the script. The options are:
-
-- `0`: No trigger (master mode only, no external trigger needed).
-- `1`: Reserved.
-- `2`: Internal trigger (PCIE card triggers the camera at a specified frequency).
-- `3`: External trigger (triggered by an external signal).
-
-```
-card_trigger_signal_mode       	"2"
-```
-
-#### 3.5 External Trigger Configuration
-
-If you use an external trigger, configure the following parameters:
-
-```
-card_external_signal_input_fps 	"1" Hz
-camera_external_output_fps     	"30" Hz
-```
-
-#### 3.6 Internal Trigger Configuration
-
-When the `card_trigger_signal_mode` parameter is set to "2", the frequency of the internally generated trigger signal is configured through the `camera_inner_output_fps` on line 66, with the unit in Hz
-
-```
-camera_inner_output_fps        	"30" Hz
-```
-
-#### 3.7 Trigger Delay
-
-You can set the trigger delay for each camera:
-
-```
-camera_triger_delay[x]=0
-```
-
-#### 3.8 Camera Resolution
-
-Configure the resolution for each camera interface (e.g., for interface `0`, set a resolution of `1920x1080`):
-
-```
-camera_resolution 0 1920  1080
-```
-
-#### 3.9 Camera Initialization
-
-The `camera_serdes_type` parameter initializes the camera sensor, serializer, and deserializer. For example:
-
-```
-camera_serdes_type[0]=1
-```
-
-Common YUYV or UYVY Configurations
-
-| **Serializer** | ANC  | **Configuration Parameter** |
-| -------------- | ---- | --------------------------- |
-| MAX96705          | no   | 0                           |
-| MAX9295           | no   | 1                           |
-| MAX96717F         | no   | 2                           |
-| MAX9295           | yes  | 3                           |
-| MAX96717F         | yes  | 4                           |
-
-Common RAW or RAW12 Configurations
-
-| **Serializer** | **Sensor Model** | **Configuration Parameter** |
-| -------------- | ---------------- | --------------------------- |
-| MAX9295           | AR0233           | 102                         |
-| MAX9295           | AR0820           | 103                         |
-| MAX9295           | IMX390           | 104                         |
-| MAX9295           | IMX490           | 105                         |
-| MAX9295           | ISX031           | 11                          |
-| MAX9295           | IMX728           | 106                         |
-| MAX9295           | SC2331AT         | 108                         |
-| MAX9295           | OX08D            | 109                         |
-| MAX96717F         | IMX623           | 113                         |
 
 ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
