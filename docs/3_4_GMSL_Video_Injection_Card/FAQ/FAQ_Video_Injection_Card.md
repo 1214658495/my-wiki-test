@@ -8,7 +8,7 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 
 <!-- ![SENSING Logo](/img/SENSING_logo_en2.png) -->
 
-### Q1: How do I troubleshoot issues with CIG4-8H?
+### Q1: What to do when CIG4-8H has problems?
 
 **A1:** Follow these systematic troubleshooting steps:
 - Ensure all GMSL cables are properly connected
@@ -19,7 +19,7 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 ### Q2: What are the key specifications of the video injection card?
 
 **A2:** The CIG4-8H offers:
-- **Maximum GMSL video output**: Industry-leading performance
+- **Maximum GMSL video output**: Supports up to 8 channels
 - **Resolution and frame rate**: 8MP@30fps per channel
 - **Video formats**: YUV422, RAW12, RAW10, RAW14
 - **Serializer**: GMSL2 MAX9295A with customizable settings
@@ -54,12 +54,11 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 ### Q5: Can external triggers and delays be configured?
 
 **A5:** Yes, comprehensive trigger configuration is supported:
-- External trigger sources or fixed-frequency triggers
-- Complete simulation of camera trigger behavior
-- Configurable timing intervals (minimum delay: < 1ms, example: 3ms)
-- Default setting: 3000 (current: 600ms maximum)
+- Supports external triggering or internal triggering at a fixed frame rate.
+- The external triggering function fully simulates the camera's trigger.
+- Supports adjustable trigger delay. How should the delay time be set?
 
-Configuration file: `fun_fpga_cfg.sh` location: `/us`
+Configuration file: `fun_fpga_cfg.sh` location: `/usr/local/bin/`
 
 ```bash
 ./tools/reg_rw /dev/xdma0_user 0x30044 w 100
@@ -76,13 +75,13 @@ Configuration file: `fun_fpga_cfg.sh` location: `/us`
 
 **A6:** Exceptional synchronization performance:
 - Synchronization accuracy: Less than 1μs precision between multiple channels
-- Precise timing coordination across all active channels
+<!-- - Precise timing coordination across all active channels -->
 
 ### Q7: Does the video injection card support camera I2C configuration?
 
 **A7:** Yes, comprehensive I2C support:
 - Full simulation of camera I2C addresses
-- Configurable I2C communication speeds
+- Supports reading and writing registers
 
 ### Q8: What Ubuntu system versions are supported?
 
@@ -94,29 +93,18 @@ Configuration file: `fun_fpga_cfg.sh` location: `/us`
 
 **A9:** CIG4-8H technical specifications:
 - **Interface**: PCIe Gen3 x8
-- **Power consumption**: 25W maximum
+- **Power consumption**: 12W maximum
 - **Operating temperature**: -40°C to +85°C
 - **Maximum channels**: 8 simultaneous GMSL channels
 - **Resolution support**: Up to 8MP per channel
 - **Frame rate**: Up to 30fps per channel
 - **GMSL compatibility**: GMSL1 and GMSL2 support
 - **Cable length**: Up to 15 meters over coaxial cable
-- **Connector type**: FAKRA or SMA connectors
+- **Connector type**: FAKRA connectors
 
-<!-- ![Technical Specifications](/img/SENSING_logo_Homepage.png) -->
+### Q10: Where can I find additional support and documentation?
 
-### Q10: What advanced configuration options are available?
-
-**A10:** Advanced configuration guidelines:
-- **Multi-Card Scalability**: Ensure adequate PCIe lanes and power supply
-- **Thermal management**: Proper cooling for multi-card configurations
-- **Fault injection**: Built-in fault injection for testing robustness
-- **Performance optimization**: Buffer management and CPU affinity configuration
-- **Memory allocation**: Ensure sufficient system memory allocation
-
-### Q11: Where can I find additional support and documentation?
-
-**A11:** SENSING support resources:
+**A10:** SENSING support resources:
 - **Technical documentation**: Complete user manuals and API documentation
 - **Software development kit**: Full SDK with examples and tutorials
 - **Technical support**: Direct access to engineering support team
@@ -124,17 +112,17 @@ Configuration file: `fun_fpga_cfg.sh` location: `/us`
 
 For immediate assistance, contact our technical support team or visit our documentation portal.
 
-### Q12: What SDK and API interfaces are available for custom applications?
+### Q11: What SDK and API interfaces are available for custom applications?
 
-**A12:** Our API interfaces:
+**A11:** Our API interfaces:
 - **Send Interface**: `int send_one_frame(unsigned char* buffer);`
 - **Register Read/Write Interface**: `static int reg_rw(int addr, int write, int value);`
 
-Customers can directly use these APIs to implement video injection logic. Customers can use the register read/write interface to save registers and use the send interface to achieve video injection.
+These APIs enable direct implementation of video injection logic. Use the register read/write interface to configure and save register settings, then utilize the send interface to achieve video injection functionality.
 
-### Q13: How does the simulation software work with GPU acceleration?
+### Q12: How does the simulation software work with GPU acceleration?
 
-**A13:** The simulation software uses GPU virtual transmission channels to generate data, then transfers the data to CPU memory through CPU-based video injection APIs to achieve video injection. 
+**A12:** The simulation software leverages GPU acceleration for data generation through virtual transmission channels, then efficiently transfers the processed data to CPU memory via optimized video injection APIs to achieve seamless video injection functionality.
 
 ---
 

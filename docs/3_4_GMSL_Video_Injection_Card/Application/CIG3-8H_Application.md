@@ -82,7 +82,6 @@ sidebar_position: 1
   <ul style={{margin: 0, paddingLeft: '1.2em'}}>
     <li><strong>IPC (Industrial PC):</strong> Provides the source video data through PCIe Gen3 interface.</li>
     <li><strong>CIG4-8H Video Injection Card:</strong> Receives data from IPC, processes it based on timestamps, and outputs synchronized video streams.</li>
-    <li><strong>Ethernet Switch:</strong> Enables gPTP/PTP synchronization between all system components.</li>
     <li><strong>ACU (Autonomous Control Unit):</strong> Receives the injected video data for testing and validation purposes.</li>
   </ul>
 </div>
