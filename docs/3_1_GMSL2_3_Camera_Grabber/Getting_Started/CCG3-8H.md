@@ -11,7 +11,7 @@ title: Getting Started with CCG3-8H
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_backup.png" alt="CCG3-8H" style={{maxWidth: '42%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    CoaxCapture II TE GMSL Video Capture card (hereinafter referred to as Capture Card) <strong>CCG3-8H</strong> is an image capture product that can connect GMSL cameras. It has the advantages of high frame rate, high speed, low delay, etc., and it is widely used in unmanned vehicles, automatic driving, autonomous machines, data capture and other scenes.
+    CoaxCapture II GMSL Video Capture card (hereinafter referred to as Capture Card) <strong>CCG3-8H</strong> is an image capture product that can connect GMSL cameras. It has the advantages of high frame rate, high speed, low delay, etc., and it is widely used in unmanned vehicles, automatic driving, autonomous machines, data capture and other scenes.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/Coaxcapture_Card/" target="_blank" rel="noopener noreferrer">

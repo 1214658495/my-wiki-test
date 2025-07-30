@@ -136,9 +136,9 @@ The capture card's [GPS] interface defines the following 2 interfaces (red and g
 |------------|-------------|---------|---------|------------|----------|
 | PPS Pin    | UART_RX     | GND     | -  | UART_TX    | GND |
 
-**GPS Configuration Details:**
+**TTL Trigger Configuration Details:**
 
-When using GPS as the timing source, configure the following parameters:
+<!-- When using GPS as the timing source, configure the following parameters: -->
 
 ```bash
 <file name：pcie_init_cardx.sh>
@@ -154,7 +154,7 @@ camera_external_output_fps             "20" Hz
 # Camera inner output fps config
 camera_inner_output_fps                "30" Hz
 ```
-
+<br/>
 **TTL Trigger Usage Method 2:**
 If there is no external TTL trigger available, the capture card can internally generate a variable TTL trigger (only applicable for camera synchronization on a single capture card). These settings can be flexibly configured through script parameters (as shown in the red settings below: indicating the generation of a 30Hz synchronization TTL signal from within the capture card).
 

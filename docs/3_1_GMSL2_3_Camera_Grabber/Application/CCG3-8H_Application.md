@@ -9,7 +9,7 @@ title: CCG3-8H Application
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{fontSize: '1.1em'}}>
-    The video capture card can be applied to the unmanned vehicle. lt needs multiple camerasmillimeter wave radar, Lidar, GPs, integrated navigation and other sensors, and these sensorsneed to be connected to a powerful computing platform, such as an industrial personalcomputer, Then a product that can simultaneously connect multiple cameras and synchronizewith other sensors is needed. The video capture card is to provide high-speed, multi camera,low delay image access solution for unmanned vehicle. The following is the overall framediagram of a company's automatic driving fleet.
+    The video capture card can be applied to the unmanned vehicle. It needs multiple cameras, millimeter wave radar, Lidar, GPS, integrated navigation and other sensors, and these sensors need to be connected to a powerful computing platform, such as an industrial personal computer. Then a product that can simultaneously connect multiple cameras and synchronize with other sensors is needed. The video capture card is to provide high-speed, multi camera, low delay image access solution for unmanned vehicle. Here are typical solution examples.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround4.png" alt="CCG3-8H Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
