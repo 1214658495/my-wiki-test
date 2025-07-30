@@ -21,11 +21,11 @@ sidebar_position: 1
       </div>
       <div style={{flex: 1}}>
         <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#1976d2'}}>Data Preparation</h4>
-        <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>Load pre-recorded camera data (H.264/H.265) or simulation data for algorithm validation into the host PC memory</p>
+        <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>Load pre-recorded camera data or simulation data for algorithm validation into the host PC memory</p>
       </div>
     </div>
 
-    <div style={{textAlign: 'center', fontSize: '1.5em', color: '#666'}}>↓</div>
+    <!-- <div style={{textAlign: 'center', fontSize: '1.5em', color: '#666'}}>↓</div>
 
     <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
       <div style={{background: '#f3e5f5', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
@@ -35,13 +35,13 @@ sidebar_position: 1
         <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#7b1fa2'}}>Format Conversion</h4>
         <p style={{margin: 0, fontSize: '0.9em', color: '#666'}}>GPU-accelerated conversion to raw video formats (YUV422, RAW10/12/14) compatible with automotive cameras</p>
       </div>
-    </div>
+    </div> -->
 
     <div style={{textAlign: 'center', fontSize: '1.5em', color: '#666'}}>↓</div>
 
     <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
       <div style={{background: '#e8f5e8', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
-        <span style={{fontWeight: 'bold', color: '#388e3c'}}>3</span>
+        <span style={{fontWeight: 'bold', color: '#388e3c'}}>2</span>
       </div>
       <div style={{flex: 1}}>
         <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#388e3c'}}>GMSL Signal Generation</h4>
@@ -53,7 +53,7 @@ sidebar_position: 1
 
     <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
       <div style={{background: '#fff3e0', borderRadius: '50%', width: '40px', height: '40px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0}}>
-        <span style={{fontWeight: 'bold', color: '#f57c00'}}>4</span>
+        <span style={{fontWeight: 'bold', color: '#f57c00'}}>3</span>
       </div>
       <div style={{flex: 1}}>
         <h4 style={{margin: 0, marginBottom: '0.5rem', color: '#f57c00'}}>ECU Integration</h4>

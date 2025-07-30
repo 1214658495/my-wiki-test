@@ -12,7 +12,7 @@ title: CCG3-8M Application
     The video capture card can be applied to the unmanned vehicle. It needs multiple cameras, millimeter wave radar, Lidar, GPS, integrated navigation and other sensors, and these sensors need to be connected to a powerful computing platform, such as an industrial personal computer. Then a product that can simultaneously connect multiple cameras and synchronize with other sensors is needed. The video capture card is to provide high-speed, multi camera, low delay image access solution for unmanned vehicle. Here are typical solution examples.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround4.png" alt="CCG3-8M Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8M/CCG3-8M_useGround2.png" alt="CCG3-8M Application Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 </div>
 
@@ -152,12 +152,11 @@ To modify parameters for different cameras, adjust:
 ---
 
 ## Firmware Programming  
-The capture card is pre-programmed at the factory to support YUV, RAW10, or RAW12 modes. To switch modes:  
+The capture card is pre-programmed at the factory to support YUV or RAW12 modes. To switch modes:  
 
 1. Reprogram the firmware using the corresponding file from the `FirmwareResources/` directory:  
    - **YUYV/UYVY (YUV)**: Use `pcie_zu_fw-xxxx-YUV.tar.gz`.  
    - **RAW12**: Use `pcie_zu_fw-xxxx-RAW12.tar.gz`.  
-   - **RAW10**: Use `pcie_zu_fw-xxxx-RAW10.tar.gz`.  
 
 2.The command to upgrade the firmware of the capture card is as follows:
 ```bash
