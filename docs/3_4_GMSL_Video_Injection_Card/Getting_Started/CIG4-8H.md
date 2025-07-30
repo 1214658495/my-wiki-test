@@ -88,7 +88,7 @@ title: Getting Started with CIG4-8H
 ## Hardware Preparation
 ### Block Diagram
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra Application Diagram" style={{maxWidth: '90%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra Application Diagram" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 #### Parts List

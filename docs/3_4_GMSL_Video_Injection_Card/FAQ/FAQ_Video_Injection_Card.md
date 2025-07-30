@@ -8,7 +8,7 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 
 <!-- ![SENSING Logo](/img/SENSING_logo_en2.png) -->
 
-### Q1: What to do when CIG4-8H has problems?
+### Q1: How to deal with ClG4-8H problems?
 
 **A1:** Follow these systematic troubleshooting steps:
 - Ensure all GMSL cables are properly connected
@@ -58,17 +58,17 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 - The external triggering function fully simulates the camera's trigger.
 - Supports adjustable trigger delay. How should the delay time be set?
 
-Configuration file: `fun_fpga_cfg.sh` location: `/usr/local/bin/`
+Configuration file: `fun_fpga_cfg.sh` 
 
 ```bash
-./tools/reg_rw /dev/xdma0_user 0x30044 w 100
-./tools/reg_rw /dev/xdma0_user 0x30048 w 100
-./tools/reg_rw /dev/xdma0_user 0x3004c w 100
-./tools/reg_rw /dev/xdma0_user 0x30050 w 100
-./tools/reg_rw /dev/xdma0_user 0x30054 w 100
-./tools/reg_rw /dev/xdma0_user 0x30058 w 100
-./tools/reg_rw /dev/xdma0_user 0x3005c w 100
-./tools/reg_rw /dev/xdma0_user 0x30060 w 100
+./tools/reg_rw /dev/xdma0_user 0x30044 w 100  # 100 represents 100us delay
+./tools/reg_rw /dev/xdma0_user 0x30048 w 100  
+./tools/reg_rw /dev/xdma0_user 0x3004c w 100  
+./tools/reg_rw /dev/xdma0_user 0x30050 w 100  
+./tools/reg_rw /dev/xdma0_user 0x30054 w 100  
+./tools/reg_rw /dev/xdma0_user 0x30058 w 100  
+./tools/reg_rw /dev/xdma0_user 0x3005c w 100  
+./tools/reg_rw /dev/xdma0_user 0x30060 w 100  
 ```
 
 ### Q6: What is the synchronization precision between video channels?
