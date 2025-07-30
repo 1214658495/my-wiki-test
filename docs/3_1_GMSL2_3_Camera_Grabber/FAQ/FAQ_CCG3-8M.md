@@ -1,10 +1,10 @@
 ---
-sidebar_position: 6
+sidebar_position: 2
 ---
 
-# FAQs for CCH3-8H
+# FAQs for CCH3-8M
 
-This document contains all the frequently asked questions related to the CCG3-8H. This will be very helpful if you are suffering from any issues when using the CCG3-8H.
+This document contains all the frequently asked questions related to the CCG3-8M. This will be very helpful if you are suffering from any issues when using the CCG3-8M.
 
 ## Common Issues and Solutions
 

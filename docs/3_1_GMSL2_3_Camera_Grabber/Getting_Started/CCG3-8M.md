@@ -135,7 +135,7 @@ title: Getting Started with CCG3-8M
 
 For comprehensive software setup, SDK configuration, and video transfer protocols, please refer to our detailed application guide:
 
-<!-- **[📖 Complete Application Guide](../Application/CCG3-8H_Application)** -->
+**[📖 Complete Application Guide](../Application/CCG3-8M_Application)**
 
 
 <br />
@@ -143,5 +143,5 @@ For comprehensive software setup, SDK configuration, and video transfer protocol
 
 ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
-For more information, please refer to the <a href="../FAQ/FAQ_CameraGrabber" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>FAQ section</a>.
+For more information, please refer to the <a href="../FAQ/FAQ_CCG3-8M" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>FAQ section</a>.
 </div>

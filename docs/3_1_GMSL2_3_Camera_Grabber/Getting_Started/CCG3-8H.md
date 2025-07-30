@@ -127,7 +127,7 @@ title: Getting Started with CCG3-8H
 
 | Camera | Linux system version | Driver pkg download link | Driver pkg download method |
 |------------------------------|-------------------------|---------------------------|-------------------------------|
-| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 
 </div>
 
@@ -143,5 +143,5 @@ For comprehensive software setup, SDK configuration, and video transfer protocol
 
 ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
-For more information, please refer to the <a href="../FAQ/FAQ_CameraGrabber" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>FAQ section</a>.
+For more information, please refer to the <a href="../FAQ/FAQ_CCG3-8H" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>FAQ section</a>.
 </div>
