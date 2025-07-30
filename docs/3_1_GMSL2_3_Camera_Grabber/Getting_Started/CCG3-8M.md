@@ -1,17 +1,17 @@
 ---
-sidebar_position: 1
-title: Getting Started with CCG3-8H
+sidebar_position: 2
+title: Getting Started with CCG3-8M
 ---
 
-# Getting Started with CCG3-8H
+# Getting Started with CCG3-8M
 
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H.png" alt="CCG3-8H" style={{maxWidth: '55%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8M/CCG3-8M.png" alt="CCG3-8M" style={{maxWidth: '40%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    CoaxCapture II GMSL Video Capture card (hereinafter referred to as Capture Card) <strong>CCG3-8H</strong> is an image capture product that can connect GMSL cameras. It has the advantages of high frame rate, high speed, low delay, etc., and it is widely used in unmanned vehicles, automatic driving, autonomous machines, data capture and other scenes.
+    CoaxCapture II GMSL Video Capture card (hereinafter referred to as Capture Card) <strong>CCG3-8M</strong> is an image capture product that can connect GMSL cameras. It has the advantages of high frame rate, high speed, low delay, etc., and it is widely used in unmanned vehicles, automatic driving, autonomous machines, data capture and other scenes.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/Coaxcapture_Card/" target="_blank" rel="noopener noreferrer">
@@ -25,7 +25,7 @@ title: Getting Started with CCG3-8H
 ### Key Specifications
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
-    <strong>Model:</strong> CCG3-8H<br/>
+    <strong>Model:</strong> CCG3-8M<br/>
     <strong>Camera Input:</strong> 8x GMSL2/GMSL<br/>
     <strong>Resolution:</strong> 1-8MP<br/>
     <strong>Bit Depth:</strong> 8/12-bit<br/>
@@ -33,7 +33,7 @@ title: Getting Started with CCG3-8H
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Processor:</strong> Xilinx ZU+<br/>
-    <strong>PCIe:</strong> Gen3 x8<br/>
+    <strong>PCIe:</strong> Gen3 x4<br/>
     <strong>OS:</strong> Linux 64-bit, Ubuntu 18.04/20.04<br/>
     <strong>SDK/API:</strong> V4L2, Documentation<br/>
     <strong>Trigger:</strong> TTL, PPS
@@ -49,12 +49,12 @@ title: Getting Started with CCG3-8H
 
 ### Block Diagram
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_diagram.png" alt="CCG3-8H Block Diagram" style={{maxWidth: '80%',  height:'auto', borderRadius: '8px'}} />
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8M/CCG3-8M_Diagram.png" alt="CCG3-8M Block Diagram" style={{maxWidth: '80%', height:'auto', borderRadius: '8px'}} />
 </div>
 
 :::note Highlights
 - 8 GMSL cameras input, up to 8MP@30fps
-- PCIe Gen3 x8 lane, ultra-high bandwidth
+- PCIe Gen3 x4 lane, high bandwidth
 - Supports external trigger & PTP time sync
 - Low latency, high reliability
 :::
@@ -90,7 +90,7 @@ title: Getting Started with CCG3-8H
 | No. | Product model                 | Quantity | Remark                |
 |-----|-------------------------------|----------|-----------------------|
 | 1   | Power connection wire         | 1        | Standard configuration|
-| 2   | CCG3-8H capture card          | 1        | Standard configuration|
+| 2   | CCG3-8M capture card          | 1        | Standard configuration|
 | 3   | Fakra one-divided-two switching line | 4 | Standard configuration|
 | 4   | Aviation plug turn to network cable | 1 | Standard configuration|
 | 5   | GPS connection wire           | 1        | Standard configuration|
@@ -101,8 +101,8 @@ title: Getting Started with CCG3-8H
 
 #### Follow the steps below to install the product:
 
-1. Insert the CCG3-8H into the PCIe slot of the host computer
-2. Connect the GMSL camera to the CCG3-8H using the coaxial cable
+1. Insert the CCG3-8M into the PCIe slot of the host computer
+2. Connect the GMSL camera to the CCG3-8M using the coaxial cable
 3. Power on the system
 
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
@@ -127,7 +127,7 @@ title: Getting Started with CCG3-8H
 
 | Camera | Linux system version | Driver pkg download link | Driver pkg download method |
 |------------------------------|-------------------------|---------------------------|-------------------------------|
-| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3-8M) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 
 </div>
 
@@ -135,7 +135,7 @@ title: Getting Started with CCG3-8H
 
 For comprehensive software setup, SDK configuration, and video transfer protocols, please refer to our detailed application guide:
 
-**[📖 Complete Application Guide](../Application/CCG3-8H_Application)**
+<!-- **[📖 Complete Application Guide](../Application/CCG3-8H_Application)** -->
 
 
 <br />
