@@ -8,7 +8,7 @@ title: Product Selection Guide
 <div style={{background: 'linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%)', borderRadius: '15px', boxShadow: '0 4px 16px rgba(0,0,0,0.1)', padding: '2rem', marginBottom: '3rem'}}>
   <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <h3 style={{color: '#2c3e50', fontSize: '1.8em', fontWeight: '700', marginBottom: '0.5rem'}}>Choose the Right Solution for Your Needs</h3>
-    <p style={{color: '#6c757d', fontSize: '1.1em', margin: 0}}>Compare our high-performance capture cards to find the perfect fit for your application</p>
+    <!-- <p style={{color: '#6c757d', fontSize: '1.1em', margin: 0}}>Compare our high-performance capture cards to find the perfect fit for your application</p> -->
   </div>
 
   ### 1.1 Technical Specifications Comparison
