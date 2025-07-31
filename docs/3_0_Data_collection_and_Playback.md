@@ -23,36 +23,7 @@ title: Data Collection and Simulation
 
 ## Solution Architecture
 
-```mermaid
-graph TD
-    subgraph "Data Collection & Simulation Solutions"
-        CAMERA["GMSL/GMSL2 Camera"] --> GRABBER["Camera Grabber"]
-        CAMERA --> SPLITTER["Camera Splitter"]
-        CAMERA --> REPEATER["Camera Repeater"]
-        
-        SPLITTER --> ECU1["Processing Unit 1"]
-        SPLITTER --> ECU2["Processing Unit 2"]
-        
-        REPEATER --> EXTENDED["Extended Connection"]
-        
-        DATA["Recorded Data"] --> INJECTION["Video Injection Card"]
-        INJECTION --> TARGET["Target ECU System"]
-        
-        GRABBER --> STORAGE["Data Storage"]
-    end
-    
-    style CAMERA fill:#f9f,stroke:#333,stroke-width:2px
-    style GRABBER fill:#bbf,stroke:#333,stroke-width:2px
-    style SPLITTER fill:#bbf,stroke:#333,stroke-width:2px
-    style REPEATER fill:#bbf,stroke:#333,stroke-width:2px
-    style INJECTION fill:#bbf,stroke:#333,stroke-width:2px
-    style ECU1 fill:#bfb,stroke:#333,stroke-width:2px
-    style ECU2 fill:#bfb,stroke:#333,stroke-width:2px
-    style TARGET fill:#bfb,stroke:#333,stroke-width:2px
-    style EXTENDED fill:#bfb,stroke:#333,stroke-width:2px
-    style STORAGE fill:#fbb,stroke:#333,stroke-width:2px
-    style DATA fill:#fbb,stroke:#333,stroke-width:2px
-```
+
 
 <div className="row" style={{marginTop: '2rem', marginBottom: '2rem'}}>
   <div className="col col--6">
@@ -68,7 +39,7 @@ graph TD
   <div className="col col--6">
     <div className="card" style={{height: '100%'}}>
       <div className="card__header">
-        <h3>Playback Path</h3>
+        <h3>Simulation Path</h3>
       </div>
       <div className="card__body">
         <p>Use the Video Injection Card to feed pre-recorded scenarios into vision systems for testing and validation. This enables repeatable testing with real-world data.</p>
@@ -99,13 +70,13 @@ Distributes a single GMSL2 camera feed to multiple processing units while mainta
 
 ### GMSL Video Injection Card
 
-Enables playback of pre-recorded video into automotive vision systems for testing and validation purposes.
+Enables simulation  of pre-recorded video into automotive vision systems for testing and validation purposes.
 
 **[Learn about Video Injection →](/docs/3_4_GMSL_Video_Injection_Card/Getting_Started/CIG4-8H.md)**
 
 ## Implementation Guide
 
-1. **Select appropriate components** based on your specific data collection or playback requirements
+1. **Select appropriate components** based on your specific data collection or simulation  requirements
 2. **Configure the hardware** according to device-specific documentation
 3. **Develop software interfaces** using provided example code and APIs
 4. **Validate system performance** using recommended testing procedures
@@ -119,7 +90,7 @@ Enables playback of pre-recorded video into automotive vision systems for testin
 | Camera Grabber | Data Collection | 4K (3840×2160) | Low | No | High-speed data capture |
 | Camera Repeater | Signal Extension | 4K (3840×2160) | Ultra-low (< 10μs) | No | Distance extension |
 | Camera Splitter | Signal Distribution | 4K (3840×2160) | Ultra-low (< 10μs) | Yes (2×) | Synchronized outputs |
-| Video Injection | Data Playback | 4K (3840×2160) | Low | No | Scenario simulation |
+| Video Injection | Data Simulation | 4K (3840×2160) | Low | No | Scenario simulation |
 
 </div>
 
@@ -128,6 +99,6 @@ Enables playback of pre-recorded video into automotive vision systems for testin
 - Automotive vision system development and validation
 - Multi-ECU camera data distribution
 - Camera data logging and recording
-- Playback-based testing for autonomous driving algorithms
+- Simulation-based testing for autonomous driving algorithms
 - Signal extension for distributed processing systems
 

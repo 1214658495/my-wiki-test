@@ -49,7 +49,7 @@ This document contains frequently asked questions related to the CIG4-8H GMSL Vi
 
 • **Video injection card** typically operates based on video frame generation timestamps, while LiDAR has point cloud data with inherent timing information, and CAN bus messages also have their own temporal markers. To achieve precise synchronization, a unified time reference must be established.
 
-• **Playback Phase:** Supports users reading each sensor's timestamp on the PC side, calculating playback timing based on absolute time.
+• **Simulation Phase:** Supports users reading each sensor's timestamp on the PC side, calculating playback timing based on absolute time.
 
 ### Q5: Can external triggers and delays be configured?
 

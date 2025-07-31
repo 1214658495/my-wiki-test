@@ -40,7 +40,7 @@
 /* 特殊侧边栏项目的样式 */
 .menu__link[href="/docs/1_0_Camera"],
 .menu__link[href="/docs/intro"],
-.menu__link[href="/docs/3_0_Data collection and Playback"] 
+.menu__link[href="/docs/3_0_Data_collection_and_Playback"] 
 {
   font-weight: 700 !important;
   text-align: center !important;

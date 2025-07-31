@@ -11,7 +11,7 @@ title: Getting Started with CIG4-8H
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CyberCobra" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
-    <strong>CIG4-8H</strong> GMSL Video Injection Card（Hereinafter referred to as video injection card）is an high-speed image product based on FPGA ,and it independently developed by SZ sensing tech co., Ltd. (for short as SENSING ), a series of SENSING Image Solution.The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and adopts high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output, and the product is widely used in the hardware-in-the-loop HIL simulation system, digital acquisition and reinjection system, and video playback system and other scenarios.
+    <strong>CIG4-8H</strong> GMSL Video Injection Card（Hereinafter referred to as video injection card）is an high-speed image product based on FPGA ,and it independently developed by SZ sensing tech co., Ltd. (for short as SENSING ), a series of SENSING Image Solution.The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and adopts high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output, and the product is widely used in the hardware-in-the-loop HIL simulation system, digital acquisition and reinjection system, and video simulation system and other scenarios.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
     <a class="get_one_now_item" href="https://sensing-world.com/en/h-col-151.html" target="_blank" rel="noopener noreferrer">
@@ -77,7 +77,7 @@ title: Getting Started with CIG4-8H
 ### Advanced Capabilities
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.05em'}}>
 • Support for ECU external trigger signal control for simultaneous output of all channels<br/>
-• Support for timestamp-based playback of RAW video data<br/>
+• Support for timestamp-based simulation  of RAW video data<br/>
 • Synchronization of multiple base boards<br/>
 • Support for user injection of video data<br/>
 • Support for video data rendered by GPU graphics card emulation<br/>

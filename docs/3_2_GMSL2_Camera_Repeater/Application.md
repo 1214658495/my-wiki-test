@@ -104,10 +104,10 @@ When implementing the GMSL2 Camera Repeater in your application:
 4. **Software Integration**: Utilize provided example code for seamless integration
 5. **Thermal Management**: Consider adequate thermal dissipation in enclosed spaces
 
-## Technical Support
+<!-- ## Technical Support
 
 For application-specific integration assistance, detailed documentation, and customization options, please contact our technical support team:
 
 - Email: sales@sensing-world.com
-- Phone: 0755-28990915
+- Phone: 0755-28990915 -->
 <!-- - [SENSING Technical Support Portal](https://sensing-world.com) -->
