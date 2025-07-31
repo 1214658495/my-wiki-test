@@ -50,7 +50,7 @@ Modify the configuration file `pcie_init_cardx.sh` based on your camera type:
 **Example Configuration:**
 ```bash
 # For GMSL camera configuration
-camera_serdes_type[0]=0
+camera_serdes_type[0]=1
 camera_serdes_type[1]=1
 camera_serdes_type[2]=1
 camera_serdes_type[3]=1
