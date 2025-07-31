@@ -105,7 +105,7 @@ title: Getting Started with CCG3-8M
 2. Connect the GMSL camera to the CCG3-8M using the coaxial cable
 3. Power on the system
 
-<div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
+<!-- <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
   <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
     src="//player.bilibili.com/player.html?bvid=BV1w6j2z8E16&page=1&high_quality=1&danmaku=0"
@@ -115,7 +115,7 @@ title: Getting Started with CCG3-8M
     framespacing="0"
     allowFullScreen="true">
   </iframe>
-</div>
+</div> -->
 
 ---
 

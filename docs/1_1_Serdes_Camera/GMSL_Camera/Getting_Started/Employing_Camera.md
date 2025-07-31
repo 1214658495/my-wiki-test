@@ -146,7 +146,7 @@ SENSING provides pre-adapted solutions for NVIDIA platforms, ensuring optimal pe
   <ul className="resource-links">
     <li>
       <span className="resource-icon doc-icon"></span>
-      <a href="/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2">
+      <a href="/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-AGON-G2Y-A1" target="_blank" rel="noopener noreferrer">
         NVIDIA Jetson AGX Orin GMSL Adapter Board Integration Guide
       </a>
     </li>
@@ -371,7 +371,7 @@ For customers integrating SENSING cameras with custom deserializer implementatio
       <h4>1. Link Configuration</h4>
       <p>SENSING provides comprehensive technical documentation including:</p>
       <ul>
-        <li><a href="/docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Camera_Information">Camera register configuration</a></li>
+        <li><a href="/docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Camera_Information" target="_blank" rel="noopener noreferrer">Camera register configuration</a></li>
         <li>Serializer/deserializer initialization sequences</li>
         <li>I2C communication protocol specifications</li>
       </ul>

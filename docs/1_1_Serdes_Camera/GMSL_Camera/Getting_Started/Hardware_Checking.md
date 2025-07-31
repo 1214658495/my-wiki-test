@@ -160,7 +160,7 @@ Depending on your environmental requirements, our cameras are available with or 
 - ADC Temperature control
 - Effective ice/frost removal within 3 minutes
 - Maintains clear vision in extreme cold conditions
-- Operating temperature range: -40°C to +50°C
+<!-- - Operating temperature range: -40°C to +50°C -->
 
 
 

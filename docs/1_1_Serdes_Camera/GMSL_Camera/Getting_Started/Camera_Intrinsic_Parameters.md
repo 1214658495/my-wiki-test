@@ -59,7 +59,7 @@ Below are examples of models and their corresponding instruction documents for o
 ### Method 2: Using SensingTech Online Service Platform
 
 You can download intrinsic parameters individually through the SensingTech Customer Self-service Information Query Platform. Note that the SN code of the camera is required.
-- [Getting Camera Information](../Getting_Camera_Information.md)
+- <a href="../Getting_Camera_Information" target="_blank" rel="noopener noreferrer">Getting Camera Information</a>
 
 ## **Q3**: Camera Model Types
 
