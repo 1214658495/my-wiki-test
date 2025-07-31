@@ -8,7 +8,7 @@ sidebar_position: 1
 
 <div className="row">
   <div className="col col--7">
-    The GMSL2 Camera Splitter, engineered by SENSING Technology Co., Ltd., enables a single GMSL input to be distributed to two GMSL outputs while maintaining identical data streams. This device is compatible with SENSING GMSL camera models.
+    The GMSL2 Camera Splitter, engineered by SZ SENSING TECH CO.,LTD., enables a single GMSL input to be distributed to two GMSL outputs while maintaining identical data streams. This device is compatible with SENSING GMSL camera models.
   </div>
     <div className="col col--5">
     :::note Key Features

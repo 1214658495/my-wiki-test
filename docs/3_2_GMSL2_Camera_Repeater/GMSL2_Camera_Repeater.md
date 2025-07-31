@@ -8,7 +8,7 @@ sidebar_position: 1
 
 <div className="row">
   <div className="col col--7">
-    The GMSL2 Repeater is designed by SENSNG Technology Co.,Ltd., which can realize one GMSL2 input and one GMSL2 output, so as to extend the transmission distance.
+    The GMSL2 Repeater is designed by SZ SENSING TECH CO.,LTD., which can realize one GMSL2 input and one GMSL2 output, so as to extend the transmission distance.
   </div>
     <div className="col col--5">
     :::note Key Features
