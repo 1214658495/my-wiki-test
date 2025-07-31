@@ -17,11 +17,11 @@ title: Product Selection Guide
     <div style={{background: '#fff', borderRadius: '12px', padding: '1.5rem', boxShadow: '0 2px 12px rgba(0,0,0,0.08)', border: '2px solid #e9ecef'}}>
       <h4 style={{color: '#495057', textAlign: 'center', marginBottom: '1rem', fontSize: '1.1em', fontWeight: '600'}}>Specification</h4>
     </div>
-    <div style={{background: 'linear-gradient(135deg, #007bff 0%, #0056b3 100%)', borderRadius: '12px', padding: '1.5rem', boxShadow: '0 2px 12px rgba(0,123,255,0.3)', border: '2px solid #007bff'}}>
-      <h4 style={{color: '#fff', textAlign: 'center', marginBottom: '1rem', fontSize: '1.1em', fontWeight: '600'}}>CCG3-8H (High Performance)</h4>
+    <div style={{background: 'linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%)', borderRadius: '12px', padding: '1.5rem', boxShadow: '0 2px 12px rgba(0,123,255,0.15)', border: '2px solid #2196f3'}}>
+      <h4 style={{color: '#1976d2', textAlign: 'center', marginBottom: '1rem', fontSize: '1.1em', fontWeight: '600'}}>CCG3-8H (High Performance)</h4>
     </div>
-    <div style={{background: 'linear-gradient(135deg, #28a745 0%, #1e7e34 100%)', borderRadius: '12px', padding: '1.5rem', boxShadow: '0 2px 12px rgba(40,167,69,0.3)', border: '2px solid #28a745'}}>
-      <h4 style={{color: '#fff', textAlign: 'center', marginBottom: '1rem', fontSize: '1.1em', fontWeight: '600'}}>CCG3-8M (Standard Performance)</h4>
+    <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%)', borderRadius: '12px', padding: '1.5rem', boxShadow: '0 2px 12px rgba(40,167,69,0.15)', border: '2px solid #4caf50'}}>
+      <h4 style={{color: '#388e3c', textAlign: 'center', marginBottom: '1rem', fontSize: '1.1em', fontWeight: '600'}}>CCG3-8M (Standard Performance)</h4>
     </div>
   </div>
 
@@ -63,6 +63,7 @@ title: Product Selection Guide
         <li style={{padding: '0.3rem 0'}}>• 8× cameras @ 8MP/30FPS</li>
         <li style={{padding: '0.3rem 0'}}>• 8× camera @ 3MP/30FPS</li>
         <li style={{padding: '0.3rem 0'}}>• 8× cameras @ 2MP/30FPS</li>
+        <li style={{padding: '0.3rem 0', fontStyle: 'italic', color: '#f57c00'}}>• Flexible 1MP-8MP camera combinations</li>
       </ul>
     </div>
     <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%)', borderRadius: '10px', padding: '1.5rem', border: '2px solid #4caf50'}}>
