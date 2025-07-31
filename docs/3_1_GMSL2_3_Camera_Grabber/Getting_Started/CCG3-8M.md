@@ -33,7 +33,7 @@ title: Getting Started with CCG3-8M
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Processor:</strong> Xilinx ZU+<br/>
-    <strong>PCIe:</strong> Gen3 x4<br/>
+    <strong>PCIe:</strong> Gen3 x4lanes<br/>
     <strong>OS:</strong> Linux 64-bit, Ubuntu 18.04/20.04<br/>
     <strong>SDK/API:</strong> V4L2, Documentation<br/>
     <strong>Trigger:</strong> TTL, PPS
@@ -54,7 +54,7 @@ title: Getting Started with CCG3-8M
 
 :::note Highlights
 - 8 GMSL cameras input, up to 8MP@30fps
-- PCIe Gen3 x4 lane, high bandwidth
+- PCIe Gen3 x4 lanes, high bandwidth
 - Supports external trigger & PTP time sync
 - Low latency, high reliability
 :::
