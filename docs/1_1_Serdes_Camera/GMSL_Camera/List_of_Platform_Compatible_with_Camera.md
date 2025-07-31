@@ -153,7 +153,7 @@ This compatibility matrix provides information about all SENSING GMSL camera and
   zIndex: 2
 }}>
   <div>Jetson AGX Orin</div>
-  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898">SG8A-ORIN-GMSL2</a></div>
+  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer">SG8A-ORIN-GMSL2</a></div>
 </th>
 <th style={{ 
   padding: '12px', 
@@ -198,7 +198,7 @@ This compatibility matrix provides information about all SENSING GMSL camera and
   zIndex: 2
 }}>
   <div>Jetson Orin Nano/NX</div>
-  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-168.html?recommendFromPid=0&fromMid=962">SG4A-NONX-G2Y-A1</a></div>
+  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-168.html?recommendFromPid=0&fromMid=962" target="_blank" rel="noopener noreferrer">SG4A-NONX-G2Y-A1</a></div>
 </th>
 <th style={{ 
   padding: '12px', 
@@ -213,7 +213,7 @@ This compatibility matrix provides information about all SENSING GMSL camera and
   zIndex: 2
 }}>
   <div>Jetson Orin Nano/NX</div>
-  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-80.html?recommendFromPid=0&fromMid=962">SG6C-ORNX-G2-F</a></div>
+  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-80.html?recommendFromPid=0&fromMid=962" target="_blank" rel="noopener noreferrer">SG6C-ORNX-G2-F</a></div>
 </th>
 <th style={{ 
   padding: '12px', 
@@ -228,7 +228,7 @@ This compatibility matrix provides information about all SENSING GMSL camera and
   zIndex: 2
 }}>
   <div>Jetson Orin Nano/NX</div>
-  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-79.html?recommendFromPid=0&fromMid=962">SG2A-G3-I4L-F</a></div>
+  <div style={{fontSize: '0.8em'}}><a style={{color:'white',textDecoration:'underline'}} href="https://sensing-world.com/en/h-pd-79.html?recommendFromPid=0&fromMid=962" target="_blank" rel="noopener noreferrer">SG2A-G3-I4L-F</a></div>
 </th>
 <th style={{ 
   padding: '12px', 

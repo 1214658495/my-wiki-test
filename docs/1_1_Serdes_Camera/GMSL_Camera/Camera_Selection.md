@@ -53,8 +53,8 @@ Our GMSL cameras feature image sensors from three leading manufacturers:
 After selecting your camera, refer to these resources:
 
 <!-- - [Getting Started Guide](./Getting_Started/index.md) -->
-- [Platform Compatibility List](./List_of_Platform_Compatible_with_Camera.md)
-- [Getting Camera Information](./Getting_Camera_Information.md)
+- <a href="./List_of_Platform_Compatible_with_Camera" target="_blank" rel="noopener noreferrer">Platform Compatibility List</a>
+- <a href="./Getting_Camera_Information" target="_blank" rel="noopener noreferrer">Getting Camera Information</a>
 
 :::tip
 - All product pages feature downloadable datasheets, 3D models, and SerDes configuration files

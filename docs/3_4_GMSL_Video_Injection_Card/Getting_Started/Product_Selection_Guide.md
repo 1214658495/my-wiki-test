@@ -1481,7 +1481,7 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
     </svg>
     <strong>Product Information</strong><br/>
-    <a href="https://sensing-world.com/en/h-col-151.html" target="_blank">sensing-world.com</a>
+    <a href="https://sensing-world.com/en/h-col-151.html" target="_blank" rel="noopener noreferrer">sensing-world.com</a>
   </div>
   <div style={{background: '#fff3e0', borderRadius: '8px', padding: '1rem', textAlign: 'center', minWidth: '200px'}}>
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f57c00" strokeWidth="2" style={{verticalAlign: 'middle', marginRight: '8px'}}>
@@ -1491,6 +1491,6 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
       <path d="M12 18h6"/>
     </svg>
     <strong>GitHub Repository</strong><br/>
-    <a href="https://github.com/SENSING-Technology/CIG4-8H" target="_blank">CIG4-8H SDK</a>
+    <a href="https://github.com/SENSING-Technology/CIG4-8H" target="_blank" rel="noopener noreferrer">CIG4-8H SDK</a>
   </div>
 </div> -->

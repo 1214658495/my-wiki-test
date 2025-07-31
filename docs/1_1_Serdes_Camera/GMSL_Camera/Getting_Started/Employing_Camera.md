@@ -79,7 +79,7 @@ SENSING provides pre-adapted solutions for NVIDIA platforms, ensuring optimal pe
 
 ### Available Solutions
 
-- **[NVIDIA Jetson Series](https://sensing-world.com/en/h-col-142.html)**: Compatible with Jetson AGX Xavier, Jetson NX, and Jetson Nano
+- **[NVIDIA Jetson Series](https://sensing-world.com/en/h-col-142.html)**: Compatible with Jetson AGX Orin, Jetson NX, and Jetson Nano
 - **[NVIDIA DRIVE Series](https://sensing-world.com/en/h-col-146.html)**: Compatible with DRIVE AGX Orin
 
 ### Technical Specifications
@@ -152,7 +152,7 @@ SENSING provides pre-adapted solutions for NVIDIA platforms, ensuring optimal pe
     </li>
     <li>
       <span className="resource-icon github-icon"></span>
-      <a href="https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers">
+      <a href="https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers" target="_blank" rel="noopener noreferrer">
         SENSING GitHub Repository
       </a>
     </li>
@@ -239,19 +239,19 @@ SENSING GMSL camera grabber products provide a flexible solution for multi-camer
   <ul className="resource-links">
     <li>
       <span className="resource-icon doc-icon"></span>
-      <a href="/docs/3_1_GMSL2_3_Camera_Grabber/Getting_Started/CCG3-8H">
+      <a href="/docs/3_1_GMSL2_3_Camera_Grabber/Getting_Started/CCG3-8H" target="_blank" rel="noopener noreferrer">
         GMSL Camera Grabber Integration Guide
       </a>
     </li>
     <li>
       <span className="resource-icon github-icon"></span>
-      <a href="https://github.com/SENSING-Technology/CoaxCapture-CCG3">
+      <a href="https://github.com/SENSING-Technology/CoaxCapture-CCG3" target="_blank" rel="noopener noreferrer">
         SENSING GitHub Repository
       </a>
     </li>
     <li>
       <span className="resource-icon web-icon"></span>
-      <a href="https://sensing-world.com/en/Coaxcapture_Card/">
+      <a href="https://sensing-world.com/en/Coaxcapture_Card/" target="_blank" rel="noopener noreferrer">
         Product Information
       </a>
     </li>
@@ -281,7 +281,7 @@ When integrating with third-party AI processing systems, compatibility verificat
     <div className="workflow-title">Compatibility Assessment</div>
     <div className="workflow-content">
       <p>Review the AI Box manufacturer's "Compatible Camera List"</p>
-      <p>Example: <a href="https://doc.miivii.com/Apex-AD10-User-Manual-EN/wiki/Apex-AD10-GMSL-Camera-Compatibility-List.html">MiiVii AI Box Camera Compatibility List</a></p>
+      <p>Example: <a href="https://doc.miivii.com/Apex-AD10-User-Manual-EN/wiki/Apex-AD10-GMSL-Camera-Compatibility-List.html" target="_blank" rel="noopener noreferrer">MiiVii AI Box Camera Compatibility List</a></p>
     </div>
   </div>
   
