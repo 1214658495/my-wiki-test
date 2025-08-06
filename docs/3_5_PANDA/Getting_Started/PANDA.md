@@ -56,16 +56,16 @@ title: Getting Started with PANDA serial PG2
 | **Deserializer** | MAX9296AGTM/V+T |
 | **Resolution supported** | 1920 * 1080@60fps<br/>1920 * 1536@30fps<br/>only one camera is supported |
 | **Frame rate** | YUV422/RAW12 |
-| **Compressed?** | NO |
+| **Compressed** | NO |
 | **Interface of output** | USB3.0 |
 | **Camera Connector** | Coaxial Connector<br/>FMK2252AW-001-TL30G-50 |
 | **Trigger mode** | Support external trigger |
-| **Communication** | Support R/W register<br/>(Only via SensingCaptureV2.exe) |
+| **Communication** | Support R/W register<br/>(Only via SensingCaptureV3.exe) |
 | **OS Supported** | Windows or Linux /Standard V4L2 |
-| **Power Supply** | By USB port |
-| **Current** | Box < 500mA |
+| **Power Supply** | By USB port /Support external Power|
+| **Current** | < 500mA |
 | **Temperature** | -40 ~ +75°C |
-| **Dimensions** | UVC box: 45mm(W), 64mm(L), 23.6mm(H) |
+| **Dimensions** | 45mm(W), 64mm(L), 23.6mm(H) |
 | **Material** | Metal |
 | **Color** | Black |
 
@@ -102,7 +102,7 @@ title: Getting Started with PANDA serial PG2
 | 169900-0004 | TZJC-PC-ZZ-0250A | 0.5M 2 in 1coaxial cable | 1 |
 | 161000-0001 | Coaxial Cable | SG-JS2JS2200L | 1 |
 | 169900-0811 | USB3.0 A to TYPE-C 1M cable | USB cable(Video display) | 1 |
-| 169900-0985 | Type-C data cable_1m_USB 2.0 | data cable | 1 |
+| 169900-0985 | Type-C data cable_1m_USB 2.0 | Update camera firmware cable | 1 |
 
 </div>
 
@@ -152,9 +152,9 @@ SENSING can provide a complete solution including Camera + GMSL Video Injection 
 Select the appropriate SDK package based on your operating system and CIG4-8H hardware version:
 ::: -->
 
-| Operating System | Hardware Version | SDK Version | Download Link |
+| Operating System | Hardware Version | Software Tool | Download Link |
 |------------------|------------------|-------------|---------------|
-| windows | v3.0 | SDK v2.1.0 | [Download](https://github.com/SENSING-Technology/SensingCaptureV3) |
+| windows | v3.0 | SensingCaptureV3 | [Download](https://github.com/SENSING-Technology/SensingCaptureV3) |
 
 <!-- :::tip Download Tool Usage
 **DownGit** allows you to download specific folders or files from GitHub repositories without cloning the entire repository:
