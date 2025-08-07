@@ -27,7 +27,7 @@ Open the device manager of the computer. You can see the "SENSING_USB3_CAMERA" d
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1_3.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
-    SensingCaptureV3 Installation Instructions
+    Hardware Environment Check
   </p>
 </div>
 
