@@ -4,6 +4,9 @@ sidebar_position: 1
 
 # PANDA Serial PG2 Application
 
+## 1. Device Connection and Startup
+### 1.1 Device Connection
+Connect the SENSING Camera to the cam1 interface of the PANDA Serial PG2 using the USB 3.0 cable, then connect to your PC as illustrated in the connection diagram. Use the SensingCaptureV3 software tool to display camera images and perform camera upgrades.
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/PANDA_Application.png" alt="PANDA_Application" style={{maxWidth: '100%', height:'auto'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
@@ -11,9 +14,24 @@ sidebar_position: 1
   </p>
 </div>
 
-## 1. Device Connection and Startup
+### 1.2 Hardware Environment Check (Windows Platform)
+The PANDA Serial PG2 follows the UVC protocol specification defined by USB-IF. It can be used immediately after plugging in and is default-free (using the UVC camera driver provided by Windows). It should be noted that the PG2 only supports the USB3.0 interface. After connecting the PG2 to the USB 3.0 interface of the PC, the device can be seen in the Facility Management of the window.
+Open the device manager of the computer. You can see the "SENSING_USB3_CAMERA" device item in the camera project of the device manager, and you can see the FT4222 device item in the Universal Serial Bus Controller project,when the <strong>CAM UPDATE</strong> port is connected to the computer.
+<div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '45%', height:'auto', border: '1px solid #ddd'}} />
+  <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
+    SensingCaptureV3 Installation Instructions
+  </p>
+</div>
 
-### 1.1 Software Installation
+<div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1_3.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
+    SensingCaptureV3 Installation Instructions
+  </p>
+</div>
+
+### 1.3 Software Installation
 
 **Download Link:** https://github.com/SENSING-Technology/SensingCaptureV3
 
@@ -38,7 +56,7 @@ After downloading SensingCaptureV3, follow steps 1-3 as shown in the accompanyin
 
 
 
-### 1.2 Device Connection
+<!-- ### 1.2 Device Connection
 
 Connect the device according to Figure 2's connection diagram. Connect the camera to 1 camera port, which requires a CAM port cable, FT4222 port, and USB data cable.
 
@@ -47,11 +65,11 @@ Connect the device according to Figure 2's connection diagram. Connect the camer
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 2:</strong> PANDA PG2 device connection diagram showing FT4222 port, camera connection port, USB data cable, and power interface
   </p>
-</div>
+</div> -->
 
-### 1.3 Camera Operation
+### 1.4 Camera bringup operation
 
-#### 1.3.1 Launch SensingCaptureV3
+#### 1.4.1 Launch SensingCaptureV3
 
 In the device list, the device number and control panel will display information about the currently connected camera.
 
@@ -70,7 +88,7 @@ In the device list, the device number and control panel will display information
   </div>
 </div>
 
-#### 1.3.2 Add Configuration
+#### 1.4.2 Add Configuration
 
 In the device information and control panel, click "Device Control", select "Add Configuration" as shown in Figure 4. The system will display the configuration file, which can be added using two methods:
 
@@ -104,7 +122,7 @@ After selecting the configuration file, click "Confirm". The system will automat
   </p>
 </div>
 
-#### 1.3.3 Start Camera
+#### 1.4.3 Start Camera
 
 Click "Start Camera" in the upper left corner. The software will display real-time captured images in the middle area, as shown in Figure 8.
 
