@@ -125,8 +125,8 @@ These APIs enable direct implementation of video injection logic. Use the regist
 
 **A12:** The simulation software leverages GPU acceleration for data generation through virtual transmission channels, then efficiently transfers the processed data to CPU memory via optimized video injection APIs to achieve seamless video injection functionality. --> -->
 
----
+<!-- ---
 
-*This FAQ document is regularly updated to reflect the latest features and capabilities of the CIG4-8H Video Injection Card.*
+*This FAQ document is regularly updated to reflect the latest features and capabilities of the CIG4-8H Video Injection Card.* -->
 
 

@@ -106,6 +106,79 @@ title: Getting Started with PANDA serial PG2
 
 </div>
 
+#### Supported Camera Model List
+
+The following table lists the currently supported camera models and their corresponding product series:
+
+<div style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center', width: '100%'}}>
+  <table style={{width: '60%', borderCollapse: 'collapse', margin: '0 auto'}}>
+    <thead>
+      <tr style={{backgroundColor: '#f5f5f5'}}>
+        <th style={{padding: '12px', textAlign: 'center', border: '1px solid #ddd', fontWeight: 'bold'}}>
+          NO.
+        </th>
+        <th style={{padding: '12px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd', fontWeight: 'bold'}}>
+          Camera Product Series
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>1</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG1-OX01F10C-GMSL-Hxxx</td>
+      </tr>
+      <tr style={{backgroundColor: '#f9f9f9'}}>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>2</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG1S-OX01F10C-G1G-Hxxx</td>
+      </tr>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>3</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG2-AR0231C-0202-GMSL-Hxxx</td>
+      </tr>
+      <tr style={{backgroundColor: '#f9f9f9'}}>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>4</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG2-AR0233C-5200-G2A-Hxxx</td>
+      </tr>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>5</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG2-IMX390C-5200-G2A-Hxxx</td>
+      </tr>
+      <tr style={{backgroundColor: '#f9f9f9'}}>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>6</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG2-OX03CC-5200-G2F-Hxxx</td>
+      </tr>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>7</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SH2-N1B60-G2A-Hxxx</td>
+      </tr>
+      <tr style={{backgroundColor: '#f9f9f9'}}>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>8</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG2S-OX03CC-G2F-Hxxx</td>
+      </tr>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>9</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SN2M4EFGD</td>
+      </tr>
+      <tr style={{backgroundColor: '#f9f9f9'}}>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>10</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG3S-OX03JC-G2F-Hxxx</td>
+      </tr>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>11</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG3S-ISX031C-GMSL2F-Hxxx</td>
+      </tr>
+      <tr style={{backgroundColor: '#f9f9f9'}}>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>12</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG3S-ISX031C-GMSL2-Hxxx</td>
+      </tr>
+      <tr>
+        <td style={{padding: '10px', textAlign: 'center', border: '1px solid #ddd'}}>13</td>
+        <td style={{padding: '10px', textAlign: 'center', borderTop: '1px solid #ddd', borderBottom: '1px solid #ddd', borderLeft: '1px solid #ddd'}}>SG3S-IMX623C-G2F-Hxxx</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 <!-- <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.05em'}}>
 After collecting data with autonomous vehicles, algorithm validation and optimization are required, which demands a data injection system. The autonomous driving IPC transmits collected video data from hard disks to the video injection card through the PCIe interface. The card then synchronously outputs 8 channels of video based on timestamps, simulating the camera time sequence and transmitting it to the domain control through the GMSL interface. The CyberCobra card supports gPTP/PTP synchronization, achieving time synchronization through switches, IPC and ACU, ensuring all devices in the system are on the same timeline.
 </div> -->
