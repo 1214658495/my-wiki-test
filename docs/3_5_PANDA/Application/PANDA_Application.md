@@ -34,6 +34,12 @@ Open the device manager of the computer. You can see the "SENSING_USB3_CAMERA" d
 ### 1.3 Software Installation
 
 **Download Link:** https://github.com/SENSING-Technology/SensingCaptureV3
+<div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1_1.png" alt="SensingCaptureV3 Download" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
+    SensingCaptureV3 Download
+  </p>
+</div>
 
 <!-- Download SensingCaptureV3 to your PC, extract the files, and locate SensingCaptureV3.exe. Double-click the left mouse button to open it, and the startup interface will appear as shown in Figure 1. The upper left corner displays the control panel, while the middle area shows the region. -->
 
