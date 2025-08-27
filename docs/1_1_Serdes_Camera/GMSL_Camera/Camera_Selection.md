@@ -31,7 +31,7 @@ When selecting a GMSL camera for your application, consider these key factors:
 | 6 | SG2S-OX03CC-G2F-Hxxx | OMNIVISION OX03C10 RGGB | 1920H*1080V | MAX 60fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-106.html?recommendFromPid=0&fromMid=1544) |
 | 7 | SH2-N1B60-G2A-Hxxx | ONSEMI AR0233 RGGB | 1920H*1080V | 60fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-182.html?recommendFromPid=0&fromMid=3596) |
 | 8 | SH3-S11A60-G2A-Hxxx | SONY ISX031 RGGB | 1920H*1536V | 60fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-183.html?recommendFromPid=0&fromMid=3596) |
-| 9 | SG3S-ISX031C-GMSL2F-Hxxx | SONY ISX031 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-23.html?recommendFromPid=0&fromMid=1544) |
+| 9 | SG3S11AFxK | SONY ISX031 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-23.html?recommendFromPid=0&fromMid=1544) |
 | 10 | SG3S-OX03JC-G2F-Hxxx | OMNIVISION OX03J10 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-136.html?recommendFromPid=0&fromMid=1544) |
 | 11 | SG3S-IMX623C-G2F-Hxxx | SONY IMX623 RGGB | 1920H*1536V | MAX 60fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-108.html?recommendFromPid=0&fromMid=1544) |
 | 12 | SG5-IMX490C-5300-GMSL2-Hxxx | SONY IMX490 RGGB | 2880H*1860V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-24.html?recommendFromPid=0&fromMid=1544) |
