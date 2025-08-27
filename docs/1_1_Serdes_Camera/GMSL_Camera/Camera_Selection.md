@@ -30,14 +30,17 @@ When selecting a GMSL camera for your application, consider these key factors:
 | 5 | SG2-IMX390C-5200-G2A-Hxxx | SONY IMX390 RGGB | 1920H*1080V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-156.html?recommendFromPid=0&fromMid=1544) |
 | 6 | SG2S-OX03CC-G2F-Hxxx | OMNIVISION OX03C10 RGGB | 1920H*1080V | MAX 60fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-106.html?recommendFromPid=0&fromMid=1544) |
 | 7 | SH2-N1B60-G2A-Hxxx | ONSEMI AR0233 RGGB | 1920H*1080V | 60fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-182.html?recommendFromPid=0&fromMid=3596) |
-| 8 | SH3-S11A60-G2A-Hxxx | SONY ISX031 RGGB | 1920H*1536V | 60fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-183.html?recommendFromPid=0&fromMid=3596) |
-| 9 | SG3S11AFxK | SONY ISX031 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-23.html?recommendFromPid=0&fromMid=1544) |
-| 10 | SG3S-OX03JC-G2F-Hxxx | OMNIVISION OX03J10 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-136.html?recommendFromPid=0&fromMid=1544) |
-| 11 | SG3S-IMX623C-G2F-Hxxx | SONY IMX623 RGGB | 1920H*1536V | MAX 60fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-108.html?recommendFromPid=0&fromMid=1544) |
-| 12 | SG5-IMX490C-5300-GMSL2-Hxxx | SONY IMX490 RGGB | 2880H*1860V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-24.html?recommendFromPid=0&fromMid=1544) |
-| 13 | SG8S-AR0820C-5300-G2A-Hxxx | ONSEMI AR0820 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-26.html?recommendFromPid=0&fromMid=1544) |
-| 14 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-132.html?recommendFromPid=0&fromMid=1544) |
-| 15 | SG8-ISX028C-G2G-Hxxx | SONY ISX028 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-274.html?recommendFromPid=0&fromMid=1544) |
+| 8 | SN2M4EFGD | 2M RGGB | 1920H*1080V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-165.html?recommendFromPid=0&fromMid=3430) |
+| 9 | SH3-S11A60-G2A-Hxxx | SONY ISX031 RGGB | 1920H*1536V | 60fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-183.html?recommendFromPid=0&fromMid=3596) |
+| 10 | SG3S11AFxK | SONY ISX031 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-23.html?recommendFromPid=0&fromMid=1544) |
+| 11 | SG3S-OX03JC-G2F-Hxxx | OMNIVISION OX03J10 RGGB | 1920H*1536V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-136.html?recommendFromPid=0&fromMid=1544) |
+| 12 | SG3S-IMX623C-G2F-Hxxx | SONY IMX623 RGGB | 1920H*1536V | MAX 60fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-108.html?recommendFromPid=0&fromMid=1544) |
+| 13 | SG5-IMX490C-5300-GMSL2-Hxxx | SONY IMX490 RGGB | 2880H*1860V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-24.html?recommendFromPid=0&fromMid=1544) |
+| 14 | SG8S-AR0820C-5300-G2A-Hxxx | ONSEMI AR0820 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-26.html?recommendFromPid=0&fromMid=1544) |
+| 15 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-132.html?recommendFromPid=0&fromMid=1544) |
+| 16 | SG8-ISX028C-G2G-Hxxx | SONY ISX028 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-274.html?recommendFromPid=0&fromMid=1544) |
+| 17 | SG8-IMX728C-G3A-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 40fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-29.html?recommendFromPid=0&fromMid=1545) |
+| 18 | SG17-IMX735C-G3A-Hxxx | SONY IMX735 RGGB | 3000Hx5760V <br/> 3000Hx4000V <br/> 2160Hx3840V | MAX 45fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-184.html?recommendFromPid=0&fromMid=1545) |
 </div>
 
 ## Sensor Manufacturer Comparison
