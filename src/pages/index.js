@@ -36,7 +36,7 @@ function HomepageHeader() {
             </div>
             <div className={styles.heroImageContainer}>
               <img 
-                src={require('@site/static/img/SENSING_logo_Homepage.png').default} 
+                src={require('@site/static/img/SENSING_logo_en2.png').default} 
                 alt="SENSING Wiki" 
                 className={styles.heroImage}
               />
@@ -74,7 +74,7 @@ export default function Home() {
   return (
     <Layout
       title={`Welcome to ${siteConfig.title}`}
-      description="SENSING Wiki - Professional documentation and knowledge base">
+      description="SENSING Wiki - Provide High-Quality Images for AI">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
