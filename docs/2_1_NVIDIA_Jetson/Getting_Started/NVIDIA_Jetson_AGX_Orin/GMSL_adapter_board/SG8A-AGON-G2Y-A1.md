@@ -35,17 +35,18 @@ sidebar_position: 2
     style={{maxWidth: '40%', height:'auto'}} />
 </div>
 
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer" 
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <a href="https://sensing-world.com/en/h-pd-269.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
-</div> -->
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+</div>
+
+<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>coming soon</strong>
     </span>
-</div>
+</div> -->
 
 ## Getting Started
 
@@ -190,8 +191,8 @@ Select the appropriate driver package based on your camera type and JetPack vers
 
 | Camera Type | JetPack Version | Download Link |
 |-------------|-----------------|---------------|
-| GMSL2 Camera (YUV) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack5.1.2/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP5.1.2_L4TR35.4.1) |
-| GMSL2 Camera (YUV) | JP6.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-ORIN-GMSL2-F/JetPack6.0/SG8A_ORIN_GMSL2-F_V2_AGX_Orin_YUV_JP6.0_L4TR36.3.0) |
+| GMSL2 Camera (YUV) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack5.1.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1) |
+| GMSL2 Camera (YUV) | JP6.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUV_JP6.2_L4TR36.4.3) |
 
 :::tip Download Method
 Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
