@@ -32,8 +32,9 @@ sidebar_position: 2
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1.png" alt="SG8A-ORIN-GMSL" 
-    style={{maxWidth: '40%', height:'auto'}} />
+    style={{maxWidth: '45%', height:'auto'}} />
 </div>
+<br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-269.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer" 

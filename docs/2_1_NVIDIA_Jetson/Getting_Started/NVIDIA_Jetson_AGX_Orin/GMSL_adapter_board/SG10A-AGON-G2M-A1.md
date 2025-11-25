@@ -34,18 +34,20 @@ sidebar_position: 3
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1.png" alt="SG10A-AGON-G2M-A1" 
     style={{maxWidth: '45%', height:'auto'}} />
 </div>
+<br />
 
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-65.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer" 
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <a href="https://sensing-world.com/en/SG10A-AGON-G2M-A1.html?fromMid=898#recommendFromPid=0" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
-</div> -->
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+</div>
+
+<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <span style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>coming soon</strong>
     </span>
-</div>
+</div> -->
 
 ## Getting Started
 
