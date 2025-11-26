@@ -8,7 +8,7 @@ sidebar_position: 1
 ### 1.1 Device Connection
 Connect the SENSING Camera to the cam1 interface of the PANDA Serial PG2 using the USB 3.0 cable, then connect to your PC as illustrated in the connection diagram. Use the SensingCaptureV3 software tool to display camera images and perform camera upgrades.
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/PANDA_Application.png" alt="PANDA_Application" style={{maxWidth: '100%', height:'auto'}} />
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/PANDA_Application1.png" alt="PANDA_Application" style={{maxWidth: '100%', height:'auto'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     PANDA Serial PG2 Installation Connection Diagram
   </p>
