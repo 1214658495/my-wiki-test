@@ -9,7 +9,8 @@ title: SHF3L（30fps）
 
 <div className="row">
   <div className="col col--12">
-    This camera module is specifically designed for embodied intelligence applications, featuring a 3MP high dynamic range high frame rate sensor. It can be deployed in humanoid robot head and torso positions, optimized for robot perception and recognition scenarios. The SHF3L Camera is equipped with RGGB image sensor and Maxim GMSL2 serializer MAX9295A, featuring an automotive-grade sensor with a professionally tuned Image Signal Processor (ISP) that delivers exceptional image quality. The module comes with an all-glass AA wide-angle lens and achieves IP67 protection rating with an enclosure that is focused and sealed in our factory.
+    The SHF3L camera is engineered specifically for embodied intelligence applications, featuring a 3MP sensor with High Dynamic Range (HDR) and high frame rate capabilities. Optimized for robot perception and recognition, it is ideal for integration into the head or torso of humanoid robots.
+    The SHF3L module integrates an RGGB image sensor and the Maxim GMSL2 serializer (MAX9295A). It utilizes an automotive-grade sensor paired with a professionally tuned Image Signal Processor (ISP) to deliver exceptional image quality. The camera is equipped with an Active Alignment (AA) all-glass wide-angle lens and achieves an IP67 protection rating, featuring a factory-focused, fully sealed enclosure.
   </div>
 </div>
 
