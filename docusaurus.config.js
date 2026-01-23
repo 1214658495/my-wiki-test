@@ -37,6 +37,13 @@ const config = {
     locales: ['en'],
   },
 
+  scripts: [
+    {
+      src: '//cdn.busuanzi.cc/busuanzi/2.3/busuanzi.pure.mini.js',
+      async: true,
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -181,7 +188,18 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SZ SENSING TECH CO.,LTD.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SZ SENSING TECH CO.,LTD.<br/>
+        <span id="busuanzi_container_site_pv" style="display:none">
+          Total Views: <span id="busuanzi_value_site_pv"></span>
+        </span>
+        <span style="margin: 0 10px;">|</span>
+        <span id="busuanzi_container_site_uv" style="display:none">
+          Total Visitors: <span id="busuanzi_value_site_uv"></span>
+        </span>
+        <span style="margin: 0 10px;">|</span>
+        <span id="busuanzi_container_site_pv" style="display:none">
+          Today Views: <span id="busuanzi_value_today_pv"></span>
+        </span>`,
       },
       prism: {
         theme: prismThemes.github,
