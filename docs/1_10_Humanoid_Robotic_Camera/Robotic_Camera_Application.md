@@ -35,7 +35,7 @@ title: Robotic Camera Solutions
 
 The solution features a centralized high-performance computing unit connected to a distributed network of vision sensors. To ensure industrial-grade reliability, ultra-low latency, and high bandwidth, all camera modules are linked to the computing platform via **GMSL** interfaces.
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/Robotic_Camera_Connect.png" alt="CCG3-8M Application Scenario" style={{maxWidth: '65%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/Robotic_Camera_Connect.png" alt="Robotic_Camera_Connect" style={{maxWidth: '65%', height:'auto', borderRadius: '8px'}} />
   </div>
 
 
@@ -87,6 +87,17 @@ The solution features a centralized high-performance computing unit connected to
 
 ##  **Quick Bring Up**
 
+### Installation Steps
+<div style={{textAlign: 'center', marginTop: '1.5rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/Camera_Connect.png" alt="Camera_Connect" style={{maxWidth: '90%', height:'auto', borderRadius: '8px'}} />
+</div>
+
+:::note Quick Setup
+1. Refer to the image labels and connect the GMSL cameras to the corresponding positions on the TRD1 G2A using coaxial cables.
+2. Connect "CN7" to the power supply(DC 9-16V)
+3. Power on the system(Jetson Thor)
+:::
+
 ### SDK Download
 
 :::note Driver Packages
@@ -118,9 +129,14 @@ cd TRD1_G2A_AGX_THOR_GMSL2x8_JP7.0_L4TR38.2
 # Run the generation script
 python3 generate_camera_overlay.py
 ```
+<div style={{textAlign: 'center', marginTop: '1.5rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_step1.png" alt="bringUp_step1" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+</div>
+
 > **Action Required:** Select the corresponding camera model based on the hardware port connection shown in the terminal prompt.
 >
 <!-- > ![Camera Overlay Selection](path/to/overlay_image.png) -->
+
 
 ## 2. Install Kernel & Drivers
 Install the kernel image and the kernel modules (`.ko` files) corresponding to your selected cameras.
@@ -216,6 +232,9 @@ argus_camera -d 0
 argus_camera -d 1
 ```
 <!-- > ![S56 Sample Image](path/to/s56_image.png) -->
+<div style={{textAlign: 'center', marginTop: '1.5rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png" alt="bringUp_S56" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+  </div>
 
 ### 8.2 Testing SHW3H & SHF3L (Monocular)
 Use GStreamer to verify the SHW3H and SHF3L cameras. Replace `/dev/videoX` with the appropriate node.
@@ -225,6 +244,9 @@ Use GStreamer to verify the SHW3H and SHF3L cameras. Replace `/dev/videoX` with 
 gst-launch-1.0 v4l2src device=/dev/video2 ! xvimagesink -ev 
 ```
 <!-- > ![Monocular Sample Image](path/to/mono_image.png) -->
+<div style={{textAlign: 'center', marginTop: '1.5rem'}}>
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_SHW3H.png" alt="bringUp_SHW3H" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+  </div>
 
 **Full Command List for All Ports:**
 ```bash
