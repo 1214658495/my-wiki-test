@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
-title: SHW3H（60fps）
+title: SHW3H（3MP HDR 60fps）
 ---
 
-# SHW3H（60fps）
+# SHW3H（3MP HDR 60fps Camera）
 
 ## Overview
 
