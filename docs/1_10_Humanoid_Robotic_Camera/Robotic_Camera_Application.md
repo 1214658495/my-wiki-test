@@ -43,33 +43,35 @@ The solution features a centralized high-performance computing unit connected to
 
 *   **Core Computing (SOC)**
     *   NVIDIA Jetson AGX Thor Developer Kit
-    *   SENSING TRD1 G2A Carrier Board
+    *   SENSING TRD1 G2A Carrier Board（SG8-AGX-Thor-GMSL2）
 *   **Head Vision**
-    *   **Astra S56:** Stereo Camera (Depth & Navigation)
-    *   **SHW3H:** High-Frame-Rate Monocular Camera (Dynamic Capture)
-*   **Hand / Limb Vision**
-    *   **SHF3L (×4):** Compact Monocular Cameras (Distributed on hands/limbs for dexterous manipulation)
+    *   **Astra S56:**  2 * 5MP Stereo Camera (Depth & VLA)
+    *   **Astra S36 (Optional):** 2 * 3MP Stereo Camera (Alternative Depth Solution)
+    *   **SHW3H:** 3MP HDR 60fps Monocular Camera
+*   **Hand Vision**
+    *   **SHF3L (×4):** 3MP HDR 30fps Monocular Camera
 
 ### Camera Configuration
 
-<!-- | Model | Type | Resolution | Shutter | Role / Position | Qty | Docs |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | **Head**: Depth Sensing & SLAM | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
-| **SHW3H** | Monocular | 3MP | Rolling | **Head**: High-Frame-Rate Vision | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Mono_Camera/SHW3H) |
-| **SHF3L** | Monocular | 3MP | Rolling | **Hands**: Fine Manipulation | 4 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Mono_Camera/SHF3L) | -->
-
-| Model | Type | Resolution | Shutter | FOV (H) | Role / Position | Qty | Docs |
+<!-- | Model | Type | Resolution | Shutter | FOV (H/V) | Role / Position | Qty | Docs |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | 120° | **Head**: Depth Sensing & SLAM | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
-| **SHW3H** | Monocular | 3MP | Rolling | 120° | **Head**: High-Frame-Rate Vision | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHW3H) |
-| **SHF3L** | Monocular | 3MP | Rolling | 190° | **Hands**: Fine Manipulation | 4 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHF3L) |
+| **Astra S56** | Stereo | 2 * 5MP | Global | [130°/102°] | **Head**: Depth Sensing & SLAM | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
+| **SHW3H** | Monocular | 3MP | Rolling | [118°/92°] | **Head**: High-Frame-Rate Vision | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHW3H) |
+| **SHF3L** | Monocular | 3MP | Rolling | [196°/154°] | **Hands**: Fine Manipulation | 4 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHF3L) | -->
+
+| Model | Type | Resolution | Shutter | Data Format | FOV (H) | Role / Position | Qty | Docs |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
+| **Astra S36** (Optional) | Stereo | 2 * 3MP | Rolling | YUV | 120° | **Head**: Depth (Alt) | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S36) |
+| **SHW3H** | Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHW3H) |
+| **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 4 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHF3L) |
 
 ### Computing Platform
 
 | Component | Model | Description |
 | :--- | :--- | :--- |
 | **SOC** | NVIDIA Jetson AGX Thor | Next-gen AI computer for humanoid robots. |
-| **Carrier Board** | SENSING TRD1 G2A | Supports up to 8x GMSL camera inputs with hardware sync. |
+| **Carrier Board** | SENSING TRD1 G2A （SG8-AGX-Thor-GMSL2） | Supports up to 8x GMSL camera inputs with hardware sync. |
 
 <!-- ## Synchronization Workflow
 
@@ -119,7 +121,7 @@ Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/
 
 This guide outlines the steps to configure the camera drivers, install the kernel, and verify the video stream for the SENSING TRD1 Vision Solution on Jetson AGX Thor.
 
-## 1. Select Camera Configuration
+### 1. Select Camera Configuration
 Navigate to the driver directory and run the configuration script to select the connected camera modules.
 
 ```bash
@@ -138,7 +140,7 @@ python3 generate_camera_overlay.py
 <!-- > ![Camera Overlay Selection](path/to/overlay_image.png) -->
 
 
-## 2. Install Kernel & Drivers
+### 2. Install Kernel & Drivers
 Install the kernel image and the kernel modules (`.ko` files) corresponding to your selected cameras.
 
 ```bash
@@ -147,7 +149,7 @@ chmod a+x ./install.sh
 ./install.sh
 ```
 
-## 3. Configure Device Tree (Jetson-IO)
+### 3. Configure Device Tree (Jetson-IO)
 Use the NVIDIA Jetson-IO tool to configure the CSI connector for the Sensing hardware.
 
 ```bash
@@ -163,7 +165,7 @@ sudo /opt/nvidia/jetson-io/jetson-io.py
 
 *The system will reboot to apply the changes.*
 
-## 4. Configure Trigger Mode
+### 4. Configure Trigger Mode
 After rebooting, modify the `load_modules.sh` script to set the correct trigger mode and synchronization settings.
 
 **Edit `load_modules.sh`:**
@@ -185,14 +187,14 @@ v4l2-ctl -d /dev/video7 -c sensor_mode=1,trig_pin=0x00020007,trig_mode=0
 green_print "Load modules done."
 ```
 
-## 5. Load Drivers
+### 5. Load Drivers
 Execute the modified script to load the drivers and apply settings.
 
 ```bash
 sudo ./load_modules.sh
 ```
 
-## 6. Install Argus Camera Tools
+### 6. Install Argus Camera Tools
 Install the NVIDIA Multimedia API and compile the Argus camera samples.
 
 ```bash
@@ -209,7 +211,7 @@ sudo make -j8
 sudo make install
 ```
 
-## 7. Restart Argus Daemon
+### 7. Restart Argus Daemon
 Restart the `nvargus-daemon` to ensure the ISP recognizes the new configuration. This is critical for RAW cameras.
 
 ```bash
@@ -219,9 +221,9 @@ sudo -E enableCamInfiniteTimeout=1 nvargus-daemon
 ```
 *(Keep this terminal open if running in foreground, or run in background)*
 
-## 8. Verification & Live Stream
+### 8. Verification & Live Stream
 
-### 8.1 Testing Astra S56 (Stereo/RAW)
+#### 8.1 Testing Astra S56 (Stereo/RAW)
 The S56 connects via RAW interface. Use `argus_camera` to view the stream.
 
 ```bash
@@ -236,7 +238,7 @@ argus_camera -d 1
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png" alt="bringUp_S56" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 
-### 8.2 Testing SHW3H & SHF3L (Monocular)
+#### 8.2 Testing SHW3H & SHF3L (Monocular)
 Use GStreamer to verify the SHW3H and SHF3L cameras. Replace `/dev/videoX` with the appropriate node.
 
 **Example Command:**
