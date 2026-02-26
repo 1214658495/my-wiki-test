@@ -39,10 +39,42 @@ const config = {
 
 
 
-  scripts: [
+  scripts:[
     {
       src: '//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js',
       defer: true,
+    },
+    // 1. 新增：引入 Coze 的外部依赖脚本
+    'https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js',
+  ],
+
+  // 2. 新增：注入 Coze 的悬浮窗初始化代码
+  headTags:[
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'text/javascript',
+      },
+      innerHTML: `
+        window.addEventListener('load', function() {
+          new CozeWebSDK.WebChatClient({
+            config: {
+              bot_id: '7610354374371622946',
+            },
+            componentProps: {
+              title: 'SENSING WIKI AI', // 帮你改成了符合你网站的名字
+              icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
+            },
+            auth: {
+              type: 'token',
+              token: 'pat_z9z1REwVc4J0t1a9tgK82rYVI50PgO0QqL3GDSR7iZcCH7qXhZgn5NkQF74NSy0h', // ⚠️ 这里一定要换成你的 PAT
+              onRefreshToken: function () {
+                return 'pat_z9z1REwVc4J0t1a9tgK82rYVI50PgO0QqL3GDSR7iZcCH7qXhZgn5NkQF74NSy0h'; // ⚠️ 这里也要换成你的 PAT
+              }
+            }
+          });
+        });
+      `,
     },
   ],
   presets: [

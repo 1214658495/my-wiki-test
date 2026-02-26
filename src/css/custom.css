@@ -136,3 +136,12 @@
 .hero__subtitle {
   color: #000000 !important;
 }
+/* 强制修复 Coze SDK 覆盖全局字体的问题 */
+body, html {
+  font-family: var(--ifm-font-family-base) !important;
+}
+
+/* 如果你的左侧导航栏字体还是有点怪，可以加上这句 */
+.menu {
+  font-family: var(--ifm-font-family-base) !important;
+}
