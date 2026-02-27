@@ -57,13 +57,24 @@ const config = {
       },
       innerHTML: `
         window.addEventListener('load', function() {
+          // 第一步：尝试从浏览器存储里获取已有的 ID，如果没有就生成一个随机的
+          let visitorId = localStorage.getItem('sensing_wiki_user_id');
+          if (!visitorId) {
+            visitorId = 'user_' + Math.random().toString(36).substring(2, 15);
+            localStorage.setItem('sensing_wiki_user_id', visitorId);
+          }
           new CozeWebSDK.WebChatClient({
             config: {
               bot_id: '7610354374371622946',
+              // 第二步：必须在这里显式指定用户 ID
+              user: {
+                id: visitorId,
+              },
             },
             componentProps: {
               title: 'SENSING WIKI AI', // 帮你改成了符合你网站的名字
               icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
+              lang: 'en', // 强制英文
             },
             auth: {
               type: 'token',
