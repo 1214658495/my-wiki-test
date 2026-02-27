@@ -65,11 +65,17 @@ const config = {
           }
           new CozeWebSDK.WebChatClient({
             config: {
-              bot_id: '7610354374371622946',
-              // 第二步：必须在这里显式指定用户 ID
-              user: {
-                id: visitorId,
-              },
+                bot_id: '7610354374371622946',
+                user: {
+                  // 每次进入页面都生成一个带时间戳的 ID让它很难撞车
+                  id: 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7),
+                },
+            },
+              // 同时在 componentProps 同级添加 ui 配置，关闭历史显示
+            ui: {
+                chatBot: {
+                  showHistory: false 
+                }
             },
             componentProps: {
               title: 'SENSING WIKI AI', // 帮你改成了符合你网站的名字
