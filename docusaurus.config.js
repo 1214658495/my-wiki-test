@@ -182,10 +182,15 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/docs/1_0_Camera',
+            activeBaseRegex: '^/docs/(?!4_0_Resources)',
             position: 'left',
             label: 'Quick Start',
+          },
+          {
+            label: 'Downloads',
+            position: 'left',
+            to: '/docs/4_0_Resources',
           },
           // {to: '/blog', label: 'Blog', position: 'left'},
           {
