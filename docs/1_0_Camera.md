@@ -8,7 +8,7 @@ keywords: [camera, vision, imaging, sensors, MIPI, Serdes, global shutter, event
 # Camera Technologies Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SENSING_WIKI.png" alt="SENSING Camera Technologies" style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/SENSING_WIKI.png" alt="SENSING Camera Technologies" style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
 :::note Professional Vision Solutions
