@@ -146,3 +146,37 @@ body, html {
 .menu {
   font-family: var(--ifm-font-family-base) !important;
 }
+
+/* =========================================
+   顶部导航栏：浅灰胶囊样式 (完美还原截图)
+   ========================================= */
+
+.navbar__link.nav-btn {
+  /* 1. 核心：大圆角，直接变成胶囊形状 */
+  border-radius: 50px !important; 
+  /* 2. 左右稍微留宽一点，上下紧凑，比例最完美 */
+  padding: 3px 10px !important; 
+  margin: 0 4px !important;
+  
+  /* 3. 彻底干掉所有边框 */
+  border: none !important; 
+  
+  /* 默认状态：透明背景，普通文字颜色 */
+  background-color: transparent !important;
+  color: var(--ifm-navbar-link-color) !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease;
+}
+
+/* 鼠标悬停 (Hover) 时：显示截图中的浅灰背景 + SENSING 绿文字 */
+.navbar__link.nav-btn:hover {
+  background-color: #f2f4f6 !important; /* 截图同款浅灰底色 */
+  color: var(--ifm-color-primary) !important; 
+}
+
+/* 当前选中 (Active) 状态：常驻浅灰背景 + SENSING 绿文字 */
+.navbar__link--active.nav-btn {
+  background-color: #f2f4f6 !important; 
+  color: var(--ifm-color-primary) !important;
+  font-weight: 600 !important; /* 选中时稍微加粗一点点，更有质感 */
+}
