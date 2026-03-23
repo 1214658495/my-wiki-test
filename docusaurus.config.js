@@ -49,44 +49,63 @@ const config = {
   ],
 
   // 2. 新增：注入 Coze 的悬浮窗初始化代码
-  headTags:[
+  headTags: [
     {
       tagName: 'script',
-      attributes: {
-        type: 'text/javascript',
-      },
+      attributes: { type: 'text/javascript' },
       innerHTML: `
-        window.addEventListener('load', function() {
-          // 第一步：尝试从浏览器存储里获取已有的 ID，如果没有就生成一个随机的
+        // 定义获取 Token 的函数，去请求我们刚部署好的 Vercel 接口
+        async function fetchCozeToken() {
+          try {
+            const response = await fetch('https://my-wiki-test.vercel.app/api/coze'); 
+            const data = await response.json();
+            if(data.success) {
+                return data.token;
+            } else {
+                console.error("Token fetch failed:", data.error);
+                return null;
+            }
+          } catch (error) {
+            console.error("Failed to request Coze API:", error);
+            return null;
+          }
+        }
+
+        window.addEventListener('load', async function() {
+          // 1. 首次加载时获取 Token
+          const initialToken = await fetchCozeToken();
+          if (!initialToken) {
+             console.log("未获取到 Token，机器人加载中止。");
+             return; 
+          }
+
+          // 2. 生成唯一的访客 ID (彻底解决客户串记录的问题)
           let visitorId = localStorage.getItem('sensing_wiki_user_id');
           if (!visitorId) {
-            visitorId = 'user_' + Math.random().toString(36).substring(2, 15);
+            visitorId = 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
             localStorage.setItem('sensing_wiki_user_id', visitorId);
           }
+
+          // 3. 启动 Coze SDK
           new CozeWebSDK.WebChatClient({
             config: {
-                bot_id: '7610354374371622946',
-                user: {
-                  // 每次进入页面都生成一个带时间戳的 ID让它很难撞车
-                  id: 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7),
-                },
+              bot_id: '7610354374371622946',
+              user: { id: visitorId },
             },
-              // 同时在 componentProps 同级添加 ui 配置，关闭历史显示
             ui: {
-                chatBot: {
-                  showHistory: false 
-                }
+              chatBot: { width: 800 } // 这里可以调宽窗口
             },
             componentProps: {
-              title: 'SENSING WIKI AI', // 帮你改成了符合你网站的名字
+              title: 'SENSING WIKI AI',
               icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
-              lang: 'en', // 强制英文
+              lang: 'en',
             },
             auth: {
-              type: 'token',
-              token: 'pat_z9z1REwVc4J0t1a9tgK82rYVI50PgO0QqL3GDSR7iZcCH7qXhZgn5NkQF74NSy0h', // ⚠️ 这里一定要换成你的 PAT
-              onRefreshToken: function () {
-                return 'pat_z9z1REwVc4J0t1a9tgK82rYVI50PgO0QqL3GDSR7iZcCH7qXhZgn5NkQF74NSy0h'; // ⚠️ 这里也要换成你的 PAT
+              type: 'jwt',              // 鉴权类型改为 jwt
+              token: initialToken,      // 传入刚获取的临时 Token
+              onRefreshToken: async function () {
+                // Token 1小时过期后，SDK 会自动调用这里重新要一张
+                return await fetchCozeToken();
               }
             }
           });
