@@ -23,7 +23,7 @@ The image below shows a camera with:
 - **Product Model**: SG3-ISX031C-GMSL2-H190S
 
 <div style={{textAlign: 'center', margin: '1.5rem 0'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/SN/SN_code.png" alt="SN Code Example" style={{maxWidth: '300px', height: 'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
 <div style={{textAlign: 'center', display: 'flex', justifyContent: 'center'}}>

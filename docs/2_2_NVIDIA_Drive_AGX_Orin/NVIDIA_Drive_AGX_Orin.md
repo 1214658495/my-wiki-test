@@ -5,7 +5,7 @@ sidebar_position: 5
 # NVIDIA® DRIVE AGX Orin Camera
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin.png" alt="NVIDIA_Drive_AGX_Orin" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin.png" alt="NVIDIA_Drive_AGX_Orin" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -46,7 +46,7 @@ import TabItem from '@theme/TabItem';
 
 ## Camera for NVIDIA DRIVE AGX Orin Platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/Support_for_Camera.png" alt="Support_for_Camera" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_2_NVIDIA_Drive_AGX_Orin/Support_for_Camera.png" alt="Support_for_Camera" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
@@ -116,7 +116,7 @@ import TabItem from '@theme/TabItem';
 
 ### NVIDIA DRIVE AGX Orin Camera Solutions
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/GMSL2_Multi-Camera_for_Developer_Kit1.png" alt="GMSL2_Multi-Camera_for_Developer_Kit1" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_2_NVIDIA_Drive_AGX_Orin/GMSL2_Multi-Camera_for_Developer_Kit1.png" alt="GMSL2_Multi-Camera_for_Developer_Kit1" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 

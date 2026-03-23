@@ -14,7 +14,7 @@ The camera utilizes an **Amphenol Fakra Z-Code** connector designed for automoti
 
 <div className="image-container">
     <img 
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_connector.png" 
+        src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_connector.png" 
         alt="Fakra Z-Code Connector" 
         width="400" 
     />
@@ -73,7 +73,7 @@ Our GMSL cameras are available with two lens mounting systems:
 
 <div className="image-container">
     <img 
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_Structure_intro.png" 
+        src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_AA_Structure_intro.png" 
         alt="AA Mount Structure" 
         width="600" 
     />
@@ -84,7 +84,7 @@ AA mounting employs advanced technology ensuring precise optical alignment for s
 
 <div className="image-container">
     <img 
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_AA_lens.png" 
+        src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_AA_lens.png" 
         alt="AA Mounted Lens" 
         width="400" 
     />
@@ -100,7 +100,7 @@ AA mounting employs advanced technology ensuring precise optical alignment for s
 
 <div className="image-container">
     <img
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_S_mount_Structure_intro.png"
+        src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_S_mount_Structure_intro.png"
         alt="S-Mount Structure"
         width="600"
     />
@@ -139,7 +139,7 @@ Depending on your environmental requirements, our cameras are available with or 
 
 <div className="image-container">
     <img
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Heating_intro.png"
+        src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_Heating_intro.png"
         alt="Camera with Heating Function"
         width="400"
     />
@@ -148,7 +148,7 @@ Depending on your environmental requirements, our cameras are available with or 
 
 <div className="image-container">
     <img
-        src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Heating_Effect_Comparison.png"
+        src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Heating_Effect_Comparison.png"
         alt="Heating Effect Comparison"
         width="600"
     />

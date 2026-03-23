@@ -14,7 +14,7 @@ title: Robotic Camera Solutions
     Leveraging advanced multi-sensor fusion technology (featuring stereo cameras, high-frame-rate monocular cameras, and hand-mounted cameras), this system empowers robots with precise spatial localization, robust environmental perception, and fine manipulation guidance. It is perfectly tailored to meet the complex interactive and computational demands of next-generation humanoid robots.
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/Robotic_Camera_Solutions.png" alt="CCG3-8M Application Scenario" style={{maxWidth: '100%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/Robotic_Camera_Solutions.png" alt="CCG3-8M Application Scenario" style={{maxWidth: '100%', height:'auto', borderRadius: '8px'}} />
   </div>
 </div>
 
@@ -35,7 +35,7 @@ title: Robotic Camera Solutions
 
 The solution features a centralized high-performance computing unit connected to a distributed network of vision sensors. To ensure industrial-grade reliability, ultra-low latency, and high bandwidth, all camera modules are linked to the computing platform via **GMSL** interfaces.
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/Robotic_Camera_Connect.png" alt="Robotic_Camera_Connect" style={{maxWidth: '65%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/Robotic_Camera_Connect.png" alt="Robotic_Camera_Connect" style={{maxWidth: '65%', height:'auto', borderRadius: '8px'}} />
   </div>
 
 
@@ -91,7 +91,7 @@ The solution features a centralized high-performance computing unit connected to
 
 ### Installation Steps
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/Camera_Connect.png" alt="Camera_Connect" style={{maxWidth: '90%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/Camera_Connect.png" alt="Camera_Connect" style={{maxWidth: '90%', height:'auto', borderRadius: '8px'}} />
 </div>
 
 :::note Quick Setup
@@ -132,7 +132,7 @@ cd TRD1_G2A_AGX_THOR_GMSL2x8_JP7.0_L4TR38.2
 python3 generate_camera_overlay.py
 ```
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_step1.png" alt="bringUp_step1" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_step1.png" alt="bringUp_step1" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
 </div>
 
 > **Action Required:** Select the corresponding camera model based on the hardware port connection shown in the terminal prompt.
@@ -235,7 +235,7 @@ argus_camera -d 1
 ```
 <!-- > ![S56 Sample Image](path/to/s56_image.png) -->
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png" alt="bringUp_S56" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png" alt="bringUp_S56" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 
 #### 8.2 Testing SHW3H & SHF3L (Monocular)
@@ -247,7 +247,7 @@ gst-launch-1.0 v4l2src device=/dev/video2 ! xvimagesink -ev
 ```
 <!-- > ![Monocular Sample Image](path/to/mono_image.png) -->
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_SHW3H.png" alt="bringUp_SHW3H" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_SHW3H.png" alt="bringUp_SHW3H" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 
 **Full Command List for All Ports:**

@@ -21,7 +21,7 @@ sidebar_position: 1
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter.png" alt="GMSL2_Camera_Splitter" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter.png" alt="GMSL2_Camera_Splitter" 
     style={{maxWidth: '25%', height:'auto'}} />
 </div>
 <br />
@@ -60,7 +60,7 @@ sidebar_position: 1
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter Dimensions" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Dimensions.png" alt="GMSL2_Camera_Splitter Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -68,7 +68,7 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="GMSL2_Camera_Splitter Block Diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="GMSL2_Camera_Splitter Block Diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -87,7 +87,7 @@ sidebar_position: 1
 
 #### Connector Pin Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connect.png" alt="GMSL2_Camera_Splitter Connector" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connect.png" alt="GMSL2_Camera_Splitter Connector" 
     style={{maxWidth: '40%', height:'auto'}} />
 </div>
 
@@ -105,7 +105,7 @@ sidebar_position: 1
 
 #### Cable Harness Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter Cable Harness" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter Cable Harness" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
@@ -128,7 +128,7 @@ sidebar_position: 1
 Using the Splitter when connecting to different domain controllers:
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_B.png" alt="Splitter block diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_B.png" alt="Splitter block diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>Splitter block diagram - Configuration for connecting to different domain controllers</p>
 </div>

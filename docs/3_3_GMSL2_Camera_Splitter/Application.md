@@ -12,7 +12,7 @@ The GMSL2 Camera Splitter, designed by SENSING Technology Co., Ltd., provides a 
 
 #### Simultaneous Data Recording and Real-time Processing
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Application.png" alt="Splitter in ADAS" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Application.png" alt="Splitter in ADAS" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>Simultaneous data flow to processing and recording units</p>
 </div>
@@ -72,7 +72,7 @@ A semiconductor manufacturing facility deployed the GMSL2 Camera Splitter to con
 
 ### Signal Flow Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="Signal Flow" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Block_Diagram.png" alt="Signal Flow" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 

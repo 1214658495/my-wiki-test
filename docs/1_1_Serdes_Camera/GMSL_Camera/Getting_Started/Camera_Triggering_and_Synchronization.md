@@ -9,7 +9,7 @@ The system consists of a Controller [including SoC and Deserializer], Cameras [i
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_Fsync.png" alt="Camera_Fsync" style={{width: 760, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_Fsync.png" alt="Camera_Fsync" style={{width: 760, height:'auto'}} />
 </div>
 
 <br />
@@ -24,14 +24,14 @@ The system consists of a Controller [including SoC and Deserializer], Cameras [i
 - If the timestamps from multiple cameras are closely aligned (or identical), synchronization is considered successful.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/TimeStemp.png" alt="Camera_Fsync" style={{width: 460, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/TimeStemp.png" alt="Camera_Fsync" style={{width: 460, height:'auto'}} />
 </div>
 
 ## 3. Fsync Signal Specifications
 - The Fsync signal should meet specific requirements, including voltage level, pulse width, and frequency. Refer to your hardware documentation for detailed parameters.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/TriggerFsync.png" alt="Camera_Fsync" style={{width: 460, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/TriggerFsync.png" alt="Camera_Fsync" style={{width: 460, height:'auto'}} />
 </div>
 
 ## 4. Register Configuration Example

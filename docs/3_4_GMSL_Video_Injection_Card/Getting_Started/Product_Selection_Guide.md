@@ -5,7 +5,7 @@ title: Product Selection Guide
 
 # CIG4-8H Introduction
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{maxWidth: '40%', height:'auto', borderRadius: '8px'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{maxWidth: '40%', height:'auto', borderRadius: '8px'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     SENSING CIG4-8H GMSL Video Injection Card
   </p>
@@ -320,7 +320,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #f3e5f5 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #7b1fa2', minWidth: '100px', boxShadow: '0 3px 12px rgba(123,31,162,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #7b1fa2, #ba68c8)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#7b1fa2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Industrial PC</div>
       </div>
     </div>
@@ -335,7 +335,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #388e3c', minWidth: '100px', boxShadow: '0 3px 12px rgba(56,142,60,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #388e3c, #66bb6a)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#388e3c', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>CIG4-8H</div>
       </div>
     </div>
@@ -350,7 +350,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #f57c00', minWidth: '100px', boxShadow: '0 3px 12px rgba(245,124,0,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #f57c00, #ffb74d)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#f57c00', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>ECU</div>
       </div>
     </div>
@@ -498,7 +498,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #f3e5f5 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #7b1fa2', minWidth: '100px', boxShadow: '0 3px 12px rgba(123,31,162,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #7b1fa2, #ba68c8)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#7b1fa2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Industrial PC</div>
       </div>
     </div>
@@ -513,7 +513,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #388e3c', minWidth: '100px', boxShadow: '0 3px 12px rgba(56,142,60,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #388e3c, #66bb6a)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#388e3c', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>CIG4-8H</div>
       </div>
     </div>
@@ -528,7 +528,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #f57c00', minWidth: '100px', boxShadow: '0 3px 12px rgba(245,124,0,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #f57c00, #ffb74d)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#f57c00', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>ECU</div>
       </div>
     </div>
@@ -689,7 +689,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #f3e5f5 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #7b1fa2', minWidth: '100px', boxShadow: '0 3px 12px rgba(123,31,162,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #7b1fa2, #ba68c8)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/industrial_pc.png" alt="Industrial PC" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(123,31,162,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#7b1fa2', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>Industrial PC</div>
       </div>
     </div>
@@ -704,7 +704,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #e8f5e8 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #388e3c', minWidth: '100px', boxShadow: '0 3px 12px rgba(56,142,60,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #388e3c, #66bb6a)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CIG4-8H GMSL Video Injection Card" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(56,142,60,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#388e3c', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>CIG4-8H</div>
       </div>
     </div>
@@ -719,7 +719,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
     <div style={{textAlign: 'center', transition: 'transform 0.2s ease'}}>
       <div style={{background: 'linear-gradient(135deg, #fff3e0 0%, #f8f9fa 100%)', borderRadius: '10px', padding: '1.2rem 1rem', border: '2px solid #f57c00', minWidth: '100px', boxShadow: '0 3px 12px rgba(245,124,0,0.15)', position: 'relative'}}>
         <div style={{position: 'absolute', top: '-2px', left: '-2px', right: '-2px', bottom: '-2px', background: 'linear-gradient(135deg, #f57c00, #ffb74d)', borderRadius: '12px', zIndex: '-1', opacity: '0.1'}}></div>
-        <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
+        <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/automotive_ecu.png" alt="Automotive ECU" style={{width: '80px', height: '80px', marginBottom: '0.6rem', filter: 'drop-shadow(0 1px 2px rgba(245,124,0,0.2))', borderRadius: '4px'}} />
         <div style={{fontWeight: '700', fontSize: '0.8em', color: '#f57c00', lineHeight: '1.3', textShadow: '0 1px 2px rgba(0,0,0,0.1)'}}>ECU</div>
       </div>
     </div>
@@ -801,7 +801,7 @@ The **CIG4-8H GMSL Video Injection Card** is specifically designed to solve loca
 ## How to select the right video injection solution?
 
 <div style={{textAlign: 'center'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CIG4-8H Block Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Diagram.png" alt="CIG4-8H Block Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     CIG4-8H Hardware Block Diagram and System Architecture
   </p>

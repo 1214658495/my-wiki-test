@@ -20,7 +20,7 @@ This software package based on nvidia official HSB v2.2.1 package and add suppor
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/Sensing-HSBKIT01.png" alt="Sensing-HSBKIT01" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/Sensing-HSBKIT01.png" alt="Sensing-HSBKIT01" 
     style={{maxWidth: '50%', height:'auto'}} />
 </div>
 <br />
@@ -84,7 +84,7 @@ This software package based on nvidia official HSB v2.2.1 package and add suppor
 ### Hardware Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png" alt="HSBKIT2M" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png" alt="HSBKIT2M" style={{maxWidth: '80%', height: 'auto'}} />
     <p><em>Figure 1: HSBKIT2M</em></p>
 </div>
 
@@ -131,9 +131,9 @@ You may choose the following Product model
 
 | Product model  | Parts  | Camera Key features | Product Image |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW Camera（Rolling shutter） | <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/Sensing-HSBKIT01.png" alt="SENSING-HSBKIT2M" width="200" /> |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） | <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png" alt="SENSING-HSBKIT4M" width="200" /> |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） <br/> 3MP_MIPI RAW Camera（Rolling shutter） | <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png" alt="SENSING-HSBKIT6M" width="200" /> |
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW Camera（Rolling shutter） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/Sensing-HSBKIT01.png" alt="SENSING-HSBKIT2M" width="200" /> |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png" alt="SENSING-HSBKIT4M" width="200" /> |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） <br/> 3MP_MIPI RAW Camera（Rolling shutter） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png" alt="SENSING-HSBKIT6M" width="200" /> |
 
 <!-- :::note JetPack Versions
 NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 7.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
@@ -200,7 +200,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 #### HSBKIT2M Kit Contents
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSB_Accessories_for_AGX_Thor.png" alt="TRD1 G2A Kit Contents" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSB_Accessories_for_AGX_Thor.png" alt="HSB Accessories for AGX Thor" style={{maxWidth: '80%', height: 'auto'}} />
     <p><em>Figure 2: HSB Accessories for AGX Thor</em></p>
 </div>
 

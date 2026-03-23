@@ -20,7 +20,7 @@ sidebar_position: 2
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_2_NVIDIA_Drive_AGX_Orin/GMSL2_Multi-Camera_for_Developer_Kit.png" alt="GMSL2 Multi-Camera Kit" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_2_NVIDIA_Drive_AGX_Orin/GMSL2_Multi-Camera_for_Developer_Kit.png" alt="GMSL2 Multi-Camera Kit" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 

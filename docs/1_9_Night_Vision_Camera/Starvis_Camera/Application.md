@@ -33,7 +33,7 @@ A starlight camera is capable of capturing clear images in low-light (starlight-
 The SN2M4EFGD starlight camera module features a 2MP low-light image sensor with a larger photosensitive area per pixel, providing enhanced sensitivity for low-light imaging. It can capture even the faintest light signals. In starlight-level lighting conditions, this camera can produce clear, full-color images without the need for any auxiliary lighting.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/regular_vs_starlight.png" alt="Regular camera vs. Starlight camera" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/regular_vs_starlight.png" alt="Regular camera vs. Starlight camera" 
     style={{maxWidth: '80%', height:'auto'}} />
     <p>Regular camera vs. Starlight camera</p>
 </div>
@@ -43,7 +43,7 @@ The SN2M4EFGD starlight camera module features a 2MP low-light image sensor with
 The starlight camera module SN2M4EFGD utilizes a high-performance ISP chip in combination with an ultra-sensitive image sensor. SENSING's self-developed ISP technology enhances image brightness and eliminates noise, significantly improving image quality under low-light conditions.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/ISP_tech.png" alt="ISP technology" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/ISP_tech.png" alt="ISP technology" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -52,13 +52,13 @@ The starlight camera module SN2M4EFGD utilizes a high-performance ISP chip in co
 Thanks to its unique image enhancement technology, the SN2M4EFGD module enhances brightness and clarity in nighttime scenes while also managing exposure suppression and image blending for daytime scenes. It achieves starlight-level minimum illumination and strong light resistance, perfectly meeting the demand for high-quality imaging in 24/7 monitoring applications.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/night_comparison.png" alt="Night vision comparison" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/night_comparison.png" alt="Night vision comparison" 
     style={{maxWidth: '80%', height:'auto'}} />
     <p>Regular camera vs. Starlight camera at night</p>
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/daytime_outdoor.png" alt="Outdoor Daytime Multi-Scene Imaging Performance" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/daytime_outdoor.png" alt="Outdoor Daytime Multi-Scene Imaging Performance" 
     style={{maxWidth: '80%', height:'auto'}} />
     <p>Outdoor Daytime Multi-Scene Imaging Performance</p>
 </div>
@@ -68,7 +68,7 @@ Thanks to its unique image enhancement technology, the SN2M4EFGD module enhances
 The SN2M4EFGD starlight camera module employs GMSL2 serializers with FAKRA connectors and supports synchronized triggering, enabling multi-sensor fusion. This module is ideal for long-distance, low-latency, and high-quality transmission scenarios, making it particularly suitable for unmanned delivery vehicles and robots operating in complex environments. Its smooth, high-quality image transmission effectively prevents connection interruptions, ensuring stable device operation.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/transmission.png" alt="Transmission" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/transmission.png" alt="Transmission" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -77,7 +77,7 @@ The SN2M4EFGD starlight camera module employs GMSL2 serializers with FAKRA conne
 In terms of design, the SN2M4EFGD module features a compact form factor with dimensions of just 30mm × 30mm × 22.5mm and a weight of approximately 50g. Its small size ensures easy installation, and it meets the IP67 protection standard.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/compact_design.png" alt="Compact Design" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/compact_design.png" alt="Compact Design" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -91,6 +91,6 @@ The SN2M4EFGD starlight camera module can be applied across various fields:
 - Dark factories—environments requiring clear image capture under low-light conditions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/applications.png" alt="Application scenarios" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD/Application/applications.png" alt="Application scenarios" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>

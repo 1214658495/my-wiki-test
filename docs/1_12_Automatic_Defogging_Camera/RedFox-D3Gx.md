@@ -15,7 +15,7 @@ title: RedFox-D3Gx
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/RedFox-D3Gx.png" alt="RedFox-D3Gx" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/RedFox-D3Gx.png" alt="RedFox-D3Gx" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
@@ -81,24 +81,24 @@ title: RedFox-D3Gx
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/D3GF.png" alt="SN2M4EFGD" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GF.png" alt="SN2M4EFGD" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 <br />
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/D3GN.png" alt="SN2M4EFGD" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GN.png" alt="SN2M4EFGD" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 <br />
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/D3GW.png" alt="SN2M4EFGD" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GW.png" alt="SN2M4EFGD" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_BlockDiagram.png" alt="D3Gx_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_BlockDiagram.png" alt="D3Gx_BlockDiagram" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -237,7 +237,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
 </div>
 
 The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.

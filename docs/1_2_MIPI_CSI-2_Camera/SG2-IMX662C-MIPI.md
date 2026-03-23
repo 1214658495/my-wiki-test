@@ -13,7 +13,7 @@ sidebar_position: 1
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031.png" alt="SG2-IMX662C-MIPI" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031.png" alt="SG2-IMX662C-MIPI" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
@@ -52,7 +52,7 @@ sidebar_position: 1
 ### Physical Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/SG2-IMX662C-MIPI/SG2-IMX662C-MIPI_Dimensions.png" alt="SG2-IMX662C-MIPI Dimensions" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/SG2-IMX662C-MIPI/SG2-IMX662C-MIPI_Dimensions.png" alt="SG2-IMX662C-MIPI Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -61,7 +61,7 @@ sidebar_position: 1
 ### System Architecture
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/SG2-IMX662C-MIPI/SG2-IMX662C-MIPI_Block_Diagram.png" alt="SG2-IMX662C-MIPI Block Diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/SG2-IMX662C-MIPI/SG2-IMX662C-MIPI_Block_Diagram.png" alt="SG2-IMX662C-MIPI Block Diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -118,7 +118,7 @@ sidebar_position: 1
 ### Power-Up Sequence
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png" alt="Power Sequence Diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031_power_sequence.png" alt="Power Sequence Diagram" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -156,7 +156,7 @@ Download the complete [SG2-IMX662C-MIPI-HXXX Camera Datasheet](https://sensing-w
 :::
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Camera Installation on Jetson" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Camera Installation on Jetson" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
@@ -217,7 +217,7 @@ For more information, visit [NVIDIA's Jetson Download Center](https://developer.
 The SG2-IMX662C-MIPI supports two FPC cable types for different connection requirements:
 
 <div style={{textAlign: 'center', marginBottom: '1rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="FPC Cable Options" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="FPC Cable Options" 
     style={{maxWidth: '70%', height:'auto'}} />
 </div>
 

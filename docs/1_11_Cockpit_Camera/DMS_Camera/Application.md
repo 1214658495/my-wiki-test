@@ -12,7 +12,7 @@ With the continuous advancement of driving technology, the focus of driving safe
 
 The DMS camera is typically installed on the dashboard or steering column, enabling real-time acquisition of the driver's face, eyes, head, and upper body images. Its main functions include:
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_Application.png" alt="DMSBBFAN_Application" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_Application.png" alt="DMSBBFAN_Application" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>DMSBBFAN Camera</p>
 </div>
@@ -33,7 +33,7 @@ To meet the high reliability and all-weather requirements of automotive applicat
 
 ## 3. Typical Application Scenarios
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_ConnectNvidia.png" alt="DMSBBFAN_ConnectNvidia" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_3_Global_Shutter_Camera/GMSL_Camera/DMSBBFAN/DMSBBFAN_ConnectNvidia.png" alt="DMSBBFAN_ConnectNvidia" 
     style={{maxWidth: '50%', height:'auto'}} />
     <p>DMSBBFAN Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>

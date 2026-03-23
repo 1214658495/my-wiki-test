@@ -8,7 +8,7 @@ sidebar_position: 1
 ### 1.1 Device Connection
 Connect the SENSING Camera to the cam1 interface of the PANDA Serial PG2 using the USB 3.0 cable, then connect to your PC as illustrated in the connection diagram. Use the SensingCaptureV3 software tool to display camera images and perform camera upgrades.
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/PANDA_Application1.png" alt="PANDA_Application" style={{maxWidth: '100%', height:'auto'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/PANDA_Application1.png" alt="PANDA_Application" style={{maxWidth: '100%', height:'auto'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     PANDA Serial PG2 Installation Connection Diagram
   </p>
@@ -18,14 +18,14 @@ Connect the SENSING Camera to the cam1 interface of the PANDA Serial PG2 using t
 The PANDA Serial PG2 follows the UVC protocol specification defined by USB-IF. It can be used immediately after plugging in and is default-free (using the UVC camera driver provided by Windows). It should be noted that the PG2 only supports the USB3.0 interface. After connecting the PG2 to the USB 3.0 interface of the PC, the device can be seen in the Facility Management of the window.
 Open the device manager of the computer. You can see the "SENSING_USB3_CAMERA" device item in the camera project of the device manager, and you can see the FT4222 device item in the Universal Serial Bus Controller project,when the <strong>CAM UPDATE</strong> port is connected to the computer.
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '45%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure2.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '45%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     SensingCaptureV3 Installation Instructions
   </p>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1_3.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure1_3.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     Hardware Environment Check
   </p>
@@ -35,7 +35,7 @@ Open the device manager of the computer. You can see the "SENSING_USB3_CAMERA" d
 
 **Download Link:** https://github.com/SENSING-Technology/SensingCaptureV3
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1_1.png" alt="SensingCaptureV3 Download" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure1_1.png" alt="SensingCaptureV3 Download" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     SensingCaptureV3 Download
   </p>
@@ -45,7 +45,7 @@ Open the device manager of the computer. You can see the "SENSING_USB3_CAMERA" d
 
 After downloading SensingCaptureV3, follow steps 1-3 as shown in the accompanying images to install and use the software.
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1_2.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure1_2.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     SensingCaptureV3 Installation Instructions
   </p>
@@ -54,7 +54,7 @@ After downloading SensingCaptureV3, follow steps 1-3 as shown in the accompanyin
 <!-- If the software fails to start, please try printing and displaying a complete error message, or check if the software directory contains the packages folder with the required VC201XRedist redistributable packages. -->
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure1.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure1.png" alt="SensingCaptureV3 Startup Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 1:</strong> SensingCaptureV3 startup interface showing the main control panel and display area
   </p>
@@ -81,13 +81,13 @@ In the device list, the device number and control panel will display information
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem', gap: '1rem'}}>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure3.png" alt="Device List Panel" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure3.png" alt="Device List Panel" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 3:</strong> Device list showing connected camera information
     </p>
   </div>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure4.png" alt="Camera Control Panel" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure4.png" alt="Camera Control Panel" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 4:</strong> Camera control panel with configuration options
     </p>
@@ -106,13 +106,13 @@ In the search mode, enter partial information of the configuration file name. Ac
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem', gap: '1rem'}}>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure5.png" alt="Configuration File Selection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure5.png" alt="Configuration File Selection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 5:</strong> Configuration file selection dropdown menu
     </p>
   </div>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure6.png" alt="Search Configuration by Name" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure6.png" alt="Search Configuration by Name" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 6:</strong> Search configuration file by entering partial name (e.g., ISX031)
     </p>
@@ -122,7 +122,7 @@ In the search mode, enter partial information of the configuration file name. Ac
 After selecting the configuration file, click "Confirm". The system will automatically load the detailed information of the configuration file and complete the loading process. The system will then display the information shown in Figure 7.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure7.png" alt="Configuration Loading Complete" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure7.png" alt="Configuration Loading Complete" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 7:</strong> Configuration file successfully loaded with detailed camera parameters displayed
   </p>
@@ -133,7 +133,7 @@ After selecting the configuration file, click "Confirm". The system will automat
 Click "Start Camera" in the upper left corner. The software will display real-time captured images in the middle area, as shown in Figure 8.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure8.png" alt="Camera Live View" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure8.png" alt="Camera Live View" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 8:</strong> Live camera view displaying real-time captured images with control panel on the left
   </p>
@@ -148,7 +148,7 @@ Click "Start Camera" in the upper left corner. The software will display real-ti
 Open the camera and the interface will display as shown in Figure 9. Click "Start Recording", and the system will automatically create a storage path for video recording. Based on personal needs, establish a reasonable storage path. At this point, the interface will display a "Recording" prompt, indicating that recording is in progress. The recorded video file is saved in AVI format (Audio Video Interleave), with the file extension .avi. The recording format is Motion-JPEG (MJPEG).
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure9.png" alt="Start Recording Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure9.png" alt="Start Recording Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 9:</strong> Camera interface with "Start Recording" button highlighted, showing live video feed
   </p>
@@ -159,7 +159,7 @@ Open the camera and the interface will display as shown in Figure 9. Click "Star
 Click "Stop Recording", and the interface will display as shown in Figure 10. This will immediately stop recording. In the established storage path, you can find the recorded video.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure10.png" alt="Stop Recording Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure10.png" alt="Stop Recording Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 10:</strong> Interface showing "Stop Recording" option with file directory highlighted
   </p>
@@ -171,13 +171,13 @@ Open the camera and click "Snapshot". The interface will display as shown in Fig
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem', gap: '1rem'}}>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure11.png" alt="Snapshot Function" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure11.png" alt="Snapshot Function" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 11:</strong> Camera interface with snapshot function activated
     </p>
   </div>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure12.png" alt="Snapshot File Location" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure12.png" alt="Snapshot File Location" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 12:</strong> File directory showing saved snapshot in the pictures folder
     </p>
@@ -197,7 +197,7 @@ During the testing process, click the tool-camera component upgrade button. Sele
 For Sony cameras, click the measurement button. You need to add a corresponding component to obtain the version number. The operation steps are as shown in Figure 13. After the measurement, the version number is recorded.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure13.png" alt="Sony Camera Component Configuration" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure13.png" alt="Sony Camera Component Configuration" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 13:</strong> Sony camera component configuration interface showing measurement and version detection options
   </p>
@@ -217,13 +217,13 @@ For specific operations, refer to Figure 14. After the component is completed, c
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem', gap: '1rem'}}>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure14.png" alt="Component Update Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure14.png" alt="Component Update Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 14:</strong> Component update interface showing configuration options and update controls
     </p>
   </div>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure15.png" alt="Update Completion Status" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure15.png" alt="Update Completion Status" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 15:</strong> Update completion status showing successful component upgrade
     </p>
@@ -265,7 +265,7 @@ Click the read button. If the operation is successful, it will display the value
 Click the write button to send the value to the storage location, as shown in Figure 17. Green text `<write successful> 80, 02d3, 10` indicates successful writing. Red text `<write fail> 80, 02d3, 10` indicates writing failure.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure16.png" alt="Register Read/Write Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure16.png" alt="Register Read/Write Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 16:</strong> Register read/write interface showing I2C address, storage depth, and operation status messages
   </p>
@@ -277,13 +277,13 @@ According to Figure 2's connection setup, as shown in Figure 17, the P2 pin trig
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem', gap: '1rem'}}>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure17.png" alt="External Trigger Hardware Connection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure17.png" alt="External Trigger Hardware Connection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 17:</strong> External trigger hardware connection showing P2 pin and cable setup
     </p>
   </div>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure18.png" alt="External Trigger Software Configuration" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure18.png" alt="External Trigger Software Configuration" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 18:</strong> External trigger software configuration interface with trigger mode settings
     </p>
@@ -295,7 +295,7 @@ According to Figure 2's connection setup, as shown in Figure 17, the P2 pin trig
 When the camera is connected to the UVC box, the current reading method can be used to estimate the camera's power consumption. Click the button to obtain the current, and you can check the current status of the camera, as shown in Figure 19.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure19.png" alt="Current Reading Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure19.png" alt="Current Reading Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 19:</strong> Current reading interface displaying camera power consumption measurements
   </p>
@@ -308,7 +308,7 @@ If the camera has internal parameter standards, you can use the position reading
 Click the tool bar, select OTP burning. Select the camera type according to the OTP type interface and select the corresponding response, as shown in Figure 20.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure20.png" alt="Camera OTP Type Selection Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure20.png" alt="Camera OTP Type Selection Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 20:</strong> Camera OTP type selection interface showing available camera types including unknown, AR0147, IMX390002, IMX412, ZEPROM, OV9281, and OV9734
   </p>
@@ -318,13 +318,13 @@ After selection is complete, click confirm, and Figure 21's interface will appea
 
 <div style={{display: 'flex', justifyContent: 'space-between', marginBottom: '1.5rem', gap: '1rem'}}>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure21.png" alt="OTP Parameter Reading Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure21.png" alt="OTP Parameter Reading Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 21:</strong> OTP parameter reading interface with read button highlighted
     </p>
   </div>
   <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure22.png" alt="OTP Parameter Data Display" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure22.png" alt="OTP Parameter Data Display" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 22:</strong> OTP parameter data display showing detailed camera internal parameters
     </p>
@@ -340,7 +340,7 @@ First, you need to install the driver. The driver is located in the user directo
 **Step 1:** As shown in Figure 23, position the device with four buttons, press and hold the button (boot mode), then connect the USB 3.0 interface to the computer (ensure the computer's USB interface supports the underlying technology).
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure23.png" alt="PANDA Box Hardware Connection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure23.png" alt="PANDA Box Hardware Connection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 23:</strong> PANDA box hardware showing CAM UPDATE interface with USB3.0 connection and boot button location
   </p>
@@ -349,7 +349,7 @@ First, you need to install the driver. The driver is located in the user directo
 **Step 2:** Open the position, on the left side, in the settings, select the device upgrade level, as shown in Figure 24's position display.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure24.png" alt="Device Upgrade Settings" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure24.png" alt="Device Upgrade Settings" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 24:</strong> SensingCapture software interface showing device upgrade settings with firmware update options
   </p>
@@ -362,14 +362,14 @@ First, you need to install the driver. The driver is located in the user directo
 **Step 4:** As shown in Figure 26, open the level interface, select I2C EEPROM, after selection, the interface will output the selected bounce, select the required level firmware, click open.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure25.png" alt="USB BootLoader Device Detection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure25.png" alt="USB BootLoader Device Detection" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 25:</strong> USB BootLoader device detection interface showing device recognition and firmware update preparation
   </p>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure26.png" alt="I2C EEPROM Selection Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure26.png" alt="I2C EEPROM Selection Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 26:</strong> USB Control Center interface showing I2C EEPROM selection with firmware file options including FX3, RAM, I2C EEPROM, and SPI FLASH
   </p>
@@ -378,21 +378,21 @@ First, you need to install the driver. The driver is located in the user directo
 **Step 5:** After completion, as shown in Figure 28, wait for the download to show the upgrade level, wait for the display as shown in Figure 29 to show "Succeeded", indicating the upgrade level is successful.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure27.png" alt="Firmware Programming Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure27.png" alt="Firmware Programming Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 27:</strong> Firmware programming interface showing file selection and programming options with highlighted programming button
   </p>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure28.png" alt="Programming Progress Display" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure28.png" alt="Programming Progress Display" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 28:</strong> Programming progress display showing "Programming of I2C EEPROM in Progress..." status message
   </p>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure29.png" alt="Programming Success Confirmation" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure29.png" alt="Programming Success Confirmation" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 29:</strong> Programming success confirmation showing "Programming of I2C EEPROM Succeeded" status message
   </p>
@@ -409,7 +409,7 @@ First, obtain the Linux configuration program.
 As shown in Figure 30, in the workspace interface, you can see the PandaCtrl file and libusb source file. In the program file interface, confirm that it exists in the ubuntu20.04 system's libusb library. If it exists in other systems, you need to update the libusb library, replace the generated text file, and then add the configuration text file's program.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure30.png" alt="PandaCtrl Workspace Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure30.png" alt="PandaCtrl Workspace Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 30:</strong> PandaCtrl workspace interface showing 3rdparty, PandaCtrl, profilePath, and readme.md directories
   </p>
@@ -418,7 +418,7 @@ As shown in Figure 30, in the workspace interface, you can see the PandaCtrl fil
 Open the PandaCtrl file and run the makefile file in the interface.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure31.png" alt="PandaCtrl Makefile Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure31.png" alt="PandaCtrl Makefile Interface" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 31:</strong> PandaCtrl makefile interface showing include, lib, Makefile, and src directories
   </p>
@@ -442,14 +442,14 @@ sudo apt-get install i2c-tools
 As shown in Figure 33, after running successfully, "Device opened successfully" indicates that the configuration file has been loaded successfully.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure32.png" alt="Terminal Command Execution" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure32.png" alt="Terminal Command Execution" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 32:</strong> Terminal interface showing PandaCtrl command execution with configuration file path
   </p>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure33.png" alt="Device Connection Success" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure33.png" alt="Device Connection Success" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 33:</strong> Terminal output showing successful device connection and configuration loading with detailed system information
   </p>
@@ -462,7 +462,7 @@ After loading successfully and opening the system's printing, if the camera can 
 As shown in Figure 34, if you need to update the libusb library, in libusb-1.0.26 after compilation, use libusb/lib/libusb-1.0.a file to replace PandaCtrl/lib/libusb-1.0.a.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure34.png" alt="Libusb Library Update Process" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure34.png" alt="Libusb Library Update Process" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 34:</strong> Terminal interface showing libusb library compilation and file replacement process for system compatibility
   </p>

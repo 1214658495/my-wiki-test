@@ -8,7 +8,7 @@ title: Getting Started with PANDA serial PG2
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/PANDA_Overview.png" alt="PANDA_Overview" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/PANDA_Overview.png" alt="PANDA_Overview" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
     <strong>PANDA serial PG2</strong> is designed by SZ SENSING TECH CO.,LTD . It can convert camera signals into USB 3.0 interface without loss,and supports SENSING cameras of the GMSL series
@@ -85,7 +85,7 @@ title: Getting Started with PANDA serial PG2
 ## Hardware Preparation
 ### Dimensions
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/PANDA_Dimensions.png" alt="PANDA_Dimensions" style={{maxWidth: '100%', height:'auto'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/PANDA_Dimensions.png" alt="PANDA_Dimensions" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 <!-- ### Block Diagram

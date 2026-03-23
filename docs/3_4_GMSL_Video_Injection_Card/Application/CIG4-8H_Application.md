@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### How It Works: The Complete Video Injection Process
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H_Application2.png" alt="Video Injection System Selection Guide" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 2px rgba(0,0,0,0.15)'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Application2.png" alt="Video Injection System Selection Guide" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 2px rgba(0,0,0,0.15)'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     Block diagram of Intelligent driving data injection system
   </p>
@@ -74,7 +74,9 @@ sidebar_position: 1
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Application.png" alt="Domain controller image injection frame diagram" style={{maxWidth: '85%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
     <p style={{textAlign: 'center', marginTop: '0.5rem', fontSize: '0.9em'}}>Diagram 1: Domain controller image injection frame diagram</p>
   </div>
-</div> -->
+</div> 
+
+-->
 
 ### System Architecture
 
@@ -180,7 +182,7 @@ This method is particularly useful when you only need the SDK files without the 
 ### 4. Software Architecture Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
   <div style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     Software Framework Architecture
   </div>

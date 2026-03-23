@@ -11,7 +11,7 @@ This guide describes different scenarios for employing our cameras in various pl
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_1_Serdes_Camera/FPDLINK/FPDLINK_Camera_Fsync.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '80%', height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/FPDLINK_Camera_Fsync.png" alt="SG8A-ORIN-GMSL2-complete" style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
 The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and GPI interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.

@@ -12,7 +12,7 @@ SENSING Technology (Shenzhen) Co., Ltd. has independently developed and launched
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN/OMSBDAAN_ConnectNvidia.png" alt="OMSBDAAN_ConnectNvidia" 
     style={{maxWidth: '70%', height:'auto'}} />
     <p>OMSBDAAN Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
@@ -21,7 +21,7 @@ Based on the OX05B1S sensor, SENSING's RGB-IR camera can output both RGB and IR 
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN_Application.png" alt="OMSBDAAN" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_3_Global_Shutter_Camera/GMSL_Camera/OMSBDAAN/OMSBDAAN_Application.png" alt="OMSBDAAN" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>Night Scene IR Effect (Left) & Day Scene RGB Effect (Right)</p>
 </div>

@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ### Q1: Device Not Recognized?
 <div style={{flex: 1, textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/FAQ/Q1.png" alt="Device List Panel" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/FAQ/Q1.png" alt="Device List Panel" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
     <!-- <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
       <strong>Figure 3:</strong> Device list showing connected camera information
     </p> -->

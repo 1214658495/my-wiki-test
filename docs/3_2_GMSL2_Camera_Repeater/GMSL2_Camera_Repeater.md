@@ -21,7 +21,7 @@ sidebar_position: 1
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater1.png" alt="GMSL2_Camera_Repeater" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater1.png" alt="GMSL2_Camera_Repeater" 
     style={{maxWidth: '45%', height:'auto'}} />
 </div>
 <br />
@@ -60,7 +60,7 @@ sidebar_position: 1
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Dimensions.png" alt="GMSL2_Camera_Repeater Dimensions" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Dimensions.png" alt="GMSL2_Camera_Repeater Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -68,7 +68,7 @@ sidebar_position: 1
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Block_Diagram1.png" alt="GMSL2_Camera_Repeater Block Diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Block_Diagram1.png" alt="GMSL2_Camera_Repeater Block Diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -86,7 +86,7 @@ sidebar_position: 1
 
 #### Connector Pin Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Connect.png" alt="GMSL2_Camera_Repeater Connector" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Connect.png" alt="GMSL2_Camera_Repeater Connector" 
     style={{maxWidth: '40%', height:'auto'}} />
 </div>
 
@@ -104,7 +104,7 @@ sidebar_position: 1
 
 #### Cable Harness Definition
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter Cable Harness" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_Camera_Splitter Cable Harness" 
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
@@ -126,7 +126,7 @@ sidebar_position: 1
 Using the Repeater when connecting to different domain controllers:
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Block_Diagram.png" alt="Repeater block diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Block_Diagram.png" alt="Repeater block diagram" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>Repeater block diagram - Configuration for connecting to domain controllers</p>
 </div>

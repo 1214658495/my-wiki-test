@@ -8,7 +8,7 @@ title: Getting Started with CIG4-8H
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CyberCobra" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H.png" alt="CyberCobra" style={{maxWidth: '45%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
     <strong>CIG4-8H</strong> GMSL Video Injection Card（Hereinafter referred to as video injection card）is an high-speed image product based on FPGA ,and it independently developed by SZ sensing tech co., Ltd. (for short as SENSING ), a series of SENSING Image Solution.The video injection card adopts PCIe Gen3 technology, which can realize 8-channel video/image injection, and adopts high-precision multi-channel time synchronization technology to ensure that multi-channel data can be synchronized output, and the product is widely used in the hardware-in-the-loop HIL simulation system, digital acquisition and reinjection system, and video simulation system and other scenarios.
@@ -88,7 +88,7 @@ title: Getting Started with CIG4-8H
 ## Hardware Preparation
 ### Block Diagram
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra Application Diagram" style={{maxWidth: '100%', height:'auto'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra Application Diagram" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 #### Parts List
@@ -136,7 +136,7 @@ SENSING can provide a complete solution including Camera + GMSL Video Injection 
 
 <!-- ### Software Framework Diagram -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
   <div style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     Software Framework Architecture
   </div>
@@ -189,7 +189,7 @@ If you encounter any issues downloading the SDK or need access to older versions
 
 For comprehensive software setup, SDK configuration, and video transfer protocols, please refer to our detailed application guide:
 
-**[📖 Complete Application Guide](../Application/CIG3-8H_Application)**
+**[📖 Complete Application Guide](../Application/CIG4-8H_Application)**
 
 <!-- ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>

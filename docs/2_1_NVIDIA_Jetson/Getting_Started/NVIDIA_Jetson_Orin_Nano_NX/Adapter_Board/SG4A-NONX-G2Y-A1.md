@@ -23,7 +23,7 @@ sidebar_position: 2
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1.png" alt="SG4A-NONX-G2Y-A1" style={{maxWidth: '30%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1.png" alt="SG4A-NONX-G2Y-A1" style={{maxWidth: '30%', height: 'auto'}} />
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
@@ -38,7 +38,7 @@ sidebar_position: 2
 ### Hardware Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1_Hardware_Overview.png" alt="SG4A-NONX-G2Y-A1-Overview" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1_Hardware_Overview.png" alt="SG4A-NONX-G2Y-A1-Overview" style={{maxWidth: '80%', height: 'auto'}} />
 </div>
 
 ### Basic Specifications
@@ -75,7 +75,7 @@ sidebar_position: 2
 :::
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1_Block_Diagram.png" alt="SG4A-NONX-G2Y-A1-Block Diagram" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1_Block_Diagram.png" alt="SG4A-NONX-G2Y-A1-Block Diagram" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
 ### Interface Definitions
@@ -228,7 +228,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 ### Installation Steps
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1_Application.png" alt="SG4A-NONX-G2Y-A1-Quick Setup" style={{maxWidth: '70%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/NVIDIA_Jetson_Orin_Nano_NX/GMSL_adapter_board_developer_kit/SG4A-NONX-G2Y-A1/SG4A-NONX-G2Y-A1_Application.png" alt="SG4A-NONX-G2Y-A1-Quick Setup" style={{maxWidth: '70%', height: 'auto'}} />
 </div>
 
 :::note Quick Setup

@@ -16,7 +16,7 @@ title: SHW3H（3MP HDR 60fps）
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A.png" alt="SH3-S11A60-G2A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A.png" alt="SH3-S11A60-G2A" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
@@ -60,7 +60,7 @@ title: SHW3H（3MP HDR 60fps）
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_Dimensions.png" alt="SH3-S11A60-G2A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_Dimensions.png" alt="SH3-S11A60-G2A" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -68,7 +68,7 @@ title: SHW3H（3MP HDR 60fps）
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_BlockDiagram.png" alt="SHW3H_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_BlockDiagram.png" alt="SHW3H_BlockDiagram" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -135,7 +135,7 @@ title: SHW3H（3MP HDR 60fps）
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
     style={{maxWidth: '60%', height:'auto'}} />
     <p>SHW3H Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
@@ -186,7 +186,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
 </div>
 
 The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.

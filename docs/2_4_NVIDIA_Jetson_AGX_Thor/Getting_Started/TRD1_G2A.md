@@ -15,7 +15,7 @@ sidebar_position: 2
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A.png" alt="TRD1_G2A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A.png" alt="TRD1_G2A" 
     style={{maxWidth: '50%', height:'auto'}} />
 </div>
 <br />
@@ -81,7 +81,7 @@ sidebar_position: 2
 ### Hardware Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Hardware_Overview.png" alt="TRD1 G2A Hardware Overview" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Hardware_Overview.png" alt="TRD1 G2A Hardware Overview" style={{maxWidth: '80%', height: 'auto'}} />
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
@@ -95,7 +95,7 @@ sidebar_position: 2
 ::: -->
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png" alt="TRD1 G2A Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png" alt="TRD1 G2A Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
 </div>
 
 ### Supported Camera List
@@ -141,7 +141,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 #### Kit Contents
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents.png" alt="TRD1 G2A Kit Contents" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents.png" alt="TRD1 G2A Kit Contents" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
 #### Installation Steps
@@ -164,7 +164,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
     </iframe>
 </div> -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png" alt="TRD1 G2A Camera Connection" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png" alt="TRD1 G2A Camera Connection" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
 

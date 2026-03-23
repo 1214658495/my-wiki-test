@@ -13,7 +13,7 @@ The SENSING GMSL2 Camera Repeater is an essential component for extending GMSL2 
 ### Advanced Driver Assistance Systems (ADAS)
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Application.png" alt="ADAS Application" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Application.png" alt="ADAS Application" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br />

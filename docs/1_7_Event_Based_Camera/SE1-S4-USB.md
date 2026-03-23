@@ -15,7 +15,7 @@ title: SE1-S4-USB
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/Event_Based_Camera.png" alt="Event_Based_Camera" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/Event_Based_Camera.png" alt="Event_Based_Camera" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
@@ -60,13 +60,13 @@ DR >120 dB can be reached based on low light cutoff measurement being: 0.08 lux 
 ### Physical Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/SE1-S4-USB-HxxxM.png" alt="SE1-S4-USB Dimensions" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/SE1-S4-USB-HxxxM.png" alt="SE1-S4-USB Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>SE1-S4-USB-HxxxM</p>
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/SE1-S4-USB-HxxxC.png" alt="SE1-S4-USB Dimensions" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/SE1-S4-USB-HxxxC.png" alt="SE1-S4-USB Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
     <p>SE1-S4-USB-HxxxC</p>
 </div>
@@ -98,7 +98,7 @@ DR >120 dB can be reached based on low light cutoff measurement being: 0.08 lux 
 ### 4-Pin Connector Definitions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_Back_View.png" alt="SE1-S4-USB Back View" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/SE1-S4-USB_Back_View.png" alt="SE1-S4-USB Back View" 
     style={{maxWidth: '40%', height:'auto'}} />
     <p>Back View</p>
 </div>
@@ -119,7 +119,7 @@ DR >120 dB can be reached based on low light cutoff measurement being: 0.08 lux 
 
 ### Quick Setup
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png" alt="SE1-S4-USB Installation on Jetson" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png" alt="SE1-S4-USB Installation on Jetson" 
     style={{maxWidth: '50%', height:'auto'}} />
     <p>Example: SE1-S4-USB Installation on NVIDIA Jetson</p>
 </div>
@@ -159,7 +159,7 @@ To get started with your SE1-S4-USB event-based camera, follow these integration
 <!-- ### Camera Mount Adapters -->
 
 <div style={{textAlign: 'center', marginBottom: '1rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/CS_to_M12mount.png" alt="CS to M12mount" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/CS_to_M12mount.png" alt="CS to M12mount" 
     style={{maxWidth: '20%', height:'auto'}} />
 </div>
 
@@ -172,7 +172,7 @@ To get started with your SE1-S4-USB event-based camera, follow these integration
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '1rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_tripod_mounting.png" alt="EVS Tripod Mounting" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/EVS_tripod_mounting.png" alt="EVS Tripod Mounting" 
     style={{maxWidth: '20%', height:'auto'}} />
 </div>
 

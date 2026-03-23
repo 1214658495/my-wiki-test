@@ -63,7 +63,7 @@ The automatic defogging technology integrates multiple advanced features:
 #### 1.1.1 Automatic Defogging Mode(default)
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/Application/auto_defogging_chart.png" alt="Automatic Defogging Performance Chart"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/Application/auto_defogging_chart.png" alt="Automatic Defogging Performance Chart"
     style={{maxWidth: '70%', height:'auto'}} />
     <p><em>Figure 1.1: Automatic Defogging Temperature Response (Environmental Temperature: -20°C)</em></p>
 </div>
@@ -76,7 +76,7 @@ The automatic defogging technology integrates multiple advanced features:
 #### 1.1.2 Manual Defogging Mode
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/Application/manual_defogging_chart.png" alt="Manual Defogging Performance Chart"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/Application/manual_defogging_chart.png" alt="Manual Defogging Performance Chart"
     style={{maxWidth: '80%', height:'auto'}} />
     <p><em>Figure 1.2: Manual Defogging Temperature Response (Environmental Temperature: 80°C)</em></p>
 </div>
@@ -96,8 +96,8 @@ The automatic defogging technology integrates multiple advanced features:
 
 | **Parameter** | **Input Voltage**: 9V |**Input Voltage**: 12V | **Input Voltage**: 16V | **Test Temperature** | **Performance Results**-before Heating|**Performance Results**-after Heating |
 |---------------|---------|---------|---------|---------------------|------------------------|------------------------|
-| **Defogging Time** | 6min30s | 4min40s | 4min | -20°C | <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/Application/defogging_before.png" alt="Before/After Defogging" style={{width: 120, height: 'auto'}} /> | <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/Application/defogging_after.png" alt="Before/After Defogging" style={{width: 120, height: 'auto'}} /> |
-| **Defrosting Time** | 7min30s | 5min | 4min | -25°C | <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/Application/defrosting_before.png" alt="Defrosting Comparison" style={{width: 120, height: 'auto'}} /> |<img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/Application/defrosting_after.png" alt="Defrosting Comparison" style={{width: 120, height: 'auto'}} /> |
+| **Defogging Time** | 6min30s | 4min40s | 4min | -20°C | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/Application/defogging_before.png" alt="Before/After Defogging" style={{width: 120, height: 'auto'}} /> | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/Application/defogging_after.png" alt="Before/After Defogging" style={{width: 120, height: 'auto'}} /> |
+| **Defrosting Time** | 7min30s | 5min | 4min | -25°C | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/Application/defrosting_before.png" alt="Defrosting Comparison" style={{width: 120, height: 'auto'}} /> |<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/Application/defrosting_after.png" alt="Defrosting Comparison" style={{width: 120, height: 'auto'}} /> |
 
 </div>
 

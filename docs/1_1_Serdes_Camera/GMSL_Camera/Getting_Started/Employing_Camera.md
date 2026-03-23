@@ -74,7 +74,7 @@ This comprehensive guide outlines integration methods for SENSING GMSL cameras a
 
 SENSING provides pre-adapted solutions for NVIDIA platforms, ensuring optimal performance and reliability with minimal integration effort.
 <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png" alt="NVIDIA Platform" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/nvidia_jetson_agx_orin.png" alt="NVIDIA Platform" />
 </div>
 
 ### Available Solutions
@@ -172,7 +172,7 @@ NVIDIA platform solutions are pre-configured and tested to ensure seamless integ
 
 SENSING GMSL camera grabber products provide a flexible solution for multi-camera applications with high-speed data capture capabilities.
 <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png" alt="GMSL Camera Grabber" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H_useGround3.png" alt="GMSL Camera Grabber" />
     </div>
 
 ### Product Features
@@ -271,7 +271,7 @@ GMSL grabber solutions are optimized for multi-camera synchronization and high-t
 
 When integrating with third-party AI processing systems, compatibility verification and proper technical coordination are essential.
 <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png" alt="Third-party AI Box" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/AiBox.png" alt="Third-party AI Box" />
     </div>
 
 ### Integration Workflow
@@ -358,7 +358,7 @@ For customers integrating SENSING cameras with custom deserializer implementatio
 ### System Architecture
 
 <div className="architecture-diagram">
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="Camera-SoC Integration Architecture" />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png" alt="Camera-SoC Integration Architecture" />
   <div className="diagram-caption">Camera to SoC communication architecture diagram showing serializer/deserializer connections</div>
 </div>
 

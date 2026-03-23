@@ -8,7 +8,7 @@ title: Getting Started with CCG3-8H
 ## Overview
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H.png" alt="CCG3-8H" style={{maxWidth: '55%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H.png" alt="CCG3-8H" style={{maxWidth: '55%', height:'auto', borderRadius: '8px'}} />
   </div>
   <div style={{marginTop: '1rem', fontSize: '1.1em'}}>
     CoaxCapture II GMSL Video Capture card (hereinafter referred to as Capture Card) <strong>CCG3-8H</strong> is an image capture product that can connect GMSL cameras. It has the advantages of high frame rate, high speed, low delay, etc., and it is widely used in unmanned vehicles, automatic driving, autonomous machines, data capture and other scenes.
@@ -49,7 +49,7 @@ title: Getting Started with CCG3-8H
 
 ### Block Diagram
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_diagram.png" alt="CCG3-8H Block Diagram" style={{maxWidth: '80%',  height:'auto', borderRadius: '8px'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H_diagram.png" alt="CCG3-8H Block Diagram" style={{maxWidth: '80%',  height:'auto', borderRadius: '8px'}} />
 </div>
 
 :::note Highlights
