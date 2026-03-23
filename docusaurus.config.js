@@ -37,82 +37,74 @@ const config = {
     locales: ['en'],
   },
 
-
-
-  scripts:[
+// 1. 专门只放外部 JS 文件的 src 链接
+  scripts: [
     {
       src: '//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js',
       defer: true,
     },
-    // 1. 新增：引入 Coze 的外部依赖脚本
-    'https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js',
+    {
+      src: 'https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.19/libs/cn/index.js',
+      async: true,
+    },
   ],
 
-  // 2. 新增：注入 Coze 的悬浮窗初始化代码
+  // 2. 将所有的初始化逻辑放入 headTags (这是专门用来写 JS 代码段的地方)
   headTags: [
     {
       tagName: 'script',
       attributes: { type: 'text/javascript' },
       innerHTML: `
-        // 定义获取 Token 的函数，去请求我们刚部署好的 Vercel 接口
         async function fetchCozeToken() {
           try {
             const response = await fetch('https://my-wiki-test.vercel.app/api/coze'); 
             const data = await response.json();
-            if(data.success) {
-                return data.token;
-            } else {
-                console.error("Token fetch failed:", data.error);
-                return null;
-            }
+            return data.success ? data.token : null;
           } catch (error) {
-            console.error("Failed to request Coze API:", error);
+            console.error("Token fetch failed:", error);
             return null;
           }
         }
 
         window.addEventListener('load', async function() {
-          // 1. 首次加载时获取 Token
-          const initialToken = await fetchCozeToken();
-          if (!initialToken) {
-             console.log("未获取到 Token，机器人加载中止。");
-             return; 
-          }
+          const initCoze = setInterval(async function() {
+            if (window.CozeWebSDK) {
+              clearInterval(initCoze);
+              
+              const initialToken = await fetchCozeToken();
+              if (!initialToken) return;
 
-          // 2. 生成唯一的访客 ID (彻底解决客户串记录的问题)
-          let visitorId = localStorage.getItem('sensing_wiki_user_id');
-          if (!visitorId) {
-            visitorId = 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
-            localStorage.setItem('sensing_wiki_user_id', visitorId);
-          }
-
-          // 3. 启动 Coze SDK
-          new CozeWebSDK.WebChatClient({
-            config: {
-              bot_id: '7610354374371622946',
-              user: { id: visitorId },
-            },
-            ui: {
-              chatBot: { width: 800 } // 这里可以调宽窗口
-            },
-            componentProps: {
-              title: 'SENSING WIKI AI',
-              icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
-              lang: 'en',
-            },
-            auth: {
-              type: 'jwt',              // 鉴权类型改为 jwt
-              token: initialToken,      // 传入刚获取的临时 Token
-              onRefreshToken: async function () {
-                // Token 1小时过期后，SDK 会自动调用这里重新要一张
-                return await fetchCozeToken();
+              let visitorId = localStorage.getItem('sensing_wiki_user_id');
+              if (!visitorId) {
+                visitorId = 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
+                localStorage.setItem('sensing_wiki_user_id', visitorId);
               }
+
+              new CozeWebSDK.WebChatClient({
+                config: {
+                  bot_id: '7610354374371622946',
+                  user: { id: visitorId },
+                },
+                ui: { chatBot: { showHistory: false, width: 800 } },
+                componentProps: {
+                  title: 'SENSING WIKI AI',
+                  icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
+                  lang: 'en'
+                },
+                auth: {
+                  type: 'jwt',
+                  token: initialToken,
+                  onRefreshToken: async () => await fetchCozeToken()
+                }
+              });
             }
-          });
+          }, 100);
         });
       `,
     },
   ],
+
+
   presets: [
     [
       'classic',
