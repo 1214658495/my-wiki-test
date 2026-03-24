@@ -92,9 +92,11 @@ const config = {
                   lang: 'en'
                 },
                 auth: {
-                  type: 'jwt',
-                  token: initialToken,
-                  onRefreshToken: async () => await fetchCozeToken()
+                  type: 'token', // 👈 改回 'token'
+                  token: initialToken, // 这里的 initialToken 依然是我们刚刚拿到的 JWT
+                  onRefreshToken: async function () {
+                    return await fetchCozeToken();
+                  }
                 }
               });
             }
