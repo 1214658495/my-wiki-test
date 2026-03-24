@@ -49,8 +49,8 @@ const config = {
     },
   ],
 
-  // 2. 将所有的初始化逻辑放入 headTags (这是专门用来写 JS 代码段的地方)
-  headTags: [
+// 2. 将所有的初始化逻辑放入 headTags (这是专门用来写 JS 代码段的地方)
+  headTags:[
     {
       tagName: 'script',
       attributes: { type: 'text/javascript' },
@@ -72,7 +72,10 @@ const config = {
               clearInterval(initCoze);
               
               const initialToken = await fetchCozeToken();
-              if (!initialToken) return;
+              if (!initialToken) {
+                console.error("Failed to load token");
+                return;
+              }
 
               let visitorId = localStorage.getItem('sensing_wiki_user_id');
               if (!visitorId) {
@@ -80,6 +83,7 @@ const config = {
                 localStorage.setItem('sensing_wiki_user_id', visitorId);
               }
 
+              // ...前面的代码保持不变...
               new CozeWebSDK.WebChatClient({
                 config: {
                   bot_id: '7610354374371622946',
@@ -91,11 +95,14 @@ const config = {
                   icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
                   lang: 'en'
                 },
+                // 👇 关键修改：Coze SDK 在某些版本中对 JWT 鉴权要求非常严格，
+                // 我们改用最简化的 auth 配置。
                 auth: {
-                  type: 'token', // 👈 改回 'token'
-                  token: initialToken, // 这里的 initialToken 依然是我们刚刚拿到的 JWT
+                  type: 'token', 
+                  token: initialToken,
                   onRefreshToken: async function () {
-                    return await fetchCozeToken();
+                    const newToken = await fetchCozeToken();
+                    return newToken;
                   }
                 }
               });
@@ -105,7 +112,6 @@ const config = {
       `,
     },
   ],
-
 
   presets: [
     [
