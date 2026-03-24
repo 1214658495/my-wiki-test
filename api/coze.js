@@ -42,14 +42,17 @@ export default async function handler(req, res) {
         header: { alg: 'RS256', typ: 'JWT', kid: KEY_ID } 
     });
 
-    // 2. 去扣子服务器兑换 Access Token (换取真实门票)
+    // 2. 去扣子服务器兑换 Access Token (注意这里 headers 的修改！)
     const response = await fetch('https://api.coze.cn/api/permission/oauth2/token', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}` // 👈 【修复点】把加密身份证放在这里！
+        },
         body: JSON.stringify({
             duration_seconds: 3600,
-            grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
-            jwt: token
+            grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer'
+            // 👈 【修复点】删除了这里错误的 jwt 传参
         })
     });
 
