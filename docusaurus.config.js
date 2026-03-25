@@ -73,27 +73,30 @@ const config = {
               
               const initialToken = await fetchCozeToken();
               if (!initialToken) {
-                console.error("Failed to load token");
+                console.error("Token 获取失败，机器人终止加载。");
                 return;
               }
 
-              // 🚨 核心修复：强制每次刷新都是全新访客，彻底抛弃导致崩溃的旧历史记录！
-              const visitorId = 'sensing_guest_' + Date.now() + Math.floor(Math.random() * 1000);
+              // 🚨 第一步：为每一台电脑生成全球唯一的“访客身份证”
+              let visitorId = localStorage.getItem('sensing_wiki_user_id');
+              if (!visitorId) {
+                // 使用时间戳+随机数，保证绝不撞车
+                visitorId = 'guest_' + Date.now().toString(36) + '_' + Math.random().toString(36).substring(2, 9);
+                localStorage.setItem('sensing_wiki_user_id', visitorId);
+              }
 
               new CozeWebSDK.WebChatClient({
                 config: {
-                  bot_id: '7610354374371622946'
+                  bot_id: '7610354374371622946',
+                  // 注意：这里不要放 user 参数了
                 },
+                // 🚨 第二步：把身份证交到底层！这是隔离所有客户对话的唯一指定位置！
                 userInfo: {
                   id: visitorId,
                   nickname: 'SENSING Guest'
                 },
-                // 🚨 核心修复：加回 ui 配置，强制关闭前端的历史记录渲染
                 ui: { 
-                  chatBot: { 
-                    showHistory: false,
-                    width: 800
-                  } 
+                  chatBot: { width: 800 } 
                 },
                 componentProps: {
                   title: 'SENSING WIKI AI',
