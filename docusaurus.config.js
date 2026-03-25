@@ -77,32 +77,34 @@ const config = {
                 return;
               }
 
-              let visitorId = localStorage.getItem('sensing_wiki_user_id');
-              if (!visitorId) {
-                visitorId = 'user_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
-                localStorage.setItem('sensing_wiki_user_id', visitorId);
-              }
+              // 🚨 核心修复：强制每次刷新都是全新访客，彻底抛弃导致崩溃的旧历史记录！
+              const visitorId = 'sensing_guest_' + Date.now() + Math.floor(Math.random() * 1000);
 
-              // ...前面的代码保持不变...
               new CozeWebSDK.WebChatClient({
                 config: {
-                  bot_id: '7610354374371622946',
-                  user: { id: visitorId },
+                  bot_id: '7610354374371622946'
                 },
-                ui: { chatBot: { showHistory: false, width: 800 } },
+                userInfo: {
+                  id: visitorId,
+                  nickname: 'SENSING Guest'
+                },
+                // 🚨 核心修复：加回 ui 配置，强制关闭前端的历史记录渲染
+                ui: { 
+                  chatBot: { 
+                    showHistory: false,
+                    width: 800
+                  } 
+                },
                 componentProps: {
                   title: 'SENSING WIKI AI',
                   icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='senBg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300D2C1'/%3E%3Cstop offset='100%25' stop-color='%23007066'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='50' fill='url(%23senBg)'/%3E%3Cpath d='M45 20 Q 45 55 80 55 Q 45 55 45 90 Q 45 55 10 55 Q 45 55 45 20 Z' fill='%23ffffff'/%3E%3Cpath d='M75 10 Q 75 25 90 25 Q 75 25 75 40 Q 75 25 60 25 Q 75 25 75 10 Z' fill='%23ffffff'/%3E%3C/svg%3E",
                   lang: 'en'
                 },
-                // 👇 关键修改：Coze SDK 在某些版本中对 JWT 鉴权要求非常严格，
-                // 我们改用最简化的 auth 配置。
                 auth: {
                   type: 'token', 
                   token: initialToken,
                   onRefreshToken: async function () {
-                    const newToken = await fetchCozeToken();
-                    return newToken;
+                    return await fetchCozeToken();
                   }
                 }
               });
