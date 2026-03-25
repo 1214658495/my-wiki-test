@@ -38,7 +38,7 @@ const config = {
   },
 
 // 1. 专门只放外部 JS 文件的 src 链接
-  scripts: [
+  scripts:[
     {
       src: '//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js',
       defer: true,
@@ -49,7 +49,7 @@ const config = {
     },
   ],
 
-// 2. 将所有的初始化逻辑放入 headTags (这是专门用来写 JS 代码段的地方)
+  // 2. 将所有的初始化逻辑放入 headTags
   headTags:[
     {
       tagName: 'script',
@@ -77,20 +77,16 @@ const config = {
                 return;
               }
 
-              // 🚨 第一步：为每一台电脑生成全球唯一的“访客身份证”
-              let visitorId = localStorage.getItem('sensing_wiki_user_id');
-              if (!visitorId) {
-                // 使用时间戳+随机数，保证绝不撞车
-                visitorId = 'guest_' + Date.now().toString(36) + '_' + Math.random().toString(36).substring(2, 9);
-                localStorage.setItem('sensing_wiki_user_id', visitorId);
-              }
+              // 🚨 终极隔离魔法：每次刷新网页都强制生成全新 ID，坚决不读本地缓存！
+              // 这能 100% 避开那 8 条带毒的历史记录，给你一个崭新的聊天框！
+              const visitorId = 'guest_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
 
               new CozeWebSDK.WebChatClient({
                 config: {
                   bot_id: '7610354374371622946',
-                  user: visitorId, // 👈 【核心修复】：必须放在 config 里！而且必须是纯字符串！
+                  // 🚨 必须将 ID 强制塞入 config 对象中，打破全局共享！
+                  user: visitorId 
                 },
-                // ⚠️ 彻底删掉 userInfo 这个容易引发崩溃的模块
                 ui: { 
                   chatBot: { width: 800 } 
                 },
