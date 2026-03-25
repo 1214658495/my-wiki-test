@@ -88,13 +88,9 @@ const config = {
               new CozeWebSDK.WebChatClient({
                 config: {
                   bot_id: '7610354374371622946',
-                  // 注意：这里不要放 user 参数了
+                  user: visitorId, // 👈 【核心修复】：必须放在 config 里！而且必须是纯字符串！
                 },
-                // 🚨 第二步：把身份证交到底层！这是隔离所有客户对话的唯一指定位置！
-                userInfo: {
-                  id: visitorId,
-                  nickname: 'SENSING Guest'
-                },
+                // ⚠️ 彻底删掉 userInfo 这个容易引发崩溃的模块
                 ui: { 
                   chatBot: { width: 800 } 
                 },
