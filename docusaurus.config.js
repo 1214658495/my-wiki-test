@@ -57,7 +57,7 @@ const config = {
       innerHTML: `
         async function fetchCozeToken() {
           try {
-            const response = await fetch('https://my-wiki-test.vercel.app/api/coze'); 
+            const response = await fetch('https://ai-api.sensing-world.com/api/coze'); 
             const data = await response.json();
             return data.success ? data.token : null;
           } catch (error) {
