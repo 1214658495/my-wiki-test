@@ -233,7 +233,7 @@ export default function AIHomePanel() {
   const [messages, setMessages] = useState([]);
   
   const quickQuestions =[
-    'Core features of GMSL2 cameras?',
+    'Key features of GMSL2 cameras?',
     'Jetson platform setup guide?',
     'Guide for acquiring intrinsic parameters?',
     'Camera trigger synchronization framework?',
