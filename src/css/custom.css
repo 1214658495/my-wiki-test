@@ -38,6 +38,7 @@
 }
 
 /* 特殊侧边栏项目的样式 */
+.menu__link[href="/docs/ai"],
 .menu__link[href="/docs/1_0_Camera"],
 .menu__link[href="/docs/intro"],
 .menu__link[href="/docs/3_0_Data_collection_and_Playback"],

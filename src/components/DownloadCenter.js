@@ -125,7 +125,7 @@ export default function DownloadCenter() {
           type="text" 
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
-          placeholder={searchType === 'model' ? "Enter Product Model name (e.g., SG3-ISX031C-GMSL2)..." : "Enter device SN (e.g., H190S-E01220525)..."}
+          placeholder={searchType === 'model' ? "Enter Product Model name (e.g., SG3-ISX031C-GMSL2)" : "Enter device SN (e.g., H190S-E01220525)"}
           style={{ flex: 1, padding: '12px 16px', fontSize: '16px', borderRadius: '8px', border: '1px solid #ccc', outline: 'none' }}
           onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
         />
