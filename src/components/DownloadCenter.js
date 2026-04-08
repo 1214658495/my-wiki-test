@@ -165,12 +165,12 @@ export default function DownloadCenter() {
                   )}
                   {item.model3dUrl && (
                     <a className="button button--outline button--success button--sm" href={item.model3dUrl} target="_blank" rel="noreferrer">
-                      📦 3D CAD Model
+                      📦 3D Model
                     </a>
                   )}
                   {item.registerConfigUrl && (
                     <a className="button button--outline button--warning button--sm" href={item.registerConfigUrl} target="_blank" rel="noreferrer">
-                      ⚙️ Init Script
+                      ⚙️ SerDes Init Script
                     </a>
                   )}
                   {item.imageSamplesUrl && (

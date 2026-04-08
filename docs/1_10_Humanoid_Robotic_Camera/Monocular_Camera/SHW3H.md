@@ -3,7 +3,7 @@ sidebar_position: 1
 title: SHW3H（3MP HDR 60fps）
 ---
 
-# SHW3H（3MP HDR 60fps Camera）
+# SHW3H（3MP HDR 60fps）-HFOV 118°
 
 ## Overview
 
@@ -16,17 +16,17 @@ title: SHW3H（3MP HDR 60fps）
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A.png" alt="SH3-S11A60-G2A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H.png" alt="SHW3H" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
 
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-183.html" target="_blank" rel="noopener noreferrer" 
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+    <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
-</div> -->
+</div>
 
 ## Getting Started
 
@@ -60,7 +60,7 @@ title: SHW3H（3MP HDR 60fps）
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_Dimensions.png" alt="SH3-S11A60-G2A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_Dimensions.png" alt="SHW3H" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
