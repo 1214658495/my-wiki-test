@@ -108,7 +108,7 @@ title: Getting Started with CCG3-8H
 <div style={{textAlign: 'center', position: 'relative', width: '95%', paddingBottom: '56.25%', marginBottom: '20px'}}>
   <iframe
     style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
-    src="//player.bilibili.com/player.html?bvid=BV1w6j2z8E16&page=1&high_quality=1&danmaku=0"
+    src="//player.bilibili.com/player.html?bvid=BV1aXDfBUEqC&page=1&high_quality=1&danmaku=0"
     scrolling="no"
     border="0"
     frameBorder="no"
