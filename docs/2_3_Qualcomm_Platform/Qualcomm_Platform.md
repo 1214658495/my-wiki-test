@@ -5,7 +5,11 @@ description: SENSING high-quality camera solutions for Qualcomm Snapdragon and Q
 ---
 
 # Qualcomm Platform Camera Solutions
-
+<div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/Qualcomm_Platform_Overview.png" alt="Qualcomm_Platform_Overview" 
+    style={{width: 960, height:'auto'}} />
+</div>
+<br />
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -54,6 +58,11 @@ SENSING camera drivers are validated on the following Qualcomm development platf
 <TabItem value="rb3-gen2" label="Qcom6490 RB3 Gen2 Devkit" default>
 
 ### Qualcomm Robotics RB3 Gen2 Developer Kit
+<div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB3_Gen2/RB3_Gen2_Overview.png" alt="RB3_Gen2_Overview" 
+    style={{width: 960, height:'auto'}} />
+</div>
+<br />
 
 Powered by the QCS6490 chipset, the RB3 Gen2 offers robust AI processing capabilities and advanced computer vision features.
 
@@ -73,6 +82,11 @@ Camera integration, driver development, and ISP tuning — focus on your applica
 <TabItem value="rb8-core" label="Qcom9075 RB8 Core Kit">
 
 ### Qualcomm Robotics RB8 Core Kit (IQ-9075 EVK)
+<div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB8/RB8_Overview.png" alt="RB8_Overview" 
+    style={{width: 960, height:'auto'}} />
+</div>
+<br />
 
 Powered by the industrial-grade Dragonwing IQ-9075 processor, the RB8 Core Kit delivers enhanced AI performance for demanding robotics applications.
 
@@ -118,10 +132,8 @@ Camera integration, driver development, and ISP tuning — focus on your applica
   </div>
   <div className="col col--6">
     :::info Development Resources
+    - [Qualcomm Developer Network](https://www.qualcomm.com/developer?redirect=qdn)
     - [Qualcomm Neural Processing SDK](https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk)
-    - [Qualcomm Computer Vision SDK (FastCV)](https://developer.qualcomm.com/software/fastcv-sdk)
-    - [Qualcomm AI Engine Direct](https://developer.qualcomm.com/blog/qualcomm-ai-engine-direct-heterogeneous-compute-ai)
-    - [Qualcomm Developer Network](https://developer.qualcomm.com/)
     :::
   </div>
 </div>
