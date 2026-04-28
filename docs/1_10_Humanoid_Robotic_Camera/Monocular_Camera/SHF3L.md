@@ -28,6 +28,25 @@ title: SHF3L（3MP HDR 30fps）
     </a>
 </div>
 
+## Key Features and Application
+
+<div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Features:</strong><br/>
+    • Output uncompressed YUV data<br/>
+    • High Dynamic Range (HDR)<br/>
+    • Low latency<br/>
+    • Support external triggering<br/>
+    • Multi-camera synchronization
+  </div>
+  <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
+    <strong>Application:</strong><br/>
+    • Humanoid Robots<br/>
+    • Data collection<br/>
+    • Robot dog
+  </div>
+</div>
+
 ## Getting Started
 
 ### Specification
@@ -61,7 +80,7 @@ title: SHF3L（3MP HDR 30fps）
 
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L_Dimensions.png" alt="SHF3L" 
-    style={{maxWidth: '80%', height:'auto'}} />
+    style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 
@@ -69,7 +88,7 @@ title: SHF3L（3MP HDR 30fps）
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L_BlockDiagram.png" alt="SHF3L_BlockDiagram" 
-    style={{maxWidth: '80%', height:'auto'}} />
+    style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 #### I2C Address Information
@@ -88,7 +107,7 @@ title: SHF3L（3MP HDR 30fps）
     <tr>
       <td rowspan="3"><strong>Serializer</strong></td>
       <td>Model</td>
-      <td>Max9295A</td>
+      <td>MAX9295A</td>
     </tr>
     <tr>
       <td>I2C Address</td>
@@ -109,11 +128,11 @@ title: SHF3L（3MP HDR 30fps）
     </tr>
     <tr>
       <td>Frame Sync</td>
-      <td>Controlled by Max9295A MFP7</td>
+      <td>Controlled by MAX9295A MFP7</td>
     </tr>
     <tr>
       <td>Reset</td>
-      <td>Controlled by Max9295A MFP0</td>
+      <td>Controlled by MAX9295A MFP0</td>
     </tr>
   </tbody>
 </table>
@@ -168,6 +187,7 @@ title: SHF3L（3MP HDR 30fps）
 | NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
 | 1 | JP6.0 | SHF3L |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
+| 2 | JP6.2 | SHF3L |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H%26SHF3L_JP6.2_L4TR36.4.3) |
 
 
 </div>

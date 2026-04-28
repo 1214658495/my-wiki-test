@@ -1,40 +1,38 @@
 ---
-sidebar_position: 1
-title: SHW3H（3MP HDR 60fps）
+sidebar_position: 5
+title: SHF5G（5MP Global）
 ---
 
-# SHW3H（3MP HDR 60fps）-HFOV 118°
+# SHF5G（5MP Global）-HFOV 200°
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    The SHW3H camera is engineered specifically for embodied intelligence applications, featuring a 3MP sensor with High Dynamic Range (HDR) and high frame rate capabilities. Optimized for robot perception and recognition, it is ideal for integration into the head or torso of humanoid robots.
-    The SHW3H module integrates an RGGB image sensor and the Maxim GMSL2 serializer (MAX9295A). It utilizes an automotive-grade sensor paired with a professionally tuned Image Signal Processor (ISP) to deliver exceptional image quality. The camera is equipped with an Active Alignment (AA) all-glass wide-angle lens and boasts an IP67 protection rating, featuring a factory-focused, fully sealed enclosure.
+    The SHF5G camera is engineered specifically for embodied intelligence applications, featuring a 5MP global shutter sensor and high frame rate capabilities. Optimized for robot perception and recognition, it is ideal for integration into the head or torso of humanoid robots.
   </div>
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H.png" alt="SHW3H" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G.png" alt="SHF5G" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
-</div>
-
+</div> -->
 ## Key Features and Application
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Features:</strong><br/>
-    • Output uncompressed YUV data<br/>
-    • High Dynamic Range (HDR)<br/>
+    • Output RAW data<br/>
+    • Global Shutter<br/>
     • Low latency<br/>
     • Support external triggering<br/>
     • Multi-camera synchronization
@@ -42,8 +40,7 @@ title: SHW3H（3MP HDR 60fps）
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Application:</strong><br/>
     • Humanoid Robots<br/>
-    • Data collection<br/>
-    • Robot dog
+    • Data collection
   </div>
 </div>
 
@@ -56,22 +53,21 @@ title: SHW3H（3MP HDR 60fps）
 | Parameter         | Value                   |
 |-------------------|-------------------------|
 | Sensor            | RGGB |
-| ISP               | Built-in                |
-| Image Size        | 1/2.42 inch CMOS        |
-| Output Pixels     | 1920H*1536V             |
-| Pixel Size        | 3.0um*3.0um             |
-| Frame Rate        | 1920*1536@60fps         |
-| HDR Support       | Yes                     |
-| LFM               | Yes                     |
-| Output data       | YUV422@8bit             |
-| Serializer        | MAXIM MAX9295A          |
+| Image Size        | 1/2.5 inch CMOS        |
+| Output Pixels     | 2560 (H) × 1984 (V) |
+| Pixel Size        | 2.25um*2.25um             |
+| Frame Rate        | 2560 (H) × 1984 (V) @30FPS<br/>2400 (H) × 1440 (V) @60FPS |
+| HDR Support       | Rolling MAX 100dB       |
+| Shutter           | Global Shutter          |
+| Output data       | RAW@10bit             |
+| Serializer        | MAXIM MAX96717         |
 | Camera Interface  | GMSL2                   |
 | Power Supply      | 9~16V POC               |
-| Current           | Less than 200mA@12VDC            |
+| Current           | Less than 200mA@12VDC   |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:18.6mm |
-| Weight            | Less than 50g                    |
+| Dimensions        | W: 25mm, L:25mm, H:31.35mm |
+| Weight            | Less than 50g              |
 
 </div>
 
@@ -79,7 +75,7 @@ title: SHW3H（3MP HDR 60fps）
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_Dimensions.png" alt="SHW3H" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G_Dimensions.png" alt="SHF5G" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -87,8 +83,8 @@ title: SHW3H（3MP HDR 60fps）
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_BlockDiagram.png" alt="SHW3H_BlockDiagram" 
-    style={{maxWidth: '100%', height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G_BlockDiagram.png" alt="SHF5G_BlockDiagram" 
+    style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
 #### I2C Address Information
@@ -107,7 +103,7 @@ title: SHW3H（3MP HDR 60fps）
     <tr>
       <td rowspan="3"><strong>Serializer</strong></td>
       <td>Model</td>
-      <td>MAX9295A</td>
+      <td>Max96717</td>
     </tr>
     <tr>
       <td>I2C Address</td>
@@ -124,15 +120,15 @@ title: SHW3H（3MP HDR 60fps）
     </tr>
     <tr>
       <td>I2C Address</td>
-      <td>0x34 (8bit address)</td>
+      <td>0x20 (8bit address)</td>
     </tr>
     <tr>
       <td>Frame Sync</td>
-      <td>Controlled by MAX9295A MFP7</td>
+      <td>Controlled by Max96717 MFP7</td>
     </tr>
     <tr>
       <td>Reset</td>
-      <td>Controlled by MAX9295A MFP0</td>
+      <td>Controlled by Max96717 MFP0</td>
     </tr>
   </tbody>
 </table>
@@ -146,7 +142,7 @@ title: SHW3H（3MP HDR 60fps）
 
 | HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | Water-proof | Lens Mount |
 |------|------|------|-----|----------------|----------------|-------------|------------|
-| 118° | 92° | 2.0 | 3mm | 0.8m | 0.4m - INF | IP69K | AA |
+| 200° | 150° | 2.0 | 1.69mm | 0.4m | 0.1m - INF | IP69K | AA |
 
 </div>
 
@@ -156,15 +152,15 @@ title: SHW3H（3MP HDR 60fps）
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SHW3H Camera Connect to Nvidia Jetson AGX Orin</p>
+    <p>SHF5G Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the SHW3H camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
+1. Connect the SHF5G camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
 2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
-3. SHW3H camera Connect the power supply
+3. SHF5G camera Connect the power supply
 4. SG10A-AGON-G2M-A1 board Connect the power supply
 5. Power on the system
 :::
@@ -186,8 +182,7 @@ title: SHW3H（3MP HDR 60fps）
 
 | NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.0 | SHW3H |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
-| 2 | JP6.2 | SHW3H |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H%26SHF3L_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHF5G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
 
 
 </div>
