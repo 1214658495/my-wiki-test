@@ -16,7 +16,7 @@ title: SHF3L（3MP HDR 30fps）
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L.png" alt="SHF3L" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L.png?x-oss-process=image/format,webp" alt="SHF3L" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
@@ -79,7 +79,7 @@ title: SHF3L（3MP HDR 30fps）
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L_Dimensions.png" alt="SHF3L" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L_Dimensions.png?x-oss-process=image/format,webp" alt="SHF3L" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -87,7 +87,7 @@ title: SHF3L（3MP HDR 30fps）
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L_BlockDiagram.png" alt="SHF3L_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHF3L/SHF3L_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHF3L_BlockDiagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -154,7 +154,7 @@ title: SHF3L（3MP HDR 30fps）
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S36/S36_Application.jpg?x-oss-process=image/format,webp" alt="SHF3L" 
     style={{maxWidth: '60%', height:'auto'}} />
     <p>SHF3L Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>

@@ -14,7 +14,7 @@ title: M3A（3MP Mini HDR 30fps）
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A.png" alt="M3A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A.png?x-oss-process=image/format,webp" alt="M3A" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -77,7 +77,7 @@ title: M3A（3MP Mini HDR 30fps）
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_Dimensions.png" alt="M3A" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_Dimensions.png?x-oss-process=image/format,webp" alt="M3A" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -85,7 +85,7 @@ title: M3A（3MP Mini HDR 30fps）
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_BlockDiagram.png" alt="M3A_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_BlockDiagram.png?x-oss-process=image/format,webp" alt="M3A_BlockDiagram" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -152,7 +152,7 @@ title: M3A（3MP Mini HDR 30fps）
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S36/S36_Application.jpg?x-oss-process=image/format,webp" alt="SH3-S11A60-G2A_ConnectNvidia" 
     style={{maxWidth: '60%', height:'auto'}} />
     <p>M3A Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
@@ -203,7 +203,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png?x-oss-process=image/format,webp" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
 </div>
 
 The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.
