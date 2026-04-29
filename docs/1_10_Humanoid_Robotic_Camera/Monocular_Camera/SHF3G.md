@@ -1,40 +1,38 @@
 ---
-sidebar_position: 1
-title: SHW3H（3MP HDR 60fps）
+sidebar_position: 7
+title: SHF3G（3MP Global）
 ---
 
-# SHW3H (3MP HDR 60fps)-HFOV 118°
+# SHF3G (3MP Global)-HFOV 173°
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    The SHW3H camera is engineered specifically for embodied intelligence applications, featuring a 3MP sensor with High Dynamic Range (HDR) and high frame rate capabilities. Optimized for robot perception and recognition, it is ideal for integration into the head or torso of humanoid robots.
-    The SHW3H module integrates an RGGB image sensor and the Maxim GMSL2 serializer (MAX9295A). It utilizes an automotive-grade sensor paired with a professionally tuned Image Signal Processor (ISP) to deliver exceptional image quality. The camera is equipped with an Active Alignment (AA) all-glass wide-angle lens and boasts an IP67 protection rating, featuring a factory-focused, fully sealed enclosure.
+    The SHF3G camera is specially designed for physical intelligence applications.It features a 3MP Global Shutter sensor, the GMSL2 high-reliability interface, and a 25×25mm compact wide-angle lens. For application scenarios like robot perception and recognition, it can be installed on humanoid robots in positions such as the head or trunk.
   </div>
 </div>
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H.png?x-oss-process=image/format,webp" alt="SHW3H" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G.png?x-oss-process=image/format,webp" alt="SHF3G" 
     style={{maxWidth: '30%', height:'auto'}} />
 </div>
 <br />
 
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
-</div>
-
+</div> -->
 ## Key Features and Application
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2rem'}}>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Features:</strong><br/>
-    • Output uncompressed YUV data<br/>
-    • High Dynamic Range (HDR)<br/>
+    • Output RAW data<br/>
+    • Global Shutter<br/>
     • Low latency<br/>
     • Support external trigger<br/>
     • Multi-camera synchronization
@@ -42,8 +40,7 @@ title: SHW3H（3MP HDR 60fps）
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Application:</strong><br/>
     • Humanoid Robots<br/>
-    • Data collection<br/>
-    • Robot dog
+    • Data collection
   </div>
 </div>
 
@@ -55,23 +52,21 @@ title: SHW3H（3MP HDR 60fps）
 
 | Parameter         | Value                   |
 |-------------------|-------------------------|
-| Sensor            | RGGB |
-| ISP               | Built-in                |
-| Image Size        | 1/2.42 inch CMOS        |
-| Output Pixels     | 1920H*1536V             |
-| Pixel Size        | 3.0um*3.0um             |
-| Frame Rate        | 1920*1536@60fps         |
-| HDR Support       | Yes                     |
-| LFM               | Yes                     |
-| Output data       | YUV422@8bit             |
-| Serializer        | MAXIM MAX9295A          |
+| Sensor            | 3MP Global Shutter |
+| Image Size        | 1/3.1 inch CMOS        |
+| Output Pixels     | 2064 (H) × 1552 (V) |
+| Pixel Size        | 2.25um*2.25um             |
+| Frame Rate        | MAX 125fps |
+| Shutter           | Global Shutter          |
+| Output data       | RAW@12bit/10bit/8bit    |
+| Serializer        | MAXIM MAX96717         |
 | Camera Interface  | GMSL2                   |
 | Power Supply      | 9~16V POC               |
-| Current           | Less than 200mA@12VDC            |
+| Current           | Less than 200mA@12VDC   |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:18.6mm |
-| Weight            | Less than 50g                    |
+| Dimensions        | W: 25mm, L:25mm, H:31.82mm |
+| Weight            | Less than 50g              |
 
 </div>
 
@@ -79,7 +74,7 @@ title: SHW3H（3MP HDR 60fps）
 ### Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_Dimensions.png?x-oss-process=image/format,webp" alt="SHW3H" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHF3G_Dimensions" 
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -87,8 +82,18 @@ title: SHW3H（3MP HDR 60fps）
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Body_RGB_Camera/SHW3H/SHW3H_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHW3H_BlockDiagram" 
-    style={{maxWidth: '100%', height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHF3G_BlockDiagram" 
+    style={{maxWidth: '90%', height:'auto'}} />
+</div>
+
+#### Frame Sync usage requirements
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+|  | Requires two trigger input signals | PWM trigger signal requirements | Within the Camera Serializer GPIO ---> Sensor GPIO | Notes | 
+|------|------|------|-----|----------------|
+| 1 | XVS signal| Frequency: 30 Hz, Duty cycle: 10% | MFP7 ---> XVS | If multiple cameras are used for synchronized triggering (i.e., slave mode), both XVS and XHS trigger signals must be input simultaneously and meet the corresponding requirements in order to achieve synchronized triggering. | 
+| 2 | XHS signal| Frequency: 83 kHz, Duty cycle: ≥ 90% | MFP3 ---> XHS | | 
 </div>
 
 #### I2C Address Information
@@ -107,7 +112,7 @@ title: SHW3H（3MP HDR 60fps）
     <tr>
       <td rowspan="3"><strong>Serializer</strong></td>
       <td>Model</td>
-      <td>MAX9295A</td>
+      <td>MAX96717</td>
     </tr>
     <tr>
       <td>I2C Address</td>
@@ -118,21 +123,25 @@ title: SHW3H（3MP HDR 60fps）
       <td>GMSL2 (6G bps)</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>Sensor</strong></td>
+      <td rowspan="5"><strong>Sensor</strong></td>
       <td>Model</td>
       <td>RGGB</td>
     </tr>
     <tr>
       <td>I2C Address</td>
-      <td>0x34 (8bit address)</td>
+      <td>0x6C (8bit address)</td>
     </tr>
     <tr>
       <td>Frame Sync</td>
-      <td>Controlled by MAX9295A MFP7</td>
+      <td>Controlled by MAX96717 MFP7 and MFP3</td>
+    </tr>
+    <tr>
+      <td>Master/Slave Control</td>
+      <td>Controlled by MAX96717 MFP5 (Low:Master, High:Slave-default)</td>
     </tr>
     <tr>
       <td>Reset</td>
-      <td>Controlled by MAX9295A MFP0</td>
+      <td>Controlled by MAX96717 MFP0</td>
     </tr>
   </tbody>
 </table>
@@ -144,9 +153,9 @@ title: SHW3H（3MP HDR 60fps）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | Water-proof | Lens Mount |
-|------|------|------|-----|----------------|----------------|-------------|------------|
-| 118° | 92° | 2.0 | 3mm | 0.8m | 0.4m - INF | IP69K | AA |
+| HFOV | VFOV | F.No  | Depth of Field | Water-proof | Lens Mount |
+|------|------|------|----------------|-------------|------------|
+| 173° | 134° | 2.0  | 0.2m - INF@Focus at 0.4M | IP67 | AA |
 
 </div>
 
@@ -154,17 +163,17 @@ title: SHW3H（3MP HDR 60fps）
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S36/S36_Application.jpg?x-oss-process=image/format,webp" alt="SHW3H_Application.jpg" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHF5G_Application" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SHW3H Camera Connect to Nvidia Jetson AGX Orin</p>
+    <p>SHF3G Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the SHW3H camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
+1. Connect the SHF3G camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
 2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
-3. SHW3H camera Connect the power supply
+3. SHF3G camera Connect the power supply
 4. SG10A-AGON-G2M-A1 board Connect the power supply
 5. Power on the system
 :::
@@ -186,8 +195,7 @@ title: SHW3H（3MP HDR 60fps）
 
 | NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.0 | SHW3H |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
-| 2 | JP6.2 | SHW3H |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H%26SHF3L_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHF3G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
 
 
 </div>
@@ -206,10 +214,10 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png?x-oss-process=image/format,webp" alt="SG8A-ORIN-GMSL2-complete" style={{width: 730, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_Fsync.png?x-oss-process=image/format,webp" alt="SHF3G_Fsync" style={{width: 730, height:'auto'}} />
 </div>
 
-The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.
+The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 and MFP3 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.
 
 ### Step 1: Link Register initialization
 SENSING will provide:

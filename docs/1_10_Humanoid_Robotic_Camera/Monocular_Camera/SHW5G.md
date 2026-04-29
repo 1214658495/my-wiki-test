@@ -3,7 +3,7 @@ sidebar_position: 4
 title: SHW5G（5MP Global）
 ---
 
-# SHW5G（5MP Global）-HFOV 130°
+# SHW5G (5MP Global)-HFOV 130°
 
 ## Overview
 
@@ -34,7 +34,7 @@ title: SHW5G（5MP Global）
     • Output RAW data<br/>
     • Global Shutter<br/>
     • Low latency<br/>
-    • Support external triggering<br/>
+    • Support external trigger<br/>
     • Multi-camera synchronization
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>

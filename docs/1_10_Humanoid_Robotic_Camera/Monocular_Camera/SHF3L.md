@@ -3,7 +3,7 @@ sidebar_position: 2
 title: SHF3L（3MP HDR 30fps）
 ---
 
-# SHF3L（3MP HDR 30fps）-HFOV 196°
+# SHF3L (3MP HDR 30fps)-HFOV 196°
 
 ## Overview
 
@@ -36,7 +36,7 @@ title: SHF3L（3MP HDR 30fps）
     • Output uncompressed YUV data<br/>
     • High Dynamic Range (HDR)<br/>
     • Low latency<br/>
-    • Support external triggering<br/>
+    • Support external trigger<br/>
     • Multi-camera synchronization
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>

@@ -3,7 +3,7 @@ sidebar_position: 3
 title: M3A（3MP Mini HDR 30fps）
 ---
 
-# M3A（3MP Mini HDR 30fps）-HFOV 200°
+# M3A (3MP Mini HDR 30fps)-HFOV 200°
 
 ## Overview
 
@@ -33,7 +33,7 @@ title: M3A（3MP Mini HDR 30fps）
     • Output uncompressed YUV data<br/>
     • High Dynamic Range (HDR)<br/>
     • Low latency<br/>
-    • Support external triggering<br/>
+    • Support external trigger<br/>
     • Multi-camera synchronization
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
