@@ -10,7 +10,7 @@ title: RB3 Gen2 Getting Started
 The Qualcomm Robotics RB3 Gen2 Developer Kit, powered by the QCS6490 chipset, offers robust AI processing capabilities and advanced computer vision features. SENSING provides validated camera drivers for this platform, enabling seamless integration of industrial-grade camera modules.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB3_Gen2/RB3_Gen2_Overview.png" alt="RB3_Gen2_Overview"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB3_Gen2/RB3_Gen2_Overview.png?x-oss-process=image/format,webp" alt="RB3_Gen2_Overview"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br />
@@ -41,7 +41,7 @@ The Qualcomm Robotics RB3 Gen2 Developer Kit, powered by the QCS6490 chipset, of
 ### Hardware Connection
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB3_Gen2/RB3_Gen2_Hardware.png" alt="RB3_Gen2_Hardware"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB3_Gen2/RB3_Gen2_Hardware.png?x-oss-process=image/format,webp" alt="RB3_Gen2_Hardware"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 

@@ -15,7 +15,7 @@ sidebar_position: 2
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B.png" alt="TRD1_F4B" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B.png?x-oss-process=image/format,webp" alt="TRD1_F4B" 
     style={{maxWidth: '50%', height:'auto'}} />
 </div>
 <br />
@@ -81,7 +81,7 @@ sidebar_position: 2
 ### Hardware Overview
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Hardware_Overview.png" alt="TRD1 F4B Hardware Overview" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Hardware_Overview.png?x-oss-process=image/format,webp" alt="TRD1 F4B Hardware Overview" style={{maxWidth: '80%', height: 'auto'}} />
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
@@ -95,8 +95,11 @@ sidebar_position: 2
 ::: -->
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Block_Diagram.png" alt="TRD1 F4B Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Block_Diagram.jpg?x-oss-process=image/format,webp" alt="TRD1 F4B Block Diagram" style={{maxWidth: '100%', height: 'auto'}} />
 </div>
+:::note 
+- The TRD1 F4B uses **2 UB9724 deserializers**, each supporting up to 4 camera ports.
+:::
 
 ### Supported Camera List
 
@@ -139,13 +142,13 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 #### Kit Contents
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Kit_Contents.png" alt="TRD1 F4B Kit Contents" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Kit_Contents.png?x-oss-process=image/format,webp" alt="TRD1 F4B Kit Contents" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
 #### Installation Steps
 
 :::note Quick Setup
-1. Connect the GMSL camera to the TRD1 F4B using the coaxial cable(up to 8 cameras at most)
+1. Connect the FPDLINK camera to the TRD1 F4B using the coaxial cable(up to 8 cameras at most)
 2. Connect the power supply(DC 9-16V)
 3. Power on the system(Jetson Thor)
 :::
@@ -162,7 +165,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
     </iframe>
 </div> -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Kit_Contents_Camera.png" alt="TRD1 F4B Camera Connection" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Kit_Contents_Camera.png?x-oss-process=image/format,webp" alt="TRD1 F4B Camera Connection" style={{maxWidth: '90%', height: 'auto'}} />
 </div>
 
 
@@ -176,7 +179,7 @@ Select the appropriate driver package based on your camera type and JetPack vers
 
 | Camera Type | JetPack Version | Download Link |
 |-------------|-----------------|---------------|
-| GMSL2 Camera (YUV) | JP7.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_F4B) |
+| FPDLINK Camera (YUV) | JP7.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_F4B) |
 
 :::tip Download Method
 Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
@@ -202,9 +205,6 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
 
 * SG8S-AR0820C-5300-F4A-Hxxx 
   * support max 4 cameras to bring up at the same time
-
-* SG3S-ISX031C-F4A-Hxxx
-  * support max 8 cameras to bring up at the same time
 
 * SG3S-ISX031C-F3A-Hxxx
   * support max 8 cameras to bring up at the same time

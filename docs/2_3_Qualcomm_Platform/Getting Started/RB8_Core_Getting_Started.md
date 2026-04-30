@@ -10,7 +10,7 @@ title: RB8 Core Getting Started
 The Qualcomm Robotics RB8 Core Kit, powered by the industrial-grade Dragonwing IQ-9075 processor, delivers enhanced AI performance for demanding robotics applications. SENSING provides validated camera drivers for this platform, enabling seamless integration of industrial-grade camera modules.
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB8/RB8_Overview.png" alt="RB8_Overview"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB8/RB8_Overview.png?x-oss-process=image/format,webp" alt="RB8_Overview"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br />
@@ -39,8 +39,8 @@ The Qualcomm Robotics RB8 Core Kit, powered by the industrial-grade Dragonwing I
 ### Hardware Connection
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB8/RB8_Hardware.png" alt="RB8_Hardware"
-    style={{maxWidth: '100%', height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_Qualcomm_Platform/RB8/RB8_Hardware.jpg?x-oss-process=image/format,webp" alt="RB8_Hardware"
+    style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
 <!-- :::note Hardware Setup
