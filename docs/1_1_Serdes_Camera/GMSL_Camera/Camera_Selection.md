@@ -41,6 +41,7 @@ When selecting a GMSL camera for your application, consider these key factors:
 | 16 | SG8-ISX028C-G2G-Hxxx | SONY ISX028 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/h-pd-274.html?recommendFromPid=0&fromMid=1544) |
 | 17 | SG8-IMX728C-G3A-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 40fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-29.html?recommendFromPid=0&fromMid=1545) |
 | 18 | SG17-IMX735C-G3A-Hxxx | SONY IMX735 RGGB | 3000Hx5760V <br/> 3000Hx4000V <br/> 2160Hx3840V | MAX 45fps | MIPI / RAW 12 | [View Details](https://sensing-world.com/en/h-pd-184.html?recommendFromPid=0&fromMid=1545) |
+| 19 | SG8-OX08DC-5300-G2G-Hxxx | OMNIVSION 8.3MP OX08D10 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [View Details](https://sensing-world.com/en/sg8ox08dc5300g2g.html?fromMid=1544#recommendFromPid=0) |
 </div>
 
 ## Sensor Manufacturer Comparison
