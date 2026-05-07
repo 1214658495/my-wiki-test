@@ -50,24 +50,82 @@ title: SHF5G（5MP Global）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| Parameter         | Value                   |
-|-------------------|-------------------------|
-| Sensor            | RGGB |
-| Image Size        | 1/2.5 inch CMOS        |
-| Output Pixels     | 2560 (H) × 1984 (V) |
-| Pixel Size        | 2.25um*2.25um             |
-| Frame Rate        | 2560 (H) × 1984 (V) @30FPS<br/>2400 (H) × 1440 (V) @60FPS |
-| HDR Support       | Rolling MAX 100dB       |
-| Shutter           | Global Shutter          |
-| Output data       | RAW@10bit             |
-| Serializer        | MAXIM MAX96717         |
-| Camera Interface  | GMSL2                   |
-| Power Supply      | 9~16V POC               |
-| Current           | Less than 200mA@12VDC   |
-| Connector         | Amphenol Fakra (Z Code) |
-| Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:31.35mm |
-| Weight            | Less than 50g              |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Parameter</th>
+      <th colspan="2">Details</th>
+    </tr>
+    <tr>
+      <th>Global Shutter</th>
+      <th>Rolling Shutter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sensor</td>
+      <td colspan="2">RGGB</td>
+    </tr>
+    <tr>
+      <td>Image Size</td>
+      <td colspan="2">1/2.5 inch CMOS</td>
+    </tr>
+    <tr>
+      <td>Output Pixels</td>
+      <td colspan="2">2560 (H) × 1984 (V)</td>
+    </tr>
+    <tr>
+      <td>Pixel Size</td>
+      <td colspan="2">2.25um × 2.25um</td>
+    </tr>
+    <tr>
+      <td>Frame rate at full resolution</td>
+      <td>up to 60FPS</td>
+      <td>up to 50FPS</td>
+    </tr>
+    <tr>
+      <td>HDR Support</td>
+      <td>NA</td>
+      <td>MAX 100dB</td>
+    </tr>
+    <tr>
+      <td>Output data</td>
+      <td colspan="2">RAW@10bit</td>
+    </tr>
+    <tr>
+      <td>Serializer</td>
+      <td colspan="2">MAXIM MAX96717</td>
+    </tr>
+    <tr>
+      <td>Camera Interface</td>
+      <td colspan="2">GMSL2</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td colspan="2">9~16V POC</td>
+    </tr>
+    <tr>
+      <td>Current</td>
+      <td colspan="2">Less than 200mA@12VDC</td>
+    </tr>
+    <tr>
+      <td>Connector</td>
+      <td colspan="2">Amphenol Fakra (Z Code)</td>
+    </tr>
+    <tr>
+      <td>Operating temp. range</td>
+      <td colspan="2">-40~+85℃</td>
+    </tr>
+    <tr>
+      <td>Dimensions</td>
+      <td colspan="2">W: 25mm, L:25mm, H:31.35mm</td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td colspan="2">Less than 50g</td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -103,7 +161,7 @@ title: SHF5G（5MP Global）
     <tr>
       <td rowspan="3"><strong>Serializer</strong></td>
       <td>Model</td>
-      <td>Max96717</td>
+      <td>MAX96717</td>
     </tr>
     <tr>
       <td>I2C Address</td>
@@ -124,11 +182,11 @@ title: SHF5G（5MP Global）
     </tr>
     <tr>
       <td>Frame Sync</td>
-      <td>Controlled by Max96717 MFP7</td>
+      <td>Controlled by MAX96717 MFP7</td>
     </tr>
     <tr>
       <td>Reset</td>
-      <td>Controlled by Max96717 MFP0</td>
+      <td>Controlled by MAX96717 MFP0</td>
     </tr>
   </tbody>
 </table>
