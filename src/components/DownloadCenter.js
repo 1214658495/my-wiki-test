@@ -3,7 +3,7 @@ import Papa from 'papaparse';
 
 const OSS_INTRINSICS_BASE_URL = "https://sgword-service.oss-cn-heyuan.aliyuncs.com/intrinsics/";
 const OSS_MODELS_CSV_URL = "https://sgword-service.oss-cn-heyuan.aliyuncs.com/configs/models.csv";
-const LEAD_API_URL = '/api/lead';
+const LEAD_API_URL = 'https://ai-api.sensing-world.com/api/lead';
 
 function UserRegistrationModal({ onSubmit, onClose }) {
   const [formData, setFormData] = useState({ name: '', company: '', email: '' });
