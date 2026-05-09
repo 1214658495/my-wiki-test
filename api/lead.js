@@ -84,6 +84,18 @@ async function sendEmailNotification(name, company, email, fileName) {
 }
 
 export default async function handler(req, res) {
+  // 1. 设置允许跨域 (CORS) 的响应头
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*'); // 允许所有域名访问，或者写死你们的 wiki 域名
+  res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, POST');
+  res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
+
+  // 2. 处理浏览器的 OPTIONS 预检请求
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
+  // 3. 拦截非 POST 请求
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
