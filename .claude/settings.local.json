@@ -3,7 +3,9 @@
     "allow": [
       "WebFetch(domain:github.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(dir \"d:\\\\mywork\\\\16_wiki_htmi\\\\my-wiki-test\\\\docs\\\\6_2_Vision_Solution\\\\\")",
+      "Bash(dir /s /b)"
     ]
   }
 }

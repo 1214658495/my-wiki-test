@@ -1,19 +1,19 @@
 ---
-sidebar_position: 10
-title: Camera
+sidebar_position: 1
+title: Robotics
 description: Comprehensive guide to advanced camera technologies and their applications in modern vision systems
 keywords: [camera, vision, imaging, sensors, MIPI, Serdes, global shutter, event-based, low latency]
 ---
 
-# Camera Technologies Overview
+# Robotics Technologies Overview
 
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
+<div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <img src="/img/SENSING_WIKI.png" alt="SENSING Camera Technologies" style={{maxWidth: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0,0,0,0.1)'}} />
 </div>
 
 :::note Professional Vision Solutions
 SENSING provides comprehensive camera technology solutions designed for demanding applications in robotics, autonomous systems, industrial automation, and advanced AI vision processing.
-::: -->
+:::
 
 ## Introduction
 
@@ -23,145 +23,190 @@ This comprehensive documentation explores the complete spectrum of camera techno
 
 ---
 
-## Camera Technology Solutions
+## Binocular Camera
 
 <div className="camera-grid">
 
-### <span style={{color: 'var(--ifm-color-primary)'}}>Serdes Camera </span>
-**SerDes (Serializer/Deserializer)** camera systems enable high-speed data transmission over extended distances with superior signal integrity and error correction capabilities.
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Data Transmission Rate** | Up to 12 Gbps per link |
-| **Maximum Cable Length** | Up to 15 meters (coaxial) |
-| **Signal Latency** | < 100 nanoseconds |
-| **Environmental Rating** | -40°C to +85°C |
+### <span style={{color: 'var(--ifm-color-primary)'}}>Astra S56 </span>
+**Astra S56** is a stereo camera designed for embodied AI applications, featuring dual 5MP global shutter sensors with a 60mm human-like baseline.
 
-**Primary Applications:** Automotive vision systems, industrial inspection, outdoor surveillance, and long-distance image transmission applications.
+| Technical Specification | Performance |
+|------------------------|-------------|
+| **Resolution** | Dual 5MP (2560×1920) |
+| **Shutter** | Global Shutter |
+| **Baseline** | 60mm |
+| **FOV** | 130° Horizontal |
+| **Protection** | IP52 |
+| **IMU** | Dual IMU support (SCHA634-D03 / BMI088) |
+| **Interface** | GMSL2 |
 
----
-
-### <span style={{color: 'var(--ifm-color-primary)'}}> MIPI CSI-2 Camera</span>
-
-**MIPI CSI-2 (Camera Serial Interface 2)** is the industry-standard interface for mobile and embedded vision applications, delivering optimized power efficiency and seamless platform integration.
-
-
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Data Lanes** | 1-4 configurable lanes |
-| **Per-Lane Data Rate** | Up to 4.5 Gbps |
-| **Power Consumption** | Ultra-low power design |
-| **Protocol Version** | CSI-2 v2.1 compliant |
-| **Pixel Formats** | RAW8/10/12, YUV422 |
-
-
-**Primary Applications:** Mobile devices, embedded AI systems, IoT vision nodes, and power-constrained applications.
+**Primary Applications:** Humanoid robotics, embodied AI, teleoperation, 3D scanning.
 
 ---
 
-### <span style={{color: 'var(--ifm-color-primary)'}}> Global Shutter Camera </span>
+### <span style={{color: 'var(--ifm-color-primary)'}}>Astra S36 </span>
+**Astra S36** is a compact stereo camera for embodied intelligence applications with integrated 6-axis IMU.
 
-**Global Shutter** technology captures entire frames simultaneously, eliminating motion artifacts and delivering precise imaging for high-speed applications.
+| Technical Specification | Performance |
+|------------------------|-------------|
+| **Resolution** | Dual 3MP HDR |
+| **Shutter** | Rolling Shutter (HDR) |
+| **Baseline** | 60mm |
+| **FOV** | 120° Horizontal |
+| **Protection** | IP65 |
+| **IMU** | Integrated 6-axis (BMI088) |
+| **Interface** | GMSL2 |
 
+**Primary Applications:** Humanoid robotics, legged robots, robotic arms.
 
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Maximum Frame Rate** | Up to 240 FPS (full resolution) |
-| **Motion Artifacts** | Eliminated (global exposure) |
-| **Dynamic Range** | 65-75 dB typical |
-| **Pixel Architecture** | Global reset and readout |
-| **Synchronization** | Hardware trigger support |
-
-
-**Primary Applications:** Machine vision inspection, robotics guidance, sports analysis, scientific imaging, and precise motion capture applications.
-
----
-
-
-
-### <span style={{color: 'var(--ifm-color-primary)'}}> Low Latency Camera </span>
-
-**Low Latency** camera systems achieve minimal delay through high frame rate capture, typically operating at 60fps or higher for real-time applications.
-
-
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Frame Rate** | 60fps or higher |
-| **Latency** | < 60 milliseconds |
-
-
-**Primary Applications:** Real-time monitoring, high-speed tracking, autonomous vehicle perception, drone navigation, and applications requiring immediate visual feedback.
+</div>
 
 ---
 
-### <span style={{color: 'var(--ifm-color-primary)'}}> Event-Based Camera </span>
+## Monocular Camera
 
-**Event-Based** neuromorphic vision sensors detect pixel-level brightness changes asynchronously, delivering unprecedented temporal resolution and dynamic range for challenging vision applications.
+<div className="camera-grid">
 
+### <span style={{color: 'var(--ifm-color-primary)'}}>SHF Series (Ultra Wide Angle)</span>
 
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Temporal Resolution** | Microsecond precision |
-| **Dynamic Range** | > 120 dB (1,000,000:1) |
-| **Data Bandwidth** | Scene-activity dependent |
-| **Power Consumption** | Ultra-low (event-driven) |
-| **Latency** | < 1 millisecond |
+**SHF3G** — 3MP Global Shutter, 173° HFOV
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 3MP |
+| **Shutter** | Global Shutter |
+| **FOV** | 173° Horizontal |
+| **Frame Rate** | Up to 125fps |
+| **Output** | RAW data |
+| **Protection** | IP67 |
 
+**SHF5G** — 5MP Global Shutter, 200° HFOV
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 5MP |
+| **Shutter** | Global Shutter |
+| **FOV** | 200° Horizontal |
+| **Frame Rate** | Up to 60fps |
+| **Output** | RAW10 |
+| **Protection** | IP69K |
 
-**Primary Applications:** High-speed object tracking, autonomous navigation in challenging lighting, surveillance systems, robotics perception, and neuromorphic computing research.
+**SHF3L** — 3MP HDR, 196° HFOV, 30fps
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 3MP |
+| **Shutter** | Rolling Shutter (HDR) |
+| **FOV** | 196° Horizontal |
+| **Frame Rate** | 30fps |
+| **Output** | YUV422 (ISP built-in) |
+| **Protection** | IP67 / IP69K lens |
 
-
-
----
-
-### <span style={{color: 'var(--ifm-color-primary)'}}> Night Vision Camera </span>
-
-**Night Vision** cameras utilize advanced low-light sensor technology and intelligent image enhancement to deliver exceptional performance in challenging lighting conditions.
-
-
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Minimum Illumination** | 0.0001 lux (starlight) |
-| **IR Illumination** | 850nm/940nm options |
-<!-- | **Sensitivity Enhancement** | Enhanced NIR response | -->
-<!-- | **Image Processing** | Real-time enhancement | -->
-<!-- | **Operating Range** | 0-100 meters (IR-assisted) | -->
-
-
-**Primary Applications:** Security and surveillance systems, wildlife monitoring, military operations, autonomous vehicle night vision, and industrial inspection in low-light environments.
-
----
-
-### <span style={{color: 'var(--ifm-color-primary)'}}> Humanoid Robotic Camera </span>
-
-**Humanoid Robotic** vision systems engineered specifically for humanoid robots, featuring human-like perception capabilities and advanced AI integration for natural interaction and navigation.
-
-
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Field of View** | 120° horizontal (human-like) |
-| **Stereo Configuration** | Multi-camera arrays |
-| **Form Factor** | Compact, lightweight design |
-
-
-**Primary Applications:** Humanoid robotics, social robots, service robots, human-robot interaction research, and advanced robotic perception systems requiring natural vision capabilities.
+**Primary Applications:** Fisheye perception for humanoid robots and legged robots.
 
 ---
 
-### <span style={{color: 'var(--ifm-color-primary)'}}> Cockpit Camera </span>
+### <span style={{color: 'var(--ifm-color-primary)'}}>SHW Series (Wide Angle)</span>
 
-**Cockpit Camera** systems designed for automotive driver monitoring and cabin surveillance, ensuring safety and compliance with automotive regulations.
+**SHW3G** — 3MP Global Shutter, 122° HFOV
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 3MP |
+| **Shutter** | Global Shutter |
+| **FOV** | 122° Horizontal |
+| **Frame Rate** | Up to 125fps |
+| **Output** | RAW data |
+| **Protection** | IP67 |
 
+**SHW3H** — 3MP HDR, 118° HFOV, 60fps
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 3MP |
+| **Shutter** | Rolling Shutter (HDR) |
+| **FOV** | 118° Horizontal |
+| **Frame Rate** | 60fps |
+| **Output** | YUV422 (ISP built-in) |
+| **Protection** | IP67 |
 
-| Technical Specification | Performance Range |
-|------------------------|-------------------|
-| **Operating Temperature** | -40°C to +85°C |
-| **Vibration Resistance** | Automotive grade |
-| **IR Illumination** | 940nm for night vision |
-| **Field of View** | 60°-120° adjustable |
+**SHW5G** — 5MP Global Shutter, 130° HFOV
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 5MP |
+| **Shutter** | Global Shutter |
+| **FOV** | 130° Horizontal |
+| **Frame Rate** | Up to 60fps |
+| **Output** | RAW10 |
+| **Protection** | IP69K |
 
+**Primary Applications:** Head/trunk vision for humanoid robots.
 
+---
 
-**Primary Applications:** Driver monitoring systems (DMS), occupant monitoring systems (OMS), fatigue detection, attention monitoring, and automotive safety compliance.
+### <span style={{color: 'var(--ifm-color-primary)'}}>M Series (Mini)</span>
+
+**M3A** — 3MP Mini HDR, 200° HFOV, 30fps
+| Specification | Value |
+|--------------|-------|
+| **Resolution** | 3MP |
+| **Shutter** | Rolling Shutter (HDR) |
+| **FOV** | 200° Horizontal |
+| **Frame Rate** | 30fps |
+| **Output** | YUV422 (ISP built-in) |
+| **Size** | Ultra compact (17mm×17mm) |
+
+**Primary Applications:** Head/trunk of humanoid robots, data collection, legged robots.
+
+</div>
+
+---
+
+## Vision Solution
+
+<div className="camera-grid">
+
+### <span style={{color: 'var(--ifm-color-primary)'}}>NRDCK — NVIDIA Robotics Data Collection Kit</span>
+
+**NRDCK** is a multi-camera robot data collection kit based on Jetson AGX Orin with GMSL camera support.
+
+| Component | Specification |
+|-----------|--------------|
+| **Platform** | Jetson AGX Orin (32GB/64GB) + JetPack 6.2 (L4T R36.4.3) |
+| **Adapter Board** | SG10A-AGON-G2M-A1 (88mm × 120mm) |
+| **Deserializer** | MAXIM MAX9296A / MAX96712A |
+| **Camera Support** | Astra S56 (depth), SHF3L (hand HDR 30fps), SHW3H (head HDR 60fps) |
+| **Max Channels** | Up to 10 GMSL cameras |
+
+**Device Node Mapping (JetPack 6.2):**
+- J27 → /dev/video0/1
+- J29 → /dev/video2/3
+- J21-J26 → /dev/video4-9
+
+**Primary Applications:** Robot data collection, embodied AI training.
+
+---
+
+### <span style={{color: 'var(--ifm-color-primary)'}}>Robotic Camera Application — Jetson AGX Thor</span>
+
+**SENSING TRD1 Jetson AGX Thor Vision Solution** is designed for embodied AI and humanoid robotics perception.
+
+| Component | Specification |
+|-----------|--------------|
+| **Platform** | Jetson AGX Thor + TRD1 G2A Carrier Board |
+| **Adapter Board** | SG8-AGX-Thor-GMSL2 |
+| **Head Vision** | Astra S56 (depth+VLA), Astra S36 (optional), SHW3H (HDR 60fps) |
+| **Hand Vision** | SHF3L ×4 for fine manipulation guidance |
+| **Power** | DC 9-16V |
+
+**Quick Start:** Connect cameras → Power on (DC 9-16V) → System boots
+
+**Driver Configuration (8-step):**
+1. Select camera config (`generate_camera_overlay.py`)
+2. Install kernel and drivers (`./install.sh`)
+3. Configure device tree (Jetson-IO → Jetson Sensing SG8A_AGTH_G2Y_A1 GMSL2x8)
+4. Configure trigger mode (`load_modules.sh`: `sensor_mode=1`, `trig_mode=0`)
+5. Load drivers (`./load_modules.sh`)
+6. Install Argus camera tools (`jetson_multimedia_api`)
+7. Restart Argus daemon
+8. Verify with `argus_camera -d 0/1` or GStreamer
+
+**Primary Applications:** Humanoid robotics, embodied AI, autonomous navigation.
 
 </div>
 
@@ -175,16 +220,17 @@ Use this comprehensive comparison matrix to evaluate camera technologies based o
 :::
 
 
-| Camera Type      | Resolution | Frame Rate | Latency | Low Light |
-|------------------|------------|------------|---------|-----------|
-| Serdes           | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★☆☆    |
-| MIPI CSI-2       | ★★★★★     | ★★★★☆     | ★★★★★  | ★★★☆☆    |
-| Global Shutter   | ★★★★☆     | ★★★★★     | ★★★★☆  | ★★★☆☆    |
-| Low Latency      | ★★★★☆     | ★★★★★     | ★★★★★  | ★★★☆☆    |
-| Event-Based      | ★★☆☆☆     | ★★★★★     | ★★★★★  | ★★★★★    |
-| Night Vision     | ★★★☆☆     | ★★★☆☆     | ★★★☆☆  | ★★★★★    |
-| Humanoid         | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★★☆    |
-| Cockpit          | ★★★★☆     | ★★★☆☆     | ★★★☆☆  | ★★★★☆    |
+| Camera Series     | Resolution | Frame Rate | FOV Range  | Protection |
+|------------------|------------|------------|------------|-----------|
+| Astra S56 (Binocular) | ★★★★★ (5MP) | ★★★★☆     | 130°       | IP52      |
+| Astra S36 (Binocular) | ★★★☆☆ (3MP) | ★★★☆☆     | 120°       | IP65      |
+| SHF (FishEye)    | ★★★☆☆-★★★★☆ | ★★★☆☆-★★★★☆ | 173°-200°  | IP67-IP69K |
+| SHW (Wide)       | ★★★☆☆-★★★★☆ | ★★★☆☆-★★★★☆ | 118°-130°  | IP67-IP69K |
+| M (Mini)         | ★★★☆☆ (3MP) | ★★★☆☆     | 200°       | —         |
+
+:::note
+**Product Line Overview:** Astra (stereo), SHF (ultra-wide fish-eye), SHW (wide-angle), M (mini) — all use GMSL2 interface with MAXIM serializers.
+:::
 
 
 <!-- <div className="table-responsive">
@@ -204,9 +250,9 @@ Use this comprehensive comparison matrix to evaluate camera technologies based o
 
 </div> -->
 
-:::note
+<!-- :::note
 Rating Scale: ★☆☆☆☆ (Basic) to ★★★★★ (Excellent)
-:::
+::: -->
 
 
 <!-- ## Key Considerations

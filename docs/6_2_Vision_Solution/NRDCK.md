@@ -1,14 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# NVIDIA Robot Data Acquisition Suite
+# NVIDIA Robotics Data Collection Kit
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    NVIDIA Robot Data Acquisition Suite (NRDS) is a complete development kit for multi-camera robot data acquisition,
+    NVIDIA Robotics Data Collection Kit is a complete development kit for multi-camera robot data acquisition,
     combining <strong>NVIDIA Jetson AGX Orin</strong> with <strong>SENSING SG10A-AGON-G2M-A1 GMSL Adapter Board</strong>.
     SENSING has developed optimized camera drivers to enable seamless integration of GMSL cameras with the Jetson platform.
   </div>
