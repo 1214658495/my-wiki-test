@@ -204,9 +204,9 @@ Use this comprehensive comparison matrix to evaluate camera technologies based o
 
 </div> -->
 
-:::note
+<!-- :::note
 Rating Scale: ★☆☆☆☆ (Basic) to ★★★★★ (Excellent)
-:::
+::: -->
 
 
 <!-- ## Key Considerations
