@@ -353,26 +353,4 @@ int main() {
 
     **Business Hours**: Monday - Friday, 9:00 AM - 6:00 PM (GMT+8)
     :::
-<!-- ## Further Resources
 
-For additional information about camera technologies and their applications, explore the following resources:
-
-<div className="resource-links">
-
-- 📚 [Camera Sensor Architecture Guide](./1_1_Serdes_Camera)
-- 🔍 [Imaging Pipeline Optimization Techniques](./1_2_MIPI_CSI-2_Camera)
-- 📋 [Comprehensive Camera Selection Guide](./1_3_Global_Shutter_Camera)
-
-
-
-</div>
-
-:::tip Professional Development
-Join our [Camera Technology Webinar Series](./1_6_Low_Latency_Camera) to learn directly from industry experts about advanced implementation techniques and emerging technologies.
-::: -->
-
-<!-- <div className="footer-note">
-
-*Last Updated: August 2023*
-
-</div> -->
