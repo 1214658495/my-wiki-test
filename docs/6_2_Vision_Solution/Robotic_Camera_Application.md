@@ -61,10 +61,10 @@ The solution features a centralized high-performance computing unit connected to
 
 | Model | Type | Resolution | Shutter | Data Format | FOV (H) | Role / Position | Qty | Docs |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
-| **Astra S36** (Optional) | Stereo | 2 * 3MP | Rolling | YUV | 120° | **Head**: Depth (Alt) | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S36) |
-| **SHW3H** | Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHW3H) |
-| **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 4 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHF3L) |
+| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S36** (Optional) | Stereo | 2 * 3MP | Rolling | YUV | 120° | **Head**: Depth (Alt) | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S36) |
+| **SHW3H** | Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHW3H) |
+| **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 4 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHF3L) |
 
 ### Computing Platform
 

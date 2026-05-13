@@ -133,9 +133,9 @@ The latest driver package supports **Astra S56** and **SHF3L/SHF3H** cameras.
 <div style={{display: 'flex', justifyContent: 'center'}}>
 | Model | Type | Resolution | Shutter | Data Format | FOV (H) | Role / Position | Max Quantity | Port | Docs |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | J27/J29 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
-| **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 6 | J21-J26 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHF3L) |
-| **SHW3H** （Optional）| Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 6 | J21-J26 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHW3H) |
+| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | J27/J29 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S56) |
+| **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 6 | J21-J26 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHF3L) |
+| **SHW3H** （Optional）| Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 6 | J21-J26 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHW3H) | 
 
 </div>
 
