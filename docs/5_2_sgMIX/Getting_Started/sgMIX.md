@@ -1,15 +1,15 @@
 ---
 sidebar_position: 2
-title: Getting Started with sgMIX
+title: Getting Started with sgMIX（EN）
 ---
 
-# Getting Started with sgMIX
+# Getting Started with sgMIX（EN）
 
 ## Summary
 
 The sgMIX SDK is a comprehensive camera control SDK designed for NVIDIA Jetson platforms, enabling seamless integration and fine-grained control over GMSL camera systems. It provides a complete set of tools for：
 - image control
-- ISP management
+- ISP tuning
 - OTA firmware upgrades
 - IMU data acquisition (S56)
 - stereo depth estimation (S36)

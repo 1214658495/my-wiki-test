@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: sDepth 快速入门
+title: Getting Started with sDepth（中文）
 ---
 
 # sDepth 快速入门

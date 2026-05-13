@@ -28,11 +28,11 @@ function UserRegistrationModal({ onSubmit, onClose }) {
         maxWidth: '480px', width: '90%', boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
       }}>
         <h3 style={{ marginTop: 0, color: 'var(--ifm-color-primary)' }}>
-          📥 Unlock Technical Downloads
+          📥 Download Technical Downloads
         </h3>
         <p style={{ color: '#666', marginBottom: '1.5rem' }}>
-          Please provide your information to access SENSING technical resources.
-          This only needs to be completed once.
+          Please share your details to access SENSING technical resources.   
+          Registration is one-time only.
         </p>
         <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: '1rem' }}>
@@ -81,7 +81,7 @@ function UserRegistrationModal({ onSubmit, onClose }) {
               disabled={submitting}
               style={{ flex: 1 }}
             >
-              {submitting ? 'Submitting...' : 'Unlock & Download'}
+              {submitting ? 'Submitting...' : 'Download Now'}
             </button>
             <button
               type="button"

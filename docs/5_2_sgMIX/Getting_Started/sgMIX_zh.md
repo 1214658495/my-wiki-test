@@ -1,15 +1,15 @@
 ---
 sidebar_position: 2
-title: sgMIX 快速入门
+title: Getting Started with sgMIX（中文）
 ---
 
 # sgMIX 快速入门
 
 ## 概述
 
-sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发套件，可实现 GMSL 相机系统的无缝集成与精细化控制。它提供了一套完整的工具集，涵盖：
+sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发驱动包，可实现 GMSL 相机系统的无缝集成与精细化控制。它提供了一套完整的工具集，涵盖：
 - 图像控制
-- ISP 管理
+- ISP 调优
 - OTA 固件升级
 - IMU 数据采集（S56）
 - 双目深度估计（S36）
