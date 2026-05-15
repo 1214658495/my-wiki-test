@@ -1,101 +1,107 @@
 ---
 sidebar_position: 40
-title: 视觉核心 SDK
+title: 视觉核心SDK
 ---
 
-# 视觉核心 SDK
+# 视觉核心SDK
 
 ## 概述
 
-<div className="row">
-  <div className="col col--7">
-    本章节介绍面向汽车和嵌入式视觉应用的摄像头数据采集、分配与仿真方案。这些技术能够在保持信号完整性和同步性的同时，在多个处理单元之间高效处理视频数据。
-  </div>
-  <div className="col col--5">
-    :::note 关键组件
-    - GMSL 摄像头采集卡
-    - GMSL2 摄像头中继器
-    - GMSL2 摄像头分配器
-    - GMSL 视频注入卡
-    :::
-  </div>
-</div>
+VisionCore SDK 是在 NVIDIA Jetson 平台上构建 SENSING 相机应用时常用的核心软件能力，主要包含两个模块： 
 
-## 方案架构
+- **sDepth**：面向双目相机的 AI 深度估计 SDK，用于从左右目图像生成高质量深度图。
+- **sgMIX**：面向 GMSL 相机系统的相机控制、采集、标定、ISP 调节、固件和传感器工具 SDK。
 
-<div className="row" style={{marginTop: '2rem', marginBottom: '2rem'}}>
-  <div className="col col--6">
-    <div className="card" style={{height: '100%'}}>
-      <div className="card__header">
-        <h3>数据采集链路</h3>
-      </div>
-      <div className="card__body">
-        <p>使用 GMSL 摄像头采集卡捕获高质量摄像头视频流，用于数据采集与分析；也可通过摄像头分配器将信号分发到多个 ECU 进行并行处理。</p>
-      </div>
-    </div>
-  </div>
-  <div className="col col--6">
-    <div className="card" style={{height: '100%'}}>
-      <div className="card__header">
-        <h3>仿真链路</h3>
-      </div>
-      <div className="card__body">
-        <p>使用视频注入卡将预录制场景输入视觉系统，用于测试和验证，实现基于真实数据的可重复测试。</p>
-      </div>
-    </div>
-  </div>
-</div>
+两个 SDK 覆盖了从相机点亮、视频采集、图像校正、参数读取、传感器数据访问，到实时双目深度输出的主要开发流程。
 
-## 组件概览
+## SDK 模块
 
-### GMSL 摄像头采集卡
+| 模块 | 主要定位 | 典型用途 |
+|------|----------|----------|
+| [sDepth](/zh-Hans/docs/5_1_sDepth/sDepth) | AI 双目深度 SDK | 从双目图片或实时相机流生成深度图 |
+| [sgMIX](/zh-Hans/docs/5_2_sgMIX/sgMIX) | 相机控制与集成 SDK | 配置 GMSL 相机、采集图像、调节 ISP、读取标定参数并访问相机工具能力 |
 
-摄像头采集卡支持从 GMSL/GMSL2 摄像头高速采集视频，用于数据采集、测试和开发。
+## 能力概览
 
-**[了解更多 GMSL 摄像头采集卡 →](/zh-Hans/docs/3_1_GMSL2_3_Camera_Grabber/Getting_Started/CCG3-8H)**
+### sDepth
 
-### GMSL2 摄像头中继器
+sDepth 基于神经网络进行双目深度估计，可在复杂场景中生成稳定的深度图。相比传统双目方法，它更关注弱纹理区域、低光环境等场景下的深度估计可靠性。
 
-通过一进一出的配置扩展 GMSL2 传输距离，同时尽量降低信号衰减。
+核心能力包括：
 
-**[探索 GMSL2 摄像头中继器 →](/zh-Hans/docs/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater)**
+- 基于 AI 的双目深度图生成
+- 支持离线图片处理和实时相机采集模式
+- 支持深度图与视差图显示切换
+- 支持面向短距离和长距离显示的多种颜色映射模式
+- 通过 JSON 配置加载相机标定参数
+- 支持 NVIDIA Jetson AGX Orin 和 NVIDIA Jetson AGX Thor
 
-### GMSL2 摄像头分配器
+sDepth 适用于机器人、AR、三维重建，以及其他需要在嵌入式平台上获得稳定深度感知能力的应用。
 
-将单路 GMSL2 摄像头信号分发到多个处理单元，同时保持信号完整性和同步性。
+### sgMIX
 
-**[了解 GMSL2 摄像头分配器 →](/zh-Hans/docs/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter)**
+sgMIX 是面向 NVIDIA Jetson 平台的相机控制 SDK 和 GUI 工具集，用于集成和操作 GMSL 相机系统，并对相机行为和图像输出进行细粒度控制。
 
-### GMSL 视频注入卡
+核心能力包括：
 
-将预录制视频仿真注入汽车视觉系统，用于测试和验证。
+- 相机初始化与视频流控制
+- 图像翻转、镜像、测试图、分辨率等图像控制
+- 读取相机内参、双目内参、外参、序列号和固件信息
+- ISP 参数控制，包括亮度、对比度、饱和度、锐度、降噪、曝光、增益和白平衡
+- OTA 固件升级与网络授权激活
+- S56 相机 IMU 数据采集
+- S36 相机双目深度 API 支持
+- 基于相机内参的图像畸变校正
+- 图像帧采集、时间戳读取、传感器数据帧访问，以及部分相机的 EBD 数据读取
 
-**[了解视频注入 →](/zh-Hans/docs/3_4_GMSL_Video_Injection_Card/Getting_Started/CIG4-8H)**
+sgMIX 既可以通过 GUI 完成交互式配置，也可以通过 C++ API 集成到应用程序中。
 
-## 实施指南
+## 典型流程
 
-1. **根据具体的数据采集或仿真需求选择合适的组件**
-2. **根据设备文档配置硬件**
-3. **使用示例代码和 API 开发软件接口**
-4. **使用推荐测试流程验证系统性能**
+1. **准备 Jetson 平台**
+   安装目标设备所需的 JetPack、编译工具、相机驱动和运行时依赖。
 
-## 技术对比
+2. **使用 sgMIX 点亮相机**
+   选择相机型号、分辨率、EEPROM 地址和视频设备，打开相机流并确认图像采集正常。
 
-<div className="table-responsive">
+3. **读取标定与相机信息**
+   通过 sgMIX 读取相机序列号、内参、双目标定参数、固件版本和其他设备信息。
 
-| 组件 | 功能 | 最高分辨率 | 延迟 | 多路输出 | 关键特性 |
-|----------|----------|----------------|---------|-----------------|-------------|
-| 摄像头采集卡 | 数据采集 | 4K (3840×2160) | 低 | 否 | 高速数据采集 |
-| 摄像头中继器 | 信号延长 | 4K (3840×2160) | 超低 (< 10μs) | 否 | 延长传输距离 |
-| 摄像头分配器 | 信号分发 | 4K (3840×2160) | 超低 (< 10μs) | 是 (2×) | 同步输出 |
-| 视频注入卡 | 数据仿真 | 4K (3840×2160) | 低 | 否 | 场景仿真 |
+4. **按需调节图像质量**
+   使用 sgMIX 的 ISP 控制能力调节曝光、增益、白平衡、亮度、对比度、饱和度、锐度和降噪等参数。
 
-</div>
+5. **运行 sDepth 双目深度**
+   加载深度模型、授权文件和双目标定 JSON，处理离线双目图片或实时相机流并输出深度结果。
 
-## 常见应用
+6. **集成到应用中**
+   将采集帧、时间戳、传感器数据、IMU 数据、校正图像和深度图接入感知、导航、三维重建或测试验证流程。
 
-- 汽车视觉系统开发与验证
-- 多 ECU 摄像头数据分发
-- 摄像头数据记录与回放
-- 自动驾驶算法的仿真测试
-- 分布式处理系统的信号延长
+## 平台与相机范围
+
+| 范围 | 说明 |
+|------|------|
+| 边缘平台 | NVIDIA Jetson AGX Orin、NVIDIA Jetson AGX Thor |
+| 相机系统 | 对应 SDK 和驱动包支持的 GMSL 相机系统 |
+| 深度相机示例 | S36 双目深度流程 |
+| 传感器示例 | S56 IMU 数据采集流程 |
+| 构建环境 | CMake、build-essential、v4l-utils、NVIDIA JetPack |
+
+## SDK 选择建议
+
+| 需求 | 推荐 SDK |
+|------|----------|
+| 配置并打开 GMSL 相机 | sgMIX |
+| 采集图像帧或读取时间戳 | sgMIX |
+| 读取相机内参、外参、SN、固件或 EBD 数据 | sgMIX |
+| 调节 ISP 参数 | sgMIX |
+| 执行 OTA 固件升级 | sgMIX |
+| 获取 S56 的 IMU 数据 | sgMIX |
+| 从双目图片生成深度图 | sDepth |
+| 在 Jetson 上运行实时双目深度 | sDepth |
+| 构建从相机采集到深度感知的完整流程 | sgMIX + sDepth |
+
+## 文档入口
+
+- [sDepth 快速入门](/zh-Hans/docs/5_1_sDepth/sDepth)：深度估计概述、支持平台、性能数据、显示控制、编译步骤、参数说明和使用示例。
+- [sgMIX 快速入门](/zh-Hans/docs/5_2_sgMIX/sgMIX)：GUI 操作说明、相机配置流程、ISP 控制、OTA、授权和 API 参考。
+
