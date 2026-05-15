@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-title: Getting Started with sgMIX（EN）
+title: Getting Started with sgMIX
 ---
 
-# Getting Started with sgMIX（EN）
+# Getting Started with sgMIX
 
 ## Summary
 

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Getting Started with sDepth（中文）
+title: sDepth 快速入门
 ---
 
 # sDepth 快速入门
@@ -87,15 +87,9 @@ sDepth SDK 提供标定参数加载和深度图生成等核心能力，支持离
 
 ### SDK 下载
 
-<!-- | 资源 | 链接 |
-|------|------|
-| sDepth SDK | [GitHub - SENSING-Technology/sDepth](https://github.com/SENSING-Technology/sDepth) | -->
-
 | 资源 | 链接 |
 |------|------|
 | sDepth SDK | SDK 下载链接正在维护中，即将更新。 |
-
-
 
 :::caution
 SDK 下载链接正在维护中，即将更新。

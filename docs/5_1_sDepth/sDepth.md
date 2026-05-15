@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
-title: Getting Started with sDepth（EN）
+title: Getting Started with sDepth
 ---
 
-# Getting Started with sDepth（EN）
+# Getting Started with sDepth
 
 ## Overview
 

@@ -37,14 +37,22 @@
   --sensing-primary-light: #21eee1;
 }
 
-/* 特殊侧边栏项目的样式 */
+/* 特殊侧边栏项目的样式 - 英文路径 */
 .menu__link[href="/docs/ai"],
 .menu__link[href="/docs/6_0_Robotics"],
 .menu__link[href="/docs/1_0_Camera"],
 .menu__link[href="/docs/intro"],
 .menu__link[href="/docs/3_0_Data_collection_and_Playback"],
 .menu__link[href="/docs/4_0_Resources"],
-.menu__link[href="/docs/5_0_Vision_Core_SDK"]
+.menu__link[href="/docs/5_0_Vision_Core_SDK"],
+/* 特殊侧边栏项目的样式 - 中文路径 */
+.menu__link[href="/zh-Hans/docs/ai"],
+.menu__link[href="/zh-Hans/docs/6_0_Robotics"],
+.menu__link[href="/zh-Hans/docs/1_0_Camera"],
+.menu__link[href="/zh-Hans/docs/intro"],
+.menu__link[href="/zh-Hans/docs/3_0_Data_collection_and_Playback"],
+.menu__link[href="/zh-Hans/docs/4_0_Resources"],
+.menu__link[href="/zh-Hans/docs/5_0_Vision_Core_SDK"]
 {
   font-weight: 700 !important;
   text-align: center !important;

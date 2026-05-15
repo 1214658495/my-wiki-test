@@ -1,0 +1,178 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Robotic Camera": {
+    "message": "机器人摄像头",
+    "description": "The label for category Robotic Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Binocular Camera": {
+    "message": "双目摄像头",
+    "description": "The label for category Binocular Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Monocular Camera": {
+    "message": "单目摄像头",
+    "description": "The label for category Monocular Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Vision Solution": {
+    "message": "视觉解决方案",
+    "description": "The label for category Vision Solution in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.SerDes Camera": {
+    "message": "SerDes 摄像头",
+    "description": "The label for category SerDes Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GMSL Camera": {
+    "message": "GMSL 摄像头",
+    "description": "The label for category GMSL Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "快速开始",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FPDLINK Camera": {
+    "message": "FPDLINK 摄像头",
+    "description": "The label for category FPDLINK Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.MIPI  CSI-2 Camera": {
+    "message": "MIPI CSI-2 摄像头",
+    "description": "The label for category MIPI  CSI-2 Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Global Shutter Camera": {
+    "message": "全局快门摄像头",
+    "description": "The label for category Global Shutter Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.MIPI CSI-2 Camera": {
+    "message": "MIPI CSI-2 摄像头",
+    "description": "The label for category MIPI CSI-2 Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Low Latency Camera": {
+    "message": "低延迟摄像头",
+    "description": "The label for category Low Latency Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Event Based Camera": {
+    "message": "事件相机",
+    "description": "The label for category Event Based Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Night Vision Camera": {
+    "message": "夜视摄像头",
+    "description": "The label for category Night Vision Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Starvis Camera": {
+    "message": "Starvis 摄像头",
+    "description": "The label for category Starvis Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Cockpit Camera": {
+    "message": "座舱摄像头",
+    "description": "The label for category Cockpit Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.OMS Camera": {
+    "message": "OMS 摄像头",
+    "description": "The label for category OMS Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DMS Camera": {
+    "message": "DMS 摄像头",
+    "description": "The label for category DMS Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Automatic Defogging Camera": {
+    "message": "自动除雾摄像头",
+    "description": "The label for category Automatic Defogging Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NVIDIA® Jetson™": {
+    "message": "NVIDIA® Jetson™",
+    "description": "The label for category NVIDIA® Jetson™ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NVIDIA Jetson AGX Orin": {
+    "message": "NVIDIA Jetson AGX Orin",
+    "description": "The label for category NVIDIA Jetson AGX Orin in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GMSL adapter board": {
+    "message": "GMSL 转接板",
+    "description": "The label for category GMSL adapter board in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.AI Box": {
+    "message": "AI Box",
+    "description": "The label for category AI Box in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NVIDIA Jetson Orin Nano&NX": {
+    "message": "NVIDIA Jetson Orin Nano&NX",
+    "description": "The label for category NVIDIA Jetson Orin Nano&NX in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GMSL Adapter Board": {
+    "message": "GMSL 转接板",
+    "description": "The label for category GMSL Adapter Board in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.MIPI Camera": {
+    "message": "MIPI 摄像头",
+    "description": "The label for category MIPI Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Applications": {
+    "message": "应用",
+    "description": "The label for category Applications in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FAQs": {
+    "message": "常见问题",
+    "description": "The label for category FAQs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NVIDIA® DRIVE AGX Orin": {
+    "message": "NVIDIA® DRIVE AGX Orin",
+    "description": "The label for category NVIDIA® DRIVE AGX Orin in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Application": {
+    "message": "应用",
+    "description": "The label for category Application in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FAQ": {
+    "message": "常见问题",
+    "description": "The label for category FAQ in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NVIDIA® Jetson™ AGX Thor": {
+    "message": "NVIDIA® Jetson™ AGX Thor",
+    "description": "The label for category NVIDIA® Jetson™ AGX Thor in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.NVIDIA® Holoscan Sensor Bridge": {
+    "message": "NVIDIA® Holoscan Sensor Bridge",
+    "description": "The label for category NVIDIA® Holoscan Sensor Bridge in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Qualcomm Platform": {
+    "message": "高通平台",
+    "description": "The label for category Qualcomm Platform in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Application (coming soon)": {
+    "message": "应用（即将推出）",
+    "description": "The label for category Application (coming soon) in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FAQ (coming soon)": {
+    "message": "常见问题（即将推出）",
+    "description": "The label for category FAQ (coming soon) in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.CoaxCapture II": {
+    "message": "CoaxCapture II",
+    "description": "The label for category CoaxCapture II in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.CyberCobra": {
+    "message": "CyberCobra",
+    "description": "The label for category CyberCobra in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GMSL2 Camera Repeater": {
+    "message": "GMSL2 摄像头中继器",
+    "description": "The label for category GMSL2 Camera Repeater in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GMSL2 Camera Splitter": {
+    "message": "GMSL2 摄像头分流器",
+    "description": "The label for category GMSL2 Camera Splitter in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.GMSL to USB Converter": {
+    "message": "GMSL 转 USB 转换器",
+    "description": "The label for category GMSL to USB Converter in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.sDepth": {
+    "message": "sDepth",
+    "description": "The label for category sDepth in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.sgMIX": {
+    "message": "sgMIX",
+    "description": "The label for category sgMIX in sidebar tutorialSidebar"
+  }
+}

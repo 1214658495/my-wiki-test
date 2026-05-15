@@ -1,9 +1,9 @@
 ---
 sidebar_position: 40
-title: Vision Core SDK
+title: VisionCore SDK
 ---
 
-# Vision Core SDK
+# VisionCore SDK
 
 ## Overview
 

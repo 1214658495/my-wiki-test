@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Getting Started with sgMIX（中文）
+title: sgMIX 快速入门
 ---
 
 # sgMIX 快速入门
