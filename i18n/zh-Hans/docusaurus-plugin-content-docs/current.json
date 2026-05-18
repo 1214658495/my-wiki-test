@@ -148,11 +148,11 @@
     "description": "The label for category FAQ (coming soon) in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.CoaxCapture II": {
-    "message": "CoaxCapture II",
+    "message": "GMSL 视频采集卡（腾云系列）",
     "description": "The label for category CoaxCapture II in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.CyberCobra": {
-    "message": "CyberCobra",
+    "message": "GMSL 视频回注卡（腾云系列）",
     "description": "The label for category CyberCobra in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.GMSL2 Camera Repeater": {
@@ -164,7 +164,7 @@
     "description": "The label for category GMSL2 Camera Splitter in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.GMSL to USB Converter": {
-    "message": "GMSL 转 USB 转换器",
+    "message": "GMSL 转USB采集盒",
     "description": "The label for category GMSL to USB Converter in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.sDepth": {
