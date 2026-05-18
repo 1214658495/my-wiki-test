@@ -50,7 +50,7 @@ title: CCG3-8H Application
 
 | Camera | Linux system version | Driver pkg download link | Driver pkg download method |
 |------------------------------|-------------------------|---------------------------|-------------------------------|
-| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
+| GMSL2 Camera (YUV Data)<br/>(e.g.: SG3S-ISX031C-GMSL2-Hxxx) | Ubuntu 18.04/20.04/22.04/24.04 | [Link](https://github.com/SENSING-Technology/CoaxCapture-CCG3/tree/main/Driver) | Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download |
 
 </div>
 
