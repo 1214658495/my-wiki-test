@@ -1,23 +1,34 @@
 ---
 sidebar_position: 4
-title: SHW5G（5MP 全局快门）
+title: "SHW5G & SHF5G（5MP 全局快门）"
 ---
 
-# SHW5G（5MP 全局快门）-HFOV 130°
+# SHW5G & SHF5G（5MP 全局快门）
 
 ## 概述
 
 <div className="row">
   <div className="col col--12">
-    SHW5G 摄像头专为具身智能应用打造，采用 5MP 全局快门传感器并具备高帧率能力。该摄像头面向机器人感知与识别进行优化，适合集成到人形机器人的头部或躯干。
+    SHW5G（HFOV130°） 与 SHF5G（HFOV200°） 摄像头专为具身智能应用开发设计，使用5MP Global Shutter传感器，可用于人形机器人头部躯干等位置，面向具身智能应用中的机器人感知与识别场景。  
+    两者主要差异在镜头视场角：SHW5G 提供 130° HFOV，适合广角感知；SHF5G 提供 200° HFOV，适合超广角感知。除镜头选型表中列出的差异外，其余平台规格保持一致。
   </div>
 </div>
+<br />
 
-<div style={{textAlign: 'center'}}>
+<div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}>
+  <div style={{flex: '1 1 240px'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G.png?x-oss-process=image/format,webp" alt="SHW5G" 
     style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHW5G（HFOV130°）</p>
+  </div>
+  <div style={{flex: '1 1 240px'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G.png?x-oss-process=image/format,webp" alt="SHF5G"
+    style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHF5G（HFOV200°）</p>
+  </div>
 </div>
-<br />
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
@@ -117,7 +128,7 @@ title: SHW5G（5MP 全局快门）
     </tr>
     <tr>
       <td>尺寸</td>
-      <td colspan="2">W: 25mm, L:25mm, H:29.49mm</td>
+      <td colspan="2">W: 25mm, L:25mm, H:29.49mm (SHW5G) / 31.35mm (SHF5G)</td>
     </tr>
     <tr>
       <td>重量</td>
@@ -130,10 +141,18 @@ title: SHW5G（5MP 全局快门）
 
 ### 尺寸
 
-<div style={{textAlign: 'center'}}>
+<!-- <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}> -->
+  <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW5G" 
     style={{maxWidth: '100%', height:'auto'}} />
-</div>
+    <p>【SHW5G（HFOV130°）】</p>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G_Dimensions.png?x-oss-process=image/format,webp" alt="SHF5G"
+    style={{maxWidth: '100%', height:'auto'}} />
+    <p>【SHF5G（HFOV200°）】</p>
+  </div>
+<!-- </div> -->
 
 ### 硬件概览
 #### 框图
@@ -194,9 +213,10 @@ title: SHW5G（5MP 全局快门）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No | EFL | 对焦距离 | 景深 | 防水等级 | 镜头安装 |
-|------|------|------|-----|----------------|----------------|-------------|------------|
-| 130° | 102° | 2.0 | 2.18mm | 0.8m | 0.3m - INF | IP69K | AA |
+| 型号 | HFOV | VFOV | F.No | EFL | 对焦距离 | 景深 | 防水等级 | 镜头安装 |
+|------|------|------|------|-----|----------------|----------------|-------------|------------|
+| SHW5G | 130° | 102° | 2.0 | 2.18mm | 0.8m | 0.3m - INF | IP69K | AA |
+| SHF5G | 200° | 150° | 2.0 | 1.69mm | 0.4m | 0.1m - INF | IP69K | AA |
 
 </div>
 
@@ -205,15 +225,15 @@ title: SHW5G（5MP 全局快门）
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SHW5G 摄像头连接到 NVIDIA Jetson AGX Orin</p>
+    <p>SHW5G / SHF5G 摄像头连接到 NVIDIA Jetson AGX Orin</p>
 </div>
 
 #### **步骤 1**：安装步骤
 
 :::note 快速设置
-1. 使用同轴线将 SHW5G 摄像头连接到 SG10A-AGON-G2M-A1 板卡
+1. 使用同轴线将 SHW5G 或 SHF5G 摄像头连接到 SG10A-AGON-G2M-A1 板卡
 2. 将 SG10A-AGON-G2M-A1 板卡安装到 Jetson AGX Orin 模组上
-3. 连接 SHW5G 摄像头电源
+3. 连接 SHW5G 或 SHF5G 摄像头电源
 4. 连接 SG10A-AGON-G2M-A1 板卡电源
 5. 启动系统
 :::
@@ -235,7 +255,7 @@ title: SHW5G（5MP 全局快门）
 
 | 序号 | JetPack 版本 | 摄像头 | NVIDIA Jetson 设备 | 转接板 | 下载链接 |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SHW5G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHW5G / SHF5G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
 
 </div>
 

@@ -32,10 +32,8 @@ const sidebars = {
           "6_1_Camera/Monocular_Camera/SHW3H",
           "6_1_Camera/Monocular_Camera/SHF3L",
           "6_1_Camera/Monocular_Camera/M3A",
-          "6_1_Camera/Monocular_Camera/SHW5G",
-          "6_1_Camera/Monocular_Camera/SHF5G",
-          "6_1_Camera/Monocular_Camera/SHW3G",
-          "6_1_Camera/Monocular_Camera/SHF3G"
+          "6_1_Camera/Monocular_Camera/SHW5G_SHF5G",
+          "6_1_Camera/Monocular_Camera/SHW3G_SHF3G"
         ]
       }
     ]

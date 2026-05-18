@@ -1,24 +1,34 @@
 ---
-sidebar_position: 7
-title: SHF3G（3MP Global）
+sidebar_position: 6
+title: "SHW3G & SHF3G（3MP Global）"
 ---
 
-# SHF3G (3MP Global)-HFOV 173°
+# SHW3G & SHF3G (3MP Global)
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    The SHF3G camera is specially designed for physical intelligence applications.It features a 3MP Global Shutter sensor, the GMSL2 high-reliability interface, and a 25×25mm compact wide-angle lens. For application scenarios like robot perception and recognition, it can be installed on humanoid robots in positions such as the head or trunk.
+    SHW3G (HFOV 122°) and SHF3G (HFOV 173°) cameras are designed for embodied intelligence applications. Built with a 3MP Global Shutter sensor, they can be used in humanoid robot head and torso positions for robot perception and recognition scenarios.
+    The main difference is the lens field of view: SHW3G provides 122° HFOV for wide-angle perception, while SHF3G provides 173° HFOV for ultra-wide perception. Other platform specifications are the same unless noted in the lens option table.
   </div>
 </div>
-
-
-<div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G.png?x-oss-process=image/format,webp" alt="SHF3G" 
-    style={{maxWidth: '30%', height:'auto'}} />
-</div>
 <br />
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}>
+  <div style={{flex: '1 1 240px'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G.png?x-oss-process=image/format,webp" alt="SHW3G"
+    style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHW3G (HFOV 122°)</p>
+  </div>
+  <div style={{flex: '1 1 240px'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G.png?x-oss-process=image/format,webp" alt="SHF3G"
+    style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHF3G (HFOV 173°)</p>
+  </div>
+</div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
@@ -65,7 +75,7 @@ title: SHF3G（3MP Global）
 | Current           | Less than 200mA@12VDC   |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:31.82mm |
+| Dimensions        | W: 25mm, L:25mm, H:32.13mm (SHW3G) / 31.82mm (SHF3G) |
 | Weight            | Less than 50g              |
 
 </div>
@@ -73,16 +83,24 @@ title: SHF3G（3MP Global）
 
 ### Dimensions
 
-<div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHF3G_Dimensions" 
+<!-- <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}> -->
+  <div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW3G_Dimensions"
     style={{maxWidth: '100%', height:'auto'}} />
-</div>
+    <p>[SHW3G (HFOV 122°)]</p>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHF3G_Dimensions"
+    style={{maxWidth: '100%', height:'auto'}} />
+    <p>[SHF3G (HFOV 173°)]</p>
+  </div>
+<!-- </div> -->
 
 
 ### Hardware Overview
 #### Block Diagram
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHF3G_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHW3G_BlockDiagram" 
     style={{maxWidth: '90%', height:'auto'}} />
 </div>
 
@@ -94,6 +112,7 @@ title: SHF3G（3MP Global）
 |------|------|------|-----|----------------|
 | 1 | XVS signal| Frequency: 30 Hz, Duty cycle: 10% | MFP7 ---> XVS | If multiple cameras are used for synchronized triggering (i.e., slave mode), both XVS and XHS trigger signals must be input simultaneously and meet the corresponding requirements in order to achieve synchronized triggering. | 
 | 2 | XHS signal| Frequency: 83 kHz, Duty cycle: ≥ 90% | MFP3 ---> XHS | | 
+
 </div>
 
 #### I2C Address Information
@@ -153,9 +172,10 @@ title: SHF3G（3MP Global）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No  | Depth of Field | Water-proof | Lens Mount |
-|------|------|------|----------------|-------------|------------|
-| 173° | 134° | 2.0  | 0.2m - INF@Focus at 0.4M | IP67 | AA |
+| Model | HFOV | VFOV | F.No | Depth of Field | Water-proof | Lens Mount |
+|-------|------|------|------|----------------|-------------|------------|
+| SHW3G | 122° | 90° | 2.2 | 0.34m - INF@Focus at 1M | IP67 | AA |
+| SHF3G | 173° | 134° | 2.0 | 0.2m - INF@Focus at 0.4M | IP67 | AA |
 
 </div>
 
@@ -163,17 +183,17 @@ title: SHF3G（3MP Global）
 ## Employing Camera
 ### 1. Adaptation to NVIDIA® Jetson™ platform
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHF5G_Application" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SHF3G Camera Connect to Nvidia Jetson AGX Orin</p>
+    <p>SHW3G / SHF3G Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the SHF3G camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
+1. Connect the SHW3G or SHF3G camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
 2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
-3. SHF3G camera Connect the power supply
+3. SHW3G or SHF3G camera Connect the power supply
 4. SG10A-AGON-G2M-A1 board Connect the power supply
 5. Power on the system
 :::
@@ -195,7 +215,7 @@ title: SHF3G（3MP Global）
 
 | NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SHF3G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHW3G / SHF3G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
 
 
 </div>
@@ -214,7 +234,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 For customers with their own deserializer who want to adapt our camera (serializer) to their platform, detailed technical coordination is required.
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_Fsync.png?x-oss-process=image/format,webp" alt="SHF3G_Fsync" style={{width: 730, height:'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_Fsync.png?x-oss-process=image/format,webp" alt="SHW3G_Fsync" style={{width: 730, height:'auto'}} />
 </div>
 
 The diagram illustrates the communication architecture between a camera and controller system. It shows how data flows from the Sensor/ISP through the Serializer on the Camera side, across to the Deserializer and SOC on the Controller side. The system utilizes Fsync signals for synchronization and MFP7 and MFP3 interfaces for control. This architecture is essential for proper integration of SENSING cameras with customer-developed platforms.

@@ -1,23 +1,34 @@
 ---
 sidebar_position: 6
-title: SHW3G（3MP 全局快门）
+title: "SHW3G & SHF3G（3MP 全局快门）"
 ---
 
-# SHW3G（3MP 全局快门）-HFOV 122°
+# SHW3G & SHF3G（3MP 全局快门）
 
 ## 概述
 
 <div className="row">
   <div className="col col--12">
-    SHW3G 摄像头专为具身智能应用设计，采用 3MP 全局快门传感器、高可靠性 GMSL2 接口以及 25×25mm 紧凑型广角镜头。面向机器人感知与识别等场景，可安装在人形机器人的头部或躯干等位置。
+    SHW3G（HFOV122°） 与 SHF3G（HFOV173°） 摄像头专为具身智能应用开发设计，使用3MP Global Shutter传感器，可用于人形机器人头部躯干等位置，面向具身智能应用中的机器人感知与识别场景。
+    两者主要差异在镜头视场角：SHW3G 提供 122° HFOV，适合广角感知；SHF3G 提供 173° HFOV，适合超广角感知。除镜头选型表中列出的差异外，其余平台规格保持一致。
   </div>
 </div>
-
-<div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G.png?x-oss-process=image/format,webp" alt="SHW3G" 
-    style={{maxWidth: '30%', height:'auto'}} />
-</div>
 <br />
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}>
+  <div style={{flex: '1 1 240px'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G.png?x-oss-process=image/format,webp" alt="SHW3G"
+    style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHW3G（HFOV122°）</p>
+  </div>
+  <div style={{flex: '1 1 240px'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G.png?x-oss-process=image/format,webp" alt="SHF3G"
+    style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHF3G（HFOV173°）</p>
+  </div>
+</div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
@@ -64,17 +75,25 @@ title: SHW3G（3MP 全局快门）
 | 电流           | 小于 200mA@12VDC   |
 | 连接器         | Amphenol Fakra (Z Code) |
 | 工作温度范围 | -40~+85℃            |
-| 尺寸        | W: 25mm, L:25mm, H:32.13mm |
+| 尺寸        | W: 25mm, L:25mm, H:32.13mm (SHW3G) / 31.82mm (SHF3G) |
 | 重量            | 小于 50g              |
 
 </div>
 
 ### 尺寸
 
-<div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW3G_Dimensions" 
+<!-- <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}> -->
+  <div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW3G_Dimensions"
     style={{maxWidth: '100%', height:'auto'}} />
-</div>
+    <p>【SHW3G（HFOV122°）】</p>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF3G/SHF3G_Dimensions.png?x-oss-process=image/format,webp" alt="SHF3G_Dimensions"
+    style={{maxWidth: '100%', height:'auto'}} />
+    <p>【SHF3G（HFOV173°）】</p>
+  </div>
+<!-- </div> -->
 
 ### 硬件概览
 #### 框图
@@ -150,9 +169,10 @@ title: SHW3G（3MP 全局快门）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No  | 景深 | 防水等级 | 镜头安装 |
-|------|------|------|----------------|-------------|------------|
-| 122° | 90° | 2.2  | 0.34m - INF@Focus at 1M | IP67 | AA |
+| 型号 | HFOV | VFOV | F.No | 景深 | 防水等级 | 镜头安装 |
+|------|------|------|------|----------------|-------------|------------|
+| SHW3G | 122° | 90° | 2.2 | 0.34m - INF@Focus at 1M | IP67 | AA |
+| SHF3G | 173° | 134° | 2.0 | 0.2m - INF@Focus at 0.4M | IP67 | AA |
 
 </div>
 
@@ -161,15 +181,15 @@ title: SHW3G（3MP 全局快门）
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SHW3G 摄像头连接到 NVIDIA Jetson AGX Orin</p>
+    <p>SHW3G / SHF3G 摄像头连接到 NVIDIA Jetson AGX Orin</p>
 </div>
 
 #### **步骤 1**：安装步骤
 
 :::note 快速设置
-1. 使用同轴线将 SHW3G 摄像头连接到 SG10A-AGON-G2M-A1 板卡
+1. 使用同轴线将 SHW3G 或 SHF3G 摄像头连接到 SG10A-AGON-G2M-A1 板卡
 2. 将 SG10A-AGON-G2M-A1 板卡安装到 Jetson AGX Orin 模组上
-3. 连接 SHW3G 摄像头电源
+3. 连接 SHW3G 或 SHF3G 摄像头电源
 4. 连接 SG10A-AGON-G2M-A1 板卡电源
 5. 启动系统
 :::
@@ -191,7 +211,7 @@ title: SHW3G（3MP 全局快门）
 
 | 序号 | JetPack 版本 | 摄像头 | NVIDIA Jetson 设备 | 转接板 | 下载链接 |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SHW3G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHW3G / SHF3G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
 
 </div>
 

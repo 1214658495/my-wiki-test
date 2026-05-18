@@ -1,24 +1,34 @@
 ---
 sidebar_position: 4
-title: SHW5G（5MP Global）
+title: "SHW5G & SHF5G（5MP Global）"
 ---
 
-# SHW5G (5MP Global)-HFOV 130°
+# SHW5G & SHF5G (5MP Global)
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    The SHW5G camera is engineered specifically for embodied intelligence applications, featuring a 5MP global shutter sensor and high frame rate capabilities. Optimized for robot perception and recognition, it is ideal for integration into the head or torso of humanoid robots.
+    SHW5G (HFOV 130°) and SHF5G (HFOV 200°) cameras are designed for embodied intelligence applications. Built with a 5MP Global Shutter sensor, they can be used in humanoid robot head and torso positions for robot perception and recognition scenarios.
+    The main difference is the lens field of view: SHW5G provides 130° HFOV for wide-angle perception, while SHF5G provides 200° HFOV for ultra-wide perception. Other platform specifications are the same unless noted in the lens option table.
   </div>
 </div>
+<br />
 
-
-<div style={{textAlign: 'center'}}>
+<div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}>
+  <div style={{flex: '1 1 240px'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G.png?x-oss-process=image/format,webp" alt="SHW5G" 
     style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHW5G (HFOV 130°)</p>
+  </div>
+  <div style={{flex: '1 1 240px'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G.png?x-oss-process=image/format,webp" alt="SHF5G"
+    style={{maxWidth: '30%', height:'auto'}} />
+    <br />
+    <p>SHF5G (HFOV 200°)</p>
+  </div>
 </div>
-<br />
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
@@ -118,7 +128,7 @@ title: SHW5G（5MP Global）
     </tr>
     <tr>
       <td>Dimensions</td>
-      <td colspan="2">W: 25mm, L:25mm, H:29.49mm</td>
+      <td colspan="2">W: 25mm, L:25mm, H:29.49mm (SHW5G) / 31.35mm (SHF5G)</td>
     </tr>
     <tr>
       <td>Weight</td>
@@ -132,10 +142,18 @@ title: SHW5G（5MP Global）
 
 ### Dimensions
 
-<div style={{textAlign: 'center'}}>
+<!-- <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}> -->
+  <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW5G" 
     style={{maxWidth: '100%', height:'auto'}} />
-</div>
+    <p>[SHW5G (HFOV 130°)]</p>
+  </div>
+  <div style={{textAlign: 'center'}}>
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHF5G/SHF5G_Dimensions.png?x-oss-process=image/format,webp" alt="SHF5G"
+    style={{maxWidth: '100%', height:'auto'}} />
+    <p>[SHF5G (HFOV 200°)]</p>
+  </div>
+<!-- </div> -->
 
 
 ### Hardware Overview
@@ -198,9 +216,10 @@ title: SHW5G（5MP Global）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | Water-proof | Lens Mount |
-|------|------|------|-----|----------------|----------------|-------------|------------|
-| 130° | 102° | 2.0 | 2.18mm | 0.8m | 0.3m - INF | IP69K | AA |
+| Model | HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | Water-proof | Lens Mount |
+|-------|------|------|------|-----|----------------|----------------|-------------|------------|
+| SHW5G | 130° | 102° | 2.0 | 2.18mm | 0.8m | 0.3m - INF | IP69K | AA |
+| SHF5G | 200° | 150° | 2.0 | 1.69mm | 0.4m | 0.1m - INF | IP69K | AA |
 
 </div>
 
@@ -210,15 +229,15 @@ title: SHW5G（5MP Global）
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application" 
     style={{maxWidth: '60%', height:'auto'}} />
-    <p>SHW5G Camera Connect to Nvidia Jetson AGX Orin</p>
+    <p>SHW5G / SHF5G Camera Connect to Nvidia Jetson AGX Orin</p>
 </div>
 
 #### **Step 1**: Installation Steps
 
 :::note Quick Setup
-1. Connect the SHW5G camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
+1. Connect the SHW5G or SHF5G camera to the SG10A-AGON-G2M-A1 board using the coaxial cable
 2. Mount the SG10A-AGON-G2M-A1 board onto the Jetson AGX Orin module
-3. SHW5G camera Connect the power supply
+3. SHW5G or SHF5G camera Connect the power supply
 4. SG10A-AGON-G2M-A1 board Connect the power supply
 5. Power on the system
 :::
@@ -240,7 +259,7 @@ title: SHW5G（5MP Global）
 
 | NO. | JetPack Version | Camera | NVIDIA Jetson Devices | Adapter Board | Download Link |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SHW5G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHW5G / SHF5G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
 
 
 </div>
