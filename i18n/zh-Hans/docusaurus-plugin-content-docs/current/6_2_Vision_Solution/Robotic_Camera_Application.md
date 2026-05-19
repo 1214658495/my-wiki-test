@@ -38,12 +38,12 @@ title: 机器人摄像头解决方案
 
 ### 摄像头配置
 
-| 型号 | 类型 | 分辨率 | 快门 | 数据格式 | 水平视场 | 角色/位置 | 数量 | 文档 |
+| 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场 | 角色/位置 | 数量 | 文档 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Astra S56** | 双目 | 2 * 5MP | 全局 | RAW | 120° | **头部**：Depth & VLA | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
-| **Astra S36**（可选） | 双目 | 2 * 3MP | 滚动 | YUV | 120° | **头部**：备选深度方案 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S36) |
-| **SHW3H** | 单目 | 3MP | 滚动 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
-| **SHF3L** | 单目 | 3MP | 滚动 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 4 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
+| **Astra S36**（可选） | 双目 | 2 * 3MP | 卷帘 | YUV | 120° | **头部**：备选深度方案 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S36) |
+| **SHW3H** | 单目 | 3MP | 卷帘 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
+| **SHF3L** | 单目 | 3MP | 卷帘 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 4 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
 
 ### 计算平台
 

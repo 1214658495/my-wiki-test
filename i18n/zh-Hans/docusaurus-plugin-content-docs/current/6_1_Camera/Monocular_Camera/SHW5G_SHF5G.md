@@ -1,9 +1,9 @@
 ---
 sidebar_position: 4
-title: "SHW5G & SHF5G（5MP 全局快门）"
+title: "SHW5G & SHF5G（5MP 全局曝光）"
 ---
 
-# SHW5G & SHF5G（5MP 全局快门）
+# SHW5G & SHF5G（5MP 全局曝光）
 
 ## 概述
 
@@ -42,7 +42,7 @@ title: "SHW5G & SHF5G（5MP 全局快门）"
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>特性：</strong><br/>
     • 输出 RAW 数据<br/>
-    • 全局快门<br/>
+    • 全局曝光<br/>
     • 低延迟<br/>
     • 支持外部触发<br/>
     • 多摄像头同步
@@ -67,8 +67,8 @@ title: "SHW5G & SHF5G（5MP 全局快门）"
       <th colspan="2">详情</th>
     </tr>
     <tr>
-      <th>全局快门</th>
-      <th>卷帘快门</th>
+      <th>全局曝光</th>
+      <th>卷帘曝光</th>
     </tr>
   </thead>
   <tbody>

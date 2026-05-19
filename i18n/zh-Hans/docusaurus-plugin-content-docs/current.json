@@ -40,7 +40,7 @@
     "description": "The label for category MIPI  CSI-2 Camera in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Global Shutter Camera": {
-    "message": "全局快门摄像头",
+    "message": "全局曝光摄像头",
     "description": "The label for category Global Shutter Camera in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.MIPI CSI-2 Camera": {

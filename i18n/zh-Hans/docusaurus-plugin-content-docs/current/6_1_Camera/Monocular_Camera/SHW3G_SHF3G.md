@@ -1,9 +1,9 @@
 ---
 sidebar_position: 6
-title: "SHW3G & SHF3G（3MP 全局快门）"
+title: "SHW3G & SHF3G（3MP 全局曝光）"
 ---
 
-# SHW3G & SHF3G（3MP 全局快门）
+# SHW3G & SHF3G（3MP 全局曝光）
 
 ## 概述
 
@@ -42,7 +42,7 @@ title: "SHW3G & SHF3G（3MP 全局快门）"
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>特性：</strong><br/>
     • 输出 RAW 数据<br/>
-    • 全局快门<br/>
+    • 全局曝光<br/>
     • 低延迟<br/>
     • 支持外部触发<br/>
     • 多摄像头同步
@@ -62,12 +62,12 @@ title: "SHW3G & SHF3G（3MP 全局快门）"
 
 | 参数         | 值                   |
 |-------------------|-------------------------|
-| 传感器            | 3MP 全局快门 |
+| 传感器            | 3MP 全局曝光 |
 | 图像尺寸        | 1/3.1 inch CMOS        |
 | 输出像素     | 2064 (H) × 1552 (V) |
 | 像元尺寸        | 2.25um*2.25um             |
 | 帧率        | 最高 125fps |
-| 快门           | 全局快门          |
+| 曝光           | 全局曝光          |
 | 输出数据       | RAW@12bit/10bit/8bit    |
 | 串行器        | MAXIM MAX96717         |
 | 摄像头接口  | GMSL2                   |

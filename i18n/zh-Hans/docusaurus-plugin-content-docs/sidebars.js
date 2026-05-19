@@ -122,7 +122,7 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "全局快门摄像头",
+    "label": "全局曝光摄像头",
     "collapsed": true,
     "collapsible": true,
     "items": [

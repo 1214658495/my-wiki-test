@@ -119,11 +119,11 @@ sidebar_position: 2
 :::
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
-| 型号 | 类型 | 分辨率 | 快门 | 数据格式 | 水平视场 | 角色/位置 | 最大数量 | 端口 | 文档 |
+| 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场 | 角色/位置 | 最大数量 | 端口 | 文档 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- |
 | **Astra S56** | 双目 | 2 * 5MP | 全局 | RAW | 120° | **头部**：Depth & VLA | 1 | J27/J29 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
-| **SHF3L** | 单目 | 3MP | 滚动 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
-| **SHW3H**（可选） | 单目 | 3MP | 滚动 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
+| **SHF3L** | 单目 | 3MP | 卷帘 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
+| **SHW3H**（可选） | 单目 | 3MP | 卷帘 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
 </div>
 
 ### 摄像头与设备节点映射（JetPack 6.2）
