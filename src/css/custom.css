@@ -49,6 +49,15 @@
   width: 100%;
 }
 
+.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category-level-1 > .menu__list-item-collapsible {
+  box-sizing: border-box;
+  padding-left: 0.75rem;
+}
+
+.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category-level-1 > .menu__list {
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) + 0.75rem);
+}
+
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link {
   flex: 1 1 auto;
   min-width: 0;
@@ -72,10 +81,10 @@
 
 .theme-doc-sidebar-menu .menu__caret::before,
 .theme-doc-sidebar-menu .menu__link--sublist-caret::after {
-  background-size: 1.45rem 1.45rem;
+  background-size: 1.25rem 1.25rem;
   height: 1rem;
   min-width: 1rem;
-  opacity: 0.72;
+  opacity: 0.62;
   width: 1rem;
 }
 
@@ -104,10 +113,10 @@
 .theme-doc-sidebar-menu .menu__link[href="/zh-Hans/docs/4_0_Resources"],
 .theme-doc-sidebar-menu .menu__link[href="/zh-Hans/docs/5_0_Vision_Core_SDK"]
 {
-  font-weight: 700 !important;
-  text-align: center !important;
+  font-weight: 600 !important;
+  text-align: left !important;
   display: flex !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   width: 100% !important;
   font-size: 1.05rem !important;
   line-height: 1.35 !important;

@@ -81,9 +81,9 @@ const config = {
         items: [
           {
             to: '/docs/ai',
-            activeBaseRegex: '^/docs/(?!4_0_Resources)',
+            activeBaseRegex: '^/(zh-Hans/)?docs/ai/?$',
             position: 'left',
-            label: 'Quick Start',
+            label: 'Wiki AI',
             className: 'nav-btn',
           },
           {
