@@ -28,7 +28,7 @@ function UserRegistrationModal({ onSubmit, onClose }) {
         maxWidth: '480px', width: '90%', boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
       }}>
         <h3 style={{ marginTop: 0, color: 'var(--ifm-color-primary)' }}>
-          📥 Download Technical Downloads
+          📥 Access Product Resources
         </h3>
         <p style={{ color: '#666', marginBottom: '1.5rem' }}>
           Please share your details to access SENSING technical resources.   

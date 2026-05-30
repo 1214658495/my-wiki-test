@@ -9,7 +9,7 @@ const PAGE_CONTENT = {
     heroTitle: 'SENSING WIKI',
     heroSubtitle:
       'Find product categories, platform bring-up guides, SDK workflows, downloads, and troubleshooting paths for SENSING vision systems.',
-    primaryCta: 'Browse product docs',
+    primaryCta: 'Download Product Resources',
     secondaryCta: 'Ask Wiki AI',
     sections: {
       products: 'Main product categories',
@@ -53,7 +53,7 @@ const PAGE_CONTENT = {
         tags: ['sDepth', 'sgMIX', 'Calibration and ISP'],
       },
       {
-        title: 'Downloads & Resources',
+        title: 'Product Resources',
         path: '/docs/4_0_Resources',
         summary:
           'Search product models and serial numbers to retrieve datasheets, 3D models, initialization scripts, image samples, and calibration files.',
@@ -66,7 +66,7 @@ const PAGE_CONTENT = {
     heroTitle: 'SENSING WIKI',
     heroSubtitle:
       '从这里进入 SENSING 视觉系统的产品品类、平台适配、视觉核心SDK、资源下载和问题排查文档。',
-    primaryCta: '浏览产品文档',
+    primaryCta: '下载产品资源',
     secondaryCta: '询问 Wiki AI',
     sections: {
       products: '主要产品品类',
@@ -140,7 +140,7 @@ export default function WikiHome() {
           <h1>{content.heroTitle}</h1>
           <p className={styles.heroSubtitle}>{content.heroSubtitle}</p>
           <div className={styles.heroActions}>
-            <Link className={styles.primaryButton} to={docLink('/docs/6_0_Robotics')}>
+            <Link className={styles.primaryButton} to={docLink('/docs/4_0_Resources')}>
               {content.primaryCta}
             </Link>
             <Link className={styles.secondaryButton} to={docLink('/docs/ai')}>

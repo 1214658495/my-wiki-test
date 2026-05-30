@@ -87,7 +87,7 @@ const config = {
             className: 'nav-btn',
           },
           {
-            label: 'Downloads',
+            label: 'Product Resources',
             position: 'left',
             to: '/docs/4_0_Resources',
             activeBaseRegex: '^/docs/4_0_Resources',

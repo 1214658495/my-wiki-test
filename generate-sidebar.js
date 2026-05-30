@@ -3,7 +3,7 @@ const path = require('path');
 
 const docsDir = './docs';
 const i18nDir = './i18n/zh-Hans/docusaurus-plugin-content-docs/current';
-const HIDDEN_SIDEBAR_DOC_IDS = new Set(['home']);
+const HIDDEN_SIDEBAR_DOC_IDS = new Set(['home', 'ai']);
 
 function getCategoryInfo(dirPath, isI18n = false) {
   const baseDir = isI18n ? i18nDir : docsDir;

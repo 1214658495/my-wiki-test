@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Available Resources
 
-The SENSING Product Resources Download Center provides comprehensive camera resources including:
+SENSING Product Resources provides comprehensive camera resources including:
 
 - Datasheets
 - 3D Models
@@ -16,6 +16,6 @@ The SENSING Product Resources Download Center provides comprehensive camera reso
 
 ## Accessing Resources
 
-Visit the [SENSING Product Resources Download Center](https://wiki.sensing-world.com/docs/4_0_Resources) to begin.
+Visit [SENSING Product Resources](https://wiki.sensing-world.com/docs/4_0_Resources) to begin.
 
 

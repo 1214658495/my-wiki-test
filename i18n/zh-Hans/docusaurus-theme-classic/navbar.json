@@ -11,9 +11,9 @@
     "message": "快速开始",
     "description": "Navbar item with label Quick Start"
   },
-  "item.label.Downloads": {
-    "message": "下载资源",
-    "description": "Navbar item with label Downloads"
+  "item.label.Product Resources": {
+    "message": "产品资源",
+    "description": "Navbar item with label Product Resources"
   },
   "item.label.GitHub": {
     "message": "GitHub",

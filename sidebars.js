@@ -5,7 +5,6 @@
  */
 const sidebars = {
   tutorialSidebar: [
-  "ai",
   "6_0_Robotics",
   {
     "type": "category",
