@@ -84,14 +84,14 @@ const config = {
             activeBaseRegex: '^/(zh-Hans/)?docs/ai/?$',
             position: 'left',
             label: 'Wiki AI',
-            className: 'nav-btn',
+            className: 'nav-btn nav-icon nav-icon-ai',
           },
           {
             label: 'Product Resources',
             position: 'left',
             to: '/docs/4_0_Resources',
-            activeBaseRegex: '^/docs/4_0_Resources',
-            className: 'nav-btn',
+            activeBaseRegex: '^/(zh-Hans/)?docs/4_0_Resources/?$',
+            className: 'nav-btn nav-icon nav-icon-resources',
           },
           {
             href: 'https://github.com/SENSING-Technology',
