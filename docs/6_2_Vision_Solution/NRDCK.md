@@ -27,7 +27,7 @@ sidebar_position: 2
 |-----------|----------|-------------|
 | Jetson AGX Orin | NVIDIA (Official) | Official development kit |
 | SG10A-AGON-G2M-A1 | SENSING| GMSL adapter board, supports up to 10 cameras |
-| Driver Package | SENSING | Based on JetPack 6.2, supports Astra S56 & SHF3L/SHF3H cameras |
+| Driver Package | SENSING | Based on JetPack 6.2, supports Astra S56x & SHF3L/SHF3H cameras |
 </table>
 :::
 
@@ -126,14 +126,14 @@ When using trigger mode, **SYNC1 (Pin 2) and SYNC2 (Pin 4) must be jumpered** fo
 ## Supported Cameras
 
 :::note JetPack 6.2 (L4T R36.4.3) Driver Package
-The latest driver package supports **Astra S56** and **SHF3L/SHF3H** cameras.
+The latest driver package supports **Astra S56x** and **SHF3L/SHF3H** cameras.
 :::
 
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 | Model | Type | Resolution | Shutter | Data Format | FOV (H) | Role / Position | Max Quantity | Port | Docs |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | J27/J29 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | Stereo | 2 * 5MP | Global | RAW | 120° | **Head**: Depth & VLA | 1 | J27/J29 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S56) |
 | **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 6 | J21-J26 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHF3L) |
 | **SHW3H** （Optional）| Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 6 | J21-J26 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHW3H) | 
 
@@ -145,7 +145,7 @@ The latest driver package supports **Astra S56** and **SHF3L/SHF3H** cameras.
 <div style={{display: 'flex', justifyContent: 'center'}}>
 | PORT | DEV NODE | Camera |
 |------|----------|--------|
-| J27 | /dev/video0, /dev/video1 | S56 |
+| J27 | /dev/video0, /dev/video1 | S56x |
 | J29 | /dev/video2, /dev/video3 |  |
 | J25 | /dev/video4 | SHF3L/SHF3H |
 | J26 | /dev/video5 | SHF3L/SHF3H |
@@ -209,7 +209,7 @@ The latest driver package supports **Astra S56** and **SHF3L/SHF3H** cameras.
 <table style={{margin: '0 auto'}}>
 | Camera Type | JetPack Version | Download Link |
 |-------------|-----------------|---------------|
-| Astra S56 + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56x + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
 </table>
 
 </div>

@@ -30,7 +30,7 @@ title: 机器人摄像头解决方案
   * NVIDIA Jetson AGX Thor Developer Kit
   * SENSING TRD1 G2A 载板（SG8-AGX-Thor-GMSL2）
 * **头部视觉**
-  * **Astra S56：** 2 * 5MP 双目摄像头（Depth & VLA）
+  * **Astra S56x：** 2 * 5MP 双目摄像头（Depth & VLA）
   * **Astra S36（可选）：** 2 * 3MP 双目摄像头（备选深度方案）
   * **SHW3H：** 3MP HDR 60fps 单目摄像头
 * **手部视觉**
@@ -40,7 +40,7 @@ title: 机器人摄像头解决方案
 
 | 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场 | 角色/位置 | 数量 | 文档 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56** | 双目 | 2 * 5MP | 全局 | RAW | 130° | **头部**：Depth & VLA | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | 双目 | 2 * 5MP | 全局 | RAW | 130° | **头部**：Depth & VLA | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
 | **Astra S36**（可选） | 双目 | 2 * 3MP | 卷帘 | YUV | 120° | **头部**：备选深度方案 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S36) |
 | **SHW3H** | 单目 | 3MP | 卷帘 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
 | **SHF3L** | 单目 | 3MP | 卷帘 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 4 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
@@ -178,7 +178,7 @@ sudo -E enableCamInfiniteTimeout=1 nvargus-daemon
 
 ### 8. 验证与实时预览
 
-#### 8.1 测试 Astra S56（双目/RAW）
+#### 8.1 测试 Astra S56x（双目/RAW）
 
 ```bash
 argus_camera -d 0
@@ -186,7 +186,7 @@ argus_camera -d 1
 ```
 
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png?x-oss-process=image/format,webp" alt="bringUp_S56" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png?x-oss-process=image/format,webp" alt="S56x bring-up" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
 </div>
 
 #### 8.2 测试 SHW3H 与 SHF3L（单目）

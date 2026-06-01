@@ -45,7 +45,7 @@ The solution features a centralized high-performance computing unit connected to
     *   NVIDIA Jetson AGX Thor Developer Kit
     *   SENSING TRD1 G2A Carrier Board（SG8-AGX-Thor-GMSL2）
 *   **Head Vision**
-    *   **Astra S56:**  2 * 5MP Stereo Camera (Depth & VLA)
+    *   **Astra S56x:**  2 * 5MP Stereo Camera (Depth & VLA)
     *   **Astra S36 (Optional):** 2 * 3MP Stereo Camera (Alternative Depth Solution)
     *   **SHW3H:** 3MP HDR 60fps Monocular Camera
 *   **Hand Vision**
@@ -55,13 +55,13 @@ The solution features a centralized high-performance computing unit connected to
 
 <!-- | Model | Type | Resolution | Shutter | FOV (H/V) | Role / Position | Qty | Docs |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | [130°/102°] | **Head**: Depth Sensing & SLAM | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | Stereo | 2 * 5MP | Global | [130°/102°] | **Head**: Depth Sensing & SLAM | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Binocular_Camera/S56) |
 | **SHW3H** | Monocular | 3MP | Rolling | [118°/92°] | **Head**: High-Frame-Rate Vision | 1 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHW3H) |
 | **SHF3L** | Monocular | 3MP | Rolling | [196°/154°] | **Hands**: Fine Manipulation | 4 | [View Specs](https://wiki.sensing-world.com/docs/1_10_Humanoid_Robotic_Camera/Monocular_Camera/SHF3L) | -->
 
 | Model | Type | Resolution | Shutter | Data Format | FOV (H) | Role / Position | Qty | Docs |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56** | Stereo | 2 * 5MP | Global | RAW | 130° | **Head**: Depth & VLA | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | Stereo | 2 * 5MP | Global | RAW | 130° | **Head**: Depth & VLA | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S56) |
 | **Astra S36** (Optional) | Stereo | 2 * 3MP | Rolling | YUV | 120° | **Head**: Depth (Alt) | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Binocular_Camera/S36) |
 | **SHW3H** | Monocular | 3MP | Rolling | YUV | 120° | **Head**: HDR 60fps Monocular Camera | 1 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHW3H) |
 | **SHF3L** | Monocular | 3MP | Rolling | YUV | 190° | **Hands**: HDR 30fps Monocular Camera | 4 | [View Specs](https://wiki.sensing-world.com/docs/6_1_Camera/Monocular_Camera/SHF3L) |
@@ -223,8 +223,8 @@ sudo -E enableCamInfiniteTimeout=1 nvargus-daemon
 
 ### 8. Verification & Live Stream
 
-#### 8.1 Testing Astra S56 (Stereo/RAW)
-The S56 connects via RAW interface. Use `argus_camera` to view the stream.
+#### 8.1 Testing Astra S56x (Stereo/RAW)
+The S56x connects via RAW interface. Use `argus_camera` to view the stream.
 
 ```bash
 # View Camera 0
@@ -233,9 +233,9 @@ argus_camera -d 0
 # View Camera 1
 argus_camera -d 1
 ```
-<!-- > ![S56 Sample Image](path/to/s56_image.png) -->
+<!-- > ![S56x Sample Image](path/to/s56x_image.png) -->
 <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png?x-oss-process=image/format,webp" alt="bringUp_S56" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/Solutions/bringUp_S56.png?x-oss-process=image/format,webp" alt="S56x bring-up" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 
 #### 8.2 Testing SHW3H & SHF3L (Monocular)

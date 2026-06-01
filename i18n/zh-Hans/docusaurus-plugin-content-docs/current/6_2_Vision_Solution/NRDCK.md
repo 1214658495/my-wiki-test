@@ -26,7 +26,7 @@ sidebar_position: 2
 |-----------|----------|-------------|
 | Jetson AGX Orin | NVIDIA（官方） | 官方开发套件 |
 | SG10A-AGON-G2M-A1 | SENSING | GMSL 转接板，最多支持 10 路摄像头 |
-| 驱动包 | SENSING | 基于 JetPack 6.2，支持 Astra S56 与 SHF3L/SHF3H 摄像头 |
+| 驱动包 | SENSING | 基于 JetPack 6.2，支持 Astra S56x 与 SHF3L/SHF3H 摄像头 |
 </table>
 :::
 
@@ -115,13 +115,13 @@ sidebar_position: 2
 ## 支持的摄像头
 
 :::note JetPack 6.2（L4T R36.4.3）驱动包
-最新驱动包支持 **Astra S56** 与 **SHF3L/SHF3H** 摄像头。
+最新驱动包支持 **Astra S56x** 与 **SHF3L/SHF3H** 摄像头。
 :::
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 | 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场 | 角色/位置 | 最大数量 | 端口 | 文档 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- |
-| **Astra S56** | 双目 | 2 * 5MP | 全局 | RAW | 120° | **头部**：Depth & VLA | 1 | J27/J29 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | 双目 | 2 * 5MP | 全局 | RAW | 120° | **头部**：Depth & VLA | 1 | J27/J29 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
 | **SHF3L** | 单目 | 3MP | 卷帘 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
 | **SHW3H**（可选） | 单目 | 3MP | 卷帘 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
 </div>
@@ -131,7 +131,7 @@ sidebar_position: 2
 <div style={{display: 'flex', justifyContent: 'center'}}>
 | 端口 | 设备节点 | 摄像头 |
 |------|----------|--------|
-| J27 | /dev/video0, /dev/video1 | S56 |
+| J27 | /dev/video0, /dev/video1 | S56x |
 | J29 | /dev/video2, /dev/video3 |  |
 | J25 | /dev/video4 | SHF3L/SHF3H |
 | J26 | /dev/video5 | SHF3L/SHF3H |
@@ -193,7 +193,7 @@ sidebar_position: 2
 <table style={{margin: '0 auto'}}>
 | 摄像头类型 | JetPack 版本 | 下载链接 |
 |-------------|-----------------|---------------|
-| Astra S56 + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56x + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
 </table>
 </div>
 

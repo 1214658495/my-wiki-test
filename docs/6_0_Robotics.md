@@ -27,8 +27,8 @@ This comprehensive documentation explores the complete spectrum of camera techno
 
 <div className="camera-grid">
 
-### <span style={{color: 'var(--ifm-color-primary)'}}>Astra S56 </span>
-**Astra S56** is a stereo camera designed for embodied AI applications, featuring dual 5MP global shutter sensors with a 60mm human-like baseline.
+### <span style={{color: 'var(--ifm-color-primary)'}}>Astra S56x </span>
+**Astra S56x** is a stereo camera designed for embodied AI applications, featuring dual 5MP global shutter sensors with a 60mm human-like baseline.
 
 | Technical Specification | Performance |
 |------------------------|-------------|
@@ -170,7 +170,7 @@ This comprehensive documentation explores the complete spectrum of camera techno
 | **Platform** | Jetson AGX Orin (32GB/64GB) + JetPack 6.2 (L4T R36.4.3) |
 | **Adapter Board** | SG10A-AGON-G2M-A1 (88mm × 120mm) |
 | **Deserializer** | MAXIM MAX9296A / MAX96712A |
-| **Camera Support** | Astra S56 (depth), SHF3L (hand HDR 30fps), SHW3H (head HDR 60fps) |
+| **Camera Support** | Astra S56x (depth), SHF3L (hand HDR 30fps), SHW3H (head HDR 60fps) |
 | **Max Channels** | Up to 10 GMSL cameras |
 
 **Device Node Mapping (JetPack 6.2):**
@@ -190,7 +190,7 @@ This comprehensive documentation explores the complete spectrum of camera techno
 |-----------|--------------|
 | **Platform** | Jetson AGX Thor + TRD1 G2A Carrier Board |
 | **Adapter Board** | SG8-AGX-Thor-GMSL2 |
-| **Head Vision** | Astra S56 (depth+VLA), Astra S36 (optional), SHW3H (HDR 60fps) |
+| **Head Vision** | Astra S56x (depth+VLA), Astra S36 (optional), SHW3H (HDR 60fps) |
 | **Hand Vision** | SHF3L ×4 for fine manipulation guidance |
 | **Power** | DC 9-16V |
 
@@ -222,7 +222,7 @@ Use this comprehensive comparison matrix to evaluate camera technologies based o
 
 | Camera Series     | Resolution | Frame Rate | FOV Range  | Protection |
 |------------------|------------|------------|------------|-----------|
-| Astra S56 (Binocular) | ★★★★★ (5MP) | ★★★★☆     | 130°       | IP52      |
+| Astra S56x (Binocular) | ★★★★★ (5MP) | ★★★★☆     | 130°       | IP52      |
 | Astra S36 (Binocular) | ★★★☆☆ (3MP) | ★★★☆☆     | 120°       | IP65      |
 | SHF (FishEye)    | ★★★☆☆-★★★★☆ | ★★★☆☆-★★★★☆ | 173°-200°  | IP67-IP69K |
 | SHW (Wide)       | ★★★☆☆-★★★★☆ | ★★★☆☆-★★★★☆ | 118°-130°  | IP67-IP69K |
