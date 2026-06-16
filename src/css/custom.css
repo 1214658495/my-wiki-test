@@ -213,6 +213,612 @@ body, html {
   font-family: var(--ifm-font-family-base) !important;
 }
 
+/* Humanoid reference design flagship case page */
+.humanoid-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin: 0 0 22px;
+}
+
+.humanoid-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  padding: 14px 2px 26px;
+  color: var(--ifm-font-color-base);
+}
+
+.humanoid-eyebrow,
+.humanoid-section-kicker,
+.humanoid-role-card__label {
+  margin: 0 0 12px;
+  color: #078f87;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.humanoid-hero h1 {
+  margin: 0;
+  color: var(--ifm-heading-color);
+  font-size: clamp(2.15rem, 4.2vw, 3.35rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.humanoid-hero h1 span {
+  color: #078f87;
+}
+
+.humanoid-hero__lead {
+  max-width: 520px;
+  margin: 18px 0 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.humanoid-hero__tags,
+.humanoid-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.humanoid-hero__tags {
+  margin-top: 18px;
+}
+
+.humanoid-hero__tags span {
+  position: relative;
+  padding: 0 0 0 11px;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.humanoid-hero__tags span::before {
+  position: absolute;
+  top: 0.48em;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #69bdb7;
+  content: "";
+}
+
+.humanoid-hero__actions {
+  margin-top: 20px;
+}
+
+.humanoid-button {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.humanoid-button:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.humanoid-button--primary {
+  border: 1px solid #078f87;
+  background: #078f87;
+  color: #ffffff;
+}
+
+.humanoid-button--primary:hover {
+  background: #067a74;
+  color: #ffffff;
+}
+
+.humanoid-button--secondary {
+  border: 1px solid #cbdcda;
+  background: #ffffff;
+  color: #315a57;
+}
+
+.humanoid-button--secondary:hover {
+  border-color: #8bbcb7;
+  color: #176d67;
+}
+
+.humanoid-hero__visual {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(23, 45, 52, 0.08);
+}
+
+.humanoid-hero__visual a {
+  display: block;
+  background: #ffffff;
+}
+
+.humanoid-hero__visual img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.humanoid-hero__visual figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 12px 16px;
+  border-top: 1px solid #e5eceb;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.humanoid-hero__visual figcaption strong {
+  flex: 0 0 auto;
+  color: #078f87;
+  font-size: 0.78rem;
+}
+
+.humanoid-proof-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 0 40px;
+  overflow: hidden;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: transparent;
+}
+
+.humanoid-proof-strip div {
+  padding: 14px 16px;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.humanoid-proof-strip div:last-child {
+  border-right: 0;
+}
+
+.humanoid-proof-strip strong,
+.humanoid-proof-strip span {
+  display: block;
+}
+
+.humanoid-proof-strip strong {
+  color: var(--sensing-primary-dark);
+  font-size: 0.75rem;
+}
+
+.humanoid-proof-strip span {
+  margin-top: 3px;
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.humanoid-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(300px, 1.2fr);
+  gap: 36px;
+  align-items: start;
+  margin: 22px 0 26px;
+  padding: 28px;
+  border-left: 4px solid var(--sensing-primary);
+  background: linear-gradient(90deg, rgba(1, 168, 158, 0.08), rgba(1, 168, 158, 0.025) 54%, transparent 100%);
+}
+
+.humanoid-intro h3,
+.humanoid-platform h3 {
+  margin: 0;
+  color: var(--ifm-heading-color);
+  font-size: 1.55rem;
+  line-height: 1.28;
+}
+
+.humanoid-intro > p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.8;
+}
+
+.humanoid-role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0 42px;
+}
+
+.humanoid-role-card {
+  position: relative;
+  min-height: 210px;
+  overflow: hidden;
+  padding: 24px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.humanoid-role-card:hover,
+.humanoid-camera-grid article:hover,
+.humanoid-reference-grid a:hover {
+  border-color: rgba(1, 168, 158, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(8, 35, 43, 0.07);
+}
+
+.humanoid-role-card--accent {
+  border-color: rgba(1, 168, 158, 0.34);
+  background: linear-gradient(145deg, rgba(1, 168, 158, 0.08), var(--ifm-background-surface-color) 72%);
+}
+
+.humanoid-role-card__index {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  color: var(--ifm-color-emphasis-200);
+  font-size: 3rem;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.humanoid-role-card h3 {
+  position: relative;
+  margin: 38px 0 10px;
+  font-size: 1.12rem;
+}
+
+.humanoid-role-card p:not(.humanoid-role-card__label) {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.88rem;
+  line-height: 1.68;
+}
+
+.humanoid-role-card a {
+  color: var(--sensing-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.humanoid-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin: 22px 0 42px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+.humanoid-flow article {
+  position: relative;
+  min-height: 170px;
+  padding: 22px 18px;
+  border-right: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.humanoid-flow article:last-child {
+  border-right: 0;
+}
+
+.humanoid-flow article::after {
+  position: absolute;
+  right: -5px;
+  bottom: 26px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #69bdb7;
+  content: "";
+}
+
+.humanoid-flow article:last-child::after {
+  display: none;
+}
+
+.humanoid-flow span {
+  color: #078f87;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.humanoid-flow h3 {
+  margin: 32px 0 10px;
+  color: var(--ifm-heading-color);
+  font-size: 1rem;
+}
+
+.humanoid-flow p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.82rem;
+  line-height: 1.68;
+}
+
+.humanoid-platform {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(360px, 1.12fr);
+  gap: 24px;
+  align-items: center;
+  margin: 22px 0 34px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.humanoid-platform__copy {
+  padding: 32px 0 32px 32px;
+}
+
+.humanoid-platform__copy > p:not(.humanoid-section-kicker),
+.humanoid-platform__copy li {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.86rem;
+  line-height: 1.7;
+}
+
+.humanoid-platform__copy ul {
+  margin: 20px 0 0;
+  padding-left: 1.1rem;
+}
+
+.humanoid-platform__visual {
+  padding: 22px;
+  background: linear-gradient(135deg, rgba(1, 168, 158, 0.04), transparent);
+}
+
+.humanoid-platform__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.humanoid-camera-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 34px;
+}
+
+.humanoid-camera-grid article {
+  padding: 20px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.humanoid-camera-grid span {
+  color: var(--sensing-primary-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.humanoid-camera-grid h3 {
+  margin: 7px 0 4px;
+  font-size: 1.16rem;
+}
+
+.humanoid-camera-grid p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8rem;
+}
+
+.humanoid-camera-grid strong {
+  display: block;
+  margin: 14px 0 14px;
+  font-size: 0.86rem;
+}
+
+.humanoid-camera-grid a {
+  color: var(--sensing-primary-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.humanoid-reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 36px;
+}
+
+.humanoid-reference-grid a {
+  display: flex;
+  min-height: 160px;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.humanoid-reference-grid span {
+  color: var(--sensing-primary-dark);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.humanoid-reference-grid strong {
+  margin-top: 18px;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.humanoid-reference-grid small {
+  margin-top: auto;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 700;
+}
+
+[data-theme='dark'] .humanoid-role-card__index {
+  color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] .humanoid-proof-strip strong,
+[data-theme='dark'] .humanoid-role-card a,
+[data-theme='dark'] .humanoid-camera-grid span,
+[data-theme='dark'] .humanoid-camera-grid a,
+[data-theme='dark'] .humanoid-reference-grid span {
+  color: #70eee5;
+}
+
+[data-theme='dark'] .humanoid-hero__tags span {
+  color: #9bd2ce;
+}
+
+[data-theme='dark'] .humanoid-button--secondary {
+  border-color: var(--ifm-color-emphasis-300);
+  background: transparent;
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='dark'] .humanoid-hero__visual figcaption {
+  border-top-color: var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+
+[data-theme='dark'] .humanoid-intro {
+  background: linear-gradient(90deg, rgba(1, 168, 158, 0.1), rgba(1, 168, 158, 0.035) 54%, transparent 100%);
+}
+
+[data-theme='dark'] .humanoid-role-card--accent {
+  border-color: rgba(112, 238, 229, 0.28);
+  background: linear-gradient(145deg, rgba(1, 168, 158, 0.12), var(--ifm-background-surface-color) 72%);
+}
+
+@media screen and (max-width: 996px) {
+  .humanoid-hero__content {
+    padding: 14px 2px 26px;
+  }
+
+  .humanoid-hero__visual {
+    margin: 0;
+  }
+
+  .humanoid-proof-strip,
+  .humanoid-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .humanoid-proof-strip div:nth-child(2),
+  .humanoid-flow article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .humanoid-proof-strip div:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+
+  .humanoid-flow article:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+
+  .humanoid-role-grid,
+  .humanoid-reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .humanoid-role-card {
+    min-height: 210px;
+  }
+
+  .humanoid-platform {
+    grid-template-columns: 1fr;
+  }
+
+  .humanoid-platform__copy {
+    padding: 28px 28px 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .humanoid-hero {
+    min-height: auto;
+  }
+
+  .humanoid-hero h1 {
+    font-size: 2.35rem;
+  }
+
+  .humanoid-hero__content {
+    padding: 10px 0 22px;
+  }
+
+  .humanoid-hero__visual {
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .humanoid-hero__visual figcaption {
+    display: block;
+    padding: 10px 12px;
+  }
+
+  .humanoid-hero__visual figcaption span {
+    display: block;
+    margin-top: 2px;
+  }
+
+  .humanoid-intro {
+    display: block;
+  }
+
+  .humanoid-button {
+    width: auto;
+  }
+
+  .humanoid-proof-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .humanoid-flow,
+  .humanoid-camera-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .humanoid-flow article,
+  .humanoid-flow article:nth-child(2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+
+  .humanoid-flow article,
+  .humanoid-flow article:nth-child(2) {
+    border-bottom-color: var(--ifm-color-emphasis-200);
+  }
+
+  .humanoid-flow article:last-child,
+  .humanoid-proof-strip div:last-child {
+    border-bottom: 0;
+  }
+
+  .humanoid-intro {
+    padding: 22px;
+  }
+}
+
 /* 如果你的左侧导航栏字体还是有点怪，可以加上这句 */
 .menu {
   font-family: var(--ifm-font-family-base) !important;

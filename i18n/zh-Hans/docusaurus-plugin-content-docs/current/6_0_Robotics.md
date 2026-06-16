@@ -182,7 +182,7 @@ SENSING 提供全面的摄像头技术解决方案，专为机器人、自动系
 
 ---
 
-### <span style={{color: 'var(--ifm-color-primary)'}}>机器人摄像头应用 — Jetson AGX Thor</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}>机器人视觉解决方案 — Jetson AGX Thor</span>
 
 **SENSING TRD1 Jetson AGX Thor 视觉解决方案** 专为嵌入式 AI 和人形机器人感知而设计。
 

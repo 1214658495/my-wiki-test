@@ -43,6 +43,7 @@ const sidebars = {
     "collapsed": true,
     "collapsible": true,
     "items": [
+      "6_2_Vision_Solution/Humanoid_Reference_Design_Vision_Solution",
       "6_2_Vision_Solution/Robotic_Camera_Application",
       "6_2_Vision_Solution/NRDCK"
     ]

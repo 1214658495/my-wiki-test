@@ -1,11 +1,11 @@
 ---
-sidebar_position: 1
-title: 机器人摄像头解决方案
+sidebar_position: 2
+title: 机器人视觉解决方案
 ---
 
-# 机器人摄像头解决方案
+# 机器人视觉解决方案
 
-## 基于 Jetson AGX Thor 的人形机器人方案
+## 基于 Jetson AGX Thor 的人形机器人视觉方案
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
   <div style={{fontSize: '1.1em'}}>
