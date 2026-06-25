@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from '@docusaurus/router';
 import Papa from 'papaparse';
 
 const OSS_INTRINSICS_BASE_URL = "https://sgword-service.oss-cn-heyuan.aliyuncs.com/intrinsics/";
@@ -107,6 +108,7 @@ export default function DownloadCenter() {
   const [errorMsg, setErrorMsg] = useState('');
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [pendingDownload, setPendingDownload] = useState(null);
+  const location = useLocation();
 
   const handleTabSwitch = (type) => {
     setSearchType(type);
@@ -178,8 +180,9 @@ export default function DownloadCenter() {
     }
   };
 
-  const handleSearch = async () => {
-    if (!keyword.trim()) {
+  const handleSearch = async (overrideKeyword) => {
+    const kw = (typeof overrideKeyword === 'string' ? overrideKeyword : keyword).trim();
+    if (!kw) {
       setErrorMsg("Please enter a search keyword.");
       return;
     }
@@ -201,7 +204,7 @@ export default function DownloadCenter() {
         const models = parsedData.data;
 
         const matched = models.filter(item =>
-          item.modelName && item.modelName.toLowerCase().includes(keyword.trim().toLowerCase())
+          item.modelName && item.modelName.toLowerCase().includes(kw.toLowerCase())
         );
 
         if (matched.length > 0) {
@@ -210,7 +213,7 @@ export default function DownloadCenter() {
           setErrorMsg("No matching product model found. Please refine your search.");
         }
       } else {
-        const cleanSn = keyword.trim().toUpperCase();
+        const cleanSn = kw.toUpperCase();
         const targetUrl = `${OSS_INTRINSICS_BASE_URL}${cleanSn}.txt`;
 
         const response = await fetch(targetUrl, { method: 'HEAD' });
@@ -228,6 +231,20 @@ export default function DownloadCenter() {
       setLoading(false);
     }
   };
+
+  // Deep link support: /docs/4_0_Resources?model=<modelName> pre-fills the
+  // model search and runs it automatically, so links from product tables land
+  // directly on that model's downloadable resources.
+  useEffect(() => {
+    const model = new URLSearchParams(location.search).get('model');
+    if (model) {
+      const kw = decodeURIComponent(model);
+      setSearchType('model');
+      setKeyword(kw);
+      handleSearch(kw);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [location.search]);
 
   return (
     <div style={{ marginTop: '2rem', padding: '2rem', backgroundColor: '#f9f9f9', borderRadius: '12px', border: '1px solid #e0e0e0' }}>
