@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # TRD1 F4B
@@ -15,13 +15,13 @@ sidebar_position: 2
 
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B.png?x-oss-process=image/format,webp" alt="TRD1_F4B" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B.png?x-oss-process=image/format,webp" alt="TRD1_F4B"
     style={{maxWidth: '50%', height:'auto'}} />
 </div>
 <br />
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/RedFoxD3Gx.html?fromMid=1544#recommendFromPid=0" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/RedFoxD3Gx.html?fromMid=1544#recommendFromPid=0" target="_blank" rel="noopener noreferrer"
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
@@ -40,7 +40,7 @@ sidebar_position: 2
     • Maximum Supported Cameras ：8 *FPDLINK <br/>
     • SOC：NVIDlA Jetson T5000 Module <br/>
     • Al Perfommance：2070 TFLOPS <br/>
-    • Memory：128 GB 256-bit LPDDR5X 
+    • Memory：128 GB 256-bit LPDDR5X
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Application:</strong><br/>
@@ -97,14 +97,14 @@ sidebar_position: 2
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_F4B/TRD1_F4B_Block_Diagram.jpg?x-oss-process=image/format,webp" alt="TRD1 F4B Block Diagram" style={{maxWidth: '100%', height: 'auto'}} />
 </div>
-:::note 
+:::note
 - The TRD1 F4B uses **2 UB9724 deserializers**, each supporting up to 4 camera ports.
 :::
 
 ### Supported Camera List
 
 :::note Camera Compatibility
-You may choose the following camera combinations to connect to the TRD1 F4B. 
+You may choose the following camera combinations to connect to the TRD1 F4B.
 :::
 
 | Camera Combination  | Number of Supported Cameras  | Jetpack 7.0 |
@@ -115,7 +115,7 @@ You may choose the following camera combinations to connect to the TRD1 F4B.
 | Comb. 4 | 1 *8MP/30FPS+2 *2MP/30FPS+4 *3MP/30FPS | - |
 
 :::note JetPack Versions
-NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 7.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
+NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 7.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).
 - 36.4.3: L4T R36.4.3 (Jetpack 6.2)
 - 36.4: L4T R36.4 (Jetpack 6.1)
 - 36.3: L4T R36.3 (Jetpack 6.0)
@@ -200,10 +200,10 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
 
 ##### Supported Camera Modules
 
-* SG2-AR0233C-5200-F3A-Hxxx 
+* SG2-AR0233C-5200-F3A-Hxxx
   * support max 8 cameras to bring up at the same time
 
-* SG8S-AR0820C-5300-F4A-Hxxx 
+* SG8S-AR0820C-5300-F4A-Hxxx
   * support max 4 cameras to bring up at the same time
 
 * SG3S-ISX031C-F3A-Hxxx
@@ -222,16 +222,16 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
    The correspondence between CAM ports and device nodes is as follows:
 
     ```
-    PORT                    DeviceTree Node            DEV NODE                    
-    CN1(COAX0)               cam_4                    /dev/video4                
-    CN1(COAX1)               cam_5                    /dev/video5                 
-    CN1(COAX2)               cam_6                    /dev/video6                 
-    CN1(COAX3)               cam_7                    /dev/video7                 
-    CN2(COAX4)               cam_0                    /dev/video0                 
-    CN2(COAX5)               cam_1                    /dev/video1                 
-    CN2(COAX6)               cam_2                    /dev/video2 
-    CN2(COAX7)               cam_3                    /dev/video3                 
-    ```  
+    PORT                    DeviceTree Node            DEV NODE
+    CN1(COAX0)               cam_4                    /dev/video4
+    CN1(COAX1)               cam_5                    /dev/video5
+    CN1(COAX2)               cam_6                    /dev/video6
+    CN1(COAX3)               cam_7                    /dev/video7
+    CN2(COAX4)               cam_0                    /dev/video0
+    CN2(COAX5)               cam_1                    /dev/video1
+    CN2(COAX6)               cam_2                    /dev/video2
+    CN2(COAX7)               cam_3                    /dev/video3
+    ```
 
    Power Supply
 
@@ -247,7 +247,7 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
    chmod a+x ./install.sh
    ./install.sh
    ```
-   
+
 3. Use the "sudo /opt/nvidia/jetson-io/jetson-io.py" command to select the corresponding device
 
    ```
@@ -262,9 +262,9 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
 4. After the device reboot,modify the "load_module.sh" script .
 
    4.1 Modify the script "load_modules.sh"
-   
+
    4.1.1 Modify the video device configuration command lines.
-   
+
    The following commands are used to configure the cameras recognized as video0 to video7 in the system.
    It is necessary to adjust the command parameters sensor_mode, trig_mode, and trig_pin in accordance with the camera model and the connection employed.
    ```
@@ -277,39 +277,39 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
    v4l2-ctl -d /dev/video6 -c sensor_mode=0,trig_mode=0,trig_pin=0x00000000
    v4l2-ctl -d /dev/video7 -c sensor_mode=0,trig_mode=0,trig_pin=0x00000000
    ```
-   Regarding the sensor_mode parameter, its value is related to the camera model and is presented as follows: 
+   Regarding the sensor_mode parameter, its value is related to the camera model and is presented as follows:
    ```
    SG2-AR0233C-5200-F3A-Hxxx(1920X1080): sensor_mode=0;
    SG3S-ISX031C-F4A-Hxxx(1920X1536): sensor_mode=1;
-   SG3S-ISX031C-F3A-Hxxx(1920X1536): sensor_mode=1; 
+   SG3S-ISX031C-F3A-Hxxx(1920X1536): sensor_mode=1;
    SG8S-AR0820C-5300-F4A-Hxxx(3840X2160): sensor_mode=3.
    ```
    The "trig_mode" and "trig_pin" parameters denote the trigger mode and the corresponding trigger pin to be utilized.
    ```
    For Auto-trigger Mode (The cameras are triggered automatically upon camera activation. However, the cameras are not synchronized):trig_mode=0;trig_pin=0x00000000
-   
+
    For Jetson Orin Trigger Mode (The cameras are triggered and synchronized through the trigger signal generated from the Jetson Orin):trig_mode=1;trig_pin=0x00000000
-   
+
    For External-Trigger mode (The cameras are synchronously triggered via the trigger signal generated by the external signal generator that is connected to the trigger Pin of the Kit):trig_mode=1;trig_pin=0x00020000
    ```
-   4.1.2 Modify the driver module parameter : 
+   4.1.2 Modify the driver module parameter :
 
    If you desire to utilize a combination of FPD3 (with F3 identifier: XXX - F3A - XXX) cameras and FPD4 (with F4 identifier: XXX - F4A - XXX) cameras, the following methods have been provided for your utilization.
 
    a.Determine the corresponding camera type for each camera channel
 
    b.Modify the enable_fpd4_0 and enable_fpd4_1 parameter of the following driver loading command , where X for FPD4 is represented by (1) and FPD3 is represented by (0).
-   
+
    sudo insmod ko/sgx-yuv-fpd4.ko enable_fpd4_0=X,X,X,X enable_fpd4_1=X,X,X,X
-   
+
    In the following example:
    ```
    sudo insmod ko/sgx-yuv-fpd4.ko enable_fpd4_0=1,1,0,0 enable_fpd4_1=0,0,1,1
    ```
    enable_fpd4_0 represents the first input channel. The value `1,1,0,0` indicates that the cam_0 and cam_1 cameras operate in FPD4 mode, while the cam_2 and cam_3 cameras operate in FPD3 mode.
-   
+
    enable_fpd4_1 represents the second input channel. The value `0,0,1,1` indicates that the cam_4 and cam_5 cameras operate in FPD3 mode, while the cam_6 and cam_7 cameras operate in FPD4 mode.
-   
+
 
 
 
@@ -320,7 +320,7 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
    sudo ./load_modules.sh
    ```
    After the module is loaded, the device nodes /dev/video0~video7 will be generated.
-   
+
    5.2 run the gst - launch - 1.0 in a terminal.
    ```
    ## COAX4
@@ -368,28 +368,28 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
    6.1 External Trigger Mode
 
    When utilize a external trigger singanl generator to provide external trigger signal ,the trigger source should be connect to the CN4 6-PIN connector:
-   PIN2 (CAM-FSYNC2) corresponds to the external trigger signal for cameras of CN1, 
-   PIN4 (CAM-FSYNC4) corresponds to the external trigger signal for cameras of CN2, 
-   PIN6 is the Ground pin. 
+   PIN2 (CAM-FSYNC2) corresponds to the external trigger signal for cameras of CN1,
+   PIN4 (CAM-FSYNC4) corresponds to the external trigger signal for cameras of CN2,
+   PIN6 is the Ground pin.
    Connect the positive pole of the trigger signal source to PIN2 and PIN4 to synchronize all cameras.
    Connect the Negative pole of the tirgger signal source to PIN6 .
 
-   6.2 Jetson Orin Trigger Mode 
+   6.2 Jetson Orin Trigger Mode
 
    When utilize Jetson Orin Trigger Mode,it is required to configurate the trigger signal generated from the Jetson Orin via the following steps.
    ```
-   a.load the driver 
+   a.load the driver
    sudo insmod ko/pwm-gpios.ko
-   
+
    b.Export PWM channel 0 (pwmchip4 is a newly generated node after loading the driver)
    echo 0 > /sys/class/pwm/pwmchip4/export
-   
+
    c.Set the period to 33333333 (corresponding to 30 Hz)
    echo 33333333 > /sys/class/pwm/pwmchip4/pwm0/period
-   
+
    d.Set the duty cycle
    echo 30000000 > /sys/class/pwm/pwmchip4/pwm0/duty_cycle
-   
+
    e.Enable PWM output
    echo 1 > /sys/class/pwm/pwmchip4/pwm0/enable
    ```

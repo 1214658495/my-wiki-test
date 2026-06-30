@@ -383,6 +383,7 @@ const sidebars = {
         "collapsible": true,
         "items": [
           "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A",
+          "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G3A",
           "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B"
         ]
       },

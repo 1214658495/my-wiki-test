@@ -11,6 +11,7 @@
 # Misc
 .DS_Store
 AGENTS.md
+.vscode/
 .env.local
 .env.development.local
 .env.test.local
