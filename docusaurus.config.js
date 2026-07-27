@@ -5,6 +5,9 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import productVisibility from './scripts/product-visibility.cjs';
+
+const {getHiddenDocExcludePatterns} = productVisibility;
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -54,6 +57,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          exclude: getHiddenDocExcludePatterns(),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:

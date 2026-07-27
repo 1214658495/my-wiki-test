@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const {readCategoryConfig} = require('./scripts/product-visibility.cjs');
 
 const docsDir = './docs';
 const i18nDir = './i18n/zh-Hans/docusaurus-plugin-content-docs/current';
@@ -12,13 +13,14 @@ function getCategoryInfo(dirPath, isI18n = false) {
 
   if (fs.existsSync(categoryFile)) {
     try {
-      const data = JSON.parse(fs.readFileSync(categoryFile, 'utf8'));
+      const data = readCategoryConfig(path.dirname(categoryFile));
       return {
         label: data.label,
         position: Number.isFinite(data.position) ? data.position : undefined,
         link: data.link || null,
         collapsed: data.collapsed,
-        collapsible: data.collapsible
+        collapsible: data.collapsible,
+        hidden: data.customProps?.hidden === true
       };
     } catch (e) {
       return null;
@@ -28,7 +30,7 @@ function getCategoryInfo(dirPath, isI18n = false) {
 }
 
 function getMergedCategoryInfo(dirPath, isI18n = false, fallbackLabel = path.basename(dirPath)) {
-  const defaultInfo = { label: fallbackLabel, position: Infinity, link: null };
+  const defaultInfo = { label: fallbackLabel, position: Infinity, link: null, hidden: false };
   const originalInfo = { ...defaultInfo, ...(getCategoryInfo(dirPath, false) || {}) };
 
   if (!isI18n) {
@@ -43,7 +45,8 @@ function getMergedCategoryInfo(dirPath, isI18n = false, fallbackLabel = path.bas
   return {
     ...originalInfo,
     ...translatedInfo,
-    position: originalInfo.position
+    position: originalInfo.position,
+    hidden: originalInfo.hidden
   };
 }
 
@@ -121,6 +124,9 @@ function getFiles(dir, basePath = '', isI18n = false) {
 
     if (stat.isDirectory() && !shouldIgnore(item)) {
       const categoryInfo = getMergedCategoryInfo(fullPath, isI18n, item);
+      if (categoryInfo.hidden) {
+        continue;
+      }
       sidebarEntries.push({
         type: 'category',
         name: item,

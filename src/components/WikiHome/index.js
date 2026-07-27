@@ -49,8 +49,8 @@ const PAGE_CONTENT = {
         title: 'VisionCore SDK',
         path: '/docs/5_0_Vision_Core_SDK',
         summary:
-          'sDepth and sgMIX documentation for camera control, acquisition, calibration, ISP tuning, and stereo depth output.',
-        tags: ['sDepth', 'sgMIX', 'Calibration and ISP'],
+          'sgMIX documentation for camera control, acquisition, calibration, ISP tuning, firmware, and sensor utilities.',
+        tags: ['sgMIX', 'Calibration and ISP'],
       },
       {
         title: 'Product Resources',
@@ -106,8 +106,8 @@ const PAGE_CONTENT = {
         title: 'VisionCore SDK',
         path: '/docs/5_0_Vision_Core_SDK',
         summary:
-          'sDepth 与 sgMIX 文档，覆盖相机控制、图像采集、标定、ISP 调试和双目深度输出。',
-        tags: ['sDepth', 'sgMIX', '标定与 ISP'],
+          'sgMIX 文档，覆盖相机控制、图像采集、标定、ISP 调试、固件与传感器工具。',
+        tags: ['sgMIX', '标定与 ISP'],
       },
       {
         title: '下载与资源',

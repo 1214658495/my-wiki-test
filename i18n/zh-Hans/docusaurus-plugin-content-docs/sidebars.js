@@ -620,15 +620,6 @@ const sidebars = {
   "5_0_Vision_Core_SDK",
   {
     "type": "category",
-    "label": "sDepth",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      "5_1_sDepth/sDepth"
-    ]
-  },
-  {
-    "type": "category",
     "label": "sgMIX",
     "collapsed": true,
     "collapsible": true,

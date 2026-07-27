@@ -7,36 +7,15 @@ title: VisionCore SDK
 
 ## Overview
 
-VisionCore SDK brings together the core software components used to build SENSING camera applications on NVIDIA Jetson platforms. It focuses on two major capabilities:
-
-- **sDepth**: AI-powered stereo depth estimation for generating high-quality depth maps from binocular camera images.
-- **sgMIX**: Camera control, acquisition, calibration, ISP tuning, firmware, and sensor utility SDK for GMSL camera systems.
-
-Together, these SDKs cover the main workflow from camera bring-up and stream acquisition to image correction, camera parameter access, sensor data reading, and real-time stereo depth output.
+VisionCore SDK brings together the core software components used to build SENSING camera applications on NVIDIA Jetson platforms. Its currently available module is **sgMIX**, a camera control, acquisition, calibration, ISP tuning, firmware, and sensor utility SDK for GMSL camera systems.
 
 ## SDK Modules
 
 | Module | Main Role | Typical Use |
 |--------|-----------|-------------|
-| [sDepth](/docs/5_1_sDepth/sDepth) | AI stereo depth SDK | Generate depth maps from stereo images or real-time camera streams |
 | [sgMIX](/docs/5_2_sgMIX/sgMIX) | Camera control and integration SDK | Configure GMSL cameras, capture frames, tune ISP parameters, read calibration data, and access camera utilities |
 
 ## Capability Summary
-
-### sDepth
-
-sDepth uses neural network-based stereo depth estimation to produce reliable depth maps in challenging scenes. Compared with traditional stereo methods, it is designed to improve robustness in texture-poor regions and low-light environments.
-
-Key capabilities include:
-
-- AI-driven depth map generation from stereo images
-- Offline image processing and real-time camera acquisition modes
-- Depth and disparity visualization switching
-- Multiple color mapping modes for short-range and long-range display
-- Camera calibration loading through JSON configuration
-- Support for NVIDIA Jetson AGX Orin and NVIDIA Jetson AGX Thor
-
-The SDK is intended for robotics, AR, 3D reconstruction, and other applications that require robust depth perception on embedded platforms.
 
 ### sgMIX
 
@@ -70,11 +49,8 @@ sgMIX can be used through the GUI workflow or directly through the C++ API, depe
 4. **Tune image quality when required**
    Use sgMIX ISP controls to adjust exposure, gain, white balance, brightness, contrast, saturation, sharpness, and denoise settings.
 
-5. **Run stereo depth with sDepth**
-   Load the depth model, license key, and stereo calibration JSON, then process offline stereo images or real-time camera streams to generate depth output.
-
-6. **Integrate into the application**
-   Use captured frames, timestamps, sensor data, IMU data, corrected images, and depth maps as inputs for perception, navigation, reconstruction, or validation workflows.
+5. **Integrate into the application**
+   Use captured frames, timestamps, sensor data, IMU data, and corrected images as inputs for perception, navigation, reconstruction, or validation workflows.
 
 ## Platform and Camera Context
 
@@ -96,11 +72,7 @@ sgMIX can be used through the GUI workflow or directly through the C++ API, depe
 | Tune ISP parameters | sgMIX |
 | Perform OTA firmware upgrade | sgMIX |
 | Acquire IMU data from S56x | sgMIX |
-| Generate depth maps from stereo images | sDepth |
-| Run real-time stereo depth on Jetson | sDepth |
-| Build a full camera-to-depth perception pipeline | sgMIX + sDepth |
 
 ## Documentation Entry Points
 
-- [sDepth Quick Start](/docs/5_1_sDepth/sDepth): depth estimation overview, supported platforms, performance data, display controls, build steps, parameters, and usage examples.
 - [sgMIX Quick Start](/docs/5_2_sgMIX/sgMIX): GUI operation guide, camera setup flow, ISP control, OTA, authorization, and API reference.
