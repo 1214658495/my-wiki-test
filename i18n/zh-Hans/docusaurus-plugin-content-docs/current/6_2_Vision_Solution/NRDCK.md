@@ -121,7 +121,7 @@ sidebar_position: 3
 <div style={{display: 'flex', justifyContent: 'center'}}>
 | 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场 | 角色/位置 | 最大数量 | 端口 | 文档 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |:--- |
-| **Astra S56x** | 双目 | 2 * 5MP | 全局 | RAW | 120° | **头部**：Depth & VLA | 1 | J27/J29 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | 双目 | 2 * 5MP | 全局 | RAW | 120° | **头部**：深度与 VLA | 1 | J27/J29 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
 | **SHF3L** | 单目 | 3MP | 卷帘 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
 | **SHW3H**（可选） | 单目 | 3MP | 卷帘 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 6 | J21-J26 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
 </div>
@@ -193,7 +193,7 @@ sidebar_position: 3
 <table style={{margin: '0 auto'}}>
 | 摄像头类型 | JetPack 版本 | 下载链接 |
 |-------------|-----------------|---------------|
-| Astra S56x + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56x + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
 </table>
 </div>
 
@@ -201,5 +201,5 @@ sidebar_position: 3
 使用 [DownGit](https://minhaskamal.github.io/DownGit/#/home) 下载 GitHub 中的指定目录：
 1. 复制 GitHub 仓库目录 URL。
 2. 粘贴到 DownGit。
-3. 点击 Download。
+3. 点击“下载”。
 :::

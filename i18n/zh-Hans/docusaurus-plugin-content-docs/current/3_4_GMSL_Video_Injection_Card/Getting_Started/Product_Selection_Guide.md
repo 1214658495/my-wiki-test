@@ -29,31 +29,31 @@ title: 产品选型指南
         硬件 解决方案
       </h4>
       <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-        <li>PCIe Gen3 x8 interface card</li>
-        <li>最高 8 GMSL output channels</li>
-        <li>Real-time signal generation</li>
+        <li>PCIe Gen3 x8 接口卡</li>
+        <li>最高 8 路 GMSL 输出通道</li>
+        <li>实时信号生成</li>
       </ul>
     </div>
 
     <div style={{background: '#f3e5f5', borderRadius: '8px', padding: '1.5rem', border: '1px solid #e1bee7'}}>
       <h4 style={{marginBottom: '1rem', color: '#7b1fa2'}}>
-        Data Sources
+        数据来源
       </h4>
       <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-        <li>Real-world recorded camera data</li>
-        <li>Simulation-generated data</li>
-        <li>Custom validation datasets</li>
+        <li>真实道路录制的摄像头数据</li>
+        <li>仿真生成数据</li>
+        <li>自定义验证数据集</li>
       </ul>
     </div>
 
     <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1.5rem', border: '1px solid #c8e6c9'}}>
       <h4 style={{marginBottom: '1rem', color: '#388e3c'}}>
-        Target Applications
+        目标应用
       </h4>
       <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-        <li>ADAS/AD algorithm validation</li>
-        <li>Simulation data for algorithm validation</li>
-        <li>ISP algorithm simulation validation</li>
+        <li>ADAS/AD 算法验证</li>
+        <li>用于算法验证的仿真数据</li>
+        <li>ISP 算法仿真验证</li>
       </ul>
     </div>
   </div>
@@ -68,16 +68,16 @@ title: 产品选型指南
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
   <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{width: 400, height:'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
-    SENSING CIG4-8H - Professional 视频注入方案 for ADAS/AD 开发
+    SENSING CIG4-8H - 面向 ADAS/AD 开发的专业视频注入方案
   </p>
 </div> -->
 
 <!-- <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
   <h3 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
-    Core 值 Proposition
+    核心价值主张
   </h3>
   <div style={{fontSize: '1.1em', textAlign: 'center', marginBottom: '1rem', color: '#495057'}}>
-    <strong>Precise Real-World Data Reproduction + Accelerated Algorithm Iteration + One-Time Data Collection, Repeated Algorithm Validation</strong>
+    <strong>精确复现真实场景数据 + 加速算法迭代 + 一次数据采集，多次算法验证</strong>
   </div>
   <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem'}}>
     <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #bbdefb'}}>
@@ -87,8 +87,8 @@ title: 产品选型指南
           <path d="M3 5c0-1.66 4-3 9-3s9 1.34 9 3v14c0 1.66-4 3-9 3s-9-1.34-9-3V5Z"/>
         </svg>
       </div>
-      <strong>Data Replay</strong><br/>
-      <span style={{fontSize: '0.9em'}}>Precise scenario reproduction</span>
+      <strong>数据回放</strong><br/>
+      <span style={{fontSize: '0.9em'}}>精确场景复现</span>
     </div>
     <div style={{background: '#f3e5f5', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #e1bee7'}}>
       <div style={{marginBottom: '0.5rem'}}>
@@ -96,8 +96,8 @@ title: 产品选型指南
           <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
         </svg>
       </div>
-      <strong>Fast Iteration</strong><br/>
-      <span style={{fontSize: '0.9em'}}>Accelerated testing cycles</span>
+      <strong>快速迭代</strong><br/>
+      <span style={{fontSize: '0.9em'}}>加速测试周期</span>
     </div>
     <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #c8e6c9'}}>
       <div style={{marginBottom: '0.5rem'}}>
@@ -106,8 +106,8 @@ title: 产品选型指南
           <path d="m9 12 2 2 4-4"/>
         </svg>
       </div>
-      <strong>Algorithm Focus</strong><br/>
-      <span style={{fontSize: '0.9em'}}>Dedicated validation platform</span>
+      <strong>聚焦算法</strong><br/>
+      <span style={{fontSize: '0.9em'}}>专用验证平台</span>
     </div>
   </div>
 </div> -->
@@ -451,7 +451,7 @@ title: 产品选型指南
         <line x1="12" y1="20" x2="12.01" y2="20"/>
       </svg>
     </div>
-    <h4 style={{marginBottom: '0.5rem', textAlign: 'center'}}>Signal Degradation</h4>
+    <h4 style={{marginBottom: '0.5rem', textAlign: 'center'}}>信号衰减</h4>
     <p style={{margin: 0, fontSize: '0.9em', textAlign: 'center'}}>仿真恶劣天气或硬件老化影响</p>
   </div>
   <div style={{flex: 1, minWidth: 240, background: '#e8f5e8', borderRadius: '8px', padding: '1rem', border: '1px solid #4caf50'}}>
@@ -460,7 +460,7 @@ title: 产品选型指南
         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
       </svg>
     </div>
-    <h4 style={{marginBottom: '0.5rem', textAlign: 'center'}}>System Recovery</h4>
+    <h4 style={{marginBottom: '0.5rem', textAlign: 'center'}}>系统恢复</h4>
     <p style={{margin: 0, fontSize: '0.9em', textAlign: 'center'}}>验证故障安全机制与冗余设计</p>
   </div>
 </div> -->
@@ -637,7 +637,7 @@ title: 产品选型指南
       </svg>
     </div>
     <strong>Fog/Haze</strong><br/>
-    <span style={{fontSize: '0.9em'}}>Low visibility testing</span>
+    <span style={{fontSize: '0.9em'}}>低能见度测试</span>
   </div>
   <div style={{flex: 1, minWidth: 200, background: '#fff3e0', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #ffcc02'}}>
     <div style={{marginBottom: '0.5rem'}}>
@@ -810,10 +810,10 @@ title: 产品选型指南
 <!-- 
 <div style={{background: '#f8f9fa', borderRadius: '12px', padding: '2rem', marginBottom: '2rem', border: '1px solid #dee2e6'}}>
   <h4 style={{marginBottom: '1.5rem', textAlign: 'center', color: '#495057'}}>
-    SENSING's Competitive Advantage in Video Injection
+    SENSING 在视频注入领域的竞争优势
   </h4>
 
-  **Market Context:** SENSING competes with established players in the video injection card market. However, SENSING's core business focus on cameras and imaging systems provides a fundamental competitive advantage.
+  **市场背景：** SENSING 与视频注入卡市场中的成熟厂商展开竞争。然而，SENSING 专注于摄像头和成像系统的核心业务，为产品提供了根本性的竞争优势。
 
   <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginTop: '1.5rem'}}>
     <div style={{background: '#e8f5e8', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #c8e6c9'}}>
@@ -823,7 +823,7 @@ title: 产品选型指南
           <circle cx="12" cy="13" r="3"/>
         </svg>
       </div>
-      <strong>Better Video Injection</strong><br/>
+      <strong>更优的视频注入</strong><br/>
       <span style={{fontSize: '0.9em'}}>More accurate camera signal simulation</span>
     </div>
     <div style={{background: '#ffebee', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #ffcdd2'}}>
@@ -834,7 +834,7 @@ title: 产品选型指南
           <line x1="12" y1="17" x2="12.01" y2="17"/>
         </svg>
       </div>
-      <strong>Realistic Fault Testing</strong><br/>
+      <strong>逼真的故障测试</strong><br/>
       <span style={{fontSize: '0.9em'}}>Simulate real camera failures accurately</span>
     </div>
     <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1rem', textAlign: 'center', border: '1px solid #bbdefb'}}>
@@ -843,13 +843,13 @@ title: 产品选型指南
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
       </div>
-      <strong>Safety Testing</strong><br/>
+      <strong>安全测试</strong><br/>
       <span style={{fontSize: '0.9em'}}>Complete automotive safety validation</span>
     </div>
   </div>
 </div>
 
-**Core Differentiator:** Unlike competitors who may treat video injection as a secondary product line, SENSING's primary expertise in camera technology translates directly into superior injection capabilities. This camera-centric approach ensures authentic reproduction of real camera behaviors, critical for accurate ECU algorithm validation where signal fidelity directly impacts testing reliability.
+**核心差异化优势：** 与将视频注入作为辅助产品线的竞品不同，SENSING 在摄像头技术上的核心积累可直接转化为更强的视频注入能力。以摄像头为中心的方法可以真实复现摄像头行为；对于 ECU 算法验证而言，信号保真度会直接影响测试可靠性。
 
 --- -->
 
@@ -1171,12 +1171,12 @@ title: 产品选型指南
         <line x1="12" y1="17" x2="12.01" y2="17"/>
       </svg>
     </div>
-    <h4 style={{marginBottom: '0.5rem', textAlign: 'center', color: '#d32f2f'}}>Signal Degradation</h4>
+    <h4 style={{marginBottom: '0.5rem', textAlign: 'center', color: '#d32f2f'}}>信号衰减</h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-      <li>Programmable noise injection</li>
-      <li>Bit error rate simulation</li>
-      <li>Signal attenuation testing</li>
-      <li>Timing jitter introduction</li>
+      <li>可编程噪声注入</li>
+      <li>误码率仿真</li>
+      <li>信号衰减测试</li>
+      <li>引入时序抖动</li>
     </ul>
   </div>
   <div style={{flex: 1, minWidth: 240, background: '#fff3e0', borderRadius: '8px', padding: '1rem', border: '1px solid #ff9800'}}>
@@ -1185,12 +1185,12 @@ title: 产品选型指南
         <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
       </svg>
     </div>
-    <h4 style={{marginBottom: '0.5rem', textAlign: 'center', color: '#f57c00'}}>System Failures</h4>
+    <h4 style={{marginBottom: '0.5rem', textAlign: 'center', color: '#f57c00'}}>系统故障</h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-      <li>Channel dropout simulation</li>
-      <li>Power supply fluctuation</li>
-      <li>通信 timeouts</li>
-      <li>Partial data corruption</li>
+      <li>通道丢失仿真</li>
+      <li>供电波动</li>
+      <li>通信超时</li>
+      <li>部分数据损坏</li>
     </ul>
   </div>
   <div style={{flex: 1, minWidth: 240, background: '#e8f5e8', borderRadius: '8px', padding: '1rem', border: '1px solid #4caf50'}}>
@@ -1201,10 +1201,10 @@ title: 产品选型指南
     </div>
     <h4 style={{marginBottom: '0.5rem', textAlign: 'center', color: '#388e3c'}}>安全验证</h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-      <li>ASIL-D compliance testing</li>
-      <li>Redundancy verification</li>
-      <li>Fail-safe mechanism validation</li>
-      <li>Recovery time measurement</li>
+      <li>ASIL-D 合规性测试</li>
+      <li>冗余验证</li>
+      <li>故障安全机制验证</li>
+      <li>恢复时间测量</li>
     </ul>
   </div>
 </div>
@@ -1397,7 +1397,7 @@ title: 产品选型指南
   </div>
 </div>
 
-<!-- **核心 API Functions:**
+<!-- **核心 API 功能：**
 ```c
 // Primary data injection interface
 int send_one_frame(unsigned char* buffer);
@@ -1412,14 +1412,14 @@ int configure_channel(int channel, video_config_t* config);
 int set_trigger_mode(trigger_mode_t mode, int delay_us);
 ```
 
-**SDK Package Structure:**
-- **Driver Layer:** Optimized XDMA PCIe drivers with DMA engine support
-- **硬件 Abstraction:** Register-level access with safety checks and validation
-- **Configuration Management:** Channel setup, format selection, and timing control
-- **Data Pipeline:** Efficient buffer management and transfer optimization
-- **Synchronization Control:** External trigger handling and multi-card coordination
+**SDK 包结构：**
+- **驱动层：** 优化的 XDMA PCIe 驱动，支持 DMA 引擎
+- **硬件抽象：** 带安全检查和验证的寄存器级访问
+- **配置管理：** 通道设置、格式选择和时序控制
+- **数据流水线：** 高效缓冲区管理和传输优化
+- **同步控制：** 外部触发处理和多卡协同
 
-**Secondary Development Capabilities:**
+**二次开发能力：**
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1rem', marginBottom: '1.5rem'}}>
   <div style={{flex: 1, minWidth: 240, background: '#e3f2fd', borderRadius: '8px', padding: '1rem', border: '1px solid #2196f3'}}>
@@ -1427,10 +1427,10 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
       定制应用
     </h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-      <li>Direct API integration</li>
-      <li>Custom data pipelines</li>
-      <li>应用-specific workflows</li>
-      <li>Real-time processing integration</li>
+      <li>直接 API 集成</li>
+      <li>自定义数据流水线</li>
+      <li>面向应用的工作流</li>
+      <li>实时处理集成</li>
     </ul>
   </div>
   <div style={{flex: 1, minWidth: 240, background: '#f3e5f5', borderRadius: '8px', padding: '1rem', border: '1px solid #9c27b0'}}>
@@ -1438,23 +1438,23 @@ int set_trigger_mode(trigger_mode_t mode, int delay_us);
       仿真集成
     </h4>
     <ul style={{margin: 0, paddingLeft: '1rem', fontSize: '0.9em'}}>
-      <li>GPU virtual sensor models</li>
-      <li>Real-time rendering pipelines</li>
-      <li>Physics simulation coupling</li>
-      <li>Closed-loop validation systems</li>
+      <li>GPU 虚拟传感器模型</li>
+      <li>实时渲染流水线</li>
+      <li>物理仿真耦合</li>
+      <li>闭环验证系统</li>
     </ul>
   </div>
 </div>
 
-**Platform 支持 and Compatibility:**
-- **Operating Systems:** Ubuntu 18.04/20.04 LTS (primary), other Linux distributions adaptable
-- **Kernel Compatibility:** Broad kernel version support with automatic adaptation
-- **Development Environment:** GCC/Clang compiler support, CMake build system
-- **Integration 支持:** Professional services available for complex custom implementations
+**平台支持和兼容性：**
+- **操作系统：** Ubuntu 18.04/20.04 LTS（主要支持），其他 Linux 发行版可适配
+- **内核兼容性：** 支持广泛内核版本，并可自动适配
+- **开发环境：** 支持 GCC/Clang 编译器和 CMake 构建系统
+- **集成支持：** 可为复杂定制实现提供专业服务
 
 --- -->
 
-<!-- **Ready to Get Started?**
+<!-- **准备开始？**
 
 <div style={{display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginTop: '2rem'}}>
   <div style={{background: '#e3f2fd', borderRadius: '8px', padding: '1rem', textAlign: 'center', minWidth: '200px'}}>

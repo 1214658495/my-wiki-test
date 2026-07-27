@@ -33,28 +33,28 @@ SENSING GMSL2 摄像头中继器是在保持信号完整性的同时延长 GMSL2
 - **商用车应用**: 支持卡车、客车等大型车辆中的长线缆布设
   
 <!-- 
-## Industrial & Robotics Applications
+## 工业与机器人应用
 
-### Automated Guided Vehicles (AGVs)
+### 自动导引车（AGV）
 
 <div style={{textAlign: 'center'}}>
     <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_AGV_Application.png" alt="AGV 应用" 
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
-For AGVs operating in large warehouses or manufacturing facilities:
+对于在大型仓库或制造工厂运行的 AGV：
 
-- **Obstacle Detection**: Extends camera coverage for real-time obstacle detection
-- **Path Following**: Enables floor-line tracking cameras to be optimally positioned
-- **Navigation Systems**: Supports multiple camera integration for comprehensive environment perception
+- **障碍物检测**：扩展摄像头覆盖范围，实现实时障碍物检测
+- **路径跟踪**：支持将地面线跟踪摄像头布置在最佳位置
+- **导航系统**：支持集成多路摄像头，实现完整环境感知
 
-### Machine Vision Systems
+### 机器视觉系统
 
-In industrial automation and quality control:
+在工业自动化和质量控制场景中：
 
-- **Assembly Line Inspection**: Allows cameras to be positioned optimally without distance constraints
-- **Robotic Arm Vision**: Extends camera signals from moving robotic components to stationary controllers
-- **Quality Control Systems**: Enables high-resolution camera placement in challenging industrial environments -->
+- **装配线检测**：不受距离限制，可将摄像头布置在最佳位置
+- **机械臂视觉**：将移动机器人部件上的摄像头信号延伸至固定控制器
+- **质量控制系统**：支持在复杂工业环境中部署高分辨率摄像头 -->
 
 ## 公共交通与基础设施
 

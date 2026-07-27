@@ -7,7 +7,7 @@ title: 视觉核心SDK
 
 ## 概述
 
-VisionCore SDK 是在 NVIDIA Jetson 平台上构建 SENSING 相机应用时常用的核心软件能力，主要包含两个模块： 
+VisionCore SDK 是在 NVIDIA Jetson 平台上构建 SENSING 相机应用时常用的核心软件能力，主要包含两个模块：
 
 - **sDepth**：面向双目相机的 AI 深度估计 SDK，用于从左右目图像生成高质量深度图。
 - **sgMIX**：面向 GMSL 相机系统的相机控制、采集、标定、ISP 调节、固件和传感器工具 SDK。

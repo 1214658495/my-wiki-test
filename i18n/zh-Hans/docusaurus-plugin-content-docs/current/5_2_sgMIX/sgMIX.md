@@ -27,7 +27,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 
 ### 工具按钮（右上角）
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_function_button.png?x-oss-process=image/format,webp" alt="sgMIX_function_button" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_function_button.png?x-oss-process=image/format,webp" alt="sgMIX_function_button"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -44,31 +44,31 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 **点亮相机：**
 1. 点击右上角 Settings
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_setting_button.png?x-oss-process=image/format,webp" alt="sgMIX_setting_button" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_setting_button.png?x-oss-process=image/format,webp" alt="sgMIX_setting_button"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 2. 选择型号、分辨率和 EEPROM 地址, 建议：将 Sensor address 设置为 1a
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_Select_the_model.png?x-oss-process=image/format,webp" alt="sgMIX_Select_the_model" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_Select_the_model.png?x-oss-process=image/format,webp" alt="sgMIX_Select_the_model"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 3. 点击 Save Settings 保存设置
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_save_settings.png?x-oss-process=image/format,webp" alt="sgMIX_save_settings" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_save_settings.png?x-oss-process=image/format,webp" alt="sgMIX_save_settings"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
-4. 在 Camera Info 状态栏选择要打开的视频设备
+4. 在 Camera Info（摄像头信息）状态栏选择要打开的视频设备
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_select_video_device.png?x-oss-process=image/format,webp" alt="sgMIX_select_video_device" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_select_video_device.png?x-oss-process=image/format,webp" alt="sgMIX_select_video_device"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 5. 点击 "open" 打开相机
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_open_button.png?x-oss-process=image/format,webp" alt="sgMIX_open_button" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_open_button.png?x-oss-process=image/format,webp" alt="sgMIX_open_button"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br/>
@@ -76,7 +76,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 **读取相机内参和 SN：**
 - 点击 "Read Intrinsic"，日志区域会输出相关信息
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_read_intrinsic.png?x-oss-process=image/format,webp" alt="sgMIX_read_intrinsic" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_read_intrinsic.png?x-oss-process=image/format,webp" alt="sgMIX_read_intrinsic"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br/>
@@ -84,12 +84,12 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 **畸变校正：**
 - 点击 "Undistort" 启用畸变校正功能
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_Undistort_button.png?x-oss-process=image/format,webp" alt="sgMIX_Undistort_button" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_Undistort_button.png?x-oss-process=image/format,webp" alt="sgMIX_Undistort_button"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_Undistort.png?x-oss-process=image/format,webp" alt="sgMIX_Undistort" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_Undistort.png?x-oss-process=image/format,webp" alt="sgMIX_Undistort"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br/>
@@ -97,7 +97,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 **OTA 升级：**
 - 点击 OTA 按钮，输入加密的 URL 地址进行升级
 <!-- <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_OTA.png?x-oss-process=image/format,webp" alt="sgMIX_OTA" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_OTA.png?x-oss-process=image/format,webp" alt="sgMIX_OTA"
     style={{maxWidth: '100%', height:'auto'}} />
 </div> -->
 <br/>
@@ -106,12 +106,12 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 - ISP 参数控制需要网络授权
 - 输入授权码后点击 "Apply"
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_ISP_control1.png?x-oss-process=image/format,webp" alt="sgMIX_ISP_control1" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_ISP_control1.png?x-oss-process=image/format,webp" alt="sgMIX_ISP_control1"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_ISP_control2.png?x-oss-process=image/format,webp" alt="sgMIX_ISP_control2" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_ISP_control2.png?x-oss-process=image/format,webp" alt="sgMIX_ISP_control2"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -124,7 +124,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 - "load" 按钮加载参数配置
 - "save" 按钮保存参数配置
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_ISP_control3.png?x-oss-process=image/format,webp" alt="sgMIX_ISP_control3" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_ISP_control3.png?x-oss-process=image/format,webp" alt="sgMIX_ISP_control3"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 <br/>

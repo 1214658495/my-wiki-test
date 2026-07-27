@@ -123,7 +123,7 @@ SENSING 提供全面的摄像头技术解决方案，面向机器人、自主系
 | **最低照度** | 0.0001 lux（星光） |
 | **红外照明** | 850nm/940nm可选 |
 <!-- | **Sensitivity Enhancement** | Enhanced NIR response | -->
-<!-- | **Image Processing** | Real-time enhancement | -->
+<!-- | **图像处理** | Real-time enhancement | -->
 <!-- | **Operating Range** | 0-100 meters (IR-assisted) | -->
 
 
@@ -189,7 +189,7 @@ SENSING 提供全面的摄像头技术解决方案，面向机器人、自主系
 
 <!-- <div className="table-responsive">
 
-| Camera Type | Resolution | Frame Rate | Latency | Low Light | Cost | Integration Complexity |
+| 摄像头类型 | 分辨率 | 帧率 | 延迟 | 低照度 | 成本 | 集成复杂度 |
 |-------------|------------|------------|---------|-----------|------|------------------------|
 | Serdes      | ★★★★☆     | ★★★★☆     | ★★★★☆  | ★★★☆☆    | ★★★☆☆ | ★★★☆☆               |
 | MIPI CSI-2  | ★★★★★     | ★★★★☆     | ★★★★★  | ★★★☆☆    | ★★☆☆☆ | ★★★★☆               |

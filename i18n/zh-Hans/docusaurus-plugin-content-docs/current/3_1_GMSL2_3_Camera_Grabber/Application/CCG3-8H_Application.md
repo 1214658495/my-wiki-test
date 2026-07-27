@@ -12,7 +12,7 @@ title: CCG3-8H 应用
     视频采集卡可应用于无人车系统。无人车通常需要多路摄像头、毫米波雷达、激光雷达、GPS、组合导航等传感器，并需要将这些传感器接入高性能计算平台（如工业计算机）。因此，需要一种能够同时连接多路摄像头并与其他传感器同步的产品。视频采集卡正是面向无人车提供高速、多摄像头、低延迟图像接入的解决方案。以下是典型方案示例。
   </div>
   <div style={{textAlign: 'center', marginTop: '1.5rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H_useGround2.png" alt="CCG3-8H 应用 Scenario" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H_useGround2.png" alt="CCG3-8H 应用场景" style={{maxWidth: '85%', height:'auto', borderRadius: '8px'}} />
   </div>
 </div>
 

@@ -23,15 +23,15 @@ SENSING Technology Co., Ltd. 设计的 GMSL2 摄像头分流器可为高级视�
 
 <!-- ### Robotics & Industrial Applications
 
-#### Machine Vision & Quality Control
-- **Dual Processing Pipeline**: Route identical visual data to separate processing units with different algorithms
-- **Real-time Monitoring + Archiving**: Process visual data for immediate feedback while simultaneously recording for quality assurance
-- **Distributed Processing Architecture**: Enable parallel processing across multiple computing nodes for load balancing
+#### 机器视觉与质量控制
+- **双处理流水线**：将相同的视觉数据发送到采用不同算法的独立处理单元
+- **实时监控与归档**：处理视觉数据以即时反馈，同时录制数据用于质量保证
+- **分布式处理架构**：在多个计算节点之间并行处理，实现负载均衡
 
-#### Unmanned 地 Vehicles (UGV)
-- **Sensor Redundancy**: Critical for safety and reliability in autonomous operations
-- **Development & Testing**: Simultaneous data flow to both development systems and recording units
-- **Heterogeneous Computing Platforms**: Connect the same camera to different computing architectures (GPU + FPGA)
+#### 无人地面车辆（UGV）
+- **传感器冗余**：对自主运行的安全性和可靠性至关重要
+- **开发与测试**：数据同时流向开发系统和记录单元
+- **异构计算平台**：将同一摄像头连接到不同的计算架构（GPU + FPGA）
 
 ### 轨道交通
 - **Safety Monitoring**: Route camera feeds to both monitoring and recording systems

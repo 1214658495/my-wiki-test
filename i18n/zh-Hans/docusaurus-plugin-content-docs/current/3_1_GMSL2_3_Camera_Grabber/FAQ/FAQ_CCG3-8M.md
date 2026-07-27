@@ -88,12 +88,12 @@ Lidar →         PTP 同步       → Capture Card System
 -[网络拓扑图 2](https://autosensee.feishu.cn/docx/ErBzdsOkFowOt0xTc5ecdAvgnqe)
 
 <!-- **Additional Resources:**
-- [PTP Configuration Guide](../guides/ptp-configuration.md)
-- [Troubleshooting Network Issues](../guides/network-troubleshooting.md) -->
+- [PTP 配置指南](../guides/ptp-configuration)
+- [Troubleshooting Network Issues](../guides/network-troubleshooting) -->
 
 ---
 <!--
-### Q4: Time Synchronization and PTP Configuration
+### Q4：时间同步与 PTP 配置
 
 **System Architecture Diagram:**
 
@@ -130,28 +130,28 @@ Lidar → PTP 同步 → Capture Card System
 **TTL 触发使用方法 1：**
 采集卡的 [GPS] 接口定义了以下两个接口（红色和绿色），用于连接外部 TTL 触发方波，并配置对应脚本参数。
 
-**Pin Configuration Table:**
+**引脚配置表：**
 
-| Red Pin | White Pin | Green Pin | Blue Pin | Black Pin | Black Pin |
+| 红色引脚 | 白色引脚 | 绿色引脚 | 蓝色引脚 | 黑色引脚 | 黑色引脚 |
 |------------|-------------|---------|---------|------------|----------|
-| PPS Pin    | UART_RX     | GND     | -  | UART_TX    | GND |
+| PPS 引脚    | UART_RX     | GND     | -  | UART_TX    | GND |
 
-**TTL Trigger Configuration Details:**
+**TTL 触发配置详情：**
 
 <!-- When using GPS as the timing source, configure the following parameters: -->
 
 ```bash
 <file name：pcie_init_cardx.sh>
-# 触发模式 config {0:no trigger; 1:reserved; 2:inner trigger; 3:external trigger}
+# 触发模式配置 {0:不触发；1:保留；2:内部触发；3:外部触发}
 card_trigger_signal_mode               "3"
 
-# Card external signal input fps config.
-# 摄像头 external output fps config.
-# The following two configurations are valid only when card_trigger_signal_mode is "3".
+# 采集卡外部信号输入帧率配置。
+# 摄像头外部输出帧率配置。
+# 以下两个配置仅在 card_trigger_signal_mode 为 "3" 时有效。
 card_external_signal_input_fps         "1" Hz
 camera_external_output_fps             "20" Hz
 
-# 摄像头 inner output fps config
+# 摄像头内部输出帧率配置
 camera_inner_output_fps                "30" Hz
 ```
 <br/>
@@ -160,16 +160,16 @@ camera_inner_output_fps                "30" Hz
 
 ```bash
 <file name：pcie_init_cardx.sh>
-# 触发模式 config {0:no trigger; 1:reserved; 2:inner trigger; 3:external trigger}
+# 触发模式配置 {0:不触发；1:保留；2:内部触发；3:外部触发}
 card_trigger_signal_mode               "2"
 
-# Card external signal input fps config.
-# 摄像头 external output fps config.
-# The following two configurations are valid only when card_trigger_signal_mode is "3".
+# 采集卡外部信号输入帧率配置。
+# 摄像头外部输出帧率配置。
+# 以下两个配置仅在 card_trigger_signal_mode 为 "3" 时有效。
 card_external_signal_input_fps         "1" Hz
 camera_external_output_fps             "20" Hz
 
-# 摄像头 inner output fps config
+# 摄像头内部输出帧率配置
 camera_inner_output_fps                "30" Hz
 ```
 

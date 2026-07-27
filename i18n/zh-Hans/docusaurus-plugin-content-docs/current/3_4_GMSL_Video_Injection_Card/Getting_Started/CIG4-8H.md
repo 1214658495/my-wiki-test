@@ -88,7 +88,7 @@ title: CIG4-8H 快速入门
 ## 硬件准备
 ### 框图
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra 应用 Diagram" style={{maxWidth: '100%', height:'auto'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra 应用图" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 #### 部件清单
@@ -126,7 +126,7 @@ title: CIG4-8H 快速入门
 </div> -->
 
 <!-- :::note Complete 解决方案
-SENSING can provide a complete solution including 摄像头 + GMSL Video Injection Card + IPC + Coaxial cable for your hardware-in-the-loop testing needs.
+SENSING 可根据你的硬件在环测试需求，提供摄像头、GMSL 视频注入卡、IPC 和同轴线缆在内的完整解决方案。
 ::: -->
 
 
@@ -134,9 +134,9 @@ SENSING can provide a complete solution including 摄像头 + GMSL Video Injecti
 
 ## 软件准备
 
-<!-- ### Software Framework Diagram -->
+<!-- ### 软件框架图 -->
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Software_Diagram.png" alt="Software Framework Diagram" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Software_Diagram.png" alt="软件框架图" style={{maxWidth: '100%', height:'auto', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)'}} />
   <div style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     软件框架架构
   </div>
@@ -193,5 +193,5 @@ SENSING can provide a complete solution including 摄像头 + GMSL Video Injecti
 
 <!-- ## FAQ
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.2rem', marginBottom: '2rem', fontSize: '1.1em'}}>
-For more information and frequently asked questions, please contact our technical support team or visit our <a href="https://sensing-world.com/en/h-col-151.html" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>official website</a>.
+更多信息和常见问题，请联系我们的技术支持团队，或访问我们的 <a href="https://sensing-world.com/en/h-col-151.html" style={{color: 'var(--ifm-color-primary)', textDecoration: 'underline'}}>官方网站</a>。
 </div> -->

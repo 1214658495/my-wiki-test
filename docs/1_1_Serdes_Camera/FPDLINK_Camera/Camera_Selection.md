@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Camera Selection
+# FPDLINK Camera Selection
 
 ## Product Information Table
 

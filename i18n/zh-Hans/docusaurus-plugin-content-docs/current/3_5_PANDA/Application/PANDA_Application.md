@@ -41,7 +41,7 @@ PANDA Serial PG2 遵循 USB-IF 定义的 UVC 协议规范，可即插即用（�
   </p>
 </div>
 
-<!-- 下载 SensingCaptureV3 to your PC, extract the files, and locate SensingCaptureV3.exe. Double-click the left mouse button to open it, and the startup interface will appear as shown in Figure 1. The upper left corner displays the control panel, while the middle area shows the region. -->
+<!-- 将 SensingCaptureV3 下载到电脑，解压文件并找到 SensingCaptureV3.exe。双击鼠标左键打开程序，启动界面如图 1 所示。左上角显示控制面板，中间区域显示图像区域。 -->
 
 下载 SensingCaptureV3 后，按照配图中的步骤 1-3 安装并使用该软件。
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
@@ -51,7 +51,7 @@ PANDA Serial PG2 遵循 USB-IF 定义的 UVC 协议规范，可即插即用（�
   </p>
 </div>
 
-<!-- If the software fails to start, please try printing and displaying a complete error message, or check if the software directory contains the packages folder with the required VC201XRedist redistributable packages. -->
+<!-- 如果软件无法启动，请尝试打印并显示完整错误信息，或检查软件目录中是否包含 packages 文件夹以及所需的 VC201XRedist 可再发行组件包。 -->
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
   <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure1.png" alt="SensingCaptureV3 启动界面" style={{maxWidth: '100%', height:'auto', border: '1px solid #ddd'}} />
@@ -64,12 +64,12 @@ PANDA Serial PG2 遵循 USB-IF 定义的 UVC 协议规范，可即插即用（�
 
 <!-- ### 1.2 设备连接
 
-Connect the device according to Figure 2's connection diagram. Connect the camera to 1 路摄像头 port, which requires a CAM port cable, FT4222 port, and USB data cable.
+按照图 2 的连接示意图连接设备。将摄像头连接到 1 路摄像头端口，需要使用 CAM 端口线、FT4222 端口和 USB 数据线。
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png" alt="PANDA PG2 设备连接 Diagram" style={{maxWidth: '60%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png" alt="PANDA PG2 设备连接图" style={{maxWidth: '60%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
-    <strong>图 2：</strong> PANDA PG2 device connection diagram showing FT4222 port, camera connection port, USB data cable, and power interface
+    <strong>图 2：</strong> PANDA PG2 设备连接图，显示 FT4222 端口、摄像头连接端口、USB 数据线和电源接口
   </p>
 </div> -->
 
@@ -240,7 +240,7 @@ Connect the device according to Figure 2's connection diagram. Connect the camer
 
 #### 2.4.2 选择存储深度
 
-根据需求选择对应存储深度。目前支持 8bit 和 16bit 格式。96717F 的存储深度为 16bit，可查看产品规格、使用硬件配置页面，或参考 96717F DATASHEET。
+根据需求选择对应存储深度。目前支持 8bit 和 16bit 格式。96717F 的存储深度为 16bit，可查看产品规格、使用硬件配置页面，或参考 96717F 数据手册。
 
 #### 2.4.3 配置存储地址
 
@@ -477,6 +477,6 @@ sudo apt-get install i2c-tools
 
 <!-- ## 3. Adapter 摄像头 Models
 
-When the nearby adapter camera model is not supported, please log in to the official website to get the latest adapter information.
+如果当前适配器暂不支持对应摄像头型号，请登录官方网站获取最新适配信息。
 
 **Official Website:** https://www.sensing-world.com/USB_Converter/ -->

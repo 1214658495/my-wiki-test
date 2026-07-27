@@ -5,7 +5,7 @@ sidebar_position: 1
 # SENSING MIPI 摄像头解决方案概述
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera.png" alt="SENSING MIPI Camera"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera.png" alt="SENSING MIPI 摄像头"
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
@@ -68,7 +68,7 @@ SENSING 与索尼、安森美半导体（ONSEMI）等行业领先的图像传感
 
 ### SENSING MIPI 摄像头解决方案概述
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="SENSING MIPI Camera Solutions"
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="SENSING MIPI 摄像头解决方案"
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 <br />

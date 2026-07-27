@@ -8,7 +8,7 @@ hide_title: true
 
 <section className="humanoid-hero">
   <div className="humanoid-hero__content">
-    <p className="humanoid-eyebrow">SENSING ROBOTIC VISION</p>
+    <p className="humanoid-eyebrow">SENSING 机器人视觉</p>
     <h1>人形机器人参考设计<br /><span>视觉方案</span></h1>
     <p className="humanoid-hero__lead">
       森云智能为 Unitree H2 Plus 与 NVIDIA Isaac GR00T 人形机器人参考设计提供从头部到手部的多视角视觉感知能力。
@@ -99,7 +99,7 @@ hide_title: true
 
 <div className="humanoid-intro">
   <div>
-    <p className="humanoid-section-kicker">FROM REFERENCE DESIGN TO DEPLOYABLE VISION</p>
+    <p className="humanoid-section-kicker">从参考设计到可部署视觉方案</p>
     <h3>从实际参考设计，走向可复用的机器人视觉基座</h3>
   </div>
   <p>
@@ -118,20 +118,20 @@ Unitree H2 Plus 与 NVIDIA Isaac GR00T 人形机器人参考设计是本文介�
 <div className="humanoid-role-grid">
   <article className="humanoid-role-card">
     <span className="humanoid-role-card__index">01</span>
-    <p className="humanoid-role-card__label">ROBOT BODY</p>
+    <p className="humanoid-role-card__label">机器人本体</p>
     <h3>Unitree H2 Plus</h3>
     <p>提供新一代仿生人形机器人本体，以及头部、手部等关键视觉节点的载体。</p>
     <a href="https://www.unitree.com/cn/H2plus/" target="_blank" rel="noopener noreferrer">查看 Unitree 官方页面 →</a>
   </article>
   <article className="humanoid-role-card">
     <span className="humanoid-role-card__index">02</span>
-    <p className="humanoid-role-card__label">COMPUTE & SOFTWARE</p>
+    <p className="humanoid-role-card__label">计算与软件</p>
     <h3>Jetson Thor + Isaac GR00T</h3>
     <p>提供机载 AI 计算能力和开放软件栈，连接数据采集、训练、推理与真实部署。</p>
   </article>
   <article className="humanoid-role-card humanoid-role-card--accent">
     <span className="humanoid-role-card__index">03</span>
-    <p className="humanoid-role-card__label">VISUAL PERCEPTION</p>
+    <p className="humanoid-role-card__label">视觉感知</p>
     <h3>SENSING 森云智能</h3>
     <p>提供从头部到手部的相机模组、平台适配和视觉软件支持，构建多视角感知能力。</p>
     <a href="https://www.sensing-world.com/h-nd-121.html?fromMid=336" target="_blank" rel="noopener noreferrer">查看森云官方案例 →</a>
@@ -167,7 +167,7 @@ Unitree H2 Plus 与 NVIDIA Isaac GR00T 人形机器人参考设计是本文介�
 
 <section className="humanoid-platform">
   <div className="humanoid-platform__copy">
-    <p className="humanoid-section-kicker">SENSING VISION FOUNDATION</p>
+    <p className="humanoid-section-kicker">SENSING 视觉基础</p>
     <h3>面向客户复用的多摄像头视觉开发基座</h3>
     <p>森云智能提供以 Jetson AGX Thor、TRD1 G2A 和 GMSL2 摄像头模组为核心的开发配置，帮助机器人团队快速验证多视角感知链路。</p>
     <ul>

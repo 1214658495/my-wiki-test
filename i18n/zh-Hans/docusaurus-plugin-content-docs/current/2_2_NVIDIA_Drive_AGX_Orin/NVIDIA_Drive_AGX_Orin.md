@@ -34,7 +34,7 @@ import TabItem from '@theme/TabItem';
     - 输出格式：YUV422
     - 摄像头输入：摄像头×16 (GMSL2)
     - 支持多摄像头同步
-    - 操作系统：DRIVE OS Linux with Security Extension (Ubuntu) | QNX for Security
+    - 操作系统：带安全扩展的 DRIVE OS Linux（Ubuntu）| 安全版 QNX
     :::
   </div>
 </div>

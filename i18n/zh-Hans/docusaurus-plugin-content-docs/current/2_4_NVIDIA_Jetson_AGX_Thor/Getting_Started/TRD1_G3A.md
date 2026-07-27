@@ -8,7 +8,7 @@ sidebar_position: 2
 
 <div className="row">
   <div className="col col--12">
-    TRD1 G3A 是基于 NVIDIA Jetson AGX Thor Developer Kit 扩展的 GMSL3 相机接入方案，可在 Thor 平台上快速集成高分辨率 GMSL3 相机视频流。
+    TRD1 G3A 是基于 NVIDIA Jetson AGX Thor 开发套件 扩展的 GMSL3 相机接入方案，可在 Thor 平台上快速集成高分辨率 GMSL3 相机视频流。
   </div>
 </div>
 
@@ -28,7 +28,7 @@ sidebar_position: 2
     - 尺寸：L:243.12mm x W:112.4mm x H:56.88mm<br/>
     - 兼容相机类型：GMSL3/C-PHY<br/>
     - 最大支持相机数量：8*GMSL3<br/>
-    - SOC：NVIDIA Jetson T5000 Module<br/>
+    - SOC：NVIDIA Jetson T5000 模组<br/>
     - AI 算力：2070 TFLOPS<br/>
     - 内存：128 GB 256-bit LPDDR5X
   </div>
@@ -67,14 +67,14 @@ sidebar_position: 2
 
 | 相机组合 | 支持的相机数量 | 备注 |
 | --- | --- | --- |
-| Comb. 1 | 8*8MP/30FPS | / |
-| Comb. 2 | 4*12MP/30FPS | / |
-| Comb. 3 | 2*17MP/30FPS | / |
+| 组合 1 | 8*8MP/30FPS | / |
+| 组合 2 | 4*12MP/30FPS | / |
+| 组合 3 | 2*17MP/30FPS | / |
 
 :::note JetPack 版本
 TRD1 G3A 当前支持 NVIDIA Jetson AGX Thor 上的 **JetPack 7.0 / L4T R38.2.0**。
 
-更多信息请参考 [NVIDIA 官方 Jetson Download Center](https://developer.nvidia.com/embedded/jetpack-archive)。
+更多信息请参考 [NVIDIA 官方 Jetson 下载中心](https://developer.nvidia.com/embedded/jetpack-archive)。
 :::
 
 ### 硬件准备
@@ -84,11 +84,11 @@ TRD1 G3A 当前支持 NVIDIA Jetson AGX Thor 上的 **JetPack 7.0 / L4T R38.2.0*
 | 序号 | 产品型号 | 数量 | 备注 |
 | --- | --- | ---: | --- |
 | 1 | 945-14070-0080-000-MIPI | 1 | 最多支持 8 路相机 |
-| 2 | T4JC-JC-ZZZZ-0500L (Female to Female 0.5m) | 2 | 标准配置 |
-| 3 | Trigger Cable | 1 | 标准配置 |
-| 4 | Power Conversion Cable | 1 | 标准配置 |
-| 5 | Power adapter | 1 | 标准配置 |
-| 6 | Multi-functional conversion socket | 1 | 标准配置 |
+| 2 | T4JC-JC-ZZZZ-0500L (母头转母头 0.5m) | 2 | 标准配置 |
+| 3 | 触发线缆 | 1 | 标准配置 |
+| 4 | 电源转换线缆 | 1 | 标准配置 |
+| 5 | 电源适配器 | 1 | 标准配置 |
+| 6 | 多功能转换座 | 1 | 标准配置 |
 
 #### 套件内容
 
@@ -131,7 +131,7 @@ CAM 端口与设备节点的对应关系如下：
 
 | 相机类型 | JetPack 版本 | SDK下载链接 |
 | --- | --- | --- |
-| GMSL3 Camera (RAW) | JP7.0 / L4T R38.2.0 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G3A/TRD1_G3A_AGX_THOR_IMX715_IMX735_IMX577_AR2020C_JP7.0_L4TR38.2) |
+| GMSL3 摄像头 (RAW) | JP7.0 / L4T R38.2.0 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G3A/TRD1_G3A_AGX_THOR_IMX715_IMX735_IMX577_AR2020C_JP7.0_L4TR38.2) |
 
 :::tip 下载方法
 复制完整链接地址到 [DownGit](https://minhaskamal.github.io/DownGit/#/home) 下载。
@@ -139,4 +139,4 @@ CAM 端口与设备节点的对应关系如下：
 
 
 
-<!-- For details, please click [here](../../../FAQ/FAQ_jetson) -->
+<!-- 详情请点击[这里](../../../FAQ/FAQ_jetson) -->

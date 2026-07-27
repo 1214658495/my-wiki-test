@@ -9,7 +9,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 
 <div className="row">
   <div className="col col--12">
-    SHW5G（HFOV130°） 与 SHF5G（HFOV200°） 摄像头专为具身智能应用开发设计，使用5MP Global Shutter传感器，可用于人形机器人头部躯干等位置，面向具身智能应用中的机器人感知与识别场景。  
+    SHW5G（HFOV130°） 与 SHF5G（HFOV200°） 摄像头专为具身智能应用开发设计，使用5MP Global Shutter传感器，可用于人形机器人头部躯干等位置，面向具身智能应用中的机器人感知与识别场景。
     两者主要差异在镜头视场角：SHW5G 提供 130° HFOV，适合广角感知；SHF5G 提供 200° HFOV，适合超广角感知。除镜头选型表中列出的差异外，其余平台规格保持一致。
   </div>
 </div>
@@ -17,7 +17,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 
 <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}>
   <div style={{flex: '1 1 240px'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G.png?x-oss-process=image/format,webp" alt="SHW5G" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G.png?x-oss-process=image/format,webp" alt="SHW5G"
     style={{maxWidth: '30%', height:'auto'}} />
     <br />
     <p>SHW5G（HFOV130°）</p>
@@ -31,7 +31,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer"
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>立即购买</strong>
     </a>
@@ -143,7 +143,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 
 <!-- <div style={{display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', textAlign: 'center'}}> -->
   <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW5G" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G_Dimensions.png?x-oss-process=image/format,webp" alt="SHW5G"
     style={{maxWidth: '100%', height:'auto'}} />
     <p>【SHW5G（HFOV130°）】</p>
   </div>
@@ -157,7 +157,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 ### 硬件概览
 #### 框图
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHW5G_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW5G/SHW5G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHW5G_BlockDiagram"
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -223,7 +223,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 ## 摄像头使用
 ### 1. 适配 NVIDIA® Jetson™ 平台
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application"
     style={{maxWidth: '60%', height:'auto'}} />
     <p>SHW5G / SHF5G 摄像头连接到 NVIDIA Jetson AGX Orin</p>
 </div>
@@ -239,7 +239,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 :::
 
 <!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera"
     style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 
@@ -255,7 +255,7 @@ title: "SHW5G & SHF5G（5MP 全局曝光）"
 
 | 序号 | JetPack 版本 | 摄像头 | NVIDIA Jetson 设备 | 转接板 | 下载链接 |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SHW5G / SHF5G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHW5G / SHF5G |Jetson AGX Orin 开发套件 | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
 
 </div>
 
@@ -297,12 +297,12 @@ SENSING 将提供：
 
 ```c
 /* Example code for MAX9296 I2C initialization */
-#define MAX9296_I2C_ADDR 0x90 // 8-bit address
+#define MAX9296_I2C_ADDR 0x90 // 8 位地址
 
 int max9296_init() {
     // Initialize I2C bus
     i2c_init();
-    
+
     // disable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x00);
     delay_ms(100);
@@ -311,13 +311,13 @@ int max9296_init() {
 
     // Configure linkA and linkB settings for GMSL2 selection (default value)
     i2c_write(MAX9296_I2C_ADDR, 0x0006, 0xC0);
-    
+
     // Configure MIPI rate 1200Mbps
-    i2c_write(MAX9296_I2C_ADDR, 0x0320, 0x2C); 
-    
+    i2c_write(MAX9296_I2C_ADDR, 0x0320, 0x2C);
+
     // enable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x02);
-    
+
     return 0;
 }
 ```
@@ -327,19 +327,19 @@ int max9296_init() {
 ```c
 /* Example code for   initialization */
 
-#define MAX9295_I2C_ADDR 0x80 // 8-bit address
+#define MAX9295_I2C_ADDR 0x80 // 8 位地址
 
 int camera_init() {
     // Initialize deserializer first
     max9296_init();
-    
+
     // Reset ISP through MAX9295A
     i2c_write(0x80, 0x02BE, 0x10); // MFP0 high
-    // 
-    i2c_write(0x80, 0x0057, 0x12); 
-    i2c_write(0x80, 0x005B, 0x11); 
+    //
+    i2c_write(0x80, 0x0057, 0x12);
+    i2c_write(0x80, 0x005B, 0x11);
     //  Configure datatype  YUV422 8bit
-    i2c_write(0x80, 0x0318, 0x5E); 
+    i2c_write(0x80, 0x0318, 0x5E);
 
     //  camera trigger  MFP7  low to  high
     i2c_write(0x80, 0x02D3, 0x00); // MFP7 low
@@ -370,29 +370,29 @@ int main() {
         perror("Failed to open camera device");
         return -1;
     }
-    
+
     // Configure video capture format
     struct v4l2_format fmt = {0};
     fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     fmt.fmt.pix.width = 1920;
     fmt.fmt.pix.height = 1536;
     fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_UYVY;
-    
+
     if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
         perror("Failed to set format");
         close(fd);
         return -1;
     }
-    
+
     // Request and map buffers
     // ... (buffer setup code) ...
-    
+
     // Start streaming
     // ... (streaming code) ...
-    
+
     // Capture and process frames
     // ... (frame processing code) ...
-    
+
     // Cleanup
     close(fd);
     return 0;

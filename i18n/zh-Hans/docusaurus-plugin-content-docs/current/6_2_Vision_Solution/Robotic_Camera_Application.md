@@ -27,10 +27,10 @@ title: 机器人视觉解决方案
 ### 组件拓扑
 
 * **核心计算（SOC）**
-  * NVIDIA Jetson AGX Thor Developer Kit
+  * NVIDIA Jetson AGX Thor 开发套件
   * SENSING TRD1 G2A 载板（SG8-AGX-Thor-GMSL2）
 * **头部视觉**
-  * **Astra S56x：** 2 * 5MP 双目摄像头（Depth & VLA）
+  * **Astra S56x：** 2 * 5MP 双目摄像头（深度与 VLA）
   * **Astra S36（可选）：** 2 * 3MP 双目摄像头（备选深度方案）
   * **SHW3H：** 3MP HDR 60fps 单目摄像头
 * **手部视觉**
@@ -40,7 +40,7 @@ title: 机器人视觉解决方案
 
 | 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场 | 角色/位置 | 数量 | 文档 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56x** | 双目 | 2 * 5MP | 全局 | RAW | 130° | **头部**：Depth & VLA | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
+| **Astra S56x** | 双目 | 2 * 5MP | 全局 | RAW | 130° | **头部**：深度与 VLA | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56) |
 | **Astra S36**（可选） | 双目 | 2 * 3MP | 卷帘 | YUV | 120° | **头部**：备选深度方案 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Binocular_Camera/S36) |
 | **SHW3H** | 单目 | 3MP | 卷帘 | YUV | 120° | **头部**：HDR 60fps 单目摄像头 | 1 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H) |
 | **SHF3L** | 单目 | 3MP | 卷帘 | YUV | 190° | **手部**：HDR 30fps 单目摄像头 | 4 | [查看规格](https://wiki.sensing-world.com/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L) |
@@ -76,7 +76,7 @@ title: 机器人视觉解决方案
 
 | 摄像头类型 | JetPack 版本 | 下载链接 |
 |-------------|-----------------|---------------|
-| GMSL2 Camera (YUV) | JP7.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.0/TRD1_G2A_AGX_THOR_GMSL2x8_JP7.0_L4TR38.2) |
+| GMSL2 摄像头 (YUV) | JP7.0 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.0/TRD1_G2A_AGX_THOR_GMSL2x8_JP7.0_L4TR38.2) |
 
 :::tip 下载方法
 将完整链接复制到 [DownGit](https://minhaskamal.github.io/DownGit/#/home) 下载指定目录。

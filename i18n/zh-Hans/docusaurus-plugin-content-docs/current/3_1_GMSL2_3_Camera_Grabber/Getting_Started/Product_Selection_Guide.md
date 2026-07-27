@@ -80,44 +80,44 @@ title: 产品选型指南
     </div>
   </div>
 
-  <!-- ### 1.3 Target Applications & Use Cases
+  <!-- ### 1.3 目标应用 & Use Cases
 
   <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem'}}>
     <div style={{background: 'linear-gradient(135deg, #007bff15 0%, #007bff08 100%)', borderRadius: '12px', padding: '1.5rem', border: '2px solid #007bff20'}}>
       <h4 style={{color: '#007bff', marginBottom: '1rem', fontSize: '1.2em', fontWeight: '600'}}>🎯 CCG3-8H Ideal For:</h4>
       <div style={{fontSize: '1em', lineHeight: '1.6'}}>
-        <p><strong>1.3.1 High-Performance Applications:</strong></p>
+        <p><strong>1.3.1 高性能应用：</strong></p>
         <ul style={{marginLeft: '1rem', color: '#495057'}}>
-          <li>Enterprise autonomous vehicle testing (5+ cameras)</li>
-          <li>High-throughput data collection systems</li>
-          <li>Mission-critical surveillance with redundancy</li>
-          <li>Advanced ADAS development</li>
+          <li>企业级自动驾驶车辆测试（5 路以上摄像头）</li>
+          <li>高吞吐量数据采集系统</li>
+          <li>带冗余的关键任务监控</li>
+          <li>高级 ADAS 开发</li>
         </ul>
-        <p><strong>1.3.2 Target Markets:</strong></p>
+        <p><strong>1.3.2 目标市场：</strong></p>
         <ul style={{marginLeft: '1rem', color: '#495057'}}>
-          <li>Tier-1 automotive suppliers</li>
-          <li>Research institutions</li>
-          <li>Defense and aerospace</li>
-          <li>High-end robotics manufacturers</li>
+          <li>一级汽车供应商</li>
+          <li>科研机构</li>
+          <li>国防与航空航天</li>
+          <li>高端机器人制造商</li>
         </ul>
       </div>
     </div>
     <div style={{background: 'linear-gradient(135deg, #28a74515 0%, #28a74508 100%)', borderRadius: '12px', padding: '1.5rem', border: '2px solid #28a74520'}}>
       <h4 style={{color: '#28a745', marginBottom: '1rem', fontSize: '1.2em', fontWeight: '600'}}>🎯 CCG3-8M Ideal For:</h4>
       <div style={{fontSize: '1em', lineHeight: '1.6'}}>
-        <p><strong>1.3.1 Standard Applications:</strong></p>
+        <p><strong>1.3.1 标准应用：</strong></p>
         <ul style={{marginLeft: '1rem', color: '#495057'}}>
-          <li>Standard autonomous vehicle development</li>
-          <li>Professional video capture</li>
-          <li>Industrial automation systems</li>
-          <li>Educational and training systems</li>
+          <li>标准自动驾驶车辆开发</li>
+          <li>专业视频采集</li>
+          <li>工业自动化系统</li>
+          <li>教育与培训系统</li>
         </ul>
-        <p><strong>1.3.2 Target Markets:</strong></p>
+        <p><strong>1.3.2 目标市场：</strong></p>
         <ul style={{marginLeft: '1rem', color: '#495057'}}>
-          <li>Small to medium automotive companies</li>
-          <li>System integrators</li>
-          <li>Educational institutions</li>
-          <li>Professional service providers</li>
+          <li>中小型汽车企业</li>
+          <li>系统集成商</li>
+          <li>教育机构</li>
+          <li>专业服务提供商</li>
         </ul>
       </div>
     </div>
@@ -184,9 +184,9 @@ title: 产品选型指南
   </div>
 
   <!-- <div style={{background: 'linear-gradient(135deg, #17a2b8 0%, #138496 100%)', borderRadius: '12px', padding: '1.5rem', textAlign: 'center', color: '#fff'}}>
-    <h4 style={{marginBottom: '1rem', fontSize: '1.2em', fontWeight: '600'}}>💡 Need Help Choosing?</h4>
-    <p style={{marginBottom: '1rem', fontSize: '1em', opacity: 0.9}}>Our technical team can help you select the right solution based on your specific requirements</p>
-    <a href="https://sensing-world.com/en/contact/" target="_blank" rel="noopener noreferrer" style={{background: '#fff', color: '#17a2b8', padding: '0.75rem 2rem', borderRadius: '25px', textDecoration: 'none', fontWeight: '600', display: 'inline-block', transition: 'all 0.3s ease'}}>Contact 技术支持</a>
+    <h4 style={{marginBottom: '1rem', fontSize: '1.2em', fontWeight: '600'}}>💡 需要选型帮助？</h4>
+    <p style={{marginBottom: '1rem', fontSize: '1em', opacity: 0.9}}>我们的技术团队可以根据您的具体需求，帮助您选择合适的方案</p>
+    <a href="https://sensing-world.com/en/contact/" target="_blank" rel="noopener noreferrer" style={{background: '#fff', color: '#17a2b8', padding: '0.75rem 2rem', borderRadius: '25px', textDecoration: 'none', fontWeight: '600', display: 'inline-block', transition: 'all 0.3s ease'}}>联系技术支持</a>
   </div> -->
 
   ### 重要说明

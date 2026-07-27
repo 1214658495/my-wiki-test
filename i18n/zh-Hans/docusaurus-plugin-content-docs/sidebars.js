@@ -450,7 +450,7 @@ const sidebars = {
     "items": [
       {
         "type": "category",
-        "label": "Getting Started",
+        "label": "快速入门",
         "collapsed": true,
         "collapsible": true,
         "items": [

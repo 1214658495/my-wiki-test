@@ -31,7 +31,7 @@ title: "SHW3G & SHF3G（3MP 全局曝光）"
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-pd-295.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer"
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>立即购买</strong>
     </a>
@@ -98,7 +98,7 @@ title: "SHW3G & SHF3G（3MP 全局曝光）"
 ### 硬件概览
 #### 框图
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHW3G_BlockDiagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SHW3G/SHW3G_BlockDiagram.png?x-oss-process=image/format,webp" alt="SHW3G_BlockDiagram"
     style={{maxWidth: '90%', height:'auto'}} />
 </div>
 
@@ -106,10 +106,10 @@ title: "SHW3G & SHF3G（3MP 全局曝光）"
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-|  | 需要两路触发输入信号 | PWM 触发信号要求 | 摄像头串行器 GPIO ---> 传感器 GPIO | 备注 | 
+|  | 需要两路触发输入信号 | PWM 触发信号要求 | 摄像头串行器 GPIO ---> 传感器 GPIO | 备注 |
 |------|------|------|-----|----------------|
-| 1 | XVS 信号| 频率: 30 Hz, 占空比: 10% | MFP7 ---> XVS | 如果多台摄像头用于同步触发（即从模式），必须同时输入 XVS 和 XHS 触发信号，并满足相应要求，才能实现同步触发。 | 
-| 2 | XHS 信号| 频率: 83 kHz, 占空比: ≥ 90% | MFP3 ---> XHS | | 
+| 1 | XVS 信号| 频率: 30 Hz, 占空比: 10% | MFP7 ---> XVS | 如果多台摄像头用于同步触发（即从模式），必须同时输入 XVS 和 XHS 触发信号，并满足相应要求，才能实现同步触发。 |
+| 2 | XHS 信号| 频率: 83 kHz, 占空比: ≥ 90% | MFP3 ---> XHS | |
 
 </div>
 
@@ -179,7 +179,7 @@ title: "SHW3G & SHF3G（3MP 全局曝光）"
 ## 摄像头使用
 ### 1. 适配 NVIDIA® Jetson™ 平台
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/S56/S56_Application.jpg?x-oss-process=image/format,webp" alt="SHW5G_Application"
     style={{maxWidth: '60%', height:'auto'}} />
     <p>SHW3G / SHF3G 摄像头连接到 NVIDIA Jetson AGX Orin</p>
 </div>
@@ -195,7 +195,7 @@ title: "SHW3G & SHF3G（3MP 全局曝光）"
 :::
 
 <!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera"
     style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 
@@ -211,7 +211,7 @@ title: "SHW3G & SHF3G（3MP 全局曝光）"
 
 | 序号 | JetPack 版本 | 摄像头 | NVIDIA Jetson 设备 | 转接板 | 下载链接 |
 |-------------|-----------------|-------------|---------------|---------------|---------------|
-| 1 | JP6.2 | SHW3G / SHF3G |Jetson AGX Orin Developer Kit | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
+| 1 | JP6.2 | SHW3G / SHF3G |Jetson AGX Orin 开发套件 | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
 
 </div>
 
@@ -253,12 +253,12 @@ SENSING 将提供：
 
 ```c
 /* Example code for MAX9296 I2C initialization */
-#define MAX9296_I2C_ADDR 0x90 // 8-bit address
+#define MAX9296_I2C_ADDR 0x90 // 8 位地址
 
 int max9296_init() {
     // Initialize I2C bus
     i2c_init();
-    
+
     // disable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x00);
     delay_ms(100);
@@ -267,13 +267,13 @@ int max9296_init() {
 
     // Configure linkA and linkB settings for GMSL2 selection (default value)
     i2c_write(MAX9296_I2C_ADDR, 0x0006, 0xC0);
-    
+
     // Configure MIPI rate 1200Mbps
-    i2c_write(MAX9296_I2C_ADDR, 0x0320, 0x2C); 
-    
+    i2c_write(MAX9296_I2C_ADDR, 0x0320, 0x2C);
+
     // enable MIPI output
     i2c_write(MAX9296_I2C_ADDR, 0x0313, 0x02);
-    
+
     return 0;
 }
 ```
@@ -283,19 +283,19 @@ int max9296_init() {
 ```c
 /* Example code for   initialization */
 
-#define MAX9295_I2C_ADDR 0x80 // 8-bit address
+#define MAX9295_I2C_ADDR 0x80 // 8 位地址
 
 int camera_init() {
     // Initialize deserializer first
     max9296_init();
-    
+
     // Reset ISP through MAX9295A
     i2c_write(0x80, 0x02BE, 0x10); // MFP0 high
-    // 
-    i2c_write(0x80, 0x0057, 0x12); 
-    i2c_write(0x80, 0x005B, 0x11); 
+    //
+    i2c_write(0x80, 0x0057, 0x12);
+    i2c_write(0x80, 0x005B, 0x11);
     //  Configure datatype  YUV422 8bit
-    i2c_write(0x80, 0x0318, 0x5E); 
+    i2c_write(0x80, 0x0318, 0x5E);
 
     //  camera trigger  MFP7  low to  high
     i2c_write(0x80, 0x02D3, 0x00); // MFP7 low
@@ -326,29 +326,29 @@ int main() {
         perror("Failed to open camera device");
         return -1;
     }
-    
+
     // Configure video capture format
     struct v4l2_format fmt = {0};
     fmt.type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
     fmt.fmt.pix.width = 1920;
     fmt.fmt.pix.height = 1536;
     fmt.fmt.pix.pixelformat = V4L2_PIX_FMT_UYVY;
-    
+
     if (ioctl(fd, VIDIOC_S_FMT, &fmt) < 0) {
         perror("Failed to set format");
         close(fd);
         return -1;
     }
-    
+
     // Request and map buffers
     // ... (buffer setup code) ...
-    
+
     // Start streaming
     // ... (streaming code) ...
-    
+
     // Capture and process frames
     // ... (frame processing code) ...
-    
+
     // Cleanup
     close(fd);
     return 0;
