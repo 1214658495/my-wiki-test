@@ -48,7 +48,7 @@ hide_title: true
 <div className="humanoid-camera-grid">
   <article>
     <span>头部双目</span>
-    <h3>Astra S56x</h3>
+    <h3>Astra S56C</h3>
     <p>双 5MP · 全局曝光 · 10-bit RAW</p>
     <strong>立体视觉与 VLA 输入</strong>
     <a href="/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56">查看规格 →</a>
@@ -82,7 +82,7 @@ hide_title: true
 
 | 型号 | 类型 | 分辨率 | 曝光 | 数据格式 | 水平视场角 | 推荐角色 | 推荐数量 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56x** | 双目 | 双 5MP | 全局曝光 | 10-bit RAW | 130° / 140° 可选 | **头部**：立体视觉与 VLA 输入 | 1 |
+| **Astra S56C** | 双目 | 双 5MP | 全局曝光 | 10-bit RAW | 140° | **头部**：立体视觉与 VLA 输入 | 1 |
 | **Astra S36**（可选） | 双目 | 双 3MP | 卷帘曝光 | YUV422 | 120° | **头部**：HDR 双目视觉 | 1 |
 | **SHF3L** | 单目 | 3MP | 卷帘曝光 | YUV422 | 196° | **手部**：HDR 30fps 操作区域感知 | 最多 4 |
 | **SHW3H**（可选） | 单目 | 3MP | 卷帘曝光 | YUV422 | 118° | **手部**：HDR 60fps 操作区域感知 | 可选 |
@@ -91,7 +91,7 @@ hide_title: true
 
 :::note 配置说明
 - 上表是基于当前驱动与 TRD1 G2A 接口能力整理的开发推荐组合，不代表特定量产机器人的实际配置。
-- Astra S56x 与 Astra S36 是可按输出格式、曝光方式和应用需求选择的双目方案。
+- Astra S56C（Astra S56x 系列当前主推型号）与 Astra S36 是可按输出格式、曝光方式和应用需求选择的双目方案。
 - 实际摄像头数量和端口分配应根据机器人结构、带宽预算、供电条件及软件配置确定。
 :::
 

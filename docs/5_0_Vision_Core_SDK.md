@@ -28,7 +28,7 @@ Key capabilities include:
 - Camera intrinsic, stereo intrinsic, extrinsic, serial number, and firmware information access
 - ISP parameter control, including brightness, contrast, saturation, sharpness, denoise, exposure, gain, and white balance
 - OTA firmware upgrade and network license activation
-- IMU data acquisition for S56x cameras
+- IMU data acquisition for S56 and S56C cameras
 - Stereo depth API support for S36 cameras
 - Distortion correction based on camera intrinsic parameters
 - Frame capture, timestamp reading, sensor data frame access, and EBD data reading for supported cameras
@@ -59,7 +59,7 @@ sgMIX can be used through the GUI workflow or directly through the C++ API, depe
 | Edge platforms | NVIDIA Jetson AGX Orin, NVIDIA Jetson AGX Thor |
 | Camera systems | GMSL camera systems supported by the corresponding SDK and driver package |
 | Depth camera examples | S36 stereo camera depth workflows |
-| Sensor examples | S56x IMU data acquisition workflows |
+| Sensor examples | S56 / S56C IMU data acquisition workflows |
 | Build environment | CMake, build-essential, v4l-utils, NVIDIA JetPack |
 
 ## When to Use Each SDK
@@ -71,7 +71,7 @@ sgMIX can be used through the GUI workflow or directly through the C++ API, depe
 | Read camera intrinsic, extrinsic, SN, firmware, or EBD data | sgMIX |
 | Tune ISP parameters | sgMIX |
 | Perform OTA firmware upgrade | sgMIX |
-| Acquire IMU data from S56x | sgMIX |
+| Acquire IMU data from S56 / S56C | sgMIX |
 
 ## Documentation Entry Points
 

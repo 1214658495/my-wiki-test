@@ -48,7 +48,7 @@ SENSING provides composable GMSL2 camera modules for humanoid robot head percept
 <div className="humanoid-camera-grid">
   <article>
     <span>Head stereo</span>
-    <h3>Astra S56x</h3>
+    <h3>Astra S56C</h3>
     <p>Dual 5MP · Global shutter · 10-bit RAW</p>
     <strong>Stereo vision and VLA input</strong>
     <a href="/docs/6_1_Camera/Binocular_Camera/S56">View specs →</a>
@@ -82,7 +82,7 @@ SENSING provides composable GMSL2 camera modules for humanoid robot head percept
 
 | Model | Type | Resolution | Shutter | Data format | Horizontal FOV | Recommended role | Recommended quantity |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Astra S56x** | Stereo | Dual 5MP | Global shutter | 10-bit RAW | 130° / 140° options | **Head**: Stereo vision and VLA input | 1 |
+| **Astra S56C** | Stereo | Dual 5MP | Global shutter | 10-bit RAW | 140° | **Head**: Stereo vision and VLA input | 1 |
 | **Astra S36** (optional) | Stereo | Dual 3MP | Rolling shutter | YUV422 | 120° | **Head**: HDR stereo vision | 1 |
 | **SHF3L** | Monocular | 3MP | Rolling shutter | YUV422 | 196° | **Hand**: HDR 30fps operation-area perception | Up to 4 |
 | **SHW3H** (optional) | Monocular | 3MP | Rolling shutter | YUV422 | 118° | **Hand**: HDR 60fps operation-area perception | Optional |
@@ -91,7 +91,7 @@ SENSING provides composable GMSL2 camera modules for humanoid robot head percept
 
 :::note Configuration notes
 - The table above is a development recommendation based on the current driver and TRD1 G2A interface capability. It does not represent the actual configuration of any specific production robot.
-- Astra S56x and Astra S36 are stereo options that can be selected according to output format, shutter type, and application requirements.
+- Astra S56C, the current recommended model in the Astra S56x series, and Astra S36 are stereo options that can be selected according to output format, shutter type, and application requirements.
 - The actual camera count and port allocation should be determined by robot structure, bandwidth budget, power design, and software configuration.
 :::
 

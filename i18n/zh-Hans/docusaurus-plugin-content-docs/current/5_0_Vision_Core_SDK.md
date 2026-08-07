@@ -28,7 +28,7 @@ sgMIX 是面向 NVIDIA Jetson 平台的相机控制 SDK 和 GUI 工具集，用�
 - 读取相机内参、双目内参、外参、序列号和固件信息
 - ISP 参数控制，包括亮度、对比度、饱和度、锐度、降噪、曝光、增益和白平衡
 - OTA 固件升级与网络授权激活
-- S56x 相机 IMU 数据采集
+- S56 / S56C 相机 IMU 数据采集
 - S36 相机双目深度 API 支持
 - 基于相机内参的图像畸变校正
 - 图像帧采集、时间戳读取、传感器数据帧访问，以及部分相机的 EBD 数据读取
@@ -59,7 +59,7 @@ sgMIX 既可以通过 GUI 完成交互式配置，也可以通过 C++ API 集成
 | 边缘平台 | NVIDIA Jetson AGX Orin、NVIDIA Jetson AGX Thor |
 | 相机系统 | 对应 SDK 和驱动包支持的 GMSL 相机系统 |
 | 深度相机示例 | S36 双目深度流程 |
-| 传感器示例 | S56x IMU 数据采集流程 |
+| 传感器示例 | S56 / S56C IMU 数据采集流程 |
 | 构建环境 | CMake、build-essential、v4l-utils、NVIDIA JetPack |
 
 ## SDK 选择建议
@@ -71,7 +71,7 @@ sgMIX 既可以通过 GUI 完成交互式配置，也可以通过 C++ API 集成
 | 读取相机内参、外参、SN、固件或 EBD 数据 | sgMIX |
 | 调节 ISP 参数 | sgMIX |
 | 执行 OTA 固件升级 | sgMIX |
-| 获取 S56x 的 IMU 数据 | sgMIX |
+| 获取 S56 / S56C 的 IMU 数据 | sgMIX |
 
 ## 文档入口
 

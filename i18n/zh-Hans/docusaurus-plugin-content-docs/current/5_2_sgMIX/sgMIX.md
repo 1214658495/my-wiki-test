@@ -11,7 +11,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 - 图像控制
 - ISP 调优
 - OTA 固件升级
-- IMU 数据采集（S56x）
+- IMU 数据采集（S56 / S56C）
 - 双目深度估计（S36）
 - 图像畸变校正等功能。
 
@@ -341,7 +341,7 @@ bool SG_GetCameraWhiteBalance(int& wb_R, int& wb_G, int& wb_B, std::string& erro
 bool SG_SetCameraWhiteBalance(int wb_R, int wb_G, int wb_B, std::string& error);
 ```
 
-### IMU 控制（仅 S56x）
+### IMU 控制（仅 S56 / S56C）
 
 ```cpp
 /**
@@ -351,14 +351,14 @@ bool SG_InitImuAll(std::string& error);
 
 /**
  * @brief 开始流式传输 IMU 数据。
- * @note 仅支持 S56x 相机。
+ * @note 仅支持 S56 和 S56C 相机。
  */
 bool SG_StartImuStream(std::string& error);
 
 /**
  * @brief 获取最新的 IMU 数据。
  * @param imu_data 输出用于存储 IMU 数据的结构体。
- * @note 仅支持 S56x 相机。
+ * @note 仅支持 S56 和 S56C 相机。
  */
 bool SG_GetImuData(IMUData& imu_data, std::string& error);
 ```
