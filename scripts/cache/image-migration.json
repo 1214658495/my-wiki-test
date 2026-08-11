@@ -1,0 +1,732 @@
+{
+  "generatedAt": "2026-08-11T03:38:55.728Z",
+  "totalReferences": 113,
+  "totalAssets": 34,
+  "assets": [
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png",
+      "ossPath": "wiki-images/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png",
+      "refs": [
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 102
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 100
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png",
+      "ossPath": "wiki-images/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png",
+      "refs": [
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 228
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 226
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png",
+      "ossPath": "wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png",
+      "refs": [
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 119
+        },
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 127
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 117
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 125
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png",
+      "ossPath": "wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png",
+      "refs": [
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 120
+        },
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 128
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 118
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 126
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png",
+      "ossPath": "wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png",
+      "refs": [
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 121
+        },
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 129
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 119
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 127
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_AGV_Application.png",
+      "ossPath": "wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_AGV_Application.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_AGV_Application.png",
+      "refs": [
+        {
+          "file": "docs/3_2_GMSL2_Camera_Repeater/Application.md",
+          "line": 41
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_2_GMSL2_Camera_Repeater/Application.md",
+          "line": 41
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Infrastructure_Application.png",
+      "ossPath": "wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Infrastructure_Application.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_2_GMSL2_Camera_Repeater/GMSL2_Camera_Repeater_Infrastructure_Application.png",
+      "refs": [
+        {
+          "file": "docs/3_2_GMSL2_Camera_Repeater/Application.md",
+          "line": 64
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_2_GMSL2_Camera_Repeater/Application.md",
+          "line": 64
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png",
+      "ossPath": "wiki-images/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png",
+      "refs": [
+        {
+          "file": "docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 46
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 46
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/automotive_applications.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/automotive_applications.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/automotive_applications.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 295
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 295
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/defogging_overview.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/defogging_overview.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/defogging_overview.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 15
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 15
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/environmental_response.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/environmental_response.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/environmental_response.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 113
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 113
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/installation_diagram.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/installation_diagram.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/installation_diagram.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 321
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 321
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/ml_integration.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/ml_integration.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/ml_integration.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 414
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 414
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/signal_flow_diagram.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/signal_flow_diagram.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/signal_flow_diagram.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 196
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 196
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_12_Automatic_Defogging_Camera/system_architecture.png",
+      "ossPath": "wiki-images/Camera/1_12_Automatic_Defogging_Camera/system_architecture.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_12_Automatic_Defogging_Camera/system_architecture.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 179
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application.md",
+          "line": 179
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png",
+      "ossPath": "wiki-images/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png",
+      "refs": [
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx.md",
+          "line": 188
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx.md",
+          "line": 188
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png",
+      "ossPath": "wiki-images/Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png",
+      "refs": [
+        {
+          "file": "docs/1_7_Event_Based_Camera/SE1-S4-USB.md",
+          "line": 134
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_7_Event_Based_Camera/SE1-S4-USB.md",
+          "line": 134
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/SE1-S4-USB_Block_Diagram.png",
+      "ossPath": "wiki-images/Camera/1_7_Event_Based_Camera/SE1-S4-USB_Block_Diagram.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/1_7_Event_Based_Camera/SE1-S4-USB_Block_Diagram.png",
+      "refs": [
+        {
+          "file": "docs/1_7_Event_Based_Camera/SE1-S4-USB.md",
+          "line": 94
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_7_Event_Based_Camera/SE1-S4-USB.md",
+          "line": 94
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png",
+      "ossPath": "wiki-images/Camera/Camera_SOC_connect.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/Camera_SOC_connect.png",
+      "refs": [
+        {
+          "file": "docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 57
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 57
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Installation/Camera_Module_Installation_Guidance_en.pdf",
+      "ossPath": "wiki-images/Camera/Installation/Camera_Module_Installation_Guidance_en.pdf",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/Installation/Camera_Module_Installation_Guidance_en.pdf",
+      "refs": [
+        {
+          "file": "docs/1_1_Serdes_Camera/FPDLINK_Camera/Getting_Started/Installation_Instruction.md",
+          "line": 35
+        },
+        {
+          "file": "docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Installation_Instruction.md",
+          "line": 35
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_1_Serdes_Camera/FPDLINK_Camera/Getting_Started/Installation_Instruction.md",
+          "line": 35
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Installation_Instruction.md",
+          "line": 35
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png",
+      "ossPath": "wiki-images/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png",
+      "refs": [
+        {
+          "file": "docs/1_11_Cockpit_Camera/DMS_Camera/DMSBBFAN.md",
+          "line": 259
+        },
+        {
+          "file": "docs/1_11_Cockpit_Camera/OMS_Camera/OMSBDAAN.md",
+          "line": 321
+        },
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 297
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_11_Cockpit_Camera/DMS_Camera/DMSBBFAN.md",
+          "line": 259
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_11_Cockpit_Camera/OMS_Camera/OMSBDAAN.md",
+          "line": 321
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 295
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png",
+      "ossPath": "wiki-images/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png",
+      "refs": [
+        {
+          "file": "docs/1_2_MIPI_CSI-2_Camera/SG20-IMX283C-MIPI.md",
+          "line": 123
+        },
+        {
+          "file": "docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG20-IMX283C-MIPI.md",
+          "line": 123
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_2_MIPI_CSI-2_Camera/SG20-IMX283C-MIPI.md",
+          "line": 123
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG20-IMX283C-MIPI.md",
+          "line": 123
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png",
+      "ossPath": "wiki-images/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png",
+      "refs": [
+        {
+          "file": "docs/1_11_Cockpit_Camera/DMS_Camera/DMSBBFAN.md",
+          "line": 226
+        },
+        {
+          "file": "docs/1_11_Cockpit_Camera/OMS_Camera/OMSBDAAN.md",
+          "line": 287
+        },
+        {
+          "file": "docs/1_12_Automatic_Defogging_Camera/RedFox-D3Gx.md",
+          "line": 204
+        },
+        {
+          "file": "docs/1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A.md",
+          "line": 165
+        },
+        {
+          "file": "docs/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A.md",
+          "line": 157
+        },
+        {
+          "file": "docs/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD.md",
+          "line": 152
+        },
+        {
+          "file": "docs/6_1_Camera/Binocular_Camera/S36.md",
+          "line": 202
+        },
+        {
+          "file": "docs/6_1_Camera/Binocular_Camera/S56.md",
+          "line": 218
+        },
+        {
+          "file": "docs/6_1_Camera/Monocular_Camera/M3A.md",
+          "line": 171
+        },
+        {
+          "file": "docs/6_1_Camera/Monocular_Camera/SHF3L.md",
+          "line": 173
+        },
+        {
+          "file": "docs/6_1_Camera/Monocular_Camera/SHW3G_SHF3G.md",
+          "line": 202
+        },
+        {
+          "file": "docs/6_1_Camera/Monocular_Camera/SHW3H.md",
+          "line": 173
+        },
+        {
+          "file": "docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G.md",
+          "line": 246
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_11_Cockpit_Camera/DMS_Camera/DMSBBFAN.md",
+          "line": 226
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_11_Cockpit_Camera/OMS_Camera/OMSBDAAN.md",
+          "line": 287
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_12_Automatic_Defogging_Camera/RedFox-D3Gx.md",
+          "line": 204
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A.md",
+          "line": 165
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A.md",
+          "line": 157
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD.md",
+          "line": 152
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Binocular_Camera/S36.md",
+          "line": 194
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Binocular_Camera/S56.md",
+          "line": 213
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Monocular_Camera/M3A.md",
+          "line": 166
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Monocular_Camera/SHF3L.md",
+          "line": 168
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Monocular_Camera/SHW3G_SHF3G.md",
+          "line": 198
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Monocular_Camera/SHW3H.md",
+          "line": 168
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Monocular_Camera/SHW5G_SHF5G.md",
+          "line": 242
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Application.png",
+      "ossPath": "wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Application.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Application.png",
+      "refs": [
+        {
+          "file": "docs/3_4_GMSL_Video_Injection_Card/Application/CIG4-8H_Application.md",
+          "line": 74
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_4_GMSL_Video_Injection_Card/Application/CIG4-8H_Application.md",
+          "line": 74
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png",
+      "ossPath": "wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png",
+      "refs": [
+        {
+          "file": "docs/3_5_PANDA/Getting_Started/PANDA.md",
+          "line": 93
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_5_PANDA/Getting_Started/PANDA.md",
+          "line": 93
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png",
+      "ossPath": "wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H_Software_Diagram.png",
+      "refs": [
+        {
+          "file": "docs/3_5_PANDA/Getting_Started/PANDA.md",
+          "line": 216
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_5_PANDA/Getting_Started/PANDA.md",
+          "line": 216
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png",
+      "ossPath": "wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png",
+      "refs": [
+        {
+          "file": "docs/3_4_GMSL_Video_Injection_Card/Getting_Started/Product_Selection_Guide.md",
+          "line": 69
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_4_GMSL_Video_Injection_Card/Getting_Started/Product_Selection_Guide.md",
+          "line": 69
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png",
+      "ossPath": "wiki-images/Data_collection/3_5_PANDA/Aplication/figure2.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Data_collection/3_5_PANDA/Aplication/figure2.png",
+      "refs": [
+        {
+          "file": "docs/3_5_PANDA/Application/PANDA_Application.md",
+          "line": 70
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/3_5_PANDA/Application/PANDA_Application.md",
+          "line": 70
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png",
+      "ossPath": "wiki-images/Data_collection/CCG3-8H/CCG3-8H_useGround3.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Data_collection/CCG3-8H/CCG3-8H_useGround3.png",
+      "refs": [
+        {
+          "file": "docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 35
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 35
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Embedded_Vision/embedded_vision_banner.png",
+      "ossPath": "wiki-images/Embedded_Vision/embedded_vision_banner.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Embedded_Vision/embedded_vision_banner.png",
+      "refs": [
+        {
+          "file": "docs/intro.md",
+          "line": 10
+        }
+      ],
+      "status": "dead"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png",
+      "ossPath": "wiki-images/Nvidia_jetson/nvidia_jetson_agx_orin.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Nvidia_jetson/nvidia_jetson_agx_orin.png",
+      "refs": [
+        {
+          "file": "docs/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 24
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/1_1_Serdes_Camera/GMSL_Camera/Getting_Started/Employing_Camera.md",
+          "line": 24
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png",
+      "ossPath": "wiki-images/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png",
+      "refs": [
+        {
+          "file": "docs/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B.md",
+          "line": 88
+        },
+        {
+          "file": "docs/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A.md",
+          "line": 88
+        },
+        {
+          "file": "docs/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 92
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B.md",
+          "line": 88
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A.md",
+          "line": 88
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM.md",
+          "line": 90
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SENSING_SG8A-ORIN-GMSL2_adapter_board_use_FAQ.pdf",
+      "ossPath": "wiki-images/Nvidia_jetson/SG8A-ORIN-GMSL2/SENSING_SG8A-ORIN-GMSL2_adapter_board_use_FAQ.pdf",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Nvidia_jetson/SG8A-ORIN-GMSL2/SENSING_SG8A-ORIN-GMSL2_adapter_board_use_FAQ.pdf",
+      "refs": [
+        {
+          "file": "docs/2_1_NVIDIA_Jetson/FAQ/FAQ_jetson.md",
+          "line": 24
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_1_NVIDIA_Jetson/FAQ/FAQ_jetson.md",
+          "line": 24
+        }
+      ],
+      "status": "ok"
+    },
+    {
+      "sourceUrl": "https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png",
+      "ossPath": "wiki-images/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png",
+      "targetUrl": "https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png",
+      "refs": [
+        {
+          "file": "docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1.md",
+          "line": 307
+        },
+        {
+          "file": "docs/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B.md",
+          "line": 195
+        },
+        {
+          "file": "docs/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A.md",
+          "line": 196
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1.md",
+          "line": 307
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B.md",
+          "line": 195
+        },
+        {
+          "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A.md",
+          "line": 196
+        }
+      ],
+      "status": "ok"
+    }
+  ],
+  "deadAssets": 11
+}

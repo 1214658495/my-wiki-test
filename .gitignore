@@ -8,6 +8,9 @@
 .docusaurus
 .cache-loader
 
+# 图片迁移的本地暂存目录(scripts/migrate-images.js --fetch 的产物)
+.image-migration
+
 # Misc
 .DS_Store
 .vscode/
