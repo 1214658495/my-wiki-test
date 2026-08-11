@@ -262,15 +262,6 @@ const sidebars = {
                   "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1",
                   "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2"
                 ]
-              },
-              {
-                "type": "category",
-                "label": "AI Box",
-                "collapsed": true,
-                "collapsible": true,
-                "items": [
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/AI_Box/congratulations"
-                ]
               }
             ]
           },
@@ -312,7 +303,7 @@ const sidebars = {
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_1_NVIDIA_Jetson/Application/How toBuild 8 - 12 - cam computing for robot proto"
+          "2_1_NVIDIA_Jetson/Application/How_to_Build_8_12_Cam_Computing_for_Robot_Proto"
         ]
       },
       {
@@ -345,24 +336,6 @@ const sidebars = {
           "2_2_NVIDIA_Drive_AGX_Orin/Getting_Started/GMSL2_Camera_YUV_for_Developer_Kit",
           "2_2_NVIDIA_Drive_AGX_Orin/Getting_Started/GMSL2_Camera_RAW_for_Developer_Kit"
         ]
-      },
-      {
-        "type": "category",
-        "label": "Application",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_2_NVIDIA_Drive_AGX_Orin/Application/congratulations"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "FAQ",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_2_NVIDIA_Drive_AGX_Orin/FAQ/congratulations"
-        ]
       }
     ],
     "link": {
@@ -386,24 +359,6 @@ const sidebars = {
           "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G3A",
           "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B"
         ]
-      },
-      {
-        "type": "category",
-        "label": "Application",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_4_NVIDIA_Jetson_AGX_Thor/Application/congratulations"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "FAQ",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_4_NVIDIA_Jetson_AGX_Thor/FAQ/congratulations"
-        ]
       }
     ]
   },
@@ -420,24 +375,6 @@ const sidebars = {
         "collapsible": true,
         "items": [
           "2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "Application",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_5_NVIDIA_Holoscan_Sensor_Bridge/Application/congratulations"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "FAQ",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_5_NVIDIA_Holoscan_Sensor_Bridge/FAQ/congratulations"
         ]
       }
     ]

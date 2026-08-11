@@ -6,7 +6,8 @@
 
 - 类型: Docusaurus 3.7 静态文档站, 中英文双语
 - 站点名: `SENSING WIKI`, 生产域名 `wiki.sensing-world.com`(见 `static/CNAME`)
-- 部署: GitHub Pages, 由 `.github/workflows/deploy.yml` 在 push 到 `main` 时执行 `yarn deploy`
+- 部署: GitHub Pages, 由 `.github/workflows/deploy.yml` 在 push 到 `main` 时构建并经
+  `upload-pages-artifact` + `deploy-pages`(OIDC)发布; **不走 `yarn deploy`/gh-pages 分支**
 - 语言: 默认 `en`, 本地化 `zh-Hans`; 中文路径前缀 `/zh-Hans/`
 - 运行要求: Node `>=18.0`, 使用 `yarn`(仓库带 `yarn.lock`)
 - 无单元测试, 验证依赖 build + serve + 浏览器交互
@@ -15,9 +16,10 @@
 
 - 框架: `@docusaurus/core` 3.7.0 + `@docusaurus/preset-classic` 3.7.0
 - React 19, MDX 3
-- 搜索: `docusaurus-theme-search-typesense` + Typesense DocSearch scraper
+- 搜索: `@easyops-cn/docusaurus-search-local`, 构建期生成本地索引, 无服务器无密钥;
+  中文分词由其自带的 `@node-rs/jieba` 提供, `language` 必须同时含 `en` 和 `zh`
 - AI 集成: `@coze/api`, `jsonwebtoken`(Coze 聊天会话签名)
-- 数据/交互: `papaparse`(解析 OSS CSV), `resend`(邮件), `typesense`(搜索客户端)
+- 数据/交互: `papaparse`(解析 OSS CSV), `resend`(邮件)
 - 统计: footer 注入 `busuanzi.min.js`
 
 ## 三. 目录结构
@@ -38,11 +40,9 @@
 │   ├── components/
 │   │   ├── WikiHome/              # 首页内容, PAGE_CONTENT 同时维护 en / zh-Hans
 │   │   ├── DownloadCenter.js      # 资源页主组件, OSS CSV + lead API + SN 内参
-│   │   ├── AIHomePanel/           # Wiki AI 聊天面板, 调 Coze
-│   │   └── HomepageFeatures/      # 备用 feature 卡组件
+│   │   └── AIHomePanel/           # Wiki AI 聊天面板, 调 Coze
 │   ├── pages/
-│   │   ├── index.js               # 根路径按 locale 重定向
-│   │   └── ai-home.js             # Wiki AI 着陆页
+│   │   └── index.js               # 根路径按 locale 重定向
 │   ├── theme/
 │   │   └── DocSidebarItem/Category/  # swizzle 自定义 linked category 行为
 │   └── css/custom.css             # 站点样式, 品牌色, 导航图标
@@ -52,13 +52,16 @@
 │   └── coze.js                    # 签发 Coze 会话 JWT
 ├── scripts/
 │   ├── translate-sync.js          # 中文翻译同步, 调 OpenAI GPT-4o
-│   └── cache/file_hashes.json     # 翻译同步源文件哈希缓存
+│   ├── product-visibility.cjs     # 读 _category_.json 的 customProps.hidden,
+│   │                              # 产出 docs 插件的 exclude 模式(被 config 引用)
+│   ├── migrate-images.js          # 图片迁离个人 GitHub 仓库到公司 OSS
+│   └── cache/
+│       ├── file_hashes.json       # 翻译同步源文件哈希缓存
+│       └── image-migration.json   # 图片迁移清单(migrate-images.js 产物)
 ├── .github/workflows/deploy.yml   # GitHub Pages 部署
 ├── generate-sidebar.js            # 侧边栏生成主程序, 输出两份 sidebars.js
-├── docusaurus.config.js           # 站点, 导航, i18n, 主题配置
+├── docusaurus.config.js           # 站点, 导航, i18n, 搜索, 主题配置
 ├── sidebars.js                    # 英文侧边栏(生成产物)
-├── typesense-scraper-config.json  # 搜索索引爬虫配置
-├── .env.docsearch                 # Typesense scraper 凭据
 └── package.json
 ```
 
@@ -88,10 +91,7 @@ yarn build
 # 构建后预览(验证 en / zh-Hans 上线效果)
 yarn serve
 
-# 部署到 GitHub Pages(CI 自动执行, 一般不本地跑)
-yarn deploy
-
-# 重新生成英文和中文侧边栏
+# 重新生成英文和中文侧边栏(等价于 yarn sidebar)
 node generate-sidebar.js
 
 # 只看中文需要同步的源文件, 不写盘
@@ -104,9 +104,10 @@ node scripts/translate-sync.js
 node --check generate-sidebar.js
 node --check scripts/translate-sync.js
 node --check src/pages/index.js
+node --check scripts/migrate-images.js
 
-# 搜索索引爬虫(容器, 需要 .env.docsearch)
-yarn typesense-docsearch-scraper
+# 图片迁移(详见脚本顶部注释, 上传步骤需自备 OSS 凭据)
+node scripts/migrate-images.js --scan
 ```
 
 无 `*.test.*` / `*.spec.*` 文件, 也没有 lint/typecheck 脚本. 主要验证手段是 `yarn build` + `yarn serve` + 浏览器交互检查.
@@ -153,11 +154,19 @@ yarn typesense-docsearch-scraper
 | --- | --- | --- |
 | `OPENAI_API_KEY` | 调用 GPT-4o 翻译中文 | `scripts/translate-sync.js` |
 | `COZE_CLIENT_ID` / `COZE_KEY_ID` / `COZE_PRIVATE_KEY` | 生成 Coze 会话 JWT | `api/coze.js` |
-| 飞书多维表 + Resend 凭据 | 下载登记后端 | `api/lead.js` |
-| `TYPESENSE_API_KEY` / `TYPESENSE_HOST` / `TYPESENSE_PORT` / `TYPESENSE_PROTOCOL` | 搜索 scraper 索引 | `.env.docsearch`(仅 scraper 容器使用) |
-| GitHub Actions `GH_PAGES_DEPLOY` | 部署 SSH key | `.github/workflows/deploy.yml` |
+| `RESEND_API_KEY` | 发线索通知邮件 | `api/lead.js` |
+| `FEISHU_APP_ID` / `FEISHU_APP_SECRET` / `FEISHU_BITABLE_ID` / `FEISHU_TABLE_ID` | 写飞书多维表 | `api/lead.js` |
+| `SALES_EMAIL` / `LEAD_MAIL_FROM` | 线索通知收件人 / 发件人 | `api/lead.js` |
 
-`.env.local`, `.env.development.local` 等已被 `.gitignore` 忽略, **不要把真实密钥提交进 Git**.
+`api/` 两个函数部署在 `ai-api.sensing-world.com`(独立于本仓库的 GitHub Pages 部署),
+上述变量需在该部署平台配置, 缺失时接口直接返回 500.
+
+站内搜索为构建期本地索引, **不需要任何密钥或外部服务**.
+
+`.env`, `.env.local`, `.env.development.local` 等已被 `.gitignore` 忽略,
+**不要把真实密钥提交进 Git**——`api/lead.js` 曾因硬编码密钥导致 Resend key
+与飞书 app secret 泄露进 git 历史. 代码已改为读环境变量, 但**旧密钥仍留在
+git 历史中**, 必须在 Resend 与飞书后台作废重签才算真正解除风险.
 
 ## 八. 外部依赖速查
 

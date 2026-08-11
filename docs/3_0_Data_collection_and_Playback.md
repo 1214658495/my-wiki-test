@@ -54,7 +54,7 @@ title: Data Collection and Simulation
 
 The Camera Grabber enables high-speed video capture from GMSL/GMSL2 cameras for data collection, testing, and development.
 
-**[Learn more about GMSL Camera Grabber →](/docs/3_1_GMSL2_3_Camera_Grabber/Getting_Started/CCG3-8H.md)**
+**[Learn more about GMSL Camera Grabber →](/docs/3_1_GMSL2_3_Camera_Grabber/Getting_Started/CCG3-8H)**
 
 ### GMSL2 Camera Repeater
 
@@ -72,7 +72,7 @@ Distributes a single GMSL2 camera feed to multiple processing units while mainta
 
 Enables simulation  of pre-recorded video into automotive vision systems for testing and validation purposes.
 
-**[Learn about Video Injection →](/docs/3_4_GMSL_Video_Injection_Card/Getting_Started/CIG4-8H.md)**
+**[Learn about Video Injection →](/docs/3_4_GMSL_Video_Injection_Card/Getting_Started/CIG4-8H)**
 
 ## Implementation Guide
 
