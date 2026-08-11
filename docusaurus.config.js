@@ -71,6 +71,24 @@ const config = {
     ],
   ],
 
+  // 站内搜索：构建期生成本地索引，无需外部服务或密钥。
+  // language 必须同时包含 en 和 zh，否则中文站搜中文词无结果。
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        language: ['en', 'zh'],
+        indexBlog: false,
+        docsRouteBasePath: '/docs',
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        searchResultContextMaxLength: 60,
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
