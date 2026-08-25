@@ -257,7 +257,7 @@ This method is particularly useful when you only need the SDK files without the 
 </div> -->
 
 :::tip Download Assistance
-If you encounter any issues downloading the SDK or need access to older versions, please contact our technical support team at [support@sensing-world.com](mailto:support@sensing-world.com) or visit our [GitHub repository](https://github.com/SENSING-Technology/CIG4-8H) for the latest releases.
+If you encounter any issues downloading the SDK or need access to older versions, please contact our technical support team at [support@sensing-world.com](mailto:support@sensing-world.com) or visit our [GitHub repository](https://github.com/SENSING-Technology) for the latest releases.
 :::
 
 ---

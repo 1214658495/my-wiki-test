@@ -257,7 +257,7 @@ SENSING 可根据你的硬件在环测试需求，提供摄像头、GMSL 视频�
 </div> -->
 
 :::tip 下载帮助
-如果下载 SDK 时遇到问题，或需要获取旧版本，请联系技术支持团队 [support@sensing-world.com](mailto:support@sensing-world.com)，或访问 [GitHub 仓库](https://github.com/SENSING-Technology/CIG4-8H) 获取最新版本。
+如果下载 SDK 时遇到问题，或需要获取旧版本，请联系技术支持团队 [support@sensing-world.com](mailto:support@sensing-world.com)，或访问 [GitHub 仓库](https://github.com/SENSING-Technology) 获取最新版本。
 :::
 
 ---

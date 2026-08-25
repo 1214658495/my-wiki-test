@@ -190,7 +190,7 @@ sidebar_position: 2
 | SG5-OX05BC-4000-GMSL2-Hxxx | YUV422 | - | - | - |
 | SG8S-AR0820C-5300-G2A-Hxxx | YUV422 | ✅ | ✅ | ✅ |
 | SG8-OX08BC-5300-GMSL2-Hxxx | YUV422 | ✅ | ✅ | ✅ |
-| DMSBBFAN | YUV422 | - | - | - |
+| DMSBBFAN | YUV422 | - | - | ✅ |
 | SG3S-IMX623C-G2F-Hxxx | RAW12 | - | - | - |
 | SG8-IMX728C-G2G-Hxxx | RAW12 | - | - | - |
 
