@@ -1,8 +1,15 @@
 ---
 sidebar_position: 4
+sidebar_label: SG12-IMX577C-MIPI（已下架）
 ---
 
 # SG12-IMX577C-MIPI 摄像头
+
+:::warning 产品已下架（停止销售）
+**SG12-IMX577C-MIPI 已下架，不再对外销售。** 官网产品页面已下线，因此本页不再提供购买链接。
+
+本文档继续保留，作为存量用户的技术支持资料。如需新项目选型或替代型号建议，请联系 SENSING 技术支持。
+:::
 
 ## 概述
 
@@ -15,14 +22,6 @@ sidebar_position: 4
 <div style={{textAlign: 'center'}}>
  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031.png" alt="SG12-IMX577C-MIPI"
  style={{maxWidth: '30%', height:'auto'}} />
-</div>
-<br />
-
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <a href="https://sensing-world.com/en/h-pd-41.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer"
- style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
- <strong style={{color: '#000000', fontSize: '1.2em'}}>立即购买</strong>
- </a>
 </div>
 
 ## 技术规格

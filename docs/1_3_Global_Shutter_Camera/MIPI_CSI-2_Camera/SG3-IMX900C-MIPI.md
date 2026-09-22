@@ -1,8 +1,15 @@
 ---
 sidebar_position: 1
+sidebar_label: SG3-IMX900C-MIPI (Discontinued)
 ---
 
 # SG3-IMX900C-MIPI Camera
+
+:::warning Product Discontinued (EOL)
+**SG3-IMX900C-MIPI has been discontinued and is no longer available for purchase.** Its product page has been taken down from the SENSING website, so purchase links are no longer provided here.
+
+This documentation stays online as technical reference for existing deployments. For new designs or replacement recommendations, please contact SENSING technical support.
+:::
 
 ## Overview
 
@@ -15,14 +22,6 @@ sidebar_position: 1
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031.png" alt="SG3-IMX900C-MIPI" 
     style={{maxWidth: '30%', height:'auto'}} />
-</div>
-<br />
-
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-229.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer" 
-       style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
-        <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
-    </a>
 </div>
 
 ## Technical Specifications
@@ -128,6 +127,51 @@ sidebar_position: 1
 | 30 | VCC-3.3V      | POWER           | 3.3V Power Supply |
 
 </div>
+
+### Frame Sync (Fsync)
+
+The SG3-IMX900C-MIPI supports external frame synchronization. The host drives the sync pins on the FPC connector directly; the signal requirements are listed below.
+
+#### Sync Signal Requirements
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| # | Signal | Connector Pin | PWM Trigger Requirement | Description |
+|---|--------|---------------|-------------------------|-------------|
+| 1 | XVS | Pin 6 (I/O, 1.8V) | Frequency: 30 Hz, Duty cycle: 10% | Vertical (frame) sync. The XVS period determines the frame period; 30 Hz corresponds to the 30 fps maximum frame rate of this module. |
+| 2 | XHS | Pin 5 (I/O, 1.8V) | Frequency: 83 kHz, Duty cycle: >= 90% | Horizontal (line) sync. |
+
+</div>
+
+:::warning Both signals are required
+For synchronized triggering (slave mode), XVS and XHS must be supplied at the same time and both must meet the requirements above. Supplying only one of them will not give a synchronized frame output.
+:::
+
+#### Master and Slave Mode
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| Mode | XVS / XHS direction | Typical use |
+|------|---------------------|-------------|
+| Master | Output from the camera module | Single camera, or the module acts as the sync source of the system |
+| Slave | Input to the camera module | Multi-camera synchronized capture, or synchronization with an external trigger source |
+
+</div>
+
+As listed in the connector pin definitions above, XHS (Pin 5) and XVS (Pin 6) are the sync signals the module outputs in master mode; in slave mode the same pins are driven by the host SoC.
+
+#### Multi-Camera Synchronization
+
+:::note Wiring Guidelines
+1. Generate one pair of XVS / XHS signals on the host side and fan them out to every camera, so that all modules share the same trigger edge.
+2. Keep the sync signals at 1.8V logic level to match the pin definitions. Add level shifting if the host GPIO is 3.3V.
+3. Keep the sync signal trace and cable lengths as close as possible between cameras to minimize skew.
+4. Set every camera that takes part in the synchronization to slave mode, and keep only one sync source in the system.
+:::
+
+:::info FRSYNC1 / FRSYNC2
+Pin 1 (FRSYNC1) and Pin 2 (FRSYNC2) are the 1.8V frame sync inputs of the module. If your design drives these pins instead of XVS / XHS, please confirm the wiring with SENSING technical support before finalizing the board layout.
+:::
 
 ### Power-Up Sequence
 

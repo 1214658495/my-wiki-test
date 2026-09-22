@@ -1,8 +1,15 @@
 ---
 sidebar_position: 1
+sidebar_label: SG3-IMX900C-MIPI（已下架）
 ---
 
 # SG3-IMX900C-MIPI 摄像头
+
+:::warning 产品已下架（停止销售）
+**SG3-IMX900C-MIPI 已下架，不再对外销售。** 官网产品页面已下线，因此本页不再提供购买链接。
+
+本文档继续保留，作为存量用户的技术支持资料。如需新项目选型或替代型号建议，请联系 SENSING 技术支持。
+:::
 
 ## 概述
 
@@ -15,14 +22,6 @@ sidebar_position: 1
 <div style={{textAlign: 'center'}}>
  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031.png" alt="SG3-IMX900C-MIPI"
  style={{maxWidth: '30%', height:'auto'}} />
-</div>
-<br />
-
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <a href="https://sensing-world.com/en/h-pd-229.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer"
- style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
- <strong style={{color: '#000000', fontSize: '1.2em'}}>立即购买</strong>
- </a>
 </div>
 
 ## 技术规格
@@ -128,6 +127,51 @@ sidebar_position: 1
 | 30 | VCC-3.3V | POWER | 3.3V 供电 |
 
 </div>
+
+### 帧同步（Fsync）
+
+SG3-IMX900C-MIPI 支持外部帧同步，由主控直接驱动 FPC 连接器上的同步引脚，信号要求如下。
+
+#### 同步信号要求
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| 序号 | 信号 | 连接器引脚 | PWM 触发信号要求 | 说明 |
+|------|------|------------|------------------|------|
+| 1 | XVS | Pin 6（I/O，1.8V） | 频率: 30 Hz, 占空比: 10% | 垂直（帧）同步。XVS 周期决定帧周期，30 Hz 对应本模组 30 fps 的最大帧率。 |
+| 2 | XHS | Pin 5（I/O，1.8V） | 频率: 83 kHz, 占空比: ≥ 90% | 水平（行）同步。 |
+
+</div>
+
+:::warning 两路信号必须同时提供
+用于同步触发（即从模式）时，必须同时输入 XVS 和 XHS 两路信号，且都满足上述要求，才能实现同步触发。只给其中一路无法获得同步的图像输出。
+:::
+
+#### 主从模式
+
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
+| 模式 | XVS / XHS 方向 | 典型用途 |
+|------|----------------|----------|
+| 主模式 | 由摄像头模组输出 | 单相机使用，或由该模组作为系统的同步源 |
+| 从模式 | 输入到摄像头模组 | 多相机同步采集，或与外部触发源同步 |
+
+</div>
+
+如上文连接器引脚定义所示，XHS（Pin 5）和 XVS（Pin 6）是模组在主模式下输出的同步信号；从模式下则由主控 SoC 驱动这两个引脚。
+
+#### 多相机同步
+
+:::note 接线要点
+1. 由主控产生一组 XVS / XHS 信号并分发到每台相机，保证所有模组使用同一个触发沿。
+2. 同步信号保持 1.8V 逻辑电平，与引脚定义一致；主控 GPIO 为 3.3V 时需要加电平转换。
+3. 各相机之间的同步信号走线和线缆长度尽量保持一致，以减小相位偏差。
+4. 参与同步的相机全部设为从模式，系统内只保留一个同步源。
+:::
+
+:::info FRSYNC1 / FRSYNC2
+Pin 1（FRSYNC1）和 Pin 2（FRSYNC2）是模组的 1.8V 帧同步输入。如果设计中使用这两个引脚而非 XVS / XHS，请在完成板级布线前与 SENSING 技术支持确认接法。
+:::
 
 ### 上电时序
 

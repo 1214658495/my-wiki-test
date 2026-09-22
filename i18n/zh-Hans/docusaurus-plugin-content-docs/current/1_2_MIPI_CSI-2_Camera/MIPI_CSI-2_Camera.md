@@ -19,13 +19,19 @@ SENSING 与索尼、安森美半导体（ONSEMI）等行业领先的图像传感
 
 | 序号 | 产品型号 | 传感器 | 分辨率 | 最大帧率 | 输出格式 | 关键特性 | 产品链接 |
 |-----|---------------|--------|------------|----------------|---------------|--------------|---------------|
-| 1 | **SG2-IMX662C-MIPI-Hxxx** | 索尼 IMX662 (2.13MP) | 1920×1080 | 60fps | MIPI RAW@10bit/12bit | HDR 支持，1/2.8" CMOS | [查看详情](https://sensing-world.com/cn/h-pd-38.html?recommendFromPid=0&fromMid=1563) |
-| 2 | **SG3-ISX031C-MIPI-Hxxx** | 索尼 ISX031 (2.95MP) | 1920×1536 | 60fps | MIPI YUV422@8bit | 内置 ISP，汽车级 | [查看详情](https://sensing-world.com/cn/h-pd-114.html?recommendFromPid=0&fromMid=1563) |
-| 3 | **SG8-IMX678C-MIPI-Hxxx** | 索尼 IMX678 (8.29MP) | 3840×2160 (4K) | 60fps | MIPI RAW@10bit/12bit | 4K 超高清，1/1.8" CMOS | [查看详情](https://sensing-world.com/cn/h-pd-40.html?recommendFromPid=0&fromMid=1563) |
-| 4 | **SG12-IMX577C-MIPI-Hxxx** | 索尼 IMX577 (12MP) | 4056×3040 | 240fps (1080P) | MIPI RAW@10bit/12bit | 高速成像，1/2.3" CMOS | [查看详情](https://sensing-world.com/cn/h-pd-41.html?recommendFromPid=0&fromMid=1563) |
-| 5 | **SG20-IMX283C-MIPI-Hxxx** | 索尼 IMX283 (20.3MP) | 5472×3648 | 25fps (全分辨率) | MIPI RAW@10bit/12bit | 超高分辨率，Type 1 传感器 | [查看详情](https://sensing-world.com/cn/h-pd-115.html?recommendFromPid=0&fromMid=1563) |
+| 1 | **SG3-ISX031C-MIPI-Hxxx** | 索尼 ISX031 (2.95MP) | 1920×1536 | 60fps | MIPI YUV422@8bit | 内置 ISP，汽车级 | [查看详情](https://sensing-world.com/cn/h-pd-114.html?recommendFromPid=0&fromMid=1563) |
+| 2 | **SG2-IMX662C-MIPI-Hxxx** | 索尼 IMX662 (2.13MP) | 1920×1080 | 60fps | MIPI RAW@10bit/12bit | HDR 支持，1/2.8" CMOS | 已下架 |
+| 3 | **SG8-IMX678C-MIPI-Hxxx** | 索尼 IMX678 (8.29MP) | 3840×2160 (4K) | 60fps | MIPI RAW@10bit/12bit | 4K 超高清，1/1.8" CMOS | 已下架 |
+| 4 | **SG12-IMX577C-MIPI-Hxxx** | 索尼 IMX577 (12MP) | 4056×3040 | 240fps (1080P) | MIPI RAW@10bit/12bit | 高速成像，1/2.3" CMOS | 已下架 |
+| 5 | **SG20-IMX283C-MIPI-Hxxx** | 索尼 IMX283 (20.3MP) | 5472×3648 | 25fps (全分辨率) | MIPI RAW@10bit/12bit | 超高分辨率，Type 1 传感器 | 已下架 |
 
 
+
+:::warning 已下架型号
+**SG2-IMX662C-MIPI、SG8-IMX678C-MIPI、SG12-IMX577C-MIPI、SG20-IMX283C-MIPI** 已下架，不再对外销售，官网产品页面已下线。相关文档继续保留，作为存量用户的技术支持资料。
+
+**SG3-ISX031C-MIPI** 仍在售。如需新项目选型或替代型号建议，请联系 SENSING 技术支持。
+:::
 
 ## 核心技术优势
 
@@ -73,30 +79,6 @@ SENSING 与索尼、安森美半导体（ONSEMI）等行业领先的图像传感
 </div>
 <br />
 
-#### **SG2-IMX662C-MIPI** - 入门级 HDR
-<div className="row">
-  <div className="col col--6">
-    :::note 主要规格
-    - **分辨率**：1920×1080 (2.13MP)
-    - **帧率**：最高 60fps
-    - **传感器尺寸**：1/2.8" CMOS
-    - **输出**：MIPI RAW@10bit/12bit
-    - **功耗**：< 300mA @3.3V
-    - **温度**：-30°C ~ +85°C
-    :::
-  </div>
-  <div className="col col--6">
-    :::note 理想应用
-    - IoT 边缘设备
-    - 智能家居系统
-    - 教育机器人
-    - 安防摄像头
-    - 嵌入式视觉项目
-    - 消费电子
-    :::
-  </div>
-</div>
-
 #### **SG3-ISX031C-MIPI** - 汽车级内置 ISP
 <div className="row">
   <div className="col col--6">
@@ -121,7 +103,31 @@ SENSING 与索尼、安森美半导体（ONSEMI）等行业领先的图像传感
   </div>
 </div>
 
-#### **SG8-IMX678C-MIPI** - 4K 超高清
+#### **SG2-IMX662C-MIPI** - 入门级 HDR（已下架）
+<div className="row">
+  <div className="col col--6">
+    :::note 主要规格
+    - **分辨率**：1920×1080 (2.13MP)
+    - **帧率**：最高 60fps
+    - **传感器尺寸**：1/2.8" CMOS
+    - **输出**：MIPI RAW@10bit/12bit
+    - **功耗**：< 300mA @3.3V
+    - **温度**：-30°C ~ +85°C
+    :::
+  </div>
+  <div className="col col--6">
+    :::note 理想应用
+    - IoT 边缘设备
+    - 智能家居系统
+    - 教育机器人
+    - 安防摄像头
+    - 嵌入式视觉项目
+    - 消费电子
+    :::
+  </div>
+</div>
+
+#### **SG8-IMX678C-MIPI** - 4K 超高清（已下架）
 <div className="row">
   <div className="col col--6">
     :::note 主要规格
@@ -145,7 +151,7 @@ SENSING 与索尼、安森美半导体（ONSEMI）等行业领先的图像传感
   </div>
 </div>
 
-#### **SG12-IMX577C-MIPI** - 高速成像
+#### **SG12-IMX577C-MIPI** - 高速成像（已下架）
 <div className="row">
   <div className="col col--6">
     :::note 主要规格
@@ -169,7 +175,7 @@ SENSING 与索尼、安森美半导体（ONSEMI）等行业领先的图像传感
   </div>
 </div>
 
-#### **SG20-IMX283C-MIPI** - 超高分辨率
+#### **SG20-IMX283C-MIPI** - 超高分辨率（已下架）
 <div className="row">
   <div className="col col--6">
     :::note 主要规格

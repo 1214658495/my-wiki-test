@@ -109,8 +109,8 @@ const sidebars = {
     "collapsed": true,
     "collapsible": true,
     "items": [
-      "1_2_MIPI_CSI-2_Camera/SG2-IMX662C-MIPI",
       "1_2_MIPI_CSI-2_Camera/SG3-ISX031C-MIPI",
+      "1_2_MIPI_CSI-2_Camera/SG2-IMX662C-MIPI",
       "1_2_MIPI_CSI-2_Camera/SG8-IMX678C-MIPI",
       "1_2_MIPI_CSI-2_Camera/SG12-IMX577C-MIPI",
       "1_2_MIPI_CSI-2_Camera/SG20-IMX283C-MIPI"
@@ -295,8 +295,8 @@ const sidebars = {
                 "collapsed": true,
                 "collapsible": true,
                 "items": [
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG2-IMX662C-MIPI",
                   "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG3-ISX031C-MIPI",
+                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG2-IMX662C-MIPI",
                   "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG8-IMX678C-MIPI",
                   "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG12-IMX577C-MIPI",
                   "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG20-IMX283C-MIPI"

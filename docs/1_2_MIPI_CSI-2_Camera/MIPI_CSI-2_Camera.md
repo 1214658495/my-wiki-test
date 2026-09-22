@@ -19,13 +19,19 @@ SENSING collaborates with industry-leading image sensor suppliers such as SONY, 
 
 | No. | Product Model | Sensor | Resolution | Max Frame Rate | Output Format | Key Features | Product Links |
 |-----|---------------|--------|------------|----------------|---------------|--------------|---------------|
-| 1 | **SG2-IMX662C-MIPI-Hxxx** | SONY IMX662 (2.13MP) | 1920×1080 | 60fps | MIPI RAW@10bit/12bit | HDR Support, 1/2.8" CMOS | [View Details](https://sensing-world.com/en/h-pd-38.html?recommendFromPid=0&fromMid=1563) |
-| 2 | **SG3-ISX031C-MIPI-Hxxx** | SONY ISX031 (2.95MP) | 1920×1536 | 60fps | MIPI YUV422@8bit | Built-in ISP, Automotive Grade | [View Details](https://sensing-world.com/en/h-pd-114.html?recommendFromPid=0&fromMid=1563) |
-| 3 | **SG8-IMX678C-MIPI-Hxxx** | SONY IMX678 (8.29MP) | 3840×2160 (4K) | 60fps | MIPI RAW@10bit/12bit | 4K Ultra HD, 1/1.8" CMOS | [View Details](https://sensing-world.com/en/h-pd-40.html?recommendFromPid=0&fromMid=1563) |
-| 4 | **SG12-IMX577C-MIPI-Hxxx** | SONY IMX577 (12MP) | 4056×3040 | 240fps (1080P) | MIPI RAW@10bit/12bit | High Speed, 1/2.3" CMOS | [View Details](https://sensing-world.com/en/h-pd-41.html?recommendFromPid=0&fromMid=1563) |
-| 5 | **SG20-IMX283C-MIPI-Hxxx** | SONY IMX283 (20.3MP) | 5472×3648 | 25fps (Full Res) | MIPI RAW@10bit/12bit | Ultra High Resolution, Type 1 Sensor | [View Details](https://sensing-world.com/en/h-pd-115.html?recommendFromPid=0&fromMid=1563) |
+| 1 | **SG3-ISX031C-MIPI-Hxxx** | SONY ISX031 (2.95MP) | 1920×1536 | 60fps | MIPI YUV422@8bit | Built-in ISP, Automotive Grade | [View Details](https://sensing-world.com/en/h-pd-114.html?recommendFromPid=0&fromMid=1563) |
+| 2 | **SG2-IMX662C-MIPI-Hxxx** | SONY IMX662 (2.13MP) | 1920×1080 | 60fps | MIPI RAW@10bit/12bit | HDR Support, 1/2.8" CMOS | Discontinued |
+| 3 | **SG8-IMX678C-MIPI-Hxxx** | SONY IMX678 (8.29MP) | 3840×2160 (4K) | 60fps | MIPI RAW@10bit/12bit | 4K Ultra HD, 1/1.8" CMOS | Discontinued |
+| 4 | **SG12-IMX577C-MIPI-Hxxx** | SONY IMX577 (12MP) | 4056×3040 | 240fps (1080P) | MIPI RAW@10bit/12bit | High Speed, 1/2.3" CMOS | Discontinued |
+| 5 | **SG20-IMX283C-MIPI-Hxxx** | SONY IMX283 (20.3MP) | 5472×3648 | 25fps (Full Res) | MIPI RAW@10bit/12bit | Ultra High Resolution, Type 1 Sensor | Discontinued |
 
 
+
+:::warning Discontinued Models
+**SG2-IMX662C-MIPI, SG8-IMX678C-MIPI, SG12-IMX577C-MIPI, SG20-IMX283C-MIPI** have been discontinued and are no longer available for purchase; their product pages have been taken down from the SENSING website. Their documentation is kept online as technical reference for existing deployments.
+
+**SG3-ISX031C-MIPI** remains available. For new designs or replacement recommendations, please contact SENSING technical support.
+:::
 
 ## Core Technology Advantages
 
@@ -73,30 +79,6 @@ SENSING collaborates with industry-leading image sensor suppliers such as SONY, 
 </div>
 <br />
 
-#### **SG2-IMX662C-MIPI** - Entry Level with HDR
-<div className="row">
-  <div className="col col--6">
-    :::note Key Specifications
-    - **Resolution**: 1920×1080 (2.13MP)
-    - **Frame Rate**: Up to 60fps
-    - **Sensor Size**: 1/2.8" CMOS
-    - **Output**: MIPI RAW@10bit/12bit
-    - **Power**: < 300mA @3.3V
-    - **Temperature**: -30°C ~ +85°C
-    :::
-  </div>
-  <div className="col col--6">
-    :::note Ideal Applications
-    - IoT edge devices
-    - Smart home systems
-    - Educational robotics
-    - Security cameras
-    - Embedded vision projects
-    - Consumer electronics
-    :::
-  </div>
-</div>
-
 #### **SG3-ISX031C-MIPI** - Automotive Grade with Built-in ISP
 <div className="row">
   <div className="col col--6">
@@ -121,7 +103,31 @@ SENSING collaborates with industry-leading image sensor suppliers such as SONY, 
   </div>
 </div>
 
-#### **SG8-IMX678C-MIPI** - 4K Ultra HD
+#### **SG2-IMX662C-MIPI** - Entry Level with HDR (Discontinued)
+<div className="row">
+  <div className="col col--6">
+    :::note Key Specifications
+    - **Resolution**: 1920×1080 (2.13MP)
+    - **Frame Rate**: Up to 60fps
+    - **Sensor Size**: 1/2.8" CMOS
+    - **Output**: MIPI RAW@10bit/12bit
+    - **Power**: < 300mA @3.3V
+    - **Temperature**: -30°C ~ +85°C
+    :::
+  </div>
+  <div className="col col--6">
+    :::note Ideal Applications
+    - IoT edge devices
+    - Smart home systems
+    - Educational robotics
+    - Security cameras
+    - Embedded vision projects
+    - Consumer electronics
+    :::
+  </div>
+</div>
+
+#### **SG8-IMX678C-MIPI** - 4K Ultra HD (Discontinued)
 <div className="row">
   <div className="col col--6">
     :::note Key Specifications
@@ -145,7 +151,7 @@ SENSING collaborates with industry-leading image sensor suppliers such as SONY, 
   </div>
 </div>
 
-#### **SG12-IMX577C-MIPI** - High-Speed Imaging
+#### **SG12-IMX577C-MIPI** - High-Speed Imaging (Discontinued)
 <div className="row">
   <div className="col col--6">
     :::note Key Specifications
@@ -169,7 +175,7 @@ SENSING collaborates with industry-leading image sensor suppliers such as SONY, 
   </div>
 </div>
 
-#### **SG20-IMX283C-MIPI** - Ultra High Resolution
+#### **SG20-IMX283C-MIPI** - Ultra High Resolution (Discontinued)
 <div className="row">
   <div className="col col--6">
     :::note Key Specifications

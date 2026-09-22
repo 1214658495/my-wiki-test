@@ -1,8 +1,15 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
+sidebar_label: SG2-IMX662C-MIPI (Discontinued)
 ---
 
 # SG2-IMX662C-MIPI Camera
+
+:::warning Product Discontinued (EOL)
+**SG2-IMX662C-MIPI has been discontinued and is no longer available for purchase.** Its product page has been taken down from the SENSING website, so purchase links are no longer provided here.
+
+This documentation stays online as technical reference for existing deployments. For new designs or replacement recommendations, please contact SENSING technical support.
+:::
 
 ## Overview
 
@@ -15,14 +22,6 @@ sidebar_position: 1
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031.png" alt="SG2-IMX662C-MIPI" 
     style={{maxWidth: '30%', height:'auto'}} />
-</div>
-<br />
-
-<div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-38.html?recommendFromPid=0&fromMid=1563" target="_blank" rel="noopener noreferrer" 
-       style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
-        <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
-    </a>
 </div>
 
 ## Technical Specifications
@@ -142,7 +141,7 @@ The SG2-IMX662C-MIPI camera has minimal power-up sequence requirements. Simply e
 ## Documentation & Resources
 
 :::info Technical Documentation
-Download the complete [SG2-IMX662C-MIPI-HXXX Camera Datasheet](https://sensing-world.com/en/h-pd-38.html?recommendFromPid=0&fromMid=1563#) for detailed specifications and integration guidelines.
+The SG2-IMX662C-MIPI-HXXX Camera Datasheet is no longer available for download from the SENSING website. Please contact SENSING technical support for the complete specifications and integration guidelines.
 :::
 
 ## Installation Guide
