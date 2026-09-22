@@ -88,7 +88,7 @@ title: CIG4-8H 快速入门
 ## 硬件准备
 ### 框图
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG3-8H_Diagram.png" alt="CyberCobra 应用图" style={{maxWidth: '100%', height:'auto'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG4-8H_Diagram.png" alt="CyberCobra 应用图" style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
 #### 部件清单
