@@ -304,7 +304,7 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 :::
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{maxWidth: '100%', height: 'auto'}} />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{maxWidth: '100%', height: 'auto'}} />
 </div> -->
 
 1. 将驱动包复制到 Jetson 设备的工作目录，例如 “/home/nvidia”

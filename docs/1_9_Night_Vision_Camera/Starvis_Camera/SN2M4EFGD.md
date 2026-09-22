@@ -149,7 +149,7 @@ sidebar_position: 1
 :::
 
 <!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera"
     style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 

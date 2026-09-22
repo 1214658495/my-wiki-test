@@ -89,7 +89,7 @@ This software package based on nvidia official HSB v2.2.1 package and add suppor
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png" alt="SG8A-AGON-G2Y-A1-overview2" style={{maxWidth: '40%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png" alt="SG8A-AGON-G2Y-A1-overview2" style={{maxWidth: '40%', height: 'auto'}} />
 </div> -->
 
 <!-- ### Block Diagram -->
@@ -99,7 +99,7 @@ This software package based on nvidia official HSB v2.2.1 package and add suppor
 ::: -->
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png" alt="TRD1 G2A Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.jpg" alt="TRD1 G2A Block Diagram" style={{maxWidth: '80%', height: 'auto'}} />
 </div> -->
 
 ### Recommended Package
@@ -116,17 +116,17 @@ You may choose the following Product model
 
 <!-- | Product model  | Parts  | Camera Key features | Product Image |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW Camera（Rolling shutter） | [View Image](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） | [View Image](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） <br/> 3MP_MIPI RAW Camera（Rolling shutter） | [View Image](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW Camera（Rolling shutter） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） <br/> 3MP_MIPI RAW Camera（Rolling shutter） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
 
 
 
 <!-- | Product model  | Parts  | Camera Key features | Product Image |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW Camera（Rolling shutter） | ![SENSING-HSBKIT2M](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） | ![SENSING-HSBKIT4M](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） <br/> 3MP_MIPI RAW Camera（Rolling shutter） | ![SENSING-HSBKIT6M](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW Camera（Rolling shutter） | ![SENSING-HSBKIT2M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） | ![SENSING-HSBKIT4M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge Kit *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW Camera（Rolling shutter）<br/> 2MP_MIPI RAW Camera（Global shutter） <br/> 3MP_MIPI RAW Camera（Rolling shutter） | ![SENSING-HSBKIT6M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
 
 
 | Product model  | Parts  | Camera Key features | Product Image |
@@ -225,7 +225,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
     </iframe>
 </div>
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png" alt="TRD1 G2A Camera Connection" style={{maxWidth: '90%', height: 'auto'}} />
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png" alt="TRD1 G2A Camera Connection" style={{maxWidth: '90%', height: 'auto'}} />
 </div> -->
 
 
@@ -294,7 +294,7 @@ We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Dr
 The SG2-IMX662C-MIPI supports two FPC cable types for different connection requirements:
 
 <div style={{textAlign: 'center', marginBottom: '1rem'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="FPC Cable Options" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="FPC Cable Options"
     style={{maxWidth: '70%', height:'auto'}} />
 </div> -->
 

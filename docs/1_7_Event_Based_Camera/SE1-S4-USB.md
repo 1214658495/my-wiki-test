@@ -119,7 +119,7 @@ DR >120 dB can be reached based on low light cutoff measurement being: 0.08 lux 
 
 ### Quick Setup
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png" alt="SE1-S4-USB Installation on Jetson" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png" alt="SE1-S4-USB Installation on Jetson"
     style={{maxWidth: '50%', height:'auto'}} />
     <p>Example: SE1-S4-USB Installation on NVIDIA Jetson</p>
 </div>
@@ -131,7 +131,7 @@ DR >120 dB can be reached based on low light cutoff measurement being: 0.08 lux 
 :::
 
 <!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png" alt="SE1-S4-USB Installation on Jetson" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/EVS_Installation_Jetson.png" alt="SE1-S4-USB Installation on Jetson"
     style={{maxWidth: '40%', height:'auto'}} />
     <p>SE1-S4-USB Installation on Jetson</p>
 </div> -->

@@ -185,7 +185,7 @@ The RedFox-D3Gx series incorporates advanced automatic defogging algorithms that
 
 <!-- ### 2.1 Adaptation to NVIDIA® Jetson™ 平台
 <div style={{textAlign: 'center'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia"
  style={{maxWidth: '60%', height:'auto'}} />
  <p>SHW3H 摄像头 连接到 NVIDIA Jetson AGX Orin</p>
 </div>
@@ -201,7 +201,7 @@ The RedFox-D3Gx series incorporates advanced automatic defogging algorithms that
 ::: -->
 
 <!-- <div style={{textAlign: 'center'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded 摄像头"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Embedded 摄像头"
  style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 

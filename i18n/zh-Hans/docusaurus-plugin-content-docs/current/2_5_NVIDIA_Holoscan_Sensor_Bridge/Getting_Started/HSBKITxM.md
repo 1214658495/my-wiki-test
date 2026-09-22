@@ -87,7 +87,7 @@ sidebar_position: 1
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png" alt="SG8A-AGON-G2Y-A1-overview2" style={{maxWidth: '40%', height: 'auto'}} />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1_Hardware_Overview2.png" alt="SG8A-AGON-G2Y-A1-overview2" style={{maxWidth: '40%', height: 'auto'}} />
 </div> -->
 
 <!-- ### 框图 -->
@@ -97,7 +97,7 @@ sidebar_position: 1
 ::: -->
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.png" alt="TRD1 G2A 框图" style={{maxWidth: '80%', height: 'auto'}} />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Block_Diagram.jpg" alt="TRD1 G2A 框图" style={{maxWidth: '80%', height: 'auto'}} />
 </div> -->
 
 ### 推荐包
@@ -114,17 +114,17 @@ sidebar_position: 1
 
 <!-- | 产品型号 | 部件 | 摄像头关键特性 | 产品图片 |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | [View Image](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | [View Image](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | [View Image](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
 
 
 
 <!-- | 产品型号 | 部件 | 摄像头关键特性 | 产品图片 |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | ![SENSING-HSBKIT2M](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | ![SENSING-HSBKIT4M](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | ![SENSING-HSBKIT6M](https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | ![SENSING-HSBKIT2M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | ![SENSING-HSBKIT4M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | ![SENSING-HSBKIT6M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
 
 
 | 产品型号 | 部件 | 摄像头关键特性 | 产品图片 |
@@ -223,7 +223,7 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
  </iframe>
 </div>
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/2_3_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png" alt="TRD1 G2A 摄像头连接" style={{maxWidth: '90%', height: 'auto'}} />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_4_NVIDIA_Jetson_AGX_Thor/TRD1_G2A_Kit_Contents_Camera.png" alt="TRD1 G2A 摄像头连接" style={{maxWidth: '90%', height: 'auto'}} />
 </div> -->
 
 
@@ -292,7 +292,7 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 SG2-IMX662C-MIPI 支持两种 FPC 线缆类型，以满足不同连接需求：
 
 <div style={{textAlign: 'center', marginBottom: '1rem'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="FPC 线缆选项"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="FPC 线缆选项"
  style={{maxWidth: '70%', height:'auto'}} />
 </div> -->
 

@@ -284,7 +284,7 @@ The camera can only output in either AA or AB mode. Please specify your required
 :::
 
 <!-- <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Embedded Camera"
     style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 
@@ -318,7 +318,7 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 
 <!-- ### Attachment
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC"
     style={{maxWidth: '70%', height:'auto'}} />
 </div> -->
 

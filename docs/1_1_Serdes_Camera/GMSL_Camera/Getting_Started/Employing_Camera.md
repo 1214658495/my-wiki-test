@@ -21,7 +21,7 @@ This comprehensive guide outlines integration methods for SENSING GMSL cameras a
 <div className="integration-grid">
   <div className="scenario-card">
     <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png" alt="NVIDIA Platform" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/nvidia_jetson_agx_orin.png" alt="NVIDIA Platform" />
     </div>
     <div className="card-content">
       <h3>NVIDIA Platforms</h3>
@@ -32,7 +32,7 @@ This comprehensive guide outlines integration methods for SENSING GMSL cameras a
   
   <div className="scenario-card">
     <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png" alt="GMSL Camera Grabber" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H_useGround3.png" alt="GMSL Camera Grabber" />
     </div>
     <div className="card-content">
       <h3>GMSL Camera Grabber</h3>
@@ -43,7 +43,7 @@ This comprehensive guide outlines integration methods for SENSING GMSL cameras a
   
   <div className="scenario-card">
     <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png" alt="Third-party AI Box" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/AiBox.png" alt="Third-party AI Box" />
     </div>
     <div className="card-content">
       <h3>Third-party AI Box</h3>
@@ -54,7 +54,7 @@ This comprehensive guide outlines integration methods for SENSING GMSL cameras a
   
   <div className="scenario-card">
     <div className="card-image">
-      <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="Custom Platform" />
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png" alt="Custom Platform" />
     </div>
     <div className="card-content">
       <h3>Custom Platform</h3>

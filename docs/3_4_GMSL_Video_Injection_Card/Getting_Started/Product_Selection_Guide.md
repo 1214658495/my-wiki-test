@@ -66,7 +66,7 @@ title: Product Selection Guide
 ## Why choose the CIG4-8H video injection card?
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{width: 400, height:'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_4_GMSL_Video_Injection_Card/CIG3-8H.png" alt="SENSING CIG4-8H Video Injection Card" style={{width: 400, height:'auto', borderRadius: '8px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     SENSING CIG4-8H - Professional Video Injection Solution for ADAS/AD Development
   </p>

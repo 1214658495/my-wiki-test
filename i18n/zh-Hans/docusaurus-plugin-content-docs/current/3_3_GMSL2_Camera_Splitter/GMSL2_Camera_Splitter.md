@@ -105,7 +105,7 @@ sidebar_position: 1
 
 #### 线束定义
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_连接器_Pin_Definition.png" alt="GMSL2_摄像头_Splitter 线束" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_3_GMSL2_Camera_Splitter/GMSL2_Camera_Splitter_Connector_Pin_Definition.png" alt="GMSL2_摄像头_Splitter 线束"
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 

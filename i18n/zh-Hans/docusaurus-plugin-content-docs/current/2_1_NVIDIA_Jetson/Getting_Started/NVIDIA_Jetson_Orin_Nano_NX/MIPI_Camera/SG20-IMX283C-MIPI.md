@@ -120,7 +120,7 @@ SG20-IMX283C-MIPI 支持多种 C-Mount 镜头，以满足不同视场角需求�
 <!-- ### 上电时序
 
 <div style={{textAlign: 'center'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png" alt="电源时序图"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031_power_sequence.png" alt="电源时序图"
  style={{maxWidth: '80%', height:'auto'}} />
 </div>
 

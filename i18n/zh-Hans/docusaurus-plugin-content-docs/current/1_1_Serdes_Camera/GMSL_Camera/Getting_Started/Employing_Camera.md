@@ -21,7 +21,7 @@ sidebar_position: 3
 <div className="integration-grid">
  <div className="scenario-card">
  <div className="card-image">
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Nvidia_jetson/nvidia_jetson_agx_orin.png" alt="NVIDIA 平台" />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/nvidia_jetson_agx_orin.png" alt="NVIDIA 平台" />
  </div>
  <div className="card-content">
  <h3>NVIDIA 平台</h3>
@@ -32,7 +32,7 @@ sidebar_position: 3
 
  <div className="scenario-card">
  <div className="card-image">
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/CCG3-8H/CCG3-8H_useGround3.png" alt="GMSL 摄像头采集卡" />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_1_GMSL2_3_Camera_Grabber/CCG3-8H/CCG3-8H_useGround3.png" alt="GMSL 摄像头采集卡" />
  </div>
  <div className="card-content">
  <h3>GMSL 摄像头采集卡</h3>
@@ -43,7 +43,7 @@ sidebar_position: 3
 
  <div className="scenario-card">
  <div className="card-image">
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_1_Serdes_Camera/GMSL_Camera/AiBox.png" alt="第三方 AI Box" />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/AiBox.png" alt="第三方 AI Box" />
  </div>
  <div className="card-content">
  <h3>第三方 AI Box</h3>
@@ -54,7 +54,7 @@ sidebar_position: 3
 
  <div className="scenario-card">
  <div className="card-image">
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/Camera_SOC_connect.png" alt="自研平台" />
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_1_Serdes_Camera/Camera_SOC_connect.png" alt="自研平台" />
  </div>
  <div className="card-content">
  <h3>自研平台</h3>

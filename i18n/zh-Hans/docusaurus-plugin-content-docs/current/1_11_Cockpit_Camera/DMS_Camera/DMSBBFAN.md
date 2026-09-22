@@ -223,7 +223,7 @@ sidebar_position: 1
 :::
 
 <!-- <div style={{textAlign: 'center'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_nvidia.png" alt="Embedded 摄像头"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Embedded 摄像头"
  style={{maxWidth: '60%', height:'auto'}} />
 </div> -->
 
@@ -256,7 +256,7 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 
 <!-- ### Attachment
 <div style={{textAlign: 'center'}}>
- <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="mipi_csi_camera_FPC"
  style={{maxWidth: '70%', height:'auto'}} />
 </div> -->
 

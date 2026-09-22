@@ -67,7 +67,7 @@ After downloading SensingCaptureV3, follow steps 1-3 as shown in the accompanyin
 Connect the device according to Figure 2's connection diagram. Connect the camera to 1 camera port, which requires a CAM port cable, FT4222 port, and USB data cable.
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png" alt="PANDA PG2 Device Connection Diagram" style={{maxWidth: '60%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure2.png" alt="PANDA PG2 Device Connection Diagram" style={{maxWidth: '60%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>Figure 2:</strong> PANDA PG2 device connection diagram showing FT4222 port, camera connection port, USB data cable, and power interface
   </p>

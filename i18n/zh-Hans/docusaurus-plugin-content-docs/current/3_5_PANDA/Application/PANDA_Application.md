@@ -67,7 +67,7 @@ PANDA Serial PG2 遵循 USB-IF 定义的 UVC 协议规范，可即插即用（�
 按照图 2 的连接示意图连接设备。将摄像头连接到 1 路摄像头端口，需要使用 CAM 端口线、FT4222 端口和 USB 数据线。
 
 <div style={{textAlign: 'center', marginBottom: '1.5rem'}}>
-  <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Data_collection/3_5_PANDA/Aplication/figure2.png" alt="PANDA PG2 设备连接图" style={{maxWidth: '60%', height:'auto', border: '1px solid #ddd'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/3_5_PANDA/Aplication/figure2.png" alt="PANDA PG2 设备连接图" style={{maxWidth: '60%', height:'auto', border: '1px solid #ddd'}} />
   <p style={{fontSize: '0.9em', marginTop: '0.5rem', color: 'var(--ifm-color-gray-700)'}}>
     <strong>图 2：</strong> PANDA PG2 设备连接图，显示 FT4222 端口、摄像头连接端口、USB 数据线和电源接口
   </p>

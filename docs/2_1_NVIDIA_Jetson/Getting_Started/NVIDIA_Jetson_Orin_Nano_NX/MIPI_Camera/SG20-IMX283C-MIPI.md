@@ -120,7 +120,7 @@ The SG20-IMX283C-MIPI supports various C-mount lenses to accommodate different f
 <!-- ### Power-Up Sequence
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/mipi_csi_camera_ISX031_power_sequence.png" alt="Power Sequence Diagram" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_ISX031_power_sequence.png" alt="Power Sequence Diagram"
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -140,7 +140,7 @@ The SG20-IMX283C-MIPI camera requires minimal power sequencing. Ensure that the 
 :::
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Camera Installation on Jetson" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_nvidia.png" alt="Camera Installation on Jetson"
     style={{maxWidth: '60%', height:'auto'}} />
 </div>
 
@@ -191,7 +191,7 @@ For more information, visit [NVIDIA's Jetson Download Center](https://developer.
 The SG20-IMX283C-MIPI supports FPC cable types for different connection requirements:
 
 <div style={{textAlign: 'center', marginBottom: '1rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="FPC Cable Options" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/mipi_csi_camera_FPC.png" alt="FPC Cable Options"
     style={{maxWidth: '70%', height:'auto'}} />
 </div>
 
