@@ -48,6 +48,28 @@ const sidebars = {
       "6_2_Vision_Solution/NRDCK"
     ]
   },
+  {
+    "type": "category",
+    "label": "数采设备",
+    "collapsed": true,
+    "collapsible": true,
+    "items": [
+      {
+        "type": "category",
+        "label": "Ego-6",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          "6_3_Data_Collection_Device/Ego-6/User_Manual",
+          "6_3_Data_Collection_Device/Ego-6/FAQ"
+        ],
+        "link": {
+          "type": "doc",
+          "id": "6_3_Data_Collection_Device/Ego-6/Ego-6"
+        }
+      }
+    ]
+  },
   "1_0_Camera",
   {
     "type": "category",

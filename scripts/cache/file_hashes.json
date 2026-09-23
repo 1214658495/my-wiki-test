@@ -190,5 +190,10 @@
   "6_1_Camera/Monocular_Camera/SHW3G_SHF3G.md": "fec629aedbf57807f343bea62fa9ef9074f50deec392518e9deb4a45a008fee0",
   "6_1_Camera/Monocular_Camera/SHW5G_SHF5G.md": "342dc6291ba440e6f24eb24b360ee9949cd51239b1f640b8a5fa97bb9dc1de08",
   "6_2_Vision_Solution/Humanoid_Reference_Design_Vision_Solution.md": "d74f192b6387e199eab1f7a9567a17702305ad247d7b158456f8359b1940f615",
-  "home.mdx": "7fffb222a08028b2aaeb29a743ea39361ea78c4524b73ff508919e07f53e0f3d"
+  "home.mdx": "7fffb222a08028b2aaeb29a743ea39361ea78c4524b73ff508919e07f53e0f3d",
+  "6_3_Data_Collection_Device/_category_.json": "331c4749f1d2370d838901076a1bd9fd8e5be54a112c94aeff34439476b997ad",
+  "6_3_Data_Collection_Device/Ego-6/_category_.json": "c33cdca1fba12a773c65892f18ead9727205288133f5bfacd513c3b49f2af9b2",
+  "6_3_Data_Collection_Device/Ego-6/Ego-6.md": "4c66e8800c55c7b0283e7d09fb9356781ef0da6eac8f1693f8a8c99cb77e2e11",
+  "6_3_Data_Collection_Device/Ego-6/User_Manual.md": "b1370b8ed1fbaa8f26b97f60238b86ff5ea8c1d637a33abdd516e62a21f5a545",
+  "6_3_Data_Collection_Device/Ego-6/FAQ.md": "c87c25d9b021ee89dcc4d21c9e7ec06c90c20a2f443ed3ae73047b0bac482a45"
 }

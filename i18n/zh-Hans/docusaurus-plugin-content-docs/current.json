@@ -174,5 +174,13 @@
   "sidebar.tutorialSidebar.category.sgMIX": {
     "message": "sgMIX",
     "description": "The label for category sgMIX in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Data Collection Device": {
+    "message": "数采设备",
+    "description": "The label for category Data Collection Device in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Ego-6": {
+    "message": "Ego-6",
+    "description": "The label for category Ego-6 in sidebar tutorialSidebar"
   }
 }
