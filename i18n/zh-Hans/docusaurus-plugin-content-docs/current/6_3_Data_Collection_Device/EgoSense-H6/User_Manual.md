@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: 使用说明
-title: Ego-6 使用说明
-description: Ego-6 头戴式六目数采设备的上电、录制、EGOTool 上位机连接、数据导出与 Foxglove Studio 回放操作指南
-keywords: [Ego-6, 使用说明, 用户手册, EGOTool, Foxglove, MCAP, SD 卡]
+title: EgoSense H6 使用说明
+description: EgoSense H6 头戴式六目数采设备的上电、录制、EGOTool 上位机连接、数据导出与 Foxglove Studio 回放操作指南
+keywords: [EgoSense H6, 使用说明, 用户手册, EGOTool, Foxglove, MCAP, SD 卡]
 ---
 
 import AnnotatedImage from '@site/src/components/AnnotatedImage';
@@ -11,7 +11,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 export const IMG = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img';
 export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source';
 
-# Ego-6 使用说明
+# EgoSense H6 使用说明
 
 本说明面向设备操作者。只需一台 **Windows 电脑**（安装 EGOTool 上位机与 Foxglove Studio）即可完成采集、查看与导出数据的全部流程，**无需任何命令行、Python 或 Linux 操作**。
 
@@ -19,8 +19,8 @@ export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 
 | 序号 | 物品 |
 |-|-|
-| 1 | Ego-6 设备（出厂已插入一张 Micro SD 卡） |
-| 2 | Ego 磁吸电池 |
+| 1 | EgoSense H6 设备（出厂已插入一张 Micro SD 卡） |
+| 2 | EgoSense 磁吸电池 |
 | 3 | 充电器 |
 | 4 | 充电线 |
 | 5 | 电池充电配件 |
@@ -38,7 +38,7 @@ export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 
 <AnnotatedImage
   src={`${IMG}/ego6_led_recording.jpg`}
-  alt="Ego-6 录制按键与指示灯"
+  alt="EgoSense H6 录制按键与指示灯"
   items={[
     {at: [59.2, 50.4], label: [50, 22], text: '录制按键'},
     {at: [64.4, 53.2], label: [80, 78], text: '指示灯'},
@@ -50,7 +50,7 @@ export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 
 <AnnotatedImage
   src={`${IMG}/ego6_photo_rear.jpg`}
-  alt="Ego-6 设备后部接口"
+  alt="EgoSense H6 设备后部接口"
   items={[
     {at: [38.5, 64.1], label: [26, 86], text: 'SD 卡槽'},
     {at: [52.8, 62.7], label: [66, 86], text: 'USB Type-C 接口'},
@@ -125,7 +125,7 @@ export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 
 ## 连接 EGOTool 上位机
 
-Ego-6 通过 Windows 上位机 EGOTool 进行实时预览与录制控制。
+EgoSense H6 通过 Windows 上位机 EGOTool 进行实时预览与录制控制。
 
 ### 安装 EGOTool
 
@@ -293,4 +293,4 @@ EGOTool 主要功能页：
 
 ## 常见问题
 
-使用中遇到问题，请参阅 [Ego-6 常见问题](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-6/FAQ)。
+使用中遇到问题，请参阅 [EgoSense H6 常见问题](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/FAQ)。

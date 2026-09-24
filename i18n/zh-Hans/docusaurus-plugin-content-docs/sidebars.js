@@ -56,16 +56,16 @@ const sidebars = {
     "items": [
       {
         "type": "category",
-        "label": "Ego-6",
+        "label": "EgoSense H6",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "6_3_Data_Collection_Device/Ego-6/User_Manual",
-          "6_3_Data_Collection_Device/Ego-6/FAQ"
+          "6_3_Data_Collection_Device/EgoSense-H6/User_Manual",
+          "6_3_Data_Collection_Device/EgoSense-H6/FAQ"
         ],
         "link": {
           "type": "doc",
-          "id": "6_3_Data_Collection_Device/Ego-6/Ego-6"
+          "id": "6_3_Data_Collection_Device/EgoSense-H6/EgoSense-H6"
         }
       }
     ]

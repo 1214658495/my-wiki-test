@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 sidebar_label: 常见问题
-title: Ego-6 常见问题
-description: Ego-6 头戴式六目数采设备使用中的常见问题与处理方法
-keywords: [Ego-6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
+title: EgoSense H6 常见问题
+description: EgoSense H6 头戴式六目数采设备使用中的常见问题与处理方法
+keywords: [EgoSense H6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 ---
 
-# Ego-6 常见问题
+# EgoSense H6 常见问题
 
 ## 连接与预览
 
@@ -17,7 +17,7 @@ keywords: [Ego-6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 3. 确认该网口已手动配置同网段 IP（如 `192.168.140.21`，子网掩码 `255.255.255.0`）。
 4. 确认 EGOTool 中设备 IP 为 `192.168.140.20`、端口为 `58889`，再点击「设备连接」。
 
-详见 [使用说明 · 连接 EGOTool 上位机](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-6/User_Manual#连接-egotool-上位机)。
+详见 [使用说明 · 连接 EGOTool 上位机](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#连接-egotool-上位机)。
 
 ### 预览画面忽明忽暗或卡顿？
 
@@ -64,7 +64,7 @@ keywords: [Ego-6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 - 确认打开的是 `.mcap` 文件本身；
 - 确认 Foxglove Studio 为较新版本（支持 H.265 解码）。
 
-详见 [使用说明 · 使用 Foxglove Studio 查看录制文件](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-6/User_Manual#使用-foxglove-studio-查看录制文件)。
+详见 [使用说明 · 使用 Foxglove Studio 查看录制文件](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#使用-foxglove-studio-查看录制文件)。
 
 ### 可以用 VLC 等普通播放器打开录制文件吗？
 
@@ -74,7 +74,7 @@ keywords: [Ego-6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 
 MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，用于把多路相机图像、IMU 等传感器数据按时间戳打包存入同一个文件，便于回放与分析。它与 ROS bag（`.bag` / `.db3`）用途类似，但读写性能更好，C++ / Python / Rust / Go 均有官方 SDK，也是 ROS 2 rosbag2 的默认存储格式。
 
-Ego-6 采集结束后得到的 `.mcap` 文件，就是这段时间内设备看到和感知到的全部数据，可用 Foxglove Studio 打开，用于算法调试、数据标注与问题复现。
+EgoSense H6 采集结束后得到的 `.mcap` 文件，就是这段时间内设备看到和感知到的全部数据，可用 Foxglove Studio 打开，用于算法调试、数据标注与问题复现。
 
 ## 术语
 

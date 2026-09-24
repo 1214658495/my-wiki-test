@@ -220,9 +220,9 @@ The Astra S56x series includes S56 and S56C. S56 is a legacy 130° HFOV model be
 
 <div className="camera-grid">
 
-### <span style={{color: 'var(--ifm-color-primary)'}}>Ego-6 — Head-Mounted 6-Camera Data Collection Device</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}>EgoSense H6 — Head-Mounted 6-Camera Data Collection Device</span>
 
-**Ego-6** is SENSING's head-mounted, six-camera egocentric data collection device. It records first-person images, IMU and audio in sync, offline to an SD card.
+**EgoSense H6** is SENSING's head-mounted, six-camera egocentric data collection device. It records first-person images, IMU and audio in sync, offline to an SD card.
 
 | Technical Specification | Performance |
 |------------------------|-------------|
@@ -236,7 +236,7 @@ The Astra S56x series includes S56 and S56C. S56 is a legacy 130° HFOV model be
 
 **Primary Applications:** Embodied AI data collection, humanoid robot training, multi-modal perception research, behavior analysis.
 
-See the [Ego-6 product page](/docs/6_3_Data_Collection_Device/Ego-6).
+See the [EgoSense H6 product page](/docs/6_3_Data_Collection_Device/EgoSense-H6).
 
 </div>
 

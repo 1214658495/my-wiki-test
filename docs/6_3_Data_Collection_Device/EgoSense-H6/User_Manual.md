@@ -1,9 +1,9 @@
 ---
 sidebar_position: 2
 sidebar_label: User Manual
-title: Ego-6 User Manual
-description: How to power on, record, connect EGOTool, export data and play back recordings in Foxglove Studio with the Ego-6 head-mounted six-camera data collection device
-keywords: [Ego-6, user manual, EGOTool, Foxglove, MCAP, SD card]
+title: EgoSense H6 User Manual
+description: How to power on, record, connect EGOTool, export data and play back recordings in Foxglove Studio with the EgoSense H6 head-mounted six-camera data collection device
+keywords: [EgoSense H6, user manual, EGOTool, Foxglove, MCAP, SD card]
 ---
 
 import AnnotatedImage from '@site/src/components/AnnotatedImage';
@@ -11,7 +11,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 export const IMG = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img';
 export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source';
 
-# Ego-6 User Manual
+# EgoSense H6 User Manual
 
 This manual is for device operators. A single **Windows PC** (with EGOTool and Foxglove Studio installed) is all you need to record, view and export data — **no command line, Python or Linux required**.
 
@@ -19,8 +19,8 @@ This manual is for device operators. A single **Windows PC** (with EGOTool and F
 
 | No. | Item |
 |-|-|
-| 1 | Ego-6 device (a Micro SD card is pre-installed) |
-| 2 | Ego magnetic battery |
+| 1 | EgoSense H6 device (a Micro SD card is pre-installed) |
+| 2 | EgoSense magnetic battery |
 | 3 | Charger |
 | 4 | Charging cable |
 | 5 | Battery charging accessory |
@@ -38,7 +38,7 @@ This manual is for device operators. A single **Windows PC** (with EGOTool and F
 
 <AnnotatedImage
   src={`${IMG}/ego6_led_recording.jpg`}
-  alt="Ego-6 record button and LED indicator"
+  alt="EgoSense H6 record button and LED indicator"
   items={[
     {at: [59.2, 50.4], label: [50, 22], text: 'Record button'},
     {at: [64.4, 53.2], label: [80, 78], text: 'LED indicator'},
@@ -50,7 +50,7 @@ This manual is for device operators. A single **Windows PC** (with EGOTool and F
 
 <AnnotatedImage
   src={`${IMG}/ego6_photo_rear.jpg`}
-  alt="Ego-6 rear ports"
+  alt="EgoSense H6 rear ports"
   items={[
     {at: [38.5, 64.1], label: [26, 86], text: 'SD card slot'},
     {at: [52.8, 62.7], label: [66, 86], text: 'USB Type-C port'},
@@ -125,7 +125,7 @@ Stop recording and wait until the file is saved before removing the magnetic bat
 
 ## Connecting EGOTool
 
-Ego-6 uses the Windows host software EGOTool for live preview and recording control.
+EgoSense H6 uses the Windows host software EGOTool for live preview and recording control.
 
 ### Install EGOTool
 
@@ -376,4 +376,4 @@ If you have trouble downloading, contact technical support: [support@sensing-wor
 
 ## FAQ
 
-If you run into problems, see the [Ego-6 FAQ](/docs/6_3_Data_Collection_Device/Ego-6/FAQ).
+If you run into problems, see the [EgoSense H6 FAQ](/docs/6_3_Data_Collection_Device/EgoSense-H6/FAQ).

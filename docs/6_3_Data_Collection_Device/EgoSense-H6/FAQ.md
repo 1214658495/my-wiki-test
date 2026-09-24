@@ -1,12 +1,12 @@
 ---
 sidebar_position: 3
 sidebar_label: FAQ
-title: Ego-6 FAQ
-description: Frequently asked questions and troubleshooting for the Ego-6 head-mounted six-camera data collection device
-keywords: [Ego-6, FAQ, troubleshooting, EGOTool, SD card, MCAP, Foxglove]
+title: EgoSense H6 FAQ
+description: Frequently asked questions and troubleshooting for the EgoSense H6 head-mounted six-camera data collection device
+keywords: [EgoSense H6, FAQ, troubleshooting, EGOTool, SD card, MCAP, Foxglove]
 ---
 
-# Ego-6 FAQ
+# EgoSense H6 FAQ
 
 ## Connection and Preview
 
@@ -17,7 +17,7 @@ keywords: [Ego-6, FAQ, troubleshooting, EGOTool, SD card, MCAP, Foxglove]
 3. Make sure the adapter has a manual IP on the same subnet (for example `192.168.140.21`, subnet mask `255.255.255.0`).
 4. In EGOTool, make sure the device IP is `192.168.140.20` and the port is `58889`, then click **Connect device**.
 
-See [User Manual · Connecting EGOTool](/docs/6_3_Data_Collection_Device/Ego-6/User_Manual#connecting-egotool).
+See [User Manual · Connecting EGOTool](/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#connecting-egotool).
 
 ### The preview flickers or stutters
 
@@ -64,7 +64,7 @@ Keep individual recordings shorter, or split them by session.
 - Make sure you opened the `.mcap` file itself.
 - Make sure you are using a recent version of Foxglove Studio (with H.265 support).
 
-See [User Manual · Viewing Recordings in Foxglove Studio](/docs/6_3_Data_Collection_Device/Ego-6/User_Manual#viewing-recordings-in-foxglove-studio).
+See [User Manual · Viewing Recordings in Foxglove Studio](/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#viewing-recordings-in-foxglove-studio).
 
 ### Can I open recordings with VLC or another media player?
 
@@ -74,7 +74,7 @@ No. `.mcap` is a multi-sensor data container, not a regular video file. Use Foxg
 
 MCAP is an open-source, modular container file format for robotics and autonomous driving, created by Foxglove. It packs multiple sensor streams — camera images, IMU data and more — by timestamp into a single file for playback and analysis. It serves the same purpose as ROS bags (`.bag` / `.db3`) but offers better read/write performance, has official SDKs for C++ / Python / Rust / Go, and is the default storage format of ROS 2 rosbag2.
 
-The `.mcap` file you get from an Ego-6 session contains everything the device saw and sensed during that time. Open it in Foxglove Studio for algorithm debugging, data labeling and issue reproduction.
+The `.mcap` file you get from an EgoSense H6 session contains everything the device saw and sensed during that time. Open it in Foxglove Studio for algorithm debugging, data labeling and issue reproduction.
 
 ## Glossary
 

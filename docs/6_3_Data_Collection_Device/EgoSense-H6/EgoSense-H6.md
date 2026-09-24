@@ -1,24 +1,24 @@
 ---
 sidebar_position: 1
-title: Ego-6 Head-Mounted 6-Camera Data Collection Device
-description: Overview, hardware specifications, camera specifications and software architecture of the SENSING Ego-6 head-mounted six-camera egocentric data collection device
-keywords: [Ego-6, Ego, head-mounted, six-camera, egocentric, first-person, data collection, embodied AI, MCAP, IMU]
+title: EgoSense H6 Head-Mounted 6-Camera Data Collection Device
+description: Overview, hardware specifications, camera specifications and software architecture of the SENSING EgoSense H6 head-mounted six-camera egocentric data collection device
+keywords: [EgoSense H6, EgoSense, head-mounted, six-camera, egocentric, first-person, data collection, embodied AI, MCAP, IMU]
 ---
 
-# Ego-6 Head-Mounted 6-Camera Data Collection Device
+# EgoSense H6 Head-Mounted 6-Camera Data Collection Device
 
 <div style={{textAlign: 'center'}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_hero.png" alt="Ego-6 Head-Mounted 6-Camera Data Collection Device" style={{width: '100%', maxWidth: '560px', borderRadius: '8px'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_hero.png" alt="EgoSense H6 Head-Mounted 6-Camera Data Collection Device" style={{width: '100%', maxWidth: '560px', borderRadius: '8px'}} />
 </div>
 
 ## Overview
 
-**Ego-6** is a **head-mounted, six-camera egocentric (first-person) data collection device** developed by SENSING. It combines a front-facing stereo pair with two mono cameras on each side, for a total of **six global shutter cameras** covering a **270° combined field of view**. A **6-axis IMU** and **microphones** are built in, so the wearer's first-person view, head pose and audio are recorded in sync.
+**EgoSense H6** is a **head-mounted, six-camera egocentric (first-person) data collection device** developed by SENSING. It combines a front-facing stereo pair with two mono cameras on each side, for a total of **six global shutter cameras** covering a **270° combined field of view**. A **6-axis IMU** and **microphones** are built in, so the wearer's first-person view, head pose and audio are recorded in sync.
 
 Data is recorded offline in **MCAP** format to the built-in Micro SD card, so no computer is needed while collecting. The Windows host software **EGOTool** provides live preview and recording control, and recordings can be played back directly in **Foxglove Studio**.
 
 :::note Why egocentric data collection
-Fixed-camera and motion-capture labs cannot see hand details and are detached from real environments; robot teleoperation is costly and slow; simulated data suffers from the sim-to-real gap. Ego-6 is a lightweight wearable that takes data collection into real homes, factories, hospitals and shopping malls, delivering **first-person perspective, multi-sensor synchronization and scalability** at the same time.
+Fixed-camera and motion-capture labs cannot see hand details and are detached from real environments; robot teleoperation is costly and slow; simulated data suffers from the sim-to-real gap. EgoSense H6 is a lightweight wearable that takes data collection into real homes, factories, hospitals and shopping malls, delivering **first-person perspective, multi-sensor synchronization and scalability** at the same time.
 :::
 
 ## Key Features
@@ -41,7 +41,7 @@ Fixed-camera and motion-capture labs cannot see hand details and are detached fr
 
 | Front | Side |
 |:-:|:-:|
-| ![Ego-6 front](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![Ego-6 side](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
+| ![EgoSense H6 front](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![EgoSense H6 side](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
 
 ## Key Specifications
 
@@ -110,7 +110,7 @@ Fixed-camera and motion-capture labs cannot see hand details and are detached fr
 
 ## Software Architecture
 
-Ego-6 runs **Rockchip Linux**. The software is organized into a driver layer and an application layer:
+EgoSense H6 runs **Rockchip Linux**. The software is organized into a driver layer and an application layer:
 
 | Layer | Modules |
 |-|-|
@@ -125,17 +125,17 @@ Ego-6 runs **Rockchip Linux**. The software is organized into a driver layer and
 | **EGOTool** host software | Windows | Connect to the device, six-channel live preview, recording control, encoding settings, capture metadata entry, device status |
 | **Foxglove Studio** | Windows / macOS / Linux | Open and play back `.mcap` recordings, view images and IMU data |
 
-For step-by-step instructions, see the [Ego-6 User Manual](/docs/6_3_Data_Collection_Device/Ego-6/User_Manual).
+For step-by-step instructions, see the [EgoSense H6 User Manual](/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual).
 
 ## Data Format: MCAP
 
-Ego-6 recordings use the **MCAP** format. MCAP is an open-source, modular container file format for robotics and autonomous driving, created by Foxglove to record multiple sensor streams — camera images, IMU data and more — packed by timestamp into a single file for playback and analysis.
+EgoSense H6 recordings use the **MCAP** format. MCAP is an open-source, modular container file format for robotics and autonomous driving, created by Foxglove to record multiple sensor streams — camera images, IMU data and more — packed by timestamp into a single file for playback and analysis.
 
 - Similar in purpose to ROS bags (`.bag` / `.db3`), but with better read/write performance and broader language support (official SDKs for C++ / Python / Rust / Go).
 - The default storage format of ROS 2 rosbag2, and natively supported by Foxglove Studio.
 - One `.mcap` file holds everything the device saw and sensed during a session, ready for algorithm debugging, data labeling and issue reproduction.
 
-Ego-6 recordings contain the following topics:
+EgoSense H6 recordings contain the following topics:
 
 | Topic | Message type | Description |
 |-|-|-|
@@ -144,13 +144,13 @@ Ego-6 recordings contain the following topics:
 | `/camera/right-1/h265`, `/camera/right-2/h265` | `foxglove.CompressedVideo` | Two right-side cameras (H.265) |
 | `/imu` | `foxglove.IMU` | 6-axis IMU data |
 
-Sample recording data is available under [User Manual · Downloads](/docs/6_3_Data_Collection_Device/Ego-6/User_Manual#downloads).
+Sample recording data is available under [User Manual · Downloads](/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#downloads).
 
 ## Customization
 
-SENSING offers customization of the complete Ego device, main board and cameras:
+SENSING offers customization of the complete EgoSense device, main board and cameras:
 
-- **Camera count**: 2 / 3 / 4 / 5 / 6-camera Ego configurations built from mono and stereo cameras.
+- **Camera count**: 2 / 3 / 4 / 5 / 6-camera EgoSense configurations built from mono and stereo cameras.
 - **Camera options**: OG02B10, AR0234, ISX031, OV9281 and more, in mono and stereo form factors.
 - **Software support**: drivers, applications and ISP tuning services.
 - **Combined solutions**: works with UMI grippers, wrist units or a backpack collection system for synchronized head and hand data capture.

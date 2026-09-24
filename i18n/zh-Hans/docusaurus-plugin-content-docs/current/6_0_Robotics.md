@@ -220,9 +220,9 @@ Astra S56x 系列包含 S56 和 S56C。S56 是正在逐步停止销售的 130° 
 
 <div className="camera-grid">
 
-### <span style={{color: 'var(--ifm-color-primary)'}}>Ego-6 — 头戴式六目数采设备</span>
+### <span style={{color: 'var(--ifm-color-primary)'}}>EgoSense H6 — 头戴式六目数采设备</span>
 
-**Ego-6** 是森云智能自研的头戴式六目第一人称（Egocentric）数据采集设备，同步采集第一视角图像、IMU 与音频，数据脱机录制到 SD 卡。
+**EgoSense H6** 是森云智能自研的头戴式六目第一人称（Egocentric）数据采集设备，同步采集第一视角图像、IMU 与音频，数据脱机录制到 SD 卡。
 
 | 技术规格 | 参数 |
 |------------------------|-------------|
@@ -236,7 +236,7 @@ Astra S56x 系列包含 S56 和 S56C。S56 是正在逐步停止销售的 130° 
 
 **主要应用：** 具身智能数据采集、人形机器人训练、多模态感知研究、行为分析。
 
-详见 [Ego-6 产品介绍](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-6)。
+详见 [EgoSense H6 产品介绍](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6)。
 
 </div>
 

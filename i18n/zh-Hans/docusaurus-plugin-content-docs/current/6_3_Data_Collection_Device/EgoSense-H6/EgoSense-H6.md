@@ -1,24 +1,24 @@
 ---
 sidebar_position: 1
-title: Ego-6 头戴式六目数采设备
-description: 森云智能自研 Ego-6 头戴式六目第一人称数据采集设备的产品介绍、硬件参数、相机参数与软件架构
-keywords: [Ego-6, Ego, 头戴式, 六目, 第一人称, Egocentric, 数据采集, 具身智能, MCAP, IMU]
+title: EgoSense H6 头戴式六目数采设备
+description: 森云智能自研 EgoSense H6 头戴式六目第一人称数据采集设备的产品介绍、硬件参数、相机参数与软件架构
+keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, 数据采集, 具身智能, MCAP, IMU]
 ---
 
-# Ego-6 头戴式六目数采设备
+# EgoSense H6 头戴式六目数采设备
 
 <div style={{textAlign: 'center'}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_hero.png" alt="Ego-6 头戴式六目数采设备" style={{width: '100%', maxWidth: '560px', borderRadius: '8px'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_hero.png" alt="EgoSense H6 头戴式六目数采设备" style={{width: '100%', maxWidth: '560px', borderRadius: '8px'}} />
 </div>
 
 ## 概述
 
-**Ego-6** 是森云智能自研的**头戴式六目第一人称（Egocentric）数据采集设备**。设备前置一组双目相机，左右两侧各配置两路单目相机，共 **6 路全局快门相机**，组合视场角达 **270°**；同时集成**六轴 IMU** 与**麦克风**，可同步记录佩戴者第一视角的图像、头部姿态与音频数据。
+**EgoSense H6** 是森云智能自研的**头戴式六目第一人称（Egocentric）数据采集设备**。设备前置一组双目相机，左右两侧各配置两路单目相机，共 **6 路全局快门相机**，组合视场角达 **270°**；同时集成**六轴 IMU** 与**麦克风**，可同步记录佩戴者第一视角的图像、头部姿态与音频数据。
 
 采集数据以 **MCAP** 格式脱机录制到设备内置的 Micro SD 卡，无需外接电脑即可独立采集；配套 Windows 上位机 **EGOTool** 用于实时预览与录制控制，录制文件可直接在 **Foxglove Studio** 中回放查看。
 
 :::note 为什么选择第一人称数采
-固定机位/动捕实验室看不到手部细节、脱离真实场景；真机遥操作成本高、产能低；仿真数据存在 Sim-to-Real 鸿沟。Ego-6 以轻量化头戴形态，把采集带进家庭、工厂、医院、商场等真实环境，兼顾**第一人称视角、多传感器同步与规模化复制**。
+固定机位/动捕实验室看不到手部细节、脱离真实场景；真机遥操作成本高、产能低；仿真数据存在 Sim-to-Real 鸿沟。EgoSense H6 以轻量化头戴形态，把采集带进家庭、工厂、医院、商场等真实环境，兼顾**第一人称视角、多传感器同步与规模化复制**。
 :::
 
 ## 产品特点
@@ -41,7 +41,7 @@ keywords: [Ego-6, Ego, 头戴式, 六目, 第一人称, Egocentric, 数据采集
 
 | 正面 | 侧面 |
 |:-:|:-:|
-| ![Ego-6 正面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![Ego-6 侧面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
+| ![EgoSense H6 正面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![EgoSense H6 侧面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
 
 ## 核心参数
 
@@ -110,7 +110,7 @@ keywords: [Ego-6, Ego, 头戴式, 六目, 第一人称, Egocentric, 数据采集
 
 ## 软件架构
 
-Ego-6 运行 **Rockchip Linux**，软件分为驱动层与应用层：
+EgoSense H6 运行 **Rockchip Linux**，软件分为驱动层与应用层：
 
 | 层级 | 模块 |
 |-|-|
@@ -125,17 +125,17 @@ Ego-6 运行 **Rockchip Linux**，软件分为驱动层与应用层：
 | **EGOTool** 上位机 | Windows | 连接设备、六路实时预览、录制控制、编码参数设置、采集信息录入、查看设备状态 |
 | **Foxglove Studio** | Windows / macOS / Linux | 打开并回放 `.mcap` 录制文件，查看图像与 IMU 数据 |
 
-详细操作步骤请参阅 [Ego-6 使用说明](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-6/User_Manual)。
+详细操作步骤请参阅 [EgoSense H6 使用说明](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual)。
 
 ## 数据格式：MCAP
 
-Ego-6 的录制文件采用 **MCAP** 格式。MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，专门用来记录多路传感器数据：多路相机图像、IMU 等数据按时间戳打包存入同一个文件，便于回放与分析。
+EgoSense H6 的录制文件采用 **MCAP** 格式。MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，专门用来记录多路传感器数据：多路相机图像、IMU 等数据按时间戳打包存入同一个文件，便于回放与分析。
 
 - 与 ROS bag（`.bag` / `.db3`）用途类似，但读写性能更好，跨语言支持更完善（C++ / Python / Rust / Go 均有官方 SDK）。
 - 是 ROS 2 rosbag2 的默认存储格式，也是 Foxglove Studio 原生支持的格式。
 - 一个 `.mcap` 文件即是一段时间内设备"看到和感知到"的全部数据，可直接用于算法调试、数据标注与问题复现。
 
-Ego-6 录制文件包含以下数据话题：
+EgoSense H6 录制文件包含以下数据话题：
 
 | 话题 | 数据类型 | 说明 |
 |-|-|-|
@@ -144,13 +144,13 @@ Ego-6 录制文件包含以下数据话题：
 | `/camera/right-1/h265`、`/camera/right-2/h265` | `foxglove.CompressedVideo` | 右侧两路相机（H.265） |
 | `/imu` | `foxglove.IMU` | 六轴 IMU 数据 |
 
-可在 [使用说明 · 附件下载](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-6/User_Manual#附件下载) 获取示例录制数据。
+可在 [使用说明 · 附件下载](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#附件下载) 获取示例录制数据。
 
 ## 定制化服务
 
-森云智能提供 Ego 系列的整机、主板与相机定制服务：
+森云智能提供 EgoSense 系列的整机、主板与相机定制服务：
 
-- **多目配置**：可由单目、双目相机组合为 2 / 3 / 4 / 5 / 6 目 Ego 方案。
+- **多目配置**：可由单目、双目相机组合为 2 / 3 / 4 / 5 / 6 目 EgoSense 方案。
 - **可选相机**：OG02B10、AR0234、ISX031、OV9281 等，提供单目与双目形态。
 - **软件支持**：提供驱动程序、应用程序与 ISP 调试服务。
 - **组合方案**：可与 UMI 夹爪（Gripper）、手环（Wrist）或背包式采集设备组合，实现头部与手部数据的同步采集。
