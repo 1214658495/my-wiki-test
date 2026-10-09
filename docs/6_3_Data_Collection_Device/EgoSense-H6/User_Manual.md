@@ -33,42 +33,20 @@ This manual is for device operators. A single **Windows PC** (with EGOTool and F
 
 ## Getting to Know the Device
 
-<div className="row">
-<div className="col col--6">
-
-<AnnotatedImage
-  src={`${IMG}/ego6_led_recording.jpg`}
-  alt="EgoSense H6 record button and LED indicator"
-  items={[
-    {at: [59.2, 50.4], label: [50, 22], text: 'Record button'},
-    {at: [64.4, 53.2], label: [80, 78], text: 'LED indicator'},
-  ]}
-/>
-
-</div>
-<div className="col col--6">
-
-<AnnotatedImage
-  src={`${IMG}/ego6_photo_rear.jpg`}
-  alt="EgoSense H6 rear ports"
-  items={[
-    {at: [38.5, 64.1], label: [26, 86], text: 'SD card slot'},
-    {at: [52.8, 62.7], label: [66, 86], text: 'USB Type-C port'},
-  ]}
-/>
-
-</div>
+<div style={{background: '#fff', borderRadius: 8, padding: 12, marginBottom: 16}}>
+  <img src={`${IMG}/ego6_overview_en.png`} alt="EgoSense H6 device overview and parts" style={{display: 'block', width: '100%'}} />
 </div>
 
 | Part | Description |
 |-|-|
 | **Six cameras** | Two front-facing lenses (stereo) plus two lenses on each side, capturing 6 video streams. Keep the lenses clean and unobstructed while wearing the device. |
 | **Head pose sensor (IMU)** | Records head orientation and rotation. No operation needed. |
-| **Record button** | On the right side of the headband. Starts / stops recording, with a voice prompt. |
+| **Record button** (capture button) | On the right side of the headband. Starts / stops recording, with a voice prompt. |
 | **LED indicator** | Next to the record button. Lights up when powered on; **purple while recording, white after recording stops**. |
-| **SD card slot** | At the rear of the device. Recordings are saved to the Micro SD card (pre-installed at the factory). |
+| **SD card slot** (TF card slot) | At the rear of the device. Recordings are saved to the Micro SD card (pre-installed at the factory). |
 | **USB Type-C port** | At the rear of the device. Connect to a Windows PC for live preview and control with EGOTool. |
 | **Magnetic battery** | Snap-on magnetic battery; the device powers on as soon as it is attached. |
+| **Volume up/down buttons** | On the opposite side from the record button. Adjust the voice prompt volume. |
 
 Device status (battery level, temperature, SD card usage, etc.) can be viewed in EGOTool.
 

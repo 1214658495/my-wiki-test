@@ -33,42 +33,20 @@ export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 
 ## 认识设备
 
-<div className="row">
-<div className="col col--6">
-
-<AnnotatedImage
-  src={`${IMG}/ego6_led_recording.jpg`}
-  alt="EgoSense H6 录制按键与指示灯"
-  items={[
-    {at: [59.2, 50.4], label: [50, 22], text: '录制按键'},
-    {at: [64.4, 53.2], label: [80, 78], text: '指示灯'},
-  ]}
-/>
-
-</div>
-<div className="col col--6">
-
-<AnnotatedImage
-  src={`${IMG}/ego6_photo_rear.jpg`}
-  alt="EgoSense H6 设备后部接口"
-  items={[
-    {at: [38.5, 64.1], label: [26, 86], text: 'SD 卡槽'},
-    {at: [52.8, 62.7], label: [66, 86], text: 'USB Type-C 接口'},
-  ]}
-/>
-
-</div>
+<div style={{background: '#fff', borderRadius: 8, padding: 12, marginBottom: 16}}>
+  <img src={`${IMG}/ego6_overview.png`} alt="EgoSense H6 整机与部件示意" style={{display: 'block', width: '100%'}} />
 </div>
 
 | 部件 | 说明 |
 |-|-|
 | **六目摄像头** | 朝前的两个镜头（双目）+ 左右两侧各两个镜头，共采集 6 路视频。佩戴时请保持镜头清洁、不被遮挡。 |
 | **头部姿态传感器（IMU）** | 记录头部朝向与转动，无需操作。 |
-| **录制按键** | 位于机身右侧，用于开始 / 停止录制，并有语音提示。 |
+| **录制按键**（采集按键） | 位于机身右侧，用于开始 / 停止录制，并有语音提示。 |
 | **指示灯** | 位于录制按键旁，通电后亮起；**录制中为紫色，停止录制后为白色**。 |
-| **SD 卡槽** | 位于设备后部，录制数据保存在 Micro SD 卡上。出厂已插入一张 SD 卡。 |
+| **SD 卡槽**（TF 卡槽） | 位于设备后部，录制数据保存在 Micro SD 卡上。出厂已插入一张 SD 卡。 |
 | **USB Type-C 接口** | 位于设备后部，连接 Windows 电脑后配合 EGOTool 实时预览与控制。 |
 | **磁吸电池** | 卡扣式磁吸电池，扣上即上电。 |
+| **音量加减键** | 位于录制按键的另一侧，调节语音提示音量。 |
 
 设备的运行状态（电量、温度、SD 卡用量等）可在 EGOTool 上位机中查看。
 
