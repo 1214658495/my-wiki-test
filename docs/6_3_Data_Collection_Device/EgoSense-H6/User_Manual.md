@@ -202,21 +202,6 @@ EGOTool tabs:
 | **Factory Capture** | Enter task, location, notes and operator, then click **Apply**. The information is written into the **next** recording. |
 | **Log** | View the device log. |
 
-<AnnotatedImage
-  src={`${IMG}/ego6_tab_factory.png`}
-  alt="Factory Capture tab"
-  caption="Factory Capture (screenshot from an earlier Chinese-only version)"
-  maxWidth={420}
-  items={[
-    {box: [2, 19, 94.5, 12.5], text: 'Task'},
-    {box: [2, 33.3, 94.5, 12.5], text: 'Location'},
-    {box: [2, 47.6, 94.5, 12.5], text: 'Notes'},
-    {box: [2, 61.9, 94.5, 12.5], text: 'Operator'},
-    {box: [2, 76.5, 41, 7.5], badge: [45, 80.2], text: 'Settings take effect from the next recording'},
-    {box: [2.5, 85.5, 94.5, 14], text: 'Apply'},
-  ]}
-/>
-
 :::info
 Live preview is only for **checking the image, focus and framing** — it is not saved. The recording on the SD card is the source of truth.
 :::
