@@ -137,7 +137,7 @@ GMSL 摄像头通过 PoC（Power over Coax）供电，因此所有数据、控�
 ### 支持的摄像头列表
 
 :::note 摄像头兼容性
-当前仅支持 JetPack 6.0。
+支持 JetPack 6.0 与 JetPack 6.2，各驱动包支持的摄像头组合见 [SDK 下载](#sdk-下载)。以下摄像头列表与映射适用于 JetPack 6.0 的 `SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L` 驱动包。
 :::
 
 #### 摄像头版本支持
@@ -181,7 +181,7 @@ GMSL 摄像头通过 PoC（Power over Coax）供电，因此所有数据、控�
 | SG8-IMX728C-G2G-Hxxx | RAW12 | - | - | -->
 
 :::note JetPack 版本
-NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> 或 <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong>）是 Jetson 系列开发板的官方软件开发套件（SDK），包含操作系统、驱动、CUDA、cuDNN、TensorRT 以及其他开发工具和库。每个 JetPack 版本通常对应特定的 Jetson Linux 版本（此前称为 L4T - Linux for Tegra）。
+NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> 或 <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.2</strong>）是 Jetson 系列开发板的官方软件开发套件（SDK），包含操作系统、驱动、CUDA、cuDNN、TensorRT 以及其他开发工具和库。每个 JetPack 版本通常对应特定的 Jetson Linux 版本（此前称为 L4T - Linux for Tegra）。
 - 36.4.3: L4T R36.4.3 (Jetpack 6.2)
 - 36.4: L4T R36.4 (Jetpack 6.1)
 - 36.3: L4T R36.3 (Jetpack 6.0)
@@ -289,91 +289,27 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 请根据摄像头类型和 JetPack 版本选择合适的驱动包:
 :::
 
-| 摄像头 类型 | JetPack 版本 | 下载链接 |
-|-------------|-----------------|---------------|
-| GMSL2 摄像头 (YUV) | JP6.0 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
+| JetPack 版本 | 框架 | 驱动包 | 支持的摄像头 | 下载链接 |
+|--------------|------|--------|--------------|----------|
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56Cx1_SHF3Lx6_JP6.2_L4TR36.4.3` | Astra S56C ×1（含 IMU）+ SHF3L/SHF3H ×6 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56Cx1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3` | Astra S56 ×1（含 IMU）+ SHF3L/SHF3H ×6 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3` | Astra S56 ×1 + SHW3G/SHF3G ×6 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_AR0234x5_JP6.2_L4TR36.4.3` | Astra S56 ×1 + AR0234 ×5 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_AR0234x5_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56&SHW5G_JP6.2_L4TR36.4.3` | SHW5G ×9；Astra S56 ×4；Astra S56 ×2 + SHW5G ×5 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56%26SHW5G_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_60fps_JP6.2_L4TR36.4.3` | SHW5G 60fps ×8（每颗 MAX96712 最多 2 路） | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_60fps_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3` | SHW5G ×9 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Hx6_SHW5Gx4_JP6.2_L4TR36.4.3` | SHW3H ×6 + SHW5G ×3 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Hx6_SHW5Gx4_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Gx9_JP6.2_L4TR36.4.3` | SHW3G/SHF3G ×9 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Gx9_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H&SHF3L_JP6.2_L4TR36.4.3` | SHW3H ×8 / SHF3L ×10 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H%26SHF3L_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S36x2_SHF3Lx6_JP6.2_L4TR36.4.3` | Astra S36 ×2 + SHF3L ×6（或 SHW3H ×4） | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S36x2_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S36x1_AR0233x7_JP6.2_L4TR36.4.3` | Astra S36 ×1 + SG2-AR0233C（60fps）×7 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S36x1_AR0233x7_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_N1B60_SHW3Hx6_AR0233x4_JP6.2_L4TR36.4.3` | SH2-N1B60-G2A ×6 或 SHW3H ×6，+ SG2-AR0233C ×4 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_N1B60_SHW3Hx6_AR0233x4_JP6.2_L4TR36.4.3) |
 
 :::tip 下载方法
 将完整链接地址复制到 [DownGit](https://minhaskamal.github.io/DownGit/#/home) 进行下载
 :::
 
-#### 快速拉起
-
-:::note 系统更新
-可以使用 NVIDIA SDK Manager Linux 软件，或通过 Linux 命令行使用 NVIDIA Linux Driver Package 将 JetPack OS 刷写到 NVIDIA Jetson 设备。对于初学者，建议优先使用 NVIDIA SDK Manager。
+:::tip 驱动包说明
+- **SIPL** 驱动包基于 JetPack 7.2 起支持的 NVIDIA SIPL 相机框架；**V4L2** 驱动包使用标准 V4L2 / Argus 相机链路。
+- 每个驱动包目录内都附带 `Readme.md`（拉起步骤）和 `Version.md`（更新记录），请以所下载驱动包的 Readme 为准。
 :::
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{maxWidth: '100%', height: 'auto'}} />
-</div> -->
-
-1. 将驱动包复制到 Jetson 设备的工作目录，例如 “/home/nvidia”
-
-   ```
-   /home/nvidia/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
-   ```
-2. 进入驱动目录,
-
-   ```
-   cd SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
-   chmod a+x ./install.sh
-   ./install.sh
-   ```
-3. 使用 "sudo /opt/nvidia/jetson-io/jetson-io.py" 命令选择对应设备
-
-   ```
-   sudo /opt/nvidia/jetson-io/jetson-io.py
-
-   1.select "Configure Jetson AGX CSI Connector"
-   2.select "Configure for compatible hardware"
-   3.select "Jetson Orbbec Camera G335Lg And SH3"
-   4.select "Save pin changes"
-   5.select "Save and reboot to reconfigure pins"
-   ```
-4. reboot device
-
-   ```
-   sudo reboot
-   ```
-5. 安装摄像头驱动
-
-   ```
-   cd SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
-   chmod +x load_modules.sh
-   ./load_modules.sh
-   ```
-6. 拉起 SHW3H 摄像头（SHW3H 连接到 HDR 摄像头端口，SHF3L 也相同）
-
-   ```
-   ## CAM2
-    gst-launch-1.0 v4l2src device=/dev/video0 ! xvimagesink -ev
-
-   ## CAM3
-    gst-launch-1.0 v4l2src device=/dev/video1 ! xvimagesink -ev
-
-   ## CAM4
-    gst-launch-1.0 v4l2src device=/dev/video2 ! xvimagesink -ev
-
-   ## CAM5
-    gst-launch-1.0 v4l2src device=/dev/video3 ! xvimagesink -ev
-
-   ## CAM6
-    gst-launch-1.0 v4l2src device=/dev/video4 ! xvimagesink -ev
-
-   ## CAM7
-    gst-launch-1.0 v4l2src device=/dev/video5 ! xvimagesink -ev
-   ```
-7. 拉起 Gemini 335Lg 摄像头（Gemini 335Lg 连接到 D457 摄像头端口）
-
-   ```
-   unzip OrbbecViewer_v2.0.18_202410190639_77d8dff_linux_aarch64.zip -d ./
-   cd OrbbecViewer_v2.0.18_202410190639_77d8dff_linux_aarch64
-   ./OrbbecViewer
-   ```
-8. 程序启动后，可在左上角选择要打开的设备
-9. 点击左侧摄像头按钮，然后依次启动 Color、Depth、IR Left 和 IR Right 四路数据流。
-
-<br />
-## 常见问题
-
-详情请点击[这里](../../../FAQ/FAQ_jetson)

@@ -8,11 +8,11 @@ sidebar_position: 2
 
 <div className="row">
   <div className="col col--8">
-    SG8A-AGON-G2Y-A1 adapter board, which allows up to 8 cameras to be connected to the Jetson AGX Orin module, 
-    is fully compatible with the NVIDIA Jetson AGX Orin Development Kit. 
-    As there are many different types of GMSL cameras available, the adapter board can be adaptively operated at different frequencies i.e. 
-    it is compatible with both GMSL and GMSL2 protocol interfaces through software configuration. 
-    The GMSL camera is powered by PoC (Power over Coax), so all data, control signals and power are sent over a 50 Ohm coaxial cable, 
+    SG8A-AGON-G2Y-A1 adapter board, which allows up to 8 cameras to be connected to the Jetson AGX Orin module,
+    is fully compatible with the NVIDIA Jetson AGX Orin Development Kit.
+    As there are many different types of GMSL cameras available, the adapter board can be adaptively operated at different frequencies i.e.
+    it is compatible with both GMSL and GMSL2 protocol interfaces through software configuration.
+    The GMSL camera is powered by PoC (Power over Coax), so all data, control signals and power are sent over a 50 Ohm coaxial cable,
     making the camera's cable routing flexible and easy to install in automotive applications.
   </div>
   <div className="col col--4">
@@ -31,13 +31,13 @@ sidebar_position: 2
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1.png" alt="SG8A-ORIN-GMSL" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-AGON-G2Y-A1/SG8A-AGON-G2Y-A1.png" alt="SG8A-ORIN-GMSL"
     style={{maxWidth: '45%', height:'auto'}} />
 </div>
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/h-pd-269.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/h-pd-269.html?recommendFromPid=0&fromMid=898" target="_blank" rel="noopener noreferrer"
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
@@ -123,7 +123,9 @@ The following cameras are supported with different JetPack versions:
 | SG8-IMX728C-G2G-Hxxx | RAW12 | - | - |
 
 :::note JetPack Versions
-NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
+NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong>, <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.2 / 6.2.1</strong>, <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 7.2.1</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).
+- 39.2.1: L4T R39.2.1 (Jetpack 7.2.1)
+- 36.4.4: L4T R36.4.4 (Jetpack 6.2.1)
 - 36.4.3: L4T R36.4.3 (Jetpack 6.2)
 - 36.4: L4T R36.4 (Jetpack 6.1)
 - 36.3: L4T R36.3 (Jetpack 6.0)
@@ -190,122 +192,18 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 Select the appropriate driver package based on your camera type and JetPack version:
 :::
 
-| Camera Type | JetPack Version | Download Link |
-|-------------|-----------------|---------------|
-| GMSL2 Camera (YUV) | JP5.1.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack5.1.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1) |
-| GMSL2 Camera (YUV) | JP6.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUV_JP6.2_L4TR36.4.3) |
+| JetPack Version | Framework | Driver Package | Supported Cameras | Download Link |
+|-----------------|-----------|----------------|-------------------|---------------|
+| JP7.2.1 | SIPL | `SG8A_AGON_G2Y_A1_AGX_ORIN_S56C_SHW5G_SHF3L_SIPL_JP7.2.1_L4TR39.2.1` | Astra S56C ×1 + SHF3L ×2; SHW5G ×2 + SHF3L ×2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack7.2.1/SG8A_AGON_G2Y_A1_AGX_ORIN_S56C_SHW5G_SHF3L_SIPL_JP7.2.1_L4TR39.2.1) |
+| JP6.2.1 | V4L2 | `SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2.1_L4TR36.4.4` | GMSL2 x8 general package: SG2-AR0233C / SG2-IMX390C / SG2-OX03CC / SG3S-ISX031C / SG3S-OX03JC / SG3S11AFxK / SG5-IMX490C / SG8S-AR0820C / SG8-ISX028C / SG8-OX08BC / SG8-OX08DC / SG8-IMX728C / OMSBDAAN / DMSBBFAN | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2.1/SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2.1_L4TR36.4.4) |
+| JP6.2 | V4L2 | `SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2_L4TR36.4.3` | GMSL2 x8 general package (YUV / RAW, heterogeneous connection supported): SGX YUV series, RedFox-D3GN, SH3-S11A60, SG8-ISX028C, SG8-OX08DC, SG3S11AFxK, SHW3G, SDV11NM1, etc. | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2/SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2_L4TR36.4.3) |
+| JP5.1.2 | V4L2 | `SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1` | GMSL2 YUV cameras (SG2 / SG3 / SG5 / SG8 series, OMSBDAAN-AA) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack5.1.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1) |
 
 :::tip Download Method
 Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
 :::
 
-#### Quick Bring Up
-
-:::note System Update
-We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Driver Package via Linux command line to flash JetPack OS into the NVIDIA Jetson device. For beginners, we highly recommend NVIDIA SDK Manager.
+:::tip Driver package notes
+- **SIPL** packages are based on the NVIDIA SIPL camera framework supported since JetPack 7.2; **V4L2** packages use the standard V4L2 / Argus camera path.
+- Each driver package contains its own `Readme.md` (bring-up steps) and `Version.md` (change log). Please follow the Readme of the package you download. 
 :::
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-AGON-G2Y-A1-cmd" style={{maxWidth: '100%', height: 'auto'}} />
-</div> -->
-
-1. Copy the driver package to the working directory of the Jetson device, such as “/home/nvidia”
-
-   ```
-   /home/nvidia/SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
-   ```
-2. Enter the driver directory
-
-   ```
-   cd SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
-   ```
-3. Give executable permissions to the script "quick_bring_up.sh" and execute the script
-
-   ```
-   chmod a+x quick_bring_up.sh
-   sudo ./quick_bring_up.sh
-   ```
-4. Select the camera type. This step will install Image and DTB, after the script run complete.
-   You need to reboot the device to let the Image and DTB take effect.
-   For example:
-
-   ```
-   This package is use for Sensing SG8A_AGON_G2Y_B1 on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl2
-   Press select your camera type:
-   1
-   ```
-
-   At this point, you should type 1 to select your camera type and then hit Enter
-5. After the device reboots, enter the driver directory and run the script "quick_bring_up.sh"
-
-   ```
-   sudo ./quick_bring_up.sh
-   ```
-6. Select the camera type. Select the sgx-yuv-gmsl2 camera type, then select SG2-IMX390C-5200-GMSL2,
-   and finally enter 0-7 the camera port you are connected to to turn on the camera.
-
-   ```
-   This package is use for Sensing SG8A_AGON_G2Y_B1 on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl2
-   Press select your camera type:
-   1
-   Press select your yuv camera type:
-   0:SG2-IMX390C-5200-GMSL2
-   1:SG2-AR0233-5300-GMSL2
-   2.SG2-OX03CC-5200-GMSL2F
-   3.SG3-ISX031C-GMSL2
-   4.SG3S-ISX031C-GMSL2F
-   5.SG5-IMX490C-5200-GMSL2
-   6.SG8-AR0820C-5300-GMSL2
-   7.SG8-OX08BC-5300-GMSL2
-   0
-   Press select your camera port [0-7]:
-   0
-   ready bring up camera
-   Use the following command to light the camera!
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
-7. Select one of the commands prompted above to light the camera
-
-#### Integration with SENSING Driver Source Code
-
-1. Compile Image & dtb
-   Refer to the following command to integrate Dtb and Kernel source code to your kernel
-
-   ```
-   cp camera-driver-package/source/hardware Linux_for_Tegra/source/public/$YourDir/hardware -r
-   cp camera-driver-package/source/kernel Linux_for_Tegra/source/public/$YourDir/kernel -r
-   ```
-2. Go to the root directory of your source code and recompile
-
-   ```
-   cd  Linux_for_Tegra/source/public/$YourDir/
-   export CROSS_COMPILE_AARCH64_PATH=toolchain-path
-   export CROSS_COMPILE_AARCH64=toolchain-path/bin/aarch64-buildroot-linux-gnu-
-   mkdir kernel_out
-   ./nvbuild.sh -o $PWD/kernel_out
-   ```
-3. Install the newly generated Image and dtb to your nvidia device and reboot to let them take effect
-
-   ```
-   dtb:kernel_out/arch/arm64/boot/dts/nvidia/
-   Image: kernel_out/arch/arm64/boot/Image
-   ```
-4. Install camera driver
-
-   ```
-   sudo insmod ./ko/max9295.ko
-   sudo insmod ./ko/max9296.ko
-   sudo insmod ./ko/sgx-yuv-gmsl2.ko
-   ```
-5. Bring up the camera
-
-   ```
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
-
-<br />
-## FAQ
-
-For details, please click [here](../../../FAQ/FAQ_jetson)

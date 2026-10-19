@@ -19,13 +19,13 @@ This document contains all the frequently asked questions related to GMSL2 Camer
 | 1 | Image output format | eg. RAW12、RAW16、YUV-422 |
 | 2 | Embedded data | eg. Whether the camera outputs EBD data? YES/No |
 | 3 | Cmos model | eg. AR0820、AR0233 |
-| 4 | Serializer model | eg. MAX9295、MAX9671TF |
+| 4 | Serializer model | eg. MAX9295、MAX96717F |
 | 5 | Fsin pin | eg. MFP7、MFP8 |
 | 6 | Reset pin | eg. MFP0 |
 
 | # | Platform Controller | reference |
 |---|-------------------|-----------|
-| 1 | Deserializer model | eg. MAX9296、MAX9671Z |
+| 1 | Deserializer model | eg. MAX9296、MAX96712 |
 | 2 | CSI output frequency | eg. lane rate |
 
 2. The camera needs to be given to SENSING for adaptation verification.

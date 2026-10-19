@@ -209,7 +209,8 @@ The latest driver package supports **Astra S56 / S56C** and **SHF3L/SHF3H** came
 <table style={{margin: '0 auto'}}>
 | Camera Type | JetPack Version | Download Link |
 |-------------|-----------------|---------------|
-| Astra S56 / S56C + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56 + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56C + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56Cx1_SHF3Lx6_JP6.2_L4TR36.4.3) |
 </table>
 
 </div>

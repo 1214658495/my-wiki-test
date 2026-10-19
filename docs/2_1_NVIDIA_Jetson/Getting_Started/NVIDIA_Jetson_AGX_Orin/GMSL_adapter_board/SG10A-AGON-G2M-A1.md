@@ -8,11 +8,11 @@ sidebar_position: 3
 
 <div className="row">
   <div className="col col--8">
-    SG10A-AGON-G2M-A1 adapter board, which allows up to 10 cameras to be connected to the Jetson AGX Orin module, 
-    is fully compatible with the NVIDIA Jetson AGX Orin Development Kit. 
-    As there are many different types of GMSL cameras available, the adapter board can be adaptively operated at different frequencies i.e. 
-    it is compatible with both GMSL and GMSL2 protocol interfaces through software configuration. 
-    The GMSL camera is powered by PoC (Power over Coax), so all data, control signals and power are sent over a 50 Ohm coaxial cable, 
+    SG10A-AGON-G2M-A1 adapter board, which allows up to 10 cameras to be connected to the Jetson AGX Orin module,
+    is fully compatible with the NVIDIA Jetson AGX Orin Development Kit.
+    As there are many different types of GMSL cameras available, the adapter board can be adaptively operated at different frequencies i.e.
+    it is compatible with both GMSL and GMSL2 protocol interfaces through software configuration.
+    The GMSL camera is powered by PoC (Power over Coax), so all data, control signals and power are sent over a 50 Ohm coaxial cable,
     making the camera's cable routing flexible and easy to install in automotive applications.
   </div>
   <div className="col col--4">
@@ -31,13 +31,13 @@ sidebar_position: 3
 <!-- <img src={require('@site/static/img/SG8A-ORIN-GMSL.png').default} alt="SG8A-ORIN-GMSL" /> -->
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1.png" alt="SG10A-AGON-G2M-A1" 
+    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG10A-AGON-G2M-A1/SG10A-AGON-G2M-A1.png" alt="SG10A-AGON-G2M-A1"
     style={{maxWidth: '45%', height:'auto'}} />
 </div>
 <br />
 
 <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <a href="https://sensing-world.com/en/SG10A-AGON-G2M-A1.html?fromMid=898#recommendFromPid=0" target="_blank" rel="noopener noreferrer" 
+    <a href="https://sensing-world.com/en/SG10A-AGON-G2M-A1.html?fromMid=898#recommendFromPid=0" target="_blank" rel="noopener noreferrer"
        style={{backgroundColor: '#f0f0f0', padding: '10px 20px', display: 'inline-block', borderRadius: '5px', textDecoration: 'none'}}>
         <strong style={{color: '#000000', fontSize: '1.2em'}}>Buy Now</strong>
     </a>
@@ -137,7 +137,7 @@ sidebar_position: 3
 ### Supported Camera List
 
 :::note Camera Compatibility
-Currently only JetPack 6.0 is supported.
+JetPack 6.0 and JetPack 6.2 are supported. See [SDK Download](#sdk-download) for the camera combinations supported by each driver package. The camera list and mapping below apply to the JetPack 6.0 `SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L` package.
 :::
 
 #### Camera Version Support
@@ -181,7 +181,7 @@ Currently only JetPack 6.0 is supported.
 | SG8-IMX728C-G2G-Hxxx | RAW12 | - | - | -->
 
 :::note JetPack Versions
-NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra). 
+NVIDIA JetPack (<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong> or <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.2</strong> ) is the official software development kit (SDK) for the Jetson series of development boards. It includes the operating system, drivers, CUDA, cuDNN, TensorRT, and other development tools and libraries. Each JetPack version typically corresponds to a specific Jetson Linux version (formerly known as L4T - Linux for Tegra).
 - 36.4.3: L4T R36.4.3 (Jetpack 6.2)
 - 36.4: L4T R36.4 (Jetpack 6.1)
 - 36.3: L4T R36.3 (Jetpack 6.0)
@@ -289,91 +289,27 @@ For more information, visit [NVIDIA's official Jetson Download Center](https://d
 Select the appropriate driver package based on your camera type and JetPack version:
 :::
 
-| Camera Type | JetPack Version | Download Link |
-|-------------|-----------------|---------------|
-| GMSL2 Camera (YUV) | JP6.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H%26SHF3L_JP6.0_L4TR36.3.0) |
+| JetPack Version | Framework | Driver Package | Supported Cameras | Download Link |
+|-----------------|-----------|----------------|-------------------|---------------|
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56Cx1_SHF3Lx6_JP6.2_L4TR36.4.3` | Astra S56C ×1 (with IMU) + SHF3L/SHF3H ×6 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56Cx1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3` | Astra S56 ×1 (with IMU) + SHF3L/SHF3H ×6 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3` | Astra S56 ×1 + SHW3G/SHF3G ×6 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHW3Gx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_AR0234x5_JP6.2_L4TR36.4.3` | Astra S56 ×1 + AR0234 ×5 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_AR0234x5_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S56&SHW5G_JP6.2_L4TR36.4.3` | SHW5G ×9; Astra S56 ×4; Astra S56 ×2 + SHW5G ×5 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56%26SHW5G_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_60fps_JP6.2_L4TR36.4.3` | SHW5G 60fps ×8 (max 2 per MAX96712) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_60fps_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3` | SHW5G ×9 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW5G_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Hx6_SHW5Gx4_JP6.2_L4TR36.4.3` | SHW3H ×6 + SHW5G ×3 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Hx6_SHW5Gx4_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Gx9_JP6.2_L4TR36.4.3` | SHW3G/SHF3G ×9 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_SHW3Gx9_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H&SHF3L_JP6.2_L4TR36.4.3` | SHW3H ×8 / SHF3L ×10 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A-AGON-G2M-A1-AGX_ORIN_SHW3H%26SHF3L_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S36x2_SHF3Lx6_JP6.2_L4TR36.4.3` | Astra S36 ×2 + SHF3L ×6 (or SHW3H ×4) | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S36x2_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_S36x1_AR0233x7_JP6.2_L4TR36.4.3` | Astra S36 ×1 + SG2-AR0233C (60fps) ×7 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S36x1_AR0233x7_JP6.2_L4TR36.4.3) |
+| JP6.2 | V4L2 | `SG10A_AGON_G2M_A1_AGX_ORIN_N1B60_SHW3Hx6_AR0233x4_JP6.2_L4TR36.4.3` | SH2-N1B60-G2A ×6 or SHW3H ×6, + SG2-AR0233C ×4 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_N1B60_SHW3Hx6_AR0233x4_JP6.2_L4TR36.4.3) |
 
 :::tip Download Method
 Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download
 :::
 
-#### Quick Bring Up
-
-:::note System Update
-We can use NVIDIA SDK Manager Linux Software or directly use the NVIDIA Linux Driver Package via Linux command line to flash JetPack OS into the NVIDIA Jetson device. For beginners, we highly recommend NVIDIA SDK Manager.
+:::tip Driver package notes
+- **SIPL** packages are based on the NVIDIA SIPL camera framework supported since JetPack 7.2; **V4L2** packages use the standard V4L2 / Argus camera path.
+- Each driver package contains its own `Readme.md` (bring-up steps) and `Version.md` (change log). Please follow the Readme of the package you download.
 :::
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-ORIN-GMSL2-cmd" style={{maxWidth: '100%', height: 'auto'}} />
-</div> -->
-
-1. Copy the driver package to the working directory of the Jetson device, such as "/home/nvidia"
-
-   ```
-   /home/nvidia/SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
-   ```
-2. Enter the driver directory,
-
-   ```
-   cd SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
-   chmod a+x ./install.sh
-   ./install.sh
-   ```
-3. Use the "sudo /opt/nvidia/jetson-io/jetson-io.py" command to select the corresponding device
-
-   ```
-   sudo /opt/nvidia/jetson-io/jetson-io.py
-
-   1.select "Configure Jetson AGX CSI Connector"
-   2.select "Configure for compatible hardware"
-   3.select "Jetson Orbbec Camera G335Lg And SH3"
-   4.select "Save pin changes"
-   5.select "Save and reboot to reconfigure pins"
-   ```
-4. reboot device
-
-   ```
-   sudo reboot
-   ```
-5. Install camera driver
-
-   ```
-   cd SG10A-AGON-G2M-A1-AGX_G335Lg_SHW3H&SHF3L_JP6.0_L4TR36.3.0
-   chmod +x load_modules.sh
-   ./load_modules.sh
-   ```
-6. Bring up the SHW3H camera (SHW3H camera is connected to the HDR Camera port, and SHF3L as well)
-
-   ```
-   ## CAM2
-    gst-launch-1.0 v4l2src device=/dev/video0 ! xvimagesink -ev
-
-   ## CAM3
-    gst-launch-1.0 v4l2src device=/dev/video1 ! xvimagesink -ev
-
-   ## CAM4
-    gst-launch-1.0 v4l2src device=/dev/video2 ! xvimagesink -ev
-
-   ## CAM5
-    gst-launch-1.0 v4l2src device=/dev/video3 ! xvimagesink -ev
-
-   ## CAM6
-    gst-launch-1.0 v4l2src device=/dev/video4 ! xvimagesink -ev
-
-   ## CAM7
-    gst-launch-1.0 v4l2src device=/dev/video5 ! xvimagesink -ev
-   ```
-7. Bring up the Gemini 335Lg camera (Gemini 335Lg camera connected to D457 Camera port) 
-  
-   ```
-   unzip OrbbecViewer_v2.0.18_202410190639_77d8dff_linux_aarch64.zip -d ./
-   cd OrbbecViewer_v2.0.18_202410190639_77d8dff_linux_aarch64
-   ./OrbbecViewer
-   ```
-8. After the program starts, you can select the device to open in the top-left corner
-9. Click the Camera button on the left, then sequentially start the Color, Depth, IR Left, and IR Right 4 data streams.   
-
-<br />
-## FAQ
-
-For details, please click [here](../../../FAQ/FAQ_jetson)

@@ -193,7 +193,8 @@ sidebar_position: 3
 <table style={{margin: '0 auto'}}>
 | 摄像头类型 | JetPack 版本 | 下载链接 |
 |-------------|-----------------|---------------|
-| Astra S56 / S56C + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56 + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56x1_SHF3Lx6_JP6.2_L4TR36.4.3) |
+| Astra S56C + SHF3L/SHF3H | JP6.2 (L4TR36.4.3) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.2/SG10A_AGON_G2M_A1_AGX_ORIN_S56Cx1_SHF3Lx6_JP6.2_L4TR36.4.3) |
 </table>
 </div>
 

@@ -77,6 +77,9 @@ title: 机器人视觉解决方案
 | 摄像头类型 | JetPack 版本 | 下载链接 |
 |-------------|-----------------|---------------|
 | GMSL2 摄像头 (YUV) | JP7.0 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.0/TRD1_G2A_AGX_THOR_GMSL2x8_JP7.0_L4TR38.2) |
+| GMSL2 摄像头 (YUV / RAW) | JP7.1 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.1/TRD1_G2A_AGX_THOR_GMSL2x8_JP7.1_L4TR38.4) |
+| GMSL2 摄像头 (YUV / RAW) | JP7.2 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.2/TRD1_G2A_GMSL2x8_JP7.2_L4TR39.2) |
+| GMSL2 摄像头 (SIPL) | JP7.2 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.2/TRD1_G2A_AGX_THOR_SIPL_JP7.2_L4TR39.2) |
 
 :::tip 下载方法
 将完整链接复制到 [DownGit](https://minhaskamal.github.io/DownGit/#/home) 下载指定目录。

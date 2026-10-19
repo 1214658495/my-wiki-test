@@ -250,7 +250,7 @@ Select the appropriate driver package based on your camera type and JetPack vers
 |-------------|-----------------|---------------|
 | GMSL Camera (YUV) | JP6.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG4A-NONX-G2Y-A1/JetPack6.0/SG4A-NONX-G2Y-A1_ORIN_NANO_YUV_JP6.0_L4TR36.3) |
 | GMSL Camera (YUV) | JP6.1 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG4A-NONX-G2Y-A1/JetPack6.1/SG4A-NONX-G2Y-A1_ORIN_NANO_YUV_JP6.1_L4TR36.4.2) |
-| GMSL Camera (YUV) | JP6.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG4A-NONX-G2Y-A1/JetPack6.2/SG4A-NONX-G2Y-A1_ORIN_NANO_YUV_JP6.2_L4TR36.4.3) |
+| GMSL Camera (YUV) | JP6.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20Orin%20Nano%26NX%20Devkit/SG4A-NONX-G2Y-A1/JetPack6.2/SG4A_NONX_G2Y_A1_ORIN_NANO_YUV_JP6.2_L4TR36.4.3) |
 
 
 :::tip Download Method

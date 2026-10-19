@@ -217,7 +217,7 @@ The RedFox-D3Gx series incorporates advanced automatic defogging algorithms that
 
 | **序号** | **JetPack 版本** | **摄像头 型号** | **NVIDIA Jetson 设备** | **转接板** | **下载链接** |
 |---------|---------------------|------------------|----------------------------|-------------------|-------------------|
-| 1 | JP6.0 | RedFox-D3Gx Series | Jetson AGX Orin 开发套件 | [SG10A-AGON-G2M-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG10A-AGON-G2M-A1/JetPack6.0/RedFox-D3Gx_JP6.0_L4TR36.3.0) |
+| 1 | JP6.2 | RedFox-D3GN | Jetson AGX Orin 开发套件 | [SG8A-AGON-G2Y-A1](/zh-Hans/docs/2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-AGON-G2Y-A1) | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2/SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2_L4TR36.4.3) |
 
 </div>
 

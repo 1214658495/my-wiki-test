@@ -109,6 +109,9 @@ Select the appropriate driver package based on your camera type and JetPack vers
 | Camera Type | JetPack Version | Download Link |
 |-------------|-----------------|---------------|
 | GMSL2 Camera (YUV) | JP7.0 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.0/TRD1_G2A_AGX_THOR_GMSL2x8_JP7.0_L4TR38.2) |
+| GMSL2 Camera (YUV / RAW) | JP7.1 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.1/TRD1_G2A_AGX_THOR_GMSL2x8_JP7.1_L4TR38.4) |
+| GMSL2 Camera (YUV / RAW) | JP7.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.2/TRD1_G2A_GMSL2x8_JP7.2_L4TR39.2) |
+| GMSL2 Camera (SIPL) | JP7.2 | [Download](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.2/TRD1_G2A_AGX_THOR_SIPL_JP7.2_L4TR39.2) |
 
 :::tip Download Method
 Copy the full link address to [DownGit](https://minhaskamal.github.io/DownGit/#/home) to download

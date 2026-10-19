@@ -123,7 +123,9 @@ GMSL 摄像头通过 PoC（Power over Coax）供电，因此所有数据、控�
 | SG8-IMX728C-G2G-Hxxx | RAW12 | - | - |
 
 :::note JetPack 版本
-NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong> 或 <strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.0</strong>）是 Jetson 系列开发板的官方软件开发套件（SDK），包含操作系统、驱动、CUDA、cuDNN、TensorRT 以及其他开发工具和库。每个 JetPack 版本通常对应特定的 Jetson Linux 版本（此前称为 L4T - Linux for Tegra）。
+NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 5.1.2</strong>、<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 6.2 / 6.2.1</strong>、<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 7.2.1</strong>）是 Jetson 系列开发板的官方软件开发套件（SDK），包含操作系统、驱动、CUDA、cuDNN、TensorRT 以及其他开发工具和库。每个 JetPack 版本通常对应特定的 Jetson Linux 版本（此前称为 L4T - Linux for Tegra）。
+- 39.2.1: L4T R39.2.1 (Jetpack 7.2.1)
+- 36.4.4: L4T R36.4.4 (Jetpack 6.2.1)
 - 36.4.3: L4T R36.4.3 (Jetpack 6.2)
 - 36.4: L4T R36.4 (Jetpack 6.1)
 - 36.3: L4T R36.3 (Jetpack 6.0)
@@ -190,122 +192,18 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 请根据摄像头类型和 JetPack 版本选择合适的驱动包:
 :::
 
-| 摄像头 类型 | JetPack 版本 | 下载链接 |
-|-------------|-----------------|---------------|
-| GMSL2 摄像头 (YUV) | JP5.1.2 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack5.1.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1) |
-| GMSL2 摄像头 (YUV) | JP6.2 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUV_JP6.2_L4TR36.4.3) |
+| JetPack 版本 | 框架 | 驱动包 | 支持的摄像头 | 下载链接 |
+|--------------|------|--------|--------------|----------|
+| JP7.2.1 | SIPL | `SG8A_AGON_G2Y_A1_AGX_ORIN_S56C_SHW5G_SHF3L_SIPL_JP7.2.1_L4TR39.2.1` | Astra S56C ×1 + SHF3L ×2；SHW5G ×2 + SHF3L ×2 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack7.2.1/SG8A_AGON_G2Y_A1_AGX_ORIN_S56C_SHW5G_SHF3L_SIPL_JP7.2.1_L4TR39.2.1) |
+| JP6.2.1 | V4L2 | `SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2.1_L4TR36.4.4` | GMSL2 x8 通用包：SG2-AR0233C / SG2-IMX390C / SG2-OX03CC / SG3S-ISX031C / SG3S-OX03JC / SG3S11AFxK / SG5-IMX490C / SG8S-AR0820C / SG8-ISX028C / SG8-OX08BC / SG8-OX08DC / SG8-IMX728C / OMSBDAAN / DMSBBFAN | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2.1/SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2.1_L4TR36.4.4) |
+| JP6.2 | V4L2 | `SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2_L4TR36.4.3` | GMSL2 x8 通用包（YUV / RAW，支持异构接入）：SGX YUV 系列、RedFox-D3GN、SH3-S11A60、SG8-ISX028C、SG8-OX08DC、SG3S11AFxK、SHW3G、SDV11NM1 等 | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack6.2/SG8A_AGON_G2Y_A1_AGX_Orin_GMSL2x8_JP6.2_L4TR36.4.3) |
+| JP5.1.2 | V4L2 | `SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1` | GMSL2 YUV 摄像头（SG2 / SG3 / SG5 / SG8 系列、OMSBDAAN-AA） | [下载](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/tree/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack5.1.2/SG8A_AGON_G2Y_A1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1) |
 
 :::tip 下载方法
 将完整链接地址复制到 [DownGit](https://minhaskamal.github.io/DownGit/#/home) 进行下载
 :::
 
-#### 快速拉起
-
-:::note 系统更新
-可以使用 NVIDIA SDK Manager Linux 软件，或通过 Linux 命令行使用 NVIDIA Linux Driver Package 将 JetPack OS 刷写到 NVIDIA Jetson 设备。对于初学者，建议优先使用 NVIDIA SDK Manager。
+:::tip 驱动包说明
+- **SIPL** 驱动包基于 JetPack 7.2 起支持的 NVIDIA SIPL 相机框架；**V4L2** 驱动包使用标准 V4L2 / Argus 相机链路。
+- 每个驱动包目录内都附带 `Readme.md`（拉起步骤）和 `Version.md`（更新记录），请以所下载驱动包的 Readme 为准。
 :::
-
-<!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_1_NVIDIA_Jetson/SG8A-ORIN-GMSL2/SG8A-ORIN-GMSL2-cmd.png" alt="SG8A-AGON-G2Y-A1-cmd" style={{maxWidth: '100%', height: 'auto'}} />
-</div> -->
-
-1. 将驱动包复制到 Jetson 设备的工作目录，例如 “/home/nvidia”
-
-   ```
-   /home/nvidia/SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
-   ```
-2. 进入驱动目录
-
-   ```
-   cd SG8A_AGON_G2Y_B1_AGX_Orin_YUVx8_JP5.1.2_L4TR35.4.1
-   ```
-3. 为 `quick_bring_up.sh` 脚本授予执行权限并执行脚本
-
-   ```
-   chmod a+x quick_bring_up.sh
-   sudo ./quick_bring_up.sh
-   ```
-4. 选择摄像头类型。该步骤会在脚本运行完成后安装 Image 和 DTB。
-需要重启设备以使 Image 和 DTB 生效。
-例如：
-
-   ```
-   This package is use for Sensing SG8A_AGON_G2Y_B1 on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl2
-   Press select your camera type:
-   1
-   ```
-
-此时应输入 `1` 选择摄像头类型，然后按 Enter。
-5. 设备重启后，进入驱动目录并运行 `quick_bring_up.sh` 脚本
-
-   ```
-   sudo ./quick_bring_up.sh
-   ```
-6. 选择摄像头类型。先选择 `sgx-yuv-gmsl2` 摄像头类型，然后选择 `SG2-IMX390C-5200-GMSL2`，
-最后输入实际连接的 0-7 摄像头端口以开启摄像头。
-
-   ```
-   This package is use for Sensing SG8A_AGON_G2Y_B1 on JetPack-5.1.2-L4T-35.4.1
-   1.sgx-yuv-gmsl2
-   Press select your camera type:
-   1
-   Press select your yuv camera type:
-   0:SG2-IMX390C-5200-GMSL2
-   1:SG2-AR0233-5300-GMSL2
-   2.SG2-OX03CC-5200-GMSL2F
-   3.SG3-ISX031C-GMSL2
-   4.SG3S-ISX031C-GMSL2F
-   5.SG5-IMX490C-5200-GMSL2
-   6.SG8-AR0820C-5300-GMSL2
-   7.SG8-OX08BC-5300-GMSL2
-   0
-   Press select your camera port [0-7]:
-   0
-   ready bring up camera
-   Use the following command to light the camera!
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
-7. 选择上方提示的命令之一点亮摄像头
-
-#### 集成 SENSING 驱动源码
-
-1. 编译 Image 和 dtb
- 参考以下命令将 Dtb 和 Kernel 源码集成到你的内核源码中
-
-   ```
-   cp camera-driver-package/source/hardware Linux_for_Tegra/source/public/$YourDir/hardware -r
-   cp camera-driver-package/source/kernel Linux_for_Tegra/source/public/$YourDir/kernel -r
-   ```
-2. 进入源码根目录并重新编译
-
-   ```
-   cd  Linux_for_Tegra/source/public/$YourDir/
-   export CROSS_COMPILE_AARCH64_PATH=toolchain-path
-   export CROSS_COMPILE_AARCH64=toolchain-path/bin/aarch64-buildroot-linux-gnu-
-   mkdir kernel_out
-   ./nvbuild.sh -o $PWD/kernel_out
-   ```
-3. 将新生成的 Image 和 dtb 安装到 NVIDIA 设备并重启使其生效
-
-   ```
-   dtb:kernel_out/arch/arm64/boot/dts/nvidia/
-   Image: kernel_out/arch/arm64/boot/Image
-   ```
-4. 安装摄像头驱动
-
-   ```
-   sudo insmod ./ko/max9295.ko
-   sudo insmod ./ko/max9296.ko
-   sudo insmod ./ko/sgx-yuv-gmsl2.ko
-   ```
-5. 拉起摄像头
-
-   ```
-   gst-launch-1.0 v4l2src device=/dev/video0  ! xvimagesink -ev
-   ```
-
-<br />
-## 常见问题
-
-详情请点击[这里](../../../FAQ/FAQ_jetson)
