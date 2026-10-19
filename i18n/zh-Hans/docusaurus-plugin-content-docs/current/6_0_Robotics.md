@@ -216,7 +216,7 @@ Astra S56x 系列包含 S56 和 S56C。S56 是正在逐步停止销售的 130° 
 
 ---
 
-## 数采设备
+## 第一人称数采方案
 
 <div className="camera-grid">
 

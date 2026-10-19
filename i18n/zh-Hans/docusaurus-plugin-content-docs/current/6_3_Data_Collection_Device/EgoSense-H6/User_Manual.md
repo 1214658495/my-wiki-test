@@ -66,7 +66,7 @@ export const SRC = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 1. 确认 SD 卡已插入。
 2. 扣上磁吸电池，设备上电，指示灯亮起。
 3. （可选）用 Type-C 数据线连接 Windows 电脑，打开 EGOTool 实时预览画面，见 [连接 EGOTool 上位机](#连接-egotool-上位机)。
-4. 按下录制按键，听到语音提示「**开始录制**」，**指示灯变为紫色**，开始录制。也可以点击 EGOTool 中的「开始录像」按钮。
+4. 按下录制按键，听到语音提示「**开始录制**」，**指示灯变为紫色**，开始录制。也可以点击 EGOTool 中的「开始录制」按钮。
 5. 采集结束后，再次按下录制按键，听到语音提示「**结束录制**」，**指示灯变为白色**。待录制保存完成后，再取下电池。
 
 <div className="row">
@@ -110,6 +110,10 @@ EgoSense H6 通过 Windows 上位机 EGOTool 进行实时预览与录制控制�
 - 安装包：**`EGOTool_V1.0.3.zip`**（下载见 [附件下载](#附件下载)）。
 - 下载后直接解压，无需安装，双击 **`EGOTool.exe`** 即可运行。
 
+:::info 界面语言
+EGOTool V1.0.5 起支持**简体中文 / English** 双语界面，可在窗口右上角的语言下拉框中切换。本页截图基于 V1.0.5 中文界面。
+:::
+
 ### 配置电脑网络
 
 设备通过 USB Type-C 在电脑上虚拟出一个网口，需要为该网口配置与设备同网段的静态 IP。
@@ -135,49 +139,75 @@ EgoSense H6 通过 Windows 上位机 EGOTool 进行实时预览与录制控制�
 
 ### 连接设备
 
-打开 EGOTool，在「**通信**」页确认设置后，点击「**设备连接**」：
+打开 EGOTool，在「**通信**」页确认设备 IP 与端口后，点击连接按钮：
 
 <AnnotatedImage
-  src={`${IMG}/ego6_egotool_connect.png`}
+  src={`${IMG}/ego6_egotool_main.jpg`}
   alt="EGOTool 连接设备"
   items={[
-    {box: [68.2, 11.6, 31, 13.3], text: '端口类型 UDP，设备 IP 192.168.140.20，端口 58889'},
-    {box: [68.2, 26.6, 31, 4.4], text: '点击「设备连接」'},
+    {box: [69.5, 8.5, 29.6, 6.3], text: '设备 IP（可下拉选择）与端口 58889'},
+    {box: [69.6, 16.2, 29.3, 3.7], text: '连接设备；连接成功后按钮显示为「设备关闭」，再次点击即断开'},
   ]}
 />
 
 ## 实时预览与录制
 
-连接成功后，EGOTool 显示六路实时画面与设备状态：
+连接成功后，EGOTool 显示六路实时画面与设备状态。下面的视频演示了 EGOTool 的实际操作界面：
+
+<video
+  src={`${SRC}/EGOTool_app_UI.mp4`}
+  poster={`${IMG}/ego6_egotool_main.jpg`}
+  controls
+  muted
+  playsInline
+  preload="metadata"
+  style={{width: '100%', borderRadius: 8, marginBottom: 16}}
+/>
+
+主界面各区域说明：
 
 <AnnotatedImage
-  src={`${IMG}/ego6_egotool_preview.png`}
-  alt="EGOTool 六路实时预览"
+  src={`${IMG}/ego6_egotool_main.jpg`}
+  alt="EGOTool 主界面说明"
   items={[
-    {box: [0.9, 7, 65.9, 91.6], text: '六路相机实时画面'},
-    {box: [67.9, 35.4, 14.8, 3.6], text: '开始 / 结束录制'},
-    {box: [67.9, 40.1, 26.2, 3.3], badge: [94.1, 41.75], text: '功能页：设备控制 / 编码参数 / 工厂采集 / 日志'},
-    {box: [67.3, 68.3, 31.6, 30.9], text: '设备信息：名称、软件版本、IP、电量、温度、SD 卡用量、系统时间'},
+    {box: [1.2, 5.6, 66.9, 94], text: '六路相机实时画面（画面 1 ~ 6）'},
+    {box: [79.6, 0, 8.5, 2.8], text: '界面语言：简体中文 / English'},
+    {box: [69.6, 4.8, 20.5, 2.8], text: '「通信」/「拉流」页'},
+    {box: [69.5, 8.5, 29.6, 6.3], text: '设备 IP 与端口'},
+    {box: [69.6, 16.2, 29.3, 3.7], text: '连接 / 断开设备'},
+    {box: [69.6, 31.8, 13.9, 3.7], text: '开始 / 结束录制'},
+    {box: [85, 31.8, 13.9, 3.7], text: '设置系统时间'},
+    {box: [69.5, 36.8, 27.2, 3], text: '功能页：存储设置 / 工厂采集 / 日志'},
+    {box: [69.9, 40.8, 28.6, 3.6], text: '录制画面：全选，或单独勾选第 1 ~ 6 路'},
+    {box: [69.9, 44.9, 28.6, 3.4], text: '是否录制 IMU / 是否录制声音'},
+    {box: [69.9, 48.9, 28.6, 3.5], text: '录制分辨率：宽 × 高（默认 1600 × 1300）'},
+    {box: [69.9, 52.9, 28.6, 3.5], text: '码率（Kbps）/ 帧率'},
+    {box: [69.9, 56.9, 28.6, 3.4], text: '分包时间：录制文件按设定的分钟数自动分段保存'},
+    {box: [69.9, 60.9, 28.6, 3.5], text: '编码类型（H.265）/ 封装格式（Foxglove）'},
+    {box: [69.9, 65.9, 28.7, 3.3], text: '保存存储设置'},
+    {box: [69.1, 71.9, 30.5, 27.2], text: '设备信息：设备名称、软件版本、设备 SN、电量、温度、SD 卡用量、系统时间'},
   ]}
 />
 
 **录制控制**有两种方式：
 
 1. 按机身右侧的**录制按键**开始 / 结束录制，设备会有对应的语音提示；
-2. 在 EGOTool 中点击「**开始录像**」按钮控制录制。
+2. 在 EGOTool 中点击「**开始录制**」按钮控制录制。
 
 EGOTool 主要功能页：
 
 | 功能页 | 说明 |
 |-|-|
-| **设备控制** | 勾选需要录制的画面通道（1 ~ 6）以及是否录制 IMU。 |
-| **编码参数** | 查看和设置录制分辨率（默认 1600 × 1300）、码率、录制帧率、编码类型（H.265）与封装格式，修改后点击「保存」。 |
+| **存储设置** | 勾选需要录制的画面（1 ~ 6 路）以及是否录制 IMU 与声音；设置录制分辨率（默认 1600 × 1300）、码率、帧率、分包时间、编码类型（H.265）与封装格式，修改后点击「保存」。 |
 | **工厂采集** | 填写「采集任务 / 采集地址 / 备注 / 采集者」，点击「设置」后，信息将写入**下一次**录制的文件。 |
 | **日志** | 查看设备运行日志。 |
 
-| 设备控制 | 编码参数 | 工厂采集 |
-|:-:|:-:|:-:|
-| ![设备控制](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_tab_device_control.png) | ![编码参数](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_tab_encoding.png) | ![工厂采集](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_tab_factory.png) |
+<AnnotatedImage
+  src={`${IMG}/ego6_tab_factory.png`}
+  alt="工厂采集页"
+  caption="工厂采集（截图来自早期版本）"
+  maxWidth={420}
+/>
 
 :::info
 实时预览仅用于**确认画面、对焦与构图**，不用于保存数据。数据以 SD 卡上的录制文件为准。

@@ -50,7 +50,7 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "数采设备",
+    "label": "第一人称数采方案",
     "collapsed": true,
     "collapsible": true,
     "items": [

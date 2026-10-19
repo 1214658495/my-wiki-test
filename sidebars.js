@@ -50,7 +50,7 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "Data Collection Device",
+    "label": "Ego Data Collection Solution",
     "collapsed": true,
     "collapsible": true,
     "items": [

@@ -15,7 +15,7 @@ keywords: [EgoSense H6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 1. 确认设备已扣上电池、侧面电源指示灯已亮起。
 2. 确认 Type-C 数据线已连接，且在 Windows 网络设置中能看到「未识别的网络」虚拟网口。
 3. 确认该网口已手动配置同网段 IP（如 `192.168.140.21`，子网掩码 `255.255.255.0`）。
-4. 确认 EGOTool 中设备 IP 为 `192.168.140.20`、端口为 `58889`，再点击「设备连接」。
+4. 确认 EGOTool 中设备 IP 为 `192.168.140.20`、端口为 `58889`，再点击连接按钮（连接成功后按钮显示为「设备关闭」）。
 
 详见 [使用说明 · 连接 EGOTool 上位机](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#连接-egotool-上位机)。
 

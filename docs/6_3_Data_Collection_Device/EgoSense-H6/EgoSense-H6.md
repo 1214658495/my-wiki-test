@@ -24,8 +24,8 @@ Fixed-camera and motion-capture labs cannot see hand details and are detached fr
 ## Key Features
 
 - **First-person view, just like the human eye**: records what the wearer actually sees, preserving hand-eye coordination and perception-decision behavior.
-- **Six global shutter cameras, 270° ultra-wide coverage**: a front stereo pair plus two mono cameras per side, with no rolling-shutter distortion during motion.
-- **Multi-modal synchronization**: images, IMU (200 Hz) and microphone audio are captured together; cameras support internal and external trigger synchronization.
+- **Six global shutter cameras, 270° ultra-wide coverage**: a front stereo pair plus two mono cameras per side, with no rolling-shutter distortion during motion ([see the coverage video](#six-camera-coverage)).
+- **Multi-modal synchronization**: images, IMU (200 Hz) and microphone audio are captured together; cameras support internal and external trigger synchronization ([see the stereo sync test](#stereo-synchronization)).
 - **Wear and go, offline recording**: battery powered with about 3 hours of runtime, recording straight to the Micro SD card — no camera rigs or dedicated venue required.
 - **Open data format**: recordings are `.mcap` files with H.265 video, readable in Foxglove Studio and easy to integrate into your own data pipeline.
 - **Customizable**: the complete device, main board and cameras can all be customized.
@@ -42,6 +42,21 @@ Fixed-camera and motion-capture labs cannot see hand details and are detached fr
 | Front | Side |
 |:-:|:-:|
 | ![EgoSense H6 front](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![EgoSense H6 side](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
+
+## Six-Camera Coverage
+
+The video below shows the six views recorded while wearing EgoSense H6 during a tabletop task. Views 1 and 2 are the front stereo pair, and views 3 ~ 6 are the side mono cameras. The views overlap to give about 270° of combined coverage, so the wearer's hands, the objects on the table and the surroundings all stay in frame.
+
+<video src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source/%E8%A6%86%E7%9B%96%E7%9A%84%E5%8C%BA%E5%9F%9F.mp4" controls muted playsInline preload="metadata" style={{width: '100%', borderRadius: 8, marginBottom: 16}} />
+
+## Stereo Synchronization
+
+To show how tightly the front stereo pair is synchronized, we filmed an LED timing panel that lights the next LED every 1 ms, then compared the two stereo streams (middle-1 / middle-2) frame by frame in Foxglove Studio:
+
+- **Identical images**: in every frame both cameras capture exactly the same lit LEDs, so the two exposures are aligned to within the panel's 1 ms step.
+- **Matching timestamps**: the timestamps of each frame pair differ by less than 30 µs (14 ~ 27 µs in the frames sampled in the video).
+
+<video src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source/%E7%9B%B8%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%B2%BE%E5%BA%A6-%E7%A7%91%E5%AD%A6%E7%9A%84%E8%A7%86%E9%A2%91%E8%AF%81%E6%98%8E.mp4" controls muted playsInline preload="metadata" style={{width: '100%', borderRadius: 8, marginBottom: 16}} />
 
 ## Key Specifications
 

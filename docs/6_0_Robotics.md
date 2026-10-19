@@ -216,7 +216,7 @@ The Astra S56x series includes S56 and S56C. S56 is a legacy 130° HFOV model be
 
 ---
 
-## Data Collection Device
+## Ego Data Collection Solution
 
 <div className="camera-grid">
 

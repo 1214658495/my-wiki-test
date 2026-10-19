@@ -24,8 +24,8 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 ## 产品特点
 
 - **第一人称视角，与人眼一致**：记录佩戴者真实看到的画面，同时保留手眼协作与感知决策过程。
-- **6 路全局快门，270° 超广角**：前置双目 + 左右侧各两路单目，视角覆盖更全，运动场景下无果冻效应。
-- **多模态同步**：图像、IMU（200 Hz）、麦克风音频同步采集，相机支持内、外触发同步。
+- **6 路全局快门，270° 超广角**：前置双目 + 左右侧各两路单目，视角覆盖更全，运动场景下无果冻效应（[查看覆盖范围视频](#六路画面覆盖范围)）。
+- **多模态同步**：图像、IMU（200 Hz）、麦克风音频同步采集，相机支持内、外触发同步（[查看双目同步实测](#双目同步精度)）。
 - **佩戴即走，脱机录制**：电池供电，续航约 3 小时，数据直接录入 Micro SD 卡，无需相机阵列与专用场地。
 - **开放的数据格式**：录制文件为 `.mcap`，H.265 编码，可直接用 Foxglove Studio 打开，也便于接入自有数据处理流程。
 - **支持定制**：整机、主板与相机均可按需定制。
@@ -42,6 +42,21 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 | 正面 | 侧面 |
 |:-:|:-:|
 | ![EgoSense H6 正面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![EgoSense H6 侧面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
+
+## 六路画面覆盖范围
+
+下面是佩戴 EgoSense H6 进行桌面操作时实际录制的六路画面。画面 1、2 为前置双目，画面 3 ~ 6 为左右两侧的单目相机。六路视野相互重叠，组合覆盖约 270°，佩戴者的双手、桌面物体和周围环境都能完整进入画面。
+
+<video src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source/%E8%A6%86%E7%9B%96%E7%9A%84%E5%8C%BA%E5%9F%9F.mp4" controls muted playsInline preload="metadata" style={{width: '100%', borderRadius: 8, marginBottom: 16}} />
+
+## 双目同步精度
+
+为直观验证前置双目的同步效果，我们用 LED 计时面板（每 1 ms 点亮下一颗 LED）作为拍摄对象，并在 Foxglove Studio 中逐帧对比双目两路画面（middle-1 / middle-2）：
+
+- **画面一致**：同一帧中，两路相机拍到的 LED 点亮位置完全相同，说明两路曝光时刻的差异小于 LED 面板 1 ms 的刻度。
+- **时间戳一致**：同一帧两路图像的时间戳相差不到 30 µs（视频中抽查的帧分别相差 14 ~ 27 µs）。
+
+<video src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source/%E7%9B%B8%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%B2%BE%E5%BA%A6-%E7%A7%91%E5%AD%A6%E7%9A%84%E8%A7%86%E9%A2%91%E8%AF%81%E6%98%8E.mp4" controls muted playsInline preload="metadata" style={{width: '100%', borderRadius: 8, marginBottom: 16}} />
 
 ## 核心参数
 

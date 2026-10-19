@@ -66,7 +66,7 @@ A Micro SD card is included with the device, and **an SD card must be inserted t
 1. Make sure the SD card is inserted.
 2. Attach the magnetic battery. The device powers on and the LED lights up.
 3. (Optional) Connect the device to a Windows PC with a Type-C data cable and open EGOTool for live preview — see [Connecting EGOTool](#connecting-egotool).
-4. Press the record button. A voice prompt announces that recording has started and **the LED turns purple**. You can also click the **Start recording** button in EGOTool.
+4. Press the record button. A voice prompt announces that recording has started and **the LED turns purple**. You can also click the **Start Recording** button in EGOTool.
 5. When finished, press the record button again. A voice prompt announces that recording has stopped and **the LED turns white**. Wait until the recording is saved, then remove the battery.
 
 <div className="row">
@@ -111,7 +111,7 @@ EgoSense H6 uses the Windows host software EGOTool for live preview and recordin
 - Unzip it — no installation needed — and double-click **`EGOTool.exe`** to run it.
 
 :::info EGOTool language
-EGOTool currently has a Chinese interface only. The screenshots below are annotated in English, and the [EGOTool interface glossary](#egotool-interface-glossary) explains every button and field.
+Starting with V1.0.5, EGOTool offers both **English and Simplified Chinese** interfaces. Switch languages from the drop-down in the top-right corner of the window. The screenshots on this page show the V1.0.5 English interface.
 :::
 
 ### Configure the PC Network
@@ -139,116 +139,74 @@ Over USB Type-C, the device appears on the PC as a virtual network adapter. Give
 
 ### Connect to the Device
 
-Open EGOTool, check the settings on the **Communication** tab, then click **Connect device**:
+Open EGOTool, check the device IP and port on the **Communication** tab, then click the connect button:
 
 <AnnotatedImage
-  src={`${IMG}/ego6_egotool_connect.png`}
+  src={`${IMG}/ego6_egotool_main_en.jpg`}
   alt="EGOTool connect to device"
   items={[
-    {box: [68.2, 11.6, 31, 13.3], text: 'Protocol UDP, device IP 192.168.140.20, port 58889'},
-    {box: [68.2, 26.6, 31, 4.4], text: 'Click Connect device'},
+    {box: [69.3, 8.5, 29.5, 6.3], text: 'Device IP (selectable from the drop-down) and port 58889'},
+    {box: [69.4, 16.2, 29.2, 3.7], text: 'Connect to the device. Once connected the button reads Disconnect; click it again to disconnect'},
   ]}
 />
 
 ## Live Preview and Recording
 
-Once connected, EGOTool shows the six live camera views and the device status:
+Once connected, EGOTool shows the six live camera views and the device status. The video below walks through the EGOTool interface:
+
+<video
+  src={`${SRC}/EGOTool_app_UI_en.mp4`}
+  poster={`${IMG}/ego6_egotool_main_en.jpg`}
+  controls
+  muted
+  playsInline
+  preload="metadata"
+  style={{width: '100%', borderRadius: 8, marginBottom: 16}}
+/>
+
+### EGOTool Interface Glossary
 
 <AnnotatedImage
-  src={`${IMG}/ego6_egotool_preview.png`}
-  alt="EGOTool six-channel live preview"
+  src={`${IMG}/ego6_egotool_main_en.jpg`}
+  alt="EGOTool main window glossary"
   items={[
-    {box: [0.9, 7, 65.9, 91.6], text: 'Live view of the six cameras'},
-    {box: [67.9, 35.4, 14.8, 3.6], text: 'Start / stop recording'},
-    {box: [67.9, 40.1, 26.2, 3.3], badge: [94.1, 41.75], text: 'Tabs: Device Control / Encoding / Capture Info / Log'},
-    {box: [67.3, 68.3, 31.6, 30.9], text: 'Device info: name, software version, IP, battery, temperature, SD card usage, system time'},
+    {box: [1.2, 5.6, 66.7, 94], text: 'Live view of the six cameras (View 1 ~ 6)'},
+    {box: [79.4, 0, 8.5, 2.8], text: 'Interface language: English / Simplified Chinese'},
+    {box: [69.4, 4.8, 20.4, 2.8], text: 'Communication / Start Stream tabs'},
+    {box: [69.3, 8.5, 29.5, 6.3], text: 'Device IP and port'},
+    {box: [69.4, 16.2, 29.2, 3.7], text: 'Connect / Disconnect'},
+    {box: [69.4, 31.8, 13.9, 3.7], text: 'Start / stop recording'},
+    {box: [84.8, 31.8, 13.9, 3.7], text: 'Set System Time'},
+    {box: [69.3, 36.8, 27.2, 3], text: 'Tabs: Storage Settings / Factory Capture / Log'},
+    {box: [69.7, 40.8, 28.5, 3.6], text: 'Recorded views: All, or channels 1 ~ 6 individually'},
+    {box: [69.7, 44.9, 28.5, 3.4], text: 'Record IMU / Record Audio'},
+    {box: [69.7, 48.9, 28.5, 3.5], text: 'Recording resolution: width × height (default 1600 × 1300)'},
+    {box: [69.7, 52.9, 28.5, 3.5], text: 'Bitrate (Kbps) / FPS'},
+    {box: [69.7, 56.9, 28.5, 3.4], text: 'Segment time: recordings are split into a new file every N minutes'},
+    {box: [69.7, 60.9, 28.5, 3.5], text: 'Codec (H.265) / Container (Foxglove)'},
+    {box: [69.7, 65.9, 28.7, 3.3], text: 'Save the storage settings'},
+    {box: [68.9, 71.9, 30.5, 27.2], text: 'Device information: device name, software version, device SN, battery level, temperature, SD card used, system time'},
   ]}
 />
 
 There are two ways to **control recording**:
 
 1. Press the **record button** on the right side of the device to start / stop recording; a voice prompt confirms each action.
-2. Click **Start recording** in EGOTool.
+2. Click **Start Recording** in EGOTool.
 
 EGOTool tabs:
 
 | Tab | Description |
 |-|-|
-| **Device Control** | Select which camera channels (1 ~ 6) to record and whether to record the IMU. |
-| **Encoding** | View and set the recording resolution (default 1600 × 1300), bitrate, frame rate, codec (H.265) and container format, then click **Save**. |
-| **Capture Info** | Enter task, location, notes and operator, then click **Apply**. The information is written into the **next** recording. |
+| **Storage Settings** | Select which views (1 ~ 6) to record and whether to record the IMU and audio; set the recording resolution (default 1600 × 1300), bitrate, frame rate, segment time, codec (H.265) and container, then click **Save**. |
+| **Factory Capture** | Enter task, location, notes and operator, then click **Apply**. The information is written into the **next** recording. |
 | **Log** | View the device log. |
-
-See the [EGOTool interface glossary](#egotool-interface-glossary) for annotated screenshots of each tab.
-
-:::info
-Live preview is only for **checking the image, focus and framing** — it is not saved. The recording on the SD card is the source of truth.
-:::
-
-### EGOTool Interface Glossary
-
-EGOTool's interface is in Chinese. Use the numbered callouts below to find each button and field.
-
-**Main window**
-
-<AnnotatedImage
-  src={`${IMG}/ego6_egotool_connect.png`}
-  alt="EGOTool main window glossary"
-  items={[
-    {at: [68.2, 7.8], label: [56, 6], text: 'Communication tab'},
-    {at: [75.3, 10.4], label: [56, 13], text: 'Stream tab'},
-    {at: [67.9, 13.7], label: [56, 20], text: 'Protocol (UDP)'},
-    {at: [67.9, 19.2], label: [56, 27], text: 'Device IP (left) / Port (right)'},
-    {at: [70.5, 28.8], label: [56, 34], text: 'Connect device (changes to Disconnect device once connected)'},
-    {at: [70.5, 37], label: [56, 41], text: 'Start recording'},
-    {at: [89.8, 39.4], label: [89.8, 57], text: 'Set system time'},
-    {at: [67.9, 42], label: [56, 55], text: 'Tabs, left to right: Device Control / Encoding / Capture Info / Log'},
-    {at: [67.9, 46], label: [56, 62], text: 'Recorded channels: Select all, channels 1–6'},
-    {at: [67.9, 49.3], label: [56, 69], text: 'Record IMU'},
-    {at: [67.9, 70.8], label: [56, 80], text: 'Device information, top to bottom: device name, software version, device IP, battery level, device temperature, SD card used, system time'},
-  ]}
-/>
-
-**Tabs**
-
-<div className="row">
-<div className="col col--6">
-
-<AnnotatedImage
-  src={`${IMG}/ego6_tab_device_control.png`}
-  alt="Device Control tab"
-  caption="Device Control"
-  items={[
-    {box: [2, 17.5, 86, 13], text: 'Recorded channels: Select all, channels 1–6'},
-    {box: [2, 29.5, 29, 13], badge: [31, 36], text: 'Record IMU'},
-  ]}
-/>
-
-</div>
-<div className="col col--6">
-
-<AnnotatedImage
-  src={`${IMG}/ego6_tab_encoding.png`}
-  alt="Encoding tab"
-  caption="Encoding"
-  items={[
-    {box: [2, 18, 94, 14], text: 'Recording resolution: width / height'},
-    {box: [2, 34.8, 94, 14], text: 'Bitrate (Kbps) / Recording frame rate (FPS)'},
-    {box: [2, 51.6, 94, 14], text: 'Codec / Container format'},
-    {box: [2.5, 82.5, 94, 14.5], text: 'Save'},
-  ]}
-/>
-
-</div>
-</div>
-
-<div className="row">
-<div className="col col--6">
 
 <AnnotatedImage
   src={`${IMG}/ego6_tab_factory.png`}
-  alt="Capture Info tab"
-  caption="Capture Info"
+  alt="Factory Capture tab"
+  caption="Factory Capture (screenshot from an earlier Chinese-only version)"
+  maxWidth={420}
   items={[
     {box: [2, 19, 94.5, 12.5], text: 'Task'},
     {box: [2, 33.3, 94.5, 12.5], text: 'Location'},
@@ -259,8 +217,9 @@ EGOTool's interface is in Chinese. Use the numbered callouts below to find each 
   ]}
 />
 
-</div>
-</div>
+:::info
+Live preview is only for **checking the image, focus and framing** — it is not saved. The recording on the SD card is the source of truth.
+:::
 
 ## Exporting Data to a PC
 
