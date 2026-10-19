@@ -39,11 +39,21 @@ Fixed-camera and motion-capture labs cannot see hand details and are detached fr
 
 ## Product Appearance
 
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
 | Front | Side |
 |:-:|:-:|
 | ![EgoSense H6 front](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![EgoSense H6 side](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
 
+</div>
+
 ## Six-Camera Coverage
+
+<div style={{background: '#fff', borderRadius: 8, padding: 12, marginBottom: 16}}>
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/Camera_Module_Tilt_Design.png" alt="EgoSense H6 camera module tilt design" style={{display: 'block', width: '100%'}} />
+</div>
+
+The camera modules are mounted at different angles: the **middle two** (front stereo pair) have a **0° tilt** and look straight ahead, while the **other four** are **tilted 20° downward** so that the wearer's hands and the work surface stay in view during manipulation.
 
 The video below shows the six views recorded while wearing EgoSense H6 during a tabletop task. Views 1 and 2 are the front stereo pair, and views 3 ~ 6 are the side mono cameras. The views overlap to give about 270° of combined coverage, so the wearer's hands, the objects on the table and the surroundings all stay in frame.
 
@@ -76,6 +86,7 @@ To show how tightly the front stereo pair is synchronized, we filmed an LED timi
 | | Frame rate | 30 fps (60 fps optional) |
 | | Combined FOV | 270° |
 | | Shutter | Global shutter |
+| | Mounting tilt | Middle two (stereo pair): 0°; other four: 20° downward |
 | **IMU** | Type | 6-axis |
 | | Sample rate | 200 Hz |
 

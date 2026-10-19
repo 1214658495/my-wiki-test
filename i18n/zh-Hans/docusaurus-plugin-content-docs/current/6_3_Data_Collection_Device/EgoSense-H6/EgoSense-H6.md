@@ -39,11 +39,21 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 
 ## 产品外观
 
+<div style={{display: 'flex', justifyContent: 'center'}}>
+
 | 正面 | 侧面 |
 |:-:|:-:|
 | ![EgoSense H6 正面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_front.png) | ![EgoSense H6 侧面](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/ego6_side.png) |
 
+</div>
+
 ## 六路画面覆盖范围
+
+<div style={{background: '#fff', borderRadius: 8, padding: 12, marginBottom: 16}}>
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E7%BB%84%E5%80%BE%E8%A7%92%E8%AE%BE%E8%AE%A1.png" alt="EgoSense H6 相机模组倾角设计" style={{display: 'block', width: '100%'}} />
+</div>
+
+各相机模组的安装角度不同：**中间两颗**（前置双目）为 **0° 倾角**，平视前方；**其余四颗**均**向下倾斜 20°**，在操作过程中让佩戴者的双手与工作台面始终保持在画面内。
 
 下面是佩戴 EgoSense H6 进行桌面操作时实际录制的六路画面。画面 1、2 为前置双目，画面 3 ~ 6 为左右两侧的单目相机。六路视野相互重叠，组合覆盖约 270°，佩戴者的双手、桌面物体和周围环境都能完整进入画面。
 
@@ -76,6 +86,7 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 | | 帧率 | 30 fps（60 fps 可选） |
 | | 组合视场角 | 270° |
 | | 快门类型 | 全局快门（Global Shutter） |
+| | 安装倾角 | 中间两颗（前置双目）0°，其余四颗向下倾斜 20° |
 | **IMU 参数** | 类型 | 六轴（6-axis） |
 | | 采样率 | 200 Hz |
 

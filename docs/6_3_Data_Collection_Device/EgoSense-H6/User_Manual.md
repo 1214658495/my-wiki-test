@@ -107,7 +107,7 @@ EgoSense H6 uses the Windows host software EGOTool for live preview and recordin
 
 ### Install EGOTool
 
-- Package: **`EGOTool_V1.0.3.zip`** (see [Downloads](#downloads)).
+- Package: **`EGOTool_V1.0.5.zip`** (see [Downloads](#downloads)).
 - Unzip it — no installation needed — and double-click **`EGOTool.exe`** to run it.
 
 :::info EGOTool language
@@ -305,7 +305,7 @@ Topics in the recording:
 
 | File | Size | Description |
 |-|-|-|
-| <a href={`${SRC}/EGOTool_V1.0.3.zip`}>EGOTool_V1.0.3.zip</a> | ~70 MB | Ego host software for Windows. Unzip and double-click `EGOTool.exe` |
+| <a href={`${SRC}/EGOTool_V1.0.5.zip`}>EGOTool_V1.0.5.zip</a> | ~69 MB | Ego host software for Windows. Unzip and double-click `EGOTool.exe` |
 | <a href={`${SRC}/Ego-Foxglove-Layout.json`}>Ego-Foxglove-Layout.json</a> | ~7 KB | Foxglove Studio layout file, imported via Import from file… |
 | <a href={`${SRC}/2026-08-20_11-15-40.zip`}>2026-08-20_11-15-40.zip</a> | ~183 MB | Sample recording (`.mcap`) you can explore in Foxglove Studio before purchasing |
 

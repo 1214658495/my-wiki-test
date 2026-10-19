@@ -107,7 +107,7 @@ EgoSense H6 通过 Windows 上位机 EGOTool 进行实时预览与录制控制�
 
 ### 安装 EGOTool
 
-- 安装包：**`EGOTool_V1.0.3.zip`**（下载见 [附件下载](#附件下载)）。
+- 安装包：**`EGOTool_V1.0.5.zip`**（下载见 [附件下载](#附件下载)）。
 - 下载后直接解压，无需安装，双击 **`EGOTool.exe`** 即可运行。
 
 :::info 界面语言
@@ -293,7 +293,7 @@ EGOTool 主要功能页：
 
 | 文件 | 大小 | 说明 |
 |-|-|-|
-| <a href={`${SRC}/EGOTool_V1.0.3.zip`}>EGOTool_V1.0.3.zip</a> | 约 70 MB | Ego 设备 Windows 上位机，解压后双击 `EGOTool.exe` 运行 |
+| <a href={`${SRC}/EGOTool_V1.0.5.zip`}>EGOTool_V1.0.5.zip</a> | 约 69 MB | Ego 设备 Windows 上位机，解压后双击 `EGOTool.exe` 运行 |
 | <a href={`${SRC}/Ego-Foxglove-Layout.json`}>Ego-Foxglove-Layout.json</a> | 约 7 KB | Foxglove Studio 布局文件，通过「从文件导入……」导入 |
 | <a href={`${SRC}/2026-08-20_11-15-40.zip`}>2026-08-20_11-15-40.zip</a> | 约 183 MB | 示例录制数据（`.mcap`），可在购买前用 Foxglove Studio 体验 |
 
