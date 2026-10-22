@@ -46,7 +46,7 @@ export const MONO = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-imag
 | **接口** | MIPI CSI-2，FPC | MIPI CSI-2，FPC | MIPI CSI-2，FPC |
 | **功耗** | < 0.5 W | < 0.5 W | < 0.5 W |
 | **重量** | 15 g | 15 g | 15 g |
-| **尺寸** | 28.4 × 17.8 × 19.5 mm | 16 × 16 × 16.5 mm | 28.4 × 17.8 × 17.8 mm |
+| **尺寸** | 28.4 × 17.8 × 19.5 mm | 16 × 16 × 16.5 mm | 28.4 × 17.8 × 17.7 mm |
 
 :::tip 选型建议
 - **SM1N8ASC（AR0145）**：全局曝光，水平视场角最大（183°），体积最小，适合手环设备。

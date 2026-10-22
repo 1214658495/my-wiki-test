@@ -71,8 +71,8 @@ Three sensor options share the same 90 × 28 mm board, 60 mm baseline and on-boa
 | Serializer | MAX9295D | — | MAX9295D |
 | Connector | BWIPX-1-001E | 8.01A0.036200 (36-pin FPC) | BWIPX-1-001E |
 | Baseline tolerance | 60.00 ± 0.5 mm | 60 mm | 60.00 ± 0.5 mm |
-| Operating temperature | -30 ~ 60 ℃ | -20 ~ 60 ℃ | -30 ~ 60 ℃ |
-| Storage temperature | -30 ~ 70 ℃ | — | -30 ~ 70 ℃ |
+| Operating temperature | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
+| Storage temperature | -20 ~ 70 ℃ | — | -20 ~ 70 ℃ |
 
 Pin definitions, I2C addresses and mechanical drawings are in each model's spec sheet (see [Downloads](#downloads)).
 

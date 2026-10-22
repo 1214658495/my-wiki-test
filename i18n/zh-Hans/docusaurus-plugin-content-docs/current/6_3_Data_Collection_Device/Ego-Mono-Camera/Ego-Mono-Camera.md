@@ -44,7 +44,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | **接口** | MIPI CSI-2，FPC | MIPI CSI-2，FPC | MIPI CSI-2，FPC | MIPI CSI-2，FPC |
 | **功耗** | < 0.5 W | < 0.5 W | < 0.5 W | < 0.5 W |
 | **重量** | 15 g | 15 g | 15 g | < 15 g |
-| **尺寸** | 28.4 × 17.8 × 19.5 mm | 28.4 × 17.8 × 17.8 mm | 28.4 × 17.8 × 17.8 mm | 24 × 16 × 13.33 mm |
+| **尺寸** | 28.4 × 17.8 × 19.5 mm | 28.4 × 17.8 × 17.7 mm | 28.4 × 17.8 × 17.8 mm | 24 × 16 × 13.3 mm |
 
 :::tip 选型建议
 - **SM2V12NP（OG02B10）**：全局曝光，V130°，与 EgoSense H6 所用摄像头的 Sensor 和镜头一致，可与 [SDV12NCP1 双目摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-Stereo-Camera) 搭配使用。
@@ -70,7 +70,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | 参数 | SM3S11NS | SM2N2NP | SM2V12NP | SM1V20NJ |
 |-|-|-|-|-|
 | 连接器 | 8.03A0.033200 | 8.03A0.033200 | 8.03A5.021250 | 8.03A5.021250 |
-| 供电电压 | 3.8 V / 1.8 V / 1.1 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V | 5 V |
+| 供电电压 | 3.8 V / 1.8 V / 1.1 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V |
 | 工作温度 | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | 存储温度 | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ |
 

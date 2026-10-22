@@ -44,7 +44,7 @@ Four sensor options cover color and monochrome, rolling and global shutter, so e
 | **Interface** | MIPI CSI-2, FPC | MIPI CSI-2, FPC | MIPI CSI-2, FPC | MIPI CSI-2, FPC |
 | **Power consumption** | < 0.5 W | < 0.5 W | < 0.5 W | < 0.5 W |
 | **Weight** | 15 g | 15 g | 15 g | < 15 g |
-| **Dimensions** | 28.4 × 17.8 × 19.5 mm | 28.4 × 17.8 × 17.8 mm | 28.4 × 17.8 × 17.8 mm | 24 × 16 × 13.33 mm |
+| **Dimensions** | 28.4 × 17.8 × 19.5 mm | 28.4 × 17.8 × 17.7 mm | 28.4 × 17.8 × 17.8 mm | 24 × 16 × 13.3 mm |
 
 :::tip How to choose
 - **SM2V12NP (OG02B10)**: global shutter with V130°; the same sensor and lens as the cameras in EgoSense H6, and a natural match for the [SDV12NCP1 stereo camera](/docs/6_3_Data_Collection_Device/Ego-Stereo-Camera).
@@ -70,7 +70,7 @@ Four sensor options cover color and monochrome, rolling and global shutter, so e
 | Item | SM3S11NS | SM2N2NP | SM2V12NP | SM1V20NJ |
 |-|-|-|-|-|
 | Connector | 8.03A0.033200 | 8.03A0.033200 | 8.03A5.021250 | 8.03A5.021250 |
-| Supply voltages | 3.8 V / 1.8 V / 1.1 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V | 5 V |
+| Supply voltages | 3.8 V / 1.8 V / 1.1 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V |
 | Operating temperature | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | Storage temperature | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ |
 

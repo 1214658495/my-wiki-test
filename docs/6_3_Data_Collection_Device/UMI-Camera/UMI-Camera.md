@@ -46,7 +46,7 @@ SENSING's **UMI Custom Camera** is a mono camera optimized for both device forms
 | **Interface** | MIPI CSI-2, FPC | MIPI CSI-2, FPC | MIPI CSI-2, FPC |
 | **Power consumption** | < 0.5 W | < 0.5 W | < 0.5 W |
 | **Weight** | 15 g | 15 g | 15 g |
-| **Dimensions** | 28.4 × 17.8 × 19.5 mm | 16 × 16 × 16.5 mm | 28.4 × 17.8 × 17.8 mm |
+| **Dimensions** | 28.4 × 17.8 × 19.5 mm | 16 × 16 × 16.5 mm | 28.4 × 17.8 × 17.7 mm |
 
 :::tip How to choose
 - **SM1N8ASC (AR0145)**: global shutter, the widest horizontal FOV (183°) and the smallest size; a good fit for wrist units.
