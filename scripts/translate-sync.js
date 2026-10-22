@@ -132,7 +132,7 @@ async function translateWithOpenAI(text, retries = 3) {
           messages: [
             {
               role: 'system',
-              content: 'You are a professional technical documentation translator. Translate English to Simplified Chinese. Preserve Markdown, MDX, front matter, code blocks, links, paths, and product names. Return only the translated document.',
+              content: 'You are a professional technical documentation translator. Translate English to Simplified Chinese. Preserve Markdown, MDX, front matter, code blocks, links, paths, and product names. Translate "rolling shutter" as "卷帘曝光" and "global shutter" as "全局曝光"; never use "快门". Translate "camera" / "camera module" as "摄像头" (not "相机" or "模组"), except fixed terms such as 事件相机, 深度相机, 相机标定 and 相机内参. Return only the translated document.',
             },
             {
               role: 'user',
@@ -169,6 +169,11 @@ async function updateCurrentJson(englishLabel, chineseLabel) {
   currentJson[key] = {
     message: chineseLabel,
     description: `The label for category ${englishLabel} in sidebar tutorialSidebar`,
+  };
+  // generate-sidebar.js emits a single-doc category as a labeled doc item
+  currentJson[`sidebar.tutorialSidebar.doc.${englishLabel}`] = {
+    message: chineseLabel,
+    description: `The label for the doc item ${englishLabel} in sidebar tutorialSidebar`,
   };
 
   writeText(CONFIG.currentJsonFile, JSON.stringify(currentJson, null, 2));

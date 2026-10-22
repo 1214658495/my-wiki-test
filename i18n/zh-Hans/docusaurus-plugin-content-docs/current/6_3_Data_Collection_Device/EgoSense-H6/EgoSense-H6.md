@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: EgoSense H6 头戴式六目数采设备
-description: 森云智能自研 EgoSense H6 头戴式六目第一人称数据采集设备的产品介绍、硬件参数、相机参数与软件架构
+description: 森云智能自研 EgoSense H6 头戴式六目第一人称数据采集设备的产品介绍、硬件参数、摄像头参数与软件架构
 keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, 数据采集, 具身智能, MCAP, IMU]
 ---
 
@@ -13,7 +13,7 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 
 ## 概述
 
-**EgoSense H6** 是森云智能自研的**头戴式六目第一人称（Egocentric）数据采集设备**。设备前置一组双目相机，左右两侧各配置两路单目相机，共 **6 路全局快门相机**，组合视场角达 **270°**；同时集成**六轴 IMU** 与**麦克风**，可同步记录佩戴者第一视角的图像、头部姿态与音频数据。
+**EgoSense H6** 是森云智能自研的**头戴式六目第一人称（Egocentric）数据采集设备**。设备前置一组双目摄像头，左右两侧各配置两路单目摄像头，共 **6 路全局曝光摄像头**，组合视场角达 **270°**；同时集成**六轴 IMU** 与**麦克风**，可同步记录佩戴者第一视角的图像、头部姿态与音频数据。
 
 采集数据以 **MCAP** 格式脱机录制到设备内置的 Micro SD 卡，无需外接电脑即可独立采集；配套 Windows 上位机 **EGOTool** 用于实时预览与录制控制，录制文件可直接在 **Foxglove Studio** 中回放查看。
 
@@ -24,11 +24,11 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 ## 产品特点
 
 - **第一人称视角，与人眼一致**：记录佩戴者真实看到的画面，同时保留手眼协作与感知决策过程。
-- **6 路全局快门，270° 超广角**：前置双目 + 左右侧各两路单目，视角覆盖更全，运动场景下无果冻效应（[查看覆盖范围视频](#六路画面覆盖范围)）。
-- **多模态同步**：图像、IMU（200 Hz）、麦克风音频同步采集，相机支持内、外触发同步（[查看双目同步实测](#双目同步精度)）。
-- **佩戴即走，脱机录制**：电池供电，续航约 3 小时，数据直接录入 Micro SD 卡，无需相机阵列与专用场地。
+- **6 路全局曝光，270° 超广角**：前置双目 + 左右侧各两路单目，视角覆盖更全，运动场景下无果冻效应（[查看覆盖范围视频](#六路画面覆盖范围)）。
+- **多模态同步**：图像、IMU（200 Hz）、麦克风音频同步采集，摄像头支持内、外触发同步（[查看双目同步实测](#双目同步精度)）。
+- **佩戴即走，脱机录制**：电池供电，续航约 3 小时，数据直接录入 Micro SD 卡，无需摄像头阵列与专用场地。
 - **开放的数据格式**：录制文件为 `.mcap`，H.265 编码，可直接用 Foxglove Studio 打开，也便于接入自有数据处理流程。
-- **支持定制**：整机、主板与相机均可按需定制。
+- **支持定制**：整机、主板与摄像头均可按需定制。
 
 ## 应用场景
 
@@ -50,12 +50,12 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 ## 六路画面覆盖范围
 
 <div style={{background: '#fff', borderRadius: 8, padding: 12, marginBottom: 16}}>
-  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E7%BB%84%E5%80%BE%E8%A7%92%E8%AE%BE%E8%AE%A1.png" alt="EgoSense H6 相机模组倾角设计" style={{display: 'block', width: '100%'}} />
+  <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/img/%E7%9B%B8%E6%9C%BA%E6%A8%A1%E7%BB%84%E5%80%BE%E8%A7%92%E8%AE%BE%E8%AE%A1.png" alt="EgoSense H6 摄像头倾角设计" style={{display: 'block', width: '100%'}} />
 </div>
 
-各相机模组的安装角度不同：**中间两颗**（前置双目）为 **0° 倾角**，平视前方；**其余四颗**均**向下倾斜 20°**，在操作过程中让佩戴者的双手与工作台面始终保持在画面内。
+各摄像头的安装角度不同：**中间两颗**（前置双目）为 **0° 倾角**，平视前方；**其余四颗**均**向下倾斜 20°**，在操作过程中让佩戴者的双手与工作台面始终保持在画面内。
 
-下面是佩戴 EgoSense H6 进行桌面操作时实际录制的六路画面。画面 1、2 为前置双目，画面 3 ~ 6 为左右两侧的单目相机。六路视野相互重叠，组合覆盖约 270°，佩戴者的双手、桌面物体和周围环境都能完整进入画面。
+下面是佩戴 EgoSense H6 进行桌面操作时实际录制的六路画面。画面 1、2 为前置双目，画面 3 ~ 6 为左右两侧的单目摄像头。六路视野相互重叠，组合覆盖约 270°，佩戴者的双手、桌面物体和周围环境都能完整进入画面。
 
 <video src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source/%E8%A6%86%E7%9B%96%E7%9A%84%E5%8C%BA%E5%9F%9F.mp4" controls muted playsInline preload="metadata" style={{width: '100%', borderRadius: 8, marginBottom: 16}} />
 
@@ -63,7 +63,7 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 
 为直观验证前置双目的同步效果，我们用 LED 计时面板（每 1 ms 点亮下一颗 LED）作为拍摄对象，并在 Foxglove Studio 中逐帧对比双目两路画面（middle-1 / middle-2）：
 
-- **画面一致**：同一帧中，两路相机拍到的 LED 点亮位置完全相同，说明两路曝光时刻的差异小于 LED 面板 1 ms 的刻度。
+- **画面一致**：同一帧中，两路摄像头拍到的 LED 点亮位置完全相同，说明两路曝光时刻的差异小于 LED 面板 1 ms 的刻度。
 - **时间戳一致**：同一帧两路图像的时间戳相差不到 30 µs（视频中抽查的帧分别相差 14 ~ 27 µs）。
 
 <video src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-6/source/%E7%9B%B8%E6%9C%BA%E5%90%8C%E6%AD%A5%E7%B2%BE%E5%BA%A6-%E7%A7%91%E5%AD%A6%E7%9A%84%E8%A7%86%E9%A2%91%E8%AF%81%E6%98%8E.mp4" controls muted playsInline preload="metadata" style={{width: '100%', borderRadius: 8, marginBottom: 16}} />
@@ -81,11 +81,11 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 | | 惯性测量数据 | IMU 数据 |
 | | 音频数据 | 麦克风音频 |
 | | 录制格式 | `.mcap`（视频 H.265 编码） |
-| **相机参数** | 相机数量 | 6 路（前置双目 + 左右侧各 2 路单目） |
+| **摄像头参数** | 摄像头数量 | 6 路（前置双目 + 左右侧各 2 路单目） |
 | | 分辨率 | 1600 × 1300 |
 | | 帧率 | 30 fps（60 fps 可选） |
 | | 组合视场角 | 270° |
-| | 快门类型 | 全局快门（Global Shutter） |
+| | 曝光方式 | 全局曝光（Global Shutter） |
 | | 安装倾角 | 中间两颗（前置双目）0°，其余四颗向下倾斜 20° |
 | **IMU 参数** | 类型 | 六轴（6-axis） |
 | | 采样率 | 200 Hz |
@@ -103,7 +103,7 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 | **内存与存储** | DDR | 4 GB |
 | | eMMC | 32 GB |
 | | Micro SD | 最高 256 GB，写入速率 > 50 MB/s |
-| **通信接口** | 相机接口 | 3 × MIPI CSI-2（4 lane） |
+| **通信接口** | 摄像头接口 | 3 × MIPI CSI-2（4 lane） |
 | | USB | 1 × Type-C |
 | | 扬声器接口 | 2 路，PDM / I2S |
 | | 麦克风接口 | 2 路，PDM / I2S |
@@ -118,14 +118,14 @@ keywords: [EgoSense H6, EgoSense, 头戴式, 六目, 第一人称, Egocentric, �
 | | 音量 + / - | 调节扬声器提示音音量 |
 | | LED 指示灯 | 显示电源、采集等状态 |
 
-### 相机参数
+### 摄像头参数
 
 | 参数项 | 参数值 |
 |-|-|
 | 传感器 | OG02B10 |
 | 分辨率 | 1600 × 1300 |
 | 帧率 | 30 fps |
-| 快门方式 | 全局快门（Global Shutter） |
+| 曝光方式 | 全局曝光（Global Shutter） |
 | 输出格式 | RAW 彩色 |
 | 镜头视场角 | H160° × V130° |
 | 功耗 | < 0.5 W |
@@ -155,7 +155,7 @@ EgoSense H6 运行 **Rockchip Linux**，软件分为驱动层与应用层：
 
 ## 数据格式：MCAP
 
-EgoSense H6 的录制文件采用 **MCAP** 格式。MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，专门用来记录多路传感器数据：多路相机图像、IMU 等数据按时间戳打包存入同一个文件，便于回放与分析。
+EgoSense H6 的录制文件采用 **MCAP** 格式。MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，专门用来记录多路传感器数据：多路摄像头图像、IMU 等数据按时间戳打包存入同一个文件，便于回放与分析。
 
 - 与 ROS bag（`.bag` / `.db3`）用途类似，但读写性能更好，跨语言支持更完善（C++ / Python / Rust / Go 均有官方 SDK）。
 - 是 ROS 2 rosbag2 的默认存储格式，也是 Foxglove Studio 原生支持的格式。
@@ -165,21 +165,21 @@ EgoSense H6 录制文件包含以下数据话题：
 
 | 话题 | 数据类型 | 说明 |
 |-|-|-|
-| `/camera/middle-1/h265`、`/camera/middle-2/h265` | `foxglove.CompressedVideo` | 前置双目相机（H.265） |
-| `/camera/left-1/h265`、`/camera/left-2/h265` | `foxglove.CompressedVideo` | 左侧两路相机（H.265） |
-| `/camera/right-1/h265`、`/camera/right-2/h265` | `foxglove.CompressedVideo` | 右侧两路相机（H.265） |
+| `/camera/middle-1/h265`、`/camera/middle-2/h265` | `foxglove.CompressedVideo` | 前置双目摄像头（H.265） |
+| `/camera/left-1/h265`、`/camera/left-2/h265` | `foxglove.CompressedVideo` | 左侧两路摄像头（H.265） |
+| `/camera/right-1/h265`、`/camera/right-2/h265` | `foxglove.CompressedVideo` | 右侧两路摄像头（H.265） |
 | `/imu` | `foxglove.IMU` | 六轴 IMU 数据 |
 
 可在 [使用说明 · 附件下载](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#附件下载) 获取示例录制数据。
 
 ## 定制化服务
 
-森云智能提供 EgoSense 系列的整机、主板与相机定制服务：
+森云智能提供 EgoSense 系列的整机、主板与摄像头定制服务：
 
-- **多目配置**：可由单目、双目相机组合为 2 / 3 / 4 / 5 / 6 目 EgoSense 方案。
-- **可选相机**：OG02B10、AR0234、ISX031、OV9281 等，提供单目与双目形态。
+- **多目配置**：可由单目、双目摄像头组合为 2 / 3 / 4 / 5 / 6 目 EgoSense 方案。
+- **可选摄像头**：OG02B10、AR0234、ISX031、OV9281 等，提供单目与双目形态，详见 [Ego 视角定制化双目摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-Stereo-Camera) 与 [Ego 视角定制化单目摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-Mono-Camera)。
 - **软件支持**：提供驱动程序、应用程序与 ISP 调试服务。
-- **组合方案**：可与 UMI 夹爪（Gripper）、手环（Wrist）或背包式采集设备组合，实现头部与手部数据的同步采集。
+- **组合方案**：可与 UMI 夹爪（Gripper）、手环（Wrist）或背包式采集设备组合，实现头部与手部数据的同步采集，详见 [UMI 定制化摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/UMI-Camera)。
 
 如需定制，请联系我们的销售团队。
 

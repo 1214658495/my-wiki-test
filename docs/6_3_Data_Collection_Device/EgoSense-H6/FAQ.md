@@ -15,7 +15,7 @@ keywords: [EgoSense H6, FAQ, troubleshooting, EGOTool, SD card, MCAP, Foxglove]
 1. Make sure the battery is attached and the LED indicator is on.
 2. Make sure the Type-C data cable is connected and an "Unidentified network" adapter appears in the Windows network settings.
 3. Make sure the adapter has a manual IP on the same subnet (for example `192.168.140.21`, subnet mask `255.255.255.0`).
-4. In EGOTool, make sure the device IP is `192.168.140.20` and the port is `58889`, then click the connect button (it reads **Disconnect** once connected).
+4. In EGOTool, make sure the device IP is `192.168.140.20` (over Wi-Fi: `192.168.50.1`) and the port is `58889`, then click the connect button (it reads **Disconnect** once connected).
 
 See [User Manual · Connecting EGOTool](/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#connecting-egotool).
 

@@ -36,7 +36,7 @@ sidebar_position: 3
  </div>
  <div className="card-content">
  <h3>GMSL 摄像头采集卡</h3>
- <p>灵活的多相机采集方案</p>
+ <p>灵活的多摄像头采集方案</p>
  <a href="#gmsl-camera-grabber-integration" className="learn-more">了解更多 <span className="arrow">→</span></a>
  </div>
  </div>

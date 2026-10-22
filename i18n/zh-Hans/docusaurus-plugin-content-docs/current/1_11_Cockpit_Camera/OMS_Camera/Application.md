@@ -7,7 +7,7 @@ sidebar_position: 2
 ## SENSING RGB-IR 摄像头
 在人工智能时代，计算机视觉技术与汽车电子的融合已成为行业趋势。然而，传统 RGB 摄像头难以满足高精度检测需求，尤其在需要人脸识别的低照度场景下表现受限。RGB-IR 技术结合了 RGB 与红外成像的优势，可在低照度环境中提供更好的识别性能。通过集成 RGB-IR 摄像头技术，可在多种光照条件下实现优秀的人脸识别能力。
 
-森云智能科技（深圳）有限公司自主研发并推出 5MP RGB-IR 全局快门摄像头模组。该摄像头面向 NVIDIA Jetson 平台设计，并已在 Jetson AGX Orin 上完成测试。摄像头集成 OmniVision 5MP OX05B1S RGB-IR 传感器、OAX4000 ISP 和 Maxim MAX9295A GMSL2 串行器，配备高品质 M12 车规级镜头，支持可见光和 940nm 红外光识别，在低照度条件下具备优秀表现。
+森云智能科技（深圳）有限公司自主研发并推出 5MP RGB-IR 全局曝光摄像头模组。该摄像头面向 NVIDIA Jetson 平台设计，并已在 Jetson AGX Orin 上完成测试。摄像头集成 OmniVision 5MP OX05B1S RGB-IR 传感器、OAX4000 ISP 和 Maxim MAX9295A GMSL2 串行器，配备高品质 M12 车规级镜头，支持可见光和 940nm 红外光识别，在低照度条件下具备优秀表现。
 
 
 

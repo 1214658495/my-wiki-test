@@ -67,6 +67,21 @@ const sidebars = {
           "type": "doc",
           "id": "6_3_Data_Collection_Device/EgoSense-H6/EgoSense-H6"
         }
+      },
+      {
+        "type": "doc",
+        "id": "6_3_Data_Collection_Device/Ego-Stereo-Camera/Ego-Stereo-Camera",
+        "label": "Ego Stereo Camera"
+      },
+      {
+        "type": "doc",
+        "id": "6_3_Data_Collection_Device/Ego-Mono-Camera/Ego-Mono-Camera",
+        "label": "Ego Mono Camera"
+      },
+      {
+        "type": "doc",
+        "id": "6_3_Data_Collection_Device/UMI-Camera/UMI-Camera",
+        "label": "UMI Camera"
       }
     ]
   },

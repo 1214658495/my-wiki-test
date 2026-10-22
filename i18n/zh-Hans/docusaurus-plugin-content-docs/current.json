@@ -52,7 +52,7 @@
     "description": "The label for category Low Latency Camera in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Event Based Camera": {
-    "message": "事件相机",
+    "message": "事件摄像头",
     "description": "The label for category Event Based Camera in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Night Vision Camera": {
@@ -182,5 +182,29 @@
   "sidebar.tutorialSidebar.category.EgoSense H6": {
     "message": "EgoSense H6",
     "description": "The label for category EgoSense H6 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Ego Stereo Camera": {
+    "message": "Ego 定制双目摄像头",
+    "description": "The label for category Ego Stereo Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Ego Mono Camera": {
+    "message": "Ego 定制单目摄像头",
+    "description": "The label for category Ego Mono Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UMI Camera": {
+    "message": "UMI 定制摄像头",
+    "description": "The label for category UMI Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.Ego Stereo Camera": {
+    "message": "Ego 定制双目摄像头",
+    "description": "The label for the doc item Ego Stereo Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.Ego Mono Camera": {
+    "message": "Ego 定制单目摄像头",
+    "description": "The label for the doc item Ego Mono Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.doc.UMI Camera": {
+    "message": "UMI 定制摄像头",
+    "description": "The label for the doc item UMI Camera in sidebar tutorialSidebar"
   }
 }

@@ -108,30 +108,30 @@ sidebar_position: 1
 
 <!-- | 产品型号 | 部件 | 摄像头关键特性 |
 |--------|-------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（卷帘曝光） |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） <br/> 3MP_MIPI RAW 摄像头（卷帘曝光） | -->
 
 <!-- | 产品型号 | 部件 | 摄像头关键特性 | 产品图片 |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（卷帘曝光） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） <br/> 3MP_MIPI RAW 摄像头（卷帘曝光） | [View Image](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
 
 
 
 <!-- | 产品型号 | 部件 | 摄像头关键特性 | 产品图片 |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | ![SENSING-HSBKIT2M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | ![SENSING-HSBKIT4M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | ![SENSING-HSBKIT6M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（卷帘曝光） | ![SENSING-HSBKIT2M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT2M.png) |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） | ![SENSING-HSBKIT4M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png) |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） <br/> 3MP_MIPI RAW 摄像头（卷帘曝光） | ![SENSING-HSBKIT6M](https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png) | -->
 
 
 | 产品型号 | 部件 | 摄像头关键特性 | 产品图片 |
 |--------|-------------|---------------|---------------|
-| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（滚动快门） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/Sensing-HSBKIT01.png" alt="SENSING-HSBKIT2M" width="200" /> |
-| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png" alt="SENSING-HSBKIT4M" width="200" /> |
-| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（滚动快门）<br/> 2MP_MIPI RAW 摄像头（全局快门） <br/> 3MP_MIPI RAW 摄像头（滚动快门） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png" alt="SENSING-HSBKIT6M" width="200" /> |
+| SENSING-HSBKIT2M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs | 8MP_MIPI RAW 摄像头（卷帘曝光） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/Sensing-HSBKIT01.png" alt="SENSING-HSBKIT2M" width="200" /> |
+| SENSING-HSBKIT4M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT4M.png" alt="SENSING-HSBKIT4M" width="200" /> |
+| SENSING-HSBKIT6M | Holoscan Sensor Bridge 套件 *1pcs <br/> SG8-IMX678C-MIPI-H80K *2pcs <br/> SG2-AR0234C-MIPI-H60F *2pcs <br/> SG3-ISX031C-MIPI-H100F1 *2pcs| 8MP_MIPI RAW 摄像头（卷帘曝光）<br/> 2MP_MIPI RAW 摄像头（全局曝光） <br/> 3MP_MIPI RAW 摄像头（卷帘曝光） | <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/2_5_NVIDIA_Holoscan_Sensor_Bridge/HSBKIT6M.png" alt="SENSING-HSBKIT6M" width="200" /> |
 
 <!-- :::note JetPack 版本
 NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jetpack 7.0</strong>）是面向 Jetson 系列开发板的官方软件开发套件（SDK）。它包含操作系统、驱动、CUDA、cuDNN、TensorRT 以及其他开发工具和库。每个 JetPack 版本通常对应特定的 Jetson Linux 版本（此前称为 L4T - Linux for Tegra）。

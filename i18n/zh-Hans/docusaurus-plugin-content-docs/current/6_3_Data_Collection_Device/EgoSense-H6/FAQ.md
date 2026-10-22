@@ -15,7 +15,7 @@ keywords: [EgoSense H6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 1. 确认设备已扣上电池、侧面电源指示灯已亮起。
 2. 确认 Type-C 数据线已连接，且在 Windows 网络设置中能看到「未识别的网络」虚拟网口。
 3. 确认该网口已手动配置同网段 IP（如 `192.168.140.21`，子网掩码 `255.255.255.0`）。
-4. 确认 EGOTool 中设备 IP 为 `192.168.140.20`、端口为 `58889`，再点击连接按钮（连接成功后按钮显示为「设备关闭」）。
+4. 确认 EGOTool 中设备 IP 为 `192.168.140.20`（Wi-Fi 连接时为 `192.168.50.1`）、端口为 `58889`，再点击连接按钮（连接成功后按钮显示为「设备关闭」）。
 
 详见 [使用说明 · 连接 EGOTool 上位机](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6/User_Manual#连接-egotool-上位机)。
 
@@ -72,7 +72,7 @@ keywords: [EgoSense H6, FAQ, 常见问题, EGOTool, SD 卡, MCAP, Foxglove]
 
 ### 什么是 MCAP 文件？
 
-MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，用于把多路相机图像、IMU 等传感器数据按时间戳打包存入同一个文件，便于回放与分析。它与 ROS bag（`.bag` / `.db3`）用途类似，但读写性能更好，C++ / Python / Rust / Go 均有官方 SDK，也是 ROS 2 rosbag2 的默认存储格式。
+MCAP 是由 Foxglove 推出的开源、面向机器人/自动驾驶领域的模块化容器文件格式，用于把多路摄像头图像、IMU 等传感器数据按时间戳打包存入同一个文件，便于回放与分析。它与 ROS bag（`.bag` / `.db3`）用途类似，但读写性能更好，C++ / Python / Rust / Go 均有官方 SDK，也是 ROS 2 rosbag2 的默认存储格式。
 
 EgoSense H6 采集结束后得到的 `.mcap` 文件，就是这段时间内设备看到和感知到的全部数据，可用 Foxglove Studio 打开，用于算法调试、数据标注与问题复现。
 

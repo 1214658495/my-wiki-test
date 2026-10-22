@@ -177,9 +177,9 @@ Sample recording data is available under [User Manual · Downloads](/docs/6_3_Da
 SENSING offers customization of the complete EgoSense device, main board and cameras:
 
 - **Camera count**: 2 / 3 / 4 / 5 / 6-camera EgoSense configurations built from mono and stereo cameras.
-- **Camera options**: OG02B10, AR0234, ISX031, OV9281 and more, in mono and stereo form factors.
+- **Camera options**: OG02B10, AR0234, ISX031, OV9281 and more, in mono and stereo form factors. See [Ego Custom Stereo Camera](/docs/6_3_Data_Collection_Device/Ego-Stereo-Camera) and [Ego Custom Mono Camera](/docs/6_3_Data_Collection_Device/Ego-Mono-Camera).
 - **Software support**: drivers, applications and ISP tuning services.
-- **Combined solutions**: works with UMI grippers, wrist units or a backpack collection system for synchronized head and hand data capture.
+- **Combined solutions**: works with UMI grippers, wrist units or a backpack collection system for synchronized head and hand data capture. See [UMI Custom Camera](/docs/6_3_Data_Collection_Device/UMI-Camera).
 
 Please contact our sales team for customization.
 

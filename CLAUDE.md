@@ -144,6 +144,8 @@ yarn typesense-docsearch-scraper
 - `docs/home.mdx` 及其中文镜像只负责挂载 `WikiHome`; 真正内容在组件里
 - 首页稳定入口: `/docs/6_0_Robotics`, `/docs/1_0_Camera`, `/docs/intro`, `/docs/3_0_Data_collection_and_Playback`, `/docs/5_0_Vision_Core_SDK`, `/docs/4_0_Resources`, `/docs/ai`
 - 首页链接统一走组件内的 locale-aware helper 处理中文前缀, **不要在中文分支手写一套独立路由**
+- **中文术语**: Rolling Shutter 译为「卷帘曝光」, Global Shutter 译为「全局曝光」, 中文文档一律不用「快门」(含「卷帘快门 / 滚动快门 / 全局快门」); 表格行名用「曝光」或「曝光方式」. `scripts/translate-sync.js` 的翻译提示词已写入此约束
+- **中文术语**: Camera 译为「摄像头」, 不用「相机」, 也不加「模组」(如「双目摄像头」而非「双目相机模组」); 仅固定术语保留「相机」: 事件相机, 深度相机, 相机标定, 相机内参 / 外参, 相机与 IMU 联合标定. 全站(除已下架的 5_1 sDepth)已统一
 - 中文内部链接使用 `/zh-Hans/docs/...`, **不要写 `.md` 后缀**; 硬编码 `/docs/...` 会跳回英文站点
 - 导航项 `Wiki AI` / `Product Resources` 使用 `^/(zh-Hans/)?...` 形式的 `activeBaseRegex`, 修改 navbar 时保留中英文路径激活行为
 

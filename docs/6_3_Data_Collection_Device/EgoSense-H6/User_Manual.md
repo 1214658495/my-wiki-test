@@ -150,6 +150,15 @@ Open EGOTool, check the device IP and port on the **Communication** tab, then cl
   ]}
 />
 
+:::info Device IP
+The device IP depends on how the PC is connected:
+
+| Connection | Device IP |
+|-|-|
+| USB Type-C (virtual network adapter) | `192.168.140.20` |
+| Wi-Fi | `192.168.50.1` |
+:::
+
 ## Live Preview and Recording
 
 Once connected, EGOTool shows the six live camera views and the device status. The video below walks through the EGOTool interface:

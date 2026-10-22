@@ -238,6 +238,14 @@ The Astra S56x series includes S56 and S56C. S56 is a legacy 130° HFOV model be
 
 See the [EgoSense H6 product page](/docs/6_3_Data_Collection_Device/EgoSense-H6).
 
+### <span style={{color: 'var(--ifm-color-primary)'}}>Custom Cameras for Ego and UMI Devices</span>
+
+| Category | Sensor options | Typical use |
+|-|-|-|
+| [Ego Custom Stereo Camera](/docs/6_3_Data_Collection_Device/Ego-Stereo-Camera) | ISX031 / AR0234 / OG02B10, 60 mm baseline, built-in IMU | Front stereo pair of multi-camera Ego headsets |
+| [Ego Custom Mono Camera](/docs/6_3_Data_Collection_Device/Ego-Mono-Camera) | ISX031 / AR0234 / OG02B10 / OV9281 | Side cameras of multi-camera Ego headsets |
+| [UMI Custom Camera](/docs/6_3_Data_Collection_Device/UMI-Camera) | ISX031 / AR0145 / AR0234 | UMI grippers and wrist units |
+
 </div>
 
 ---

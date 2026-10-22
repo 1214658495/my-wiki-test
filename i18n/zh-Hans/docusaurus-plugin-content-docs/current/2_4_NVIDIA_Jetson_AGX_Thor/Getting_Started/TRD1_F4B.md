@@ -107,7 +107,7 @@ sidebar_position: 3
 可以选择以下摄像头组合连接到 TRD1 F4B.
 :::
 
-| 相机组合 | 支持的相机数量 | Jetpack 7.0 |
+| 摄像头组合 | 支持的摄像头数量 | Jetpack 7.0 |
 |--------|-------------|---------------|
 | 组合 1 | 4*8MP/30FPS | - |
 | 组合 2 | 8*3MP/30FPS | - |
@@ -198,7 +198,7 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 
 * Jetpack 7.0 L4TR38.2.1
 
-##### 支持 摄像头 模组
+##### 支持的摄像头
 
 * SG2-AR0233C-5200-F3A-Hxxx
  * 最多支持同时拉起 8 路摄像头

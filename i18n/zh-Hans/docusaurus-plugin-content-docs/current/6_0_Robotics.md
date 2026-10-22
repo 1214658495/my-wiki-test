@@ -226,8 +226,8 @@ Astra S56x 系列包含 S56 和 S56C。S56 是正在逐步停止销售的 130° 
 
 | 技术规格 | 参数 |
 |------------------------|-------------|
-| **相机** | 6 路（前置双目 + 左右侧各 2 路单目），1600 × 1300 |
-| **快门** | 全局快门 |
+| **摄像头** | 6 路（前置双目 + 左右侧各 2 路单目），1600 × 1300 |
+| **曝光** | 全局曝光 |
 | **组合视场角** | 270° |
 | **帧率** | 30 fps（60 fps 可选） |
 | **IMU** | 六轴，200 Hz |
@@ -237,6 +237,14 @@ Astra S56x 系列包含 S56 和 S56C。S56 是正在逐步停止销售的 130° 
 **主要应用：** 具身智能数据采集、人形机器人训练、多模态感知研究、行为分析。
 
 详见 [EgoSense H6 产品介绍](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6)。
+
+### <span style={{color: 'var(--ifm-color-primary)'}}>Ego 与 UMI 定制摄像头</span>
+
+| 类别 | 可选 Sensor | 典型用途 |
+|-|-|-|
+| [Ego 视角定制化双目摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-Stereo-Camera) | ISX031 / AR0234 / OG02B10，60 mm 基线，内置 IMU | 多目 Ego 头戴设备的前置双目 |
+| [Ego 视角定制化单目摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/Ego-Mono-Camera) | ISX031 / AR0234 / OG02B10 / OV9281 | 多目 Ego 头戴设备的侧向摄像头 |
+| [UMI 定制化摄像头](/zh-Hans/docs/6_3_Data_Collection_Device/UMI-Camera) | ISX031 / AR0145 / AR0234 | UMI 夹爪与手环设备 |
 
 </div>
 

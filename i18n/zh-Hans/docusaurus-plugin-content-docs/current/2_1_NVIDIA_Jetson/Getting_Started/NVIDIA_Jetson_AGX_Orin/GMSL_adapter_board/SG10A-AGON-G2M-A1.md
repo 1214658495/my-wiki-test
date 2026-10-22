@@ -310,6 +310,6 @@ NVIDIA JetPack（<strong style={{ color: 'var(--ifm-color-primary-light)' }}>Jet
 :::
 
 :::tip 驱动包说明
-- **SIPL** 驱动包基于 JetPack 7.2 起支持的 NVIDIA SIPL 相机框架；**V4L2** 驱动包使用标准 V4L2 / Argus 相机链路。
+- **SIPL** 驱动包基于 JetPack 7.2 起支持的 NVIDIA SIPL 摄像头框架；**V4L2** 驱动包使用标准 V4L2 / Argus 摄像头链路。
 - 每个驱动包目录内都附带 `Readme.md`（拉起步骤）和 `Version.md`（更新记录），请以所下载驱动包的 Readme 为准。
 :::

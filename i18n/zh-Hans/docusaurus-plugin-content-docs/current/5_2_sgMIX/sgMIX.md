@@ -7,7 +7,7 @@ title: sgMIX 快速入门
 
 ## 概述
 
-sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发驱动包，可实现 GMSL 相机系统的无缝集成与精细化控制。它提供了一套完整的工具集，涵盖：
+sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合摄像头控制开发驱动包，可实现 GMSL 摄像头系统的无缝集成与精细化控制。它提供了一套完整的工具集，涵盖：
 - 图像控制
 - ISP 调优
 - OTA 固件升级
@@ -41,7 +41,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 
 ### 使用流程
 
-**点亮相机：**
+**点亮摄像头：**
 1. 点击右上角 Settings
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_setting_button.png?x-oss-process=image/format,webp" alt="sgMIX_setting_button"
@@ -66,7 +66,7 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
     style={{maxWidth: '100%', height:'auto'}} />
 </div>
 
-5. 点击 "open" 打开相机
+5. 点击 "open" 打开摄像头
 <div style={{textAlign: 'center'}}>
     <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/5_0_Vision_Core_SDK/5_2_sgMIX/sgMIX_open_button.png?x-oss-process=image/format,webp" alt="sgMIX_open_button"
     style={{maxWidth: '100%', height:'auto'}} />
@@ -139,18 +139,18 @@ sgMIX SDK 是一款专为 NVIDIA Jetson 平台设计的综合相机控制开发�
 /**
  * @brief 初始化指定的视频设备。
  * @param device_video 视频设备路径（如 "/dev/video0"）。
- * @param cameraType   要初始化的相机型号。
+ * @param cameraType   要初始化的摄像头型号。
  * @param error        输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
  */
 bool SG_InitVideoDevice(std::string device_video, std::string cameraType, std::string& error);
 ```
 
-### 相机信息
+### 摄像头信息
 
 ```cpp
 /**
- * @brief 获取当前相机传感器的 I2C 地址。
+ * @brief 获取当前摄像头传感器的 I2C 地址。
  * @param i2caddr 输出 7 位 I2C 地址。
  * @param error   输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
@@ -158,15 +158,15 @@ bool SG_InitVideoDevice(std::string device_video, std::string cameraType, std::s
 bool SG_GetSensorI2CAddr(uint8_t& i2caddr, std::string& error);
 
 /**
- * @brief 获取当前相机的序列号。
- * @param serialnumber 输出相机序列号字符串。
+ * @brief 获取当前摄像头的序列号。
+ * @param serialnumber 输出摄像头序列号字符串。
  * @param error        输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
  */
 bool SG_GetCameraSerialNumber(std::string& serialnumber, std::string& error);
 
 /**
- * @brief 设置相机 EEPROM 的 I2C 地址。
+ * @brief 设置摄像头 EEPROM 的 I2C 地址。
  * @param i2caddr 要设置的 I2C 地址。
  * @param error   输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
@@ -179,7 +179,7 @@ bool SG_SetEepromIICaddress(uint8_t i2caddr, std::string& error);
 
 ```cpp
 /**
- * @brief 读取当前相机的内部参数矩阵。
+ * @brief 读取当前摄像头的内部参数矩阵。
  * @param camintrinsic 输出相机内参结构体。
  * @param error        输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
@@ -187,10 +187,10 @@ bool SG_SetEepromIICaddress(uint8_t i2caddr, std::string& error);
 bool SG_GetCameraIntrinsic(Camera_IntrinsicMatrix& camintrinsic, std::string& error);
 
 /**
- * @brief 获取双目相机左右相机的内参以及它们之间的外参。
- * @param Letfcamintrinsic  输出左相机的内参矩阵。
- * @param Rightcamintrinsic 输出右相机的内参矩阵。
- * @param extrinsic         输出左右相机之间的外参矩阵。
+ * @brief 获取双目摄像头左右两路的内参以及它们之间的外参。
+ * @param Letfcamintrinsic  输出左摄像头的内参矩阵。
+ * @param Rightcamintrinsic 输出右摄像头的内参矩阵。
+ * @param extrinsic         输出左右摄像头之间的外参矩阵。
  * @param error             输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
  */
@@ -245,14 +245,14 @@ bool SG_GetCameraImageTestpattern(bool& state, std::string& error);
 bool SG_SetCameraImageTestpattern(bool state, std::string& error);
 ```
 
-### 相机设置
+### 摄像头设置
 
 ```cpp
 /**
- * @brief 设置相机分辨率。
+ * @brief 设置摄像头分辨率。
  * @param val 分辨率（0: 1920x1080, 1: 1920x1536）。
  * @param error 输出错误信息字符串。
- * @note 仅支持 S36、SG3S-ISX031C-GMSL2F-Hxxx 和 SG3S-ISX031C-GMSL2-Hxxx 相机。
+ * @note 仅支持 S36、SG3S-ISX031C-GMSL2F-Hxxx 和 SG3S-ISX031C-GMSL2-Hxxx 摄像头。
  */
 bool SG_SetResolution(int val, std::string& error);
 
@@ -260,7 +260,7 @@ bool SG_SetResolution(int val, std::string& error);
  * @brief 设置触发模式（自动/手动）。
  * @param val 触发模式值：0 = 自动，1 = 手动。
  * @param error 输出错误信息字符串。
- * @note 仅支持 S36、SG3S-ISX031C-GMSL2F-Hxxx 和 SG3S-ISX031C-GMSL2-Hxxx 相机。
+ * @note 仅支持 S36、SG3S-ISX031C-GMSL2F-Hxxx 和 SG3S-ISX031C-GMSL2-Hxxx 摄像头。
  */
 bool SG_SetTriggerMode(int val, std::string& error);
 ```
@@ -278,15 +278,15 @@ bool SG_SetTriggerMode(int val, std::string& error);
 bool SG_PerformOTAUpdate(std::string urlPath, std::string& error);
 
 /**
- * @brief 获取相机硬件和软件信息。
- * @param info  输出相机信息结构体。
+ * @brief 获取摄像头硬件和软件信息。
+ * @param info  输出摄像头信息结构体。
  * @param error 输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
  */
 bool SG_GetCameraInfo(CameraInfo& info, std::string& error);
 
 /**
- * @brief 使用网络授权码激活相机功能。
+ * @brief 使用网络授权码激活摄像头功能。
  * @param authCode 制造商提供的授权码。
  * @param error    输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
@@ -295,7 +295,7 @@ bool SG_GetCameraInfo(CameraInfo& info, std::string& error);
 bool SG_ActivateNetworkLicense(std::string authCode, std::string& error);
 
 /**
- * @brief 获取当前相机固件版本。
+ * @brief 获取当前摄像头固件版本。
  * @param version 输出固件版本字符串。
  * @param error   输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
@@ -351,14 +351,14 @@ bool SG_InitImuAll(std::string& error);
 
 /**
  * @brief 开始流式传输 IMU 数据。
- * @note 仅支持 S56 和 S56C 相机。
+ * @note 仅支持 S56 和 S56C 摄像头。
  */
 bool SG_StartImuStream(std::string& error);
 
 /**
  * @brief 获取最新的 IMU 数据。
  * @param imu_data 输出用于存储 IMU 数据的结构体。
- * @note 仅支持 S56 和 S56C 相机。
+ * @note 仅支持 S56 和 S56C 摄像头。
  */
 bool SG_GetImuData(IMUData& imu_data, std::string& error);
 ```
@@ -367,13 +367,13 @@ bool SG_GetImuData(IMUData& imu_data, std::string& error);
 
 ```cpp
 /**
- * @brief 使用 GStreamer 初始化相机管道。
+ * @brief 使用 GStreamer 初始化摄像头管道。
  * @param pipeline_desc GStreamer Pipeline 描述字符串（通常为空）。
  */
 bool SG_Initialize(const std::string& pipeline_desc, std::string& error);
 
 /**
- * @brief 关闭相机管道。
+ * @brief 关闭摄像头管道。
  */
 bool SG_Shutdown(std::string& error);
 
@@ -388,7 +388,7 @@ bool SG_StartCapture(std::string& error);
 bool SG_StopCapture(std::string& error);
 
 /**
- * @brief 检查相机管道是否已初始化。
+ * @brief 检查摄像头管道是否已初始化。
  */
 bool SG_IsInitialized(std::string& error);
 
@@ -412,11 +412,11 @@ bool SG_GetLatestFrameTimestamp(int64_t& timestamp, std::string& error);
 bool SG_GetSensorDataFrame(SensorDataFrame& sensor_frame, std::string& error);
 
 /**
- * @brief 获取相机的 EDB 数据。
+ * @brief 获取摄像头的 EDB 数据。
  * @param sensor_frame EDB 数据输出结构体。
  * @param error        输出错误信息字符串。
  * @return 成功返回 true，失败返回 false。
- * @note 仅适用于 S36、SG3S-ISX031C-GMSL2F-Hxxx 和 SG3S-ISX031C-GMSL2-Hxxx 相机。
+ * @note 仅适用于 S36、SG3S-ISX031C-GMSL2F-Hxxx 和 SG3S-ISX031C-GMSL2-Hxxx 摄像头。
  */
 bool SG_GetCameraEBD(SensorDataFrame& sensor_frame, std::string& error);
 ```

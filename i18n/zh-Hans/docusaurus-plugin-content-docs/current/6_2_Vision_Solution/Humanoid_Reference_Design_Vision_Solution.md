@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: 人形机器人参考设计视觉方案
-description: 森云智能面向 Isaac GR00T 人形机器人参考设计提供的视觉感知方案，以及基于 Jetson AGX Thor 和 SENSING 相机模组的视觉开发基座
+description: 森云智能面向 Isaac GR00T 人形机器人参考设计提供的视觉感知方案，以及基于 Jetson AGX Thor 和 SENSING 摄像头的视觉开发基座
 keywords: [Isaac GR00T, Unitree H2 Plus, 人形机器人参考设计, 具身智能, 机器人视觉, NVIDIA Jetson Thor, GMSL2, SENSING]
 hide_title: true
 ---
@@ -103,7 +103,7 @@ hide_title: true
     <h3>从实际参考设计，走向可复用的机器人视觉基座</h3>
   </div>
   <p>
-    该案例展示了森云智能视觉感知能力如何接入以 Jetson Thor 为计算核心的人形机器人参考设计。基于项目积累，森云智能进一步提供以 Jetson AGX Thor、TRD1 G2A 和 GMSL2 相机模组为核心的视觉开发基座，帮助开发团队复用从视觉采集、平台适配到端侧部署的完整链路。
+    该案例展示了森云智能视觉感知能力如何接入以 Jetson Thor 为计算核心的人形机器人参考设计。基于项目积累，森云智能进一步提供以 Jetson AGX Thor、TRD1 G2A 和 GMSL2 摄像头为核心的视觉开发基座，帮助开发团队复用从视觉采集、平台适配到端侧部署的完整链路。
   </p>
 </div>
 
@@ -113,7 +113,7 @@ Unitree H2 Plus 与 NVIDIA Isaac GR00T 人形机器人参考设计是本文介�
 
 ## 实际案例：H2 Plus 与 Isaac GR00T
 
-人形机器人参考设计将机器人的身体、计算与软件栈、视觉感知连接为统一的开发平台。森云智能在其中专注于视觉感知环节，通过相机模组、平台适配与视觉软件支持，为机器人提供稳定、多视角的图像输入。
+人形机器人参考设计将机器人的身体、计算与软件栈、视觉感知连接为统一的开发平台。森云智能在其中专注于视觉感知环节，通过摄像头、平台适配与视觉软件支持，为机器人提供稳定、多视角的图像输入。
 
 <div className="humanoid-role-grid">
   <article className="humanoid-role-card">
@@ -133,7 +133,7 @@ Unitree H2 Plus 与 NVIDIA Isaac GR00T 人形机器人参考设计是本文介�
     <span className="humanoid-role-card__index">03</span>
     <p className="humanoid-role-card__label">视觉感知</p>
     <h3>SENSING 森云智能</h3>
-    <p>提供从头部到手部的相机模组、平台适配和视觉软件支持，构建多视角感知能力。</p>
+    <p>提供从头部到手部的摄像头、平台适配和视觉软件支持，构建多视角感知能力。</p>
     <a href="https://www.sensing-world.com/h-nd-121.html?fromMid=336" target="_blank" rel="noopener noreferrer">查看森云官方案例 →</a>
   </article>
 </div>

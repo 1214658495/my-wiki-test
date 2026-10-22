@@ -33,7 +33,7 @@ sidebar_label: SG2-IMX662C-MIPI（已下架）
 | 型号 | SG2-IMX662C-MIPI-HXXX |
 | 传感器 | SONY 2.13MP IMX662 RGGB |
 | ISP | N/A |
-| 传感器类型 | 卷帘快门 |
+| 传感器类型 | 卷帘曝光 |
 | 图像尺寸 | 1/2.8 inch CMOS |
 | 输出分辨率 | 1920H×1080V |
 | 帧率 | 最高 60 fps |

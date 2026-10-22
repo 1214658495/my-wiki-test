@@ -57,6 +57,13 @@ function createCategoryItem(categoryInfo, items) {
     ? items.filter(item => item !== linkedDocId)
     : items;
 
+  // A category holding only its linked doc is collapsed by Docusaurus into a
+  // plain link whose label is no longer translated, so emit a labeled doc item
+  // instead (translated via the `sidebar.tutorialSidebar.doc.<label>` key).
+  if (linkedDocId && sidebarItems.length === 0) {
+    return { type: 'doc', id: linkedDocId, label: categoryInfo.label };
+  }
+
   const sidebarItem = {
     type: 'category',
     label: categoryInfo.label,

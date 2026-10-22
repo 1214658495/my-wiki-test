@@ -150,6 +150,15 @@ EGOTool V1.0.5 起支持**简体中文 / English** 双语界面，可在窗口�
   ]}
 />
 
+:::info 设备 IP
+设备 IP 取决于电脑的连接方式：
+
+| 连接方式 | 设备 IP |
+|-|-|
+| USB Type-C（虚拟网口） | `192.168.140.20` |
+| Wi-Fi | `192.168.50.1` |
+:::
+
 ## 实时预览与录制
 
 连接成功后，EGOTool 显示六路实时画面与设备状态。下面的视频演示了 EGOTool 的实际操作界面：
@@ -170,7 +179,7 @@ EGOTool V1.0.5 起支持**简体中文 / English** 双语界面，可在窗口�
   src={`${IMG}/ego6_egotool_main.jpg`}
   alt="EGOTool 主界面说明"
   items={[
-    {box: [1.2, 5.6, 66.9, 94], text: '六路相机实时画面（画面 1 ~ 6）'},
+    {box: [1.2, 5.6, 66.9, 94], text: '六路摄像头实时画面（画面 1 ~ 6）'},
     {box: [79.6, 0, 8.5, 2.8], text: '界面语言：简体中文 / English'},
     {box: [69.6, 4.8, 20.5, 2.8], text: '「通信」/「拉流」页'},
     {box: [69.5, 8.5, 29.6, 6.3], text: '设备 IP 与端口'},
@@ -263,13 +272,13 @@ EGOTool 主要功能页：
   ]}
 />
 
-5. 导入后即可看到六路相机画面，左侧为录制文件中的数据话题：
+5. 导入后即可看到六路摄像头画面，左侧为录制文件中的数据话题：
 
 <AnnotatedImage
   src={`${IMG}/ego6_foxglove_playback.jpg`}
   alt="Foxglove 六路回放效果"
   items={[
-    {box: [0.2, 10.4, 13.4, 66], text: '数据话题列表（6 路相机 + IMU）'},
+    {box: [0.2, 10.4, 13.4, 66], text: '数据话题列表（6 路摄像头 + IMU）'},
     {box: [77, 0.6, 14.6, 3.6], text: '当前使用的布局'},
   ]}
 />
@@ -278,9 +287,9 @@ EGOTool 主要功能页：
 
 | 话题 | 数据类型 | 说明 |
 |-|-|-|
-| `/camera/middle-1/h265`、`/camera/middle-2/h265` | `foxglove.CompressedVideo` | 前置双目相机 |
-| `/camera/left-1/h265`、`/camera/left-2/h265` | `foxglove.CompressedVideo` | 左侧两路相机 |
-| `/camera/right-1/h265`、`/camera/right-2/h265` | `foxglove.CompressedVideo` | 右侧两路相机 |
+| `/camera/middle-1/h265`、`/camera/middle-2/h265` | `foxglove.CompressedVideo` | 前置双目摄像头 |
+| `/camera/left-1/h265`、`/camera/left-2/h265` | `foxglove.CompressedVideo` | 左侧两路摄像头 |
+| `/camera/right-1/h265`、`/camera/right-2/h265` | `foxglove.CompressedVideo` | 右侧两路摄像头 |
 | `/imu` | `foxglove.IMU` | 六轴 IMU 数据 |
 
 :::note
