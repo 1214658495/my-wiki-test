@@ -38,7 +38,7 @@ Four sensor options cover color and monochrome, rolling and global shutter, so e
 | **Frame rate** | 30 fps | 30 fps | 30 fps | 30 fps |
 | **Output format** | YUV422 (built-in ISP) | RAW 10-bit | RAW 10-bit | RAW 10-bit |
 | **Color / mono** | Color | Color | Color | Mono, 850 nm IR |
-| **HDR** | Supported | Supported | Supported | Supported |
+| **HDR** | Supported | Not supported | Not supported | Not supported |
 | **Lens FOV** | H176° × V140° | H160° × V120° | H160° × V130° | H138° × V95° |
 | **External trigger sync** | Supported | Supported | Supported | Supported |
 | **Interface** | MIPI CSI-2, FPC | MIPI CSI-2, FPC | MIPI CSI-2, FPC | MIPI CSI-2, FPC |

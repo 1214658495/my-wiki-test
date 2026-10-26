@@ -38,7 +38,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | **帧率** | 30 fps | 30 fps | 30 fps | 30 fps |
 | **输出格式** | YUV422（内置 ISP） | RAW 10bit | RAW 10bit | RAW 10bit |
 | **彩色 / 黑白** | 彩色 | 彩色 | 彩色 | 黑白，850 nm 红外 |
-| **HDR** | 支持 | 支持 | 支持 | 支持 |
+| **HDR** | 支持 | 不支持 | 不支持 | 不支持 |
 | **镜头 FOV** | H176° × V140° | H160° × V120° | H160° × V130° | H138° × V95° |
 | **外同步触发** | 支持 | 支持 | 支持 | 支持 |
 | **接口** | MIPI CSI-2，FPC | MIPI CSI-2，FPC | MIPI CSI-2，FPC | MIPI CSI-2，FPC |
