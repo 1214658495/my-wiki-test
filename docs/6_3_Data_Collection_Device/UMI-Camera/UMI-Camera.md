@@ -70,6 +70,7 @@ SENSING's **UMI Custom Camera** is a mono camera optimized for both device forms
 | Item | SM3S11NS | SM1N8ASC | SM2N2NP |
 |-|-|-|-|
 | Connector | 8.03A0.033200 | 8.03A0.033200 | 8.03A0.033200 |
+| Connector brand | DIANWEI | DIANWEI | DIANWEI |
 | Supply voltages | 3.8 V / 1.8 V / 1.1 V | 2.8 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V |
 | Operating temperature | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | Storage temperature | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ |

@@ -70,6 +70,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 |-|-|-|-|
 | 串行器 | MAX9295D | — | MAX9295D |
 | 连接器 | BWIPX-1-001E | 8.01A0.036200（36 Pin FPC） | BWIPX-1-001E |
+| 连接器品牌 |  | DIANWEI（钿威科技） |  |
 | 基线公差 | 60.00 ± 0.5 mm | 60 mm | 60.00 ± 0.5 mm |
 | 工作温度 | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | 存储温度 | -20 ~ 70 ℃ | — | -20 ~ 70 ℃ |

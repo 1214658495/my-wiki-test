@@ -70,6 +70,7 @@ Four sensor options cover color and monochrome, rolling and global shutter, so e
 | Item | SM3S11NS | SM2N2NP | SM2V12NP | SM1V20NJ |
 |-|-|-|-|-|
 | Connector | 8.03A0.033200 | 8.03A0.033200 | 8.03A5.021250 | 8.03A5.021250 |
+| Connector brand | DIANWEI | DIANWEI | DIANWEI | DIANWEI |
 | Supply voltages | 3.8 V / 1.8 V / 1.1 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V |
 | Operating temperature | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | Storage temperature | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ |

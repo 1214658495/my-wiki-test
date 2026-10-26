@@ -70,6 +70,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | 参数 | SM3S11NS | SM2N2NP | SM2V12NP | SM1V20NJ |
 |-|-|-|-|-|
 | 连接器 | 8.03A0.033200 | 8.03A0.033200 | 8.03A5.021250 | 8.03A5.021250 |
+| 连接器品牌 | DIANWEI（钿威科技） | DIANWEI（钿威科技） | DIANWEI（钿威科技） | DIANWEI（钿威科技） |
 | 供电电压 | 3.8 V / 1.8 V / 1.1 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V | 3.3 V / 1.8 V / 1.2 V |
 | 工作温度 | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | 存储温度 | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ | -20 ~ 75 ℃ |
