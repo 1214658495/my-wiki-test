@@ -15,7 +15,7 @@ sidebar_label: SG3-IMX900C-MIPI（已下架）
 
 <div className="row">
  <div className="col col--12">
- <p>SG3-IMX900C-MIPI 摄像头搭载 SONY IMX900 CMOS 图像传感器，分辨率为 3.2MP。这款高性能摄像头最高可输出 30fps 的 2064×1552 图像，并支持 HDR。产品预装并调焦 M12 镜头，兼容多种 SoC 平台，适用于高级成像应用。</p>
+ <p>SG3-IMX900C-MIPI 摄像头搭载 SONY IMX900 CMOS 图像传感器，分辨率为 3.2MP。这款高性能摄像头最高可输出 30fps 的 2064×1552 图像。产品预装并调焦 M12 镜头，兼容多种 SoC 平台，适用于高级成像应用。</p>
  </div>
 </div>
 
@@ -37,7 +37,7 @@ sidebar_label: SG3-IMX900C-MIPI（已下架）
 | 输出像素 | 2064H×1552V |
 | 帧率 | 30fps |
 | 像元尺寸 | 2.25μm×2.25μm |
-| HDR 支持 | 是 |
+| HDR 支持 | 否 |
 | 输出数据 | MIPI/RAW12 |
 | 供电 | 3.3V |
 | 电流 | < 350mA @3.3VDC |

@@ -15,7 +15,7 @@ This documentation stays online as technical reference for existing deployments.
 
 <div className="row">
   <div className="col col--12">
-    <p>The SG3-IMX900C-MIPI camera features the SONY IMX900 CMOS image sensor with 3.2MP resolution. This high-performance camera delivers 2064×1552 resolution at up to 30fps with HDR support. Pre-focused with an M12 lens and compatible with various SoC platforms, it's ideal for advanced imaging applications.</p>
+    <p>The SG3-IMX900C-MIPI camera features the SONY IMX900 CMOS image sensor with 3.2MP resolution. This high-performance camera delivers 2064×1552 resolution at up to 30fps. Pre-focused with an M12 lens and compatible with various SoC platforms, it's ideal for advanced imaging applications.</p>
   </div>
 </div>
 
@@ -37,7 +37,7 @@ This documentation stays online as technical reference for existing deployments.
 | Output Pixels     | 2064H×1552V             |
 | Frame rate        | 30fps                   |
 | Pixel Size        | 2.25μm×2.25μm           |
-| HDR Support       | Yes                     |
+| HDR Support       | No                      |
 | Output data       | MIPI/RAW12              |
 | Power Supply      | 3.3V                    |
 | Current           | < 350mA @3.3VDC         |
