@@ -38,7 +38,7 @@ export const MONO = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-imag
 | **Sensor** | Sony ISX031 RGB | onsemi AR0145 RGB | onsemi AR0234 RGB |
 | **曝光方式** | 卷帘曝光 | 全局曝光 | 全局曝光 |
 | **分辨率** | 1600 × 1200（可选 1920 × 1536） | 1280 × 800 | 1600 × 1200 |
-| **帧率** | 30 fps | 30 fps | 30 fps |
+| **帧率** | 60 fps | 60 fps | 60 fps |
 | **输出格式** | YUV422（内置 ISP） | RAW 10bit | RAW 10bit |
 | **HDR** | 支持 | 不支持 | 不支持 |
 | **镜头 FOV** | H176° × V140° | H183° × V122° | H160° × V120° |

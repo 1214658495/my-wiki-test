@@ -36,7 +36,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | **Sensor** | Sony ISX031 RGB | onsemi AR0234 RGB | OmniVision OG02B10 RGB |
 | **曝光方式** | 卷帘曝光（Rolling Shutter） | 全局曝光（Global Shutter） | 全局曝光（Global Shutter） |
 | **分辨率** | 1600 × 1200 × 2 | 1600 × 1200 × 2 | 1600 × 1300 × 2 |
-| **帧率** | 30 fps | 30 fps | 30 fps |
+| **帧率** | 30 fps | 60 fps | 30 fps |
 | **输出格式** | YUV422 8bit（内置 ISP） | RAW 10bit | RAW 10bit |
 | **镜头 FOV** | H124° × V100° | H160° × V120° | H160° × V130° |
 | **基线** | 60 mm | 60 mm | 60 mm |

@@ -36,7 +36,7 @@ Three sensor options share the same 90 × 28 mm board, 60 mm baseline and on-boa
 | **Sensor** | Sony ISX031 RGB | onsemi AR0234 RGB | OmniVision OG02B10 RGB |
 | **Shutter** | Rolling shutter | Global shutter | Global shutter |
 | **Resolution** | 1600 × 1200 × 2 | 1600 × 1200 × 2 | 1600 × 1300 × 2 |
-| **Frame rate** | 30 fps | 30 fps | 30 fps |
+| **Frame rate** | 30 fps | 60 fps | 30 fps |
 | **Output format** | YUV422 8-bit (built-in ISP) | RAW 10-bit | RAW 10-bit |
 | **Lens FOV** | H124° × V100° | H160° × V120° | H160° × V130° |
 | **Baseline** | 60 mm | 60 mm | 60 mm |

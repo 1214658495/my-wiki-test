@@ -35,7 +35,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | **Sensor** | Sony ISX031 RGB | onsemi AR0234 RGB | OmniVision OG02B10 RGB | OmniVision OV9281 Mono |
 | **曝光方式** | 卷帘曝光 | 全局曝光 | 全局曝光 | 全局曝光 |
 | **分辨率** | 1600 × 1200（可选 1920 × 1536） | 1600 × 1200 | 1600 × 1300 | 1280 × 800 |
-| **帧率** | 30 fps | 30 fps | 30 fps | 30 fps |
+| **帧率** | 60 fps | 60 fps | 60 fps | 60 fps |
 | **输出格式** | YUV422（内置 ISP） | RAW 10bit | RAW 10bit | RAW 10bit |
 | **彩色 / 黑白** | 彩色 | 彩色 | 彩色 | 黑白，850 nm 红外 |
 | **HDR** | 支持 | 不支持 | 不支持 | 不支持 |

@@ -35,7 +35,7 @@ Four sensor options cover color and monochrome, rolling and global shutter, so e
 | **Sensor** | Sony ISX031 RGB | onsemi AR0234 RGB | OmniVision OG02B10 RGB | OmniVision OV9281 Mono |
 | **Shutter** | Rolling shutter | Global shutter | Global shutter | Global shutter |
 | **Resolution** | 1600 × 1200 (1920 × 1536 optional) | 1600 × 1200 | 1600 × 1300 | 1280 × 800 |
-| **Frame rate** | 30 fps | 30 fps | 30 fps | 30 fps |
+| **Frame rate** | 60 fps | 60 fps | 60 fps | 60 fps |
 | **Output format** | YUV422 (built-in ISP) | RAW 10-bit | RAW 10-bit | RAW 10-bit |
 | **Color / mono** | Color | Color | Color | Mono, 850 nm IR |
 | **HDR** | Supported | Not supported | Not supported | Not supported |

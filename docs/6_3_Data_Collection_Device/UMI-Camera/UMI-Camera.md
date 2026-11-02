@@ -38,7 +38,7 @@ SENSING's **UMI Custom Camera** is a mono camera optimized for both device forms
 | **Sensor** | Sony ISX031 RGB | onsemi AR0145 RGB | onsemi AR0234 RGB |
 | **Shutter** | Rolling shutter | Global shutter | Global shutter |
 | **Resolution** | 1600 × 1200 (1920 × 1536 optional) | 1280 × 800 | 1600 × 1200 |
-| **Frame rate** | 30 fps | 30 fps | 30 fps |
+| **Frame rate** | 60 fps | 60 fps | 60 fps |
 | **Output format** | YUV422 (built-in ISP) | RAW 10-bit | RAW 10-bit |
 | **HDR** | Supported | Not supported | Not supported |
 | **Lens FOV** | H176° × V140° | H183° × V122° | H160° × V120° |
