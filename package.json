@@ -24,6 +24,7 @@
     "docusaurus-theme-search-typesense": "^0.25.0",
     "jsonwebtoken": "^9.0.3",
     "papaparse": "^5.5.3",
+    "pdfjs-dist": "4.10.38",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
