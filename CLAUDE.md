@@ -4,6 +4,8 @@
 
 > 本文件已合并 `AGENTS.md`(Codex 时期的接手指南, 被 `.gitignore` 忽略, 不进 Git) 的关键经验, 并按代码实际状态做了修正. 两份文件如有冲突, **以本文件为准**.
 
+> 2026-11-04 接手复核：当前唯一开发目录为 `C:\Users\Lenovo\work\my-wiki-test`，旧 D 盘目录已弃用。Codex 和 Claude Code 均先读本文件；本机 `AGENTS.md` 只保留入口及本地约定。以下实测快照是本地代码状态，不代表线上部署或外部服务已验证。
+
 ## 一. 项目概况
 
 - 类型: Docusaurus 3.7 静态文档站, 中英文双语
@@ -22,7 +24,8 @@
 
 - 框架: `@docusaurus/core` 3.7.0 + `@docusaurus/preset-classic` 3.7.0
 - React 19, MDX 3
-- 搜索: `docusaurus-theme-search-typesense` + Typesense DocSearch scraper
+- 搜索相关依赖: `docusaurus-theme-search-typesense` + Typesense DocSearch scraper；当前 `docusaurus.config.js` 未注册搜索主题或 Typesense 配置，不能视为已启用站内搜索
+- PDF 预览: `pdfjs-dist` 4.10.38，客户端动态加载 legacy PDF.js 与 worker
 - AI 集成: `@coze/api`, `jsonwebtoken`(Coze 聊天会话签名)
 - 数据/交互: `papaparse`(解析 OSS CSV), `resend`(邮件), `typesense`(搜索客户端)
 - 统计: footer 注入 `busuanzi.min.js`
@@ -46,10 +49,12 @@
 │   │   ├── WikiHome/              # 首页内容, PAGE_CONTENT 同时维护 en / zh-Hans
 │   │   ├── DownloadCenter.js      # 资源页主组件, OSS CSV + lead API + SN 内参
 │   │   ├── AIHomePanel/           # Wiki AI 聊天面板, 调 Coze
+│   │   ├── AnnotatedImage/        # 百分比坐标图像标注，文字随 MDX 语言维护
 │   │   └── HomepageFeatures/      # 备用 feature 卡组件
 │   ├── pages/
 │   │   ├── index.js               # 根路径按 locale 重定向
-│   │   └── ai-home.js             # Wiki AI 着陆页
+│   │   ├── ai-home.js             # Wiki AI 着陆页
+│   │   └── pdf-viewer.js          # OSS PDF 站内预览页，支持中英文
 │   ├── theme/
 │   │   └── DocSidebarItem/Category/  # swizzle 自定义 linked category 行为
 │   └── css/custom.css             # 站点样式, 品牌色, 导航图标(nav-icon-*)
@@ -79,13 +84,15 @@
 | `docusaurus.config.js` | 站点元信息, navbar(Wiki AI / Product Resources / GitHub / 语言切换), footer, i18n, Prism 主题; 顶部 import `scripts/product-visibility.cjs`, 在 `presets.docs.exclude` 注入隐藏产品目录 |
 | `generate-sidebar.js` | 递归扫描 `docs/`, 根据 `_category_.json` 的 `position` / `link` / `collapsed` / `customProps.hidden` 和文档 frontmatter 的 `sidebar_position` 构建侧边栏; 合并中文 `_category_.json` 翻译标签; 分别写出英文和中文 `sidebars.js` |
 | `scripts/product-visibility.cjs` | 递归扫描 `docs/`, 收集 `customProps.hidden === true` 的分类目录, 导出 `getHiddenProductDirectories()` 和 `getHiddenDocExcludePatterns()`; 被 `docusaurus.config.js` 消费 |
-| `scripts/translate-sync.js` | 用文件哈希检测变更, 分批(默认 5 个/批)调用 OpenAI GPT-4o 翻译 `.md` / `.mdx` / `_category_.json`, 写入 `i18n/zh-Hans/.../current/`, 末尾调用 `generate-sidebar.js` |
+| `scripts/translate-sync.js` | 用文件哈希检测变更, 分批(默认 5 个/批)调用 OpenAI GPT-4o 翻译 `.md` / `.mdx` / `_category_.json`, 写入 `i18n/zh-Hans/.../current/`; 非 dry-run 末尾直接调用共享的 `generateSidebars()` |
 | `src/pages/index.js` | 根路径按当前 locale 客户端重定向到对应文档首页(`/docs/home` 或 `/zh-Hans/docs/home`) |
 | `src/components/WikiHome/index.js` | 首页内容唯一源, `PAGE_CONTENT.en` / `PAGE_CONTENT['zh-Hans']` 分别保存两套文案, CTA 和产品卡片入口 |
-| `src/components/DownloadCenter.js` | 资源页: 从 Aliyun OSS CSV 取产品清单, 登记打 lead API, 按 SN 取相机内参 |
+| `src/components/DownloadCenter.js` | 资源页: 从 Aliyun OSS CSV 取产品清单, 登记打 lead API, 按 SN 取相机内参；支持 `?model=<型号>` 自动填充并搜索 |
+| `src/pages/pdf-viewer.js` | `/pdf-viewer?file=<bucket 内相对 PDF 路径>`，中文 `/zh-Hans/pdf-viewer`；PDF.js canvas 逐页渲染、缩放、下载；依赖 OSS CORS 与 worker 加载 |
+| `src/components/AnnotatedImage/index.js` | 图片上的区域框、编号和引线，坐标为百分比；`items` 和说明文字放在对应语言的 MDX 中，当前用于 EgoSense H6 用户手册 |
 | `src/theme/DocSidebarItem/Category/index.js` | 自定义 linked category 行为, 点击文字进入入口文档, 独立 caret 控制折叠 |
 | `api/lead.js` | 下载登记后端, 飞书多维表写入 + Resend 邮件通知 |
-| `api/coze.js` | 发放 Coze 聊天会话 JWT, 依赖 `COZE_CLIENT_ID` / `COZE_KEY_ID` / `COZE_PRIVATE_KEY` |
+| `api/coze.js` | 使用环境变量签名 JWT，再向 Coze OAuth 接口换取 access token 返回前端；依赖 `COZE_CLIENT_ID` / `COZE_KEY_ID` / `COZE_PRIVATE_KEY` |
 
 ## 五. 常用命令
 
@@ -130,9 +137,10 @@ yarn typesense-docsearch-scraper
 
 ### 内容与结构
 
+- **文档内容修改后自动同步与构建**：主动同步对应的中英文文档，并运行 `npm.cmd run build` 完成双语构建，无需用户重复提醒。同步按本次修改范围完成，不自动运行真实批量翻译；交付时报告构建结果。
 - **英文 `docs/` 是事实来源**: 新增, 改名, 调序优先在英文目录完成; 中文 `i18n/zh-Hans/.../current/` 跟随同构
 - **不要手改生成产物**: 两份 `sidebars.js` 都是 `generate-sidebar.js` 的输出; 持久修复落在 `_category_.json`, frontmatter(`sidebar_position`), `generate-sidebar.js` 或 `scripts/translate-sync.js`
-- **改生成逻辑要成对改**: `generate-sidebar.js` 和 `scripts/translate-sync.js` 的行为必须保持一致, 否则下一次翻译同步会覆盖掉之前的侧边栏修复
+- **共享侧边栏生成逻辑**: `scripts/translate-sync.js` 已直接复用 `generate-sidebar.js` 导出的 `generateSidebars()`；修改生成逻辑应落在共享实现，不要重新复制一份到翻译脚本
 - **侧边栏排序**以 `_category_.json` 的 `position` 和文档 frontmatter 的 `sidebar_position` 为准
 - **Linked category** 必须同时保留 `link.id` 和合理的 `items` 去重; 不要为了"修复"入口文档消失而删掉 `link`
 - **首页改动**必须同时维护 `WikiHome` 的 `PAGE_CONTENT.en` 与 `PAGE_CONTENT['zh-Hans']` 两套内容
@@ -174,6 +182,7 @@ yarn typesense-docsearch-scraper
 - 双目目录: `S36.md`, `S56.md`
 - 单目目录 `docs/6_1_Camera/Monocular_Camera/`: `M3A.md`, `SHF3L.md`, `SHW3G_SHF3G.md`, `SHW3H.md`, `SHW5G_SHF5G.md`
 - 中英文单目目录必须同构; 改英文目录时同步检查 `i18n/zh-Hans/docusaurus-plugin-content-docs/current/6_1_Camera/Monocular_Camera/`
+- `docs/6_3_Data_Collection_Device/` 及中文镜像覆盖 EgoSense H6（产品页、用户手册、FAQ）、Ego Mono Camera、Ego Stereo Camera 和 UMI Camera；这部分也是 Robotics 的维护范围
 - Robotics 改动常同时牵涉 overview / 产品页 / 方案页 / 侧边栏. 改完至少检查中英文的 `6_0_Robotics`, `6_1_Camera`, `6_2_Vision_Solution`
 
 ### Windows 环境
@@ -205,7 +214,7 @@ yarn typesense-docsearch-scraper
 | --- | --- | --- |
 | `OPENAI_API_KEY` | 调用 GPT-4o 翻译中文 | `scripts/translate-sync.js` |
 | `COZE_CLIENT_ID` / `COZE_KEY_ID` / `COZE_PRIVATE_KEY` | 生成 Coze 会话 JWT | `api/coze.js` |
-| 飞书多维表 + Resend 凭据 | 下载登记后端 | `api/lead.js` |
+| 飞书多维表 + Resend 凭据 | 下载登记后端 | `api/lead.js` 当前存在硬编码，尚未完成环境变量迁移；不要复制其值到文档、日志或记忆 |
 | `TYPESENSE_API_KEY` / `TYPESENSE_HOST` / `TYPESENSE_PORT` / `TYPESENSE_PROTOCOL` | 搜索 scraper 索引 | `.env.docsearch`(仅 scraper 容器使用) |
 
 部署不再需要 `GH_PAGES_DEPLOY` SSH key —— 当前 workflow 走 GitHub Pages 官方 OIDC(`pages: write` + `id-token: write`), 旧的 SSH 方案在 `deploy.yml` 里已注释.
@@ -226,10 +235,10 @@ yarn typesense-docsearch-scraper
 
 - `ws` 的可选依赖 `bufferutil` 缺失
 - `ws` 的可选依赖 `utf-8-validate` 缺失
-- Browserslist 数据过期(提示约 12 months old)
-- Docusaurus update check 无法写入 `C:\Users\Lenovo\.config`
+- Browserslist 数据过期(2026-11-04 本机提示 17 months old)
+- 历史曾有 Docusaurus update check 无法写入 `C:\Users\Lenovo\.config`；本次未复现
 
-另: 中文翻译同步长期有存量差口, 历史快照(2026-06-16)为新增 66 / 更新 19 / 未变 95. 这是待办, 不是回归.
+另: 2026-11-04 翻译 dry-run 为新增 0 / 更新 48 / 未变 144。此结果按源文件与缓存哈希检测，不能直接等同于 48 份中文译文错误或过期；分类 JSON 和人工已同步但缓存未更新的文件需复核。
 
 ## 十. Agent 工作约定
 
@@ -239,3 +248,33 @@ yarn typesense-docsearch-scraper
 - 中文文档改动注意 UTF-8 编码和 `/zh-Hans/` 链接形态
 - 不要把 `--dry-run` 擅自改成真实同步
 - 交付时如实说明: 哪些验证跑了, 哪些没跑, 残余风险是什么
+
+## 十一. 2026-11-04 开发基线与后续入口
+
+### 本次实测
+
+- 分支 `main`，检查起点 `7f6169f`（2026-11-02，新增 PDF 阅读页及选型文档更新）；开始时工作树干净。本次只更新接手文档，没有改业务逻辑、执行真实翻译或部署。
+- 本机 Node `v24.4.1`、npm `11.1.0`；CI 仍为 Node 20。这里只验证了本机已有依赖的构建，没有验证全新安装或 Node 20 的本地构建。
+- `node --check`：`generate-sidebar.js`、`scripts/translate-sync.js`、`scripts/product-visibility.cjs`、`src/pages/index.js` 均通过。
+- `npm.cmd run build` 退出码 0，中英文产物均成功。残余警告为 `ws` 两项可选依赖缺失、Browserslist 数据过期，并提示 Docusaurus 可升级；未进行依赖升级。
+- `docs/` 有 116 份 Markdown/MDX、76 份分类 JSON；中文镜像有 117 份文档、77 份分类 JSON。数量含隐藏目录，数量差异需按路径复核，不能推断缺译。
+- 当前隐藏产品为 `5_1_sDepth`。已扫描 Git 跟踪的 JS/CJS/JSON/Markdown/YAML 文件，未发现 D 盘绝对路径引用。
+- 本轮未运行 serve/浏览器交互，未验证 OSS、下载登记、邮件、Coze、Typesense、线上域名和部署状态。静态 Pages 构建不部署 `api/`，后端线上版本需单独确认。
+
+### 已发现的维护点（代码静态分析，尚未修复）
+
+| 维护点 | 证据与影响 | 后续落点 |
+| --- | --- | --- |
+| 凭据管理 | `api/lead.js` 存在字面量飞书 secret 和 Resend token；`.env.docsearch` 也在 Git 跟踪中，未读取或验证其中凭据有效性 | 单独迁移环境变量，并核实线上配置、凭据轮换及仓库历史处理范围 |
+| PDF 参数与渲染 | `resolveFile()` 对文件名调用 `decodeURIComponent()` 未捕获异常；全页 canvas 渲染；容器变化未触发重新适配 | 输入校验与失败回退、长 PDF 性能和响应式复核 |
+| 资源页可靠性 | `?model=` 在 `URLSearchParams` 解码后再次解码；本地登记 JSON 读取无容错；lead 请求未检查 `response.ok` | 参数/缓存容错与登记失败提示；避免无意改变登记和下载业务规则 |
+| 翻译同步 | 分类 JSON 同步未更新哈希缓存；并发批次会分别读写共享缓存及 `current.json`，存在覆盖风险 | 专项梳理缓存提交与共享 JSON 写入；不要用真实批量翻译来做验证 |
+| 语言与样式 | `DownloadCenter` 和 AI 面板仍有大量英文或固定色；`WikiHome` 中文仍有与术语约定不一致的“相机”用法 | 相关新功能同时补中英文、深色模式与交互验证 |
+| 搜索与接手资料 | Typesense 尚未接入当前站点配置；README 仍为 Docusaurus 模板和旧部署说明 | 搜索作为独立功能确认；开发部署先遵循本文件与实际 workflow |
+
+### 下一步功能开发的定位方式
+
+- 产品选型、PDF 与下载：从中英文 `1_1_Serdes_Camera/GMSL_Camera/Camera_Selection.md` → `pdf-viewer.js` / `DownloadCenter.js` → OSS 或 lead API 梳理完整链路。
+- Robotics / 采集设备：从 `6_0_Robotics`、`6_1_Camera`、`6_2_Vision_Solution`、`6_3_Data_Collection_Device` 及首页入口联合检查。
+- Wiki AI：`docs/ai.mdx` 为导航主入口，`src/pages/ai-home.js` 为另一独立页面，两者复用 `AIHomePanel`；后端 access token 与浏览器会话需联合验证。
+- 新功能按当前用户需求确定范围；上述维护点是分析结果，不代表已授权自动轮换凭据、升级依赖、重建搜索索引或批量翻译。
