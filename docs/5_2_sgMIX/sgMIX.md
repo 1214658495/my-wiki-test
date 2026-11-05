@@ -40,11 +40,11 @@ YUV cameras use V4L2 capture; RAW cameras use Argus. Data reads and controls use
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | SG3S-ISX031C-GMSL2F-Hxxx | ● | ● | ● | ● | ● | ● | Firmware | ● | ● | ● |
 | SG3S-ISX031C-GMSL2-Hxxx | ● | ● | ● | ● | ● | ● | Firmware | ● | ● | ● |
-| SG3S11AFLK | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| SG3S11AFLK | ● | ● | ● | ● | ● | ● | Firmware | ● | ● | ● |
 | SHW5G | ● | ● | ● | ● | ● | ● | ISP / NITO | ● | - | ● |
 | S36 | ● | ● | ● | ● | ● | ● | Firmware | ● | - | ● |
 | S56 | ● | ● | ● | ● | ● | ● | ISP / NITO | ● | - | ● |
-| SHF3L / SHF3H | ● | ● | ● | ● | ● | ● | ● | ● | ● | ● |
+| SHF3L / SHF3H | ● | ● | ● | ● | ● | ● | Firmware | ● | ● | ● |
 
 ### SIPL
 
@@ -54,12 +54,12 @@ Every model requires a matching driver and JSON configuration. Multi-channel mod
 | --- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | SG3S-ISX031C-GMSL2F-Hxxx | ● | ● | ● | ● | ● | ● | Firmware | ● | - | ● |
 | SG3S-ISX031C-GMSL2-Hxxx | ● | ● | ● | ● | ● | ● | Firmware | ● | - | ● |
-| SG3S11AFLK | ● | ● | ● | ● | ● | ● | ● | ● | - | ● |
+| SG3S11AFLK | ● | ● | ● | ● | ● | ● | Firmware | ● | - | ● |
 | SHW5G | ● | ● | ● | ● | ● | ● | NITO | ● | ● | ● |
 | S36 | ● | ● | ● | ● | ● | ● | Firmware | ● | - | ● |
 | S56 | ● | ● | ● | ● | ● | ● | NITO | ● | ● | ● |
-| SDT2BCO1 | ● | ● | ● | ● | - | - | ● | ● | - | ● |
-| SHF3L / SHF3H | ● | ● | ● | ● | ● | ● | ● | ● | - | ● |
+| SDT2BCO1 | ● | ● | ● | ● | - | - | Firmware | ● | - | ● |
+| SHF3L / SHF3H | ● | ● | ● | ● | ● | ● | Firmware | ● | - | ● |
 
 **Support conditions:**
 

@@ -40,7 +40,7 @@ GMSL（Gigabit Multimedia Serial Link）摄像头是面向自动驾驶、机器�
 | 15 | SG8-IMX728C-G2G-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 30fps | MIPI / RAW 12 | [📄 规格书](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG8-IMX728C-G2G-Hxxx_en.pdf) | [📥 下载](/zh-Hans/docs/4_0_Resources?model=SG8-IMX728C-G2G-Hxxx) |
 | 16 | SG8-ISX028C-G2G-Hxxx | SONY ISX028 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [📄 规格书](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG8-ISX028C-G2G-Hxxx_en.pdf) | [📥 下载](/zh-Hans/docs/4_0_Resources?model=SG8-ISX028C-G2G-Hxxx) |
 | 17 | SG8-IMX728C-G3A-Hxxx | SONY IMX728 RGGB | 3840H*2160V | MAX 40fps | MIPI / RAW 12 | [📄 规格书](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG8-IMX728C-G3A-Hxxx_en.pdf) | [📥 下载](/zh-Hans/docs/4_0_Resources?model=SG8-IMX728C-G3A-Hxxx) |
-| 18 | SG17-IMX735C-G3A-Hxxx | SONY IMX735 RGGB | 3000Hx5760V <br/> 3000Hx4000V <br/> 2160Hx3840V | MAX 45fps | MIPI / RAW 12 | [📄 规格书](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG17-IMX735C-GMSL3-Hxxx_cn.pdf) | [📥 下载](/zh-Hans/docs/4_0_Resources?model=SG17-IMX735C-G3A-Hxxx) |
+| 18 | SG17-IMX735C-G3A-Hxxx | SONY IMX735 RGGB | 3000Hx5760V <br/> 3000Hx4000V <br/> 2160Hx3840V | MAX 45fps | MIPI / RAW 12 | [📄 规格书](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG17-IMX735C-G3A-Hxxx_en.pdf) | [📥 下载](/zh-Hans/docs/4_0_Resources?model=SG17-IMX735C-G3A-Hxxx) |
 | 19 | SG8-OX08DC-5300-G2G-Hxxx | OMNIVSION 8.3MP OX08D10 RGGB | 3840H*2160V | 30fps | YUV422@8bit | [📄 规格书](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG8-OX08DC-5300-G2G-Hxxx_en.pdf) | [📥 下载](/zh-Hans/docs/4_0_Resources?model=SG8-OX08DC-5300-G2G-Hxxx) |
 </div>
 
