@@ -49,7 +49,7 @@ sidebar_position: 1
 | Current           | Less than 250mA@12VDC            |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 30mm, L:30mm, H:22.5mm |
+| Dimensions        | W: 30mm, L: 30mm, H: 22.57mm (housing), axial dimension for the lens shown: 56.48mm |
 | Weight            | Less than 50g           |
 
 </div>

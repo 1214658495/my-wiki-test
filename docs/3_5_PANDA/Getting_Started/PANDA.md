@@ -55,7 +55,7 @@ title: Getting Started with PANDA serial PG2
 |---|---|
 | **Deserializer** | MAX9296AGTM/V+T |
 | **Resolution supported** | 1920 * 1080@60fps<br/>1920 * 1536@30fps<br/>only one camera is supported |
-| **Frame rate** | YUV422/RAW12 |
+| **Output Format** | YUV422/RAW12 |
 | **Compressed** | NO |
 | **Interface of output** | USB3.0 |
 | **Camera Connector** | Coaxial Connector<br/>FMK2252AW-001-TL30G-50 |
@@ -65,7 +65,7 @@ title: Getting Started with PANDA serial PG2
 | **Power Supply** | By USB port /Support external Power|
 | **Current** | < 500mA |
 | **Temperature** | -40 ~ +75°C |
-| **Dimensions** | 45mm(W), 64mm(L), 23.6mm(H) |
+| **Dimensions** | 45mm(W), 64mm(L), 21.1mm(H) |
 | **Material** | Metal |
 | **Color** | Black |
 

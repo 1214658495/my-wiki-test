@@ -138,6 +138,7 @@ yarn typesense-docsearch-scraper
 ### 内容与结构
 
 - **文档内容修改后自动同步与构建**：主动同步对应的中英文文档，并运行 `npm.cmd run build` 完成双语构建，无需用户重复提醒。同步按本次修改范围完成，不自动运行真实批量翻译；交付时报告构建结果。
+- **规格数据核对**：修改或从其他型号复用产品页时，先按完整型号和镜头配置对照规格书或机械图，区分壳体尺寸、安装外廓与含镜头尺寸。检查同页概述、规格表、图示和选型入口，再同步中英文及同型号重复页面。构建只检查能否生成页面，不能验证规格值。
 - **英文 `docs/` 是事实来源**: 新增, 改名, 调序优先在英文目录完成; 中文 `i18n/zh-Hans/.../current/` 跟随同构
 - **不要手改生成产物**: 两份 `sidebars.js` 都是 `generate-sidebar.js` 的输出; 持久修复落在 `_category_.json`, frontmatter(`sidebar_position`), `generate-sidebar.js` 或 `scripts/translate-sync.js`
 - **共享侧边栏生成逻辑**: `scripts/translate-sync.js` 已直接复用 `generate-sidebar.js` 导出的 `generateSidebars()`；修改生成逻辑应落在共享实现，不要重新复制一份到翻译脚本

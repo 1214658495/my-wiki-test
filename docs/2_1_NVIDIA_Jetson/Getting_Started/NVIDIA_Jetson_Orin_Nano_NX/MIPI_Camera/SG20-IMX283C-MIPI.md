@@ -44,13 +44,13 @@ This documentation stays online as technical reference for existing deployments.
 | Connector         | AFC07-S22ECA-00         |
 | Operating Temp.   | -20 to +75°C            |
 | Performance temp. | -20 to +60°C            |
-| Dimensions        | W: 40mm, L: 40mm, H: 10.1mm |
+| Dimensions        | W: 40mm, L: 40mm (housing front face), 101.22mm axial dimension with the H15° lens shown |
 | Weight            | < 400g                   |
 
 ### Physical Dimensions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_2_MIPI_CSI_Camera/SG20-IMX283C-MIPI/SG20-IMX283C-MIPI_Dimensions.png" alt="SG20-IMX283C-MIPI Dimensions" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/mipi_csi_camera/SG20-IMX283C-MIPI/SG20-IMX283C-MIPI_Dimensions.png" alt="SG20-IMX283C-MIPI Dimensions"
     style={{maxWidth: '80%', height:'auto'}} />
 </div>
 

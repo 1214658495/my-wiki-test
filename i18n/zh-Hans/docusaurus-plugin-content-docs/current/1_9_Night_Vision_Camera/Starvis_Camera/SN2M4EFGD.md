@@ -49,7 +49,7 @@ sidebar_position: 1
 | 电流 | 小于 250mA@12VDC |
 | 连接器 | Amphenol Fakra (Z Code) |
 | 工作温度 range | -40~+85℃ |
-| 尺寸 | W: 30mm, L:30mm, H:22.5mm |
+| 尺寸 | W: 30mm, L: 30mm, H: 22.57mm（壳体）；图示镜头配置轴向尺寸 56.48mm |
 | 重量 | 小于 50g |
 
 </div>

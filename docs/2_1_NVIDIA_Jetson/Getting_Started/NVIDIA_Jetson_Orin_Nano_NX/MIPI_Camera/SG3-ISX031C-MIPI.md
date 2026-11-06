@@ -45,7 +45,7 @@ sidebar_position: 1
 | Connector         | FH67-30S-0.5SV          |
 | Operating Temp.   | -20°C to +75°C          |
 | Performance Temp. | -20°C to +60°C          |
-| Dimensions        | W: 20mm, L: 35mm, H: 16.2mm |
+| Dimensions        | W: 30mm, L: 35mm, H: 16.2mm (configuration shown in the drawing, height varies with lens) |
 | Weight            | < 50g                   |
 
 ### Physical Dimensions

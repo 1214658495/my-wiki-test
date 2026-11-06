@@ -51,7 +51,7 @@ sidebar_position: 1
 | Power Supply      | Yes                    |
 | Connector         | Fakra Z Type           |
 | Operating Temperature Range | -40°C to +85°C |
-| Dimensions        | 87.5mm × 70.6mm × 20mm |
+| Dimensions        | 87.5mm × 70.6mm × 21.8mm |
 | Color             | Black                  |
 | Weight            | < 150g                 |
 

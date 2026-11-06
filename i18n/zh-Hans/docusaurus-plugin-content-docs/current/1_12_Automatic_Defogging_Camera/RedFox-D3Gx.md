@@ -72,7 +72,7 @@ title: RedFox-D3Gx
 | **电流** | 400mA@12V (配合 Heating) |
 | **连接器** | Amphenol Fakra Z Code (摄像头) |
 | **工作温度范围** | -40°~+85°C |
-| **尺寸** | W: 30mm, L: 30mm |
+| **尺寸** | W: 30mm, L: 30mm, H: 28.38mm (D3GF) / 35.55mm (D3GN) / 35.44mm (D3GW) |
 | **重量** | < 100g |
 
 </div>
@@ -81,17 +81,17 @@ title: RedFox-D3Gx
 ### 尺寸
 
 <div style={{textAlign: 'center'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GF.png" alt="SN2M4EFGD"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GF.png" alt="RedFox-D3GF"
  style={{maxWidth: '80%', height:'auto'}} />
 </div>
 <br />
 <div style={{textAlign: 'center'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GN.png" alt="SN2M4EFGD"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GN.png" alt="RedFox-D3GN"
  style={{maxWidth: '80%', height:'auto'}} />
 </div>
 <br />
 <div style={{textAlign: 'center'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GW.png" alt="SN2M4EFGD"
+ <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_12_Automatic_Defogging_Camera/D3GW.png" alt="RedFox-D3GW"
  style={{maxWidth: '80%', height:'auto'}} />
 </div>
 
@@ -184,12 +184,6 @@ The RedFox-D3Gx series incorporates advanced automatic defogging algorithms that
 <!-- ## 2. 摄像头集成与部署 -->
 
 <!-- ### 2.1 Adaptation to NVIDIA® Jetson™ 平台
-<div style={{textAlign: 'center'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A_ConnectNvidia.png" alt="SH3-S11A60-G2A_ConnectNvidia"
- style={{maxWidth: '60%', height:'auto'}} />
- <p>SHW3H 摄像头 连接到 NVIDIA Jetson AGX Orin</p>
-</div>
-
 #### 2.1.1 安装步骤
 
 :::note 快速设置

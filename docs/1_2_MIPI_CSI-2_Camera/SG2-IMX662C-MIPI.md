@@ -45,7 +45,7 @@ This documentation stays online as technical reference for existing deployments.
 | Interface         | FPC                     |
 | Connector         | FH67-30S-0.5SV          |
 | Operating Temp.   | -30°C ~ +85°C           |
-| Dimensions        | W: 20mm, L: 35mm, H: 25mm |
+| Dimensions        | W: 30mm, L: 35mm, H: 27.5mm (configuration shown in the drawing, height varies with lens) |
 | Weight            | < 50g                   |
 
 ### Physical Dimensions

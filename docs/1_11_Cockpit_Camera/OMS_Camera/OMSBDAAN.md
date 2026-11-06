@@ -50,7 +50,7 @@ sidebar_position: 1
 | Current           | POC: Less than 350mA@12VDC , LED: Less than 400mA@12VDC |
 | Connector         | Amphenol Fakra(Z Code)+Molex  |
 | Operating temp.   | -40 to +85°C            |
-| Dimensions        | W: 28.8mm, L:44.2mm, H:20mm|
+| Dimensions        | W: 28.8mm, L: 44.2mm, H: 20mm (housing), axial dimension for the lens shown: 22.45mm|
 | Weight            | Less than 50g           |
 
 </div>

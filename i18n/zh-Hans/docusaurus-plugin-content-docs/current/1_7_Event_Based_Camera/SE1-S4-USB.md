@@ -47,7 +47,7 @@ title: SE1-S4-USB
 | 标称对比度阈值 (%) | 25 |
 | 读出吞吐量 | 20Mevents/s（默认值，可配置） |
 | 料号 | SE1-S4-USB-HxxxC<br/>SE1-S4-USB-HxxxM<br/>xxx 表示 HFOV，C 表示 CS 镜头接口，M 表示 M12 镜头接口 |
-| 尺寸 | 35mm x 35mm x 35mm |
+| 尺寸 | 35mm x 35mm x 35mm（标称尺寸；含镜头的安装尺寸见对应镜头接口图） |
 | 重量 | 80g（不含光学镜头） |
 | DFOV | 详情请咨询制造商 |
 | VFOV | 详情请咨询制造商 |
@@ -98,7 +98,7 @@ title: SE1-S4-USB
 ### 4 引脚连接器定义
 
 <div style={{textAlign: 'center'}}>
- <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/SE1-S4-USB_Back_View.png" alt="SE1-S4-USB 背面视图"
+ <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_Back_View.png" alt="SE1-S4-USB 背面视图"
  style={{maxWidth: '40%', height:'auto'}} />
  <p>背面视图</p>
 </div>

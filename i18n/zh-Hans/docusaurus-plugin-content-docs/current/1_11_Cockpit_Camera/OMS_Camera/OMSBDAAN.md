@@ -50,7 +50,7 @@ sidebar_position: 1
 | 电流 | POC：小于 350mA@12VDC，LED：小于 400mA@12VDC |
 | 连接器 | Amphenol Fakra(Z Code)+Molex |
 | 工作温度 | -40 to +85°C |
-| 尺寸 | W: 28.8mm, L:44.2mm, H:20mm|
+| 尺寸 | W: 28.8mm, L: 44.2mm, H: 20mm（壳体）；图示镜头配置轴向尺寸 22.45mm|
 | 重量 | 小于 50g |
 
 </div>

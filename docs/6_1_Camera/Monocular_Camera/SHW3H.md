@@ -70,7 +70,7 @@ title: SHW3H（3MP HDR 60fps）
 | Current           | Less than 200mA@12VDC            |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:18.6mm |
+| Dimensions        | W: 25mm, L: 25mm, H: 37.55mm |
 | Weight            | Less than 50g                    |
 
 </div>

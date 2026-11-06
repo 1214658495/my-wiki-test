@@ -47,7 +47,7 @@ title: SE1-S4-USB
 | Nominal contrast threshold (%) | 25 | 
 | Readout throughput | 20Mevents/s (default, setting changeable) |
 | Part number | SE1-S4-USB-HxxxC<br/>SE1-S4-USB-HxxxM<br/>xxx is HFOV, C is CS mount of lens, M is M12 mount of lens |
-| Dimensions | 35mm x 35mm x 35mm |
+| Dimensions | 35mm x 35mm x 35mm (nominal; see the drawing for the applicable lens mount for installation dimensions) |
 | Weight | 80g (excl. optic) |
 | DFOV | Please consult the manufacturer for details |
 | VFOV | Please consult the manufacturer for details |
@@ -98,7 +98,7 @@ DR >120 dB can be reached based on low light cutoff measurement being: 0.08 lux 
 ### 4-Pin Connector Definitions
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_7_Event_Based_Camera/SE1-S4-USB_Back_View.png" alt="SE1-S4-USB Back View" 
+    <img src="https://raw.githubusercontent.com/1214658495/myWikiFiles/main/Camera/1_7_Event_Based_Camera/EVS_Back_View.png" alt="SE1-S4-USB Back View"
     style={{maxWidth: '40%', height:'auto'}} />
     <p>Back View</p>
 </div>

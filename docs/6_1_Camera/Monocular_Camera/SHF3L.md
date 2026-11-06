@@ -70,7 +70,7 @@ title: SHF3L（3MP HDR 30fps）
 | Current           | Less than 200mA@12VDC            |
 | Connector         | Amphenol Fakra (Z Code) |
 | Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 25mm, L:25mm, H:18.6mm |
+| Dimensions        | W: 25mm, L: 25mm, H: 33.54mm |
 | Weight            | Less than 50g                    |
 
 </div>
