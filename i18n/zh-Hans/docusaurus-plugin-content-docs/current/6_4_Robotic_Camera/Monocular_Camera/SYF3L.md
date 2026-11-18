@@ -1,15 +1,18 @@
 ---
-sidebar_position: 2
-title: SG3S11AFSK（3MP HDR 30fps）
+sidebar_position: 1
+title: SYF3L（3MP HDR 30fps）
 ---
 
-# SG3S11AFSK（3MP HDR 30fps）
+# SYF3L（3MP HDR 30fps）
 
 ## 概述
 
-SG3S11AFSK 是 SG3S11AFxK 系列中水平视场角为 196° 的型号。采用 Sony ISX031 传感器、内置 ISP 和 MAX96717F 串行器，通过 GMSL2 以 30fps 输出 1920(H) × 1536(V) 的非压缩 8bit YUV422 图像。支持 HDR、LED 闪烁抑制（LFM）、外部触发和多摄像头同步。
+SYF3L 是水平视场角为 196° 的单目摄像头。采用 Sony ISX031 传感器、内置 ISP 和 MAX96717F 串行器，通过 GMSL2 以 30fps 输出 1920(H) × 1536(V) 的非压缩 8bit YUV422 图像。支持 HDR、LED 闪烁抑制（LFM）、外部触发和多摄像头同步。
 
-[SG3S11AFxK 系列规格书（英文）](/zh-Hans/pdf-viewer?file=datasheet/huojiaDatasheet/SG3S11AFxK.pdf)
+<div className="monocular-overview-photo">
+  <object data="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF3L/SYF3L.png?x-oss-process=image/format,webp&v=1fde464eb724" type="image/webp" role="img" aria-label="SYF3L 单目摄像头外观"
+    style={{width: '100%'}} />
+</div>
 
 ## 技术规格
 
@@ -29,7 +32,7 @@ SG3S11AFSK 是 SG3S11AFxK 系列中水平视场角为 196° 的型号。采用 S
 | 外壳防护 | IP67 |
 | 外壳平面尺寸 / 重量 | 25 × 25mm / &lt;50g |
 
-> **备注**　规格书仅确认中心光学分辨率达标。
+> **备注**　光学分辨率指标适用于图像中心。
 
 ## 镜头与机械尺寸
 
@@ -37,25 +40,26 @@ SG3S11AFSK 是 SG3S11AFxK 系列中水平视场角为 196° 的型号。采用 S
 |---|---|---|---|---|---|---|
 | 196° / 154° | 2.0 | 1.51mm | 0.4m | 0.13m 至无穷远 | −155% | IP67 / 主动对准（AA） |
 
-[第 6 页 SG3S11AFSK 机械图](https://sgword-service.oss-cn-heyuan.aliyuncs.com/datasheet/huojiaDatasheet/SG3S11AFxK.pdf#page=6) 标注了正视图、侧视图、后视图、成像方向和安装尺寸。
-
 ## 硬件与接入
+
+| 器件 | I2C 地址（8bit） |
+|---|---|
+| 串行器 | `0x80` |
+| 传感器 / ISP | `0x34` |
 
 | 功能 | 配置 |
 |---|---|
-| 串行器 I2C 地址 | `0x80`（8bit） |
-| 传感器 / ISP I2C 地址 | `0x34`（8bit） |
 | 帧同步 | MAX96717F MFP7 |
 | 传感器复位 | MAX96717F MFP0 |
 | 传感器错误信号 | MAX96717F MFP5 |
 
-内置 ISP 输出 YUV。主机端配置 SerDes 时使用 3Gbps GMSL2 链路和 8bit YUV422 数据流。[第 3 页系统框图](https://sgword-service.oss-cn-heyuan.aliyuncs.com/datasheet/huojiaDatasheet/SG3S11AFxK.pdf#page=3) 展示了 CSI-2、PoC 和控制信号的连接关系。
+内置 ISP 输出 YUV。主机端配置 SerDes 时使用 3Gbps GMSL2 链路和 8bit YUV422 数据流。
 
 ## 摄像头使用
 
 ### 适配 NVIDIA Jetson 平台
 
-SG3S11AFSK 使用 GMSL2 3Gbps，输出为 1920(H) × 1536(V) @ 30fps、YUV422（UYVY）。部分驱动包按系列列为 `SG3S11AFxK`，选择与板卡、JetPack 版本和采集方式对应的驱动包。
+SYF3L 使用 GMSL2 3Gbps，输出为 1920(H) × 1536(V) @ 30fps、YUV422（UYVY）。请按板卡、JetPack 版本和采集方式选择驱动包。
 
 | Jetson 平台 | 转接板 / 载板 | JetPack | 接入方式 | 驱动与安装说明 |
 |---|---|---|---|---|
@@ -68,7 +72,7 @@ SG3S11AFSK 使用 GMSL2 3Gbps，输出为 1920(H) × 1536(V) @ 30fps、YUV422（
 
 1. 按所选驱动包说明将摄像头接到对应板卡的 GMSL2 端口，核对供电和端口映射。
 2. 使用 **V4L2** 时，按对应安装说明配置设备树和采集端口。
-   - **SG8A-AGON-G2Y-A1，JetPack 6.2 / 7.2**。在 `raw_yuv_quick_bring_up.sh` 中为对应端口启用 3Gbps，并选择 `SG3S11AFxK(3G)`。
+   - **SG8A-AGON-G2Y-A1，JetPack 6.2 / 7.2**。为对应端口启用 3Gbps，并按上表的安装说明在 `raw_yuv_quick_bring_up.sh` 中选择摄像头配置。
    - **SG8A-AGON-G2Y-A1，JetPack 6.2.1**。在设备树配置工具中选择 `sgx-yuv-gmsl2`，并在 `camera_config.sh` 中为对应端口启用 3Gbps、设置传感器模式为 1。
    - **SG10A-AGON-G2M-A4，JetPack 7.2**。为对应端口设置 `sensor_mode=2` 和 `gmsl_mode=1`。
 3. **SIPL**：按对应平台的 SGX-YUV-GMSL2 指南选用 `SGX_YUV_GMSL2_3M_3G`，按实际端口设置配置并运行 `nvsipl_camera`。[AGX Orin 配置](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/blob/main/Jetson%20AGX%20Orin%20Devkit/SG8A-AGON-G2Y-A1/JetPack7.2/SG8A_AGON_G2Y_A1_AGX_ORIN_SIPL_JP7.2_L4TR39.2/docs/sgx_yuv_gmsl2.md) · [AGX Thor 配置](https://github.com/SENSING-Technology/nvidia-jetson-camera-drivers/blob/main/Jetson%20AGX%20Thor%20Devkit/TRD1_G2A/JetPack7.2/TRD1_G2A_AGX_THOR_SIPL_JP7.2_L4TR39.2/docs/sgx_yuv_gmsl2.md)
@@ -78,4 +82,4 @@ SG3S11AFSK 使用 GMSL2 3Gbps，输出为 1920(H) × 1536(V) @ 30fps、YUV422（
 
 使用支持 GMSL2 3Gbps 的解串器，按系统框图配置 PoC、SerDes 链路和 I2C 映射。主机 CSI 接收端使用 1920(H) × 1536(V) @ 30fps、YUV422 8bit。需要外部帧同步时，按硬件表配置 MAX96717F MFP7。
 
-> **备注**　系列规格书另列有 PANDA PG2 单路 USB 转换器（Windows）和 CoaxCapture II CCG3-4H/8H 采集卡。接入前按实际设备核对型号、链路速率和所需驱动。
+> **备注**　使用 PANDA PG2 单路 USB 转换器（Windows）或 CoaxCapture II CCG3-4H/8H 采集卡时，请核对型号兼容性、链路速率和所需驱动。

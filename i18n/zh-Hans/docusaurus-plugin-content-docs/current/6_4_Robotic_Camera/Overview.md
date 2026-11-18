@@ -47,14 +47,14 @@ S56D 与 S56Y 的规格书输出尺寸、整机尺寸和基线相同，但输出
 |---|---|---|---|---|---|---|
 | [SYW2G](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | AR0234 / GW5200 | 1920(H) × 1200(V) @ 30fps | 全局曝光 / YUV422 8bit | 120° / 71° | 0.8m / 0.4m - INF | 25 × 25 × 29.81mm |
 | [SYF2G](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | AR0234 / GW5200 | 1920(H) × 1200(V) @ 30fps | 全局曝光 / YUV422 8bit | 200° / 120° | 0.4m / 0.2m - INF | 25 × 25 × 30.42mm |
-| [SG3S11AFSK](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK) | ISX031 / 内置 | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 196° / 154° | 0.4m / 0.13m 至无穷远 | 25 × 25mm 外壳平面尺寸 |
+| [SYF3L](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SYF3L) | ISX031 / 内置 | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 196° / 154° | 0.4m / 0.13m 至无穷远 | 25 × 25mm 外壳平面尺寸 |
 | [SHW5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ 最高 60fps（全局）/ 50fps（卷帘） | 全局或卷帘曝光 / RAW10 | 130° / 102° | 0.8m / 0.3m 至无穷远 | 25 × 25 × 29.49mm |
 | [SHF5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ 最高 60fps（全局）/ 50fps（卷帘） | 全局或卷帘曝光 / RAW10 | 200° / 150° | 0.4m / 0.1m 至无穷远 | 25 × 25 × 31.35mm |
-| [M3A](/zh-Hans/docs/6_1_Camera/Monocular_Camera/M3A) | RGGB / 内置 | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 200° / 155° | 0.4m / 0.15m 至无穷远 | 17 × 17 × 31.89mm |
+| [M3A](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | — | — | — | — | — | — |
 
 SYW2G 与 SYF2G 均采用 MAX96717 GMSL2 6Gbps，功耗为 1.7W，支持外部触发与多摄像头同步。由于传感器、ISP、串行器和接入流程共用，两款保留在同一对比页，分别列出镜头与机械差异。SYW2G 适用于相对集中的视野，SYF2G 用于更大范围的场景覆盖。
 
-SHW5G / SHF5G 提供更高分辨率的 RAW10 采集。SG3S11AFSK 与 M3A 提供超广角 HDR YUV 输出，外壳平面尺寸分别为 25 × 25mm 和 17 × 17mm。SHW5G、SHF5G 和 M3A 在两个机器人摄像头栏目共用产品文档。
+SHW5G / SHF5G 提供更高分辨率的 RAW10 采集，SYF3L 提供超广角 HDR YUV 输出。M3A 的参数以新线束版规格书为准。
 
 ## 标定与接入
 
@@ -69,6 +69,6 @@ SHW5G / SHF5G 提供更高分辨率的 RAW10 采集。SG3S11AFSK 与 M3A 提供�
 | 分类 | 文档 |
 |---|---|
 | 双目 | [Astra S56 / S56C](/zh-Hans/docs/6_1_Camera/Binocular_Camera/S56)、[Astra S36](/zh-Hans/docs/6_1_Camera/Binocular_Camera/S36) |
-| 单目 | [SHW3H](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H)、[SHF3L](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L)、[SHW3G / SHF3G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3G_SHF3G)、[SHW5G / SHF5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G)、[M3A](/zh-Hans/docs/6_1_Camera/Monocular_Camera/M3A) |
+| 单目 | [SHW3H](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3H)、[SHF3L](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHF3L)、[SHW3G / SHF3G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW3G_SHF3G)、[SHW5G / SHF5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G)、[M3A（原线束版）](/zh-Hans/docs/6_1_Camera/Monocular_Camera/M3A) |
 
 视觉方案与数据采集设备见 [Robotics 总览](/zh-Hans/docs/6_0_Robotics)。

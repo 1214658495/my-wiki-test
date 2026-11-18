@@ -29,15 +29,12 @@ const sidebars = {
         "collapsed": true,
         "collapsible": true,
         "items": [
+          "6_4_Robotic_Camera/Monocular_Camera/SYF3L",
+          "6_4_Robotic_Camera/Monocular_Camera/M3A",
           "6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G",
-          "6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK",
           {
             "type": "ref",
             "id": "6_1_Camera/Monocular_Camera/SHW5G_SHF5G"
-          },
-          {
-            "type": "ref",
-            "id": "6_1_Camera/Monocular_Camera/M3A"
           }
         ]
       }

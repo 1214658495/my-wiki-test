@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 title: "SYW2G & SYF2G（2.3MP 全局曝光）"
 ---
 
@@ -15,12 +15,16 @@ title: "SYW2G & SYF2G（2.3MP 全局曝光）"
 </div>
 
 <div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', textAlign: 'center'}}>
-  <figure style={{flex: '1 1 240px', margin: 0}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYW2G/SYW2G.png?x-oss-process=image/format,webp" alt="SYW2G" style={{width: '100%', maxWidth: 240, height: 240, objectFit: 'contain'}} />
+  <figure style={{flex: '1 1 240px', minWidth: 0, margin: 0}}>
+    <div className="monocular-overview-photo">
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYW2G/SYW2G.png?x-oss-process=image/format,webp" alt="SYW2G" style={{width: '88%', translate: '5% -2%'}} />
+    </div>
     <figcaption style={{marginTop: '0.25rem', color: 'var(--ifm-color-emphasis-700)', fontSize: '0.875rem'}}>SYW2G（HFOV 120°）</figcaption>
   </figure>
-  <figure style={{flex: '1 1 240px', margin: 0}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF2G/SYF2G.png?x-oss-process=image/format,webp" alt="SYF2G" style={{width: '100%', maxWidth: 240, height: 240, objectFit: 'contain'}} />
+  <figure style={{flex: '1 1 240px', minWidth: 0, margin: 0}}>
+    <div className="monocular-overview-photo">
+      <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF2G/SYF2G.png?x-oss-process=image/format,webp" alt="SYF2G" style={{width: '91.5%', translate: '4.5% -1%'}} />
+    </div>
     <figcaption style={{marginTop: '0.25rem', color: 'var(--ifm-color-emphasis-700)', fontSize: '0.875rem'}}>SYF2G（HFOV 200°）</figcaption>
   </figure>
 </div>

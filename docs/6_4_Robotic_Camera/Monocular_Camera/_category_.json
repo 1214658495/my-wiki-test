@@ -4,8 +4,7 @@
   "link": null,
   "customProps": {
     "sidebarRefs": [
-      "6_1_Camera/Monocular_Camera/SHW5G_SHF5G",
-      "6_1_Camera/Monocular_Camera/M3A"
+      { "id": "6_1_Camera/Monocular_Camera/SHW5G_SHF5G", "position": 4 }
     ]
   }
 }

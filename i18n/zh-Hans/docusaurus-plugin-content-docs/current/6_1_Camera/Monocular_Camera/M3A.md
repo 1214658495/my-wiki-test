@@ -14,8 +14,9 @@ title: M3A（3MP Mini HDR 30fps）
 </div>
 
 <div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A.png?x-oss-process=image/format,webp" alt="M3A" 
-    style={{maxWidth: '100%', height:'auto'}} />
+    <object data="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_Original.png?x-oss-process=image/format,webp" type="image/webp" role="img" aria-label="M3A 原线束版外观"
+      style={{display: 'block', marginInline: 'auto', width: '100%', maxWidth: 332, height: 'auto'}}>
+    </object>
 </div>
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>

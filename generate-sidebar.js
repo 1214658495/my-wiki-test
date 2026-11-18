@@ -106,11 +106,16 @@ function compareByPosition(a, b) {
   return naturalCollator.compare(a.name, b.name);
 }
 
-function getFiles(dir, basePath = '', isI18n = false) {
+function getFiles(dir, basePath = '', isI18n = false, sidebarRefs = []) {
   const items = fs.readdirSync(dir);
   const result = { type: 'category', items: [] };
 
-  const sidebarEntries = [];
+  const sidebarEntries = sidebarRefs.map(({ id, position }) => ({
+    type: 'ref',
+    name: id,
+    position: position ?? Infinity,
+    id
+  }));
 
   for (const item of items) {
     const fullPath = path.join(dir, item);
@@ -154,14 +159,15 @@ function getFiles(dir, basePath = '', isI18n = false) {
       result.items.push(entry.id);
       continue;
     }
+    if (entry.type === 'ref') {
+      result.items.push({ type: 'ref', id: entry.id });
+      continue;
+    }
 
     const subBasePath = path.posix.join(basePath, entry.dirName);
-    const subResult = getFiles(entry.fullPath, subBasePath, isI18n);
-
-    const refs = (entry.categoryInfo.sidebarRefs ?? []).map(id => ({ type: 'ref', id }));
-    const sidebarItems = [...subResult.items, ...refs];
-    if (sidebarItems.length > 0) {
-      result.items.push(createCategoryItem(entry.categoryInfo, sidebarItems));
+    const subResult = getFiles(entry.fullPath, subBasePath, isI18n, entry.categoryInfo.sidebarRefs);
+    if (subResult.items.length > 0) {
+      result.items.push(createCategoryItem(entry.categoryInfo, subResult.items));
     }
   }
 
