@@ -206,5 +206,9 @@
   "sidebar.tutorialSidebar.doc.UMI Camera": {
     "message": "UMI 定制摄像头",
     "description": "The label for the doc item UMI Camera in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Robotic Camera (New Generation)": {
+    "message": "机器人摄像头（新一代）",
+    "description": "The label for category Robotic Camera (New Generation) in sidebar tutorialSidebar"
   }
 }

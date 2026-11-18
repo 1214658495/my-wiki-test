@@ -21,8 +21,8 @@ const PAGE_CONTENT = {
         title: 'Robotics Cameras',
         path: '/docs/6_0_Robotics',
         summary:
-          'Stereo and monocular camera families for embodied AI, humanoid robots, legged robots, and robotic perception.',
-        tags: ['Astra S56C / S36', 'Monocular robot cameras', 'Robotic vision solutions'],
+          'New-generation and existing stereo and monocular cameras for embodied AI, humanoid robots, legged robots, and robotic perception.',
+        tags: ['S56D / S56Y / S36A', 'SYW2G / SYF2G', 'Existing cameras & vision solutions'],
       },
       {
         title: 'Camera Technologies',
@@ -75,11 +75,11 @@ const PAGE_CONTENT = {
     },
     products: [
       {
-        title: '机器人相机',
+        title: '机器人摄像头',
         path: '/docs/6_0_Robotics',
         summary:
-          '面向具身智能、人形机器人、足式机器人和机器人感知的双目与单目相机产品文档。',
-        tags: ['Astra S56C / S36', '机器人单目相机', '机器人视觉方案'],
+          '面向具身智能、人形机器人、足式机器人和机器人感知的新一代及原有双目、单目摄像头产品文档。',
+        tags: ['S56D / S56Y / S36A', 'SYW2G / SYF2G', '原有摄像头与视觉方案'],
       },
       {
         title: '相机技术',

@@ -20,7 +20,8 @@ function getCategoryInfo(dirPath, isI18n = false) {
         link: data.link || null,
         collapsed: data.collapsed,
         collapsible: data.collapsible,
-        hidden: data.customProps?.hidden === true
+        hidden: data.customProps?.hidden === true,
+        sidebarRefs: data.customProps?.sidebarRefs ?? []
       };
     } catch (e) {
       return null;
@@ -46,7 +47,8 @@ function getMergedCategoryInfo(dirPath, isI18n = false, fallbackLabel = path.bas
     ...originalInfo,
     ...translatedInfo,
     position: originalInfo.position,
-    hidden: originalInfo.hidden
+    hidden: originalInfo.hidden,
+    sidebarRefs: originalInfo.sidebarRefs
   };
 }
 
@@ -156,8 +158,10 @@ function getFiles(dir, basePath = '', isI18n = false) {
     const subBasePath = path.posix.join(basePath, entry.dirName);
     const subResult = getFiles(entry.fullPath, subBasePath, isI18n);
 
-    if (subResult.items.length > 0) {
-      result.items.push(createCategoryItem(entry.categoryInfo, subResult.items));
+    const refs = (entry.categoryInfo.sidebarRefs ?? []).map(id => ({ type: 'ref', id }));
+    const sidebarItems = [...subResult.items, ...refs];
+    if (sidebarItems.length > 0) {
+      result.items.push(createCategoryItem(entry.categoryInfo, sidebarItems));
     }
   }
 

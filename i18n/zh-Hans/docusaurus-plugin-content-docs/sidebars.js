@@ -8,7 +8,48 @@ const sidebars = {
   "6_0_Robotics",
   {
     "type": "category",
-    "label": "摄像头",
+    "label": "机器人摄像头（新一代）",
+    "collapsed": true,
+    "collapsible": true,
+    "items": [
+      {
+        "type": "category",
+        "label": "双目摄像头",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          "6_4_Robotic_Camera/Binocular_Camera/S56D",
+          "6_4_Robotic_Camera/Binocular_Camera/S56Y",
+          "6_4_Robotic_Camera/Binocular_Camera/S36A"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "单目摄像头",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          "6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G",
+          "6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK",
+          {
+            "type": "ref",
+            "id": "6_1_Camera/Monocular_Camera/SHW5G_SHF5G"
+          },
+          {
+            "type": "ref",
+            "id": "6_1_Camera/Monocular_Camera/M3A"
+          }
+        ]
+      }
+    ],
+    "link": {
+      "type": "doc",
+      "id": "6_4_Robotic_Camera/Overview"
+    }
+  },
+  {
+    "type": "category",
+    "label": "机器人摄像头",
     "collapsed": true,
     "collapsible": true,
     "items": [

@@ -5,6 +5,8 @@ title: Robotic Camera Solutions
 
 # Robotic Camera Solutions
 
+For S56D / S56Y / S36A and SYW2G / SYF2G specifications and selection, see [New-Generation Robotic Cameras](/docs/6_4_Robotic_Camera/Overview). The configurations below apply to the listed camera models and drivers; confirm platform support separately for new models.
+
 ## Humanoid Solution Based Jetson AGX Thor
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>

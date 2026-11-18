@@ -8,6 +8,47 @@ const sidebars = {
   "6_0_Robotics",
   {
     "type": "category",
+    "label": "Robotic Camera (New Generation)",
+    "collapsed": true,
+    "collapsible": true,
+    "items": [
+      {
+        "type": "category",
+        "label": "Binocular Camera",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          "6_4_Robotic_Camera/Binocular_Camera/S56D",
+          "6_4_Robotic_Camera/Binocular_Camera/S56Y",
+          "6_4_Robotic_Camera/Binocular_Camera/S36A"
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Monocular Camera",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          "6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G",
+          "6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK",
+          {
+            "type": "ref",
+            "id": "6_1_Camera/Monocular_Camera/SHW5G_SHF5G"
+          },
+          {
+            "type": "ref",
+            "id": "6_1_Camera/Monocular_Camera/M3A"
+          }
+        ]
+      }
+    ],
+    "link": {
+      "type": "doc",
+      "id": "6_4_Robotic_Camera/Overview"
+    }
+  },
+  {
+    "type": "category",
     "label": "Robotic Camera",
     "collapsed": true,
     "collapsible": true,

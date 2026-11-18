@@ -42,6 +42,63 @@
   line-height: 1.38;
 }
 
+/* Compact the new-generation product pages. */
+html:is(
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56D'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56Y'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S36A'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK']
+) .theme-doc-markdown {
+  --ifm-leading: 0.5rem;
+  --ifm-paragraph-margin-bottom: 0.5rem;
+  --ifm-heading-margin-bottom: 0.5rem;
+}
+
+/* Match the established camera pages at the title and Overview heading. */
+html:is(
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56D'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56Y'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S36A'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK']
+) .theme-doc-markdown > :is(header, header + h2) {
+  --ifm-leading: calc(var(--ifm-leading-desktop) * 1rem);
+  --ifm-heading-margin-bottom: var(--ifm-spacing-vertical);
+}
+
+/* Center figures and whole tables only on the same product pages. */
+html:is(
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56D'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56Y'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S36A'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK']
+) .theme-doc-markdown :is(table, img) {
+  margin-inline: auto;
+}
+
+html:is(
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56D'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56Y'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S36A'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK']
+) .theme-doc-markdown table {
+  width: fit-content;
+  max-width: 100%;
+}
+
+html:is(
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56D'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S56Y'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Binocular_Camera/S36A'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G'],
+  [class~='docs-doc-id-6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK']
+) .theme-doc-markdown img {
+  display: block;
+}
+
 .theme-doc-sidebar-menu .menu__list-item-collapsible {
   align-items: center;
   display: flex;

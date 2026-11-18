@@ -23,7 +23,25 @@ SENSING 提供全面的摄像头技术解决方案，专为机器人、自动系
 
 ---
 
-## 双目摄像头
+## 机器人摄像头（新一代）
+
+[**新一代产品选型总览**](/zh-Hans/docs/6_4_Robotic_Camera/Overview) 按图像格式、视场角、帧率与机械配置对比双目和单目产品。
+
+| 分类 | 型号 | 主要规格 | 输出 |
+|---|---|---|---|
+| 双目 | [S56D](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | 每目 2400(H) × 1800(V) @ 30fps，全局曝光，140° HFOV | RAW10 |
+| 双目 | [S56Y](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | 每目 2400(H) × 1800(V) @ 30fps，全局曝光，128° HFOV | YUV422，内置 ISP |
+| 双目 | [S36A](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | 每目 1920(H) × 1536(V) @ 30fps / 1920(H) × 1080(V) @ 60fps，140dB HDR，120° HFOV | YUV422，内置 ISP |
+| 单目 | [SYW2G / SYF2G](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | 1920(H) × 1200(V) @ 30fps，全局曝光，120° / 200° HFOV | YUV422，内置 ISP |
+| 单目 | [SG3S11AFSK](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SG3S11AFSK) | 1920(H) × 1536(V) @ 30fps，HDR，196° HFOV | YUV422，内置 ISP |
+| 单目 | [SHW5G / SHF5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 2560(H) × 1984(V)，全局曝光最高 60fps，130° / 200° HFOV | RAW10 |
+| 单目 | [M3A](/zh-Hans/docs/6_1_Camera/Monocular_Camera/M3A) | 1920(H) × 1536(V) @ 30fps，HDR，200° HFOV，17 × 17mm 外壳平面尺寸 | YUV422，内置 ISP |
+
+新款双目均采用 ICM-45686 IMU、60mm 基线，提供轻量化与连接器配置。旧款产品、视觉方案与数据采集文档继续保留在下方对应栏目。
+
+---
+
+## 双目摄像头（原有产品） {#双目摄像头}
 
 <div className="camera-grid">
 
@@ -67,7 +85,7 @@ Astra S56x 系列包含 S56 和 S56C。S56 是正在逐步停止销售的 130° 
 
 ---
 
-## 单目摄像头
+## 单目摄像头（原有产品） {#单目摄像头}
 
 <div className="camera-grid">
 

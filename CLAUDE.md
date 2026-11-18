@@ -138,11 +138,13 @@ yarn typesense-docsearch-scraper
 ### 内容与结构
 
 - **文档内容修改后自动同步与构建**：主动同步对应的中英文文档，并运行 `npm.cmd run build` 完成双语构建，无需用户重复提醒。同步按本次修改范围完成，不自动运行真实批量翻译；交付时报告构建结果。
+- **分辨率与中文排版**：本批新一代产品及选型总览的像素尺寸统一写为 `1920(H) × 1200(V)`，明确水平 H / 垂直 V，并保留双目「每目」口径；正文、规格表、帧率和接入步骤保持一致。中文词语之间不留多余空格（如「与数据采集应用」），保留型号、英文术语及数学运算符所需的分隔。
 - **规格数据核对**：修改或从其他型号复用产品页时，先按完整型号和镜头配置对照规格书或机械图，区分壳体尺寸、安装外廓与含镜头尺寸。检查同页概述、规格表、图示和选型入口，再同步中英文及同型号重复页面。构建只检查能否生成页面，不能验证规格值。
 - **英文 `docs/` 是事实来源**: 新增, 改名, 调序优先在英文目录完成; 中文 `i18n/zh-Hans/.../current/` 跟随同构
 - **不要手改生成产物**: 两份 `sidebars.js` 都是 `generate-sidebar.js` 的输出; 持久修复落在 `_category_.json`, frontmatter(`sidebar_position`), `generate-sidebar.js` 或 `scripts/translate-sync.js`
 - **共享侧边栏生成逻辑**: `scripts/translate-sync.js` 已直接复用 `generate-sidebar.js` 导出的 `generateSidebars()`；修改生成逻辑应落在共享实现，不要重新复制一份到翻译脚本
 - **侧边栏排序**以 `_category_.json` 的 `position` 和文档 frontmatter 的 `sidebar_position` 为准
+- 分类可通过英文 `_category_.json` 的 `customProps.sidebarRefs` 按顺序补充其他分类的文档 ID。生成器在中英文侧边栏均输出 Docusaurus `ref`，共用现有文档及 URL。
 - **Linked category** 必须同时保留 `link.id` 和合理的 `items` 去重; 不要为了"修复"入口文档消失而删掉 `link`
 - **首页改动**必须同时维护 `WikiHome` 的 `PAGE_CONTENT.en` 与 `PAGE_CONTENT['zh-Hans']` 两套内容
 - 若将来接入飞书 FAQ 同步, 保持 "飞书为协作源, Markdown 为发布产物" 模式, 并在生成文件顶部加显式自动生成标记
@@ -177,6 +179,11 @@ yarn typesense-docsearch-scraper
 
 ### Robotics 文档
 
+- 新一代与原有产品并列导航：`Robotic Camera (New Generation)`（中文「机器人摄像头（新一代）」）排在原 `Robotic Camera` 前；两者内部均为 Binocular / Monocular。原栏目名称不表示其中所有产品停产，具体生命周期仍以型号说明为准。
+- 新一代目录为 `docs/6_4_Robotic_Camera/`，`Overview.md` 是 linked category 入口；`Binocular_Camera/` 包含 `S56D.md`、`S56Y.md`、`S36A.md`，`Monocular_Camera/` 包含 `SYW2G_SYF2G.md` 和 `SG3S11AFSK.md`，并复用原栏目中的 `SHW5G_SHF5G.md` 和 `M3A.md`。中文保持同构；后续新增型号落在对应分类，不新增空白占位页，也不改动原有产品 URL。
+- SG3S11AFSK 规格采用 `SG3S11AFxK` 系列规格书 2026 年 9 月 Rev.3 的指定型号行与第 6 页机械图。该型号为 196° / 154°、MAX96717F GMSL2 3Gbps，规格书仅标注满足中心光学分辨率指标。
+- 新一代双目规格以 20261117 下的飞书20261118-115825 目录中的 `S56D双目相机规格书_en.pdf`、`S56Y双目相机规格书_en.pdf`、`S36A双目相机规格书_en.pdf` 为准。S56D 视场角按用户确认采用英文镜头表的 140° / 102°，不采用其概述残留的 128°；S56Y 仍为 128° / 91°。S36A 两路传感器地址为 0x34 / 0x36；S56D / S56Y / S36A 的 MCU 地址按用户确认统一使用 0x64（8bit），对应 0x32（7bit），不要直接将规格书的 MCU 0x32 标成 8bit；三款的 EEPROM 在新版中英文表中均为 Sensor 0 → 0xA1、Sensor 1 → 0xA0，接入前需确认地址口径。三款的 _B / _C 连接器按新版规格书标为 SS-mini01。S56D / S56Y 实际输出为每目 2400 × 1800 @ 30fps，分别为 RAW10 / YUV422；S36A 为 ISX031 HDR YUV 方案。三款双目采用 ICM-45686、镜头 IP67 / 整机 IP54，并使用 Omni-Radtan 标定模型；不可直接复用旧款驱动与标定参数。SYF2G 视场按规格书 200°，不按素材目录名 H190 推断。
+- 新一代图示统一使用 `https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/` 下的 OSS 图片，沿用 WebP 处理参数；本次三款双目的机械图与框图按英文 PDF 更新，并在图片链接增加内容哈希版本参数，更新包由用户覆盖上传 OSS。按用户要求，项目内不再保留这批图片副本。外观共用图放 `New_Generation/`，其余按型号目录存放，尺寸图与框图命名为 `<型号>_Dimensions.png` / `<型号>_BlockDiagram.png`；机械图必须按型号核对。源资料及上传包保留在项目外的 `C:\Users\Lenovo\work\wiki_docs\huanghao\20261117`。三款双目的 `IMU and Stereo Calibration` 章节需完整维护第 5 页的位置与坐标轴图、相对 camera0 的设计位姿、IMU 参数和标定读取说明；图名为 `<型号>_IMU_Calibration.png`。S56D / S56Y 的 TX / TY 为 +35.12 / +2.72mm，S36A 为 +28.17 / -5.02mm；源文件 TX 未单独标注单位，不能默默补单位或将名义设计值当作设备标定值。新产品规格不代表目标平台驱动或整机集成已实测。
 - Robotics 入口覆盖 Astra S56x 系列 / S36, 单目机器人相机, NRDCK, Jetson AGX Thor 机器人视觉方案, 人形机器人视觉方案
 - **S56 命名坑**: `S56x` 是**系列名**, 系列下有两个型号 —— `S56`(130° HFOV, legacy, 正在淘汰) 和 `S56C`(140° HFOV, 新项目推荐). 写文档时不要把 S56x 当成单个型号
 - 路由文件仍是 `docs/6_1_Camera/Binocular_Camera/S56.md`(title 为 `Astra S56x Series Stereo Camera`). **不要**因为显示名是 S56x/S56C 就重命名这个文件, 会断链

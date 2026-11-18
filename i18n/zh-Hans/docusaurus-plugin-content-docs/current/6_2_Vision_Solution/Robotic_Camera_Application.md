@@ -5,6 +5,8 @@ title: 机器人视觉解决方案
 
 # 机器人视觉解决方案
 
+新一代 S56D / S56Y / S36A 与 SYW2G / SYF2G 的规格和选型见[新一代机器人摄像头](/zh-Hans/docs/6_4_Robotic_Camera/Overview)。本页保留所列产品与驱动配置；新型号的平台适配请另行确认。
+
 ## 基于 Jetson AGX Thor 的人形机器人视觉方案
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', padding: '1.5rem', marginBottom: '2rem'}}>
