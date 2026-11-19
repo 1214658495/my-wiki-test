@@ -37,7 +37,7 @@ Use the [**new-generation camera selection overview**](/docs/6_4_Robotic_Camera/
 | Monocular | [SHW5G / SHF5G](/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 2560(H) × 1984(V), up to 60fps Global Shutter, 130° / 200° HFOV | RAW10 |
 | Monocular | [M3A (3MP Mini HDR 30fps)](/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | Compact monocular camera with revised cable harness | — |
 
-The new binocular models feature ICM-45686 IMUs, a 60mm baseline, and lightweight / connector options. Existing cameras, vision solutions and data collection documentation remain in the sections below.
+The new binocular models feature built-in six-axis IMUs, a 60mm baseline, and lightweight / connector options. Existing cameras, vision solutions and data collection documentation remain in the sections below.
 
 ---
 

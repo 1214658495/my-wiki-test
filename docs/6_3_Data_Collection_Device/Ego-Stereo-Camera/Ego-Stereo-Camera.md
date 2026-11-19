@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Ego Custom Stereo Camera
 description: SENSING stereo cameras optimized for multi-camera egocentric (Ego) data collection devices — ISX031, AR0234 and OG02B10 options with 60 mm baseline and built-in IMU
-keywords: [Ego, egocentric, stereo camera, binocular, ISX031, AR0234, OG02B10, ICM-45686, GMSL2, MIPI, data collection, embodied AI]
+keywords: [Ego, egocentric, stereo camera, binocular, ISX031, AR0234, OG02B10, GMSL2, MIPI, data collection, embodied AI]
 ---
 
 export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-Stereo-Camera';
@@ -23,7 +23,7 @@ Three sensor options share the same 90 × 28 mm board, 60 mm baseline and on-boa
 
 - **Built for Ego devices**: matches the structure and communication protocol of multi-camera Ego headsets such as [EgoSense H6](/docs/6_3_Data_Collection_Device/EgoSense-H6).
 - **60 mm baseline**: close to the human interpupillary distance, suited to near-field hand-object manipulation.
-- **On-board high-performance IMU**: TDK ICM-45686, with **joint camera-IMU calibration** supported.
+- **On-board six-axis IMU** with support for **joint camera-IMU calibration**.
 - **External trigger sync**: all models support hardware frame synchronization with other cameras in the device.
 - **Wide-angle lenses**: up to H160° × V130° per camera.
 - **Compact and light**: 90 × 28 × 17.8 mm, < 30 g, < 1 W.
@@ -40,7 +40,7 @@ Three sensor options share the same 90 × 28 mm board, 60 mm baseline and on-boa
 | **Output format** | YUV422 8-bit (built-in ISP) | RAW 10-bit | RAW 10-bit |
 | **Lens FOV** | H124° × V100° | H160° × V120° | H160° × V130° |
 | **Baseline** | 60 mm | 60 mm | 60 mm |
-| **IMU** | TDK ICM-45686 | TDK ICM-45686 | TDK ICM-45686 |
+| **IMU** | Six-axis IMU | Six-axis IMU | Six-axis IMU |
 | **Camera-IMU joint calibration** | Supported | Supported | Supported |
 | **External trigger sync** | Supported | Supported | Supported |
 | **Interface** | GMSL2 (MAX9295D), IPEX | MIPI CSI-2, FPC | GMSL2 (MAX9295D), IPEX |
@@ -75,7 +75,7 @@ Three sensor options share the same 90 × 28 mm board, 60 mm baseline and on-boa
 | Operating temperature | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | Storage temperature | -20 ~ 70 ℃ | — | -20 ~ 70 ℃ |
 
-Pin definitions, I2C addresses and mechanical drawings are in each model's spec sheet (see [Downloads](#downloads)).
+For pin definitions, I2C addresses and mechanical drawings, request the model-specific spec sheet from [technical support](mailto:support@sensing-world.com).
 
 ## Building a Multi-Camera Ego Device
 
@@ -95,14 +95,6 @@ For mono cameras, see [Ego Custom Mono Camera](/docs/6_3_Data_Collection_Device/
 - **Structure customization**: board outline and mounting holes to fit your enclosure.
 - **Cable customization**: FPC / coax cable length and routing.
 - **Optics customization**: resolution and lens (FOV) can be customized.
-
-## Downloads
-
-| Model | Spec sheet |
-|-|-|
-| SDS11NCL1 (ISX031) | <a href={`${OSS}/source/SDS11NCL1_Spec_EN_V1.0.pdf`}>SDS11NCL1_Spec_EN_V1.0.pdf</a> |
-| SDN2NNP1 (AR0234) | <a href={`${OSS}/source/SDN2NNP1_Spec_EN_V1.0.pdf`}>SDN2NNP1_Spec_EN_V1.0.pdf</a> |
-| SDV12NCP1 (OG02B10) | <a href={`${OSS}/source/SDV12NCP1_Spec_EN_V1.0.pdf`}>SDV12NCP1_Spec_EN_V1.0.pdf</a> |
 
 ## Contact Us
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Ego 视角定制化双目摄像头
 description: 森云智能专为多目第一人称（Ego）数采设备优化的双目摄像头，提供 ISX031、AR0234、OG02B10 三种方案，60 mm 基线并内置 IMU
-keywords: [Ego, 第一人称, 双目摄像头, ISX031, AR0234, OG02B10, ICM-45686, GMSL2, MIPI, 数据采集, 具身智能]
+keywords: [Ego, 第一人称, 双目摄像头, ISX031, AR0234, OG02B10, GMSL2, MIPI, 数据采集, 具身智能]
 ---
 
 export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/6_3_Data_Collection_Device/Ego-Stereo-Camera';
@@ -23,7 +23,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 
 - **适配多目 Ego 设备**：契合 [EgoSense H6](/zh-Hans/docs/6_3_Data_Collection_Device/EgoSense-H6) 等多目头戴设备的结构与通信协议。
 - **60 mm 基线**：接近人眼瞳距，适合近距离的手物操作场景。
-- **板载高性能 IMU**：TDK ICM-45686，支持 **相机与 IMU 联合标定**。
+- **板载六轴 IMU**，支持 **相机与 IMU 联合标定**。
 - **外同步触发**：所有型号均支持与设备内其他摄像头硬件帧同步。
 - **广角镜头**：单目最大 H160° × V130°。
 - **小巧轻量**：90 × 28 × 17.8 mm，重量 < 30 g，功耗 < 1 W。
@@ -40,7 +40,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | **输出格式** | YUV422 8bit（内置 ISP） | RAW 10bit | RAW 10bit |
 | **镜头 FOV** | H124° × V100° | H160° × V120° | H160° × V130° |
 | **基线** | 60 mm | 60 mm | 60 mm |
-| **IMU** | TDK ICM-45686 | TDK ICM-45686 | TDK ICM-45686 |
+| **IMU** | 六轴 IMU | 六轴 IMU | 六轴 IMU |
 | **相机与 IMU 联合标定** | 支持 | 支持 | 支持 |
 | **外同步触发** | 支持 | 支持 | 支持 |
 | **接口** | GMSL2（MAX9295D），IPEX | MIPI CSI-2，FPC | GMSL2（MAX9295D），IPEX |
@@ -75,7 +75,7 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 | 工作温度 | -20 ~ 60 ℃ | -20 ~ 60 ℃ | -20 ~ 60 ℃ |
 | 存储温度 | -20 ~ 70 ℃ | — | -20 ~ 70 ℃ |
 
-引脚定义、I2C 地址与结构尺寸图请参考各型号规格书（见 [资料下载](#资料下载)）。
+如需引脚定义、I2C 地址与结构尺寸图，请联系[技术支持](mailto:support@sensing-world.com)索取对应型号的规格书。
 
 ## 多目 Ego 方案
 
@@ -95,14 +95,6 @@ export const OSS = 'https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-image
 - **结构定制**：板型与安装孔位匹配您的外壳设计。
 - **排线定制**：FPC / 同轴线缆长度与走线。
 - **光学定制**：摄像头分辨率与镜头（FOV）均可定制。
-
-## 资料下载
-
-| 型号 | 规格书 |
-|-|-|
-| SDS11NCL1（ISX031） | <a href={`${OSS}/source/SDS11NCL1_Spec_CN_V1.0.pdf`}>SDS11NCL1_Spec_CN_V1.0.pdf</a> |
-| SDN2NNP1（AR0234） | <a href={`${OSS}/source/SDN2NNP1_Spec_CN_V1.0.pdf`}>SDN2NNP1_Spec_CN_V1.0.pdf</a> |
-| SDV12NCP1（OG02B10） | <a href={`${OSS}/source/SDV12NCP1_Spec_CN_V1.0.pdf`}>SDV12NCP1_Spec_CN_V1.0.pdf</a> |
 
 ## 联系我们
 

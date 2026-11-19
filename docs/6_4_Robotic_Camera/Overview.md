@@ -21,7 +21,7 @@ This family covers binocular and monocular cameras for embodied intelligence, hu
 | [S56Y](/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | Global | YUV422 8bit / built-in ISP | 128° / 91° |
 | [S36A](/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Sony ISX031 × 2 | 1920(H) × 1536(V) @ 30fps; 1920(H) × 1080(V) @ 60fps | Rolling, 140dB HDR | YUV422 8bit / built-in ISP | 120° / 93° |
 
-All three feature a 60 ± 0.5mm baseline, TDK ICM-45686 six-axis IMU, precision stereo AA and a GMSL2 6Gbps interface. Lens protection is IP67; the complete camera is IP54. Lens FOV tolerance is ±3°.
+All three feature a 60 ± 0.5mm baseline, six-axis IMU, precision stereo AA and a GMSL2 6Gbps interface. Lens protection is IP67; the complete camera is IP54. Lens FOV tolerance is ±3°.
 
 ### How to Choose
 

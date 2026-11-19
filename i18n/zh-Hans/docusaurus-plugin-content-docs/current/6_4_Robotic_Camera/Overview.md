@@ -21,7 +21,7 @@ description: 按图像格式、视场角、帧率与机械配置对比双目和�
 | [S56Y](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | 全局曝光 | YUV422 8bit / 内置 ISP | 128° / 91° |
 | [S36A](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Sony ISX031 × 2 | 1920(H) × 1536(V) @ 30fps；1920(H) × 1080(V) @ 60fps | 卷帘曝光，140dB HDR | YUV422 8bit / 内置 ISP | 120° / 93° |
 
-三款均采用 60 ± 0.5mm 基线、TDK ICM-45686 六轴 IMU、高精度双目 AA 工艺及 GMSL2 6Gbps 接口。镜头防护等级为 IP67，整机为 IP54。镜头视场角公差为 ±3°。
+三款均采用 60 ± 0.5mm 基线、六轴 IMU、高精度双目 AA 工艺及 GMSL2 6Gbps 接口。镜头防护等级为 IP67，整机为 IP54。镜头视场角公差为 ±3°。
 
 ### 选型要点
 
