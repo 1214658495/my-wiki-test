@@ -106,9 +106,8 @@ function compareByPosition(a, b) {
   return naturalCollator.compare(a.name, b.name);
 }
 
-function getFiles(dir, basePath = '', isI18n = false, sidebarRefs = []) {
+function getSidebarEntries(dir, basePath = '', isI18n = false, sidebarRefs = []) {
   const items = fs.readdirSync(dir);
-  const result = { type: 'category', items: [] };
 
   const sidebarEntries = sidebarRefs.map(({ id, position }) => ({
     type: 'ref',
@@ -145,33 +144,72 @@ function getFiles(dir, basePath = '', isI18n = false, sidebarRefs = []) {
         type: 'category',
         name: item,
         position: categoryInfo.position,
-        dirName: item,
+        basePath: path.posix.join(basePath, item),
         fullPath,
         categoryInfo
       });
     }
   }
 
-  sidebarEntries.sort(compareByPosition);
+  return sidebarEntries.sort(compareByPosition);
+}
 
-  for (const entry of sidebarEntries) {
+function getChildEntries(entry, isI18n) {
+  return getSidebarEntries(entry.fullPath, entry.basePath, isI18n, entry.categoryInfo.sidebarRefs);
+}
+
+function renderEntries(entries, isI18n) {
+  const items = [];
+  for (const entry of entries) {
     if (entry.type === 'doc') {
-      result.items.push(entry.id);
+      items.push(entry.id);
       continue;
     }
     if (entry.type === 'ref') {
-      result.items.push({ type: 'ref', id: entry.id });
+      items.push({ type: 'ref', id: entry.id });
       continue;
     }
 
-    const subBasePath = path.posix.join(basePath, entry.dirName);
-    const subResult = getFiles(entry.fullPath, subBasePath, isI18n, entry.categoryInfo.sidebarRefs);
-    if (subResult.items.length > 0) {
-      result.items.push(createCategoryItem(entry.categoryInfo, subResult.items));
+    const children = renderEntries(entry.children ?? getChildEntries(entry, isI18n), isI18n);
+    if (children.length > 0) {
+      items.push(createCategoryItem(entry.categoryInfo, children));
     }
   }
 
-  return result;
+  return items;
+}
+
+function groupCategories(entries, names, categoryInfo) {
+  const members = entries.filter(entry => entry.type === 'category' && names.includes(entry.name));
+  if (members.length === 0) return entries;
+
+  const group = { type: 'category', categoryInfo, children: members };
+  return entries.flatMap(entry => {
+    if (entry === members[0]) return [group];
+    return members.includes(entry) ? [] : [entry];
+  });
+}
+
+function buildSidebar(isI18n) {
+  let entries = getSidebarEntries(docsDir, '', isI18n);
+  entries = groupCategories(
+    entries,
+    ['6_4_Robotic_Camera', '6_1_Camera'],
+    { label: isI18n ? '机器人摄像头' : 'Robotic Camera' }
+  );
+  entries = groupCategories(
+    entries,
+    ['1_6_Low_Latency_Camera', '1_7_Event_Based_Camera', '1_9_Night_Vision_Camera',
+      '1_11_Cockpit_Camera', '1_12_Automatic_Defogging_Camera'],
+    { label: isI18n ? '其他摄像头' : 'Other Cameras' }
+  );
+  entries = groupCategories(
+    entries,
+    ['2_1_NVIDIA_Jetson', '2_2_NVIDIA_Drive_AGX_Orin', '2_4_NVIDIA_Jetson_AGX_Thor',
+      '2_5_NVIDIA_Holoscan_Sensor_Bridge'],
+    { label: 'NVIDIA' }
+  );
+  return renderEntries(entries, isI18n);
 }
 
 function createSidebarContent(items) {
@@ -190,11 +228,11 @@ export default sidebars;
 
 function generateSidebars() {
   const enSidebar = {
-    tutorialSidebar: getFiles(docsDir, '', false).items
+    tutorialSidebar: buildSidebar(false)
   };
 
   const zhSidebar = {
-    tutorialSidebar: getFiles(docsDir, '', true).items
+    tutorialSidebar: buildSidebar(true)
   };
 
   fs.writeFileSync('sidebars.js', createSidebarContent(enSidebar.tutorialSidebar), 'utf8');

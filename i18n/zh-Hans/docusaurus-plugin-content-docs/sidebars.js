@@ -8,69 +8,77 @@ const sidebars = {
   "6_0_Robotics",
   {
     "type": "category",
-    "label": "机器人摄像头（新一代）",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      {
-        "type": "category",
-        "label": "双目摄像头",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "6_4_Robotic_Camera/Binocular_Camera/S56D",
-          "6_4_Robotic_Camera/Binocular_Camera/S56Y",
-          "6_4_Robotic_Camera/Binocular_Camera/S36A"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "单目摄像头",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "6_4_Robotic_Camera/Monocular_Camera/SYF3L",
-          "6_4_Robotic_Camera/Monocular_Camera/M3A",
-          "6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G",
-          {
-            "type": "ref",
-            "id": "6_1_Camera/Monocular_Camera/SHW5G_SHF5G"
-          }
-        ]
-      }
-    ],
-    "link": {
-      "type": "doc",
-      "id": "6_4_Robotic_Camera/Overview"
-    }
-  },
-  {
-    "type": "category",
     "label": "机器人摄像头",
     "collapsed": true,
     "collapsible": true,
     "items": [
       {
         "type": "category",
-        "label": "双目摄像头",
+        "label": "新一代",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "6_1_Camera/Binocular_Camera/S56",
-          "6_1_Camera/Binocular_Camera/S36"
-        ]
+          {
+            "type": "category",
+            "label": "双目摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "6_4_Robotic_Camera/Binocular_Camera/S56D",
+              "6_4_Robotic_Camera/Binocular_Camera/S56Y",
+              "6_4_Robotic_Camera/Binocular_Camera/S36A"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "单目摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "6_4_Robotic_Camera/Monocular_Camera/SYF3L",
+              "6_4_Robotic_Camera/Monocular_Camera/M3A",
+              "6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G",
+              {
+                "type": "ref",
+                "id": "6_1_Camera/Monocular_Camera/SHW5G_SHF5G"
+              }
+            ]
+          }
+        ],
+        "link": {
+          "type": "doc",
+          "id": "6_4_Robotic_Camera/Overview"
+        }
       },
       {
         "type": "category",
-        "label": "单目摄像头",
+        "label": "原有型号",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "6_1_Camera/Monocular_Camera/SHW3H",
-          "6_1_Camera/Monocular_Camera/SHF3L",
-          "6_1_Camera/Monocular_Camera/M3A",
-          "6_1_Camera/Monocular_Camera/SHW5G_SHF5G",
-          "6_1_Camera/Monocular_Camera/SHW3G_SHF3G"
+          {
+            "type": "category",
+            "label": "双目摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "6_1_Camera/Binocular_Camera/S56",
+              "6_1_Camera/Binocular_Camera/S36"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "单目摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "6_1_Camera/Monocular_Camera/SHW3H",
+              "6_1_Camera/Monocular_Camera/SHF3L",
+              "6_1_Camera/Monocular_Camera/M3A",
+              "6_1_Camera/Monocular_Camera/SHW5G_SHF5G",
+              "6_1_Camera/Monocular_Camera/SHW3G_SHF3G"
+            ]
+          }
         ]
       }
     ]
@@ -214,305 +222,321 @@ const sidebars = {
   },
   {
     "type": "category",
-    "label": "低延迟摄像头",
+    "label": "其他摄像头",
     "collapsed": true,
     "collapsible": true,
     "items": [
       {
         "type": "category",
-        "label": "GMSL 摄像头",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A",
-          "1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "事件相机",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      "1_7_Event_Based_Camera/SE1-S4-USB",
-      {
-        "type": "category",
-        "label": "快速入门",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "1_7_Event_Based_Camera/Getting_Started/NVIDIA_Jetson_Platform_Integration",
-          "1_7_Event_Based_Camera/Getting_Started/Window_System_Integration",
-          "1_7_Event_Based_Camera/Getting_Started/Ubuntu_System_Integration"
-        ]
-      },
-      "1_7_Event_Based_Camera/Application",
-      "1_7_Event_Based_Camera/FAQ"
-    ]
-  },
-  {
-    "type": "category",
-    "label": "夜视摄像头",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      {
-        "type": "category",
-        "label": "Starvis 摄像头",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD",
-          "1_9_Night_Vision_Camera/Starvis_Camera/Application"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "座舱摄像头",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      {
-        "type": "category",
-        "label": "OMS 摄像头",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "1_11_Cockpit_Camera/OMS_Camera/OMSBDAAN",
-          "1_11_Cockpit_Camera/OMS_Camera/Application"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "DMS 摄像头",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "1_11_Cockpit_Camera/DMS_Camera/DMSBBFAN",
-          "1_11_Cockpit_Camera/DMS_Camera/Application"
-        ]
-      }
-    ]
-  },
-  {
-    "type": "category",
-    "label": "自动除雾摄像头",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      "1_12_Automatic_Defogging_Camera/RedFox-D3Gx",
-      "1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application"
-    ]
-  },
-  "intro",
-  {
-    "type": "category",
-    "label": "NVIDIA® Jetson™",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      {
-        "type": "category",
-        "label": "快速入门",
+        "label": "低延迟摄像头",
         "collapsed": true,
         "collapsible": true,
         "items": [
           {
             "type": "category",
-            "label": "NVIDIA Jetson AGX Orin",
+            "label": "GMSL 摄像头",
             "collapsed": true,
             "collapsible": true,
             "items": [
-              {
-                "type": "category",
-                "label": "快速入门",
-                "collapsed": true,
-                "collapsible": true,
-                "items": [
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-AGON-G2Y-A1",
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1",
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2"
-                ]
-              },
-              {
-                "type": "category",
-                "label": "快速入门",
-                "collapsed": true,
-                "collapsible": true,
-                "items": [
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/AI_Box/congratulations"
-                ]
-              }
-            ]
-          },
-          {
-            "type": "category",
-            "label": "NVIDIA Jetson Orin Nano&NX",
-            "collapsed": true,
-            "collapsible": true,
-            "items": [
-              {
-                "type": "category",
-                "label": "GMSL 转接板",
-                "collapsed": true,
-                "collapsible": true,
-                "items": [
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/Adapter_Board/SG4A-NONX-G2Y-A1"
-                ]
-              },
-              {
-                "type": "category",
-                "label": "MIPI 摄像头",
-                "collapsed": true,
-                "collapsible": true,
-                "items": [
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG3-ISX031C-MIPI",
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG2-IMX662C-MIPI",
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG8-IMX678C-MIPI",
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG12-IMX577C-MIPI",
-                  "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG20-IMX283C-MIPI"
-                ]
-              }
+              "1_6_Low_Latency_Camera/GMSL_Camera/SH3-S11A60-G2A",
+              "1_6_Low_Latency_Camera/GMSL_Camera/SH2-N1B60-G2A"
             ]
           }
         ]
       },
       {
         "type": "category",
-        "label": "应用",
+        "label": "事件相机",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_1_NVIDIA_Jetson/Application/How toBuild 8 - 12 - cam computing for robot proto"
+          "1_7_Event_Based_Camera/SE1-S4-USB",
+          {
+            "type": "category",
+            "label": "快速入门",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "1_7_Event_Based_Camera/Getting_Started/NVIDIA_Jetson_Platform_Integration",
+              "1_7_Event_Based_Camera/Getting_Started/Window_System_Integration",
+              "1_7_Event_Based_Camera/Getting_Started/Ubuntu_System_Integration"
+            ]
+          },
+          "1_7_Event_Based_Camera/Application",
+          "1_7_Event_Based_Camera/FAQ"
         ]
       },
       {
         "type": "category",
-        "label": "常见问题",
+        "label": "夜视摄像头",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_1_NVIDIA_Jetson/FAQ/FAQ_jetson"
-        ]
-      }
-    ],
-    "link": {
-      "type": "doc",
-      "id": "2_1_NVIDIA_Jetson/NVIDIA_Jetson"
-    }
-  },
-  {
-    "type": "category",
-    "label": "NVIDIA® DRIVE AGX Orin",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      {
-        "type": "category",
-        "label": "快速入门",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_2_NVIDIA_Drive_AGX_Orin/Getting_Started/GMSL2_Camera_YUV_for_Developer_Kit",
-          "2_2_NVIDIA_Drive_AGX_Orin/Getting_Started/GMSL2_Camera_RAW_for_Developer_Kit"
+          {
+            "type": "category",
+            "label": "Starvis 摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "1_9_Night_Vision_Camera/Starvis_Camera/SN2M4EFGD",
+              "1_9_Night_Vision_Camera/Starvis_Camera/Application"
+            ]
+          }
         ]
       },
       {
         "type": "category",
-        "label": "应用",
+        "label": "座舱摄像头",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_2_NVIDIA_Drive_AGX_Orin/Application/congratulations"
+          {
+            "type": "category",
+            "label": "OMS 摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "1_11_Cockpit_Camera/OMS_Camera/OMSBDAAN",
+              "1_11_Cockpit_Camera/OMS_Camera/Application"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "DMS 摄像头",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "1_11_Cockpit_Camera/DMS_Camera/DMSBBFAN",
+              "1_11_Cockpit_Camera/DMS_Camera/Application"
+            ]
+          }
         ]
       },
       {
         "type": "category",
-        "label": "常见问题",
+        "label": "自动除雾摄像头",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_2_NVIDIA_Drive_AGX_Orin/FAQ/congratulations"
-        ]
-      }
-    ],
-    "link": {
-      "type": "doc",
-      "id": "2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin"
-    }
-  },
-  {
-    "type": "category",
-    "label": "NVIDIA® Jetson™ AGX Thor",
-    "collapsed": true,
-    "collapsible": true,
-    "items": [
-      {
-        "type": "category",
-        "label": "快速入门",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A",
-          "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G3A",
-          "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "应用",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_4_NVIDIA_Jetson_AGX_Thor/Application/congratulations"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "常见问题",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_4_NVIDIA_Jetson_AGX_Thor/FAQ/congratulations"
+          "1_12_Automatic_Defogging_Camera/RedFox-D3Gx",
+          "1_12_Automatic_Defogging_Camera/RedFox-D3Gx_Application"
         ]
       }
     ]
   },
+  "intro",
   {
     "type": "category",
-    "label": "NVIDIA® Holoscan Sensor Bridge",
+    "label": "NVIDIA",
     "collapsed": true,
     "collapsible": true,
     "items": [
       {
         "type": "category",
-        "label": "快速入门",
+        "label": "NVIDIA® Jetson™",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM"
+          {
+            "type": "category",
+            "label": "快速入门",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              {
+                "type": "category",
+                "label": "NVIDIA Jetson AGX Orin",
+                "collapsed": true,
+                "collapsible": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "快速入门",
+                    "collapsed": true,
+                    "collapsible": true,
+                    "items": [
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-AGON-G2Y-A1",
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG10A-AGON-G2M-A1",
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/GMSL_adapter_board/SG8A-ORIN-GMSL2"
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "快速入门",
+                    "collapsed": true,
+                    "collapsible": true,
+                    "items": [
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_AGX_Orin/AI_Box/congratulations"
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "category",
+                "label": "NVIDIA Jetson Orin Nano&NX",
+                "collapsed": true,
+                "collapsible": true,
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "GMSL 转接板",
+                    "collapsed": true,
+                    "collapsible": true,
+                    "items": [
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/Adapter_Board/SG4A-NONX-G2Y-A1"
+                    ]
+                  },
+                  {
+                    "type": "category",
+                    "label": "MIPI 摄像头",
+                    "collapsed": true,
+                    "collapsible": true,
+                    "items": [
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG3-ISX031C-MIPI",
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG2-IMX662C-MIPI",
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG8-IMX678C-MIPI",
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG12-IMX577C-MIPI",
+                      "2_1_NVIDIA_Jetson/Getting_Started/NVIDIA_Jetson_Orin_Nano_NX/MIPI_Camera/SG20-IMX283C-MIPI"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "category",
+            "label": "应用",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_1_NVIDIA_Jetson/Application/How toBuild 8 - 12 - cam computing for robot proto"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "常见问题",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_1_NVIDIA_Jetson/FAQ/FAQ_jetson"
+            ]
+          }
+        ],
+        "link": {
+          "type": "doc",
+          "id": "2_1_NVIDIA_Jetson/NVIDIA_Jetson"
+        }
+      },
+      {
+        "type": "category",
+        "label": "NVIDIA® DRIVE AGX Orin",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "快速入门",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_2_NVIDIA_Drive_AGX_Orin/Getting_Started/GMSL2_Camera_YUV_for_Developer_Kit",
+              "2_2_NVIDIA_Drive_AGX_Orin/Getting_Started/GMSL2_Camera_RAW_for_Developer_Kit"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "应用",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_2_NVIDIA_Drive_AGX_Orin/Application/congratulations"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "常见问题",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_2_NVIDIA_Drive_AGX_Orin/FAQ/congratulations"
+            ]
+          }
+        ],
+        "link": {
+          "type": "doc",
+          "id": "2_2_NVIDIA_Drive_AGX_Orin/NVIDIA_Drive_AGX_Orin"
+        }
+      },
+      {
+        "type": "category",
+        "label": "NVIDIA® Jetson™ AGX Thor",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "快速入门",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G2A",
+              "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_G3A",
+              "2_4_NVIDIA_Jetson_AGX_Thor/Getting_Started/TRD1_F4B"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "应用",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_4_NVIDIA_Jetson_AGX_Thor/Application/congratulations"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "常见问题",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_4_NVIDIA_Jetson_AGX_Thor/FAQ/congratulations"
+            ]
+          }
         ]
       },
       {
         "type": "category",
-        "label": "应用",
+        "label": "NVIDIA® Holoscan Sensor Bridge",
         "collapsed": true,
         "collapsible": true,
         "items": [
-          "2_5_NVIDIA_Holoscan_Sensor_Bridge/Application/congratulations"
-        ]
-      },
-      {
-        "type": "category",
-        "label": "常见问题",
-        "collapsed": true,
-        "collapsible": true,
-        "items": [
-          "2_5_NVIDIA_Holoscan_Sensor_Bridge/FAQ/congratulations"
+          {
+            "type": "category",
+            "label": "快速入门",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_5_NVIDIA_Holoscan_Sensor_Bridge/Getting_Started/HSBKITxM"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "应用",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_5_NVIDIA_Holoscan_Sensor_Bridge/Application/congratulations"
+            ]
+          },
+          {
+            "type": "category",
+            "label": "常见问题",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_5_NVIDIA_Holoscan_Sensor_Bridge/FAQ/congratulations"
+            ]
+          }
         ]
       }
     ]

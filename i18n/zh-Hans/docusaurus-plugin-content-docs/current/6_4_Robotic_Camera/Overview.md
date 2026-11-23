@@ -1,5 +1,6 @@
 ---
 sidebar_position: 0
+sidebar_label: 新一代选型指南
 title: 新一代机器人摄像头
 description: 按图像格式、视场角、帧率与机械配置对比双目和单目机器人摄像头。
 ---

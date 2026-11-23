@@ -144,6 +144,7 @@ yarn typesense-docsearch-scraper
 - **不要手改生成产物**: 两份 `sidebars.js` 都是 `generate-sidebar.js` 的输出; 持久修复落在 `_category_.json`, frontmatter(`sidebar_position`), `generate-sidebar.js` 或 `scripts/translate-sync.js`
 - **共享侧边栏生成逻辑**: `scripts/translate-sync.js` 已直接复用 `generate-sidebar.js` 导出的 `generateSidebars()`；修改生成逻辑应落在共享实现，不要重新复制一份到翻译脚本
 - **侧边栏排序**以 `_category_.json` 的 `position` 和文档 frontmatter 的 `sidebar_position` 为准
+- 侧边栏分组由 `generate-sidebar.js` 的 `buildSidebar()` 生成，中文构建的分类标签使用 `i18n/zh-Hans/docusaurus-plugin-content-docs/current.json`。Camera 直接显示 SerDes、MIPI CSI-2、全局曝光三个分类，其余现有五类在 Other Cameras 下。Embedded Vision 的四个 NVIDIA 入口放在同一个折叠分类下，Qualcomm 独立显示。
 - 分类可通过英文 `_category_.json` 的 `customProps.sidebarRefs` 引用其他分类的文档。每项使用 `id` 与 `position`，与分类内文档的 `sidebar_position` 一起排序。生成器在中英文侧边栏均输出 Docusaurus `ref`，共用现有文档及 URL。
 - **Linked category** 必须同时保留 `link.id` 和合理的 `items` 去重; 不要为了"修复"入口文档消失而删掉 `link`
 - **首页改动**必须同时维护 `WikiHome` 的 `PAGE_CONTENT.en` 与 `PAGE_CONTENT['zh-Hans']` 两套内容
@@ -179,7 +180,7 @@ yarn typesense-docsearch-scraper
 
 ### Robotics 文档
 
-- 新一代与原有产品并列导航：`Robotic Camera (New Generation)`（中文「机器人摄像头（新一代）」）排在原 `Robotic Camera` 前；两者内部均为 Binocular / Monocular。原栏目名称不表示其中所有产品停产，具体生命周期仍以型号说明为准。
+- `Robotic Camera`（中文「机器人摄像头」）下依次显示 `New Generation`（「新一代」）和 `Existing Models`（「原有型号」）。两组各有双目和单目分类，新一代分组名称链接到选型指南，箭头展开型号分类。「原有型号」中的具体生命周期以型号说明为准。
 - 新一代目录为 `docs/6_4_Robotic_Camera/`，`Overview.md` 是 linked category 入口；`Binocular_Camera/` 包含 `S56D.md`、`S56Y.md`、`S36A.md`，`Monocular_Camera/` 包含 `SYW2G_SYF2G.md` 和 `SYF3L.md`，以及新线束版 `M3A.md`，并复用原栏目中的 `SHW5G_SHF5G.md`。M3A 两版各有独立产品页，分别使用 OSS 的 `M3A/M3A.png`（新线束版）和 `M3A/M3A_Original.png`（原版）。中文保持同构；后续新增型号落在对应分类，不新增空白占位页，也不改动原有产品 URL。
 - 待更新：M3A 新线束版中英文产品页暂时隐藏「尺寸 / Dimensions」章节。拿到本版本的机械尺寸图后，核对线束和外形，上传至独立 OSS 路径，再恢复中英文尺寸图。原版 M3A 的机械图继续用于原版页面。
 - SYF3L 对应规格书和驱动资料中的 SG3S11AFSK，规格采用 `SG3S11AFxK` 系列规格书 2026 年 9 月 Rev.3 的指定型号行与第 6 页机械图。该型号为 196° / 154°、MAX96717F GMSL2 3Gbps，规格书仅标注满足中心光学分辨率指标。

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 0
+sidebar_label: New-Generation Selection Guide
 title: New-Generation Robotic Cameras
 description: Compare binocular and monocular robotic cameras by image format, field of view, frame rate and mechanical configuration.
 ---
