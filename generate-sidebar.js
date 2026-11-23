@@ -206,7 +206,7 @@ function buildSidebar(isI18n) {
   entries = groupCategories(
     entries,
     ['2_1_NVIDIA_Jetson', '2_2_NVIDIA_Drive_AGX_Orin', '2_4_NVIDIA_Jetson_AGX_Thor',
-      '2_5_NVIDIA_Holoscan_Sensor_Bridge'],
+      '2_6_NVIDIA_IGX_Thor', '2_5_NVIDIA_Holoscan_Sensor_Bridge'],
     { label: 'NVIDIA' }
   );
   return renderEntries(entries, isI18n);

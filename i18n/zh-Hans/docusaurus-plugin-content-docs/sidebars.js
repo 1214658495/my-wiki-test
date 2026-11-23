@@ -506,6 +506,23 @@ const sidebars = {
       },
       {
         "type": "category",
+        "label": "NVIDIA® IGX Thor",
+        "collapsed": true,
+        "collapsible": true,
+        "items": [
+          {
+            "type": "category",
+            "label": "快速入门",
+            "collapsed": true,
+            "collapsible": true,
+            "items": [
+              "2_6_NVIDIA_IGX_Thor/Getting_Started/ITRD1_G2A"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "category",
         "label": "NVIDIA® Holoscan Sensor Bridge",
         "collapsed": true,
         "collapsible": true,

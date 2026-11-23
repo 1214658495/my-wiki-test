@@ -135,6 +135,10 @@
     "message": "NVIDIA® Jetson™ AGX Thor",
     "description": "The label for category NVIDIA® Jetson™ AGX Thor in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.NVIDIA® IGX Thor": {
+    "message": "NVIDIA® IGX Thor",
+    "description": "The label for category NVIDIA® IGX Thor in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.NVIDIA® Holoscan Sensor Bridge": {
     "message": "NVIDIA® Holoscan Sensor Bridge",
     "description": "The label for category NVIDIA® Holoscan Sensor Bridge in sidebar tutorialSidebar"
