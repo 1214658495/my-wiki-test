@@ -1,15 +1,15 @@
 ---
 sidebar_position: 3
-title: "SYW2G & SYF2G（2.3MP 全局曝光）"
+title: "SYW2G & SYF2G（2MP 全局曝光）"
 ---
 
-# SYW2G & SYF2G（2.3MP 全局曝光）
+# SYW2G & SYF2G（2MP 全局曝光）
 
 ## 概述
 
 <div className="row">
   <div className="col col--12">
-    SYW2G（HFOV120°）与 SYF2G（HFOV200°）摄像头专为具身智能应用开发设计，可用于人形机器人头部、躯干等位置的感知与识别。两款均采用 ONSEMI AR0234 2.3MP 全局曝光传感器，内置 GW5200 ISP，经过专业图像调试，通过 GMSL2 输出 1920(H) × 1200(V)、30fps 的未压缩 YUV 图像。
+    SYW2G（HFOV120°）与 SYF2G（HFOV200°）摄像头专为具身智能应用开发设计，可用于人形机器人头部、躯干等位置的感知与识别。两款均采用 2MP 全局曝光传感器和内置 ISP，经过专业图像调试，通过 GMSL2 输出 1920(H) × 1200(V)、30fps 的未压缩 YUV 图像。
     两者的差异在于镜头视场角、对焦距离、景深和整机高度，均采用 25 × 25mm 的紧凑设计。
   </div>
 </div>
@@ -55,8 +55,8 @@ title: "SYW2G & SYF2G（2.3MP 全局曝光）"
 
 | 参数 | 值 |
 |------|----|
-| 传感器 | ONSEMI AR0234，2.3MP RGGB |
-| ISP | GW5200 |
+| 传感器 | 2MP 3µm RGB 传感器 |
+| ISP | 内置 |
 | 输出像素 | 1920(H) × 1200(V) |
 | 帧率 | 1920(H) × 1200(V) @ 30fps |
 | HDR 支持 | 不支持 |
@@ -66,8 +66,8 @@ title: "SYW2G & SYF2G（2.3MP 全局曝光）"
 | 摄像头接口 | GMSL2（6Gbps） |
 | 功耗 | 1.7W |
 | 连接器 | Amphenol Fakra（Z Code） |
-| 工作温度范围 | -20～+65℃ |
-| 存储温度范围 | -20～+75℃ |
+| 工作温度范围 | -40～+85℃ |
+| 存储温度范围 | -40～+95℃ |
 | 尺寸 | W: 25mm，L: 25mm，H: 29.81mm（SYW2G）/ 30.42mm（SYF2G） |
 | 重量 | 小于 50g |
 
@@ -88,9 +88,15 @@ title: "SYW2G & SYF2G（2.3MP 全局曝光）"
 
 ### 硬件概览
 
+#### 系统框图
+
+SYW2G 与 SYF2G 使用相同的系统框图。
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYW2G/SYW2G_System_Diagram.png?x-oss-process=image/format,webp&v=ea8e131bbeaf" alt="SYW2G 与 SYF2G 系统框图" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
+
 #### 数据链路
 
-AR0234 传感器 → GW5200 ISP → MAX96717 串行器 → GMSL2 → 主机端解串器 / SoC。
+传感器 → 内置 ISP → MAX96717 串行器 → GMSL2 → 主机端解串器 / SoC。
 
 #### 帧同步使用要求
 
@@ -108,8 +114,8 @@ AR0234 传感器 → GW5200 ISP → MAX96717 串行器 → GMSL2 → 主机端�
 | 组件 | 型号 | I2C 地址（8bit） | 备注 |
 |------|------|-----------------|------|
 | 串行器 | MAX96717 | 0x80 | GMSL2，6Gbps |
-| ISP | GW5200 | 0xDA | 由 MAX96717 MFP0 控制复位 |
-| 传感器 | AR0234 | 0x20 | 由 MAX96717 MFP7 控制帧同步 |
+| ISP | — | 0xDA | 由 MAX96717 MFP0 控制复位 |
+| 传感器 | — | 0x20 | 由 MAX96717 MFP7 控制帧同步 |
 
 </div>
 

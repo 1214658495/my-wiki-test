@@ -31,17 +31,17 @@ Use the [**new-generation camera selection overview**](/docs/6_4_Robotic_Camera/
 |---|---|---|---|
 | Binocular | [S56D](/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | Per eye: 2560(H) × 1984(V) @ 30fps, Global Shutter, 140° HFOV | RAW10 |
 | Binocular | [S56Y](/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | Per eye: 2400(H) × 1800(V) @ 30fps, Global Shutter, 128° HFOV | YUV422, built-in ISP |
-| Binocular | [S36A](/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Per eye: 1920(H) × 1536(V) @ 30fps / 1920(H) × 1080(V) @ 60fps, 140dB HDR, 120° HFOV | YUV422, built-in ISP |
+| Binocular | [S36A](/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Per eye: 1920(H) × 1536(V) @ 30fps, 140dB HDR, 120° HFOV | YUV422, built-in ISP |
 | Monocular | [SYW2G / SYF2G](/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | 1920(H) × 1200(V) @ 30fps, Global Shutter, 120° / 200° HFOV | YUV422, built-in ISP |
 | Monocular | [SYF3L](/docs/6_4_Robotic_Camera/Monocular_Camera/SYF3L) | 1920(H) × 1536(V) @ 30fps, HDR, 196° HFOV | YUV422, built-in ISP |
 | Monocular | [SHW5G / SHF5G](/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 2560(H) × 1984(V), up to 60fps Global Shutter, 130° / 200° HFOV | RAW10 |
 | Monocular | [M3A (3MP Mini HDR 30fps)](/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | Compact monocular camera with revised cable harness | — |
 
-The new binocular models feature built-in six-axis IMUs, a 60mm baseline, and lightweight / connector options. Existing cameras, vision solutions and data collection documentation remain in the sections below.
+The new binocular models feature built-in six-axis IMUs, a 60mm baseline, and lightweight / connector options. Hot products, vision solutions and data collection documentation are in the sections below.
 
 ---
 
-## Binocular Camera (Existing Products) {#binocular-camera}
+## Binocular Camera (Hot Products) {#binocular-camera}
 
 <div className="camera-grid">
 
@@ -85,7 +85,7 @@ The Astra S56x series includes S56 and S56C. S56 is a legacy 130° HFOV model be
 
 ---
 
-## Monocular Camera (Existing Products) {#monocular-camera}
+## Monocular Camera (Hot Products) {#monocular-camera}
 
 <div className="camera-grid">
 

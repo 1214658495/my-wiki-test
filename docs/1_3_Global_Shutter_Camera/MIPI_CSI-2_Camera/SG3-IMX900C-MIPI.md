@@ -1,15 +1,8 @@
 ---
 sidebar_position: 1
-sidebar_label: SG3-IMX900C-MIPI (Discontinued)
 ---
 
 # SG3-IMX900C-MIPI Camera
-
-:::warning Product Discontinued (EOL)
-**SG3-IMX900C-MIPI has been discontinued and is no longer available for purchase.** Its product page has been taken down from the SENSING website, so purchase links are no longer provided here.
-
-This documentation stays online as technical reference for existing deployments. For new designs or replacement recommendations, please contact SENSING technical support.
-:::
 
 ## Overview
 

@@ -18,19 +18,19 @@ This family covers binocular and monocular cameras for embodied intelligence, hu
 
 | Model | Sensors | Resolution / frame rate per eye | Shutter | Output / ISP | HFOV / VFOV |
 |---|---|---|---|---|---|
-| [S56D](/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | ST VB1940 × 2 | 2560(H) × 1984(V) @ 30fps | Global | RAW10 / host processing | 140° / 102° |
-| [S56Y](/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | Global | YUV422 8bit / built-in ISP | 128° / 91° |
-| [S36A](/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Sony ISX031 × 2 | 1920(H) × 1536(V) @ 30fps; 1920(H) × 1080(V) @ 60fps | Rolling, 140dB HDR | YUV422 8bit / built-in ISP | 120° / 93° |
+| [S56D](/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | 5MP × 2 | 2560(H) × 1984(V) @ 30fps | Global | RAW10 / host processing | 140° / 102° |
+| [S56Y](/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | 5MP × 2 | 2400(H) × 1800(V) @ 30fps | Global | YUV422 8bit / built-in ISP | 128° / 91° |
+| [S36A](/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | 2.95MP × 2 | 1920(H) × 1536(V) @ 30fps | Rolling, 140dB HDR | YUV422 8bit / built-in ISP | 120° / 93° |
 
-All three feature a 60 ± 0.5mm baseline, six-axis IMU, precision stereo AA and a GMSL2 6Gbps interface. Lens protection is IP67; the complete camera is IP54. Lens FOV tolerance is ±3°.
+All three feature a 60 ± 0.5mm baseline, six-axis IMU, precision stereo AA and a GMSL2 6Gbps interface. Front-side protection is IP67; the complete assembly is IP54. Lens FOV tolerance is ±3°.
 
 ### How to Choose
 
 - **S56D:** Global Shutter capture with RAW10 output, a 140° HFOV and a host-managed image pipeline.
 - **S56Y:** Global Shutter capture with built-in ISP processing, YUV output and a 128° HFOV.
-- **S36A:** 140dB HDR and a 1920(H) × 1080(V) @ 60fps mode with Rolling Shutter capture.
+- **S36A:** Rolling Shutter capture with 140dB HDR and built-in ISP YUV output.
 
-S56D and S56Y share the specified output dimensions, overall dimensions and baseline, but their output formats, image pipelines and hardware initialization differ. Confirm lens parameters, drivers and platform configuration for the selected model.
+S56D and S56Y share the overall dimensions and baseline, but their output resolutions, output formats, image pipelines and hardware initialization differ. Confirm lens parameters, drivers and platform configuration for the selected model.
 
 ### Mechanical and Ordering Options
 
@@ -46,16 +46,16 @@ Each model offers a standard Fakra version, `_A` lightweight Fakra, `_B` lightwe
 
 | Model | Sensor / ISP | Resolution / frame rate | Imaging mode / output | HFOV / VFOV | Focus / depth of field | Dimensions |
 |---|---|---|---|---|---|---|
-| [SYW2G](/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | AR0234 / GW5200 | 1920(H) × 1200(V) @ 30fps | Global / YUV422 8bit | 120° / 71° | 0.8m / 0.4m - INF | 25 × 25 × 29.81mm |
-| [SYF2G](/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | AR0234 / GW5200 | 1920(H) × 1200(V) @ 30fps | Global / YUV422 8bit | 200° / 120° | 0.4m / 0.2m - INF | 25 × 25 × 30.42mm |
-| [SYF3L](/docs/6_4_Robotic_Camera/Monocular_Camera/SYF3L) | ISX031 / built-in | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 196° / 154° | 0.4m / 0.13m to infinity | 25 × 25mm footprint |
+| [SYW2G](/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | 2MP 3µm / built-in | 1920(H) × 1200(V) @ 30fps | Global / YUV422 8bit | 120° / 71° | 0.8m / 0.4m - INF | 25 × 25 × 29.81mm |
+| [SYF2G](/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | 2MP 3µm / built-in | 1920(H) × 1200(V) @ 30fps | Global / YUV422 8bit | 200° / 120° | 0.4m / 0.2m - INF | 25 × 25 × 30.42mm |
+| [SYF3L](/docs/6_4_Robotic_Camera/Monocular_Camera/SYF3L) | 2.95MP 3µm / built-in | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 196° / 154° | 0.4m / 0.13m to infinity | 25 × 25 × 27.9mm |
 | [SHW5G](/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ up to 60fps (Global) / 50fps (Rolling) | Global or Rolling / RAW10 | 130° / 102° | 0.8m / 0.3m to infinity | 25 × 25 × 29.49mm |
 | [SHF5G](/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ up to 60fps (Global) / 50fps (Rolling) | Global or Rolling / RAW10 | 200° / 150° | 0.4m / 0.1m to infinity | 25 × 25 × 31.35mm |
-| [M3A](/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | — | — | — | — | — | — |
+| [M3A](/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | RGGB / built-in | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 200° / 155° | 0.4m / 0.15m to infinity | 17 × 17 × 31.89mm |
 
 SYW2G and SYF2G both use MAX96717 GMSL2 6Gbps, consume 1.7W, and support external triggering and multi-camera synchronization. They share one comparison page because the sensor, ISP, serializer and integration flow are shared; the lens and mechanical differences are listed separately. Choose SYW2G for its narrower view, or SYF2G for wider scene coverage.
 
-SHW5G / SHF5G cover higher-resolution RAW10 capture. SYF3L provides ultra-wide HDR YUV output. Use the revised-harness datasheet for the new M3A specifications.
+SHW5G / SHF5G cover higher-resolution RAW10 capture. SYF3L and M3A provide ultra-wide HDR YUV output, with 25 × 25mm and 17 × 17mm footprints respectively. M3A values follow the original datasheet; check the revised harness connector and pinout before wiring.
 
 ## Calibration and Integration
 
@@ -63,9 +63,9 @@ The binocular models use **Omni-radtan** stereo calibration and include factory 
 
 For driver packages, adapter boards, power requirements and calibration tools, contact [support@sensing-world.com](mailto:support@sensing-world.com).
 
-## Existing Camera Documentation
+## Hot Products
 
-The existing Robotic Camera section remains available for established projects and model comparison. Inclusion in that section does not imply discontinuation of every model.
+The Hot Products section under Robotic Camera covers established models for current projects and model comparison.
 
 | Category | Documentation |
 |---|---|

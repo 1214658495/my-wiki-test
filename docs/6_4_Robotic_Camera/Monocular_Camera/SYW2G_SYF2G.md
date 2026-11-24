@@ -1,15 +1,15 @@
 ---
 sidebar_position: 3
-title: "SYW2G & SYF2G (2.3MP Global)"
+title: "SYW2G & SYF2G (2MP Global)"
 ---
 
-# SYW2G & SYF2G (2.3MP Global)
+# SYW2G & SYF2G (2MP Global)
 
 ## Overview
 
 <div className="row">
   <div className="col col--12">
-    SYW2G (HFOV 120°) and SYF2G (HFOV 200°) cameras are designed for embodied intelligence applications, including perception and recognition from humanoid robot head and torso positions. Both combine an ONSEMI AR0234 2.3MP Global Shutter sensor with a GW5200 ISP to deliver professionally tuned, uncompressed YUV images at 1920(H) × 1200(V) and 30fps through GMSL2.
+    SYW2G (HFOV 120°) and SYF2G (HFOV 200°) cameras are designed for embodied intelligence applications, including perception and recognition from humanoid robot head and torso positions. Both combine a 2MP Global Shutter sensor with a built-in ISP to deliver professionally tuned, uncompressed YUV images at 1920(H) × 1200(V) and 30fps through GMSL2.
     The two models differ in lens field of view, focus distance, depth of field and overall height. Both have a compact 25 × 25mm footprint.
   </div>
 </div>
@@ -55,8 +55,8 @@ title: "SYW2G & SYF2G (2.3MP Global)"
 
 | Parameter | Value |
 |-----------|-------|
-| Sensor | ONSEMI AR0234, 2.3MP RGGB |
-| ISP | GW5200 |
+| Sensor | 2MP 3µm RGB sensor |
+| ISP | Built-in |
 | Output Pixels | 1920(H) × 1200(V) |
 | Frame Rate | 1920(H) × 1200(V) @ 30fps |
 | HDR Support | No |
@@ -66,8 +66,8 @@ title: "SYW2G & SYF2G (2.3MP Global)"
 | Camera Interface | GMSL2 (6Gbps) |
 | Power Consumption | 1.7W |
 | Connector | Amphenol Fakra (Z Code) |
-| Operating Temperature | -20 to +65°C |
-| Storage Temperature | -20 to +75°C |
+| Operating Temperature | -40 to +85°C |
+| Storage Temperature | -40 to +95°C |
 | Dimensions | W: 25mm, L: 25mm, H: 29.81mm (SYW2G) / 30.42mm (SYF2G) |
 | Weight | Less than 50g |
 
@@ -88,9 +88,15 @@ title: "SYW2G & SYF2G (2.3MP Global)"
 
 ### Hardware Overview
 
+#### System Diagram
+
+SYW2G and SYF2G share the same system diagram.
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYW2G/SYW2G_System_Diagram.png?x-oss-process=image/format,webp&v=ea8e131bbeaf" alt="SYW2G and SYF2G system diagram" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
+
 #### Data Path
 
-AR0234 sensor → GW5200 ISP → MAX96717 serializer → GMSL2 → host deserializer / SoC.
+Sensor → built-in ISP → MAX96717 serializer → GMSL2 → host deserializer / SoC.
 
 #### Frame Synchronization
 
@@ -108,8 +114,8 @@ Both models support external triggering and multi-camera synchronization. Contac
 | Component | Model | I2C Address (8bit) | Notes |
 |-----------|-------|-------------------|-------|
 | Serializer | MAX96717 | 0x80 | GMSL2, 6Gbps |
-| ISP | GW5200 | 0xDA | Reset controlled by MAX96717 MFP0 |
-| Sensor | AR0234 | 0x20 | Frame sync controlled by MAX96717 MFP7 |
+| ISP | — | 0xDA | Reset controlled by MAX96717 MFP0 |
+| Sensor | — | 0x20 | Frame sync controlled by MAX96717 MFP7 |
 
 </div>
 

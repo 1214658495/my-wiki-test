@@ -180,13 +180,13 @@ yarn typesense-docsearch-scraper
 
 ### Robotics 文档
 
-- `Robotic Camera`（中文「机器人摄像头」）下依次显示 `New Generation`（「新一代」）和 `Existing Models`（「原有型号」）。两组各有双目和单目分类，新一代分组名称链接到选型指南，箭头展开型号分类。「原有型号」中的具体生命周期以型号说明为准。
+- `Robotic Camera`（中文「机器人摄像头」）下依次显示 `New Generation`（「新一代」）和 `Hot Products`（「热门产品」，2026-11-24 由 Existing Models / 原有型号改名）。两组各有双目和单目分类，新一代分组名称链接到选型指南，箭头展开型号分类。「热门产品」中的具体生命周期以型号说明为准。
 - 新一代目录为 `docs/6_4_Robotic_Camera/`，`Overview.md` 是 linked category 入口；`Binocular_Camera/` 包含 `S56D.md`、`S56Y.md`、`S36A.md`，`Monocular_Camera/` 包含 `SYW2G_SYF2G.md` 和 `SYF3L.md`，以及新线束版 `M3A.md`，并复用原栏目中的 `SHW5G_SHF5G.md`。M3A 两版各有独立产品页，分别使用 OSS 的 `M3A/M3A.png`（新线束版）和 `M3A/M3A_Original.png`（原版）。中文保持同构；后续新增型号落在对应分类，不新增空白占位页，也不改动原有产品 URL。
 - 待更新：M3A 新线束版中英文产品页暂时隐藏「尺寸 / Dimensions」章节。拿到本版本的机械尺寸图后，核对线束和外形，上传至独立 OSS 路径，再恢复中英文尺寸图。原版 M3A 的机械图继续用于原版页面。
 - SYF3L 对应规格书和驱动资料中的 SG3S11AFSK，规格采用 `SG3S11AFxK` 系列规格书 2026 年 9 月 Rev.3 的指定型号行与第 6 页机械图。该型号为 196° / 154°、MAX96717F GMSL2 3Gbps，规格书仅标注满足中心光学分辨率指标。
-- 新一代双目规格以 20261117 下的飞书20261118-115825 目录中的 `S56D双目相机规格书_en.pdf`、`S56Y双目相机规格书_en.pdf`、`S36A双目相机规格书_en.pdf` 为准。S56D 视场角按用户确认采用英文镜头表的 140° / 102°，不采用其概述残留的 128°；S56Y 仍为 128° / 91°。三款的 _B / _C 连接器按新版规格书标为 SS-mini01。S56D 每目输出 2560 × 1984 @ 30fps RAW10（按用户 2026-11-24 更正）；S56Y 为每目 2400 × 1800 @ 30fps YUV422；S36A 为 ISX031 HDR YUV 方案。三款双目内置六轴 IMU，镜头 IP67 / 整机 IP54，并使用 Omni-Radtan 标定模型；不可直接复用旧款驱动与标定参数。SYF2G 视场按规格书 200°，不按素材目录名 H190 推断。
+- 新一代规格以 `C:\Users\Lenovo\work\wiki_docs\huanghao\飞书20261124-141349` 下的 2026 年 10 月 Rev1 规格书为准（S56D / S56Y / S36A 双目及 SYW2G / SYF2G / SYF3L 单目，中英文各一份）。**对外页面不写传感器和 ISP 芯片型号**（如 VB1940、ISX031、AR0234、GW5200），只写规格书的通用描述：S56D / S56Y 为 5MP 2.25µm，S36A / SYF3L 为 2.95MP 3µm，SYW2G / SYF2G 为 2MP 3µm。串行器型号（MAX9295D / MAX96717 / MAX96717F）可保留。S56D 每目输出 2560 × 1984 @ 30fps RAW10，S56Y 为每目 2400 × 1800 @ 30fps YUV422。S36A 只有 1920 × 1536 @ 30fps 一种模式（旧版的 1080p60 已删除）。S56D 视场角 140° / 102°，S56Y 为 128° / 91°。防护等级写为「前端 IP67；整机 IP54」。SYW2G / SYF2G 温度为 -40～+85 / -40～+95℃。三款双目的 _B / _C 连接器为 SS-mini01，内置六轴 IMU，使用 Omni-Radtan 标定模型，不可直接复用旧款驱动与标定参数。SYF2G 视场按规格书 200°，不按素材目录名 H190 推断。
 - 新一代图示统一使用 `https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/` 下的 OSS 图片，沿用 WebP 处理参数；三款双目的外形尺寸图按英文规格书维护，图片链接可使用内容哈希版本参数。按用户要求，项目内不再保留这批图片副本。外观共用图放 `New_Generation/`，其余按型号目录存放，尺寸图命名为 `<型号>_Dimensions.png`，机械图必须按型号核对。源资料及上传包保留在项目外的 `C:\Users\Lenovo\work\wiki_docs\huanghao\20261117`。新产品规格不代表目标平台驱动或整机集成已实测。
-- S56D、S56Y、S36A 的对外页面保留 IMU 参数、出厂标定读取方法、外部接口和外形尺寸。原理图、内部模块和控制信号、地址映射及 IMU 安装位置和设计位姿留在内部资料中。
+- 按用户 2026-11-24 要求，S56D、S56Y、S36A、SYW2G / SYF2G、SYF3L 页面加入规格书第 3 页的系统框图（System Diagram）。图片位于 OSS `<型号>/<型号>_System_Diagram.png`，SYW2G 与 SYF2G 共用 `SYW2G/` 下的同一张图，上传包放在 `飞书20261124-141349\OSS_System_Diagram_20261124`。双目页面保留 IMU 参数、出厂标定读取方法、外部接口和外形尺寸；Hardware Setting 中的 I2C 地址映射以及 IMU 相对 camera0 的设计位姿，暂不放入双目对外页面。
 - Robotics 入口覆盖 Astra S56x 系列 / S36, 单目机器人相机, NRDCK, Jetson AGX Thor 机器人视觉方案, 人形机器人视觉方案
 - **S56 命名坑**: `S56x` 是**系列名**, 系列下有两个型号 —— `S56`(130° HFOV, legacy, 正在淘汰) 和 `S56C`(140° HFOV, 新项目推荐). 写文档时不要把 S56x 当成单个型号
 - 路由文件仍是 `docs/6_1_Camera/Binocular_Camera/S56.md`(title 为 `Astra S56x Series Stereo Camera`). **不要**因为显示名是 S56x/S56C 就重命名这个文件, 会断链

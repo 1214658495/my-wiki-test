@@ -52,7 +52,7 @@ const sidebars = {
       },
       {
         "type": "category",
-        "label": "Existing Models",
+        "label": "Hot Products",
         "collapsed": true,
         "collapsible": true,
         "items": [

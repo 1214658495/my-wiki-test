@@ -1,15 +1,8 @@
 ---
 sidebar_position: 1
-sidebar_label: SG3-IMX900C-MIPI（已下架）
 ---
 
 # SG3-IMX900C-MIPI 摄像头
-
-:::warning 产品已下架（停止销售）
-**SG3-IMX900C-MIPI 已下架，不再对外销售。** 官网产品页面已下线，因此本页不再提供购买链接。
-
-本文档继续保留，作为存量用户的技术支持资料。如需新项目选型或替代型号建议，请联系 SENSING 技术支持。
-:::
 
 ## 概述
 

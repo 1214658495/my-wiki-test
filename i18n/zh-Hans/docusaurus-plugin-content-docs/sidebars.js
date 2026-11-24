@@ -52,7 +52,7 @@ const sidebars = {
       },
       {
         "type": "category",
-        "label": "原有型号",
+        "label": "热门产品",
         "collapsed": true,
         "collapsible": true,
         "items": [

@@ -7,7 +7,7 @@ title: SYF3L (3MP HDR 30fps)
 
 ## Overview
 
-SYF3L is a monocular camera with a 196° horizontal field of view. It combines a Sony ISX031 sensor with a built-in ISP and a MAX96717F serializer to deliver uncompressed 8-bit YUV422 at 1920(H) × 1536(V) and 30fps over GMSL2. It supports HDR, LED flicker mitigation (LFM), external triggering, and multi-camera synchronization.
+SYF3L is a monocular camera with a 196° horizontal field of view. It combines a 2.95MP HDR sensor with a built-in ISP and a MAX96717F serializer to deliver uncompressed 8-bit YUV422 at 1920(H) × 1536(V) and 30fps over GMSL2. It supports HDR, LED flicker mitigation (LFM), external triggering, and multi-camera synchronization.
 
 <div className="monocular-overview-photo">
   <object data="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF3L/SYF3L.png?x-oss-process=image/format,webp&v=1fde464eb724" type="image/webp" role="img" aria-label="SYF3L monocular camera"
@@ -18,7 +18,7 @@ SYF3L is a monocular camera with a 196° horizontal field of view. It combines a
 
 | Parameter | Value |
 |---|---|
-| Sensor | Sony ISX031, 2.95MP RGGB, 1/2.42-inch CMOS |
+| Sensor | 2.95MP RGB sensor |
 | Pixel size | 3.0 × 3.0µm |
 | Output resolution and frame rate | 1920(H) × 1536(V) @ 30fps |
 | Output format | Uncompressed YUV422, 8bit |
@@ -29,8 +29,9 @@ SYF3L is a monocular camera with a 196° horizontal field of view. It combines a
 | Power supply | 9–16V PoC, &lt;200mA at 12V DC |
 | Connector | Amphenol Fakra Z code |
 | Operating temperature | −40 to +85°C |
+| Storage temperature | −40 to +95°C |
 | Enclosure protection | IP67 |
-| Footprint / weight | 25 × 25mm / &lt;50g |
+| Dimensions / weight | W: 25mm, L: 25mm, H: 27.9mm / &lt;50g |
 
 > **Note**　The optical resolution specification applies to the image center.
 
@@ -41,6 +42,12 @@ SYF3L is a monocular camera with a 196° horizontal field of view. It combines a
 | 196° / 154° | 2.0 | 1.51mm | 0.4m | 0.13m to infinity | −155% | IP67 / active alignment (AA) |
 
 ## Hardware and Integration
+
+### System Diagram
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF3L/SYF3L_System_Diagram.png?x-oss-process=image/format,webp&v=144a9a0d2398" alt="SYF3L system diagram" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
+
+### I2C and Control Signals
 
 | Component | I2C address (8bit) |
 |---|---|

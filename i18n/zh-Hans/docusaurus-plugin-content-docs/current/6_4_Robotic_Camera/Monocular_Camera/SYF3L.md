@@ -7,7 +7,7 @@ title: SYF3L（3MP HDR 30fps）
 
 ## 概述
 
-SYF3L 是水平视场角为 196° 的单目摄像头。采用 Sony ISX031 传感器、内置 ISP 和 MAX96717F 串行器，通过 GMSL2 以 30fps 输出 1920(H) × 1536(V) 的非压缩 8bit YUV422 图像。支持 HDR、LED 闪烁抑制（LFM）、外部触发和多摄像头同步。
+SYF3L 是水平视场角为 196° 的单目摄像头。采用 2.95MP HDR 传感器、内置 ISP 和 MAX96717F 串行器，通过 GMSL2 以 30fps 输出 1920(H) × 1536(V) 的非压缩 8bit YUV422 图像。支持 HDR、LED 闪烁抑制（LFM）、外部触发和多摄像头同步。
 
 <div className="monocular-overview-photo">
   <object data="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF3L/SYF3L.png?x-oss-process=image/format,webp&v=1fde464eb724" type="image/webp" role="img" aria-label="SYF3L 单目摄像头外观"
@@ -18,7 +18,7 @@ SYF3L 是水平视场角为 196° 的单目摄像头。采用 Sony ISX031 传感
 
 | 参数 | 值 |
 |---|---|
-| 传感器 | Sony ISX031，2.95MP RGGB，1/2.42 英寸 CMOS |
+| 传感器 | 2.95MP RGB 传感器 |
 | 像元尺寸 | 3.0 × 3.0µm |
 | 输出分辨率与帧率 | 1920(H) × 1536(V) @ 30fps |
 | 输出格式 | 非压缩 YUV422，8bit |
@@ -29,8 +29,9 @@ SYF3L 是水平视场角为 196° 的单目摄像头。采用 Sony ISX031 传感
 | 供电 | 9–16V PoC，12V DC 时 &lt;200mA |
 | 连接器 | Amphenol Fakra Z Code |
 | 工作温度 | −40 至 +85°C |
+| 存储温度 | −40 至 +95°C |
 | 外壳防护 | IP67 |
-| 外壳平面尺寸 / 重量 | 25 × 25mm / &lt;50g |
+| 尺寸 / 重量 | W: 25mm，L: 25mm，H: 27.9mm / &lt;50g |
 
 > **备注**　光学分辨率指标适用于图像中心。
 
@@ -41,6 +42,12 @@ SYF3L 是水平视场角为 196° 的单目摄像头。采用 Sony ISX031 传感
 | 196° / 154° | 2.0 | 1.51mm | 0.4m | 0.13m 至无穷远 | −155% | IP67 / 主动对准（AA） |
 
 ## 硬件与接入
+
+### 系统框图
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/SYF3L/SYF3L_System_Diagram.png?x-oss-process=image/format,webp&v=144a9a0d2398" alt="SYF3L 系统框图" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
+
+### I2C 与控制信号
 
 | 器件 | I2C 地址（8bit） |
 |---|---|

@@ -219,8 +219,8 @@
     "message": "新一代",
     "description": "The label for category New Generation in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Existing Models": {
-    "message": "原有型号",
-    "description": "The label for category Existing Models in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Hot Products": {
+    "message": "热门产品",
+    "description": "The label for category Hot Products in sidebar tutorialSidebar"
   }
 }
