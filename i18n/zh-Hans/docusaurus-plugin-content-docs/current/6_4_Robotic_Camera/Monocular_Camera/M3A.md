@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: M3A（新线束版）
+sidebar_label: M3A（3MP Mini HDR 30fps）
 title: M3A（3MP Mini HDR 30fps）
 ---
 
