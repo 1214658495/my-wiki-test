@@ -133,7 +133,7 @@ sudo apt-get install git vim sshpass
 
 <div style={{background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1.5rem', marginBottom: '2rem'}}>
 
-**下载 FFmpeg:** [ffmpeg-4.4.4.tar.xz (9.12MB)](https://autosensee.feishu.cn/file/WZ8ob7t5Ro2IhIxTon0ccDghn4d?from=from_copylink)
+**下载 FFmpeg:** [ffmpeg-4.4.4.tar.xz (9.12MB)](https://ffmpeg.org/releases/ffmpeg-4.4.4.tar.xz)
 
 **安装步骤:**
 
