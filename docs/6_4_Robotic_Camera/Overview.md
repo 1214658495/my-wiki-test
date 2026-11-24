@@ -18,7 +18,7 @@ This family covers binocular and monocular cameras for embodied intelligence, hu
 
 | Model | Sensors | Resolution / frame rate per eye | Shutter | Output / ISP | HFOV / VFOV |
 |---|---|---|---|---|---|
-| [S56D](/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | Global | RAW10 / host processing | 140° / 102° |
+| [S56D](/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | ST VB1940 × 2 | 2560(H) × 1984(V) @ 30fps | Global | RAW10 / host processing | 140° / 102° |
 | [S56Y](/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | Global | YUV422 8bit / built-in ISP | 128° / 91° |
 | [S36A](/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Sony ISX031 × 2 | 1920(H) × 1536(V) @ 30fps; 1920(H) × 1080(V) @ 60fps | Rolling, 140dB HDR | YUV422 8bit / built-in ISP | 120° / 93° |
 

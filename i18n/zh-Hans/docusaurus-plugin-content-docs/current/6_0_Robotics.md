@@ -29,7 +29,7 @@ SENSING 提供全面的摄像头技术解决方案，专为机器人、自动系
 
 | 分类 | 型号 | 主要规格 | 输出 |
 |---|---|---|---|
-| 双目 | [S56D](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | 每目 2400(H) × 1800(V) @ 30fps，全局曝光，140° HFOV | RAW10 |
+| 双目 | [S56D](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | 每目 2560(H) × 1984(V) @ 30fps，全局曝光，140° HFOV | RAW10 |
 | 双目 | [S56Y](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | 每目 2400(H) × 1800(V) @ 30fps，全局曝光，128° HFOV | YUV422，内置 ISP |
 | 双目 | [S36A](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | 每目 1920(H) × 1536(V) @ 30fps / 1920(H) × 1080(V) @ 60fps，140dB HDR，120° HFOV | YUV422，内置 ISP |
 | 单目 | [SYW2G / SYF2G](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SYW2G_SYF2G) | 1920(H) × 1200(V) @ 30fps，全局曝光，120° / 200° HFOV | YUV422，内置 ISP |

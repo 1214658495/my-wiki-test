@@ -18,7 +18,7 @@ description: 按图像格式、视场角、帧率与机械配置对比双目和�
 
 | 型号 | 传感器 | 每目分辨率 / 帧率 | 曝光方式 | 输出 / ISP | 水平 / 垂直视场角 |
 |---|---|---|---|---|---|
-| [S56D](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | 全局曝光 | RAW10 / 主机端处理 | 140° / 102° |
+| [S56D](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56D) | ST VB1940 × 2 | 2560(H) × 1984(V) @ 30fps | 全局曝光 | RAW10 / 主机端处理 | 140° / 102° |
 | [S56Y](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S56Y) | ST VB1940 × 2 | 2400(H) × 1800(V) @ 30fps | 全局曝光 | YUV422 8bit / 内置 ISP | 128° / 91° |
 | [S36A](/zh-Hans/docs/6_4_Robotic_Camera/Binocular_Camera/S36A) | Sony ISX031 × 2 | 1920(H) × 1536(V) @ 30fps；1920(H) × 1080(V) @ 60fps | 卷帘曝光，140dB HDR | YUV422 8bit / 内置 ISP | 120° / 93° |
 
