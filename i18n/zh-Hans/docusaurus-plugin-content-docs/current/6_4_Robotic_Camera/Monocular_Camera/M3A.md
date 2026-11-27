@@ -10,7 +10,7 @@ title: M3A（3MP Mini HDR 30fps）
 
 <div className="row">
   <div className="col col--12">
-    M3A 摄像头专为人形机器人应用开发设计，采用超小尺寸、超轻量化方案，模组尺寸为 17mm x 17mm。该摄像头搭载 3MP HDR 传感器，可应用于人形机器人的头部、躯干等位置，并提供经过专业调校的高质量成像效果。
+    M3A 专为具身智能应用开发设计，采用超小尺寸、超轻量化方案，长宽仅 17mm × 17mm，搭载 3MP 高动态、高帧率传感器。可安装于人形机器人头部、躯干等位置，用于机器人感知识别、数据采集等场景，并提供经过专业调校的高质量图像效果。
   </div>
 </div>
 
@@ -21,7 +21,7 @@ title: M3A（3MP Mini HDR 30fps）
   <figcaption style={{marginTop: '0.25rem', color: 'var(--ifm-color-emphasis-700)', fontSize: '0.875rem'}}>M3A 新线束版</figcaption>
 </figure>
 
-> **备注**　以下规格、硬件框图和接入说明沿用原版 M3A。接线前请按新线束实物核对连接器和引脚。
+> **备注**　规格参数、系统框图和外形尺寸以 M3A 规格书（2026 年 10 月 Rev1）为准。下文的 Jetson 驱动与接入步骤沿用原版 M3A，请在目标平台上验证。
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-293.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer"
@@ -39,13 +39,14 @@ title: M3A（3MP Mini HDR 30fps）
     • 高动态范围（HDR）<br/>
     • 低延迟<br/>
     • 支持外部触发<br/>
-    • 多摄像头同步
+    • 多摄像头同步<br/>
+    • 高帧率
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>应用：</strong><br/>
+    • 具身智能<br/>
     • 人形机器人<br/>
-    • 数据采集<br/>
-    • 机器狗
+    • 数据采集
   </div>
 </div>
 
@@ -55,34 +56,38 @@ title: M3A（3MP Mini HDR 30fps）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| 参数         | 值                   |
-|-------------------|-------------------------|
-| 传感器            |  RGGB |
-| ISP               | 内置                |
-| 图像尺寸        | 1/2.42 inch CMOS        |
-| 输出像素     | 1920H*1536V             |
-| 像元尺寸        | 3.0um*3.0um             |
-| 帧率        | 1920*1536@30fps (MAX 60fps)     |
-| HDR 支持       | 是                     |
-| LFM               | 是                     |
-| 输出数据       | YUV422@8bit             |
-| 串行器        | MAXIM MAX96717          |
-| 摄像头接口  | GMSL2                   |
-| 供电      | 9~16V POC               |
-| 电流           | 小于 200mA@12VDC            |
-| 连接器         | Amphenol Fakra (Z Code) |
-| 工作温度范围 | -40~+85℃            |
-| 尺寸        | W: 17mm, L:17mm, H:31.89mm |
-| 重量            | 小于 50g                    |
+| 参数 | 值 |
+|---|---|
+| 传感器 | 2.95MP 3µm RGB 传感器 |
+| ISP | 内置 |
+| 输出像素 | 1920(H) × 1536(V) |
+| 帧率 | 1920(H) × 1536(V) @ 30fps（最高 60fps） |
+| HDR | 最高 140dB |
+| 输出数据 | YUV422 8bit |
+| 串行器 | MAX96717 |
+| 摄像头接口 | GMSL2，6Gbps |
+| 供电 | 9～16V PoC |
+| 电流 | 小于 200mA @ 12VDC |
+| 连接器 | Amphenol Z-code Fakra / SS-mini01（M3A_A） |
+| 工作温度 | -40～+85℃ |
+| 存储温度 | -40～+95℃ |
+| 尺寸 | W: 17mm, L: 17mm, H: 31.89mm |
+| 重量 | 小于 50g |
 
 </div>
+
+{/* 尺寸图待修正后恢复 / hidden until the drawing is fixed
+### 外形尺寸
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_New_Harness_Dimensions.png?x-oss-process=image/format,webp&v=a9e6f1941687" alt="M3A 新线束版机械尺寸" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
+
+> **图纸备注**　尺寸单位为 mm，左上角图标表示成像方向正向。线缆长度为 230mm（参考值），SS-mini01 连接器版本型号为 M3A_A。
+*/}
 
 ### 硬件概览
-#### 框图
-<div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_BlockDiagram.png?x-oss-process=image/format,webp" alt="M3A_BlockDiagram"
-    style={{maxWidth: '100%', height:'auto'}} />
-</div>
+#### 系统框图
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_System_Diagram.png?x-oss-process=image/format,webp&v=4d006256e4a3" alt="M3A 系统框图" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
 
 #### I2C 地址信息
 
@@ -111,11 +116,7 @@ title: M3A（3MP Mini HDR 30fps）
       <td>GMSL2 (6G bps)</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>传感器</strong></td>
-      <td>型号</td>
-      <td>RGGB</td>
-    </tr>
-    <tr>
+      <td rowspan="3"><strong>传感器</strong></td>
       <td>I2C 地址</td>
       <td>0x34 (8bit 地址)</td>
     </tr>
@@ -136,11 +137,18 @@ title: M3A（3MP Mini HDR 30fps）
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No | EFL | 对焦距离 | 景深 | 防水等级 | 镜头安装 |
+| HFOV | VFOV | F.No | EFL | 对焦距离 | 景深 | 防护等级 | 镜头安装 |
 |------|------|------|-----|----------------|----------------|-------------|------------|
-| 200° | 155° | 2.0 | 1.51mm | 0.4m | 0.15m - INF | IP69K | AA |
+| 200° | 155° | 2.0 | 1.51mm | 0.4m | 0.15m - INF | 前端 IP67；整机 IP54 | AA |
 
 </div>
+
+### 可选配置
+
+| 型号 | 连接器 | 备注 |
+|---|---|---|
+| M3A | Amphenol Z-code Fakra | 默认 |
+| M3A_A | SS-mini01 | — |
 
 ## 摄像头使用
 ### 1. 适配 NVIDIA® Jetson™ 平台

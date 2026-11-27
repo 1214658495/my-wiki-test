@@ -10,7 +10,7 @@ title: M3A (3MP Mini HDR 30fps)
 
 <div className="row">
   <div className="col col--12">
-    The M3A camera is specially developed and designed for humanoid robot applications. It features an ultra-small size and ultra-lightweight design, with dimensions of 17mm x 17mm. It uses a 3MP HDR sensor and can be applied to positions such as the head and torso of humanoid robots. It offers high-quality image effects that have been professionally tuned.
+    The M3A is purpose-built for embodied intelligence applications. Its ultra-compact, ultra-lightweight design measures only 17mm × 17mm and uses a 3MP high dynamic range, high frame rate sensor. It can be mounted on the head, torso and other positions of humanoid robots for robot perception, recognition and data acquisition, with professionally tuned imaging for real application scenarios.
   </div>
 </div>
 
@@ -21,7 +21,7 @@ title: M3A (3MP Mini HDR 30fps)
   <figcaption style={{marginTop: '0.25rem', color: 'var(--ifm-color-emphasis-700)', fontSize: '0.875rem'}}>M3A with revised cable harness</figcaption>
 </figure>
 
-> **Note**　The specifications, hardware block diagram and integration instructions below are carried over from the original M3A. Check the revised harness connector and pinout before wiring.
+> **Note**　Specifications, the system diagram and the dimension drawing follow the M3A datasheet (Oct. 2026, Rev1). The Jetson driver and integration steps below are carried over from the original M3A; verify them on your target platform.
 
 <!-- <div style={{textAlign: 'center', marginBottom: '2rem'}}>
     <a href="https://sensing-world.com/en/h-pd-293.html?recommendFromPid=0&fromMid=1544" target="_blank" rel="noopener noreferrer"
@@ -39,13 +39,14 @@ title: M3A (3MP Mini HDR 30fps)
     • High Dynamic Range (HDR)<br/>
     • Low latency<br/>
     • Support external trigger<br/>
-    • Multi-camera synchronization
+    • Multi-camera synchronization<br/>
+    • High frame rate
   </div>
   <div style={{flex: 1, minWidth: 260, background: 'var(--ifm-background-color)', borderRadius: '10px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)', padding: '1rem'}}>
     <strong>Application:</strong><br/>
-    • Humanoid Robots<br/>
-    • Data collection<br/>
-    • Robot dog
+    • Embodied intelligence<br/>
+    • Humanoid robots<br/>
+    • Data collection
   </div>
 </div>
 
@@ -56,34 +57,38 @@ title: M3A (3MP Mini HDR 30fps)
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| Parameter         | Value                   |
-|-------------------|-------------------------|
-| Sensor            |  RGGB |
-| ISP               | Built-in                |
-| Image Size        | 1/2.42 inch CMOS        |
-| Output Pixels     | 1920H*1536V             |
-| Pixel Size        | 3.0um*3.0um             |
-| Frame Rate        | 1920*1536@30fps (MAX 60fps)     |
-| HDR Support       | Yes                     |
-| LFM               | Yes                     |
-| Output data       | YUV422@8bit             |
-| Serializer        | MAXIM MAX96717          |
-| Camera Interface  | GMSL2                   |
-| Power Supply      | 9~16V POC               |
-| Current           | Less than 200mA@12VDC            |
-| Connector         | Amphenol Fakra (Z Code) |
-| Operating temp. range | -40~+85℃            |
-| Dimensions        | W: 17mm, L:17mm, H:31.89mm |
-| Weight            | Less than 50g                    |
+| Parameter | Value |
+|---|---|
+| Sensor | 2.95MP 3µm RGB sensor |
+| ISP | Built-in |
+| Output pixels | 1920(H) × 1536(V) |
+| Frame rate | 1920(H) × 1536(V) @ 30fps (max 60fps) |
+| HDR | Up to 140dB |
+| Output data | YUV422 8bit |
+| Serializer | MAX96717 |
+| Camera interface | GMSL2, 6Gbps |
+| Power supply | 9–16V PoC |
+| Current | &lt;200mA @ 12VDC |
+| Connector | Amphenol Z-code Fakra / SS-mini01 (M3A_A) |
+| Operating temp. | -40 to +85°C |
+| Storage temp. | -40 to +95°C |
+| Dimensions | W: 17mm, L: 17mm, H: 31.89mm |
+| Weight | &lt;50g |
 
 </div>
+
+{/* 尺寸图待修正后恢复 / hidden until the drawing is fixed
+### Dimensions
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_New_Harness_Dimensions.png?x-oss-process=image/format,webp&v=a9e6f1941687" alt="M3A with revised cable harness: mechanical dimensions" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
+
+> **Drawing note**　Units are mm. The icon at the top left indicates the positive imaging direction. The cable length is 230mm (REF); the SS-mini01 connector is available as M3A_A.
+*/}
 
 ### Hardware Overview
-#### Block Diagram
-<div style={{textAlign: 'center'}}>
-    <img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_BlockDiagram.png?x-oss-process=image/format,webp" alt="M3A_BlockDiagram"
-    style={{maxWidth: '100%', height:'auto'}} />
-</div>
+#### System Diagram
+
+<img src="https://sgword-service.oss-cn-heyuan.aliyuncs.com/wiki-images/1_0_Camera/1_10_Humanoid_Robotic_Camera/M3A/M3A_System_Diagram.png?x-oss-process=image/format,webp&v=4d006256e4a3" alt="M3A system diagram" style={{width: '100%', maxWidth: 900, height: 'auto'}} />
 
 #### I2C Address Information
 
@@ -112,11 +117,7 @@ title: M3A (3MP Mini HDR 30fps)
       <td>GMSL2 (6G bps)</td>
     </tr>
     <tr>
-      <td rowspan="4"><strong>Sensor</strong></td>
-      <td>Model</td>
-      <td>RGGB</td>
-    </tr>
-    <tr>
+      <td rowspan="3"><strong>Sensor</strong></td>
       <td>I2C Address</td>
       <td>0x34 (8bit address)</td>
     </tr>
@@ -138,11 +139,18 @@ title: M3A (3MP Mini HDR 30fps)
 
 <div style={{display: 'flex', justifyContent: 'center'}}>
 
-| HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | Water-proof | Lens Mount |
+| HFOV | VFOV | F.No | EFL | Focus Distance | Depth of Field | IP Rating | Lens Mount |
 |------|------|------|-----|----------------|----------------|-------------|------------|
-| 200° | 155° | 2.0 | 1.51mm | 0.4m | 0.15m - INF | IP69K | AA |
+| 200° | 155° | 2.0 | 1.51mm | 0.4m | 0.15m - INF | Front side IP67; complete assembly IP54 | AA |
 
 </div>
+
+### Optional Configurations
+
+| Model | Connector | Remark |
+|---|---|---|
+| M3A | Amphenol Z-code Fakra | Default |
+| M3A_A | SS-mini01 | — |
 
 
 ## Employing Camera

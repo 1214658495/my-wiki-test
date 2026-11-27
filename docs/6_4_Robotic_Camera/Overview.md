@@ -51,11 +51,11 @@ Each model offers a standard Fakra version, `_A` lightweight Fakra, `_B` lightwe
 | [SYF3L](/docs/6_4_Robotic_Camera/Monocular_Camera/SYF3L) | 2.95MP 3µm / built-in | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 196° / 154° | 0.4m / 0.13m to infinity | 25 × 25 × 27.9mm |
 | [SHW5G](/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ up to 60fps (Global) / 50fps (Rolling) | Global or Rolling / RAW10 | 130° / 102° | 0.8m / 0.3m to infinity | 25 × 25 × 29.49mm |
 | [SHF5G](/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ up to 60fps (Global) / 50fps (Rolling) | Global or Rolling / RAW10 | 200° / 150° | 0.4m / 0.1m to infinity | 25 × 25 × 31.35mm |
-| [M3A](/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | RGGB / built-in | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 200° / 155° | 0.4m / 0.15m to infinity | 17 × 17 × 31.89mm |
+| [M3A](/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | 2.95MP 3µm / built-in | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 200° / 155° | 0.4m / 0.15m to infinity | 17 × 17 × 31.89mm |
 
 SYW2G and SYF2G both use MAX96717 GMSL2 6Gbps, consume 1.7W, and support external triggering and multi-camera synchronization. They share one comparison page because the sensor, ISP, serializer and integration flow are shared; the lens and mechanical differences are listed separately. Choose SYW2G for its narrower view, or SYF2G for wider scene coverage.
 
-SHW5G / SHF5G cover higher-resolution RAW10 capture. SYF3L and M3A provide ultra-wide HDR YUV output, with 25 × 25mm and 17 × 17mm footprints respectively. M3A values follow the original datasheet; check the revised harness connector and pinout before wiring.
+SHW5G / SHF5G cover higher-resolution RAW10 capture. SYF3L and M3A provide ultra-wide HDR YUV output, with 25 × 25mm and 17 × 17mm footprints respectively. M3A is also available with an SS-mini01 connector (M3A_A).
 
 ## Calibration and Integration
 

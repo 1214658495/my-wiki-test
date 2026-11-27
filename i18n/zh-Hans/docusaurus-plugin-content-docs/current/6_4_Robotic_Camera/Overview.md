@@ -51,11 +51,11 @@ S56D 与 S56Y 的整机尺寸和基线相同，但输出分辨率、输出格式
 | [SYF3L](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/SYF3L) | 2.95MP 3µm / 内置 | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 196° / 154° | 0.4m / 0.13m 至无穷远 | 25 × 25 × 27.9mm |
 | [SHW5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ 最高 60fps（全局）/ 50fps（卷帘） | 全局或卷帘曝光 / RAW10 | 130° / 102° | 0.8m / 0.3m 至无穷远 | 25 × 25 × 29.49mm |
 | [SHF5G](/zh-Hans/docs/6_1_Camera/Monocular_Camera/SHW5G_SHF5G) | 5MP RGGB | 2560(H) × 1984(V) @ 最高 60fps（全局）/ 50fps（卷帘） | 全局或卷帘曝光 / RAW10 | 200° / 150° | 0.4m / 0.1m 至无穷远 | 25 × 25 × 31.35mm |
-| [M3A](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | RGGB / 内置 | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 200° / 155° | 0.4m / 0.15m 至无穷远 | 17 × 17 × 31.89mm |
+| [M3A](/zh-Hans/docs/6_4_Robotic_Camera/Monocular_Camera/M3A) | 2.95MP 3µm / 内置 | 1920(H) × 1536(V) @ 30fps | HDR / YUV422 8bit | 200° / 155° | 0.4m / 0.15m 至无穷远 | 17 × 17 × 31.89mm |
 
 SYW2G 与 SYF2G 均采用 MAX96717 GMSL2 6Gbps，功耗为 1.7W，支持外部触发与多摄像头同步。由于传感器、ISP、串行器和接入流程共用，两款保留在同一对比页，分别列出镜头与机械差异。SYW2G 适用于相对集中的视野，SYF2G 用于更大范围的场景覆盖。
 
-SHW5G / SHF5G 提供更高分辨率的 RAW10 采集，SYF3L 与 M3A 提供超广角 HDR YUV 输出，外壳平面尺寸分别为 25 × 25mm 和 17 × 17mm。M3A 参数沿用原版规格书，接线前请核对新线束的连接器和引脚定义。
+SHW5G / SHF5G 提供更高分辨率的 RAW10 采集，SYF3L 与 M3A 提供超广角 HDR YUV 输出，外壳平面尺寸分别为 25 × 25mm 和 17 × 17mm。M3A 另提供 SS-mini01 连接器版本（M3A_A）。
 
 ## 标定与接入
 
